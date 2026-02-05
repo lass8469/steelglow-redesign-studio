@@ -1,32 +1,34 @@
- import { useState } from "react";
- import { Send, MapPin, Phone, Mail, MessageCircle, Check } from "lucide-react";
- import { Button } from "@/components/ui/button";
- import { Input } from "@/components/ui/input";
- import { Textarea } from "@/components/ui/textarea";
- 
- const benefits = [
-   "40+ years of industry expertise",
-   "Tailored solutions for your unique needs",
-   "Global shipping with local support",
-   "24-hour response guarantee",
- ];
- 
- const Contact = () => {
-   const [formData, setFormData] = useState({
-     name: "",
-     email: "",
-     company: "",
-     message: "",
-   });
- 
-   const handleSubmit = (e: React.FormEvent) => {
-     e.preventDefault();
-     // Handle form submission
-     console.log(formData);
-   };
- 
-   return (
-     <section id="contact" className="py-24 lg:py-32 bg-background moisture-bg moisture-bg-lg">
+import { useState } from "react";
+import { Send, MapPin, Phone, Mail, MessageCircle, Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import MoistureBackground from "./MoistureBackground";
+
+const benefits = [
+  "40+ years of industry expertise",
+  "Tailored solutions for your unique needs",
+  "Global shipping with local support",
+  "24-hour response guarantee",
+];
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission
+    console.log(formData);
+  };
+
+  return (
+    <MoistureBackground variant="large" className="bg-background">
+      <section id="contact" className="py-24 lg:py-32">
        <div className="container mx-auto px-4 lg:px-8">
          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
            {/* Left column */}
@@ -149,9 +151,10 @@
              </form>
            </div>
          </div>
-       </div>
-     </section>
-   );
- };
- 
- export default Contact;
+        </div>
+      </section>
+    </MoistureBackground>
+  );
+};
+
+export default Contact;

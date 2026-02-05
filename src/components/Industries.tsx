@@ -1,50 +1,52 @@
- import { useState } from "react";
- import { Wind, Factory, Apple, Pill } from "lucide-react";
- import industryWind from "@/assets/industry-wind.jpg";
- import industryMetal from "@/assets/industry-metal.jpg";
- import industryFood from "@/assets/industry-food.jpg";
- import industryPharma from "@/assets/industry-pharma.jpg";
- 
- const industries = [
-   {
-     id: "wind",
-     icon: Wind,
-     title: "Wind Energy",
-     image: industryWind,
-     description:
-       "Desiccants prevent moisture from corroding critical components within wind turbines, such as gearboxes and generators. By maintaining a dry internal environment, they extend lifespan and ensure reliable operation.",
-   },
-   {
-     id: "metals",
-     icon: Factory,
-     title: "Metals Industry",
-     image: industryMetal,
-     description:
-       "Protect steel coils, aluminum sheets, and precision metal components from rust and oxidation during shipping. Our solutions ensure metals arrive in pristine condition.",
-   },
-   {
-     id: "food",
-     icon: Apple,
-     title: "Food & Feed",
-     image: industryFood,
-     description:
-       "Safeguard food ingredients and animal feed from moisture-induced spoilage. Our food-safe desiccants maintain product quality throughout the supply chain.",
-   },
-   {
-     id: "pharma",
-     icon: Pill,
-     title: "Pharmaceuticals",
-     image: industryPharma,
-     description:
-       "Pharmaceutical-grade molecular sieve desiccants ensure medication stability and efficacy. Meet stringent regulatory requirements with our certified solutions.",
-   },
- ];
- 
- const Industries = () => {
-   const [activeIndustry, setActiveIndustry] = useState(industries[0]);
- 
-   return (
-     <section id="industries" className="py-24 lg:py-32 bg-secondary moisture-bg">
+import { useState } from "react";
+import { Wind, Factory, Apple, Pill } from "lucide-react";
+import MoistureBackground from "./MoistureBackground";
+import industryWind from "@/assets/industry-wind.jpg";
+import industryMetal from "@/assets/industry-metal.jpg";
+import industryFood from "@/assets/industry-food.jpg";
+import industryPharma from "@/assets/industry-pharma.jpg";
+
+const industries = [
+  {
+    id: "wind",
+    icon: Wind,
+    title: "Wind Energy",
+    image: industryWind,
+    description:
+      "Desiccants prevent moisture from corroding critical components within wind turbines, such as gearboxes and generators. By maintaining a dry internal environment, they extend lifespan and ensure reliable operation.",
+  },
+  {
+    id: "metals",
+    icon: Factory,
+    title: "Metals Industry",
+    image: industryMetal,
+    description:
+      "Protect steel coils, aluminum sheets, and precision metal components from rust and oxidation during shipping. Our solutions ensure metals arrive in pristine condition.",
+  },
+  {
+    id: "food",
+    icon: Apple,
+    title: "Food & Feed",
+    image: industryFood,
+    description:
+      "Safeguard food ingredients and animal feed from moisture-induced spoilage. Our food-safe desiccants maintain product quality throughout the supply chain.",
+  },
+  {
+    id: "pharma",
+    icon: Pill,
+    title: "Pharmaceuticals",
+    image: industryPharma,
+    description:
+      "Pharmaceutical-grade molecular sieve desiccants ensure medication stability and efficacy. Meet stringent regulatory requirements with our certified solutions.",
+  },
+];
+
+const Industries = () => {
+  const [activeIndustry, setActiveIndustry] = useState(industries[0]);
+
+  return (
+    <MoistureBackground variant="default" className="bg-secondary">
+      <section id="industries" className="py-24 lg:py-32">
        <div className="container mx-auto px-4 lg:px-8">
          {/* Header */}
          <div className="text-center max-w-3xl mx-auto mb-16">
@@ -115,10 +117,11 @@
                </div>
              </div>
            </div>
-         </div>
-       </div>
-     </section>
-   );
- };
- 
- export default Industries;
+          </div>
+        </div>
+      </section>
+    </MoistureBackground>
+  );
+};
+
+export default Industries;

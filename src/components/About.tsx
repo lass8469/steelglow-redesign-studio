@@ -1,31 +1,33 @@
- import { Shield, Leaf, Globe, Award } from "lucide-react";
- 
- const features = [
-   {
-     icon: Globe,
-     title: "Located in Denmark",
-     description: "Headquartered in the heart of Scandinavian innovation",
-   },
-   {
-     icon: Award,
-     title: "Since 1979",
-     description: "Over four decades of moisture control expertise",
-   },
-   {
-     icon: Leaf,
-     title: "Eco-Friendly Production",
-     description: "Sustainable practices for a greener future",
-   },
-   {
-     icon: Shield,
-     title: "Tailored Solutions",
-     description: "Custom-engineered for your specific needs",
-   },
- ];
- 
- const About = () => {
-   return (
-     <section id="about" className="py-24 lg:py-32 bg-secondary moisture-bg">
+import { Shield, Leaf, Globe, Award } from "lucide-react";
+import MoistureBackground from "./MoistureBackground";
+
+const features = [
+  {
+    icon: Globe,
+    title: "Located in Denmark",
+    description: "Headquartered in the heart of Scandinavian innovation",
+  },
+  {
+    icon: Award,
+    title: "Since 1979",
+    description: "Over four decades of moisture control expertise",
+  },
+  {
+    icon: Leaf,
+    title: "Eco-Friendly Production",
+    description: "Sustainable practices for a greener future",
+  },
+  {
+    icon: Shield,
+    title: "Tailored Solutions",
+    description: "Custom-engineered for your specific needs",
+  },
+];
+
+const About = () => {
+  return (
+    <MoistureBackground variant="default" className="bg-secondary">
+      <section id="about" className="py-24 lg:py-32">
        <div className="container mx-auto px-4 lg:px-8">
          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
            {/* Text content */}
@@ -81,10 +83,11 @@
              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
            </div>
-         </div>
-       </div>
-     </section>
-   );
- };
- 
- export default About;
+          </div>
+        </div>
+      </section>
+    </MoistureBackground>
+  );
+};
+
+export default About;

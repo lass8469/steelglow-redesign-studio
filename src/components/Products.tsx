@@ -1,40 +1,42 @@
- import { ArrowRight } from "lucide-react";
- import { Button } from "@/components/ui/button";
- import productDunnage from "@/assets/product-dunnage.jpg";
- import productDrybag from "@/assets/product-drybag.jpg";
- import productSilica from "@/assets/product-silica.jpg";
- import productDrybag3 from "@/assets/product-drybag3.jpg";
- 
- const products = [
-   {
-     image: productDunnage,
-     title: "Dunnage Bag",
-     subtitle: "Kraft Paper & PP Woven",
-     description: "Industrial air bags for cargo stabilization during transport",
-   },
-   {
-     image: productDrybag,
-     title: "DRY-BAG I",
-     subtitle: "Original Formula",
-     description: "Clay-based desiccant engineered for long ocean journeys",
-   },
-   {
-     image: productSilica,
-     title: "Silica Gel",
-     subtitle: "E-Commerce Ready",
-     description: "Premium silica gel packets for in-box moisture protection",
-   },
-   {
-     image: productDrybag3,
-     title: "DRY-BAG III",
-     subtitle: "Bentonite Clay",
-     description: "Industrial-grade desiccant available in multiple sizes",
-   },
- ];
- 
- const Products = () => {
-   return (
-     <section id="products" className="py-24 lg:py-32 bg-background moisture-bg moisture-bg-lg">
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import MoistureBackground from "./MoistureBackground";
+import productDunnage from "@/assets/product-dunnage.jpg";
+import productDrybag from "@/assets/product-drybag.jpg";
+import productSilica from "@/assets/product-silica.jpg";
+import productDrybag3 from "@/assets/product-drybag3.jpg";
+
+const products = [
+  {
+    image: productDunnage,
+    title: "Dunnage Bag",
+    subtitle: "Kraft Paper & PP Woven",
+    description: "Industrial air bags for cargo stabilization during transport",
+  },
+  {
+    image: productDrybag,
+    title: "DRY-BAG I",
+    subtitle: "Original Formula",
+    description: "Clay-based desiccant engineered for long ocean journeys",
+  },
+  {
+    image: productSilica,
+    title: "Silica Gel",
+    subtitle: "E-Commerce Ready",
+    description: "Premium silica gel packets for in-box moisture protection",
+  },
+  {
+    image: productDrybag3,
+    title: "DRY-BAG III",
+    subtitle: "Bentonite Clay",
+    description: "Industrial-grade desiccant available in multiple sizes",
+  },
+];
+
+const Products = () => {
+  return (
+    <MoistureBackground variant="large" className="bg-background">
+      <section id="products" className="py-24 lg:py-32">
        <div className="container mx-auto px-4 lg:px-8">
          {/* Header */}
          <div className="text-center max-w-3xl mx-auto mb-16">
@@ -100,9 +102,10 @@
              <ArrowRight className="ml-2 h-5 w-5" />
            </Button>
          </div>
-       </div>
-     </section>
-   );
- };
- 
- export default Products;
+        </div>
+      </section>
+    </MoistureBackground>
+  );
+};
+
+export default Products;
