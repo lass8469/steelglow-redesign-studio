@@ -1,30 +1,32 @@
- import { ArrowUpRight } from "lucide-react";
- 
- const footerLinks = {
-   products: [
-     { label: "DRY-BAG I", href: "#" },
-     { label: "DRY-BAG III", href: "#" },
-     { label: "Silica Gel", href: "#" },
-     { label: "Dunnage Bags", href: "#" },
-     { label: "Molecular Sieve", href: "#" },
-   ],
-   company: [
-     { label: "About Us", href: "#about" },
-     { label: "Industries", href: "#industries" },
-     { label: "Resources", href: "#" },
-     { label: "Contact", href: "#contact" },
-   ],
-   resources: [
-     { label: "Downloads", href: "#" },
-     { label: "FAQ", href: "#" },
-     { label: "Technical Specs", href: "#" },
-     { label: "Case Studies", href: "#" },
-   ],
- };
- 
- const Footer = () => {
-   return (
-     <footer className="bg-card border-t border-border moisture-bg">
+import { ArrowUpRight } from "lucide-react";
+import MoistureBackground from "./MoistureBackground";
+
+const footerLinks = {
+  products: [
+    { label: "DRY-BAG I", href: "#" },
+    { label: "DRY-BAG III", href: "#" },
+    { label: "Silica Gel", href: "#" },
+    { label: "Dunnage Bags", href: "#" },
+    { label: "Molecular Sieve", href: "#" },
+  ],
+  company: [
+    { label: "About Us", href: "#about" },
+    { label: "Industries", href: "#industries" },
+    { label: "Resources", href: "#" },
+    { label: "Contact", href: "#contact" },
+  ],
+  resources: [
+    { label: "Downloads", href: "#" },
+    { label: "FAQ", href: "#" },
+    { label: "Technical Specs", href: "#" },
+    { label: "Case Studies", href: "#" },
+  ],
+};
+
+const Footer = () => {
+  return (
+    <MoistureBackground variant="default" className="bg-card border-t border-border">
+      <footer className="relative z-10">
        <div className="container mx-auto px-4 lg:px-8 py-16">
          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
            {/* Brand */}
@@ -120,10 +122,11 @@
                Terms of Service
              </a>
            </div>
-         </div>
-       </div>
-     </footer>
-   );
- };
- 
- export default Footer;
+          </div>
+        </div>
+      </footer>
+    </MoistureBackground>
+  );
+};
+
+export default Footer;
