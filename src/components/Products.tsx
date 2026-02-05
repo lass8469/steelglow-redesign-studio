@@ -34,7 +34,7 @@
  
  const Products = () => {
    return (
-     <section id="products" className="py-24 lg:py-32 bg-background">
+     <section id="products" className="py-24 lg:py-32 bg-background moisture-bg moisture-bg-lg">
        <div className="container mx-auto px-4 lg:px-8">
          {/* Header */}
          <div className="text-center max-w-3xl mx-auto mb-16">

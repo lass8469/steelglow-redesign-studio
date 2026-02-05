@@ -24,7 +24,7 @@
  
  const Footer = () => {
    return (
-     <footer className="bg-card border-t border-border">
+     <footer className="bg-card border-t border-border moisture-bg">
        <div className="container mx-auto px-4 lg:px-8 py-16">
          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
            {/* Brand */}

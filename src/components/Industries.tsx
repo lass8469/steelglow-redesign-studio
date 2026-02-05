@@ -44,7 +44,7 @@
    const [activeIndustry, setActiveIndustry] = useState(industries[0]);
  
    return (
-     <section id="industries" className="py-24 lg:py-32 bg-secondary">
+     <section id="industries" className="py-24 lg:py-32 bg-secondary moisture-bg">
        <div className="container mx-auto px-4 lg:px-8">
          {/* Header */}
          <div className="text-center max-w-3xl mx-auto mb-16">
