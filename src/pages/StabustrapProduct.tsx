@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { Link } from "react-router-dom";
+import productStabustrap from "@/assets/product-stabustrap.png";
 
 const specifications = [
   { label: "Material", value: "Recyclable Strapping" },
@@ -76,9 +77,9 @@ const StabustrapProduct = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative aspect-square rounded-xl overflow-hidden bg-card border border-border">
                   <img
-                    src="/placeholder.svg"
+                    src={productStabustrap}
                     alt="Stabustrap Sustainable Strapping System"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6">
