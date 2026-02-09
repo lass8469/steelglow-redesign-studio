@@ -1,4 +1,5 @@
 import { ArrowLeft, Package, Thermometer, Usb, Check, ChevronRight } from "lucide-react";
+import productDatalogger from "@/assets/product-datalogger.png";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -76,9 +77,9 @@ const DataloggerProduct = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="relative aspect-square rounded-xl overflow-hidden bg-card border border-border">
                   <img
-                    src="/placeholder.svg"
+                    src={productDatalogger}
                     alt="Temperature & Humidity Datalogger"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6">
