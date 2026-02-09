@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
+import faqHero from "@/assets/faq-hero.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -36,7 +37,7 @@ const FAQPage = () => {
       <MoistureBackground variant="large" className="relative min-h-[40vh] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('/placeholder.svg')` }}
+          style={{ backgroundImage: `url(${faqHero})` }}
         />
         <div className="absolute inset-0 hero-overlay bg-gradient-to-r from-background via-background/80 to-transparent" />
         
