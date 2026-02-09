@@ -154,13 +154,6 @@ const Navbar = () => {
               {t("nav.applications")}
             </Link>
             <Link
-              to="/blog"
-              onClick={() => handleNavClick("/blog")}
-              className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
-            >
-              {t("nav.blog")}
-            </Link>
-            <Link
               to="/contact"
               onClick={() => handleNavClick("/contact")}
               className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
@@ -170,7 +163,18 @@ const Navbar = () => {
           </div>
 
           {/* CTA & Language */}
-          <div className="hidden lg:flex items-center gap-2">
+          <div className="hidden lg:flex items-center gap-3">
+            <Link
+              to="/blog"
+              onClick={() => handleNavClick("/blog")}
+              className="px-4 py-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors flex items-center gap-2 border border-primary/30 rounded-md hover:bg-primary/5"
+            >
+              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+              {t("nav.blog")}
+            </Link>
+            <div className="w-px h-6 bg-border" />
             <LanguageToggle />
             <Link to="/downloads">
               <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-foreground">
@@ -236,18 +240,22 @@ const Navbar = () => {
                 {t("nav.applications")}
               </Link>
               <Link
-                to="/blog"
-                className="block px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
-                onClick={() => setIsMobileOpen(false)}
-              >
-                {t("nav.blog")}
-              </Link>
-              <Link
                 to="/contact"
                 className="block px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
                 onClick={() => setIsMobileOpen(false)}
               >
                 {t("nav.contact")}
+              </Link>
+              <div className="my-2 border-t border-border" />
+              <Link
+                to="/blog"
+                className="flex items-center gap-2 px-4 py-3 text-primary font-semibold hover:bg-primary/10 rounded-lg transition-colors"
+                onClick={() => setIsMobileOpen(false)}
+              >
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                {t("nav.blog")}
               </Link>
               <Link
                 to="/faq"
