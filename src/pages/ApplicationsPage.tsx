@@ -65,14 +65,14 @@ const ApplicationsPage = () => {
       {/* Hero Section */}
       <MoistureBackground variant="large" className="relative min-h-[50vh] flex items-center justify-center w-full">
         <div 
-          className="absolute inset-0 w-full bg-cover bg-center"
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ 
             backgroundImage: `url(${applicationsHeroBg})`,
           }}
         />
-        <div className="absolute inset-0 w-full bg-gradient-to-b from-background/90 via-background/70 to-background" />
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-background/80 via-background/60 to-background" />
         
-        <div className="w-full h-full flex items-center justify-center px-4 md:px-6 relative z-10">
+        <div className="w-full h-full flex items-center justify-center px-4 md:px-6 relative z-10 pt-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
