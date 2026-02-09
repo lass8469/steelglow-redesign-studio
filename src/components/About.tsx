@@ -56,8 +56,8 @@ const About = () => {
  
             {/* Visual element */}
             <div className="relative">
-              <div className="aspect-square rounded-2xl p-8 lg:p-12 border border-border/30">
-                <div className="h-full rounded-xl border border-border/50 flex items-center justify-center">
+              <div className="aspect-square rounded-2xl p-8 lg:p-12">
+                <div className="h-full rounded-xl flex items-center justify-center">
                   <div className="text-center p-8">
                     <div className="text-8xl lg:text-9xl font-black text-gradient mb-4">45+</div>
                     <div className="text-xl lg:text-2xl font-semibold text-foreground">Years of Excellence</div>
