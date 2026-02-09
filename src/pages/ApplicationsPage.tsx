@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
+import applicationsHeroBg from "@/assets/applications-hero.jpg";
 
 const ApplicationsPage = () => {
   const industries = [
@@ -62,29 +63,32 @@ const ApplicationsPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <MoistureBackground variant="large" className="relative min-h-[60vh] flex items-center">
+      <MoistureBackground variant="large" className="relative min-h-[50vh] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: `url('/placeholder.svg')`,
+            backgroundImage: `url(${applicationsHeroBg})`,
           }}
         />
-        <div className="absolute inset-0 hero-overlay bg-gradient-to-r from-background via-background/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/70 to-background" />
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 pt-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-3xl"
+            className="max-w-3xl mx-auto text-center"
           >
+            <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest uppercase bg-primary/10 text-primary border border-primary/20 rounded-full">
+              Industry Solutions
+            </span>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Moisture Protection
               <span className="block text-gradient">For Every Industry</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               Discover how our industrial desiccants provide critical protection against moisture damage, 
-              corrosion, and spoilage, ensuring the integrity and quality of products across a wide range of sectors.
+              corrosion, and spoilage across a wide range of sectors.
             </p>
           </motion.div>
         </div>
