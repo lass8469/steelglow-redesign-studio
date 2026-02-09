@@ -60,7 +60,7 @@ const StabustrapProduct = () => {
         <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
           <Link to="/" className="hover:text-primary transition-colors">Home</Link>
           <ChevronRight className="h-4 w-4" />
-          <Link to="/cargo" className="hover:text-primary transition-colors">Cargo</Link>
+          <Link to="/products" className="hover:text-primary transition-colors">Products</Link>
           <ChevronRight className="h-4 w-4" />
           <span className="text-foreground">Stabustrap</span>
         </nav>
@@ -241,9 +241,9 @@ const StabustrapProduct = () => {
                 className="text-primary hover:text-primary hover:bg-primary/10"
                 asChild
               >
-                <Link to="/cargo">
+                <Link to="/products">
                   <ArrowLeft className="mr-2 h-5 w-5" />
-                  View All Cargo Products
+                  View All Products
                 </Link>
               </Button>
             </div>

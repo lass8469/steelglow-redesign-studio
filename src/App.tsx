@@ -24,6 +24,7 @@ import DownloadsPage from "./pages/DownloadsPage";
 import FAQPage from "./pages/FAQPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import NotFound from "./pages/NotFound";
+import ProductsPage from "./pages/ProductsPage";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/products" element={<ProductsPage />} />
             <Route path="/silica" element={<SilicaProduct />} />
             <Route path="/drybag-i" element={<DryBagIProduct />} />
             <Route path="/drybag-iii" element={<DryBagIIIProduct />} />
