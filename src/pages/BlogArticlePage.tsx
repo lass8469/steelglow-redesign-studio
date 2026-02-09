@@ -1,91 +1,130 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link, useParams } from "react-router-dom";
-import { Calendar, Clock, ArrowLeft, Share2 } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, Share2, User, Lightbulb } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { articles, ArticleSection } from "@/lib/blog-articles";
 
-const articles: Record<string, {
-  title: string;
-  date: string;
-  readTime: string;
-  category: string;
-  content: string;
-}> = {
-  "powdered-desiccants-guide": {
-    title: "The Complete Guide to Powdered Desiccants",
-    date: "2024-02-09",
-    readTime: "5 min read",
-    category: "Technical",
-    content: `
-## What Are Powdered Desiccants?
+// ============================================================
+// ARTICLE SECTION RENDERERS
+// ============================================================
 
-Powdered desiccants are finely ground hygroscopic materials designed to absorb moisture from the surrounding environment. Unlike their granular counterparts, powdered desiccants offer a significantly higher surface area-to-volume ratio, making them exceptionally efficient at moisture absorption.
-
-## Types of Powdered Desiccants
-
-### Silica Gel Powder
-Silica gel in powdered form is one of the most versatile desiccants available. It's chemically inert, non-toxic, and can absorb up to 40% of its weight in water vapor. This makes it ideal for:
-
-- Pharmaceutical packaging
-- Electronics protection
-- Food preservation
-- Document archiving
-
-### Calcium Chloride Powder
-Calcium chloride-based powdered desiccants are known for their aggressive moisture absorption capabilities. They can absorb moisture even at very low humidity levels and continue working until fully saturated.
-
-### Molecular Sieve Powder
-For applications requiring extremely low humidity levels, molecular sieve powder is the gold standard. With precise pore sizes, it selectively adsorbs water molecules while excluding larger molecules.
-
-## Applications in Cargo Protection
-
-### Container Shipping
-During ocean freight, containers experience significant temperature fluctuations. This causes "container rain" – condensation that forms on container walls and drips onto cargo. Powdered desiccants, when properly packaged, can prevent this phenomenon by maintaining low relative humidity inside the container.
-
-### Warehouse Storage
-Long-term storage presents unique challenges. Powdered desiccants integrated into packaging materials provide continuous protection against ambient humidity fluctuations.
-
-## Best Practices for Implementation
-
-1. **Calculate moisture load**: Determine the total moisture that needs to be absorbed based on cargo type, transit time, and route conditions.
-
-2. **Select appropriate quantity**: Use industry-standard calculations to determine the correct amount of desiccant required.
-
-3. **Proper placement**: Distribute desiccants evenly throughout the cargo space for optimal protection.
-
-4. **Monitor conditions**: Use data loggers to verify that humidity levels remain within acceptable ranges.
-
-## The DRY-BAG Advantage
-
-At DRY-BAG, we've been perfecting desiccant technology for over 45 years. Our powdered desiccant solutions are:
-
-- **Engineered for performance**: Optimized absorption rates for maritime and ground transport
-- **Sustainably produced**: Manufactured in Denmark with environmental responsibility
-- **Rigorously tested**: Every batch meets our stringent quality standards
-- **Application-specific**: Customized solutions for your unique cargo requirements
-
-## Conclusion
-
-Powdered desiccants represent a crucial tool in the cargo protection arsenal. Their high efficiency, versatility, and reliability make them indispensable for protecting valuable shipments from moisture damage.
-
-Contact our team to discuss how powdered desiccant solutions can protect your cargo.
-    `,
-  },
+const renderSection = (section: ArticleSection, index: number) => {
+  switch (section.type) {
+    case "heading":
+      return (
+        <h2 key={index} className="text-2xl lg:text-3xl font-bold text-foreground mt-12 mb-4">
+          {section.content}
+        </h2>
+      );
+    
+    case "subheading":
+      return (
+        <h3 key={index} className="text-xl font-semibold text-foreground mt-8 mb-3">
+          {section.content}
+        </h3>
+      );
+    
+    case "text":
+      return (
+        <p key={index} className="text-muted-foreground leading-relaxed mb-4">
+          {section.content}
+        </p>
+      );
+    
+    case "list":
+      return (
+        <ul key={index} className="space-y-2 mb-6 ml-6">
+          {section.items.map((item, i) => (
+            <li key={i} className="text-muted-foreground flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
+              {item}
+            </li>
+          ))}
+        </ul>
+      );
+    
+    case "numbered-list":
+      return (
+        <ol key={index} className="space-y-4 mb-6">
+          {section.items.map((item, i) => (
+            <li key={i} className="text-muted-foreground flex items-start gap-4">
+              <span className="w-8 h-8 rounded-full bg-primary/10 text-primary font-semibold flex items-center justify-center shrink-0 text-sm">
+                {i + 1}
+              </span>
+              <span className="pt-1">{item}</span>
+            </li>
+          ))}
+        </ol>
+      );
+    
+    case "image":
+      return (
+        <figure key={index} className="my-8">
+          <div className="aspect-video bg-accent/20 rounded-xl overflow-hidden border border-border">
+            <img 
+              src={section.src} 
+              alt={section.alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          {section.caption && (
+            <figcaption className="text-sm text-muted-foreground text-center mt-3 italic">
+              {section.caption}
+            </figcaption>
+          )}
+        </figure>
+      );
+    
+    case "callout":
+      return (
+        <div key={index} className="my-8 p-6 rounded-xl bg-primary/5 border border-primary/20">
+          <div className="flex items-start gap-4">
+            <div className="p-2 rounded-lg bg-primary/10">
+              <Lightbulb className="h-5 w-5 text-primary" />
+            </div>
+            <div>
+              <h4 className="font-semibold text-foreground mb-1">{section.title}</h4>
+              <p className="text-muted-foreground">{section.content}</p>
+            </div>
+          </div>
+        </div>
+      );
+    
+    case "quote":
+      return (
+        <blockquote key={index} className="my-8 pl-6 border-l-4 border-primary">
+          <p className="text-lg italic text-foreground mb-2">"{section.content}"</p>
+          {section.attribution && (
+            <cite className="text-sm text-muted-foreground not-italic">— {section.attribution}</cite>
+          )}
+        </blockquote>
+      );
+    
+    default:
+      return null;
+  }
 };
+
+// ============================================================
+// ARTICLE PAGE COMPONENT
+// ============================================================
 
 const BlogArticlePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? articles[slug] : null;
 
+  // 404 State
   if (!article) {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
         <div className="container mx-auto px-4 py-32 text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">Article Not Found</h1>
+          <p className="text-muted-foreground mb-6">The article you're looking for doesn't exist.</p>
           <Link to="/blog">
-            <Button>Back to Blog</Button>
+            <Button>Back to Cargo Intelligence</Button>
           </Link>
         </div>
         <Footer />
@@ -117,7 +156,13 @@ const BlogArticlePage = () => {
               {article.title}
             </h1>
             
-            <div className="flex items-center gap-6 text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-4 lg:gap-6 text-sm text-muted-foreground">
+              {article.author && (
+                <span className="flex items-center gap-2">
+                  <User className="h-4 w-4" />
+                  {article.author}
+                </span>
+              )}
               <span className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 {new Date(article.date).toLocaleDateString('en-US', { 
@@ -139,44 +184,64 @@ const BlogArticlePage = () => {
         </div>
       </section>
 
-      {/* Article Content */}
-      <section className="py-12">
+      {/* Hero Image */}
+      <section className="pb-8">
         <div className="container mx-auto px-4 lg:px-8">
-          <article className="max-w-3xl mx-auto prose prose-lg dark:prose-invert prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground">
-            {article.content.split('\n').map((paragraph, index) => {
-              if (paragraph.startsWith('## ')) {
-                return <h2 key={index} className="text-2xl font-bold mt-8 mb-4">{paragraph.replace('## ', '')}</h2>;
-              }
-              if (paragraph.startsWith('### ')) {
-                return <h3 key={index} className="text-xl font-semibold mt-6 mb-3">{paragraph.replace('### ', '')}</h3>;
-              }
-              if (paragraph.startsWith('- ')) {
-                return <li key={index} className="ml-6">{paragraph.replace('- ', '')}</li>;
-              }
-              if (paragraph.match(/^\d+\./)) {
-                return <li key={index} className="ml-6 list-decimal">{paragraph.replace(/^\d+\.\s*/, '')}</li>;
-              }
-              if (paragraph.trim()) {
-                return <p key={index} className="mb-4">{paragraph.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>;
-              }
-              return null;
-            })}
+          <div className="max-w-3xl mx-auto">
+            <div className="aspect-video bg-accent/20 rounded-xl overflow-hidden border border-border">
+              <img 
+                src={article.heroImage} 
+                alt={article.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Article Content */}
+      <section className="py-8">
+        <div className="container mx-auto px-4 lg:px-8">
+          <article className="max-w-3xl mx-auto">
+            {article.sections.map((section, index) => renderSection(section, index))}
           </article>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-accent/20">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-foreground mb-4">
-            Ready to Protect Your Cargo?
-          </h2>
-          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Contact our team of experts to discuss the best desiccant solutions for your specific needs.
-          </p>
-          <Link to="/contact">
-            <Button size="lg">Get a Quote</Button>
-          </Link>
+      {/* Article CTA */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/20 p-8 lg:p-12">
+              {/* Background decoration */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+              
+              <div className="relative z-10 text-center">
+                <h2 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
+                  {article.cta.heading}
+                </h2>
+                <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
+                  {article.cta.description}
+                </p>
+                <Link to={article.cta.buttonLink}>
+                  <Button size="lg" className="font-semibold px-8">
+                    {article.cta.buttonText}
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles Placeholder */}
+      <section className="py-12 border-t border-border">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-sm text-muted-foreground">
+              More articles coming soon to Cargo Intelligence
+            </p>
+          </div>
         </div>
       </section>
 
