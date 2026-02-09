@@ -20,6 +20,7 @@ import AboutPage from "./pages/AboutPage";
 import ApplicationsPage from "./pages/ApplicationsPage";
 import BlogPage from "./pages/BlogPage";
 import BlogArticlePage from "./pages/BlogArticlePage";
+import SocialProofPage from "./pages/SocialProofPage";
 
 import ContactPage from "./pages/ContactPage";
 import DownloadsPage from "./pages/DownloadsPage";
@@ -59,6 +60,7 @@ const App = () => (
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/downloads" element={<DownloadsPage />} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path="/testimonials" element={<SocialProofPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/dunnage-bags" element={<DunnageBagProduct />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
