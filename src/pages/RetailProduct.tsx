@@ -1,234 +1,255 @@
-import { motion } from "framer-motion";
-import { ArrowLeft, Home, Eye, RefreshCw, CheckCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ArrowLeft, Package, RefreshCw, Eye, Check, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
+
+const specifications = [
+  { label: "Material", value: "Moclay Formula" },
+  { label: "Absorption Duration", value: "Up to 90 days" },
+  { label: "Indicator", value: "Clear window visual" },
+  { label: "Operating Temperature", value: "-10°C to +50°C" },
+  { label: "Shelf Life", value: "24 months sealed" },
+  { label: "Certifications", value: "FDA Approved Materials" },
+];
+
+const sizes = [
+  { weight: "250g", description: "Small spaces, closets", popular: false },
+  { weight: "500g", description: "Boats, campers", popular: true },
+  { weight: "1kg", description: "Basements, garages", popular: false },
+  { weight: "Custom", description: "Tailored to your needs", popular: false },
+];
+
+const features = [
+  {
+    icon: Eye,
+    title: "Clear Window",
+    description: "Visual tracking of saturation levels for easy monitoring.",
+  },
+  {
+    icon: RefreshCw,
+    title: "Regenerable",
+    description: "Dry in oven to restore absorption capacity for multiple uses.",
+  },
+  {
+    icon: Package,
+    title: "Handmade",
+    description: "Individually crafted in Denmark for consistent performance.",
+  },
+];
+
+const applications = [
+  "Private Boats & Marine",
+  "Campers, RVs & Caravans",
+  "Basements & Sheds",
+  "Storage Closets",
+  "Gun Safes & Tool Storage",
+  "Household Protection",
+];
 
 const RetailProduct = () => {
-  const features = [
-    "Handmade in Denmark – individually crafted for consistent performance",
-    "Sustainable & eco-friendly – locally sourced materials",
-    "FDA-approved materials – safe for sensitive items",
-    "Clear window design – easy visual tracking of saturation",
-    "Breathable non-woven bags – optimized moisture capture",
-    "Proven Moclay formula – up to 90 days of continuous absorption",
-    "Drip-free at full saturation – clean and safe handling",
-    "Packaged airtight with zip-lock – sealed for freshness",
-    "Regenerable – dry in oven to restore capacity",
-    "Non-toxic & safe disposal – regular household waste",
-  ];
-
-  const applications = [
-    "Private boats and marine equipment",
-    "Campers, RVs, and caravans",
-    "Basements, sheds, and garages",
-    "Storage closets and cupboards",
-    "Household items sensitive to moisture",
-    "Gun safes and tool storage",
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      {/* Hero Section */}
-      <MoistureBackground variant="large" className="relative min-h-[60vh] flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `url('/placeholder.svg')`,
-          }}
-        />
-        <div className="absolute inset-0 hero-overlay bg-gradient-to-r from-background via-background/80 to-transparent" />
-        
-        <div className="container mx-auto px-4 md:px-6 relative z-10 pt-24">
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-8"
-          >
-            <Link 
-              to="/#products" 
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Back to Products</span>
-            </Link>
-          </motion.div>
+      {/* Breadcrumb */}
+      <div className="container mx-auto px-4 lg:px-8 pt-24 pb-4">
+        <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
+          <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+          <ChevronRight className="h-4 w-4" />
+          <Link to="/#products" className="hover:text-primary transition-colors">Products</Link>
+          <ChevronRight className="h-4 w-4" />
+          <span className="text-foreground">Retail Products</span>
+        </nav>
+      </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="max-w-3xl"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-sm mb-6">
-              <Home className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-medium">Consumer Products</span>
+      {/* Hero Section */}
+      <MoistureBackground variant="large" className="bg-background">
+        <section className="py-12 lg:py-20">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              {/* Product Image */}
+              <div className="relative group">
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative aspect-square rounded-xl overflow-hidden bg-card border border-border">
+                  <img
+                    src="/placeholder.svg"
+                    alt="DRY BAG Retail Consumer Products"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-6 left-6">
+                    <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-primary/90 text-primary-foreground rounded-full">
+                      Consumer Products
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Product Info */}
+              <div className="space-y-6">
+                <div>
+                  <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest uppercase bg-primary/10 text-primary border border-primary/20 rounded-full">
+                    Handmade in Denmark
+                  </span>
+                  <h1 className="text-4xl lg:text-5xl font-black tracking-tight mb-4">
+                    DRY BAG
+                    <span className="text-gradient"> Retail</span>
+                  </h1>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Crafted in Denmark using our proven Moclay formula. Offers reliable, 
+                    long-lasting moisture absorption with a convenient clear window to 
+                    monitor saturation—perfect for boats, campers, and home storage.
+                  </p>
+                </div>
+
+                {/* Features Grid */}
+                <div className="grid sm:grid-cols-3 gap-4 pt-4">
+                  {features.map((feature) => (
+                    <div key={feature.title} className="text-center p-4 rounded-lg bg-card/50 border border-border/50">
+                      <feature.icon className="h-8 w-8 text-primary mx-auto mb-2" />
+                      <h3 className="font-semibold text-sm text-foreground">{feature.title}</h3>
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 pt-6">
+                  <Button
+                    size="lg"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 glow-orange"
+                  >
+                    Order Now
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-border hover:bg-accent"
+                  >
+                    Find Retailer
+                  </Button>
+                </div>
+              </div>
             </div>
-            
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              DRY BAG
-              <span className="block text-gradient">Retail</span>
-            </h1>
-            
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Crafted in Denmark using our proven Moclay formula. Offers reliable, long-lasting 
-              moisture absorption with a convenient clear window to monitor saturation—perfect for 
-              protecting boats, campers, basements, and more.
-            </p>
-          </motion.div>
-        </div>
+          </div>
+        </section>
       </MoistureBackground>
 
-      {/* Product Details */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4 md:px-6">
-          <Tabs defaultValue="features" className="w-full">
-            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-3 mb-12">
-              <TabsTrigger value="features" className="text-sm md:text-base">Key Features</TabsTrigger>
-              <TabsTrigger value="how-it-works" className="text-sm md:text-base">How It Works</TabsTrigger>
-              <TabsTrigger value="applications" className="text-sm md:text-base">Applications</TabsTrigger>
+      {/* Tabs Section */}
+      <section className="py-16 lg:py-24 bg-card/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <Tabs defaultValue="specifications" className="w-full">
+            <TabsList className="w-full max-w-lg mx-auto grid grid-cols-3 bg-card border border-border h-12">
+              <TabsTrigger value="specifications" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                Specifications
+              </TabsTrigger>
+              <TabsTrigger value="sizes" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                Sizes
+              </TabsTrigger>
+              <TabsTrigger value="applications" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                Applications
+              </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="features">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="grid md:grid-cols-2 gap-8"
-              >
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4 p-4 bg-card rounded-sm border border-border">
-                    <Eye className="w-8 h-8 text-primary flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-2">Clear Window Monitoring</h3>
-                      <p className="text-muted-foreground text-sm">
-                        Unique clear window design allows you to easily track moisture saturation 
-                        levels. Know exactly when it's time to regenerate or replace.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4 p-4 bg-card rounded-sm border border-border">
-                    <RefreshCw className="w-8 h-8 text-primary flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-2">Regenerable & Reusable</h3>
-                      <p className="text-muted-foreground text-sm">
-                        Simply dry the contents in an oven to restore absorption capacity. 
-                        Extend product life and reduce waste with multiple uses.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-card p-6 rounded-sm border border-border">
-                  <h3 className="font-semibold text-foreground mb-4">All Features</h3>
-                  <ul className="space-y-3">
-                    {features.map((feature, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground text-sm">{feature}</span>
-                      </li>
+            <TabsContent value="specifications" className="mt-8">
+              <Card className="bg-card/50 border-border">
+                <CardContent className="p-6 lg:p-8">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {specifications.map((spec) => (
+                      <div
+                        key={spec.label}
+                        className="flex justify-between items-center py-3 px-4 rounded-lg bg-background/50 border border-border/50"
+                      >
+                        <span className="text-muted-foreground">{spec.label}</span>
+                        <span className="font-semibold text-foreground">{spec.value}</span>
+                      </div>
                     ))}
-                  </ul>
-                </div>
-              </motion.div>
+                  </div>
+                </CardContent>
+              </Card>
             </TabsContent>
 
-            <TabsContent value="how-it-works">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="max-w-3xl mx-auto"
-              >
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div className="text-center p-6 bg-card rounded-sm border border-border">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl font-bold text-primary">1</span>
-                    </div>
-                    <h3 className="font-semibold text-foreground mb-2">Place</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Remove from airtight packaging and place in your boat, camper, or storage area.
-                    </p>
-                  </div>
-
-                  <div className="text-center p-6 bg-card rounded-sm border border-border">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl font-bold text-primary">2</span>
-                    </div>
-                    <h3 className="font-semibold text-foreground mb-2">Monitor</h3>
-                    <p className="text-muted-foreground text-sm">
-                      Watch the clear window to track moisture absorption over up to 90 days.
-                    </p>
-                  </div>
-
-                  <div className="text-center p-6 bg-card rounded-sm border border-border">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl font-bold text-primary">3</span>
-                    </div>
-                    <h3 className="font-semibold text-foreground mb-2">Regenerate</h3>
-                    <p className="text-muted-foreground text-sm">
-                      When saturated, simply dry in an oven to restore full absorption capacity.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-12 p-6 bg-primary/5 border border-primary/20 rounded-sm text-center">
-                  <p className="text-lg text-foreground font-medium">
-                    Up to <span className="text-primary">90 days</span> of continuous moisture protection
-                  </p>
-                  <p className="text-muted-foreground mt-2">Set it and forget it – then regenerate for extended use</p>
-                </div>
-              </motion.div>
-            </TabsContent>
-
-            <TabsContent value="applications">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-              >
-                {applications.map((application, index) => (
-                  <div 
-                    key={index}
-                    className="p-4 bg-card rounded-sm border border-border hover:border-primary/50 transition-colors"
+            <TabsContent value="sizes" className="mt-8">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {sizes.map((size) => (
+                  <Card
+                    key={size.weight}
+                    className={`bg-card/50 border-border transition-all duration-300 hover:border-primary/50 hover:shadow-lg ${
+                      size.popular ? "ring-2 ring-primary/50" : ""
+                    }`}
                   >
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-foreground">{application}</span>
-                    </div>
-                  </div>
+                    <CardContent className="p-6 text-center relative">
+                      {size.popular && (
+                        <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-semibold bg-primary text-primary-foreground rounded-full">
+                          Most Popular
+                        </span>
+                      )}
+                      <h3 className="text-3xl font-black text-foreground mb-2">{size.weight}</h3>
+                      <p className="text-sm text-muted-foreground">{size.description}</p>
+                    </CardContent>
+                  </Card>
                 ))}
-              </motion.div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="applications" className="mt-8">
+              <Card className="bg-card/50 border-border">
+                <CardContent className="p-6 lg:p-8">
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {applications.map((app) => (
+                      <div
+                        key={app}
+                        className="flex items-center gap-3 py-3 px-4 rounded-lg bg-background/50 border border-border/50"
+                      >
+                        <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                        <span className="text-foreground">{app}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             </TabsContent>
           </Tabs>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Take Control of Moisture
-          </h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Enjoy set-and-forget moisture protection that's easy to monitor and reusable. 
-            Order your DRY BAG Retail today to keep your valuables dry and safe.
-          </p>
-          <Link 
-            to="/contact"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors"
-          >
-            Order Now
-          </Link>
-        </div>
-      </section>
+      <MoistureBackground className="bg-background">
+        <section className="py-16 lg:py-24">
+          <div className="container mx-auto px-4 lg:px-8 text-center">
+            <h2 className="text-3xl lg:text-4xl font-black tracking-tight mb-4">
+              Take Control of
+              <span className="text-gradient"> Moisture?</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+              Enjoy set-and-forget moisture protection that's easy to monitor and reusable. 
+              Order your DRY BAG Retail today.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
+              >
+                Order Now
+              </Button>
+              <Button
+                size="lg"
+                variant="ghost"
+                className="text-primary hover:text-primary hover:bg-primary/10"
+                asChild
+              >
+                <Link to="/#products">
+                  <ArrowLeft className="mr-2 h-5 w-5" />
+                  View All Products
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      </MoistureBackground>
 
       <Footer />
     </div>
