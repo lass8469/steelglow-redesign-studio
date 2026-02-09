@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Star, Quote, Play, Award } from "lucide-react";
+import { Star, Quote, Play, Award, Anchor, Ship, Factory, Truck, Box, Globe } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -10,12 +10,12 @@ const SocialProofPage = () => {
 
   // Placeholder logos - replace with actual company logos
   const trustedLogos = [
-    { name: "Company 1", placeholder: "LOGO" },
-    { name: "Company 2", placeholder: "LOGO" },
-    { name: "Company 3", placeholder: "LOGO" },
-    { name: "Company 4", placeholder: "LOGO" },
-    { name: "Company 5", placeholder: "LOGO" },
-    { name: "Company 6", placeholder: "LOGO" },
+    { name: "Nordic Freight", icon: Ship, accent: true },
+    { name: "CargoMax", icon: Box, accent: false },
+    { name: "SteelWorks Int.", icon: Factory, accent: true },
+    { name: "OceanLine", icon: Anchor, accent: false },
+    { name: "TransGlobal", icon: Globe, accent: true },
+    { name: "LogiTrans", icon: Truck, accent: false },
   ];
 
   const textReviews = [
@@ -118,20 +118,24 @@ const SocialProofPage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center"
           >
-            {trustedLogos.map((logo, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="flex items-center justify-center h-16 px-6 bg-card/50 border border-border/50 rounded-sm hover:border-primary/30 transition-colors group"
-              >
-                <span className="text-muted-foreground group-hover:text-foreground transition-colors font-medium text-sm">
-                  {logo.placeholder}
-                </span>
-              </motion.div>
-            ))}
+            {trustedLogos.map((logo, index) => {
+              const IconComponent = logo.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="flex items-center justify-center gap-2 h-20 px-4 bg-card/50 border border-border/50 rounded-sm hover:border-primary/30 transition-all group hover:bg-card/80"
+                >
+                  <IconComponent className={`w-5 h-5 ${logo.accent ? 'text-primary' : 'text-muted-foreground'} group-hover:text-primary transition-colors`} />
+                  <span className={`font-bold text-sm tracking-tight ${logo.accent ? 'text-foreground' : 'text-muted-foreground'} group-hover:text-foreground transition-colors`}>
+                    {logo.name}
+                  </span>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </section>
