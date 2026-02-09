@@ -13,14 +13,14 @@ const products = [
     title: "Dunnage Bag",
     subtitle: "Kraft Paper & PP Woven",
     description: "Industrial air bags for cargo stabilization during transport",
-    link: null,
+    link: "/dunnage-bag",
   },
   {
     image: productDrybag,
     title: "DRY-BAG I",
     subtitle: "Original Formula",
     description: "Clay-based desiccant engineered for long ocean journeys",
-    link: null,
+    link: "/drybag-i",
   },
   {
     image: productSilica,
@@ -34,7 +34,7 @@ const products = [
     title: "DRY-BAG III",
     subtitle: "Bentonite Clay",
     description: "Industrial-grade desiccant available in multiple sizes",
-    link: null,
+    link: "/drybag-iii",
   },
 ];
 
