@@ -18,7 +18,7 @@ import StabustrapProduct from "./pages/StabustrapProduct";
 import DataloggerProduct from "./pages/DataloggerProduct";
 import AboutPage from "./pages/AboutPage";
 import ApplicationsPage from "./pages/ApplicationsPage";
-import CargoPage from "./pages/CargoPage";
+
 import ContactPage from "./pages/ContactPage";
 import DownloadsPage from "./pages/DownloadsPage";
 import FAQPage from "./pages/FAQPage";
@@ -51,7 +51,7 @@ const App = () => (
             <Route path="/datalogger" element={<DataloggerProduct />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/applications" element={<ApplicationsPage />} />
-            <Route path="/cargo" element={<CargoPage />} />
+            
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/downloads" element={<DownloadsPage />} />
             <Route path="/faq" element={<FAQPage />} />
