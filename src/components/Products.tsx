@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import MoistureBackground from "./MoistureBackground";
 import productDunnage from "@/assets/product-dunnage.jpg";
 import productDrybag from "@/assets/product-drybag.jpg";
@@ -12,24 +13,28 @@ const products = [
     title: "Dunnage Bag",
     subtitle: "Kraft Paper & PP Woven",
     description: "Industrial air bags for cargo stabilization during transport",
+    link: null,
   },
   {
     image: productDrybag,
     title: "DRY-BAG I",
     subtitle: "Original Formula",
     description: "Clay-based desiccant engineered for long ocean journeys",
+    link: null,
   },
   {
     image: productSilica,
     title: "Silica Gel",
     subtitle: "E-Commerce Ready",
     description: "Premium silica gel packets for in-box moisture protection",
+    link: "/silica",
   },
   {
     image: productDrybag3,
     title: "DRY-BAG III",
     subtitle: "Bentonite Clay",
     description: "Industrial-grade desiccant available in multiple sizes",
+    link: null,
   },
 ];
 
@@ -79,14 +84,28 @@ const Products = () => {
                  <p className="text-sm text-muted-foreground mb-4">
                    {product.description}
                  </p>
-                 <Button
-                   variant="ghost"
-                   size="sm"
-                   className="text-primary hover:text-primary hover:bg-primary/10 -ml-3 group/btn"
-                 >
-                   Learn More
-                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                 </Button>
+                  {product.link ? (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="text-primary hover:text-primary hover:bg-primary/10 -ml-3 group/btn"
+                      asChild
+                    >
+                      <Link to={product.link}>
+                        Learn More
+                        <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                      </Link>
+                    </Button>
+                  ) : (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="text-primary hover:text-primary hover:bg-primary/10 -ml-3 group/btn"
+                    >
+                      Learn More
+                      <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                    </Button>
+                  )}
                </div>
              </div>
            ))}
