@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import SilicaProduct from "./pages/SilicaProduct";
 import DryBagIProduct from "./pages/DryBagIProduct";
@@ -28,36 +29,38 @@ const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/silica" element={<SilicaProduct />} />
-          <Route path="/drybag-i" element={<DryBagIProduct />} />
-          <Route path="/drybag-iii" element={<DryBagIIIProduct />} />
-          <Route path="/dunnage-bag" element={<DunnageBagProduct />} />
-          <Route path="/molecular-sieve" element={<MolecularSieveProduct />} />
-          <Route path="/calcium-chloride" element={<CalciumChlorideProduct />} />
-          <Route path="/retail" element={<RetailProduct />} />
-          <Route path="/edge-protectors" element={<EdgeProtectorsProduct />} />
-          <Route path="/anti-slip" element={<AntiSlipProduct />} />
-          <Route path="/stabustrap" element={<StabustrapProduct />} />
-          <Route path="/datalogger" element={<DataloggerProduct />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/applications" element={<ApplicationsPage />} />
-          <Route path="/cargo" element={<CargoPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/downloads" element={<DownloadsPage />} />
-          <Route path="/faq" element={<FAQPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-          <Route path="/dunnage-bags" element={<DunnageBagProduct />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+    <LanguageProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/silica" element={<SilicaProduct />} />
+            <Route path="/drybag-i" element={<DryBagIProduct />} />
+            <Route path="/drybag-iii" element={<DryBagIIIProduct />} />
+            <Route path="/dunnage-bag" element={<DunnageBagProduct />} />
+            <Route path="/molecular-sieve" element={<MolecularSieveProduct />} />
+            <Route path="/calcium-chloride" element={<CalciumChlorideProduct />} />
+            <Route path="/retail" element={<RetailProduct />} />
+            <Route path="/edge-protectors" element={<EdgeProtectorsProduct />} />
+            <Route path="/anti-slip" element={<AntiSlipProduct />} />
+            <Route path="/stabustrap" element={<StabustrapProduct />} />
+            <Route path="/datalogger" element={<DataloggerProduct />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/applications" element={<ApplicationsPage />} />
+            <Route path="/cargo" element={<CargoPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/downloads" element={<DownloadsPage />} />
+            <Route path="/faq" element={<FAQPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/dunnage-bags" element={<DunnageBagProduct />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </LanguageProvider>
   </QueryClientProvider>
 );
 
