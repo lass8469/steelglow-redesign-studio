@@ -27,7 +27,7 @@
            <h1 className="animate-fade-in-up delay-100 text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-tight mb-6">
              YOUR PARTNER IN
              <br />
-             <span className="text-gradient">MOISTURE CONTROL</span>
+             <span className="bg-gradient-to-r from-[#8B2D2D] via-[#D4652F] to-[#F5B82E] bg-clip-text text-transparent">MOISTURE CONTROL</span>
              <br />
              & CARGO SAFETY
            </h1>
