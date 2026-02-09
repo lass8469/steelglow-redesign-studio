@@ -18,6 +18,7 @@ import productEdgeProtectors from "@/assets/product-edge-protectors.jpg";
 import productStabustrap from "@/assets/product-stabustrap.png";
 import productMolecularSieve from "@/assets/product-molecular-sieve.png";
 import productDatalogger from "@/assets/product-datalogger.png";
+import productCalciumChloride from "@/assets/product-calcium-chloride.jpg";
 
 const desiccantProducts = [
   {
@@ -49,7 +50,7 @@ const desiccantProducts = [
     link: "/molecular-sieve",
   },
   {
-    image: "/placeholder.svg",
+    image: productCalciumChloride,
     title: "Calcium Chloride",
     subtitle: "High Capacity",
     description: "Absorbs 3X more moisture than standard silica gel for long ocean voyages.",
