@@ -1,53 +1,56 @@
 import { motion } from "framer-motion";
-import { Award, Leaf, Shield, Users, Globe, CheckCircle } from "lucide-react";
+import { Award, Leaf, Shield, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 import aboutHeroBg from "@/assets/about-hero.jpg";
 
 const AboutPage = () => {
+  const { t } = useLanguage();
+
   const stats = [
-    { value: "45+", label: "years protecting cargo globally" },
-    { value: "20K+", label: "satisfied customers since 1979" },
-    { value: "100+", label: "countries where we safeguard cargo" },
+    { value: "45+", label: t("aboutPage.stat1") },
+    { value: "20K+", label: t("aboutPage.stat2") },
+    { value: "100+", label: t("aboutPage.stat3") },
   ];
 
   const values = [
     {
       icon: Leaf,
-      title: "Sustainable Solutions",
-      description: "Our products are designed with environmental stewardship in mind. We use eco-friendly materials and sustainable processes to deliver effective moisture control without compromising your company's green initiatives."
+      title: t("aboutPage.value1.title"),
+      description: t("aboutPage.value1.desc"),
     },
     {
       icon: Award,
-      title: "Innovative Technology",
-      description: "We leverage cutting-edge technology and continuous research to develop solutions that are at the forefront of the industry. Our commitment to innovation ensures your products are protected by the most advanced moisture control available."
+      title: t("aboutPage.value2.title"),
+      description: t("aboutPage.value2.desc"),
     },
     {
       icon: Shield,
-      title: "Guaranteed Product Integrity",
-      description: "With over four decades of experience, we know how to safeguard your goods. We provide reliable, customized solutions that consistently exceed expectations, giving you peace of mind that your products will arrive in perfect condition."
-    }
+      title: t("aboutPage.value3.title"),
+      description: t("aboutPage.value3.desc"),
+    },
   ];
 
   const offerings = [
     {
-      title: "Custom-Engineered Solutions",
-      description: "We start by understanding your unique challenges to build a moisture control strategy that works specifically for you. This means less wasted product and more peace of mind."
+      title: t("aboutPage.offer1.title"),
+      description: t("aboutPage.offer1.desc"),
     },
     {
-      title: "Proven Performance",
-      description: "Our products are backed by over 40 years of expertise and a commitment to quality. You can trust that our solutions will perform reliably, protecting your goods and your bottom line."
+      title: t("aboutPage.offer2.title"),
+      description: t("aboutPage.offer2.desc"),
     },
     {
-      title: "Long-Term Sustainability",
-      description: "We're dedicated to responsible and sustainable practices. Our solutions are designed for efficiency and long-term performance, helping you reduce waste and minimize your environmental impact."
+      title: t("aboutPage.offer3.title"),
+      description: t("aboutPage.offer3.desc"),
     },
     {
-      title: "Expert Support",
-      description: "We're more than just a provider; we're your partner. Our team of experts is here to provide guidance and support every step of the way, ensuring your products are protected no matter where they go."
-    }
+      title: t("aboutPage.offer4.title"),
+      description: t("aboutPage.offer4.desc"),
+    },
   ];
 
   return (
@@ -58,9 +61,7 @@ const AboutPage = () => {
       <MoistureBackground variant="large" className="relative min-h-[50vh] flex items-center justify-center w-full">
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{ 
-            backgroundImage: `url(${aboutHeroBg})`,
-          }}
+          style={{ backgroundImage: `url(${aboutHeroBg})` }}
         />
         <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-background/80 via-background/60 to-background" />
         
@@ -72,15 +73,14 @@ const AboutPage = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest uppercase bg-primary/10 text-primary border border-primary/20 rounded-full">
-              About Us
+              {t("aboutPage.badge")}
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Our job is to make
-              <span className="block text-gradient">your job easier.</span>
+              {t("aboutPage.title1")}
+              <span className="block text-gradient">{t("aboutPage.title2")}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              That means making sure your products arrive in perfect condition. With four decades 
-              of experience, we've learned that every shipment has its own challenges.
+              {t("aboutPage.description")}
             </p>
           </motion.div>
         </div>
@@ -97,17 +97,13 @@ const AboutPage = () => {
             className="max-w-4xl mx-auto text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Four Decades of Expertise
+              {t("aboutPage.decadesTitle")}
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Our mission, since 1979, has been to reliably and responsibly protect products from moisture. 
-              We offer custom moisture control solutions designed to safeguard your goods, focusing on 
-              long-term performance and sustainability.
+              {t("aboutPage.decadesDesc1")}
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mt-4">
-              As a manufacturer with in-house production, we have direct control over the entire process. 
-              This allows us to ensure every product meets our rigorous quality standards while providing 
-              you with the most competitive prices on the market.
+              {t("aboutPage.decadesDesc2")}
             </p>
           </motion.div>
 
@@ -142,7 +138,7 @@ const AboutPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              What We Offer You
+              {t("aboutPage.offerTitle")}
             </h2>
           </motion.div>
 
@@ -178,7 +174,7 @@ const AboutPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Our Impact in Numbers
+              {t("aboutPage.statsTitle")}
             </h2>
           </motion.div>
 
@@ -210,17 +206,16 @@ const AboutPage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Ready to Learn More?
+              {t("aboutPage.ctaTitle")}
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              We're always happy to discuss how Dry-Bag can meet your specific needs. 
-              Reach out to our team today.
+              {t("aboutPage.ctaDesc")}
             </p>
             <Link 
               to="/contact"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors"
             >
-              Contact Our Experts
+              {t("aboutPage.ctaButton")}
             </Link>
           </motion.div>
         </div>

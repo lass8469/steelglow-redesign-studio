@@ -107,12 +107,12 @@ const Navbar = () => {
               <DropdownMenuContent align="start" className="w-56 bg-popover border-border">
                 <DropdownMenuItem asChild>
                   <Link to="/products" className="cursor-pointer font-semibold text-primary">
-                    View All Products
+                    {t("nav.viewAllProducts")}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
-                  Desiccants
+                  {t("nav.desiccants")}
                 </DropdownMenuLabel>
                 {desiccantProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
@@ -123,7 +123,7 @@ const Navbar = () => {
                 ))}
                 <DropdownMenuSeparator />
                 <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
-                  Cargo Protection
+                  {t("nav.cargoProtection")}
                 </DropdownMenuLabel>
                 {cargoProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
@@ -134,7 +134,7 @@ const Navbar = () => {
                 ))}
                 <DropdownMenuSeparator />
                 <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
-                  Other Products
+                  {t("nav.otherProducts")}
                 </DropdownMenuLabel>
                 {otherProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>

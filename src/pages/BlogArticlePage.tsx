@@ -5,10 +5,7 @@ import { Calendar, Clock, ArrowLeft, Share2, User, Lightbulb } from "lucide-reac
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { articles, ArticleSection } from "@/lib/blog-articles";
-
-// ============================================================
-// ARTICLE SECTION RENDERERS
-// ============================================================
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const renderSection = (section: ArticleSection, index: number) => {
   switch (section.type) {
@@ -107,24 +104,20 @@ const renderSection = (section: ArticleSection, index: number) => {
   }
 };
 
-// ============================================================
-// ARTICLE PAGE COMPONENT
-// ============================================================
-
 const BlogArticlePage = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { t, language } = useLanguage();
   const article = slug ? articles[slug] : null;
 
-  // 404 State
   if (!article) {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
         <div className="container mx-auto px-4 py-32 text-center">
-          <h1 className="text-2xl font-bold text-foreground mb-4">Article Not Found</h1>
-          <p className="text-muted-foreground mb-6">The article you're looking for doesn't exist.</p>
+          <h1 className="text-2xl font-bold text-foreground mb-4">{t("blogPage.articleNotFound")}</h1>
+          <p className="text-muted-foreground mb-6">{t("blogPage.articleNotFoundDesc")}</p>
           <Link to="/blog">
-            <Button>Back to Cargo Intelligence</Button>
+            <Button>{t("blogPage.backButton")}</Button>
           </Link>
         </div>
         <Footer />
@@ -145,7 +138,7 @@ const BlogArticlePage = () => {
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6"
             >
               <ArrowLeft className="h-4 w-4" />
-              Back to Cargo Intelligence
+              {t("blogPage.backToBlog")}
             </Link>
             
             <Badge variant="secondary" className="mb-4">
@@ -165,7 +158,7 @@ const BlogArticlePage = () => {
               )}
               <span className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                {new Date(article.date).toLocaleDateString('en-US', { 
+                {new Date(article.date).toLocaleDateString(language === 'da' ? 'da-DK' : 'en-US', { 
                   month: 'long', 
                   day: 'numeric', 
                   year: 'numeric' 
@@ -177,7 +170,7 @@ const BlogArticlePage = () => {
               </span>
               <Button variant="ghost" size="sm" className="ml-auto">
                 <Share2 className="h-4 w-4 mr-2" />
-                Share
+                {t("blogPage.share")}
               </Button>
             </div>
           </div>
@@ -213,7 +206,6 @@ const BlogArticlePage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border border-primary/20 p-8 lg:p-12">
-              {/* Background decoration */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
               
               <div className="relative z-10 text-center">
@@ -239,7 +231,7 @@ const BlogArticlePage = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-sm text-muted-foreground">
-              More articles coming soon to Cargo Intelligence
+              {t("blogPage.moreArticles")}
             </p>
           </div>
         </div>
