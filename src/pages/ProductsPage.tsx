@@ -15,6 +15,7 @@ import productSilicaGel from "@/assets/product-silica-gel.jpg";
 import productAntislip from "@/assets/product-antislip.jpg";
 import productRetail from "@/assets/product-retail.jpg";
 import productEdgeProtectors from "@/assets/product-edge-protectors.jpg";
+import productStabustrap from "@/assets/product-stabustrap.png";
 
 const desiccantProducts = [
   {
@@ -77,7 +78,7 @@ const cargoProducts = [
     link: "/anti-slip",
   },
   {
-    image: "/placeholder.svg",
+    image: productStabustrap,
     title: "Stabustrap",
     subtitle: "Reusable Strapping",
     description: "Eco-friendly, reusable pallet strapping that replaces single-use plastic wrap.",
