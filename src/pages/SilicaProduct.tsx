@@ -63,7 +63,7 @@ const SilicaProduct = () => {
         <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
           <Link to="/" className="hover:text-primary transition-colors">Home</Link>
           <ChevronRight className="h-4 w-4" />
-          <Link to="/#products" className="hover:text-primary transition-colors">Products</Link>
+          <Link to="/products" className="hover:text-primary transition-colors">Products</Link>
           <ChevronRight className="h-4 w-4" />
           <span className="text-foreground">Silica Gel</span>
         </nav>
@@ -245,7 +245,7 @@ const SilicaProduct = () => {
                 className="text-primary hover:text-primary hover:bg-primary/10"
                 asChild
               >
-                <Link to="/#products">
+                <Link to="/products">
                   <ArrowLeft className="mr-2 h-5 w-5" />
                   View All Products
                 </Link>
