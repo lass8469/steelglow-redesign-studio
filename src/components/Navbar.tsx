@@ -154,6 +154,13 @@ const Navbar = () => {
               {t("nav.applications")}
             </Link>
             <Link
+              to="/blog"
+              onClick={() => handleNavClick("/blog")}
+              className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
+            >
+              {t("nav.blog")}
+            </Link>
+            <Link
               to="/contact"
               onClick={() => handleNavClick("/contact")}
               className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
@@ -227,6 +234,13 @@ const Navbar = () => {
                 onClick={() => setIsMobileOpen(false)}
               >
                 {t("nav.applications")}
+              </Link>
+              <Link
+                to="/blog"
+                className="block px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
+                onClick={() => setIsMobileOpen(false)}
+              >
+                {t("nav.blog")}
               </Link>
               <Link
                 to="/contact"
