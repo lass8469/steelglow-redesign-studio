@@ -94,16 +94,19 @@ const Products = () => {
             ))}
           </div>
  
-         {/* CTA */}
-         <div className="text-center mt-12">
-           <Button
-             size="lg"
-             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
-           >
-             View All Products
-             <ArrowRight className="ml-2 h-5 w-5" />
-           </Button>
-         </div>
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
+              asChild
+            >
+              <Link to="/products">
+                View All Products
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
     </MoistureBackground>

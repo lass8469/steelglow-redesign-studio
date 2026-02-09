@@ -105,6 +105,12 @@ const Navbar = () => {
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-56 bg-popover border-border">
+                <DropdownMenuItem asChild>
+                  <Link to="/products" className="cursor-pointer font-semibold text-primary">
+                    View All Products
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
                 <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
                   Desiccants
                 </DropdownMenuLabel>
