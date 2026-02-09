@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
+import logo from "@/assets/logo.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -84,16 +85,8 @@ const Navbar = () => {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="relative">
-              <span className="text-2xl lg:text-3xl font-black tracking-tighter text-foreground">
-                DRY
-                <span className="text-primary">BAG</span>
-              </span>
-              <span className="absolute -bottom-1 left-0 text-[8px] tracking-widest text-muted-foreground uppercase">
-                Desiccant Systems
-              </span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Desiccant" className="h-8 lg:h-10 w-auto" />
           </Link>
 
           {/* Desktop nav */}

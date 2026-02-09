@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import MoistureBackground from "./MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -35,12 +36,7 @@ const Footer = () => {
             {/* Brand */}
             <div className="lg:col-span-2">
               <div className="mb-6">
-                <span className="text-2xl font-black tracking-tighter text-foreground">
-                  DRY<span className="text-primary">BAG</span>
-                </span>
-                <span className="block text-xs tracking-widest text-muted-foreground uppercase mt-1">
-                  Desiccant Systems
-                </span>
+                <img src={logo} alt="Desiccant" className="h-10 w-auto" />
               </div>
               <p className="text-muted-foreground max-w-sm mb-6">
                 {t("footer.tagline")}
