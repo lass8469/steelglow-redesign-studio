@@ -106,7 +106,7 @@ const SocialProofPage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-widest mb-2">
+            <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground uppercase tracking-widest mb-4">
               {t("socialProof.trustedBy")}
             </h2>
           </motion.div>
