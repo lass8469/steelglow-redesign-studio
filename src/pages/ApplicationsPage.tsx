@@ -7,55 +7,58 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
+import { useLanguage } from "@/contexts/LanguageContext";
 import applicationsHeroBg from "@/assets/applications-hero.jpg";
 
 const ApplicationsPage = () => {
+  const { t } = useLanguage();
+
   const industries = [
     {
       icon: Pill,
-      title: "Pharmaceutical",
-      description: "Moisture can degrade active ingredients and shorten shelf life. Our desiccants protect the chemical integrity and efficacy of drugs, tablets, and powders."
+      title: t("applicationsPage.pharmaceutical.title"),
+      description: t("applicationsPage.pharmaceutical.desc"),
     },
     {
       icon: Cpu,
-      title: "Electronics & Semiconductors",
-      description: "Moisture is a leading cause of corrosion and short circuits. Our desiccants safeguard sensitive components like circuit boards and microchips during storage and transit."
+      title: t("applicationsPage.electronics.title"),
+      description: t("applicationsPage.electronics.desc"),
     },
     {
       icon: Apple,
-      title: "Food & Beverage",
-      description: "Prevent clumping, spoilage, and microbial growth in dry foods. Our food-grade desiccants maintain freshness and extend the shelf life of your products."
+      title: t("applicationsPage.food.title"),
+      description: t("applicationsPage.food.desc"),
     },
     {
       icon: Truck,
-      title: "Logistics & Shipping",
-      description: "Protect cargo from \"container rain\" and moisture damage during global transport. Our desiccants ensure goods arrive in pristine condition, regardless of climate changes."
+      title: t("applicationsPage.logistics.title"),
+      description: t("applicationsPage.logistics.desc"),
     },
     {
       icon: Car,
-      title: "Automotive",
-      description: "Prevent corrosion and malfunction in sensitive automotive electronics and precision metal parts. Our solutions keep components dry during storage and transport."
+      title: t("applicationsPage.automotive.title"),
+      description: t("applicationsPage.automotive.desc"),
     },
     {
       icon: Shield,
-      title: "Defense & Military",
-      description: "Ensure mission-critical equipment, including weapons, optics, and electronics, remains dry and functional for long-term storage and use in harsh environments."
+      title: t("applicationsPage.defense.title"),
+      description: t("applicationsPage.defense.desc"),
     },
     {
       icon: Beaker,
-      title: "Chemical & Petrochemical",
-      description: "Crucial for removing water from industrial gas streams and protecting moisture-sensitive chemical substances during processing and storage."
+      title: t("applicationsPage.chemical.title"),
+      description: t("applicationsPage.chemical.desc"),
     },
     {
       icon: Shirt,
-      title: "Textile & Leather",
-      description: "Prevent mold, mildew, and discoloration on clothing, footwear, and leather goods. Our desiccants maintain product quality, especially during long-term storage and shipping."
+      title: t("applicationsPage.textile.title"),
+      description: t("applicationsPage.textile.desc"),
     },
     {
       icon: Cog,
-      title: "Metal Processing",
-      description: "Combat rust and corrosion on metal parts, tools, and machinery. Our desiccants provide a protective environment for components during storage and shipping."
-    }
+      title: t("applicationsPage.metal.title"),
+      description: t("applicationsPage.metal.desc"),
+    },
   ];
 
   return (
@@ -66,9 +69,7 @@ const ApplicationsPage = () => {
       <MoistureBackground variant="large" className="relative min-h-[50vh] flex items-center justify-center w-full">
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{ 
-            backgroundImage: `url(${applicationsHeroBg})`,
-          }}
+          style={{ backgroundImage: `url(${applicationsHeroBg})` }}
         />
         <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-background/80 via-background/60 to-background" />
         
@@ -80,15 +81,14 @@ const ApplicationsPage = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest uppercase bg-primary/10 text-primary border border-primary/20 rounded-full">
-              Industry Solutions
+              {t("applicationsPage.badge")}
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Moisture Protection
-              <span className="block text-gradient">For Every Industry</span>
+              {t("applicationsPage.title1")}
+              <span className="block text-gradient">{t("applicationsPage.title2")}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Discover how our industrial desiccants provide critical protection against moisture damage, 
-              corrosion, and spoilage across a wide range of sectors.
+              {t("applicationsPage.description")}
             </p>
           </motion.div>
         </div>
@@ -105,10 +105,10 @@ const ApplicationsPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Industries We Serve
+              {t("applicationsPage.gridTitle")}
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our moisture control solutions are trusted across diverse industries worldwide.
+              {t("applicationsPage.gridDesc")}
             </p>
           </motion.div>
 
@@ -141,25 +141,24 @@ const ApplicationsPage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Find Your Solution
+              {t("applicationsPage.ctaTitle")}
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Not sure which product is right for your industry? Our experts can help you 
-              assess your requirements and recommend the most effective solution.
+              {t("applicationsPage.ctaDesc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 to="/#products"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-secondary text-secondary-foreground font-medium rounded-sm hover:bg-secondary/80 transition-colors"
               >
-                View Products
+                {t("applicationsPage.viewProducts")}
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link 
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors"
               >
-                Contact Experts
+                {t("applicationsPage.contactExperts")}
               </Link>
             </div>
           </motion.div>
