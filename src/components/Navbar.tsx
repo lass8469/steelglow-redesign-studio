@@ -61,7 +61,6 @@ const Navbar = () => {
   const navItems = [
     { label: t("nav.about"), href: "/about" },
     { label: t("nav.applications"), href: "/applications" },
-    { label: t("nav.cargo"), href: "/cargo" },
     { label: t("nav.contact"), href: "/contact" },
   ];
 
@@ -151,13 +150,6 @@ const Navbar = () => {
               {t("nav.applications")}
             </Link>
             <Link
-              to="/cargo"
-              onClick={() => handleNavClick("/cargo")}
-              className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
-            >
-              {t("nav.cargo")}
-            </Link>
-            <Link
               to="/contact"
               onClick={() => handleNavClick("/contact")}
               className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
@@ -231,13 +223,6 @@ const Navbar = () => {
                 onClick={() => setIsMobileOpen(false)}
               >
                 {t("nav.applications")}
-              </Link>
-              <Link
-                to="/cargo"
-                className="block px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
-                onClick={() => setIsMobileOpen(false)}
-              >
-                {t("nav.cargo")}
               </Link>
               <Link
                 to="/contact"
