@@ -72,7 +72,7 @@ const ApplicationsPage = () => {
         />
         <div className="absolute inset-0 w-full bg-gradient-to-b from-background/90 via-background/70 to-background" />
         
-        <div className="w-full max-w-7xl mx-auto px-4 md:px-6 relative z-10 pt-24">
+        <div className="w-full h-full flex items-center justify-center px-4 md:px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
