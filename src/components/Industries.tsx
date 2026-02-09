@@ -42,6 +42,16 @@ const Industries = () => {
   ];
 
   const [activeIndustry, setActiveIndustry] = useState(industries[0]);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handleIndustryChange = (industry: typeof industries[0]) => {
+    if (industry.id === activeIndustry.id) return;
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setActiveIndustry(industry);
+      setIsTransitioning(false);
+    }, 300);
+  };
 
   return (
     <MoistureBackground variant="default" className="bg-secondary">
@@ -68,7 +78,7 @@ const Industries = () => {
               {industries.map((industry) => (
                 <button
                   key={industry.id}
-                  onClick={() => setActiveIndustry(industry)}
+                  onClick={() => handleIndustryChange(industry)}
                   className={`w-full flex items-center gap-4 p-4 rounded-xl text-left transition-all duration-300 ${
                     activeIndustry.id === industry.id
                       ? "bg-primary text-primary-foreground"
@@ -101,11 +111,11 @@ const Industries = () => {
                 <img
                   src={activeIndustry.image}
                   alt={activeIndustry.title}
-                  className="w-full aspect-video object-cover"
+                  className={`w-full aspect-video object-cover transition-all duration-300 ${isTransitioning ? 'opacity-0 scale-105' : 'opacity-100 scale-100'}`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
                 
-                <div className="absolute bottom-0 left-0 right-0 p-8">
+                <div className={`absolute bottom-0 left-0 right-0 p-8 transition-all duration-300 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
                   <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
                     {activeIndustry.title}
                   </h3>
