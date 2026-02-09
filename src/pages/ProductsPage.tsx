@@ -16,6 +16,8 @@ import productAntislip from "@/assets/product-antislip.jpg";
 import productRetail from "@/assets/product-retail.jpg";
 import productEdgeProtectors from "@/assets/product-edge-protectors.jpg";
 import productStabustrap from "@/assets/product-stabustrap.png";
+import productMolecularSieve from "@/assets/product-molecular-sieve.png";
+import productDatalogger from "@/assets/product-datalogger.png";
 
 const desiccantProducts = [
   {
@@ -40,7 +42,7 @@ const desiccantProducts = [
     link: "/silica",
   },
   {
-    image: "/placeholder.svg",
+    image: productMolecularSieve,
     title: "Molecular Sieve",
     subtitle: "Pharma Grade",
     description: "Ultra-low humidity desiccant for pharmaceutical and medical device applications.",
@@ -95,7 +97,7 @@ const otherProducts = [
     link: "/retail",
   },
   {
-    image: "/placeholder.svg",
+    image: productDatalogger,
     title: "Datalogger",
     subtitle: "Temperature & Humidity",
     description: "USB plug-and-play monitoring devices with automatic report generation.",
