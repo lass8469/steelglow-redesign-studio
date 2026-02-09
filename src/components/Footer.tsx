@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import MoistureBackground from "./MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
-import logo from "@/assets/logo.png";
+import Logo from "./Logo";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -36,7 +36,7 @@ const Footer = () => {
             {/* Brand */}
             <div className="lg:col-span-2">
               <div className="mb-6">
-                <img src={logo} alt="Desiccant" className="h-10 w-auto" />
+                <Logo size="lg" />
               </div>
               <p className="text-muted-foreground max-w-sm mb-6">
                 {t("footer.tagline")}
