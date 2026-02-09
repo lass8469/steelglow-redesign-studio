@@ -54,21 +54,21 @@ const About = () => {
              </div>
            </div>
  
-           {/* Visual element */}
-           <div className="relative">
-             <div className="aspect-square rounded-2xl bg-gradient-to-br from-accent to-background p-8 lg:p-12">
-               <div className="h-full rounded-xl bg-card border border-border flex items-center justify-center">
-                 <div className="text-center p-8">
-                   <div className="text-8xl lg:text-9xl font-black text-gradient mb-4">45+</div>
-                   <div className="text-xl lg:text-2xl font-semibold text-foreground">Years of Excellence</div>
-                   <div className="text-muted-foreground">Protecting cargo worldwide</div>
-                 </div>
-               </div>
-             </div>
-             
-             {/* Decorative elements */}
-             <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
-             <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
+            {/* Visual element */}
+            <div className="relative">
+              <div className="aspect-square rounded-2xl bg-gradient-to-br from-accent/30 to-transparent p-8 lg:p-12 border border-border/30">
+                <div className="h-full rounded-xl bg-card/40 backdrop-blur-sm border border-border/50 flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="text-8xl lg:text-9xl font-black text-gradient mb-4">45+</div>
+                    <div className="text-xl lg:text-2xl font-semibold text-foreground">Years of Excellence</div>
+                    <div className="text-muted-foreground">Protecting cargo worldwide</div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
            </div>
           </div>
         </div>
