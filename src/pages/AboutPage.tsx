@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { Link } from "react-router-dom";
+import aboutHeroBg from "@/assets/about-hero.jpg";
 
 const AboutPage = () => {
   const stats = [
@@ -54,27 +55,30 @@ const AboutPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <MoistureBackground variant="large" className="relative min-h-[60vh] flex items-center">
+      <MoistureBackground variant="large" className="relative min-h-[50vh] flex items-center justify-center w-full">
         <div 
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: `url('/placeholder.svg')`,
+            backgroundImage: `url(${aboutHeroBg})`,
           }}
         />
-        <div className="absolute inset-0 hero-overlay bg-gradient-to-r from-background via-background/80 to-transparent" />
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-background/80 via-background/60 to-background" />
         
-        <div className="container mx-auto px-4 md:px-6 relative z-10 pt-24">
+        <div className="w-full h-full flex items-center justify-center px-4 md:px-6 relative z-10 pt-20">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-3xl"
+            className="max-w-3xl mx-auto text-center"
           >
+            <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest uppercase bg-primary/10 text-primary border border-primary/20 rounded-full">
+              About Us
+            </span>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               Our job is to make
               <span className="block text-gradient">your job easier.</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               That means making sure your products arrive in perfect condition. With four decades 
               of experience, we've learned that every shipment has its own challenges.
             </p>
