@@ -1,181 +1,256 @@
-import { motion } from "framer-motion";
-import { ArrowLeft, Shield, Leaf, Package, CheckCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ArrowLeft, Package, Shield, Leaf, Check, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
+
+const specifications = [
+  { label: "Material", value: "FSC-Certified Cardboard" },
+  { label: "Thickness Options", value: "2mm, 3mm, 4mm, 5mm" },
+  { label: "Standard Lengths", value: "800mm - 2400mm" },
+  { label: "Leg Width", value: "35mm - 100mm" },
+  { label: "Load Capacity", value: "Up to 500kg per unit" },
+  { label: "Certifications", value: "FSC, Recyclable" },
+];
+
+const sizes = [
+  { weight: "35x35mm", description: "Light-duty protection", popular: false },
+  { weight: "50x50mm", description: "Standard applications", popular: true },
+  { weight: "75x75mm", description: "Heavy-duty loads", popular: false },
+  { weight: "100x100mm", description: "Extra reinforcement", popular: false },
+  { weight: "Custom", description: "Made to specification", popular: false },
+];
+
+const features = [
+  {
+    icon: Shield,
+    title: "Corner Protection",
+    description: "Shields pallet corners from crushing and strapping damage.",
+  },
+  {
+    icon: Leaf,
+    title: "FSC Certified",
+    description: "Responsibly sourced, fully recyclable materials.",
+  },
+  {
+    icon: Package,
+    title: "Easy to Use",
+    description: "Lightweight profiles for quick manual application.",
+  },
+];
+
+const applications = [
+  "Food & Beverage Shipments",
+  "Electronics & Appliances",
+  "Furniture & Home Goods",
+  "Industrial & Automotive Parts",
+  "Palletized Goods",
+  "Warehouse & Distribution",
+];
 
 const EdgeProtectorsProduct = () => {
-  const features = [
-    "Strong & durable – heavy-duty, FSC-certified cardboard",
-    "Prevents damage – shields corners from crushing and tearing",
-    "Customizable sizes – multiple thicknesses and lengths available",
-    "Eco-friendly & sustainable – responsibly sourced, fully recyclable",
-    "Lightweight & easy to use – quick to apply and remove",
-    "Cost-effective protection – minimizes damage and return costs",
-  ];
-
-  const applications = [
-    "Food and beverage shipments",
-    "Electronics and appliances",
-    "Furniture and home goods",
-    "Industrial and automotive parts",
-    "Palletized goods needing edge reinforcement",
-    "Warehouse and distribution centers",
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      {/* Hero Section */}
-      <MoistureBackground variant="large" className="relative min-h-[60vh] flex items-center">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `url('/placeholder.svg')`,
-          }}
-        />
-        <div className="absolute inset-0 hero-overlay bg-gradient-to-r from-background via-background/80 to-transparent" />
-        
-        <div className="container mx-auto px-4 md:px-6 relative z-10 pt-24">
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-8"
-          >
-            <Link 
-              to="/cargo" 
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Back to Cargo Protection</span>
-            </Link>
-          </motion.div>
+      {/* Breadcrumb */}
+      <div className="container mx-auto px-4 lg:px-8 pt-24 pb-4">
+        <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
+          <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+          <ChevronRight className="h-4 w-4" />
+          <Link to="/cargo" className="hover:text-primary transition-colors">Cargo</Link>
+          <ChevronRight className="h-4 w-4" />
+          <span className="text-foreground">Edge Protectors</span>
+        </nav>
+      </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="max-w-3xl"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-sm mb-6">
-              <Package className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-medium">Cargo Protection</span>
+      {/* Hero Section */}
+      <MoistureBackground variant="large" className="bg-background">
+        <section className="py-12 lg:py-20">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              {/* Product Image */}
+              <div className="relative group">
+                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative aspect-square rounded-xl overflow-hidden bg-card border border-border">
+                  <img
+                    src="/placeholder.svg"
+                    alt="Edge Protectors for Cargo"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-6 left-6">
+                    <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-primary/90 text-primary-foreground rounded-full">
+                      Cargo Protection
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Product Info */}
+              <div className="space-y-6">
+                <div>
+                  <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest uppercase bg-primary/10 text-primary border border-primary/20 rounded-full">
+                    FSC Certified
+                  </span>
+                  <h1 className="text-4xl lg:text-5xl font-black tracking-tight mb-4">
+                    Edge Protectors
+                    <span className="text-gradient"> For Cargo</span>
+                  </h1>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Protect your palletized goods from strapping damage and impacts 
+                    with high-quality Edge Protectors. Made from FSC-certified cardboard, 
+                    these profiles reinforce corners during transport and storage.
+                  </p>
+                </div>
+
+                {/* Features Grid */}
+                <div className="grid sm:grid-cols-3 gap-4 pt-4">
+                  {features.map((feature) => (
+                    <div key={feature.title} className="text-center p-4 rounded-lg bg-card/50 border border-border/50">
+                      <feature.icon className="h-8 w-8 text-primary mx-auto mb-2" />
+                      <h3 className="font-semibold text-sm text-foreground">{feature.title}</h3>
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 pt-6">
+                  <Button
+                    size="lg"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 glow-orange"
+                  >
+                    Request Quote
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-border hover:bg-accent"
+                  >
+                    Download Spec Sheet
+                  </Button>
+                </div>
+              </div>
             </div>
-            
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Edge Protectors
-              <span className="block text-gradient">For Cargo</span>
-            </h1>
-            
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Protect your palletized goods from strapping damage and impacts with high-quality 
-              Edge Protectors. Made from FSC-certified cardboard, these profiles reinforce corners 
-              and edges, providing reliable cushioning during transport and storage.
-            </p>
-          </motion.div>
-        </div>
+          </div>
+        </section>
       </MoistureBackground>
 
-      {/* Product Details */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4 md:px-6">
-          <Tabs defaultValue="features" className="w-full">
-            <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-2 mb-12">
-              <TabsTrigger value="features" className="text-sm md:text-base">Key Features</TabsTrigger>
-              <TabsTrigger value="applications" className="text-sm md:text-base">Applications</TabsTrigger>
+      {/* Tabs Section */}
+      <section className="py-16 lg:py-24 bg-card/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <Tabs defaultValue="specifications" className="w-full">
+            <TabsList className="w-full max-w-lg mx-auto grid grid-cols-3 bg-card border border-border h-12">
+              <TabsTrigger value="specifications" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                Specifications
+              </TabsTrigger>
+              <TabsTrigger value="sizes" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                Sizes
+              </TabsTrigger>
+              <TabsTrigger value="applications" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">
+                Applications
+              </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="features">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="grid md:grid-cols-2 gap-8"
-              >
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4 p-4 bg-card rounded-sm border border-border">
-                    <Shield className="w-8 h-8 text-primary flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-2">Reliable Corner Protection</h3>
-                      <p className="text-muted-foreground text-sm">
-                        Shields pallet corners from crushing, tearing, and impacts during shipping 
-                        and warehousing. Distributes strapping tension evenly.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4 p-4 bg-card rounded-sm border border-border">
-                    <Leaf className="w-8 h-8 text-primary flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-2">FSC-Certified & Sustainable</h3>
-                      <p className="text-muted-foreground text-sm">
-                        Made from responsibly sourced materials. Fully recyclable and supports 
-                        your company's green initiatives.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-card p-6 rounded-sm border border-border">
-                  <h3 className="font-semibold text-foreground mb-4">All Features</h3>
-                  <ul className="space-y-3">
-                    {features.map((feature, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground text-sm">{feature}</span>
-                      </li>
+            <TabsContent value="specifications" className="mt-8">
+              <Card className="bg-card/50 border-border">
+                <CardContent className="p-6 lg:p-8">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {specifications.map((spec) => (
+                      <div
+                        key={spec.label}
+                        className="flex justify-between items-center py-3 px-4 rounded-lg bg-background/50 border border-border/50"
+                      >
+                        <span className="text-muted-foreground">{spec.label}</span>
+                        <span className="font-semibold text-foreground">{spec.value}</span>
+                      </div>
                     ))}
-                  </ul>
-                </div>
-              </motion.div>
+                  </div>
+                </CardContent>
+              </Card>
             </TabsContent>
 
-            <TabsContent value="applications">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-              >
-                {applications.map((application, index) => (
-                  <div 
-                    key={index}
-                    className="p-4 bg-card rounded-sm border border-border hover:border-primary/50 transition-colors"
+            <TabsContent value="sizes" className="mt-8">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {sizes.map((size) => (
+                  <Card
+                    key={size.weight}
+                    className={`bg-card/50 border-border transition-all duration-300 hover:border-primary/50 hover:shadow-lg ${
+                      size.popular ? "ring-2 ring-primary/50" : ""
+                    }`}
                   >
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-foreground">{application}</span>
-                    </div>
-                  </div>
+                    <CardContent className="p-6 text-center relative">
+                      {size.popular && (
+                        <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-semibold bg-primary text-primary-foreground rounded-full">
+                          Most Popular
+                        </span>
+                      )}
+                      <h3 className="text-3xl font-black text-foreground mb-2">{size.weight}</h3>
+                      <p className="text-sm text-muted-foreground">{size.description}</p>
+                    </CardContent>
+                  </Card>
                 ))}
-              </motion.div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="applications" className="mt-8">
+              <Card className="bg-card/50 border-border">
+                <CardContent className="p-6 lg:p-8">
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {applications.map((app) => (
+                      <div
+                        key={app}
+                        className="flex items-center gap-3 py-3 px-4 rounded-lg bg-background/50 border border-border/50"
+                      >
+                        <Check className="h-5 w-5 text-primary flex-shrink-0" />
+                        <span className="text-foreground">{app}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             </TabsContent>
           </Tabs>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Protect Your Shipments
-          </h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Minimize damage and protect your goods. Contact us to find the right 
-            Edge Protectors for your specific needs.
-          </p>
-          <Link 
-            to="/contact"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors"
-          >
-            Request Quote
-          </Link>
-        </div>
-      </section>
+      <MoistureBackground className="bg-background">
+        <section className="py-16 lg:py-24">
+          <div className="container mx-auto px-4 lg:px-8 text-center">
+            <h2 className="text-3xl lg:text-4xl font-black tracking-tight mb-4">
+              Protect Your
+              <span className="text-gradient"> Shipments?</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+              Minimize damage and protect your goods. Contact us to find the right 
+              Edge Protectors for your specific needs.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
+              >
+                Contact Sales
+              </Button>
+              <Button
+                size="lg"
+                variant="ghost"
+                className="text-primary hover:text-primary hover:bg-primary/10"
+                asChild
+              >
+                <Link to="/cargo">
+                  <ArrowLeft className="mr-2 h-5 w-5" />
+                  View All Cargo Products
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      </MoistureBackground>
 
       <Footer />
     </div>
