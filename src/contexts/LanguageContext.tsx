@@ -932,9 +932,9 @@ const translations: Record<Language, Record<string, string>> = {
     "productsPage.learnMore": "Læs mere",
     // Product subtitles & descriptions for products page
     "productsPage.drybagI.subtitle": "Original formel",
-    "productsPage.drybagI.desc": "Lerbaseret tørremiddel udviklet til lange sørejser med op til 60 dages beskyttelse.",
+    "productsPage.drybagI.desc": "Lerbaseret tørremiddel udviklet til lange sørejser med op til 90 dages beskyttelse.",
     "productsPage.drybagIII.subtitle": "Bentonit ler",
-    "productsPage.drybagIII.desc": "Industritørremiddel fremstillet af naturlig bentonitler, miljøvenligt og bionedbrydeligt.",
+    "productsPage.drybagIII.desc": "Industritørremiddel fremstillet af naturlig bentonitler, miljøvenligt og bæredygtigt.",
     "productsPage.silica.subtitle": "E-handelsklart",
     "productsPage.silica.desc": "Premium silica gel-pakker til fugtbeskyttelse i emballage med FDA-godkendelse.",
     "productsPage.molecular.subtitle": "Farmaceutisk kvalitet",
