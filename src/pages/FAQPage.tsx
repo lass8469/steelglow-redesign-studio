@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { HelpCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import LocalizedLink from "@/components/LocalizedLink";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
