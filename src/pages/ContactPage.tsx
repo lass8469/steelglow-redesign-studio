@@ -7,6 +7,8 @@ import MoistureBackground from "@/components/MoistureBackground";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
 import contactHeroBg from "@/assets/contact-hero.jpg";
@@ -17,9 +19,25 @@ const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
+    product: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [productEnquiry, setProductEnquiry] = useState(false);
+
+  const productOptions = [
+    { value: "drybag-i", label: t("products.drybagI") },
+    { value: "drybag-iii", label: t("products.drybagIII") },
+    { value: "silica-gel", label: t("products.silica") },
+    { value: "molecular-sieve", label: t("products.molecular") },
+    { value: "calcium-chloride", label: t("products.calcium") },
+    { value: "dunnage-bags", label: t("products.dunnage") },
+    { value: "edge-protectors", label: t("products.edge") },
+    { value: "anti-slip", label: t("products.antiSlip") },
+    { value: "stabustrap", label: t("products.stabustrap") },
+    { value: "retail", label: t("products.retail") },
+    { value: "datalogger", label: t("products.datalogger") },
+  ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,7 +50,8 @@ const ContactPage = () => {
       description: t("contactPage.messageConfirm"),
     });
     
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "", message: "", product: "" });
+    setProductEnquiry(false);
     setIsSubmitting(false);
   };
 
@@ -139,6 +158,38 @@ const ContactPage = () => {
                     className="bg-card border-border"
                   />
                 </div>
+                <div className="flex items-center gap-2">
+                  <Checkbox
+                    id="product-enquiry-page"
+                    checked={productEnquiry}
+                    onCheckedChange={(checked) => {
+                      setProductEnquiry(!!checked);
+                      if (!checked) setFormData({ ...formData, product: "" });
+                    }}
+                  />
+                  <label htmlFor="product-enquiry-page" className="text-sm font-medium text-foreground cursor-pointer">
+                    {t("contact.form.productEnquiry")}
+                  </label>
+                </div>
+
+                {productEnquiry && (
+                  <div>
+                    <Select
+                      value={formData.product}
+                      onValueChange={(value) => setFormData({ ...formData, product: value })}
+                    >
+                      <SelectTrigger className="bg-card border-border">
+                        <SelectValue placeholder={t("contact.form.selectProduct")} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {productOptions.map((p) => (
+                          <SelectItem key={p.value} value={p.value}>{p.label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                     {t("contact.form.message")}

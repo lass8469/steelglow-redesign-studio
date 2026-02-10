@@ -179,6 +179,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.form.placeholder.company": "Your Company Ltd.",
     "contact.form.placeholder.message": "Tell us about your moisture control needs...",
     "contact.form.submit": "Send message",
+    "contact.form.productEnquiry": "Enquiring about a specific product",
+    "contact.form.selectProduct": "Select a product",
 
     // About Page
     "aboutPage.badge": "About us",
@@ -991,6 +993,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.form.placeholder.company": "Din Virksomhed A/S",
     "contact.form.placeholder.message": "Fortæl os om dine fugtkontrolbehov...",
     "contact.form.submit": "Send besked",
+    "contact.form.productEnquiry": "Forespørgsel om et specifikt produkt",
+    "contact.form.selectProduct": "Vælg et produkt",
 
     // About Page
     "aboutPage.badge": "Om os",
