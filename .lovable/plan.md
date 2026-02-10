@@ -1,53 +1,30 @@
 
 
-# Route-Based Language Prefixes for SEO
+## Integrate Web3Forms into Contact Forms
 
-## What This Does
-Every page will be available at both `/en/...` and `/da/...` URLs (e.g., `/da/about`, `/en/products`). The language in the URL determines the page language. Search engines will be able to index both versions separately. The root `/` will default to English (or redirect to `/en/`).
+Both contact forms will be connected to Web3Forms so submissions go directly to your email.
 
-## How It Works
+### Changes Overview
 
-1. **Add a language wrapper route** in `App.tsx` using React Router's `/:lang` parameter. All existing routes will be nested under `/:lang/*` so they work with both `/en/about` and `/da/about`.
+1. **New file: `src/lib/web3forms.ts`** -- Shared helper that sends form data to the Web3Forms API using your access key.
 
-2. **Keep bare routes working** by also keeping the existing routes without a prefix (defaulting to English), or redirecting `/about` to `/en/about`.
+2. **Update `src/components/Contact.tsx`** (homepage form):
+   - Replace `console.log` with real Web3Forms submission
+   - Add loading state and disable button while sending
+   - Show success/error toast notifications
+   - Reset form on success
 
-3. **Sync URL language with LanguageContext** -- update the `LanguageProvider` to read the language from the URL param (via `useParams`) instead of only from `localStorage`. When the URL says `/da/...`, the page renders in Danish automatically.
+3. **Update `src/pages/ContactPage.tsx`** (dedicated contact page):
+   - Replace fake timeout with real Web3Forms API call
+   - Keep existing toast and loading behavior
 
-4. **Update all internal `<Link>` components** across the Navbar, Footer, and all pages to include the current language prefix (e.g., `/${lang}/about` instead of `/about`). A helper hook like `useLocalizedPath(path)` will make this easy.
+4. **Update `src/contexts/LanguageContext.tsx`**:
+   - Add toast translation keys for the homepage form (success/error messages in English and Danish)
 
-5. **Update the language toggle** so switching language navigates to the same page but with the other language prefix (e.g., from `/en/about` to `/da/about`) instead of just updating context.
+### Technical Details
 
-6. **Add `hreflang` meta tags** to `index.html` or dynamically via a `<Helmet>`-style approach, telling search engines about the alternate language version of each page.
-
----
-
-## Technical Details
-
-### Route Structure Change (App.tsx)
-- Wrap all routes in a `/:lang` parent route with a layout component that reads the lang param and sets context
-- Add a redirect from `/` to `/en/`
-- Keep a catch-all `*` for 404
-
-### New Helper: `useLocalizedPath` Hook
-- Returns a function `localizedPath(path)` that prepends the current language prefix
-- Used across all `<Link to={...}>` calls
-
-### LanguageContext Update
-- Read language from URL param first, fall back to `localStorage`
-- `setLanguage` will navigate to the new lang prefix URL using `useNavigate`
-
-### Components to Update
-- `Navbar.tsx` -- all `<Link>` tags and the mobile menu links
-- `Footer.tsx` -- all footer links
-- `LanguageToggle.tsx` -- switch language via navigation
-- All page components that have internal `<Link>` elements (CTAs, breadcrumbs, etc.)
-- `productItems` array in Navbar needs dynamic href generation
-
-### hreflang Tags
-- Add a small component that injects `<link rel="alternate" hreflang="en" href="...">` and `<link rel="alternate" hreflang="da" href="...">` into the document head for the current page
-
-### What Stays the Same
-- All translation strings in `LanguageContext.tsx` remain unchanged
-- All page components render identically -- only the URL and language source changes
-- `localStorage` still used as a preference hint for the root `/` redirect
+- The Web3Forms access key (`2a8d7c6c-8bdf-47bf-8a04-e171651dd101`) is a publishable client-side key and will be stored as a constant in `src/lib/web3forms.ts`
+- API call: `POST https://api.web3forms.com/submit` with JSON body containing `access_key`, form fields, and a `subject` line
+- Product and size fields will be included when the product enquiry checkbox is checked
+- No new dependencies needed -- uses native `fetch`
 
