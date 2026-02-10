@@ -21,11 +21,10 @@ const SilicaProduct = () => {
   ];
   const sizes = [
     { weight: "1g", description: t("silica.size1.desc"), popular: false },
-    { weight: "5g", description: t("silica.size2.desc"), popular: true },
-    { weight: "10g", description: t("silica.size3.desc"), popular: false },
-    { weight: "50g", description: t("silica.size4.desc"), popular: false },
-    { weight: "100g", description: t("silica.size5.desc"), popular: false },
-    { weight: "500g", description: t("silica.size6.desc"), popular: false },
+    { weight: "5g", description: t("silica.size2.desc"), popular: false },
+    { weight: "10g", description: t("silica.size3.desc"), popular: true },
+    { weight: "12.5g", description: t("silica.size4.desc"), popular: false },
+    { weight: "25g", description: t("silica.size5.desc"), popular: false },
   ];
   const features = [
     { icon: Shield, title: t("silica.feature1.title") },
