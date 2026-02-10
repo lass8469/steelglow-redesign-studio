@@ -179,6 +179,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.form.placeholder.company": "Your Company Ltd.",
     "contact.form.placeholder.message": "Tell us about your moisture control needs...",
     "contact.form.submit": "Send message",
+    "contact.form.productEnquiry": "Enquiring about a specific product",
+    "contact.form.selectProduct": "Select a product",
 
     // About Page
     "aboutPage.badge": "About us",
