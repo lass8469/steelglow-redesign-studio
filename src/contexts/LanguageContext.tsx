@@ -1153,8 +1153,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.category.technical": "Teknisk",
     "blogPage.minRead": "min læsning",
     // Blog post content
-    "blogPage.post1.title": "Den komplette guide til pulvertørremidler",
-    "blogPage.post1.excerpt": "Oplev videnskaben bag pulvertørremidler, og hvordan de beskytter din fragt mod fugtskader under forsendelse og opbevaring.",
+    "blogPage.post1.title": "Damptryk forklaret: Hvorfor fugt \"gemmer sig\" i træpaller og hvordan man får den ud",
+    "blogPage.post1.excerpt": "Forståelse af damptrykkets fysik afslører, hvorfor træpaller fanger fugt dybt i deres struktur — og hvordan man effektivt fjerner den.",
     "blogPage.post2.title": "Containerregn: Hvorfor dugpunktsfysik gør fugtskader uundgåelige under søtransport",
     "blogPage.post2.excerpt": "Forstå de termodynamiske kræfter, der forvandler skibscontainere til kondenskamre, og den eneste beviste løsning der virker i stor skala.",
 
