@@ -769,7 +769,7 @@ const translations: Record<Language, Record<string, string>> = {
     "stabustrap.spec.reusabilityValue": "Fully Reusable",
     "stabustrap.spec.recyclability": "Recyclability",
     "stabustrap.spec.recyclabilityValue": "100% Recyclable",
-    "stabustrap.spec.cert": "Certifications",
+    "stabustrap.spec.cert": "Characteristics",
     "stabustrap.spec.certValue": "Eco-Friendly, Circular",
     "stabustrap.size1.desc": "Standard pallet sizes",
     "stabustrap.size2.desc": "Oversized pallets",
