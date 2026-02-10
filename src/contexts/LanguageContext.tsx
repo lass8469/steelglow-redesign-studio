@@ -494,7 +494,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagIII.size11.desc": "Tailored to your specifications",
     "drybagIII.app1": "Heavy Machinery & Equipment",
     "drybagIII.app2": "Steel Coils & Metal Products",
-    "drybagIII.app3": "Automotive Components",
+    "drybagIII.app3": "E-commerce",
     "drybagIII.app4": "Industrial Electronics",
     "drybagIII.app5": "Military & Defense Equipment",
     "drybagIII.app6": "Wind Industry",
