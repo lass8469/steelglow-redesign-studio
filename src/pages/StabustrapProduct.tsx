@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
-import { Link } from "react-router-dom";
+import LocalizedLink from "@/components/LocalizedLink";
 import productStabustrap from "@/assets/product-stabustrap.png";
 
 const specifications = [

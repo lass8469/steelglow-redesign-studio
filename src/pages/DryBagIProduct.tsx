@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
-import { Link } from "react-router-dom";
+import LocalizedLink from "@/components/LocalizedLink";
 import productDrybagI from "@/assets/product-drybag-i.jpg";
 
 const specifications = [
