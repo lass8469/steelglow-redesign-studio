@@ -611,8 +611,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Calcium Chloride
     "calcium.badge": "Export Grade",
     "calcium.tagline": "Industrial Strength",
-    "calcium.title": "Absorber Blanket",
-    "calcium.titleHighlight": " Calcium Chloride",
+    "calcium.title": "Calcium-Chloride",
+    "calcium.titleHighlight": "",
     "calcium.description": "Industrial-strength humidity control for goods in transit worldwide. Specially formulated to meet the demands of export packaging and long-haul logistics, preventing moisture damage during ocean voyages.",
     "calcium.feature1.title": "Visual Tracking",
     "calcium.feature2.title": "Export Grade",
@@ -1422,8 +1422,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Calcium Chloride
     "calcium.badge": "Eksportkvalitet",
     "calcium.tagline": "Industristyrke",
-    "calcium.title": "Absorber Blanket",
-    "calcium.titleHighlight": " Calciumchlorid",
+    "calcium.title": "Calcium-Chloride",
+    "calcium.titleHighlight": "",
     "calcium.description": "Industriel fugtkontrol til varer i transit verden over. Specielt udviklet til at opfylde kravene til eksportemballage og langdistancelogistik, forebygger fugtskader under sørejser.",
     "calcium.feature1.title": "Visuel sporing",
     "calcium.feature2.title": "Eksportkvalitet",
