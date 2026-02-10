@@ -1432,7 +1432,7 @@ const translations: Record<Language, Record<string, string>> = {
     "calcium.spec.absorption": "Absorptionskapacitet",
     "calcium.spec.absorptionValue": "Op til 350%",
     "calcium.spec.duration": "Beskyttelsesvarighed",
-    "calcium.spec.durationValue": "Op til 90 dage",
+    "calcium.spec.durationValue": "Op til 60 dage",
     "calcium.spec.temp": "Driftstemperatur",
     "calcium.spec.tempValue": "-5°C til +50°C",
     "calcium.spec.shelf": "Holdbarhed",
