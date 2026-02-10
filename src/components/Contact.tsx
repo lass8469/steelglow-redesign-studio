@@ -39,9 +39,31 @@ const Contact = () => {
     { value: "datalogger", label: t("products.datalogger") },
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
+    setIsSubmitting(true);
+    try {
+      await submitWeb3Form({
+        ...formData,
+        subject: formData.product
+          ? `Product Enquiry: ${formData.product}${formData.size ? ` (${formData.size})` : ""}`
+          : "New Contact from Website",
+      });
+      toast({
+        title: t("contact.toast.success"),
+        description: t("contact.toast.successDesc"),
+      });
+      setFormData({ name: "", email: "", company: "", message: "", product: "", size: "" });
+      setProductEnquiry(false);
+    } catch {
+      toast({
+        title: t("contact.toast.error"),
+        description: t("contact.toast.errorDesc"),
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const benefits = [
