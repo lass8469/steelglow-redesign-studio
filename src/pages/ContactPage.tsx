@@ -158,6 +158,38 @@ const ContactPage = () => {
                     className="bg-card border-border"
                   />
                 </div>
+                <div className="flex items-center gap-2">
+                  <Checkbox
+                    id="product-enquiry-page"
+                    checked={productEnquiry}
+                    onCheckedChange={(checked) => {
+                      setProductEnquiry(!!checked);
+                      if (!checked) setFormData({ ...formData, product: "" });
+                    }}
+                  />
+                  <label htmlFor="product-enquiry-page" className="text-sm font-medium text-foreground cursor-pointer">
+                    {t("contact.form.productEnquiry")}
+                  </label>
+                </div>
+
+                {productEnquiry && (
+                  <div>
+                    <Select
+                      value={formData.product}
+                      onValueChange={(value) => setFormData({ ...formData, product: value })}
+                    >
+                      <SelectTrigger className="bg-card border-border">
+                        <SelectValue placeholder={t("contact.form.selectProduct")} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {productOptions.map((p) => (
+                          <SelectItem key={p.value} value={p.value}>{p.label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                     {t("contact.form.message")}

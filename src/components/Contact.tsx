@@ -144,6 +144,38 @@ const Contact = () => {
                   />
                 </div>
 
+                <div className="flex items-center gap-2">
+                  <Checkbox
+                    id="product-enquiry-home"
+                    checked={productEnquiry}
+                    onCheckedChange={(checked) => {
+                      setProductEnquiry(!!checked);
+                      if (!checked) setFormData({ ...formData, product: "" });
+                    }}
+                  />
+                  <label htmlFor="product-enquiry-home" className="text-sm font-medium text-foreground cursor-pointer">
+                    {t("contact.form.productEnquiry")}
+                  </label>
+                </div>
+
+                {productEnquiry && (
+                  <div>
+                    <Select
+                      value={formData.product}
+                      onValueChange={(value) => setFormData({ ...formData, product: value })}
+                    >
+                      <SelectTrigger className="bg-background border-border">
+                        <SelectValue placeholder={t("contact.form.selectProduct")} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {productOptions.map((p) => (
+                          <SelectItem key={p.value} value={p.value}>{p.label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     {t("contact.form.message")}
