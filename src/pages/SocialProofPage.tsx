@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, Quote, Play, Award, Anchor, Ship, Factory, Truck, Box, Globe } from "lucide-react";
+import varoLogo from "@/assets/logo-varo.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
