@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Send, MapPin, Mail, MessageCircle, Check } from "lucide-react";
+import { Send, MapPin, Mail, MessageCircle, Check, Loader2 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { submitWeb3Form } from "@/lib/web3forms";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
