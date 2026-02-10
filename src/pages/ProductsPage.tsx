@@ -276,9 +276,9 @@ const ProductsPage = () => {
                 className="border-border hover:bg-accent"
                 asChild
               >
-                <Link to="/applications">
+                <LocalizedLink to="/applications">
                   View Applications
-                </Link>
+                </LocalizedLink>
               </Button>
             </div>
           </div>

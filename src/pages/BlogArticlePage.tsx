@@ -216,11 +216,11 @@ const BlogArticlePage = () => {
                 <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
                   {article.cta.description}
                 </p>
-                <Link to={article.cta.buttonLink}>
+                <LocalizedLink to={article.cta.buttonLink}>
                   <Button size="lg" className="font-semibold px-8">
                     {article.cta.buttonText}
                   </Button>
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>
