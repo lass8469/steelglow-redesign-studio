@@ -17,6 +17,7 @@ const Contact = () => {
     company: "",
     message: "",
     product: "",
+    size: "",
   });
   const [productEnquiry, setProductEnquiry] = useState(false);
 
