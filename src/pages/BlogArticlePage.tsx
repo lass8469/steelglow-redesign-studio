@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Link, useParams } from "react-router-dom";
+import LocalizedLink from "@/components/LocalizedLink";
+import { useParams } from "react-router-dom";
 import { Calendar, Clock, ArrowLeft, Share2, User, Lightbulb } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
