@@ -3,7 +3,7 @@ import {
   Pill, Cpu, Apple, Truck, Car, Shield, 
   Beaker, Shirt, Cog, ArrowRight 
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import LocalizedLink from "@/components/LocalizedLink";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
