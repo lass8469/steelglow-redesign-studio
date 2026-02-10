@@ -12,6 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
 import contactHeroBg from "@/assets/contact-hero.jpg";
+import { productSizes } from "@/lib/product-sizes";
 
 const ContactPage = () => {
   const { toast } = useToast();
