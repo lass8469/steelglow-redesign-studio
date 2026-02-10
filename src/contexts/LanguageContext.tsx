@@ -1287,7 +1287,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagIII.spec.material": "Materiale",
     "drybagIII.spec.materialValue": "Naturlig bentonit ler",
     "drybagIII.spec.absorption": "Absorptionskapacitet",
-    "drybagIII.spec.absorptionValue": "Op til 150% af sin vægt",
+    "drybagIII.spec.absorptionValue": "Op til 70% af sin vægt",
     "drybagIII.spec.duration": "Beskyttelsesvarighed",
     "drybagIII.spec.durationValue": "Op til 45 dage",
     "drybagIII.spec.temp": "Driftstemperatur",
