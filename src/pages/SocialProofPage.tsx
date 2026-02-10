@@ -11,7 +11,7 @@ const SocialProofPage = () => {
 
   // Placeholder logos - replace with actual company logos
   const trustedLogos = [
-    { name: "Nordic Freight", icon: Ship, accent: true },
+    { name: "VARO", icon: null, accent: true, logo: varoLogo },
     { name: "CargoMax", icon: Box, accent: false },
     { name: "SteelWorks Int.", icon: Factory, accent: true },
     { name: "OceanLine", icon: Anchor, accent: false },
