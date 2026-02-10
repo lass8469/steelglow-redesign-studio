@@ -5,7 +5,7 @@ export const useLocalizedPath = () => {
 
   const localizedPath = (path: string): string => {
     // Strip any existing language prefix
-    const cleanPath = path.replace(/^\/(en|da)/, "") || "/";
+    const cleanPath = path.replace(/^\/(en|da)(\/|$)/, "/") || "/";
     return `/${language}${cleanPath === "/" ? "" : cleanPath}`;
   };
 
