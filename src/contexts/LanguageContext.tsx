@@ -1290,7 +1290,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagIII.spec.duration": "Beskyttelsesvarighed",
     "drybagIII.spec.durationValue": "Op til 60 dage",
     "drybagIII.spec.temp": "Driftstemperatur",
-    "drybagIII.spec.tempValue": "-10°C til +60°C",
+    "drybagIII.spec.tempValue": "-5°C til +50°C",
     "drybagIII.spec.shelf": "Holdbarhed",
     "drybagIII.spec.shelfValue": "24 måneder forseglet",
     "drybagIII.spec.cert": "Certificeringer",
