@@ -472,7 +472,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagIII.spec.material": "Material",
     "drybagIII.spec.materialValue": "Natural Bentonite Clay",
     "drybagIII.spec.absorption": "Absorption Capacity",
-    "drybagIII.spec.absorptionValue": "Up to 150% of its weight",
+    "drybagIII.spec.absorptionValue": "Up to 70% of its weight",
     "drybagIII.spec.duration": "Protection Duration",
     "drybagIII.spec.durationValue": "Up to 45 days",
     "drybagIII.spec.temp": "Operating Temperature",
