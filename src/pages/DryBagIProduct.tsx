@@ -244,10 +244,10 @@ const DryBagIProduct = () => {
                 className="text-primary hover:text-primary hover:bg-primary/10"
                 asChild
               >
-              <Link to="/products">
+              <LocalizedLink to="/products">
                   <ArrowLeft className="mr-2 h-5 w-5" />
                   View All Products
-                </Link>
+                </LocalizedLink>
               </Button>
             </div>
           </div>

@@ -59,9 +59,9 @@ const StabustrapProduct = () => {
       {/* Breadcrumb */}
       <div className="container mx-auto px-4 lg:px-8 pt-24 pb-4">
         <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
-          <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+          <LocalizedLink to="/" className="hover:text-primary transition-colors">Home</LocalizedLink>
           <ChevronRight className="h-4 w-4" />
-          <Link to="/products" className="hover:text-primary transition-colors">Products</Link>
+          <LocalizedLink to="/products" className="hover:text-primary transition-colors">Products</LocalizedLink>
           <ChevronRight className="h-4 w-4" />
           <span className="text-foreground">Stabustrap</span>
         </nav>
