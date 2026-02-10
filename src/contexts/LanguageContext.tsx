@@ -522,7 +522,7 @@ const translations: Record<Language, Record<string, string>> = {
     "silica.spec.shelf": "Shelf Life",
     "silica.spec.shelfValue": "24 months sealed",
     "silica.spec.cert": "Certifications",
-    "silica.spec.certValue": "Non-indicating",
+    "silica.spec.certValue": "REACH",
     "silica.size1.desc": "Small electronics, jewelry",
     "silica.size2.desc": "Shoes, handbags, small boxes",
     "silica.size3.desc": "Medium packaging, apparel",
