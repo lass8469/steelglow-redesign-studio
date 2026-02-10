@@ -591,7 +591,7 @@ const translations: Record<Language, Record<string, string>> = {
     "molecular.spec.dewpoint": "Dew Point",
     "molecular.spec.dewpointValue": "<0.1% RH achievable",
     "molecular.spec.temp": "Operating Temperature",
-    "molecular.spec.tempValue": "-40°C to +300°C",
+    "molecular.spec.tempValue": "-5°C to +50°C",
     "molecular.spec.shelf": "Shelf Life",
     "molecular.spec.shelfValue": "24 months sealed",
     "molecular.spec.cert": "Certifications",
