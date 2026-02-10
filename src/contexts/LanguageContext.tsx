@@ -1312,7 +1312,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagIII.app3": "Bilkomponenter",
     "drybagIII.app4": "Industriel elektronik",
     "drybagIII.app5": "Militær- og forsvarsudstyr",
-    "drybagIII.app6": "Mineudstyr",
+    "drybagIII.app6": "Vindindustri",
     "drybagIII.ctaTitle1": "Klar til at beskytte din",
     "drybagIII.ctaTitle2": " industrifragt?",
     "drybagIII.ctaDesc": "Kontakt vores team for at diskutere dine behov for industrielle tørremidler og modtag et skræddersyet tilbud.",
