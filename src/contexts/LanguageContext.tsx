@@ -330,8 +330,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.category.technical": "Technical",
     "blogPage.minRead": "min read",
     // Blog post content
-    "blogPage.post1.title": "The complete guide to powdered desiccants",
-    "blogPage.post1.excerpt": "Discover the science behind powdered desiccants and how they protect your cargo from moisture damage during shipping and storage.",
+    "blogPage.post1.title": "Vapor pressure explained: Why moisture \"hides\" in wooden pallets and how to get it out",
+    "blogPage.post1.excerpt": "Understanding the physics of vapor pressure reveals why wooden pallets trap moisture deep within their structure — and how to remove it effectively.",
     "blogPage.post2.title": "Container rain: Why dew point physics makes moisture damage inevitable during ocean transit",
     "blogPage.post2.excerpt": "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
 
@@ -1153,8 +1153,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.category.technical": "Teknisk",
     "blogPage.minRead": "min læsning",
     // Blog post content
-    "blogPage.post1.title": "Den komplette guide til pulvertørremidler",
-    "blogPage.post1.excerpt": "Oplev videnskaben bag pulvertørremidler, og hvordan de beskytter din fragt mod fugtskader under forsendelse og opbevaring.",
+    "blogPage.post1.title": "Damptryk forklaret: Hvorfor fugt \"gemmer sig\" i træpaller og hvordan man får den ud",
+    "blogPage.post1.excerpt": "Forståelse af damptrykkets fysik afslører, hvorfor træpaller fanger fugt dybt i deres struktur — og hvordan man effektivt fjerner den.",
     "blogPage.post2.title": "Containerregn: Hvorfor dugpunktsfysik gør fugtskader uundgåelige under søtransport",
     "blogPage.post2.excerpt": "Forstå de termodynamiske kræfter, der forvandler skibscontainere til kondenskamre, og den eneste beviste løsning der virker i stor skala.",
 
