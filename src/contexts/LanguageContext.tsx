@@ -168,7 +168,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.benefit2": "Tailored solutions for your unique needs",
     "contact.benefit3": "Global shipping with local support",
     "contact.benefit4": "24-hour response guarantee",
-    "contact.headquarters": "Denmark (Headquarters)",
+    "contact.headquarters": "Odinsvej 21, DK-8722 Hedensted",
     "contact.whatsapp": "WhatsApp available",
     "contact.form.fullName": "Full name",
     "contact.form.email": "Email address",
