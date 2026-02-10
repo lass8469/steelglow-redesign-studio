@@ -102,7 +102,7 @@ const BlogPage = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
-              <Link key={post.slug} to={`/blog/${post.slug}`}>
+              <LocalizedLink key={post.slug} to={`/blog/${post.slug}`}>
                 <Card className="h-full hover:shadow-lg transition-all duration-300 group overflow-hidden hover:border-primary/30">
                   <div className="aspect-video bg-accent/20 overflow-hidden">
                     <img 
