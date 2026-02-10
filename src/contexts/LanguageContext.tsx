@@ -589,7 +589,7 @@ const translations: Record<Language, Record<string, string>> = {
     "molecular.spec.temp": "Operating Temperature",
     "molecular.spec.tempValue": "-40°C to +300°C",
     "molecular.spec.shelf": "Shelf Life",
-    "molecular.spec.shelfValue": "36 months sealed",
+    "molecular.spec.shelfValue": "24 months sealed",
     "molecular.spec.cert": "Certifications",
     "molecular.spec.certValue": "FDA, EU Pharma, DMF",
     "molecular.size1.desc": "Small vials, blister packs",
