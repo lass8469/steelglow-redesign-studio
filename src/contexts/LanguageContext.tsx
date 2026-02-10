@@ -628,7 +628,7 @@ const translations: Record<Language, Record<string, string>> = {
     "calcium.spec.shelf": "Shelf Life",
     "calcium.spec.shelfValue": "24 months sealed",
     "calcium.spec.cert": "Certifications",
-    "calcium.spec.certValue": "International Shipping",
+    "calcium.spec.certValue": "REACH",
     "calcium.size1.desc": "Strategic container placement",
     "calcium.size2.desc": "Standard containers",
     "calcium.size3.desc": "40ft containers, long voyages",
