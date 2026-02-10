@@ -1477,7 +1477,7 @@ const translations: Record<Language, Record<string, string>> = {
     "retail.spec.indicator": "Indikator",
     "retail.spec.indicatorValue": "Klart vindue, visuel",
     "retail.spec.temp": "Driftstemperatur",
-    "retail.spec.tempValue": "-10°C til +50°C",
+    "retail.spec.tempValue": "-5°C til +50°C",
     "retail.spec.shelf": "Holdbarhed",
     "retail.spec.shelfValue": "24 måneder forseglet",
     "retail.spec.cert": "Certificeringer",
