@@ -1405,7 +1405,7 @@ const translations: Record<Language, Record<string, string>> = {
     "molecular.spec.dewpoint": "Dugpunkt",
     "molecular.spec.dewpointValue": "<0,1% RF opnåelig",
     "molecular.spec.temp": "Driftstemperatur",
-    "molecular.spec.tempValue": "-40°C til +300°C",
+    "molecular.spec.tempValue": "-5°C til +50°C",
     "molecular.spec.shelf": "Holdbarhed",
     "molecular.spec.shelfValue": "24 måneder forseglet",
     "molecular.spec.cert": "Certificeringer",
