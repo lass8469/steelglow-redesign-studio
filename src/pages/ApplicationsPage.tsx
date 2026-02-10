@@ -40,9 +40,9 @@ const ApplicationsPage = () => {
       description: t("applicationsPage.automotive.desc"),
     },
     {
-      icon: Shield,
-      title: t("applicationsPage.defense.title"),
-      description: t("applicationsPage.defense.desc"),
+      icon: Wind,
+      title: t("applicationsPage.wind.title"),
+      description: t("applicationsPage.wind.desc"),
     },
     {
       icon: Beaker,
