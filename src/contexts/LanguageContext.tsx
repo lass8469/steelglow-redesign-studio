@@ -663,7 +663,7 @@ const translations: Record<Language, Record<string, string>> = {
     "retail.spec.indicator": "Indicator",
     "retail.spec.indicatorValue": "Clear window visual",
     "retail.spec.temp": "Operating Temperature",
-    "retail.spec.tempValue": "-10°C to +50°C",
+    "retail.spec.tempValue": "-5°C to +50°C",
     "retail.spec.shelf": "Shelf Life",
     "retail.spec.shelfValue": "24 months sealed",
     "retail.spec.cert": "Certifications",
