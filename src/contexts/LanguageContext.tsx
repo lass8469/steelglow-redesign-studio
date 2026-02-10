@@ -1327,7 +1327,7 @@ const translations: Record<Language, Record<string, string>> = {
     "silica.spec.shelf": "Holdbarhed",
     "silica.spec.shelfValue": "24 måneder forseglet",
     "silica.spec.cert": "Certificeringer",
-    "silica.spec.certValue": "FDA, DMF, ISO 9001",
+    "silica.spec.certValue": "FDA, DMF",
     "silica.size1.desc": "Små elektronikprodukter, smykker",
     "silica.size2.desc": "Sko, tasker, små kasser",
     "silica.size3.desc": "Medium emballage, beklædning",
