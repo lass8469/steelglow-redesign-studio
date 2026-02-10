@@ -52,7 +52,7 @@ const ContactPage = () => {
       description: t("contactPage.messageConfirm"),
     });
     
-    setFormData({ name: "", email: "", message: "", product: "" });
+    setFormData({ name: "", email: "", message: "", product: "", size: "" });
     setProductEnquiry(false);
     setIsSubmitting(false);
   };
