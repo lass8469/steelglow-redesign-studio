@@ -20,10 +20,10 @@ const StabustrapProduct = () => {
     { label: t("stabustrap.spec.cert"), value: t("stabustrap.spec.certValue") },
   ];
   const sizes = [
-    { weight: "Standard", description: t("stabustrap.size1.desc"), popular: true },
-    { weight: "Large", description: t("stabustrap.size2.desc"), popular: false },
-    { weight: "Industrial", description: t("stabustrap.size3.desc"), popular: false },
-    { weight: t("productPage.custom"), description: t("stabustrap.size4.desc"), popular: false },
+    { weight: "1200mm Standard", description: t("stabustrap.size1.desc"), popular: false },
+    { weight: "1200mm Heavy", description: t("stabustrap.size2.desc"), popular: true },
+    { weight: "1400mm Standard", description: t("stabustrap.size3.desc"), popular: false },
+    { weight: "1400mm Heavy", description: t("stabustrap.size4.desc"), popular: false },
   ];
   const features = [
     { icon: RefreshCw, title: t("stabustrap.feature1.title") },
