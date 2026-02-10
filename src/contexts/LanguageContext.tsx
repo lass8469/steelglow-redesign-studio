@@ -1309,7 +1309,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagIII.size11.desc": "Tilpasset dine specifikationer",
     "drybagIII.app1": "Tungt maskineri og udstyr",
     "drybagIII.app2": "Stålruller og metalprodukter",
-    "drybagIII.app3": "Bilkomponenter",
+    "drybagIII.app3": "E-handel",
     "drybagIII.app4": "Industriel elektronik",
     "drybagIII.app5": "Militær- og forsvarsudstyr",
     "drybagIII.app6": "Vindindustri",
