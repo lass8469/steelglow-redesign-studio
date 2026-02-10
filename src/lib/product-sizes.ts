@@ -1,6 +1,6 @@
 export const productSizes: Record<string, string[]> = {
-  "drybag-i": ["1g", "2g", "5g", "10g", "25g", "50g", "100g", "125g", "250g", "500g", "1000g", "2000g", "Custom"],
-  "drybag-iii": ["1g", "2g", "5g", "10g", "25g", "50g", "100g", "125g", "250g", "500g", "1000g", "2000g", "Custom"],
+  "drybag-i": ["1000g", "2000g"],
+  "drybag-iii": ["1g", "5g", "10g", "25g", "50g", "100g", "140g", "250g", "500g", "1000g", "2000g", "Custom"],
   "silica-gel": ["1g", "5g", "10g", "12.5g", "25g"],
   "molecular-sieve": ["2g 3Å", "2g 4Å"],
   "calcium-chloride": ["4x100g", "6x100g", "6x125g", "12x100g", "2000g"],
