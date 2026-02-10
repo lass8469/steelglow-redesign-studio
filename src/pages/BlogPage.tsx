@@ -7,20 +7,20 @@ import { Badge } from "@/components/ui/badge";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const blogPosts = [
-  {
-    slug: "powdered-desiccants-guide",
-    titleKey: "The Complete Guide to Powdered Desiccants",
-    excerptKey: "Discover the science behind powdered desiccants and how they protect your cargo from moisture damage during shipping and storage.",
-    date: "2024-02-09",
-    readTime: "5",
-    category: "Technical",
-    image: "/placeholder.svg",
-  },
-];
-
 const BlogPage = () => {
   const { t, language } = useLanguage();
+
+  const blogPosts = [
+    {
+      slug: "powdered-desiccants-guide",
+      titleKey: "blogPage.post1.title",
+      excerptKey: "blogPage.post1.excerpt",
+      date: "2024-02-09",
+      readTime: "5",
+      category: "Technical",
+      image: "/placeholder.svg",
+    },
+  ];
 
   const features = [
     {
@@ -107,7 +107,7 @@ const BlogPage = () => {
                   <div className="aspect-video bg-accent/20 overflow-hidden">
                     <img 
                       src={post.image} 
-                      alt={post.titleKey}
+                      alt={t(post.titleKey)}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -116,12 +116,12 @@ const BlogPage = () => {
                       {t("blogPage.category.technical")}
                     </Badge>
                     <h2 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
-                      {post.titleKey}
+                      {t(post.titleKey)}
                     </h2>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4 line-clamp-2">
-                      {post.excerptKey}
+                      {t(post.excerptKey)}
                     </p>
                     <div className="flex items-center justify-between text-sm text-muted-foreground">
                       <div className="flex items-center gap-4">

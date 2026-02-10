@@ -17,7 +17,6 @@ const Footer = () => {
     company: [
       { label: t("footer.aboutUs"), href: "/about" },
       { label: t("footer.industries"), href: "/applications" },
-      { label: t("nav.cargo"), href: "/cargo" },
       { label: t("nav.contact"), href: "/contact" },
     ],
     resources: [
