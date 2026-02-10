@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://drybag.dk/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drybag.dk/en" />
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da" />
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Products -->
+  <url>
+    <loc>https://drybag.dk/en/products</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/products" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/products" />
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/products</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/products" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/products" />
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Silica Gel -->
+  <url>
+    <loc>https://drybag.dk/en/silica</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/silica" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/silica" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/silica</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/silica" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/silica" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- DRY-BAG I -->
+  <url>
+    <loc>https://drybag.dk/en/drybag-i</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/drybag-i" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/drybag-i" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/drybag-i</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/drybag-i" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/drybag-i" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- DRY-BAG III -->
+  <url>
+    <loc>https://drybag.dk/en/drybag-iii</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/drybag-iii" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/drybag-iii" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/drybag-iii</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/drybag-iii" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/drybag-iii" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Dunnage Bag -->
+  <url>
+    <loc>https://drybag.dk/en/dunnage-bag</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/dunnage-bag" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/dunnage-bag" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/dunnage-bag</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/dunnage-bag" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/dunnage-bag" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Molecular Sieve -->
+  <url>
+    <loc>https://drybag.dk/en/molecular-sieve</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/molecular-sieve" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/molecular-sieve" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/molecular-sieve</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/molecular-sieve" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/molecular-sieve" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Calcium Chloride -->
+  <url>
+    <loc>https://drybag.dk/en/calcium-chloride</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/calcium-chloride" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/calcium-chloride" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/calcium-chloride</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/calcium-chloride" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/calcium-chloride" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Retail -->
+  <url>
+    <loc>https://drybag.dk/en/retail</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/retail" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/retail" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/retail</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/retail" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/retail" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Edge Protectors -->
+  <url>
+    <loc>https://drybag.dk/en/edge-protectors</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/edge-protectors" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/edge-protectors" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/edge-protectors</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/edge-protectors" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/edge-protectors" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Anti-Slip -->
+  <url>
+    <loc>https://drybag.dk/en/anti-slip</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/anti-slip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/anti-slip" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/anti-slip</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/anti-slip" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/anti-slip" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Stabustrap -->
+  <url>
+    <loc>https://drybag.dk/en/stabustrap</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/stabustrap" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/stabustrap" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/stabustrap</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/stabustrap" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/stabustrap" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Datalogger -->
+  <url>
+    <loc>https://drybag.dk/en/datalogger</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/datalogger" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/datalogger" />
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/datalogger</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/datalogger" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/datalogger" />
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://drybag.dk/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/about" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/about" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/about" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/about" />
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Applications -->
+  <url>
+    <loc>https://drybag.dk/en/applications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/applications" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/applications" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/applications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/applications" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/applications" />
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://drybag.dk/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/blog" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/blog" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/blog" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/blog" />
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://drybag.dk/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/contact" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/contact" />
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/contact" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/contact" />
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Downloads -->
+  <url>
+    <loc>https://drybag.dk/en/downloads</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/downloads" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/downloads" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/downloads</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/downloads" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/downloads" />
+    <priority>0.6</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://drybag.dk/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/faq" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/faq" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/faq" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/faq" />
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Testimonials -->
+  <url>
+    <loc>https://drybag.dk/en/testimonials</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/testimonials" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/testimonials" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/testimonials</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/testimonials" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/testimonials" />
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Privacy -->
+  <url>
+    <loc>https://drybag.dk/en/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/privacy" />
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://drybag.dk/da/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drybag.dk/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://drybag.dk/da/privacy" />
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
