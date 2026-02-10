@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { 
-  Pill, Cpu, Apple, Truck, Car, Shield, 
+  Pill, Cpu, Apple, Truck, Car, Wind, 
   Beaker, Shirt, Cog, ArrowRight 
 } from "lucide-react";
 import LocalizedLink from "@/components/LocalizedLink";
@@ -40,9 +40,9 @@ const ApplicationsPage = () => {
       description: t("applicationsPage.automotive.desc"),
     },
     {
-      icon: Shield,
-      title: t("applicationsPage.defense.title"),
-      description: t("applicationsPage.defense.desc"),
+      icon: Wind,
+      title: t("applicationsPage.wind.title"),
+      description: t("applicationsPage.wind.desc"),
     },
     {
       icon: Beaker,
