@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { HelpCircle } from "lucide-react";
-import { Link } from "react-router-dom";
+import LocalizedLink from "@/components/LocalizedLink";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -108,12 +108,12 @@ const FAQPage = () => {
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               {t("faqPage.ctaDesc")}
             </p>
-            <Link 
+            <LocalizedLink 
               to="/contact"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors"
             >
               {t("faqPage.ctaButton")}
-            </Link>
+            </LocalizedLink>
           </motion.div>
         </div>
       </section>

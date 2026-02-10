@@ -1,6 +1,6 @@
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import LocalizedLink from "@/components/LocalizedLink";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -133,10 +133,10 @@ const ProductCard = ({ product }: { product: typeof desiccantProducts[0] }) => (
         className="text-primary hover:text-primary hover:bg-primary/10 -ml-3 group/btn"
         asChild
       >
-        <Link to={product.link}>
+        <LocalizedLink to={product.link}>
           Learn More
           <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-        </Link>
+        </LocalizedLink>
       </Button>
     </div>
   </div>
@@ -150,7 +150,7 @@ const ProductsPage = () => {
       {/* Breadcrumb */}
       <div className="container mx-auto px-4 lg:px-8 pt-24 pb-4">
         <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
-          <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+          <LocalizedLink to="/" className="hover:text-primary transition-colors">Home</LocalizedLink>
           <ChevronRight className="h-4 w-4" />
           <span className="text-foreground">Products</span>
         </nav>
@@ -266,9 +266,9 @@ const ProductsPage = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
                 asChild
               >
-                <Link to="/contact">
+                <LocalizedLink to="/contact">
                   Contact Sales
-                </Link>
+                </LocalizedLink>
               </Button>
               <Button
                 size="lg"
@@ -276,9 +276,9 @@ const ProductsPage = () => {
                 className="border-border hover:bg-accent"
                 asChild
               >
-                <Link to="/applications">
+                <LocalizedLink to="/applications">
                   View Applications
-                </Link>
+                </LocalizedLink>
               </Button>
             </div>
           </div>

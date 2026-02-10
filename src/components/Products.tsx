@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import LocalizedLink from "./LocalizedLink";
 import MoistureBackground from "./MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import productDunnageBag from "@/assets/product-dunnage-bag.jpg";
@@ -63,7 +63,7 @@ const Products = () => {
           {/* Products grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product) => (
-              <Link
+              <LocalizedLink
                 key={product.title}
                 to={product.link}
                 className="product-card group bg-card border border-border rounded-xl overflow-hidden block hover:border-primary/50 transition-colors"
@@ -92,7 +92,7 @@ const Products = () => {
                     <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                   </span>
                 </div>
-              </Link>
+              </LocalizedLink>
             ))}
           </div>
 
@@ -103,10 +103,10 @@ const Products = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
               asChild
             >
-              <Link to="/products">
+              <LocalizedLink to="/products">
                 {t("products.viewAll")}
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </LocalizedLink>
             </Button>
           </div>
         </div>

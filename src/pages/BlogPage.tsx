@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
+import LocalizedLink from "@/components/LocalizedLink";
 import { Calendar, Clock, ArrowRight, BookOpen, Beaker, Shield, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -102,7 +102,7 @@ const BlogPage = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
-              <Link key={post.slug} to={`/blog/${post.slug}`}>
+              <LocalizedLink key={post.slug} to={`/blog/${post.slug}`}>
                 <Card className="h-full hover:shadow-lg transition-all duration-300 group overflow-hidden hover:border-primary/30">
                   <div className="aspect-video bg-accent/20 overflow-hidden">
                     <img 
@@ -142,7 +142,7 @@ const BlogPage = () => {
                     </div>
                   </CardContent>
                 </Card>
-              </Link>
+              </LocalizedLink>
             ))}
           </div>
         </div>
@@ -157,11 +157,11 @@ const BlogPage = () => {
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
             {t("blogPage.ctaDesc")}
           </p>
-          <Link to="/contact">
+          <LocalizedLink to="/contact">
             <button className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors">
               {t("blogPage.ctaButton")}
             </button>
-          </Link>
+          </LocalizedLink>
         </div>
       </section>
 

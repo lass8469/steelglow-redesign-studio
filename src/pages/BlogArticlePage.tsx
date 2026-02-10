@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Link, useParams } from "react-router-dom";
+import LocalizedLink from "@/components/LocalizedLink";
+import { useParams } from "react-router-dom";
 import { Calendar, Clock, ArrowLeft, Share2, User, Lightbulb } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -116,9 +117,9 @@ const BlogArticlePage = () => {
         <div className="container mx-auto px-4 py-32 text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">{t("blogPage.articleNotFound")}</h1>
           <p className="text-muted-foreground mb-6">{t("blogPage.articleNotFoundDesc")}</p>
-          <Link to="/blog">
+          <LocalizedLink to="/blog">
             <Button>{t("blogPage.backButton")}</Button>
-          </Link>
+          </LocalizedLink>
         </div>
         <Footer />
       </div>
@@ -133,13 +134,13 @@ const BlogArticlePage = () => {
       <section className="pt-32 pb-8 bg-gradient-to-b from-accent/30 to-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <Link 
+            <LocalizedLink 
               to="/blog" 
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6"
             >
               <ArrowLeft className="h-4 w-4" />
               {t("blogPage.backToBlog")}
-            </Link>
+            </LocalizedLink>
             
             <Badge variant="secondary" className="mb-4">
               {article.category}
@@ -215,11 +216,11 @@ const BlogArticlePage = () => {
                 <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
                   {article.cta.description}
                 </p>
-                <Link to={article.cta.buttonLink}>
+                <LocalizedLink to={article.cta.buttonLink}>
                   <Button size="lg" className="font-semibold px-8">
                     {article.cta.buttonText}
                   </Button>
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>

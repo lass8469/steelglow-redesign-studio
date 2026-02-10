@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LocalizedLink from "./LocalizedLink";
 
 interface LogoProps {
   className?: string;
@@ -13,7 +13,7 @@ const Logo = ({ className = "", size = "md" }: LogoProps) => {
   };
 
   return (
-    <Link to="/" className={`flex items-center ${className}`}>
+    <LocalizedLink to="/" className={`flex items-center ${className}`}>
       <span
         className={`font-black tracking-tight text-gradient ${sizeClasses[size]}`}
         style={{
@@ -22,7 +22,7 @@ const Logo = ({ className = "", size = "md" }: LogoProps) => {
       >
         DESICCANT
       </span>
-    </Link>
+    </LocalizedLink>
   );
 };
 

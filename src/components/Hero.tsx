@@ -1,6 +1,7 @@
 import { ChevronDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import LocalizedLink from "./LocalizedLink";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -43,16 +44,22 @@ const Hero = () => {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 h-14 text-base glow-orange group"
+              asChild
             >
-              {t("hero.exploreProducts")}
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <LocalizedLink to="/products">
+                {t("hero.exploreProducts")}
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </LocalizedLink>
             </Button>
             <Button
               variant="outline"
               size="lg"
               className="border-foreground/30 text-foreground hover:bg-foreground/10 px-8 h-14 text-base"
+              asChild
             >
-              {t("hero.contactUs")}
+              <LocalizedLink to="/contact">
+                {t("hero.contactUs")}
+              </LocalizedLink>
             </Button>
           </div>
 
