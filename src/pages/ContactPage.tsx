@@ -19,9 +19,25 @@ const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
+    product: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [productEnquiry, setProductEnquiry] = useState(false);
+
+  const productOptions = [
+    { value: "drybag-i", label: t("products.drybagI") },
+    { value: "drybag-iii", label: t("products.drybagIII") },
+    { value: "silica-gel", label: t("products.silica") },
+    { value: "molecular-sieve", label: t("products.molecular") },
+    { value: "calcium-chloride", label: t("products.calcium") },
+    { value: "dunnage-bags", label: t("products.dunnage") },
+    { value: "edge-protectors", label: t("products.edge") },
+    { value: "anti-slip", label: t("products.antiSlip") },
+    { value: "stabustrap", label: t("products.stabustrap") },
+    { value: "retail", label: t("products.retail") },
+    { value: "datalogger", label: t("products.datalogger") },
+  ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
