@@ -436,7 +436,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagI.spec.material": "Material",
     "drybagI.spec.materialValue": "Calcium Chloride Clay Blend",
     "drybagI.spec.absorption": "Absorption Capacity",
-    "drybagI.spec.absorptionValue": "Up to 300% of its weight",
+    "drybagI.spec.absorptionValue": "80% of its own weight",
     "drybagI.spec.duration": "Protection Duration",
     "drybagI.spec.durationValue": "Up to 90 days",
     "drybagI.spec.temp": "Operating Temperature",
