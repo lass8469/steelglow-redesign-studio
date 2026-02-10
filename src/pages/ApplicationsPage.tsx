@@ -147,19 +147,19 @@ const ApplicationsPage = () => {
               {t("applicationsPage.ctaDesc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                to="/#products"
+              <LocalizedLink 
+                to="/products"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-secondary text-secondary-foreground font-medium rounded-sm hover:bg-secondary/80 transition-colors"
               >
                 {t("applicationsPage.viewProducts")}
                 <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link 
+              </LocalizedLink>
+              <LocalizedLink 
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors"
               >
                 {t("applicationsPage.contactExperts")}
-              </Link>
+              </LocalizedLink>
             </div>
           </motion.div>
         </div>

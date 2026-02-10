@@ -211,12 +211,12 @@ const AboutPage = () => {
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
               {t("aboutPage.ctaDesc")}
             </p>
-            <Link 
+            <LocalizedLink 
               to="/contact"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors"
             >
               {t("aboutPage.ctaButton")}
-            </Link>
+            </LocalizedLink>
           </motion.div>
         </div>
       </section>

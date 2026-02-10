@@ -157,11 +157,11 @@ const BlogPage = () => {
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
             {t("blogPage.ctaDesc")}
           </p>
-          <Link to="/contact">
+          <LocalizedLink to="/contact">
             <button className="px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors">
               {t("blogPage.ctaButton")}
             </button>
-          </Link>
+          </LocalizedLink>
         </div>
       </section>
 
