@@ -474,7 +474,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagIII.spec.absorption": "Absorption Capacity",
     "drybagIII.spec.absorptionValue": "Up to 70% of its weight",
     "drybagIII.spec.duration": "Protection Duration",
-    "drybagIII.spec.durationValue": "Up to 45 days",
+    "drybagIII.spec.durationValue": "Up to 60 days",
     "drybagIII.spec.temp": "Operating Temperature",
     "drybagIII.spec.tempValue": "-10°C to +60°C",
     "drybagIII.spec.shelf": "Shelf Life",
