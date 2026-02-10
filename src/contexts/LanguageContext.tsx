@@ -455,7 +455,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagI.app3": "Automotive Parts",
     "drybagI.app4": "Machinery & Equipment",
     "drybagI.app5": "Agricultural Products",
-    "drybagI.app6": "Textiles & Fabrics",
+    "drybagI.app6": "Coffee",
     "drybagI.ctaTitle1": "Ready to Protect Your",
     "drybagI.ctaTitle2": " Cargo?",
     "drybagI.ctaDesc": "Get in touch with our team to discuss your container desiccant needs and receive a customized quote.",
