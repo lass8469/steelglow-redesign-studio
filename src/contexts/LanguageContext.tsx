@@ -554,7 +554,7 @@ const translations: Record<Language, Record<string, string>> = {
     "dunnage.spec.temp": "Temperature Range",
     "dunnage.spec.tempValue": "-30°C to +70°C",
     "dunnage.spec.cert": "Certifications",
-    "dunnage.spec.certValue": "AAR Approved, ISO 9001",
+    "dunnage.spec.certValue": "AAR Approved",
     "dunnage.size1.desc": "36\" x 48\" - Light loads",
     "dunnage.size2.desc": "36\" x 60\" - Medium cargo",
     "dunnage.size3.desc": "48\" x 48\" - Standard pallets",
