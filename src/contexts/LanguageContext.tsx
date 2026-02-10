@@ -612,7 +612,7 @@ const translations: Record<Language, Record<string, string>> = {
     "calcium.badge": "Export Grade",
     "calcium.tagline": "Industrial Strength",
     "calcium.title": "Calcium-Chloride",
-    "calcium.titleHighlight": "",
+    "calcium.titleHighlight": " Desiccant",
     "calcium.description": "Industrial-strength humidity control for goods in transit worldwide. Specially formulated to meet the demands of export packaging and long-haul logistics, preventing moisture damage during ocean voyages.",
     "calcium.feature1.title": "Visual Tracking",
     "calcium.feature2.title": "Export Grade",
