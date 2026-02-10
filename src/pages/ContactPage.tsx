@@ -166,7 +166,7 @@ const ContactPage = () => {
                     checked={productEnquiry}
                     onCheckedChange={(checked) => {
                       setProductEnquiry(!!checked);
-                      if (!checked) setFormData({ ...formData, product: "" });
+                      if (!checked) setFormData({ ...formData, product: "", size: "" });
                     }}
                   />
                   <label htmlFor="product-enquiry-page" className="text-sm font-medium text-foreground cursor-pointer">
