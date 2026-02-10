@@ -120,7 +120,7 @@ const SocialProofPage = () => {
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center"
           >
             {trustedLogos.map((logo, index) => {
-              const IconComponent = logo.icon;
+              const IconComponent = logo.icon as any;
               return (
                 <motion.div
                   key={index}
