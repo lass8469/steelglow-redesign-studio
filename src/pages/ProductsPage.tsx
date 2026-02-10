@@ -133,10 +133,10 @@ const ProductCard = ({ product }: { product: typeof desiccantProducts[0] }) => (
         className="text-primary hover:text-primary hover:bg-primary/10 -ml-3 group/btn"
         asChild
       >
-        <Link to={product.link}>
+        <LocalizedLink to={product.link}>
           Learn More
           <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-        </Link>
+        </LocalizedLink>
       </Button>
     </div>
   </div>
