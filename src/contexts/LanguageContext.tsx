@@ -984,7 +984,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.benefit3": "Global forsendelse med lokal support",
     "contact.benefit4": "24-timers svargaranti",
     "contact.headquarters": "Odinsvej 21, DK-8722 Hedensted",
-    "contact.whatsapp": "WhatsApp tilgængelig",
+    "contact.whatsapp": "WhatsApp +4522631700",
     "contact.form.fullName": "Fulde navn",
     "contact.form.email": "E-mailadresse",
     "contact.form.company": "Virksomhedsnavn",
