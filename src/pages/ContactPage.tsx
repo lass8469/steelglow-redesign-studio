@@ -22,6 +22,7 @@ const ContactPage = () => {
     email: "",
     message: "",
     product: "",
+    size: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [productEnquiry, setProductEnquiry] = useState(false);
