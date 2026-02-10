@@ -1034,6 +1034,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contactPage.badge": "Kontakt os",
     "contactPage.title1": "Kom i kontakt",
     "contactPage.title2": "med Dry-Bag",
+    "contactPage.title2Prefix": "med",
     "contactPage.description": "Vi er klar til at servicere din virksomhed ved at hjælpe dig med at beskytte din fragt. Tøv ikke med at kontakte os—vi ser frem til at høre fra dig.",
     "contactPage.formTitle": "Send os en besked",
     "contactPage.form.name": "Navn",
