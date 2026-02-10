@@ -628,7 +628,7 @@ const translations: Record<Language, Record<string, string>> = {
     "calcium.spec.duration": "Protection Duration",
     "calcium.spec.durationValue": "Up to 90 days",
     "calcium.spec.temp": "Operating Temperature",
-    "calcium.spec.tempValue": "-20°C to +60°C",
+    "calcium.spec.tempValue": "-5°C to +50°C",
     "calcium.spec.shelf": "Shelf Life",
     "calcium.spec.shelfValue": "24 months sealed",
     "calcium.spec.cert": "Certifications",
