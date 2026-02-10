@@ -20,10 +20,11 @@ const CalciumChlorideProduct = () => {
     { label: t("calcium.spec.cert"), value: t("calcium.spec.certValue") },
   ];
   const sizes = [
-    { weight: "Stripe 6x125g", description: t("calcium.size1.desc"), popular: false },
-    { weight: "Blanket 1000g", description: t("calcium.size2.desc"), popular: true },
-    { weight: "Blanket 2000g", description: t("calcium.size3.desc"), popular: false },
-    { weight: t("productPage.custom"), description: t("calcium.size4.desc"), popular: false },
+    { weight: "4x100g Strip", description: t("calcium.size1.desc"), popular: false },
+    { weight: "6x100g Strip", description: t("calcium.size2.desc"), popular: false },
+    { weight: "6x125g Strip", description: t("calcium.size3.desc"), popular: false },
+    { weight: "12x100g Blanket", description: t("calcium.size4.desc"), popular: false },
+    { weight: "2000g", description: t("calcium.size5.desc"), popular: false },
   ];
   const features = [
     { icon: Droplets, title: t("calcium.feature1.title") },
