@@ -1423,7 +1423,7 @@ const translations: Record<Language, Record<string, string>> = {
     "calcium.tagline": "Industristyrke",
     "calcium.title": "Absorber Blanket",
     "calcium.titleHighlight": " Calciumchlorid",
-    "calcium.description": "Industriel fugtkontrol til varer i transit verden over. Specielt formuleret til at opfylde kravene til eksportemballage og langdistancelogistik, forebygger fugtskader under sørejser.",
+    "calcium.description": "Industriel fugtkontrol til varer i transit verden over. Specielt udviklet til at opfylde kravene til eksportemballage og langdistancelogistik, forebygger fugtskader under sørejser.",
     "calcium.feature1.title": "Visuel sporing",
     "calcium.feature2.title": "Eksportkvalitet",
     "calcium.feature3.title": "Høj kapacitet",
