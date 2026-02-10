@@ -1252,7 +1252,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagI.spec.temp": "Driftstemperatur",
     "drybagI.spec.tempValue": "-5°C til +50°C",
     "drybagI.spec.shelf": "Holdbarhed",
-    "drybagI.spec.shelfValue": "36 måneder forseglet",
+    "drybagI.spec.shelfValue": "24 måneder forseglet",
     "drybagI.spec.cert": "Certificeringer",
     "drybagI.spec.certValue": "REACH-kompatibel",
     "drybagI.size1.desc": "Små containere, paller",
