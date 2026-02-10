@@ -585,7 +585,7 @@ const translations: Record<Language, Record<string, string>> = {
     "molecular.feature2.title": "Ultra-Low Humidity",
     "molecular.feature3.title": "Tyvek® Packaging",
     "molecular.spec.pore": "Pore Size",
-    "molecular.spec.poreValue": "3Å, 4Å, 5Å, 13X",
+    "molecular.spec.poreValue": "3Å / 4Å",
     "molecular.spec.absorption": "Absorption Capacity",
     "molecular.spec.absorptionValue": "20-25% at low RH",
     "molecular.spec.dewpoint": "Dew Point",
