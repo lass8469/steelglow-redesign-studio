@@ -7,6 +7,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import MoistureBackground from "./MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { productSizes } from "@/lib/product-sizes";
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -16,6 +17,7 @@ const Contact = () => {
     company: "",
     message: "",
     product: "",
+    size: "",
   });
   const [productEnquiry, setProductEnquiry] = useState(false);
 
@@ -150,7 +152,7 @@ const Contact = () => {
                     checked={productEnquiry}
                     onCheckedChange={(checked) => {
                       setProductEnquiry(!!checked);
-                      if (!checked) setFormData({ ...formData, product: "" });
+                      if (!checked) setFormData({ ...formData, product: "", size: "" });
                     }}
                   />
                   <label htmlFor="product-enquiry-home" className="text-sm font-medium text-foreground cursor-pointer">
@@ -162,7 +164,7 @@ const Contact = () => {
                   <div>
                     <Select
                       value={formData.product}
-                      onValueChange={(value) => setFormData({ ...formData, product: value })}
+                      onValueChange={(value) => setFormData({ ...formData, product: value, size: "" })}
                     >
                       <SelectTrigger className="bg-background border-border">
                         <SelectValue placeholder={t("contact.form.selectProduct")} />
@@ -170,6 +172,24 @@ const Contact = () => {
                       <SelectContent>
                         {productOptions.map((p) => (
                           <SelectItem key={p.value} value={p.value}>{p.label}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
+
+                {productEnquiry && formData.product && productSizes[formData.product] && productSizes[formData.product].length > 1 && (
+                  <div>
+                    <Select
+                      value={formData.size}
+                      onValueChange={(value) => setFormData({ ...formData, size: value })}
+                    >
+                      <SelectTrigger className="bg-background border-border">
+                        <SelectValue placeholder={t("contact.form.selectSize")} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {productSizes[formData.product].map((size) => (
+                          <SelectItem key={size} value={size}>{size}</SelectItem>
                         ))}
                       </SelectContent>
                     </Select>
