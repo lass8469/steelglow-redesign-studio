@@ -122,9 +122,9 @@ const translations: Record<Language, Record<string, string>> = {
     "productsPage.learnMore": "Learn more",
     // Product subtitles & descriptions for products page
     "productsPage.drybagI.subtitle": "Original formula",
-    "productsPage.drybagI.desc": "Clay-based desiccant engineered for long ocean journeys with up to 60 days protection.",
+    "productsPage.drybagI.desc": "Clay-based desiccant engineered for long ocean journeys with up to 90 days protection.",
     "productsPage.drybagIII.subtitle": "Bentonite clay",
-    "productsPage.drybagIII.desc": "Industrial-grade desiccant made from natural bentonite clay, eco-friendly and biodegradable.",
+    "productsPage.drybagIII.desc": "Industrial-grade desiccant made from natural bentonite clay, eco-friendly and sustainable.",
     "productsPage.silica.subtitle": "E-commerce ready",
     "productsPage.silica.desc": "Premium silica gel packets for in-box moisture protection with FDA approval.",
     "productsPage.molecular.subtitle": "Pharma grade",
