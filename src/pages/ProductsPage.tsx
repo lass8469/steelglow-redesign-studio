@@ -266,9 +266,9 @@ const ProductsPage = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8"
                 asChild
               >
-                <Link to="/contact">
+                <LocalizedLink to="/contact">
                   Contact Sales
-                </Link>
+                </LocalizedLink>
               </Button>
               <Button
                 size="lg"
