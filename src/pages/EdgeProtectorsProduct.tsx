@@ -20,11 +20,7 @@ const EdgeProtectorsProduct = () => {
     { label: t("edge.spec.cert"), value: t("edge.spec.certValue") },
   ];
   const sizes = [
-    { weight: "35x35mm", description: t("edge.size1.desc"), popular: false },
-    { weight: "50x50mm", description: t("edge.size2.desc"), popular: true },
-    { weight: "75x75mm", description: t("edge.size3.desc"), popular: false },
-    { weight: "100x100mm", description: t("edge.size4.desc"), popular: false },
-    { weight: t("productPage.custom"), description: t("edge.size5.desc"), popular: false },
+    { weight: t("productPage.custom"), description: t("edge.size1.desc"), popular: false },
   ];
   const features = [
     { icon: Shield, title: t("edge.feature1.title") },
