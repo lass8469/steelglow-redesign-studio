@@ -332,6 +332,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Blog post content
     "blogPage.post1.title": "The complete guide to powdered desiccants",
     "blogPage.post1.excerpt": "Discover the science behind powdered desiccants and how they protect your cargo from moisture damage during shipping and storage.",
+    "blogPage.post2.title": "Container rain: Why dew point physics makes moisture damage inevitable during ocean transit",
+    "blogPage.post2.excerpt": "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
 
     // Downloads Page
     "downloadsPage.title1": "Resources",
@@ -1153,6 +1155,8 @@ const translations: Record<Language, Record<string, string>> = {
     // Blog post content
     "blogPage.post1.title": "Den komplette guide til pulvertørremidler",
     "blogPage.post1.excerpt": "Oplev videnskaben bag pulvertørremidler, og hvordan de beskytter din fragt mod fugtskader under forsendelse og opbevaring.",
+    "blogPage.post2.title": "Containerregn: Hvorfor dugpunktsfysik gør fugtskader uundgåelige under søtransport",
+    "blogPage.post2.excerpt": "Forstå de termodynamiske kræfter, der forvandler skibscontainere til kondenskamre, og den eneste beviste løsning der virker i stor skala.",
 
     // Downloads Page
     "downloadsPage.title1": "Ressourcer",
