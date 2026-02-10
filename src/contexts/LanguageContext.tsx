@@ -1405,7 +1405,7 @@ const translations: Record<Language, Record<string, string>> = {
     "molecular.spec.shelf": "Holdbarhed",
     "molecular.spec.shelfValue": "24 måneder forseglet",
     "molecular.spec.cert": "Certificeringer",
-    "molecular.spec.certValue": "FDA, EU Pharma, DMF",
+    "molecular.spec.certValue": "REACH",
     "molecular.size1.desc": "3Å porestørrelse, præcis fugtkontrol",
     "molecular.size2.desc": "4Å porestørrelse, bredere molekylær adsorption",
     "molecular.app1": "Fugtfølsom lægemiddelemballage",
