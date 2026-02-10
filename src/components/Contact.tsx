@@ -164,7 +164,7 @@ const Contact = () => {
                   <div>
                     <Select
                       value={formData.product}
-                      onValueChange={(value) => setFormData({ ...formData, product: value })}
+                      onValueChange={(value) => setFormData({ ...formData, product: value, size: "" })}
                     >
                       <SelectTrigger className="bg-background border-border">
                         <SelectValue placeholder={t("contact.form.selectProduct")} />
