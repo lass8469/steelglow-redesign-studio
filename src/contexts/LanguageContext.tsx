@@ -181,6 +181,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.form.submit": "Send message",
     "contact.form.productEnquiry": "Enquiring about a specific product",
     "contact.form.selectProduct": "Select a product",
+    "contact.form.selectSize": "Select a size",
 
     // About Page
     "aboutPage.badge": "About us",
