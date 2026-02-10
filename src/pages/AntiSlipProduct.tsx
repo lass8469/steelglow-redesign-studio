@@ -20,10 +20,9 @@ const AntiSlipProduct = () => {
     { label: t("antislip.spec.cert"), value: t("antislip.spec.certValue") },
   ];
   const sizes = [
-    { weight: "600x800mm", description: t("antislip.size1.desc"), popular: false },
-    { weight: "800x1200mm", description: t("antislip.size2.desc"), popular: true },
-    { weight: "1000x1200mm", description: t("antislip.size3.desc"), popular: false },
-    { weight: t("productPage.custom"), description: t("antislip.size4.desc"), popular: false },
+    { weight: "740x1140mm", description: t("antislip.size1.desc"), popular: true },
+    { weight: "1000x1000mm", description: t("antislip.size2.desc"), popular: false },
+    { weight: t("productPage.custom"), description: t("antislip.size3.desc"), popular: false },
   ];
   const features = [
     { icon: Layers, title: t("antislip.feature1.title") },
