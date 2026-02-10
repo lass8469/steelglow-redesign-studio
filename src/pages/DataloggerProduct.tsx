@@ -20,10 +20,7 @@ const DataloggerProduct = () => {
     { label: t("datalogger.spec.cert"), value: t("datalogger.spec.certValue") },
   ];
   const sizes = [
-    { weight: "Standard", description: t("datalogger.size1.desc"), popular: true },
-    { weight: "High-Precision", description: t("datalogger.size2.desc"), popular: false },
-    { weight: "Multi-Use", description: t("datalogger.size3.desc"), popular: false },
-    { weight: t("productPage.custom"), description: t("datalogger.size4.desc"), popular: false },
+    { weight: t("datalogger.singleType"), description: t("datalogger.size1.desc"), popular: true },
   ];
   const features = [
     { icon: Thermometer, title: t("datalogger.feature1.title") },
