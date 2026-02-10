@@ -1,4 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -9,7 +10,15 @@ import {
 import { Globe } from "lucide-react";
 
 const LanguageToggle = () => {
-  const { language, setLanguage } = useLanguage();
+  const { language } = useLanguage();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const switchTo = (lang: "en" | "da") => {
+    // Replace the language prefix in the current path
+    const newPath = location.pathname.replace(/^\/(en|da)/, `/${lang}`);
+    navigate(newPath + location.search + location.hash);
+  };
 
   return (
     <DropdownMenu>
@@ -21,14 +30,14 @@ const LanguageToggle = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-popover border-border">
         <DropdownMenuItem 
-          onClick={() => setLanguage("en")}
+          onClick={() => switchTo("en")}
           className={language === "en" ? "bg-accent" : ""}
         >
           <span className="mr-2">🇬🇧</span>
           English
         </DropdownMenuItem>
         <DropdownMenuItem 
-          onClick={() => setLanguage("da")}
+          onClick={() => switchTo("da")}
           className={language === "da" ? "bg-accent" : ""}
         >
           <span className="mr-2">🇩🇰</span>
