@@ -237,8 +237,12 @@ const translations: Record<Language, Record<string, string>> = {
     "contactPage.distributorDesc": "DRY-BAG® is distributed via our partners globally. If you have any questions, or want to become a distributor, feel free to contact us.",
     "contactPage.messageSent": "Message sent!",
     "contactPage.messageConfirm": "We'll get back to you as soon as possible.",
+    "contact.toast.success": "Message sent!",
+    "contact.toast.successDesc": "Thank you for reaching out. We'll get back to you shortly.",
+    "contact.toast.error": "Something went wrong",
+    "contact.toast.errorDesc": "Your message could not be sent. Please try again later.",
 
-    // Applications Page
+
     "applicationsPage.badge": "Industry solutions",
     "applicationsPage.title1": "Moisture protection",
     "applicationsPage.title2": "for every industry",
@@ -1053,6 +1057,11 @@ const translations: Record<Language, Record<string, string>> = {
     "contactPage.distributorDesc": "DRY-BAG® distribueres via vores partnere globalt. Hvis du har spørgsmål eller ønsker at blive distributør, er du velkommen til at kontakte os.",
     "contactPage.messageSent": "Besked sendt!",
     "contactPage.messageConfirm": "Vi vender tilbage til dig hurtigst muligt.",
+    "contact.toast.success": "Besked sendt!",
+    "contact.toast.successDesc": "Tak fordi du kontaktede os. Vi vender tilbage hurtigst muligt.",
+    "contact.toast.error": "Noget gik galt",
+    "contact.toast.errorDesc": "Din besked kunne ikke sendes. Prøv venligst igen senere.",
+
 
     // Applications Page
     "applicationsPage.badge": "Brancheløsninger",

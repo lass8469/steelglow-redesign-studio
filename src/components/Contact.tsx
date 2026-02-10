@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Send, MapPin, Mail, MessageCircle, Check } from "lucide-react";
+import { Send, MapPin, Mail, MessageCircle, Check, Loader2 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { submitWeb3Form } from "@/lib/web3forms";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,6 +13,8 @@ import { productSizes } from "@/lib/product-sizes";
 
 const Contact = () => {
   const { t } = useLanguage();
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,9 +39,31 @@ const Contact = () => {
     { value: "datalogger", label: t("products.datalogger") },
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
+    setIsSubmitting(true);
+    try {
+      await submitWeb3Form({
+        ...formData,
+        subject: formData.product
+          ? `Product Enquiry: ${formData.product}${formData.size ? ` (${formData.size})` : ""}`
+          : "New Contact from Website",
+      });
+      toast({
+        title: t("contact.toast.success"),
+        description: t("contact.toast.successDesc"),
+      });
+      setFormData({ name: "", email: "", company: "", message: "", product: "", size: "" });
+      setProductEnquiry(false);
+    } catch {
+      toast({
+        title: t("contact.toast.error"),
+        description: t("contact.toast.errorDesc"),
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const benefits = [
@@ -212,10 +238,20 @@ const Contact = () => {
                 <Button
                   type="submit"
                   size="lg"
+                  disabled={isSubmitting}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold h-14"
                 >
-                  {t("contact.form.submit")}
-                  <Send className="ml-2 h-5 w-5" />
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                      {t("contactPage.form.sending")}
+                    </>
+                  ) : (
+                    <>
+                      {t("contact.form.submit")}
+                      <Send className="ml-2 h-5 w-5" />
+                    </>
+                  )}
                 </Button>
               </form>
             </div>

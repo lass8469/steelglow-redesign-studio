@@ -11,6 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { submitWeb3Form } from "@/lib/web3forms";
 import contactHeroBg from "@/assets/contact-hero.jpg";
 import { productSizes } from "@/lib/product-sizes";
 
@@ -44,17 +45,28 @@ const ContactPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: t("contactPage.messageSent"),
-      description: t("contactPage.messageConfirm"),
-    });
-    
-    setFormData({ name: "", email: "", message: "", product: "", size: "" });
-    setProductEnquiry(false);
-    setIsSubmitting(false);
+    try {
+      await submitWeb3Form({
+        ...formData,
+        subject: formData.product
+          ? `Product Enquiry: ${formData.product}${formData.size ? ` (${formData.size})` : ""}`
+          : "New Contact from Website",
+      });
+      toast({
+        title: t("contactPage.messageSent"),
+        description: t("contactPage.messageConfirm"),
+      });
+      setFormData({ name: "", email: "", message: "", product: "", size: "" });
+      setProductEnquiry(false);
+    } catch {
+      toast({
+        title: t("contact.toast.error"),
+        description: t("contact.toast.errorDesc"),
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
