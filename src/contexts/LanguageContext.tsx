@@ -1295,7 +1295,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagIII.spec.shelf": "Holdbarhed",
     "drybagIII.spec.shelfValue": "24 måneder forseglet",
     "drybagIII.spec.cert": "Certificeringer",
-    "drybagIII.spec.certValue": "Miljøvenlig",
+    "drybagIII.spec.certValue": "REACH-kompatibel",
     "drybagIII.size1.desc": "Små komponenter, sensorer",
     "drybagIII.size2.desc": "Elektronik, små dele",
     "drybagIII.size3.desc": "Instrumenter, kredsløbskort",
