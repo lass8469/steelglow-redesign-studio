@@ -20,12 +20,13 @@ const DunnageBagProduct = () => {
     { label: t("dunnage.spec.cert"), value: t("dunnage.spec.certValue") },
   ];
   const sizes = [
-    { weight: "Level 1", description: t("dunnage.size1.desc"), popular: false },
-    { weight: "Level 2", description: t("dunnage.size2.desc"), popular: false },
-    { weight: "Level 3", description: t("dunnage.size3.desc"), popular: true },
-    { weight: "Level 4", description: t("dunnage.size4.desc"), popular: false },
-    { weight: "Level 5", description: t("dunnage.size5.desc"), popular: false },
-    { weight: t("productPage.custom"), description: t("dunnage.size6.desc"), popular: false },
+    { weight: "60x120cm", description: t("dunnage.size1.desc"), popular: false },
+    { weight: "90x120cm", description: t("dunnage.size2.desc"), popular: false },
+    { weight: "90x150cm", description: t("dunnage.size3.desc"), popular: false },
+    { weight: "90x180cm", description: t("dunnage.size4.desc"), popular: false },
+    { weight: "90x220cm", description: t("dunnage.size5.desc"), popular: false },
+    { weight: "120x180cm", description: t("dunnage.size6.desc"), popular: true },
+    { weight: "120x240cm", description: t("dunnage.size7.desc"), popular: false },
   ];
   const features = [
     { icon: Truck, title: t("dunnage.feature1.title") },
