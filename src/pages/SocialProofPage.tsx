@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, Quote, Play, Award, Anchor, Ship, Factory, Truck, Box, Globe } from "lucide-react";
+import varoLogo from "@/assets/logo-varo.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -10,7 +11,7 @@ const SocialProofPage = () => {
 
   // Placeholder logos - replace with actual company logos
   const trustedLogos = [
-    { name: "Nordic Freight", icon: Ship, accent: true },
+    { name: "VARO", icon: null, accent: true, logo: varoLogo },
     { name: "CargoMax", icon: Box, accent: false },
     { name: "SteelWorks Int.", icon: Factory, accent: true },
     { name: "OceanLine", icon: Anchor, accent: false },
@@ -119,7 +120,7 @@ const SocialProofPage = () => {
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center"
           >
             {trustedLogos.map((logo, index) => {
-              const IconComponent = logo.icon;
+              const IconComponent = logo.icon as any;
               return (
                 <motion.div
                   key={index}
@@ -129,10 +130,16 @@ const SocialProofPage = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="flex items-center justify-center gap-2 h-20 px-4 bg-card/50 border border-border/50 rounded-sm hover:border-primary/30 transition-all group hover:bg-card/80"
                 >
-                  <IconComponent className={`w-5 h-5 ${logo.accent ? 'text-primary' : 'text-muted-foreground'} group-hover:text-primary transition-colors`} />
-                  <span className={`font-bold text-sm tracking-tight ${logo.accent ? 'text-foreground' : 'text-muted-foreground'} group-hover:text-foreground transition-colors`}>
-                    {logo.name}
-                  </span>
+                  {logo.logo ? (
+                    <img src={logo.logo} alt={logo.name} className="h-8 object-contain" />
+                  ) : (
+                    <>
+                      <IconComponent className={`w-5 h-5 ${logo.accent ? 'text-primary' : 'text-muted-foreground'} group-hover:text-primary transition-colors`} />
+                      <span className={`font-bold text-sm tracking-tight ${logo.accent ? 'text-foreground' : 'text-muted-foreground'} group-hover:text-foreground transition-colors`}>
+                        {logo.name}
+                      </span>
+                    </>
+                  )}
                 </motion.div>
               );
             })}
