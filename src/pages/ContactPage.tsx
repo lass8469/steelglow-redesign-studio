@@ -61,8 +61,8 @@ const ContactPage = () => {
     {
       icon: Mail,
       label: t("contactPage.email"),
-      value: "contact@dry-bag.com",
-      href: "mailto:contact@dry-bag.com"
+      value: "dry-bag@desiccant.com",
+      href: "mailto:dry-bag@desiccant.com"
     },
     {
       icon: Phone,
