@@ -480,7 +480,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagIII.spec.shelf": "Shelf Life",
     "drybagIII.spec.shelfValue": "24 months sealed",
     "drybagIII.spec.cert": "Certifications",
-    "drybagIII.spec.certValue": "Eco-Friendly",
+    "drybagIII.spec.certValue": "REACH-Compliant",
     "drybagIII.size1.desc": "Small components, sensors",
     "drybagIII.size2.desc": "Electronics, small parts",
     "drybagIII.size3.desc": "Instruments, circuit boards",
