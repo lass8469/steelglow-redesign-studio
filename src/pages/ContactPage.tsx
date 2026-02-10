@@ -11,6 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { submitWeb3Form } from "@/lib/web3forms";
 import contactHeroBg from "@/assets/contact-hero.jpg";
 import { productSizes } from "@/lib/product-sizes";
 
