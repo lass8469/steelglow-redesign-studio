@@ -130,10 +130,16 @@ const SocialProofPage = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="flex items-center justify-center gap-2 h-20 px-4 bg-card/50 border border-border/50 rounded-sm hover:border-primary/30 transition-all group hover:bg-card/80"
                 >
-                  <IconComponent className={`w-5 h-5 ${logo.accent ? 'text-primary' : 'text-muted-foreground'} group-hover:text-primary transition-colors`} />
-                  <span className={`font-bold text-sm tracking-tight ${logo.accent ? 'text-foreground' : 'text-muted-foreground'} group-hover:text-foreground transition-colors`}>
-                    {logo.name}
-                  </span>
+                  {logo.logo ? (
+                    <img src={logo.logo} alt={logo.name} className="h-8 object-contain" />
+                  ) : (
+                    <>
+                      <IconComponent className={`w-5 h-5 ${logo.accent ? 'text-primary' : 'text-muted-foreground'} group-hover:text-primary transition-colors`} />
+                      <span className={`font-bold text-sm tracking-tight ${logo.accent ? 'text-foreground' : 'text-muted-foreground'} group-hover:text-foreground transition-colors`}>
+                        {logo.name}
+                      </span>
+                    </>
+                  )}
                 </motion.div>
               );
             })}
