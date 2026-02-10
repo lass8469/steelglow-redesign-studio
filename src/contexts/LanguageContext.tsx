@@ -634,6 +634,12 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("language", lang);
   };
 
+  // Allow external components (LanguageLayout) to sync from URL
+  const syncLanguage = (lang: Language) => {
+    setLanguageState(lang);
+    localStorage.setItem("language", lang);
+  };
+
   const t = (key: string): string => {
     return translations[language][key] || key;
   };
