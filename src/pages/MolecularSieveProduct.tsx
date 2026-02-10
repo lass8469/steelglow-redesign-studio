@@ -20,12 +20,8 @@ const MolecularSieveProduct = () => {
     { label: t("molecular.spec.cert"), value: t("molecular.spec.certValue") },
   ];
   const sizes = [
-    { weight: "1g", description: t("molecular.size1.desc"), popular: false },
-    { weight: "5g", description: t("molecular.size2.desc"), popular: true },
-    { weight: "10g", description: t("molecular.size3.desc"), popular: false },
-    { weight: "12.5g", description: t("molecular.size4.desc"), popular: false },
-    { weight: "25g", description: t("molecular.size5.desc"), popular: false },
-    { weight: t("productPage.custom"), description: t("molecular.size6.desc"), popular: false },
+    { weight: "2g 3Å", description: t("molecular.size1.desc"), popular: false },
+    { weight: "2g 4Å", description: t("molecular.size2.desc"), popular: false },
   ];
   const features = [
     { icon: FlaskConical, title: t("molecular.feature1.title") },
