@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { 
-  Pill, Cpu, Apple, Truck, Car, Shield, 
+  Pill, Cpu, Apple, Truck, Car, Wind, 
   Beaker, Shirt, Cog, ArrowRight 
 } from "lucide-react";
 import LocalizedLink from "@/components/LocalizedLink";
