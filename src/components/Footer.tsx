@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LocalizedLink from "./LocalizedLink";
 import MoistureBackground from "./MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Logo from "./Logo";
@@ -61,12 +61,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {footerLinks.products.map((link) => (
                   <li key={link.label}>
-                    <Link
+                    <LocalizedLink
                       to={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
                       {link.label}
-                    </Link>
+                    </LocalizedLink>
                   </li>
                 ))}
               </ul>
@@ -78,12 +78,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {footerLinks.company.map((link) => (
                   <li key={link.label}>
-                    <Link
+                    <LocalizedLink
                       to={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
                       {link.label}
-                    </Link>
+                    </LocalizedLink>
                   </li>
                 ))}
               </ul>
@@ -95,12 +95,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {footerLinks.resources.map((link) => (
                   <li key={link.label}>
-                    <Link
+                    <LocalizedLink
                       to={link.href}
                       className="text-muted-foreground hover:text-foreground transition-colors"
                     >
                       {link.label}
-                    </Link>
+                    </LocalizedLink>
                   </li>
                 ))}
               </ul>
@@ -115,12 +115,12 @@ const Footer = () => {
               © {new Date().getFullYear()} DRY-BAG. {t("footer.rights")}
             </p>
             <div className="flex gap-6">
-              <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <LocalizedLink to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 {t("footer.privacy")}
-              </Link>
-              <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              </LocalizedLink>
+              <LocalizedLink to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 {t("footer.terms")}
-              </Link>
+              </LocalizedLink>
             </div>
           </div>
         </div>

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import LocalizedLink from "./LocalizedLink";
 import Logo from "./Logo";
 import {
   DropdownMenu,
@@ -51,18 +52,12 @@ const Navbar = () => {
   const handleNavClick = (href: string) => {
     setIsMobileOpen(false);
     if (href.startsWith("/#")) {
-      if (location.pathname === "/") {
+      if (location.pathname.match(/^\/(en|da)\/?$/)) {
         const element = document.querySelector(href.substring(1));
         element?.scrollIntoView({ behavior: "smooth" });
       }
     }
   };
-
-  const navItems = [
-    { label: t("nav.about"), href: "/about" },
-    { label: t("nav.applications"), href: "/applications" },
-    { label: t("nav.contact"), href: "/contact" },
-  ];
 
   const desiccantProducts = productItems.filter(p => p.category === "desiccants");
   const cargoProducts = productItems.filter(p => p.category === "cargo");
@@ -88,13 +83,13 @@ const Navbar = () => {
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">
-            <Link
+            <LocalizedLink
               to="/about"
               onClick={() => handleNavClick("/about")}
               className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
             >
               {t("nav.about")}
-            </Link>
+            </LocalizedLink>
 
             {/* Products Dropdown */}
             <DropdownMenu>
@@ -106,9 +101,9 @@ const Navbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="start" className="w-56 bg-popover border-border">
                 <DropdownMenuItem asChild>
-                  <Link to="/products" className="cursor-pointer font-semibold text-primary">
+                  <LocalizedLink to="/products" className="cursor-pointer font-semibold text-primary">
                     {t("nav.viewAllProducts")}
-                  </Link>
+                  </LocalizedLink>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
@@ -116,9 +111,9 @@ const Navbar = () => {
                 </DropdownMenuLabel>
                 {desiccantProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
-                    <Link to={item.href} className="cursor-pointer">
+                    <LocalizedLink to={item.href} className="cursor-pointer">
                       {t(item.label)}
-                    </Link>
+                    </LocalizedLink>
                   </DropdownMenuItem>
                 ))}
                 <DropdownMenuSeparator />
@@ -127,9 +122,9 @@ const Navbar = () => {
                 </DropdownMenuLabel>
                 {cargoProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
-                    <Link to={item.href} className="cursor-pointer">
+                    <LocalizedLink to={item.href} className="cursor-pointer">
                       {t(item.label)}
-                    </Link>
+                    </LocalizedLink>
                   </DropdownMenuItem>
                 ))}
                 <DropdownMenuSeparator />
@@ -138,33 +133,33 @@ const Navbar = () => {
                 </DropdownMenuLabel>
                 {otherProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
-                    <Link to={item.href} className="cursor-pointer">
+                    <LocalizedLink to={item.href} className="cursor-pointer">
                       {t(item.label)}
-                    </Link>
+                    </LocalizedLink>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Link
+            <LocalizedLink
               to="/applications"
               onClick={() => handleNavClick("/applications")}
               className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
             >
               {t("nav.applications")}
-            </Link>
-            <Link
+            </LocalizedLink>
+            <LocalizedLink
               to="/contact"
               onClick={() => handleNavClick("/contact")}
               className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
             >
               {t("nav.contact")}
-            </Link>
+            </LocalizedLink>
           </div>
 
           {/* CTA & Language */}
           <div className="hidden lg:flex items-center gap-3">
-            <Link
+            <LocalizedLink
               to="/blog"
               onClick={() => handleNavClick("/blog")}
               className="px-4 py-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors flex items-center gap-2 border border-primary/30 rounded-md hover:bg-primary/5"
@@ -173,19 +168,19 @@ const Navbar = () => {
                 <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
               {t("nav.blog")}
-            </Link>
+            </LocalizedLink>
             <div className="w-px h-6 bg-border" />
             <LanguageToggle />
-            <Link to="/downloads">
+            <LocalizedLink to="/downloads">
               <Button variant="ghost" size="sm" className="text-foreground/80 hover:text-foreground">
                 {t("nav.resources")}
               </Button>
-            </Link>
-            <Link to="/contact">
+            </LocalizedLink>
+            <LocalizedLink to="/contact">
               <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
                 {t("nav.getQuote")}
               </Button>
-            </Link>
+            </LocalizedLink>
           </div>
 
           {/* Mobile toggle */}
@@ -204,13 +199,13 @@ const Navbar = () => {
         {isMobileOpen && (
           <div className="lg:hidden absolute top-full left-0 right-0 bg-background border-t border-border animate-fade-in">
             <div className="container py-4 space-y-2">
-              <Link
+              <LocalizedLink
                 to="/about"
                 className="block px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
                 onClick={() => setIsMobileOpen(false)}
               >
                 {t("nav.about")}
-              </Link>
+              </LocalizedLink>
               
               {/* Mobile Products Collapsible */}
               <Collapsible open={isProductsOpen} onOpenChange={setIsProductsOpen}>
@@ -220,34 +215,34 @@ const Navbar = () => {
                 </CollapsibleTrigger>
                 <CollapsibleContent className="pl-4 space-y-1 mt-1">
                   {productItems.map((item) => (
-                    <Link
+                    <LocalizedLink
                       key={item.href}
                       to={item.href}
                       className="block px-4 py-2 text-sm text-foreground/70 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
                       onClick={() => setIsMobileOpen(false)}
                     >
                       {t(item.label)}
-                    </Link>
+                    </LocalizedLink>
                   ))}
                 </CollapsibleContent>
               </Collapsible>
 
-              <Link
+              <LocalizedLink
                 to="/applications"
                 className="block px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
                 onClick={() => setIsMobileOpen(false)}
               >
                 {t("nav.applications")}
-              </Link>
-              <Link
+              </LocalizedLink>
+              <LocalizedLink
                 to="/contact"
                 className="block px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
                 onClick={() => setIsMobileOpen(false)}
               >
                 {t("nav.contact")}
-              </Link>
+              </LocalizedLink>
               <div className="my-2 border-t border-border" />
-              <Link
+              <LocalizedLink
                 to="/blog"
                 className="flex items-center gap-2 px-4 py-3 text-primary font-semibold hover:bg-primary/10 rounded-lg transition-colors"
                 onClick={() => setIsMobileOpen(false)}
@@ -256,20 +251,20 @@ const Navbar = () => {
                   <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
                 {t("nav.blog")}
-              </Link>
-              <Link
+              </LocalizedLink>
+              <LocalizedLink
                 to="/faq"
                 className="block px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
                 onClick={() => setIsMobileOpen(false)}
               >
                 {t("nav.faq")}
-              </Link>
+              </LocalizedLink>
               <div className="pt-4 px-4">
-                <Link to="/contact" onClick={() => setIsMobileOpen(false)}>
+                <LocalizedLink to="/contact" onClick={() => setIsMobileOpen(false)}>
                   <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold">
                     {t("nav.getQuote")}
                   </Button>
-                </Link>
+                </LocalizedLink>
               </div>
             </div>
           </div>
