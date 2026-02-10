@@ -516,7 +516,7 @@ const translations: Record<Language, Record<string, string>> = {
     "silica.spec.absorption": "Absorption Capacity",
     "silica.spec.absorptionValue": "Up to 40% of its weight",
     "silica.spec.indicator": "Indicator Type",
-    "silica.spec.indicatorValue": "Blue to Pink / Orange",
+    "silica.spec.indicatorValue": "Non-indicating",
     "silica.spec.temp": "Operating Temperature",
     "silica.spec.tempValue": "-40°C to +70°C",
     "silica.spec.shelf": "Shelf Life",
