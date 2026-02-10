@@ -330,8 +330,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.category.technical": "Technical",
     "blogPage.minRead": "min read",
     // Blog post content
-    "blogPage.post1.title": "The complete guide to powdered desiccants",
-    "blogPage.post1.excerpt": "Discover the science behind powdered desiccants and how they protect your cargo from moisture damage during shipping and storage.",
+    "blogPage.post1.title": "Vapor pressure explained: Why moisture \"hides\" in wooden pallets and how to get it out",
+    "blogPage.post1.excerpt": "Understanding the physics of vapor pressure reveals why wooden pallets trap moisture deep within their structure — and how to remove it effectively.",
     "blogPage.post2.title": "Container rain: Why dew point physics makes moisture damage inevitable during ocean transit",
     "blogPage.post2.excerpt": "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
 
