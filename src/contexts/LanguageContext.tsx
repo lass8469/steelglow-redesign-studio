@@ -1246,7 +1246,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagI.spec.material": "Materiale",
     "drybagI.spec.materialValue": "Calciumchlorid-lerblanding",
     "drybagI.spec.absorption": "Absorptionskapacitet",
-    "drybagI.spec.absorptionValue": "Op til 300% af sin vægt",
+    "drybagI.spec.absorptionValue": "80% af sin egen vægt",
     "drybagI.spec.duration": "Beskyttelsesvarighed",
     "drybagI.spec.durationValue": "Op til 90 dage",
     "drybagI.spec.temp": "Driftstemperatur",
