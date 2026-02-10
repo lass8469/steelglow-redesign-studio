@@ -134,13 +134,13 @@ const BlogArticlePage = () => {
       <section className="pt-32 pb-8 bg-gradient-to-b from-accent/30 to-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <Link 
+            <LocalizedLink 
               to="/blog" 
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-6"
             >
               <ArrowLeft className="h-4 w-4" />
               {t("blogPage.backToBlog")}
-            </Link>
+            </LocalizedLink>
             
             <Badge variant="secondary" className="mb-4">
               {article.category}
