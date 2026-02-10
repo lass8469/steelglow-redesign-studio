@@ -27,8 +27,8 @@ const DryBagIProduct = () => {
   ];
 
   const features = [
-    { icon: Shield, title: t("drybagI.feature1.title") },
-    { icon: Anchor, title: t("drybagI.feature2.title") },
+    { icon: Anchor, title: t("drybagI.feature1.title") },
+    { icon: Shield, title: t("drybagI.feature2.title") },
     { icon: Package, title: t("drybagI.feature3.title") },
   ];
 
