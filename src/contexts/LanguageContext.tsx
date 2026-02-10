@@ -218,6 +218,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contactPage.badge": "Contact us",
     "contactPage.title1": "Get in touch",
     "contactPage.title2": "with Dry-Bag",
+    "contactPage.title2Prefix": "with",
     "contactPage.description": "We are ready to serve your business by helping you protect your cargo. Don't hesitate to get in touch—we're looking forward to hearing from you.",
     "contactPage.formTitle": "Send us a message",
     "contactPage.form.name": "Name",
