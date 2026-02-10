@@ -20,10 +20,7 @@ const RetailProduct = () => {
     { label: t("retail.spec.cert"), value: t("retail.spec.certValue") },
   ];
   const sizes = [
-    { weight: "250g", description: t("retail.size1.desc"), popular: false },
-    { weight: "500g", description: t("retail.size2.desc"), popular: true },
-    { weight: "1kg", description: t("retail.size3.desc"), popular: false },
-    { weight: t("productPage.custom"), description: t("retail.size4.desc"), popular: false },
+    { weight: "1000g", description: t("retail.size1.desc"), popular: true },
   ];
   const features = [
     { icon: Eye, title: t("retail.feature1.title") },
