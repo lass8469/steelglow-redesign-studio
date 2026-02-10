@@ -1616,7 +1616,7 @@ const translations: Record<Language, Record<string, string>> = {
     "datalogger.spec.battery": "Batterilevetid",
     "datalogger.spec.batteryValue": "Forlænget til lange rejser",
     "datalogger.spec.cert": "Certificeringer",
-    "datalogger.spec.certValue": "CE, FCC-kompatibel",
+    "datalogger.spec.certValue": "RoHS",
     "datalogger.size1.desc": "Generel fragtovervågning",
     "datalogger.size2.desc": "Farmaceutiske og følsomme varer",
     "datalogger.size3.desc": "Genbrugelig til flere forsendelser",
