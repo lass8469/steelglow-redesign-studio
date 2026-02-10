@@ -20,12 +20,17 @@ const DryBagIIIProduct = () => {
     { label: t("drybagIII.spec.cert"), value: t("drybagIII.spec.certValue") },
   ];
   const sizes = [
-    { weight: "100g", description: t("drybagIII.size1.desc"), popular: false },
-    { weight: "250g", description: t("drybagIII.size2.desc"), popular: false },
-    { weight: "500g", description: t("drybagIII.size3.desc"), popular: true },
-    { weight: "1kg", description: t("drybagIII.size4.desc"), popular: false },
-    { weight: "2kg", description: t("drybagIII.size5.desc"), popular: false },
-    { weight: t("productPage.custom"), description: t("drybagIII.size6.desc"), popular: false },
+    { weight: "1g", description: t("drybagIII.size1.desc"), popular: false },
+    { weight: "5g", description: t("drybagIII.size2.desc"), popular: false },
+    { weight: "10g", description: t("drybagIII.size3.desc"), popular: false },
+    { weight: "25g", description: t("drybagIII.size4.desc"), popular: false },
+    { weight: "100g", description: t("drybagIII.size5.desc"), popular: false },
+    { weight: "140g", description: t("drybagIII.size6.desc"), popular: false },
+    { weight: "250g", description: t("drybagIII.size7.desc"), popular: false },
+    { weight: "500g", description: t("drybagIII.size8.desc"), popular: true },
+    { weight: "1000g", description: t("drybagIII.size9.desc"), popular: false },
+    { weight: "2000g", description: t("drybagIII.size10.desc"), popular: false },
+    { weight: t("productPage.custom"), description: t("drybagIII.size11.desc"), popular: false },
   ];
   const features = [
     { icon: Leaf, title: t("drybagIII.feature1.title") },
