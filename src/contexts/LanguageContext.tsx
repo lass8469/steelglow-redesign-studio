@@ -1543,7 +1543,7 @@ const translations: Record<Language, Record<string, string>> = {
     "antislip.spec.weight": "Vægt",
     "antislip.spec.weightValue": "80-120 gsm",
     "antislip.spec.sizes": "Standardstørrelser",
-    "antislip.spec.sizesValue": "600x800mm, 800x1200mm",
+    "antislip.spec.sizesValue": "740x1140mm, 1000x1000mm",
     "antislip.spec.custom": "Specialstørrelser",
     "antislip.spec.customValue": "Tilgængelig på forespørgsel",
     "antislip.spec.cert": "Certificeringer",
