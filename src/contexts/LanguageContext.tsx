@@ -237,8 +237,12 @@ const translations: Record<Language, Record<string, string>> = {
     "contactPage.distributorDesc": "DRY-BAG® is distributed via our partners globally. If you have any questions, or want to become a distributor, feel free to contact us.",
     "contactPage.messageSent": "Message sent!",
     "contactPage.messageConfirm": "We'll get back to you as soon as possible.",
+    "contact.toast.success": "Message sent!",
+    "contact.toast.successDesc": "Thank you for reaching out. We'll get back to you shortly.",
+    "contact.toast.error": "Something went wrong",
+    "contact.toast.errorDesc": "Your message could not be sent. Please try again later.",
 
-    // Applications Page
+
     "applicationsPage.badge": "Industry solutions",
     "applicationsPage.title1": "Moisture protection",
     "applicationsPage.title2": "for every industry",
