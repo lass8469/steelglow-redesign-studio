@@ -12,6 +12,15 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "container-rain-dew-point-physics",
+      titleKey: "blogPage.post2.title",
+      excerptKey: "blogPage.post2.excerpt",
+      date: "2025-02-10",
+      readTime: "8",
+      category: "Technical",
+      image: "/placeholder.svg",
+    },
+    {
       slug: "powdered-desiccants-guide",
       titleKey: "blogPage.post1.title",
       excerptKey: "blogPage.post1.excerpt",
