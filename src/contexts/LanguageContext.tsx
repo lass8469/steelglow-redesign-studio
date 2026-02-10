@@ -1332,7 +1332,7 @@ const translations: Record<Language, Record<string, string>> = {
     "silica.spec.indicator": "Indikatortype",
     "silica.spec.indicatorValue": "Ikke-indikerende",
     "silica.spec.temp": "Driftstemperatur",
-    "silica.spec.tempValue": "-40°C til +70°C",
+    "silica.spec.tempValue": "-5°C til +50°C",
     "silica.spec.shelf": "Holdbarhed",
     "silica.spec.shelfValue": "24 måneder forseglet",
     "silica.spec.cert": "Certificeringer",
