@@ -142,7 +142,7 @@ const BlogPage = () => {
                     </div>
                   </CardContent>
                 </Card>
-              </Link>
+              </LocalizedLink>
             ))}
           </div>
         </div>
