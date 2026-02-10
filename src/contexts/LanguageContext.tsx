@@ -1399,7 +1399,7 @@ const translations: Record<Language, Record<string, string>> = {
     "molecular.spec.temp": "Driftstemperatur",
     "molecular.spec.tempValue": "-40°C til +300°C",
     "molecular.spec.shelf": "Holdbarhed",
-    "molecular.spec.shelfValue": "36 måneder forseglet",
+    "molecular.spec.shelfValue": "24 måneder forseglet",
     "molecular.spec.cert": "Certificeringer",
     "molecular.spec.certValue": "FDA, EU Pharma, DMF",
     "molecular.size1.desc": "Små hætteglas, blisterpakninger",
