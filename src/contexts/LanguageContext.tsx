@@ -444,7 +444,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagI.spec.shelf": "Shelf Life",
     "drybagI.spec.shelfValue": "36 months sealed",
     "drybagI.spec.cert": "Certifications",
-    "drybagI.spec.certValue": "ISO 9001, REACH Compliant",
+    "drybagI.spec.certValue": "REACH Compliant",
     "drybagI.size1.desc": "Small containers, pallets",
     "drybagI.size2.desc": "Standard shipping containers",
     "drybagI.size3.desc": "20ft containers, machinery",
