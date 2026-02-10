@@ -3,8 +3,11 @@ import { Download, FileText, Shield } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const DownloadsPage = () => {
+  const { t } = useLanguage();
+
   const dataSheets = [
     {
       title: "DRY-BAG I Technical Data Sheet",
@@ -46,12 +49,11 @@ const DownloadsPage = () => {
             className="max-w-3xl"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Resources
-              <span className="block text-gradient">& Downloads</span>
+              {t("downloadsPage.title1")}
+              <span className="block text-gradient">{t("downloadsPage.title2")}</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Access our comprehensive data sheets, technical specifications, and our latest 
-              Corporate Social Responsibility (CSR) report.
+              {t("downloadsPage.description")}
             </p>
           </motion.div>
         </div>
@@ -70,7 +72,7 @@ const DownloadsPage = () => {
             >
               <div className="flex items-center gap-3 mb-6">
                 <FileText className="w-6 h-6 text-primary" />
-                <h2 className="text-2xl font-bold text-foreground">Product Data Sheets</h2>
+                <h2 className="text-2xl font-bold text-foreground">{t("downloadsPage.dataSheetsTitle")}</h2>
               </div>
               <div className="space-y-4">
                 {dataSheets.map((sheet, index) => (
@@ -99,13 +101,11 @@ const DownloadsPage = () => {
             >
               <div className="flex items-center gap-3 mb-6">
                 <Shield className="w-6 h-6 text-primary" />
-                <h2 className="text-2xl font-bold text-foreground">Corporate Social Responsibility</h2>
+                <h2 className="text-2xl font-bold text-foreground">{t("downloadsPage.csrTitle")}</h2>
               </div>
               <div className="p-6 bg-card rounded-sm border border-border">
                 <p className="text-muted-foreground mb-6">
-                  Learn about our commitment to sustainability, ethical practices, and environmental 
-                  stewardship in our latest CSR report. We believe in responsible manufacturing and 
-                  contributing positively to our community and planet.
+                  {t("downloadsPage.csrDesc")}
                 </p>
                 <a
                   href="/downloads/dry-bag-csr.pdf"
@@ -114,7 +114,7 @@ const DownloadsPage = () => {
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors"
                 >
                   <Download className="w-4 h-4" />
-                  Download CSR Report
+                  {t("downloadsPage.csrButton")}
                 </a>
               </div>
             </motion.div>
@@ -132,17 +132,16 @@ const DownloadsPage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Need Additional Resources?
+              {t("downloadsPage.needMore")}
             </h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Some downloads are password-protected. If you need access to additional documentation, 
-              please contact us.
+              {t("downloadsPage.needMoreDesc")}
             </p>
             <a 
               href="mailto:contact@dry-bag.com?subject=Request%20Access%20to%20Downloads"
               className="inline-flex items-center gap-2 px-8 py-3 bg-secondary text-secondary-foreground font-medium rounded-sm hover:bg-secondary/80 transition-colors"
             >
-              Request Access
+              {t("downloadsPage.requestAccess")}
             </a>
           </motion.div>
         </div>
