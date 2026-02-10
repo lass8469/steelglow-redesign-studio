@@ -620,7 +620,7 @@ const translations: Record<Language, Record<string, string>> = {
     "calcium.spec.active": "Active Ingredient",
     "calcium.spec.activeValue": "Calcium Chloride",
     "calcium.spec.absorption": "Absorption Capacity",
-    "calcium.spec.absorptionValue": "3X more than Silica Gel",
+    "calcium.spec.absorptionValue": "Up to 350%",
     "calcium.spec.duration": "Protection Duration",
     "calcium.spec.durationValue": "Up to 90 days",
     "calcium.spec.temp": "Operating Temperature",
