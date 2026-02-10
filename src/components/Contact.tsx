@@ -238,10 +238,20 @@ const Contact = () => {
                 <Button
                   type="submit"
                   size="lg"
+                  disabled={isSubmitting}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold h-14"
                 >
-                  {t("contact.form.submit")}
-                  <Send className="ml-2 h-5 w-5" />
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                      {t("contactPage.form.sending")}
+                    </>
+                  ) : (
+                    <>
+                      {t("contact.form.submit")}
+                      <Send className="ml-2 h-5 w-5" />
+                    </>
+                  )}
                 </Button>
               </form>
             </div>
