@@ -1265,7 +1265,7 @@ const translations: Record<Language, Record<string, string>> = {
     "drybagI.app3": "Bildele",
     "drybagI.app4": "Maskiner og udstyr",
     "drybagI.app5": "Landbrugsprodukter",
-    "drybagI.app6": "Tekstiler og stoffer",
+    "drybagI.app6": "Kaffe",
     "drybagI.ctaTitle1": "Klar til at beskytte din",
     "drybagI.ctaTitle2": " fragt?",
     "drybagI.ctaDesc": "Kontakt vores team for at diskutere dine behov for containertørremidler og modtag et skræddersyet tilbud.",
