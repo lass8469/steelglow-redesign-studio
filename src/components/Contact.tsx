@@ -178,6 +178,24 @@ const Contact = () => {
                   </div>
                 )}
 
+                {productEnquiry && formData.product && productSizes[formData.product] && productSizes[formData.product].length > 1 && (
+                  <div>
+                    <Select
+                      value={formData.size}
+                      onValueChange={(value) => setFormData({ ...formData, size: value })}
+                    >
+                      <SelectTrigger className="bg-background border-border">
+                        <SelectValue placeholder={t("contact.form.selectSize")} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {productSizes[formData.product].map((size) => (
+                          <SelectItem key={size} value={size}>{size}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                )}
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     {t("contact.form.message")}
