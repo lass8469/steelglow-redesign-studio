@@ -983,7 +983,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.benefit2": "Skræddersyede løsninger til dine unikke behov",
     "contact.benefit3": "Global forsendelse med lokal support",
     "contact.benefit4": "24-timers svargaranti",
-    "contact.headquarters": "Danmark (Hovedkvarter)",
+    "contact.headquarters": "Odinsvej 21, DK-8722 Hedensted",
     "contact.whatsapp": "WhatsApp tilgængelig",
     "contact.form.fullName": "Fulde navn",
     "contact.form.email": "E-mailadresse",
