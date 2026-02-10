@@ -108,7 +108,10 @@ const ContactPage = () => {
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
               {t("contactPage.title1")}
-              <span className="block text-gradient">{t("contactPage.title2")}</span>
+              <span className="block">
+                <span>{t("contactPage.title2Prefix")} </span>
+                <span className="font-black tracking-tight text-gradient" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>DESICCANT</span>
+              </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               {t("contactPage.description")}
