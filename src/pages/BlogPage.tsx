@@ -12,6 +12,15 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "chemistry-clay-mo-clay-vs-silica-gel",
+      titleKey: "blogPage.post3.title",
+      excerptKey: "blogPage.post3.excerpt",
+      date: "2025-02-10",
+      readTime: "10",
+      category: "Technical",
+      image: "/placeholder.svg",
+    },
+    {
       slug: "container-rain-dew-point-physics",
       titleKey: "blogPage.post2.title",
       excerptKey: "blogPage.post2.excerpt",

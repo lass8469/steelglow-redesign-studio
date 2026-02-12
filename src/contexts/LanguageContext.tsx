@@ -334,6 +334,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post1.excerpt": "Understanding the physics of vapor pressure reveals why wooden pallets trap moisture deep within their structure — and how to remove it effectively.",
     "blogPage.post2.title": "Container rain: Why dew point physics makes moisture damage inevitable during ocean transit",
     "blogPage.post2.excerpt": "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
+    "blogPage.post3.title": "The chemistry of clay: why Danish Mo-clay outperforms traditional silica gel",
+    "blogPage.post3.excerpt": "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
 
     // Downloads Page
     "downloadsPage.title1": "Resources",
@@ -1157,6 +1159,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post1.excerpt": "Forståelse af damptrykkets fysik afslører, hvorfor træpaller fanger fugt dybt i deres struktur — og hvordan man effektivt fjerner den.",
     "blogPage.post2.title": "Containerregn: Hvorfor dugpunktsfysik gør fugtskader uundgåelige under søtransport",
     "blogPage.post2.excerpt": "Forstå de termodynamiske kræfter, der forvandler skibscontainere til kondenskamre, og den eneste beviste løsning der virker i stor skala.",
+    "blogPage.post3.title": "Lerets kemi: hvorfor dansk mo-ler overgår traditionel silikagel",
+    "blogPage.post3.excerpt": "Forståelse af de grundlæggende forskelle mellem naturligt ler og syntetisk silikagel afslører, hvorfor mo-ler tilbyder overlegen ydeevne med lavere miljøpåvirkning.",
 
     // Downloads Page
     "downloadsPage.title1": "Ressourcer",
