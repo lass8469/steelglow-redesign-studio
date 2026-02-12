@@ -908,7 +908,7 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.exploreProducts": "Udforsk produkter",
     "hero.contactUs": "Kontakt os",
     "hero.yearsExperience": "Års erfaring",
-    "hero.countriesServed": "Lande betjent",
+    "hero.countriesServed": "Lande serviceret",
     "hero.globalSupport": "Global support",
 
     // About Section
