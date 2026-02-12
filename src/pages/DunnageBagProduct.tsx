@@ -1,4 +1,5 @@
 import { ArrowLeft, Package, Shield, Truck, Check, ChevronRight } from "lucide-react";
+import SpecSheetDialog from "@/components/SpecSheetDialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -105,9 +106,7 @@ const DunnageBagProduct = () => {
                   >
                     {t("productPage.requestQuote")}
                   </Button>
-                  <Button size="lg" variant="outline" className="border-border hover:bg-accent">
-                    {t("productPage.downloadSpec")}
-                  </Button>
+                  <SpecSheetDialog productKey="dunnage-bags" productName="Dunnage Bags" />
                 </div>
               </div>
             </div>
