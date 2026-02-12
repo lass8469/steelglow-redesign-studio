@@ -1,22 +1,67 @@
 
-## Add New Article: "The Chemistry of Clay"
+# Image Optimization Plan
 
-A third article will be added to the Cargo Intelligence hub covering why Danish Mo-clay outperforms traditional silica gel.
+## Problem
+The site has 30 images in `src/assets/` (JPG and PNG files) that are served uncompressed and without modern format support, hurting page load speed.
 
-### Changes
+## Approach
 
-1. **`src/lib/blog-articles.ts`** -- Add a new article entry with slug `chemistry-clay-mo-clay-vs-silica-gel` containing all sections from the document (chemical structure, manufacturing processes, performance characteristics, regeneration, water footprint, chemical safety, end-of-life, geological quality, cost analysis, regulatory trends, application considerations, making the transition, and conclusion). Structured using the existing section types: `text`, `heading`, `callout`, and `list`.
+This plan covers three complementary optimizations:
 
-2. **`src/pages/BlogPage.tsx`** -- Add a third entry to the `blogPosts` array referencing the new slug, with translation keys for title/excerpt, date `2025-02-10`, readTime `10`, and category `Technical`.
+### 1. Build-time image compression via Vite plugin
+Install `vite-plugin-image-optimizer` to automatically compress all images during the production build. This handles JPG, PNG, and can convert to WebP where beneficial -- all without manually re-exporting images.
 
-3. **`src/contexts/LanguageContext.tsx`** -- Add translation keys `blogPage.post3.title` and `blogPage.post3.excerpt` in both English and Danish.
+**Changes:**
+- `package.json` -- add `vite-plugin-image-optimizer` dependency
+- `vite.config.ts` -- import and configure the plugin with quality settings (e.g. JPEG quality 80, PNG quality 80, enable WebP output)
 
-### Technical Details
+### 2. Lazy loading for off-screen images
+Add `loading="lazy"` to all `<img>` tags that are below the fold. The hero background image (loaded via CSS `background-image`) stays eager. This prevents the browser from downloading images the user hasn't scrolled to yet.
 
-- Slug: `chemistry-clay-mo-clay-vs-silica-gel`
-- Title (EN): "The chemistry of clay: why Danish Mo-clay outperforms traditional silica gel"
-- Title (DA): "Lerets kemi: hvorfor dansk mo-ler overgaar traditionel silikagel"
-- Read time: ~10 min (longest article so far)
-- CTA: Links to `/contact` with messaging about selecting the right desiccant
-- Article will appear as the newest entry in the blog listing grid
-- Follows the exact same data-driven pattern as the two existing articles
+**Files affected (adding `loading="lazy"`):**
+- `src/components/Industries.tsx` (4 industry images)
+- `src/components/Products.tsx` (product grid images)
+- `src/pages/ProductsPage.tsx` (product listing images)
+- All 11 individual product pages (product hero images)
+- `src/pages/AboutPage.tsx` (hero image -- convert to `<img>` with lazy)
+- `src/pages/FAQPage.tsx` (hero image)
+- `src/pages/BlogPage.tsx` / `src/pages/BlogArticlePage.tsx` (article hero images)
+- `src/pages/ContactPage.tsx` (hero image)
+- `src/pages/ApplicationsPage.tsx` (if it has images)
+
+### 3. Add explicit width/height or aspect-ratio to prevent layout shift
+Where possible, add `width` and `height` attributes to `<img>` tags so the browser can reserve space before the image loads, improving Cumulative Layout Shift (CLS) scores.
+
+---
+
+## Technical Details
+
+**Vite plugin configuration:**
+```ts
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+
+plugins: [
+  react(),
+  ViteImageOptimizer({
+    jpg: { quality: 80 },
+    png: { quality: 80 },
+  }),
+]
+```
+
+**Lazy loading pattern:**
+```tsx
+// Before
+<img src={productImage} alt="..." className="..." />
+
+// After
+<img src={productImage} alt="..." className="..." loading="lazy" />
+```
+
+## Summary of file changes
+
+| File | Change |
+|------|--------|
+| `package.json` | Add `vite-plugin-image-optimizer` |
+| `vite.config.ts` | Configure image optimizer plugin |
+| ~20 component/page files | Add `loading="lazy"` to `<img>` tags |
