@@ -925,7 +925,7 @@ const translations: Record<Language, Record<string, string>> = {
     "about.feature4.title": "Skræddersyede løsninger",
     "about.feature4.desc": "Specialudviklet til dine specifikke behov",
     "about.yearsExcellence": "Års erfaring",
-    "about.protectingCargo": "Beskytter gods verden over",
+    "about.protectingCargo": "Med fugtkontrol og fragtsikkerhed verden over",
 
     // Products Section (homepage)
     "products.badge": "Udvalgte produkter",
