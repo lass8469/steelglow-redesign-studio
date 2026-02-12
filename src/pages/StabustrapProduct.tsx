@@ -66,6 +66,7 @@ const StabustrapProduct = () => {
                   <img
                     src={productStabustrap}
                     alt="Stabustrap Sustainable Strapping System"
+                    loading="lazy"
                     className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />

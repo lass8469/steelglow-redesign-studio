@@ -62,9 +62,10 @@ const renderSection = (section: ArticleSection, index: number) => {
         <figure key={index} className="my-8">
           <div className="aspect-video bg-accent/20 rounded-xl overflow-hidden border border-border">
             <img 
-              src={section.src} 
-              alt={section.alt}
-              className="w-full h-full object-cover"
+               src={section.src} 
+               alt={section.alt}
+               loading="lazy"
+               className="w-full h-full object-cover"
             />
           </div>
           {section.caption && (
@@ -186,6 +187,7 @@ const BlogArticlePage = () => {
               <img 
                 src={article.heroImage} 
                 alt={article.title}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
