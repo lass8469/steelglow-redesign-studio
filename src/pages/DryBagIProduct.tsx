@@ -70,6 +70,7 @@ const DryBagIProduct = () => {
                   <img
                     src={productDrybagI}
                     alt="DRY-BAG I Container Desiccant"
+                    loading="lazy"
                     className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105 relative z-10"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent z-20" />

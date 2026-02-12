@@ -111,6 +111,7 @@ const Industries = () => {
                 <img
                   src={activeIndustry.image}
                   alt={activeIndustry.title}
+                  loading="lazy"
                   className={`w-full aspect-video object-cover transition-all duration-300 ${isTransitioning ? 'opacity-0 scale-105' : 'opacity-100 scale-100'}`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
