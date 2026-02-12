@@ -1,30 +1,22 @@
 
+## Add New Article: "The Chemistry of Clay"
 
-## Integrate Web3Forms into Contact Forms
+A third article will be added to the Cargo Intelligence hub covering why Danish Mo-clay outperforms traditional silica gel.
 
-Both contact forms will be connected to Web3Forms so submissions go directly to your email.
+### Changes
 
-### Changes Overview
+1. **`src/lib/blog-articles.ts`** -- Add a new article entry with slug `chemistry-clay-mo-clay-vs-silica-gel` containing all sections from the document (chemical structure, manufacturing processes, performance characteristics, regeneration, water footprint, chemical safety, end-of-life, geological quality, cost analysis, regulatory trends, application considerations, making the transition, and conclusion). Structured using the existing section types: `text`, `heading`, `callout`, and `list`.
 
-1. **New file: `src/lib/web3forms.ts`** -- Shared helper that sends form data to the Web3Forms API using your access key.
+2. **`src/pages/BlogPage.tsx`** -- Add a third entry to the `blogPosts` array referencing the new slug, with translation keys for title/excerpt, date `2025-02-10`, readTime `10`, and category `Technical`.
 
-2. **Update `src/components/Contact.tsx`** (homepage form):
-   - Replace `console.log` with real Web3Forms submission
-   - Add loading state and disable button while sending
-   - Show success/error toast notifications
-   - Reset form on success
-
-3. **Update `src/pages/ContactPage.tsx`** (dedicated contact page):
-   - Replace fake timeout with real Web3Forms API call
-   - Keep existing toast and loading behavior
-
-4. **Update `src/contexts/LanguageContext.tsx`**:
-   - Add toast translation keys for the homepage form (success/error messages in English and Danish)
+3. **`src/contexts/LanguageContext.tsx`** -- Add translation keys `blogPage.post3.title` and `blogPage.post3.excerpt` in both English and Danish.
 
 ### Technical Details
 
-- The Web3Forms access key (`2a8d7c6c-8bdf-47bf-8a04-e171651dd101`) is a publishable client-side key and will be stored as a constant in `src/lib/web3forms.ts`
-- API call: `POST https://api.web3forms.com/submit` with JSON body containing `access_key`, form fields, and a `subject` line
-- Product and size fields will be included when the product enquiry checkbox is checked
-- No new dependencies needed -- uses native `fetch`
-
+- Slug: `chemistry-clay-mo-clay-vs-silica-gel`
+- Title (EN): "The chemistry of clay: why Danish Mo-clay outperforms traditional silica gel"
+- Title (DA): "Lerets kemi: hvorfor dansk mo-ler overgaar traditionel silikagel"
+- Read time: ~10 min (longest article so far)
+- CTA: Links to `/contact` with messaging about selecting the right desiccant
+- Article will appear as the newest entry in the blog listing grid
+- Follows the exact same data-driven pattern as the two existing articles
