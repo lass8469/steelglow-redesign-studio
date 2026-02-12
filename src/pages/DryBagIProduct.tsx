@@ -1,4 +1,5 @@
 import { ArrowLeft, Package, Shield, Anchor, Check, ChevronRight } from "lucide-react";
+import SpecSheetDialog from "@/components/SpecSheetDialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -105,9 +106,7 @@ const DryBagIProduct = () => {
                   >
                     {t("productPage.requestQuote")}
                   </Button>
-                  <Button size="lg" variant="outline" className="border-border hover:bg-accent">
-                    {t("productPage.downloadSpec")}
-                  </Button>
+                  <SpecSheetDialog productKey="drybag-i" productName="DRY-BAG I" />
                 </div>
               </div>
             </div>

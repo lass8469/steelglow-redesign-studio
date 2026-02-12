@@ -1,4 +1,5 @@
 import { ArrowLeft, Package, Shield, Droplets, Check, ChevronRight } from "lucide-react";
+import SpecSheetDialog from "@/components/SpecSheetDialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -41,7 +42,7 @@ const CalciumChlorideProduct = () => {
         <div className="relative group"><div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"/><div className="relative aspect-square rounded-xl overflow-hidden bg-card border border-border"><img src={productCalciumChloride} alt="Calcium Chloride Absorber Blanket" className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"/><div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent"/><div className="absolute bottom-6 left-6"><span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-primary/90 text-primary-foreground rounded-full">{t("calcium.badge")}</span></div></div></div>
         <div className="space-y-6"><div><span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest uppercase bg-primary/10 text-primary border border-primary/20 rounded-full">{t("calcium.tagline")}</span><h1 className="text-4xl lg:text-5xl font-black tracking-tight mb-4">{t("calcium.title")}<span className="text-gradient">{t("calcium.titleHighlight")}</span></h1><p className="text-lg text-muted-foreground leading-relaxed">{t("calcium.description")}</p></div>
           <div className="grid sm:grid-cols-3 gap-4 pt-4">{features.map((f)=>(<div key={f.title} className="text-center p-4 rounded-lg bg-card/50 border border-border/50"><f.icon className="h-8 w-8 text-primary mx-auto mb-2"/><h3 className="font-semibold text-sm text-foreground">{f.title}</h3></div>))}</div>
-          <div className="flex flex-col sm:flex-row gap-4 pt-6"><Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 glow-orange">{t("productPage.requestQuote")}</Button><Button size="lg" variant="outline" className="border-border hover:bg-accent">{t("productPage.downloadSpec")}</Button></div>
+          <div className="flex flex-col sm:flex-row gap-4 pt-6"><Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 glow-orange">{t("productPage.requestQuote")}</Button><SpecSheetDialog productKey="calcium-chloride" productName="Calcium Chloride" /></div>
         </div>
       </div></div></section></MoistureBackground>
       <section className="py-16 lg:py-24 bg-card/30"><div className="container mx-auto px-4 lg:px-8"><Tabs defaultValue="specifications" className="w-full">

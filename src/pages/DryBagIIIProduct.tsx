@@ -1,4 +1,5 @@
 import { ArrowLeft, Package, Shield, Leaf, Check, ChevronRight } from "lucide-react";
+import SpecSheetDialog from "@/components/SpecSheetDialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -71,7 +72,7 @@ const DryBagIIIProduct = () => {
             <div className="grid sm:grid-cols-3 gap-4 pt-4">{features.map((f)=>(<div key={f.title} className="text-center p-4 rounded-lg bg-card/50 border border-border/50"><f.icon className="h-8 w-8 text-primary mx-auto mb-2"/><h3 className="font-semibold text-sm text-foreground">{f.title}</h3></div>))}</div>
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 glow-orange">{t("productPage.requestQuote")}</Button>
-              <Button size="lg" variant="outline" className="border-border hover:bg-accent">{t("productPage.downloadSpec")}</Button>
+              <SpecSheetDialog productKey="drybag-iii" productName="DRY-BAG III" />
             </div>
           </div>
         </div></div></section>
