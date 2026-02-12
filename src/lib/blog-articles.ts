@@ -1,3 +1,6 @@
+import blogVaporPressure from "@/assets/blog-vapor-pressure.jpg";
+import blogContainerRain from "@/assets/blog-container-rain.jpg";
+import blogChemistryClay from "@/assets/blog-chemistry-clay.jpg";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -66,7 +69,7 @@ export const articles: Record<string, Article> = {
     date: "2025-02-10",
     readTime: "7 min read",
     category: "Technical",
-    heroImage: "/placeholder.svg",
+    heroImage: blogVaporPressure,
     author: "DRY-BAG Technical Team",
 
     sections: [
@@ -249,7 +252,7 @@ export const articles: Record<string, Article> = {
     date: "2025-02-10",
     readTime: "8 min read",
     category: "Technical",
-    heroImage: "/placeholder.svg",
+    heroImage: blogContainerRain,
     author: "DRY-BAG Technical Team",
 
     sections: [
@@ -410,7 +413,7 @@ export const articles: Record<string, Article> = {
     date: "2025-02-10",
     readTime: "10 min read",
     category: "Technical",
-    heroImage: "/placeholder.svg",
+    heroImage: blogChemistryClay,
     author: "DRY-BAG Technical Team",
 
     sections: [
