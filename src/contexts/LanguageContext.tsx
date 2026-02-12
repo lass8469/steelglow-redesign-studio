@@ -924,7 +924,7 @@ const translations: Record<Language, Record<string, string>> = {
     "about.feature3.desc": "Bæredygtige praksisser for en grønnere fremtid",
     "about.feature4.title": "Skræddersyede løsninger",
     "about.feature4.desc": "Specialudviklet til dine specifikke behov",
-    "about.yearsExcellence": "Års excellence",
+    "about.yearsExcellence": "Års erfaring",
     "about.protectingCargo": "Beskytter gods verden over",
 
     // Products Section (homepage)
