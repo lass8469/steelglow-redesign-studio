@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, FileText, Shield, Send, Award } from "lucide-react";
 import { useState } from "react";
+import downloadsHero from "@/assets/downloads-hero.jpg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -72,7 +73,7 @@ const DownloadsPage = () => {
       <MoistureBackground variant="large" className="relative min-h-[40vh] flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('/placeholder.svg')` }}
+          style={{ backgroundImage: `url(${downloadsHero})` }}
         />
         <div className="absolute inset-0 hero-overlay bg-gradient-to-r from-background via-background/80 to-transparent" />
         
