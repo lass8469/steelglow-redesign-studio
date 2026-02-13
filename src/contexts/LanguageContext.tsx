@@ -338,6 +338,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post3.excerpt": "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
     "blogPage.post4.title": "Data loggers vs. desiccants: using sensors to prove your moisture strategy is working",
     "blogPage.post4.excerpt": "Desiccants absorb moisture. Data loggers record what happened. In modern logistics, you need both — but for very different reasons.",
+    "blogPage.post5.title": "Agriculture & feed: managing moisture in \"living\" cargo like coffee beans",
+    "blogPage.post5.excerpt": "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
 
     // Downloads Page
     "downloadsPage.title1": "Resources",
@@ -1186,6 +1188,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post3.excerpt": "Forståelse af de grundlæggende forskelle mellem naturligt ler og syntetisk silikagel afslører, hvorfor mo-ler tilbyder overlegen ydeevne med lavere miljøpåvirkning.",
     "blogPage.post4.title": "Dataloggere vs. tørremidler: brug sensorer til at bevise, at din fugtstrategi virker",
     "blogPage.post4.excerpt": "Tørremidler absorberer fugt. Dataloggere registrerer, hvad der skete. I moderne logistik har du brug for begge dele — men af meget forskellige grunde.",
+    "blogPage.post5.title": "Landbrug & foder: fugtstyring i \"levende\" last som kaffebønner",
+    "blogPage.post5.excerpt": "Kaffebønner holder ikke op med at være biologiske organismer, når de lastes i skibscontainere. Forståelse af respirations-varme-fugt-trekanten er afgørende for at beskytte landbrugslast.",
 
     // Downloads Page
     "downloadsPage.title1": "Ressourcer",
