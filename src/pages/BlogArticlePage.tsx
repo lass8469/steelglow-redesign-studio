@@ -6,6 +6,7 @@ import { Calendar, Clock, ArrowLeft, Share2, User, Lightbulb } from "lucide-reac
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { articles, ArticleSection } from "@/lib/blog-articles";
+import { articlesDa } from "@/lib/blog-articles-da";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const renderSection = (section: ArticleSection, index: number) => {
@@ -109,7 +110,8 @@ const renderSection = (section: ArticleSection, index: number) => {
 const BlogArticlePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, language } = useLanguage();
-  const article = slug ? articles[slug] : null;
+  const articleSource = language === 'da' ? articlesDa : articles;
+  const article = slug ? (articleSource[slug] || articles[slug]) : null;
 
   if (!article) {
     return (
