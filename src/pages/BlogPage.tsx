@@ -6,11 +6,20 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { articles } from "@/lib/blog-articles";
 
 const BlogPage = () => {
   const { t, language } = useLanguage();
 
   const blogPosts = [
+    {
+      slug: "agriculture-feed-moisture-living-cargo",
+      titleKey: "blogPage.post5.title",
+      excerptKey: "blogPage.post5.excerpt",
+      date: "2025-02-15",
+      readTime: "15",
+      category: "Technical",
+    },
     {
       slug: "data-loggers-vs-desiccants",
       titleKey: "blogPage.post4.title",
@@ -18,7 +27,6 @@ const BlogPage = () => {
       date: "2025-02-13",
       readTime: "12",
       category: "Technical",
-      image: "/placeholder.svg",
     },
     {
       slug: "chemistry-clay-mo-clay-vs-silica-gel",
@@ -27,7 +35,6 @@ const BlogPage = () => {
       date: "2025-02-10",
       readTime: "10",
       category: "Technical",
-      image: "/placeholder.svg",
     },
     {
       slug: "container-rain-dew-point-physics",
@@ -36,7 +43,6 @@ const BlogPage = () => {
       date: "2025-02-10",
       readTime: "8",
       category: "Technical",
-      image: "/placeholder.svg",
     },
     {
       slug: "vapor-pressure-wooden-pallets",
@@ -45,7 +51,6 @@ const BlogPage = () => {
       date: "2025-02-10",
       readTime: "7",
       category: "Technical",
-      image: "/placeholder.svg",
     },
   ];
 
@@ -133,7 +138,7 @@ const BlogPage = () => {
                 <Card className="h-full hover:shadow-lg transition-all duration-300 group overflow-hidden hover:border-primary/30">
                   <div className="aspect-video bg-accent/20 overflow-hidden">
                     <img 
-                      src={post.image} 
+                      src={articles[post.slug]?.heroImage || "/placeholder.svg"} 
                       alt={t(post.titleKey)}
                       loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

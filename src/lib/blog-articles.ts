@@ -2,6 +2,7 @@ import blogVaporPressure from "@/assets/blog-vapor-pressure.jpg";
 import blogContainerRain from "@/assets/blog-container-rain.jpg";
 import blogChemistryClay from "@/assets/blog-chemistry-clay.jpg";
 import blogDatalogger from "@/assets/blog-datalogger.png";
+import blogAgricultureFeed from "@/assets/blog-agriculture-feed.jpg";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -833,6 +834,212 @@ export const articles: Record<string, Article> = {
     cta: {
       heading: "Need help with moisture monitoring?",
       description: "Our technical team can help you combine data loggers with the right desiccant solutions to build a complete, data-driven moisture management program.",
+      buttonText: "Get expert advice",
+      buttonLink: "/contact",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: Agriculture & Feed - Managing Moisture in Living Cargo
+  // ------------------------------------------------------------
+  "agriculture-feed-moisture-living-cargo": {
+    title: "Agriculture & feed: managing moisture in \"living\" cargo like coffee beans",
+    excerpt: "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
+    date: "2025-02-15",
+    readTime: "15 min read",
+    category: "Technical",
+    heroImage: blogAgricultureFeed,
+    author: "DRY-BAG Technical Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Neither do cocoa, grains, animal feed, or dried fruits. These agricultural products continue metabolic processes during transit, consuming oxygen, generating heat, and exchanging moisture with their environment. Treating them like inert cargo guarantees problems.",
+      },
+
+      {
+        type: "heading",
+        content: "Why agricultural cargo behaves differently",
+      },
+      {
+        type: "text",
+        content: "Most manufactured goods remain chemically stable during shipping. Steel doesn't respire. Plastic doesn't generate heat. Electronics don't release moisture vapor. Agricultural products do all three, and the interactions between these processes create cascading problems that simple desiccants can't address.",
+      },
+      {
+        type: "text",
+        content: "Coffee beans exemplify these challenges. Green coffee (unroasted) contains living cells that continue respiration after harvest. This cellular activity consumes oxygen and produces carbon dioxide, water vapor, and heat. The rate of respiration increases exponentially with temperature, meaning a sun-heated container triggers accelerated metabolic activity that generates more heat, which drives faster respiration, creating a self-reinforcing cycle.",
+      },
+      {
+        type: "text",
+        content: "The moisture content of agricultural cargo isn't fixed. A coffee bean at 12% moisture content in a 60% relative humidity environment will gradually dry out, losing weight and potentially developing off-flavors. The same bean in 75% humidity will absorb moisture, swelling and becoming vulnerable to mold. Unlike manufactured goods with stable moisture profiles, agricultural products actively equilibrate with their environment throughout transit.",
+      },
+
+      {
+        type: "heading",
+        content: "The respiration-heat-moisture triangle",
+      },
+      {
+        type: "text",
+        content: "These three factors interact in ways that make agricultural cargo uniquely challenging. Respiration generates metabolic heat. Heat increases respiration rates and drives moisture from the cargo into surrounding air. Moisture enables microbial activity that generates additional heat. The system feeds itself.",
+      },
+      {
+        type: "text",
+        content: "In a sealed container, this triangle can spiral out of control. Temperature rises from 25°C at loading to 45°C within days as metabolic heat accumulates. At these elevated temperatures, respiration rates double or triple, releasing more moisture vapor into the container atmosphere. When humidity reaches saturation (100% RH), condensation begins on cooler surfaces, and that free water enables mold growth that adds biological heat to metabolic heat.",
+      },
+      {
+        type: "callout",
+        title: "Spontaneous heating",
+        content: "A container of seemingly dry grain loaded at safe 14% moisture content can develop internal hot spots exceeding 60°C through metabolic heating alone. By the time the container reaches destination, the cargo has self-cooked into a fused, moldy mass worth a fraction of its original value.",
+      },
+
+      {
+        type: "heading",
+        content: "Equilibrium moisture content and safe storage levels",
+      },
+      {
+        type: "text",
+        content: "Every agricultural product has a critical moisture threshold above which microbial activity becomes uncontrollable. For green coffee, that threshold sits around 12.5% moisture content. Below this level, beans remain stable indefinitely. Above it, mold and bacteria proliferate.",
+      },
+      {
+        type: "text",
+        content: "The challenge lies in maintaining this moisture level through varying humidity conditions. Coffee beans at 12% moisture content are in equilibrium with approximately 60% relative humidity at 20°C. If container humidity exceeds this equilibrium point, beans absorb moisture and cross into the danger zone. If humidity drops too low, beans dry out excessively, becoming brittle and losing the volatile compounds that define coffee quality.",
+      },
+      {
+        type: "text",
+        content: "Different crops have different safe moisture levels. Cocoa beans tolerate up to 7.5% moisture. Rice stores safely at 14% or below. Soybeans require less than 13%. Animal feed specifications vary by formulation but generally demand below 13% to prevent mold growth and mycotoxin production.",
+      },
+
+      {
+        type: "heading",
+        content: "Temperature management as primary control",
+      },
+      {
+        type: "text",
+        content: "Controlling temperature is more effective than fighting moisture directly when shipping agricultural cargo. Reducing temperature from 30°C to 15°C can cut respiration rates by 75%, dramatically reducing metabolic heat, moisture generation, and mold risk simultaneously.",
+      },
+      {
+        type: "text",
+        content: "This explains why high-value agricultural products increasingly ship in refrigerated containers despite not requiring freezing. Specialty coffee, premium cocoa, and seed grain move at 12-18°C not because cold storage is inherently necessary but because it slows biological processes to manageable rates.",
+      },
+
+      {
+        type: "heading",
+        content: "Ventilation strategies and risks",
+      },
+      {
+        type: "text",
+        content: "Conventional wisdom suggests ventilating containers carrying agricultural cargo to remove moisture and heat. This works in specific circumstances but fails or worsens problems in others. The key variable is external air conditions relative to internal container environment.",
+      },
+      {
+        type: "text",
+        content: "Opening vents works when external air is drier and cooler than container air. Crossing from humid tropics to temperate zones, ventilation can gradually exchange moist interior air for drier ambient air, helping cargo equilibrate to lower moisture levels.",
+      },
+      {
+        type: "callout",
+        title: "When ventilation fails",
+        content: "Ventilation fails catastrophically when external air is more humid than interior air. Loading in a tropical port and opening vents admits saturated air that condenses immediately on cargo surfaces once the container enters cooler waters. This deposits free water directly on products, guaranteeing mold growth.",
+      },
+
+      {
+        type: "heading",
+        content: "Desiccant limitations with respiring cargo",
+      },
+      {
+        type: "text",
+        content: "Standard container desiccants absorb moisture from the air but cannot stop agricultural cargo from generating moisture through respiration. A calcium chloride desiccant rated for 10 liters of moisture capacity sounds impressive until you calculate that a container of coffee beans respiring at typical rates releases 15-20 liters of moisture over a 30-day voyage.",
+      },
+      {
+        type: "text",
+        content: "This doesn't mean desiccants are useless, but their role shifts from primary moisture control to condensation management. They can't prevent the cargo from releasing moisture, but they can absorb enough atmospheric moisture to prevent saturation and condensation on container surfaces.",
+      },
+      {
+        type: "text",
+        content: "Desiccant placement matters more with respiring cargo than with inert goods. Moisture rises from the cargo itself rather than entering primarily through container leaks or external humidity. Distributing desiccant bags throughout the load, particularly at mid-height and upper levels where moisture accumulates, proves more effective than placing all desiccant near container doors.",
+      },
+
+      {
+        type: "heading",
+        content: "Monitoring strategies for living cargo",
+      },
+      {
+        type: "text",
+        content: "Data loggers become essential rather than optional when shipping agricultural products because their behavior changes unpredictably based on initial moisture content, ambient conditions, and load characteristics that aren't fully knowable at loading.",
+      },
+      {
+        type: "text",
+        content: "Temperature monitoring reveals developing hot spots before they become destructive. A sensor reading climbing from 25°C to 35°C over five days signals accelerating respiration that will worsen without intervention.",
+      },
+      {
+        type: "text",
+        content: "Some agricultural shippers now use multi-point sensor arrays with 4-6 loggers distributed throughout the container rather than a single device. This reveals spatial variations that matter enormously with respiring cargo.",
+      },
+
+      {
+        type: "heading",
+        content: "Cargo preparation and source conditions",
+      },
+      {
+        type: "text",
+        content: "The most effective moisture management happens before loading. Agricultural products should reach equilibrium moisture content in climate-controlled facilities rather than equilibrating inside containers during transit.",
+      },
+      {
+        type: "text",
+        content: "Some importers now specify not just target moisture content but also maximum variation within a lot. A requirement of \"12% +/- 0.5%\" forces suppliers to invest in more controlled drying and more accurate measurement, reducing the range of conditions that must be managed during transit.",
+      },
+
+      {
+        type: "heading",
+        content: "Mixed loads and contamination risks",
+      },
+      {
+        type: "text",
+        content: "Combining different agricultural products in a single container multiplies moisture management complexity. Coffee and cocoa have different equilibrium moisture points. Rice and soybeans respire at different rates. Animal feed and grain respond differently to temperature changes.",
+      },
+      {
+        type: "text",
+        content: "Contamination presents additional concerns with feed and food products. Many agricultural commodities are sensitive to odors, and the same container that safely carried coffee last voyage might retain volatile compounds that taint the next load.",
+      },
+
+      {
+        type: "heading",
+        content: "Economic calculations",
+      },
+      {
+        type: "text",
+        content: "Premium coffee might sell for $4-6 per pound. Moldy, off-flavor coffee might fetch $0.50 per pound or be rejected entirely. A container holding 18,000 pounds of coffee represents $70,000-110,000 in value that moisture mismanagement can destroy. The cost of proper temperature control, monitoring, and preparation to prevent that loss rarely exceeds $500-1,000 per container.",
+      },
+
+      {
+        type: "heading",
+        content: "Adapting to climate change",
+      },
+      {
+        type: "text",
+        content: "Rising global temperatures and increasing humidity in traditionally dry growing regions are changing agricultural moisture management. Coffee regions that historically produced naturally dry conditions for processing now experience humid harvest seasons that complicate drying.",
+      },
+      {
+        type: "text",
+        content: "This climate pressure accelerates technology adoption. Monitoring systems that were optional luxuries five years ago become essential for managing unpredictable conditions. The economics of agricultural shipping are fundamentally shifting as the margin between acceptable and problematic moisture conditions narrows.",
+      },
+
+      {
+        type: "heading",
+        content: "Practical protocols for successful agricultural shipping",
+      },
+      {
+        type: "text",
+        content: "Successful agricultural shipping requires treating cargo as the living, respiring biological material it is rather than as inert freight. This means measuring actual moisture content at loading rather than assuming compliance, using temperature and humidity monitoring to track biological activity during transit, and selecting transport methods based on specific cargo characteristics and route conditions.",
+      },
+      {
+        type: "quote",
+        content: "The beans aren't just cargo; they're living products whose quality reflects every decision made during their journey from farm to consumer.",
+        attribution: "DRY-BAG Technical Advisory",
+      },
+    ],
+
+    cta: {
+      heading: "Need help protecting agricultural cargo?",
+      description: "Our technical team can help you select the right desiccant solutions and monitoring strategies to protect your agricultural products during transit.",
       buttonText: "Get expert advice",
       buttonLink: "/contact",
     },
