@@ -3,6 +3,7 @@ import blogContainerRain from "@/assets/blog-container-rain.jpg";
 import blogChemistryClay from "@/assets/blog-chemistry-clay.jpg";
 import blogDatalogger from "@/assets/blog-datalogger.png";
 import blogAgricultureFeed from "@/assets/blog-agriculture-feed.jpg";
+import blogMoldGrowth from "@/assets/blog-mold-growth.jpg";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -1040,6 +1041,189 @@ export const articles: Record<string, Article> = {
     cta: {
       heading: "Need help protecting agricultural cargo?",
       description: "Our technical team can help you select the right desiccant solutions and monitoring strategies to protect your agricultural products during transit.",
+      buttonText: "Get expert advice",
+      buttonLink: "/contact",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: Mold Growth Timelines
+  // ------------------------------------------------------------
+  "mold-growth-timelines-80-rh": {
+    title: "Mold growth timelines: how many days of 80% RH does it take to ruin a shipment?",
+    excerpt: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
+    date: "2025-02-18",
+    readTime: "18 min read",
+    category: "Technical",
+    heroImage: blogMoldGrowth,
+    author: "DRY-BAG Technical Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule, and 80% relative humidity means very different things depending on temperature, cargo type, available nutrients, and whether you're measuring atmospheric humidity or surface conditions. Understanding these variables separates shippers who prevent mold damage from those who discover it at destination.",
+      },
+
+      {
+        type: "heading",
+        content: "The germination window and growth phases",
+      },
+      {
+        type: "text",
+        content: "Mold spores are ubiquitous. They exist on virtually all organic materials, in the air, on container surfaces, and throughout cargo handling facilities. The question isn't whether spores are present but whether conditions allow them to germinate and proliferate.",
+      },
+      {
+        type: "text",
+        content: "Germination requires three elements simultaneously: sufficient moisture, appropriate temperature, and available nutrients. Spores can remain dormant for years in dry conditions, then activate within hours when exposed to moisture. The initial germination phase typically takes 24-48 hours at 80% RH and 25°C for common mold species like Aspergillus and Penicillium. During this window, spores absorb water, swell, and begin forming hyphae (thread-like filaments) that will become the mold colony.",
+      },
+      {
+        type: "text",
+        content: "After germination, visible growth emerges within 3-5 days under favorable conditions. This is when most people first notice mold, seeing fuzzy patches on surfaces or discoloration on organic materials. However, the damage has already begun during the invisible germination phase. By the time mold is visible, colonies have penetrated surface materials and established feeding networks that make complete removal impossible without destroying the substrate.",
+      },
+      {
+        type: "callout",
+        title: "Exponential growth",
+        content: "A small mold patch can double in area every 24-48 hours under sustained favorable conditions. A penny-sized spot on day five becomes palm-sized by day seven and can cover square feet by day ten. Early detection matters enormously.",
+      },
+
+      {
+        type: "heading",
+        content: "Why 80% RH is the critical threshold",
+      },
+      {
+        type: "text",
+        content: "Most mold species require minimum 80% relative humidity for active growth, though some species germinate at 75% RH and a few aggressive strains can begin at 70% RH. This threshold exists because mold growth requires liquid water, not just water vapor. Below 80% RH, most surfaces don't develop the thin moisture films that mold needs to feed and grow.",
+      },
+      {
+        type: "text",
+        content: "The relationship between relative humidity and surface moisture is complex. A container at 80% RH doesn't mean every surface has liquid water. Temperature matters enormously. A surface at the same temperature as the surrounding air at 80% RH remains dry. But a surface just 2-3°C cooler than the air can reach its dew point, where water vapor condenses into liquid.",
+      },
+      {
+        type: "text",
+        content: "Hygroscopic materials like wood, paper, textiles, and food products absorb moisture from air and concentrate it on their surfaces, creating microenvironments with effectively 100% RH even when container air measures 80% RH. This explains why mold appears on cargo surfaces before it appears on container walls.",
+      },
+      {
+        type: "text",
+        content: "Some materials lower the effective humidity threshold for mold growth by providing such abundant nutrients that fungi can grow with less-than-optimal moisture. Sugary products, protein-rich goods, and cellulose-based materials support mold growth at lower humidity levels than inert materials.",
+      },
+
+      {
+        type: "heading",
+        content: "Temperature's amplifying effect",
+      },
+      {
+        type: "text",
+        content: "Mold growth rates roughly double with each 10°C temperature increase within the viable range (approximately 0-40°C for most species). At 15°C and 80% RH, germination might take 72-96 hours and visible growth 7-10 days. At 25°C and the same 80% RH, germination occurs in 24-48 hours and visible growth in 3-5 days. At 35°C, these timelines compress further to 12-24 hours for germination and 2-3 days for visible growth.",
+      },
+      {
+        type: "callout",
+        title: "Tropical vs. temperate risk",
+        content: "A container in Singapore at 32°C and 80% RH might develop significant mold within three days, while the same container in Rotterdam at 18°C and 80% RH could tolerate the same humidity for a week before similar damage appears.",
+      },
+      {
+        type: "text",
+        content: "Temperature fluctuations accelerate mold growth beyond what steady temperatures would cause. Daily temperature cycles drive moisture condensation and evaporation patterns that create repeatedly wetted surfaces — perfect for mold germination.",
+      },
+
+      {
+        type: "heading",
+        content: "Cargo-specific vulnerability timelines",
+      },
+      {
+        type: "list",
+        items: [
+          "Coffee beans: initial mold within 5-7 days at 80% RH and 25°C. Beans at 13% moisture may mold within three days.",
+          "Cocoa beans: visible mold within 4-6 days, with internal mold and mycotoxin production potentially beginning earlier.",
+          "Textiles and leather: surface mold within 3-5 days under sustained 80% RH conditions.",
+          "Wood products: mold within 5-7 days; engineered wood (plywood, particle board) often faster at 3-5 days.",
+          "Grains and cereals: 10-14 days at proper 14% moisture content, but just 5-7 days at 16% moisture.",
+          "Paper products: mold within 3-5 days — paper is essentially pure cellulose, an ideal mold nutrient.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "Intermittent vs. sustained high humidity",
+      },
+      {
+        type: "text",
+        content: "A container experiencing 80% RH continuously for seven days presents very different risk than one spiking to 80% RH for eight hours daily but dropping to 60% RH between spikes. The intermittent exposure allows surfaces to dry partially between moisture episodes, interrupting mold growth cycles.",
+      },
+      {
+        type: "text",
+        content: "However, partial drying doesn't provide complete protection. Each humidity spike above 80% RH adds to cumulative damage. Mold that begins germinating during an eight-hour spike doesn't necessarily die when humidity drops; it enters dormancy and resumes growth during the next spike.",
+      },
+      {
+        type: "text",
+        content: "Eight consecutive days at 80% RH almost guarantees visible mold on vulnerable cargo. The same total time distributed as intermittent spikes over a 30-day voyage might produce only minor spotting. This is why data loggers are so valuable — they distinguish between sustained problematic conditions and intermittent spikes that carry different risk profiles.",
+      },
+
+      {
+        type: "heading",
+        content: "The mycotoxin problem",
+      },
+      {
+        type: "text",
+        content: "Visible mold is concerning, but the invisible danger is mycotoxins — toxic metabolites some mold species produce during growth. Aflatoxins produced by Aspergillus species are potent carcinogens. Ochratoxin from Penicillium and Aspergillus species affects kidney and liver function. These toxins persist even after mold is killed or removed.",
+      },
+      {
+        type: "callout",
+        title: "No safe remediation",
+        content: "There's no safe way to remove mycotoxins from contaminated food. Washing doesn't work because toxins penetrate deep into materials. Cooking doesn't work because mycotoxins remain stable at temperatures that would destroy the mold itself.",
+      },
+      {
+        type: "text",
+        content: "The timeline for 'ruining a shipment' of food cargo might be shorter than the timeline for visible mold. Coffee contaminated with ochratoxin might show no visible mold but test above safety limits after just 3-4 days of conditions favorable for toxigenic mold species.",
+      },
+
+      {
+        type: "heading",
+        content: "Prevention windows and intervention points",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "First 48 hours: Mold spores are germinating but not yet establishing colonies. Reducing humidity during this window can abort germination — nearly 100% effective.",
+          "Days 3-5: Early colonies forming but growth remains limited. Intervention effectiveness drops to 70-80%. Materials may show slight discoloration or musty odors.",
+          "After day 7: Mold colonies are established and damage is extensive. Intervention limits further spread but cannot reverse existing damage.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "The 72-hour rule of thumb",
+      },
+      {
+        type: "text",
+        content: "While precise timelines vary, a practical guideline is that vulnerable cargo should never experience 80% RH for more than 72 hours continuously. This three-day window provides a safety margin that accounts for temperature variations, cargo condition differences, and measurement uncertainties.",
+      },
+      {
+        type: "text",
+        content: "Real-time monitoring alerts should trigger at 75-80% RH sustained for more than 48 hours, allowing 24 hours to implement intervention before the 72-hour threshold is reached.",
+      },
+      {
+        type: "text",
+        content: "For food products where mycotoxin contamination risk exists, an even more conservative 48-hour threshold makes sense. The potential for invisible toxin production before visible mold appears justifies treating any sustained period above 80% RH as unacceptable.",
+      },
+
+      {
+        type: "heading",
+        content: "Prevention remains the only viable strategy",
+      },
+      {
+        type: "quote",
+        content: "The cost differential between prevention and damage is so extreme — perhaps $500 in protection vs. $50,000 in damaged cargo — that any compromise on humidity control is economically irrational.",
+        attribution: "DRY-BAG Technical Advisory",
+      },
+      {
+        type: "text",
+        content: "Once mold begins, it cannot be fully reversed. Cleaning removes surface colonies but not internal penetration. Mycotoxins persist after mold is killed. Staining and odors become permanent. Adequate desiccant, proper container selection, cargo pre-conditioning, and real-time monitoring aren't optional risk mitigation measures — they're essential requirements for successfully shipping mold-sensitive products.",
+      },
+    ],
+
+    cta: {
+      heading: "Protect your cargo from mold damage",
+      description: "Our technical team can help you select the right desiccant solutions and monitoring strategies to keep humidity below critical thresholds throughout transit.",
       buttonText: "Get expert advice",
       buttonLink: "/contact",
     },

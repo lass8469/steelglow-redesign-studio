@@ -340,6 +340,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post4.excerpt": "Desiccants absorb moisture. Data loggers record what happened. In modern logistics, you need both — but for very different reasons.",
     "blogPage.post5.title": "Agriculture & feed: managing moisture in \"living\" cargo like coffee beans",
     "blogPage.post5.excerpt": "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
+    "blogPage.post6.title": "Mold growth timelines: how many days of 80% RH does it take to ruin a shipment?",
+    "blogPage.post6.excerpt": "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
 
     // Downloads Page
     "downloadsPage.title1": "Resources",
@@ -1190,6 +1192,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post4.excerpt": "Tørremidler absorberer fugt. Dataloggere registrerer, hvad der skete. I moderne logistik har du brug for begge dele — men af meget forskellige grunde.",
     "blogPage.post5.title": "Landbrug & foder: fugtstyring i \"levende\" last som kaffebønner",
     "blogPage.post5.excerpt": "Kaffebønner holder ikke op med at være biologiske organismer, når de lastes i skibscontainere. Forståelse af respirations-varme-fugt-trekanten er afgørende for at beskytte landbrugslast.",
+    "blogPage.post6.title": "Skimmelvækst-tidslinjer: hvor mange dage med 80% RF skal der til for at ødelægge en forsendelse?",
+    "blogPage.post6.excerpt": "Svaret er ikke et simpelt antal dage. Skimmel opererer ikke efter en fast tidsplan — forståelse af variablerne adskiller afsendere, der forebygger skader, fra dem der opdager det ved destinationen.",
 
     // Downloads Page
     "downloadsPage.title1": "Ressourcer",
