@@ -13,6 +13,14 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "mold-growth-timelines-80-rh",
+      titleKey: "blogPage.post6.title",
+      excerptKey: "blogPage.post6.excerpt",
+      date: "2025-02-18",
+      readTime: "18",
+      category: "Technical",
+    },
+    {
       slug: "agriculture-feed-moisture-living-cargo",
       titleKey: "blogPage.post5.title",
       excerptKey: "blogPage.post5.excerpt",
