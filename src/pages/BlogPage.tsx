@@ -12,6 +12,15 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "data-loggers-vs-desiccants",
+      titleKey: "blogPage.post4.title",
+      excerptKey: "blogPage.post4.excerpt",
+      date: "2025-02-13",
+      readTime: "12",
+      category: "Technical",
+      image: "/placeholder.svg",
+    },
+    {
       slug: "chemistry-clay-mo-clay-vs-silica-gel",
       titleKey: "blogPage.post3.title",
       excerptKey: "blogPage.post3.excerpt",
