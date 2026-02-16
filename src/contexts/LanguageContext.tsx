@@ -876,7 +876,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.desiccants": "Tørremidler",
     "nav.cargoProtection": "Godsbeskyttelse",
     "nav.otherProducts": "Andre produkter",
-    "navbar.marquee": "TØRREMIDLER \u00a0|\u00a0 STUVPOSER \u00a0|\u00a0 DATALOGGERE \u00a0|\u00a0 SIDEN 1979 \u00a0|\u00a0 GLOBAL FORSENDELSE",
+    "navbar.marquee": "TØRREMIDLER \u00a0|\u00a0 LUFTPUDER \u00a0|\u00a0 DATALOGGERE \u00a0|\u00a0 SIDEN 1979 \u00a0|\u00a0 GLOBAL FORSENDELSE",
     
     // Products
     "products.drybagI": "DRY-BAG I",
