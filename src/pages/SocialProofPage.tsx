@@ -132,7 +132,7 @@ const SocialProofPage = () => {
                   className="flex items-center justify-center gap-2 h-20 px-4 bg-card/50 border border-border/50 rounded-sm hover:border-primary/30 transition-all group hover:bg-card/80"
                 >
                   {logo.logo ? (
-                    <img src={logo.logo} alt={logo.name} className="h-12 object-contain" />
+                    <img src={logo.logo} alt={logo.name} className="h-16 object-contain" />
                   ) : (
                     <>
                       <IconComponent className={`w-5 h-5 ${logo.accent ? 'text-primary' : 'text-muted-foreground'} group-hover:text-primary transition-colors`} />
