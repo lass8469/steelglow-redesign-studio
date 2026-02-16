@@ -4,6 +4,7 @@ import varoLogo from "@/assets/logo-varo.png";
 import babydanLogo from "@/assets/logo-babydan.png";
 import kkWindLogo from "@/assets/logo-kk-wind.svg";
 import envasesLogo from "@/assets/logo-envases.png";
+import r2Logo from "@/assets/logo-r2.svg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -18,7 +19,7 @@ const SocialProofPage = () => {
     { name: "BabyDan", icon: null, accent: false, logo: babydanLogo },
     { name: "KK Wind Solutions", icon: null, accent: true, logo: kkWindLogo },
     { name: "Envases", icon: null, accent: false, logo: envasesLogo },
-    { name: "TransGlobal", icon: Globe, accent: true },
+    { name: "R2 Group", icon: null, accent: true, logo: r2Logo },
     { name: "LogiTrans", icon: Truck, accent: false },
   ];
 
@@ -131,7 +132,7 @@ const SocialProofPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex items-center justify-center gap-2 h-20 px-4 bg-card/50 border border-border/50 rounded-sm hover:border-primary/30 transition-all group hover:bg-card/80"
+                  className={`flex items-center justify-center gap-2 h-20 px-4 border border-border/50 rounded-sm hover:border-primary/30 transition-all group ${logo.name === 'R2 Group' ? 'bg-slate-800 hover:bg-slate-700' : 'bg-card/50 hover:bg-card/80'}`}
                 >
                   {logo.logo ? (
                     <img src={logo.logo} alt={logo.name} className={`h-full w-auto object-contain ${logo.name === 'KK Wind Solutions' ? 'scale-[1.8]' : ''}`} />
