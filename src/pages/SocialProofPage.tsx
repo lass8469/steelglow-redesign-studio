@@ -3,6 +3,7 @@ import { Star, Quote, Play, Award, Anchor, Ship, Factory, Truck, Box, Globe } fr
 import varoLogo from "@/assets/logo-varo.png";
 import babydanLogo from "@/assets/logo-babydan.png";
 import kkWindLogo from "@/assets/logo-kk-wind.svg";
+import envasesLogo from "@/assets/logo-envases.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -16,7 +17,7 @@ const SocialProofPage = () => {
     { name: "VARO", icon: null, accent: true, logo: varoLogo },
     { name: "BabyDan", icon: null, accent: false, logo: babydanLogo },
     { name: "KK Wind Solutions", icon: null, accent: true, logo: kkWindLogo },
-    { name: "OceanLine", icon: Anchor, accent: false },
+    { name: "Envases", icon: null, accent: false, logo: envasesLogo },
     { name: "TransGlobal", icon: Globe, accent: true },
     { name: "LogiTrans", icon: Truck, accent: false },
   ];
