@@ -1011,7 +1011,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Contact Section
     "contact.badge": "Kontakt os",
-    "contact.title1": "Lad os beskytte din",
+    "contact.title1": "Lad os beskytte dit",
     "contact.title2": "gods sammen",
     "contact.description": "Har du spørgsmål om fugtkontrol eller godssikkerhed? Vores team er klar til at hjælpe. Uanset om du har brug for et tilbud, tekniske specifikationer eller vejledning om det rigtige tørremiddel til din forsendelse, svarer vi inden for 24 timer.",
     "contact.whyPartner": "Hvorfor vælge DRY-BAG?",
