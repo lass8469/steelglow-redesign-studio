@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Star, Quote, Play, Award, Anchor, Ship, Factory, Truck, Box, Globe } from "lucide-react";
 import varoLogo from "@/assets/logo-varo.png";
 import babydanLogo from "@/assets/logo-babydan.png";
+import kkWindLogo from "@/assets/logo-kk-wind.svg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -14,7 +15,7 @@ const SocialProofPage = () => {
   const trustedLogos = [
     { name: "VARO", icon: null, accent: true, logo: varoLogo },
     { name: "BabyDan", icon: null, accent: false, logo: babydanLogo },
-    { name: "SteelWorks Int.", icon: Factory, accent: true },
+    { name: "KK Wind Solutions", icon: null, accent: true, logo: kkWindLogo },
     { name: "OceanLine", icon: Anchor, accent: false },
     { name: "TransGlobal", icon: Globe, accent: true },
     { name: "LogiTrans", icon: Truck, accent: false },
