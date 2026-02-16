@@ -135,7 +135,7 @@ const SocialProofPage = () => {
                   className={`flex items-center justify-center gap-2 h-20 px-4 border border-border/50 rounded-sm hover:border-primary/30 transition-all group ${logo.name === 'R2 Group' ? 'bg-slate-800 hover:bg-slate-700' : 'bg-card/50 hover:bg-card/80'}`}
                 >
                   {logo.logo ? (
-                    <img src={logo.logo} alt={logo.name} className={`h-full w-auto object-contain ${logo.name === 'KK Wind Solutions' ? 'scale-[1.8]' : ''}`} />
+                    <img src={logo.logo} alt={logo.name} className={`h-full w-auto object-contain ${logo.name === 'KK Wind Solutions' ? 'scale-[1.8]' : logo.name === 'R2 Group' ? 'scale-[1.4]' : ''}`} />
                   ) : (
                     <>
                       <IconComponent className={`w-5 h-5 ${logo.accent ? 'text-primary' : 'text-muted-foreground'} group-hover:text-primary transition-colors`} />
