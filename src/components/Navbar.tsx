@@ -74,7 +74,7 @@ const Navbar = () => {
         <div className="marquee-track">
           {[...Array(4)].map((_, i) => (
             <span key={i} className="marquee-segment text-[11px] font-semibold text-primary-foreground tracking-[0.25em] uppercase whitespace-nowrap">
-              DESICCANTS &nbsp;|&nbsp; DUNNAGE BAGS &nbsp;|&nbsp; DATA-LOGGERS &nbsp;|&nbsp; SINCE 1979 &nbsp;|&nbsp; GLOBAL SHIPPING AVAILABLE &nbsp;|&nbsp;&nbsp;
+              {t("navbar.marquee")} &nbsp;|&nbsp;&nbsp;
             </span>
           ))}
         </div>
