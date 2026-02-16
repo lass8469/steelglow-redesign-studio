@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Star, Quote, Play, Award, Anchor, Ship, Factory, Truck, Box, Globe } from "lucide-react";
 import varoLogo from "@/assets/logo-varo.png";
+import babydanLogo from "@/assets/logo-babydan.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -12,7 +13,7 @@ const SocialProofPage = () => {
   // Placeholder logos - replace with actual company logos
   const trustedLogos = [
     { name: "VARO", icon: null, accent: true, logo: varoLogo },
-    { name: "CargoMax", icon: Box, accent: false },
+    { name: "BabyDan", icon: null, accent: false, logo: babydanLogo },
     { name: "SteelWorks Int.", icon: Factory, accent: true },
     { name: "OceanLine", icon: Anchor, accent: false },
     { name: "TransGlobal", icon: Globe, accent: true },
