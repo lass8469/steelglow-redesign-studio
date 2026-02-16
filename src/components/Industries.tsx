@@ -114,13 +114,13 @@ const Industries = () => {
                   loading="lazy"
                   className={`w-full aspect-video object-cover transition-all duration-300 ${isTransitioning ? 'opacity-0 scale-105' : 'opacity-100 scale-100'}`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent sm:via-background/40" />
                 
-                <div className={`absolute bottom-0 left-0 right-0 p-8 transition-all duration-300 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
-                  <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-4">
+                <div className={`absolute bottom-0 left-0 right-0 p-5 sm:p-8 transition-all duration-300 ${isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}>
+                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold text-foreground mb-2 sm:mb-4">
                     {activeIndustry.title}
                   </h3>
-                  <p className="text-muted-foreground max-w-2xl">
+                  <p className="text-sm sm:text-base text-muted-foreground max-w-2xl leading-relaxed">
                     {activeIndustry.description}
                   </p>
                 </div>
