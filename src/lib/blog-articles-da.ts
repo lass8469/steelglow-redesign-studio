@@ -16,8 +16,8 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Damptryk & Træpaller
   // ------------------------------------------------------------
   "vapor-pressure-wooden-pallets": {
-    title: "Damptryk forklaret: Hvorfor fugt \"gemmer sig\" i træpaller og hvordan man får den ud",
-    excerpt: "Forståelse af damptrykkets fysik afslører, hvorfor træpaller fanger fugt dybt i deres struktur — og hvordan man effektivt fjerner den.",
+    title: "Damptryk forklaret: Hvorfor fugt gemmer sig i træpaller — og hvordan du får den ud",
+    excerpt: "Damptrykkets fysik afslører, hvorfor træpaller holder på fugten dybt inde i strukturen — og hvad du kan gøre ved det.",
     date: "2025-02-10",
     readTime: "7 min læsning",
     category: "Teknisk",
@@ -190,8 +190,8 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Containerregn
   // ------------------------------------------------------------
   "container-rain-dew-point-physics": {
-    title: "Containerregn: Hvorfor dugpunktsfysik gør fugtskader uundgåelige under søtransport",
-    excerpt: "Forstå de termodynamiske kræfter, der forvandler skibscontainere til kondenskamre, og den eneste beviste løsning der virker i stor skala.",
+    title: "Containerregn: Når dugpunktsfysik gør fugtskader uundgåelige til søs",
+    excerpt: "De termodynamiske kræfter, der forvandler skibscontainere til kondenskamre — og den eneste løsning, der virker i stor skala.",
     date: "2025-02-10",
     readTime: "8 min læsning",
     category: "Teknisk",
@@ -345,8 +345,8 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Lerets kemi
   // ------------------------------------------------------------
   "chemistry-clay-mo-clay-vs-silica-gel": {
-    title: "Lerets kemi: hvorfor dansk mo-ler overgår traditionel silikagel",
-    excerpt: "Forståelse af de grundlæggende forskelle mellem naturligt ler og syntetisk silikagel afslører, hvorfor mo-ler tilbyder overlegen ydeevne med lavere miljøpåvirkning.",
+    title: "Lerets kemi: Hvorfor dansk mo-ler slår traditionel silikagel",
+    excerpt: "De grundlæggende forskelle mellem naturligt ler og syntetisk silikagel — og hvorfor mo-ler yder bedre med mindre miljøbelastning.",
     date: "2025-02-10",
     readTime: "10 min læsning",
     category: "Teknisk",
@@ -540,8 +540,8 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Dataloggere vs. tørremidler
   // ------------------------------------------------------------
   "data-loggers-vs-desiccants": {
-    title: "Dataloggere vs. tørremidler: brug sensorer til at bevise, at din fugtstrategi virker",
-    excerpt: "Tørremidler absorberer fugt. Dataloggere registrerer, hvad der skete. I moderne logistik har du brug for begge dele — men af meget forskellige grunde.",
+    title: "Dataloggere vs. tørremidler: Bevis at din fugtstrategi virker med sensorer",
+    excerpt: "Tørremidler absorberer fugt. Dataloggere dokumenterer, hvad der skete. I moderne logistik har du brug for begge — men af vidt forskellige grunde.",
     date: "2025-02-13",
     readTime: "12 min læsning",
     category: "Teknisk",
@@ -741,8 +741,8 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Landbrug & foder
   // ------------------------------------------------------------
   "agriculture-feed-moisture-living-cargo": {
-    title: "Landbrug & foder: fugtstyring i \"levende\" last som kaffebønner",
-    excerpt: "Kaffebønner holder ikke op med at være biologiske organismer, når de lastes i skibscontainere. Forståelse af respirations-varme-fugt-trekanten er afgørende for at beskytte landbrugslast.",
+    title: "Landbrug og foder: Fugtstyring af levende last som kaffebønner",
+    excerpt: "Kaffebønner er stadig biologiske organismer, selv i en skibscontainer. Derfor er det afgørende at forstå samspillet mellem respiration, varme og fugt.",
     date: "2025-02-15",
     readTime: "15 min læsning",
     category: "Teknisk",
@@ -935,8 +935,8 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Skimmelvækst-tidslinjer
   // ------------------------------------------------------------
   "mold-growth-timelines-80-rh": {
-    title: "Skimmelvækst-tidslinjer: hvor mange dage med 80% RF skal der til for at ødelægge en forsendelse?",
-    excerpt: "Svaret er ikke et simpelt antal dage. Skimmel opererer ikke efter en fast tidsplan — forståelse af variablerne adskiller afsendere, der forebygger skader, fra dem der opdager det ved destinationen.",
+    title: "Skimmelvækst: Hvor mange dage ved 80 % RF skal der til, før en forsendelse er ødelagt?",
+    excerpt: "Svaret er ikke et simpelt antal dage. Skimmel følger ikke en fast tidsplan — det er de bagvedliggende faktorer, der afgør, om du forebygger skaden eller først opdager den ved ankomst.",
     date: "2025-02-18",
     readTime: "18 min læsning",
     category: "Teknisk",
