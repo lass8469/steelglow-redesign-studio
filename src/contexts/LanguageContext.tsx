@@ -24,6 +24,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.desiccants": "Desiccants",
     "nav.cargoProtection": "Cargo protection",
     "nav.otherProducts": "Other products",
+    "navbar.marquee": "DESICCANTS \u00a0|\u00a0 DUNNAGE BAGS \u00a0|\u00a0 DATA-LOGGERS \u00a0|\u00a0 SINCE 1979 \u00a0|\u00a0 GLOBAL SHIPPING AVAILABLE",
     
     // Products
     "products.drybagI": "DRY-BAG I",
@@ -875,6 +876,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.desiccants": "Tørremidler",
     "nav.cargoProtection": "Godsbeskyttelse",
     "nav.otherProducts": "Andre produkter",
+    "navbar.marquee": "TØRREMIDLER \u00a0|\u00a0 STUVPOSER \u00a0|\u00a0 DATALOGGERE \u00a0|\u00a0 SIDEN 1979 \u00a0|\u00a0 GLOBAL FORSENDELSE",
     
     // Products
     "products.drybagI": "DRY-BAG I",
