@@ -1,76 +1,76 @@
 
 
-# Add Meta Descriptions and Document Titles to Every Page
+# Add GA4 Analytics + JSON-LD Structured Data + Domain Fixes
 
-## Overview
-Currently the site has a single static meta description ("Lovable Generated Project") in `index.html` and no per-page document titles or meta descriptions. This plan adds dynamic, SEO-optimized meta titles and descriptions for every page -- in both English and Danish -- using a reusable hook that updates `document.head` on each route change.
+## What This Plan Covers
+Three things to get your site ready for Google Analytics and Search Console on desiccant.com:
 
-## Pages Covered (19 total)
-- **Home** (Index)
-- **About**
-- **Products** (catalog page)
-- **Applications**
-- **Blog** (listing)
-- **Blog Article** (dynamic, per-article)
-- **Contact**
-- **Downloads**
-- **FAQ**
-- **Testimonials** (Social Proof)
-- **Privacy Policy**
-- **11 Product detail pages**: DRY-BAG I, DRY-BAG III, Silica Gel, Dunnage Bag, Molecular Sieve, Calcium Chloride, Retail, Edge Protectors, Anti-Slip Sheets, Stabustrap, Datalogger
+1. **Google Analytics 4 (GA4)** -- tracking across the entire site, including page view events on every route change (important for single-page apps)
+2. **JSON-LD Structured Data** -- the Organization schema from your old site, injected into every page for richer search results
+3. **Domain corrections** -- update sitemap.xml and robots.txt from `drybag.dk` to `desiccant.com`
 
-## Proposed Meta Descriptions (English)
+No additional API keys or accounts are needed -- you already have your GA4 measurement ID (`G-6VBQ7QYGD1`).
 
-| Page | Title | Meta Description |
-|------|-------|-----------------|
-| Home | Desiccant.com - Industrial Desiccants & Cargo Protection | Industrial desiccants and cargo protection solutions from Denmark since 1979. Silica gel, clay desiccants, dunnage bags, and monitoring devices for global shipping. |
-| About | About Dry-Bag - 45+ Years of Moisture Control Expertise | Danish manufacturer of high-quality desiccants since 1979. Custom-engineered moisture control solutions with eco-friendly production and global distribution. |
-| Products | Desiccant & Cargo Protection Products - Desiccant.com | Browse our full range of industrial desiccants, dunnage bags, edge protectors, anti-slip sheets, and monitoring devices for shipping and storage. |
-| Applications | Industry Applications - Moisture Protection Solutions | Discover how our desiccants protect cargo across pharmaceutical, electronics, food, automotive, wind energy, and logistics industries worldwide. |
-| Blog | Cargo Intelligence - Technical Articles on Moisture Control | In-depth technical articles on desiccant science, container rain prevention, mold control, and cargo protection strategies backed by 45+ years of expertise. |
-| Blog Article | (dynamic: article title) - Cargo Intelligence | (dynamic: article excerpt) |
-| Contact | Contact Dry-Bag - Get a Quote for Desiccant Solutions | Reach out for quotes, technical support, or distributor inquiries. Danish manufacturer with global shipping and 24-hour response guarantee. |
-| Downloads | Resources & Downloads - Desiccant.com | Download our CSR report, food safety certificates, and request product specification sheets and technical documentation. |
-| FAQ | FAQ - Desiccant & Cargo Protection Questions Answered | Answers to common questions about desiccants, container rain, dosage calculations, food safety, regeneration, and custom solutions. |
-| Testimonials | Customer Testimonials - Trusted by Industry Leaders | See why leading companies trust Dry-Bag for moisture control and cargo protection. Customer reviews and success stories. |
-| Privacy | Privacy Policy - Desiccant.com | Learn how Dry-Bag A/S collects, uses, and protects your personal data in compliance with GDPR. |
-| DRY-BAG I | DRY-BAG I - Clay-Based Ocean Freight Desiccant | Original clay-based desiccant for ocean freight containers. Absorbs 80% of its own weight with up to 90 days protection. REACH compliant. |
-| DRY-BAG III | DRY-BAG III - Industrial Bentonite Clay Desiccant | Eco-friendly bentonite clay desiccant in 11 sizes. Up to 70% absorption capacity for heavy-duty industrial and container shipping applications. |
-| Silica Gel | Silica Gel Packets - E-Commerce & In-Box Desiccant | Premium FDA-approved silica gel packets for electronics, pharmaceuticals, leather goods, and e-commerce moisture protection. |
-| Dunnage Bag | Dunnage Bags - Cargo Stabilization Air Bags | AAR-approved kraft paper and PP woven dunnage bags for rail, truck, and ocean freight. Prevent load shifting and product damage. |
-| Molecular Sieve | Molecular Sieve Desiccant - Pharmaceutical Grade | Ultra-low humidity desiccant (less than 0.1% RH) for pharmaceuticals, medical devices, and diagnostics. Available in 3A and 4A pore sizes. |
-| Calcium Chloride | Calcium Chloride Desiccant - High Capacity Export Grade | Absorbs up to 350% of its weight. Industrial-strength moisture control for long-haul ocean freight and export packaging. |
-| Retail | DRY BAG Retail - Regenerable Moisture Absorber | Handmade in Denmark. Regenerable clay desiccant with clear saturation window for boats, campers, basements, and home storage. |
-| Edge Protectors | Edge Protectors - FSC Certified Cargo Corner Protection | FSC-certified cardboard edge protectors for palletized goods. Multiple thicknesses up to 500kg load capacity. Fully recyclable. |
-| Anti-Slip Sheets | Anti-Slip Sheets - Pallet Load Stability | High-friction paper sheets preventing cargo sliding between stacked pallet layers. Eco-friendly and available in custom sizes. |
-| Stabustrap | Stabustrap - Reusable Pallet Strapping System | Lightweight, 100% recyclable pallet strapping for internal logistics. A sustainable alternative to single-use plastic wrap. |
-| Datalogger | Data Logger - USB Temperature & Humidity Monitor | Plug-and-play USB data loggers with automatic PDF/Excel report generation. Up to 120 days of temperature and humidity monitoring. |
+---
 
-Danish translations will follow the same pattern using existing Danish copy from the translation file.
+## Changes
 
-## Technical Approach
+### 1. Add GA4 script to `index.html`
+Insert the Google Analytics gtag.js snippet into the `<head>` of `index.html` with your measurement ID `G-6VBQ7QYGD1`. This loads the tracker on every page.
 
-### 1. Create a `usePageMeta` hook
-A new hook (`src/hooks/usePageMeta.ts`) that accepts a title and description, and uses `useEffect` to:
-- Set `document.title`
-- Update or create the `<meta name="description">` tag
-- Clean up on unmount (restore defaults)
+### 2. Track SPA route changes
+Since this is a single-page app, navigating between pages doesn't trigger a full page load. A small `useGoogleAnalytics` hook will be created that listens to React Router location changes and sends a `page_view` event to GA4 on each navigation. This hook will be called once in the `LanguageLayout` component so it covers all routes.
 
-### 2. Add translation keys
-Add `meta.title` and `meta.description` keys for each page in both `en` and `da` sections of `src/contexts/LanguageContext.tsx`.
+### 3. Add JSON-LD Organization schema to `index.html`
+Insert the structured data block you provided (Organization type with contact point, social links, logo) directly into the `<head>` of `index.html`, updated with the `desiccant.com` domain.
 
-### 3. Call `usePageMeta` in every page component
-Each of the 19+ page components will call:
+### 4. Update `sitemap.xml` domain
+Replace all `drybag.dk` references with `desiccant.com`.
+
+### 5. Update `robots.txt` domain
+Replace the sitemap URL from `drybag.dk` to `desiccant.com`.
+
+### 6. Update OG image URLs in `index.html`
+Replace the placeholder Lovable OG image URLs with `https://desiccant.com/og-image.png` (or remove them so they don't point to lovable.dev). You can upload a proper OG image later.
+
+---
+
+## Technical Details
+
+### New file: `src/hooks/useGoogleAnalytics.ts`
 ```typescript
-usePageMeta(t("pageName.meta.title"), t("pageName.meta.description"));
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+declare global {
+  interface Window { gtag: (...args: any[]) => void; }
+}
+
+export const useGoogleAnalytics = () => {
+  const location = useLocation();
+  useEffect(() => {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "page_view", {
+        page_path: location.pathname + location.search,
+        page_title: document.title,
+      });
+    }
+  }, [location.pathname, location.search]);
+};
 ```
 
-### 4. Update `index.html` defaults
-Update the fallback `<meta name="description">` in `index.html` to the home page description instead of "Lovable Generated Project".
+### Modified files
+| File | Change |
+|------|--------|
+| `index.html` | Add gtag.js script, JSON-LD block, update OG image URLs, remove Lovable/Twitter references |
+| `src/hooks/useGoogleAnalytics.ts` | New hook (see above) |
+| `src/components/LanguageLayout.tsx` | Call `useGoogleAnalytics()` once |
+| `public/sitemap.xml` | Replace `drybag.dk` with `desiccant.com` (all occurrences) |
+| `public/robots.txt` | Replace sitemap URL domain |
 
-### Files Modified
-- **New**: `src/hooks/usePageMeta.ts`
-- **Modified**: `src/contexts/LanguageContext.tsx` (add ~80 translation keys)
-- **Modified**: `index.html` (update default meta)
-- **Modified**: All 19 page components (add one hook call each)
+### Search Console setup (after deploy)
+Once deployed to desiccant.com, you can verify your site in Google Search Console by:
+- Going to Search Console and adding `desiccant.com` as a property
+- Verifying via the GA4 method (since gtag is already installed, verification is automatic)
+- Submitting `https://desiccant.com/sitemap.xml`
 
