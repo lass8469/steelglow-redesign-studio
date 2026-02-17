@@ -12,7 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { submitWeb3Form } from "@/lib/web3forms";
-import contactHeroBg from "@/assets/contact-hero.jpg";
+import contactHeroBg from "@/assets/contact-hero.webp";
 import { productSizes } from "@/lib/product-sizes";
 import { useFieldValidation } from "@/hooks/useFieldValidation";
 
