@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { submitWeb3Form } from "@/lib/web3forms";
+import { useFieldValidation } from "@/hooks/useFieldValidation";
 
 const DownloadsPage = () => {
   const { t } = useLanguage();
@@ -22,6 +23,9 @@ const DownloadsPage = () => {
     company: "",
     document: "",
   });
+  const { onBlur, cls, reset } = useFieldValidation();
+
+  const isValidEmail = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
   const documentOptions = [
     { value: "dry-bag-i-tds", label: "DRY-BAG I Technical Data Sheet" },
@@ -54,6 +58,7 @@ const DownloadsPage = () => {
         description: t("downloadsPage.form.successDesc"),
       });
       setFormData({ name: "", email: "", company: "", document: "" });
+      reset();
     } catch {
       toast({
         title: t("contact.toast.error"),
@@ -140,9 +145,10 @@ const DownloadsPage = () => {
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    onBlur={() => onBlur("name")}
                     placeholder={t("downloadsPage.form.namePlaceholder")}
                     required
-                    className="bg-card border-border"
+                    className={`bg-card border-border ${cls("name", formData.name.trim().length > 0)}`}
                   />
                 </div>
                 <div>
@@ -154,9 +160,10 @@ const DownloadsPage = () => {
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    onBlur={() => onBlur("email")}
                     placeholder={t("downloadsPage.form.emailPlaceholder")}
                     required
-                    className="bg-card border-border"
+                    className={`bg-card border-border ${cls("email", isValidEmail(formData.email))}`}
                   />
                 </div>
                 <div>
@@ -168,7 +175,6 @@ const DownloadsPage = () => {
                     type="text"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    placeholder={t("downloadsPage.form.companyPlaceholder")}
                     className="bg-card border-border"
                   />
                 </div>
