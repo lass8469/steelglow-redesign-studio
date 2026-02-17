@@ -8,10 +8,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productEdgeProtectors from "@/assets/product-edge-protectors.webp";
 
 const EdgeProtectorsProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.edge.title"), t("meta.edge.description"));
   const specifications = [
     { label: t("edge.spec.material"), value: t("edge.spec.materialValue") },
     { label: t("edge.spec.thickness"), value: t("edge.spec.thicknessValue") },

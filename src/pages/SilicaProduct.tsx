@@ -8,10 +8,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productSilica from "@/assets/product-silica-gel.webp";
 
 const SilicaProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.silica.title"), t("meta.silica.description"));
   const specifications = [
     { label: t("silica.spec.material"), value: t("silica.spec.materialValue") },
     { label: t("silica.spec.absorption"), value: t("silica.spec.absorptionValue") },

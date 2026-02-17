@@ -8,10 +8,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productStabustrap from "@/assets/product-stabustrap.webp";
 
 const StabustrapProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.stabustrap.title"), t("meta.stabustrap.description"));
   const specifications = [
     { label: t("stabustrap.spec.material"), value: t("stabustrap.spec.materialValue") },
     { label: t("stabustrap.spec.holding"), value: t("stabustrap.spec.holdingValue") },

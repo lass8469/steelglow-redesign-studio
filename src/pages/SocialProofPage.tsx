@@ -9,9 +9,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 const SocialProofPage = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.testimonials.title"), t("meta.testimonials.description"));
 
   // Placeholder logos - replace with actual company logos
   const trustedLogos = [

@@ -6,10 +6,12 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import { articles } from "@/lib/blog-articles";
 
 const BlogPage = () => {
   const { t, language } = useLanguage();
+  usePageMeta(t("meta.blog.title"), t("meta.blog.description"));
 
   const blogPosts = [
     {

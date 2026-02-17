@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import faqHero from "@/assets/faq-hero.webp";
 import {
   Accordion,
@@ -15,6 +16,7 @@ import {
 
 const FAQPage = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.faq.title"), t("meta.faq.description"));
 
   const faqs = [
     { question: t("faqPage.q1"), answer: t("faqPage.a1") },

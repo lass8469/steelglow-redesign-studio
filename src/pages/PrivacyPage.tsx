@@ -4,9 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 const PrivacyPage = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.privacy.title"), t("meta.privacy.description"));
 
   return (
     <div className="min-h-screen bg-background">

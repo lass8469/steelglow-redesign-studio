@@ -8,10 +8,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 
 const MolecularSieveProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.molecular.title"), t("meta.molecular.description"));
   const specifications = [
     { label: t("molecular.spec.pore"), value: t("molecular.spec.poreValue") },
     { label: t("molecular.spec.absorption"), value: t("molecular.spec.absorptionValue") },

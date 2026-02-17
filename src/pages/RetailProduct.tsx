@@ -8,10 +8,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productRetail from "@/assets/product-retail.webp";
 
 const RetailProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.retail.title"), t("meta.retail.description"));
   const specifications = [
     { label: t("retail.spec.material"), value: t("retail.spec.materialValue") },
     { label: t("retail.spec.duration"), value: t("retail.spec.durationValue") },

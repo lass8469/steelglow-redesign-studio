@@ -8,10 +8,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productCalciumChloride from "@/assets/product-calcium-chloride.webp";
 
 const CalciumChlorideProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.calcium.title"), t("meta.calcium.description"));
   const specifications = [
     { label: t("calcium.spec.active"), value: t("calcium.spec.activeValue") },
     { label: t("calcium.spec.absorption"), value: t("calcium.spec.absorptionValue") },

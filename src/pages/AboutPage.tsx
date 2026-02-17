@@ -5,10 +5,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import aboutHeroBg from "@/assets/about-hero.webp";
 
 const AboutPage = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.about.title"), t("meta.about.description"));
 
   const stats = [
     { value: "45+", label: t("aboutPage.stat1") },
