@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { Star, Quote, Award, Truck } from "lucide-react";
+import { Star, Quote, Award } from "lucide-react";
 import varoLogo from "@/assets/logo-varo.png";
 import babydanLogo from "@/assets/logo-babydan.png";
 import kkWindLogo from "@/assets/logo-kk-wind.svg";
 import envasesLogo from "@/assets/logo-envases.png";
 import r2Logo from "@/assets/logo-r2.svg";
+import palbyLogo from "@/assets/logo-palby.svg";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -22,7 +23,7 @@ const SocialProofPage = () => {
     { name: "KK Wind Solutions", icon: null, accent: true, logo: kkWindLogo },
     { name: "Envases", icon: null, accent: false, logo: envasesLogo },
     { name: "R2 Group", icon: null, accent: true, logo: r2Logo },
-    { name: "LogiTrans", icon: Truck, accent: false },
+    { name: "Palby Marine", icon: null, accent: false, logo: palbyLogo },
   ];
 
   const textReviews = [
