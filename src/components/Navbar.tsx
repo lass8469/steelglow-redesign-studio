@@ -153,6 +153,13 @@ const Navbar = () => {
               {t("nav.applications")}
             </LocalizedLink>
             <LocalizedLink
+              to="/testimonials"
+              onClick={() => handleNavClick("/testimonials")}
+              className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
+            >
+              {t("nav.testimonials")}
+            </LocalizedLink>
+            <LocalizedLink
               to="/contact"
               onClick={() => handleNavClick("/contact")}
               className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground transition-colors link-underline"
@@ -237,6 +244,13 @@ const Navbar = () => {
                 onClick={() => setIsMobileOpen(false)}
               >
                 {t("nav.applications")}
+              </LocalizedLink>
+              <LocalizedLink
+                to="/testimonials"
+                className="block px-4 py-3 text-foreground/80 hover:text-foreground hover:bg-accent rounded-lg transition-colors"
+                onClick={() => setIsMobileOpen(false)}
+              >
+                {t("nav.testimonials")}
               </LocalizedLink>
               <LocalizedLink
                 to="/contact"
