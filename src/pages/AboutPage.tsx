@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import aboutHeroBg from "@/assets/about-hero.jpg";
+import aboutHeroBg from "@/assets/about-hero.webp";
 
 const AboutPage = () => {
   const { t } = useLanguage();

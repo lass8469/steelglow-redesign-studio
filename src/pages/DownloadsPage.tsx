@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, FileText, Shield, Send, Award } from "lucide-react";
 import { useState } from "react";
-import downloadsHero from "@/assets/downloads-hero.jpg";
+import downloadsHero from "@/assets/downloads-hero.webp";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";

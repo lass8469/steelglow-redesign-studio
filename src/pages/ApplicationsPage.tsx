@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
-import applicationsHeroBg from "@/assets/applications-hero.jpg";
+import applicationsHeroBg from "@/assets/applications-hero.webp";
 
 const ApplicationsPage = () => {
   const { t } = useLanguage();

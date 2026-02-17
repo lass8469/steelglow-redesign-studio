@@ -1,9 +1,9 @@
-import blogVaporPressure from "@/assets/blog-vapor-pressure.jpg";
-import blogContainerRain from "@/assets/blog-container-rain.jpg";
-import blogChemistryClay from "@/assets/blog-chemistry-clay.jpg";
-import blogDatalogger from "@/assets/blog-datalogger.png";
-import blogAgricultureFeed from "@/assets/blog-agriculture-feed.jpg";
-import blogMoldGrowth from "@/assets/blog-mold-growth.jpg";
+import blogVaporPressure from "@/assets/blog-vapor-pressure.webp";
+import blogContainerRain from "@/assets/blog-container-rain.webp";
+import blogChemistryClay from "@/assets/blog-chemistry-clay.webp";
+import blogDatalogger from "@/assets/blog-datalogger.webp";
+import blogAgricultureFeed from "@/assets/blog-agriculture-feed.webp";
+import blogMoldGrowth from "@/assets/blog-mold-growth.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
