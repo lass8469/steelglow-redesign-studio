@@ -8,10 +8,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productDunnage from "@/assets/product-dunnage-bag.webp";
 
 const DunnageBagProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.dunnage.title"), t("meta.dunnage.description"));
   const specifications = [
     { label: t("dunnage.spec.material"), value: t("dunnage.spec.materialValue") },
     { label: t("dunnage.spec.inflation"), value: t("dunnage.spec.inflationValue") },

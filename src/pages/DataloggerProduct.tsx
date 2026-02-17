@@ -9,9 +9,11 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 const DataloggerProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.datalogger.title"), t("meta.datalogger.description"));
   const specifications = [
     { label: t("datalogger.spec.duration"), value: t("datalogger.spec.durationValue") },
     { label: t("datalogger.spec.params"), value: t("datalogger.spec.paramsValue") },

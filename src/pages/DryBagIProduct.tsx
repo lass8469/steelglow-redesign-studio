@@ -8,10 +8,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productDrybagI from "@/assets/product-drybag-i.webp";
 
 const DryBagIProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.drybagI.title"), t("meta.drybagI.description"));
 
   const specifications = [
     { label: t("drybagI.spec.material"), value: t("drybagI.spec.materialValue") },

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { articles, ArticleSection } from "@/lib/blog-articles";
 import { articlesDa } from "@/lib/blog-articles-da";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 
 const renderSection = (section: ArticleSection, index: number) => {
   switch (section.type) {
@@ -112,6 +113,10 @@ const BlogArticlePage = () => {
   const { t, language } = useLanguage();
   const articleSource = language === 'da' ? articlesDa : articles;
   const article = slug ? (articleSource[slug] || articles[slug]) : null;
+  usePageMeta(
+    article ? `${article.title} - Cargo Intelligence` : t("meta.blog.title"),
+    article ? article.excerpt : t("meta.blog.description")
+  );
 
   if (!article) {
     return (

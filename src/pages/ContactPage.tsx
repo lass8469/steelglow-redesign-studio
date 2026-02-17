@@ -11,6 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import { submitWeb3Form } from "@/lib/web3forms";
 import contactHeroBg from "@/assets/contact-hero.webp";
 import { productSizes } from "@/lib/product-sizes";
@@ -19,6 +20,7 @@ import { useFieldValidation } from "@/hooks/useFieldValidation";
 const ContactPage = () => {
   const { toast } = useToast();
   const { t } = useLanguage();
+  usePageMeta(t("meta.contact.title"), t("meta.contact.description"));
   const [formData, setFormData] = useState({
     name: "",
     email: "",

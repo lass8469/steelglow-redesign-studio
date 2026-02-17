@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productDrybagI from "@/assets/product-drybag-i.webp";
 import productDrybagIII from "@/assets/product-drybag-iii.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
@@ -19,6 +20,7 @@ import productDatalogger from "@/assets/product-datalogger.webp";
 
 const ProductsPage = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.products.title"), t("meta.products.description"));
 
   const desiccantProducts = [
     {

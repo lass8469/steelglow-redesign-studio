@@ -8,10 +8,12 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import productAntislip from "@/assets/product-antislip.webp";
 
 const AntiSlipProduct = () => {
   const { t } = useLanguage();
+  usePageMeta(t("meta.antislip.title"), t("meta.antislip.description"));
   const specifications = [
     { label: t("antislip.spec.material"), value: t("antislip.spec.materialValue") },
     { label: t("antislip.spec.friction"), value: t("antislip.spec.frictionValue") },
