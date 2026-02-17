@@ -212,7 +212,7 @@ const translations: Record<Language, Record<string, string>> = {
     "aboutPage.stat2": "satisfied customers since 1979",
     "aboutPage.stat3": "countries where we safeguard cargo",
     "aboutPage.ctaTitle": "Ready to learn more?",
-    "aboutPage.ctaDesc": "We're always happy to discuss how Dry-Bag can meet your specific needs. Reach out to our team today.",
+    "aboutPage.ctaDesc": "We're always happy to discuss how DESICCANT can meet your specific needs. Reach out to our team today.",
     "aboutPage.ctaButton": "Contact our experts",
 
     // Contact Page
@@ -1064,7 +1064,7 @@ const translations: Record<Language, Record<string, string>> = {
     "aboutPage.stat2": "tilfredse kunder siden 1979",
     "aboutPage.stat3": "lande hvor vi beskytter gods",
     "aboutPage.ctaTitle": "Klar til at lære mere?",
-    "aboutPage.ctaDesc": "Vi er altid glade for at diskutere, hvordan Dry-Bag kan opfylde dine specifikke behov. Kontakt vores team i dag.",
+    "aboutPage.ctaDesc": "Vi er altid glade for at diskutere, hvordan DESICCANT kan opfylde dine specifikke behov. Kontakt vores team i dag.",
     "aboutPage.ctaButton": "Kontakt vores eksperter",
 
     // Contact Page
