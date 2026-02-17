@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VBQ7QYGD1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6VBQ7QYGD1');
+    </script>
+
     <title>Desiccant.com - Industrial Desiccants & Cargo Protection</title>
     <meta name="description" content="Industrial desiccants and cargo protection solutions from Denmark since 1979. Silica gel, clay desiccants, dunnage bags, and monitoring devices for global shipping." />
     <meta name="author" content="Dry-Bag A/S" />
@@ -11,11 +20,31 @@
     <meta property="og:title" content="Desiccant.com - Industrial Desiccants & Cargo Protection" />
     <meta property="og:description" content="Industrial desiccants and cargo protection solutions from Denmark since 1979. Silica gel, clay desiccants, dunnage bags, and monitoring devices for global shipping." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="https://desiccant.com/og-image.png" />
+    <meta property="og:url" content="https://desiccant.com/" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "DRY-BAG A/S",
+      "url": "https://desiccant.com/",
+      "logo": "https://desiccant.com/img/logo.webp",
+      "description": "The leading danish manufacturer of industrial and consumer desiccants, including silica gel, clay, and molecular sieves.",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61554673160641",
+        "https://www.linkedin.com/company/dry-bag-denmark/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+4586190500",
+        "contactType": "Customer Service",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["en", "da"]
+      }
+    }
+    </script>
   </head>
 
   <body>
