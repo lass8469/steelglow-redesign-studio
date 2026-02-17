@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productAntislip from "@/assets/product-antislip.jpg";
+import productAntislip from "@/assets/product-antislip.webp";
 
 const AntiSlipProduct = () => {
   const { t } = useLanguage();
