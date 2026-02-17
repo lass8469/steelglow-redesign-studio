@@ -5,17 +5,17 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productDrybagI from "@/assets/product-drybag-i.jpg";
+import productDrybagI from "@/assets/product-drybag-i.webp";
 import productDrybagIII from "@/assets/product-drybag-iii.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
 import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
-import productCalciumChloride from "@/assets/product-calcium-chloride.jpg";
+import productCalciumChloride from "@/assets/product-calcium-chloride.webp";
 import productDunnageBag from "@/assets/product-dunnage-bag.webp";
 import productEdgeProtectors from "@/assets/product-edge-protectors.webp";
-import productAntislip from "@/assets/product-antislip.jpg";
+import productAntislip from "@/assets/product-antislip.webp";
 import productStabustrap from "@/assets/product-stabustrap.webp";
 import productRetail from "@/assets/product-retail.webp";
-import productDatalogger from "@/assets/product-datalogger.png";
+import productDatalogger from "@/assets/product-datalogger.webp";
 
 const ProductsPage = () => {
   const { t } = useLanguage();

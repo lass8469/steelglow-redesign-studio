@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
-import faqHero from "@/assets/faq-hero.jpg";
+import faqHero from "@/assets/faq-hero.webp";
 import {
   Accordion,
   AccordionContent,

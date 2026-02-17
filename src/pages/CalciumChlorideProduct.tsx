@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productCalciumChloride from "@/assets/product-calcium-chloride.jpg";
+import productCalciumChloride from "@/assets/product-calcium-chloride.webp";
 
 const CalciumChlorideProduct = () => {
   const { t } = useLanguage();

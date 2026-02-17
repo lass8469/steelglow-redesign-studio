@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Wind, Factory, Apple, Pill } from "lucide-react";
 import MoistureBackground from "./MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
-import industryWind from "@/assets/industry-wind.jpg";
-import industryMetal from "@/assets/industry-metal.jpg";
-import industryFood from "@/assets/industry-food.jpg";
-import industryPharma from "@/assets/industry-pharma.jpg";
+import industryWind from "@/assets/industry-wind.webp";
+import industryMetal from "@/assets/industry-metal.webp";
+import industryFood from "@/assets/industry-food.webp";
+import industryPharma from "@/assets/industry-pharma.webp";
 
 const Industries = () => {
   const { t } = useLanguage();

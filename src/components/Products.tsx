@@ -4,7 +4,7 @@ import LocalizedLink from "./LocalizedLink";
 import MoistureBackground from "./MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import productDunnageBag from "@/assets/product-dunnage-bag.webp";
-import productDrybagI from "@/assets/product-drybag-i.jpg";
+import productDrybagI from "@/assets/product-drybag-i.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
 import productDrybagIII from "@/assets/product-drybag-iii.webp";
 
