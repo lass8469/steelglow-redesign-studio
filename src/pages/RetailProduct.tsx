@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productRetail from "@/assets/product-retail.jpg";
+import productRetail from "@/assets/product-retail.webp";
 
 const RetailProduct = () => {
   const { t } = useLanguage();

@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productDrybagIII from "@/assets/product-drybag-iii.jpg";
+import productDrybagIII from "@/assets/product-drybag-iii.webp";
 
 const DryBagIIIProduct = () => {
   const { t } = useLanguage();
