@@ -22,6 +22,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { productSizes } from "@/lib/product-sizes";
 import { submitWeb3Form } from "@/lib/web3forms";
 import { toast } from "sonner";
+import { useFieldValidation } from "@/hooks/useFieldValidation";
 
 interface SpecSheetDialogProps {
   productKey: string;
@@ -35,6 +36,9 @@ const SpecSheetDialog = ({ productKey, productName }: SpecSheetDialogProps) => {
   const [email, setEmail] = useState("");
   const [variant, setVariant] = useState("");
   const [loading, setLoading] = useState(false);
+  const { onBlur, cls, reset } = useFieldValidation();
+
+  const isValidEmail = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
   const sizes = productSizes[productKey] || [];
 
@@ -59,6 +63,7 @@ const SpecSheetDialog = ({ productKey, productName }: SpecSheetDialogProps) => {
       setName("");
       setEmail("");
       setVariant("");
+      reset();
     } catch {
       toast.error(t("contact.toast.error"), {
         description: t("contact.toast.errorDesc"),
@@ -105,10 +110,11 @@ const SpecSheetDialog = ({ productKey, productName }: SpecSheetDialogProps) => {
               id="spec-name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              onBlur={() => onBlur("name")}
               placeholder={t("contact.form.placeholder.name")}
               required
               maxLength={100}
-              className="bg-background"
+              className={`bg-background ${cls("name", name.trim().length > 0)}`}
             />
           </div>
           <div className="space-y-2">
@@ -118,10 +124,11 @@ const SpecSheetDialog = ({ productKey, productName }: SpecSheetDialogProps) => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              onBlur={() => onBlur("email")}
               placeholder={t("contact.form.placeholder.email")}
               required
               maxLength={255}
-              className="bg-background"
+              className={`bg-background ${cls("email", isValidEmail(email))}`}
             />
           </div>
           <Button

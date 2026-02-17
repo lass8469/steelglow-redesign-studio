@@ -14,6 +14,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { submitWeb3Form } from "@/lib/web3forms";
 import contactHeroBg from "@/assets/contact-hero.jpg";
 import { productSizes } from "@/lib/product-sizes";
+import { useFieldValidation } from "@/hooks/useFieldValidation";
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -27,6 +28,9 @@ const ContactPage = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [productEnquiry, setProductEnquiry] = useState(false);
+  const { onBlur, cls, reset } = useFieldValidation();
+
+  const isValidEmail = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
   const productOptions = [
     { value: "drybag-i", label: t("products.drybagI") },
@@ -58,6 +62,7 @@ const ContactPage = () => {
       });
       setFormData({ name: "", email: "", message: "", product: "", size: "" });
       setProductEnquiry(false);
+      reset();
     } catch {
       toast({
         title: t("contact.toast.error"),
@@ -70,30 +75,10 @@ const ContactPage = () => {
   };
 
   const contactInfo = [
-    {
-      icon: Mail,
-      label: t("contactPage.email"),
-      value: "dry-bag@desiccant.com",
-      href: "mailto:dry-bag@desiccant.com"
-    },
-    {
-      icon: Phone,
-      label: t("contactPage.phone"),
-      value: "+45 86 19 05 00",
-      href: "tel:+4586190500"
-    },
-    {
-      icon: MapPin,
-      label: t("contactPage.address"),
-      value: "Odinsvej 21, 8722 Hedensted, Denmark",
-      href: null
-    },
-    {
-      icon: Clock,
-      label: t("contactPage.hours"),
-      value: t("contactPage.hoursValue"),
-      href: null
-    }
+    { icon: Mail, label: t("contactPage.email"), value: "dry-bag@desiccant.com", href: "mailto:dry-bag@desiccant.com" },
+    { icon: Phone, label: t("contactPage.phone"), value: "+45 86 19 05 00", href: "tel:+4586190500" },
+    { icon: MapPin, label: t("contactPage.address"), value: "Odinsvej 21, 8722 Hedensted, Denmark", href: null },
+    { icon: Clock, label: t("contactPage.hours"), value: t("contactPage.hoursValue"), href: null },
   ];
 
   return (
@@ -156,9 +141,10 @@ const ContactPage = () => {
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    onBlur={() => onBlur("name")}
                     placeholder={t("contactPage.form.namePlaceholder")}
                     required
-                    className="bg-card border-border"
+                    className={`bg-card border-border ${cls("name", formData.name.trim().length > 0)}`}
                   />
                 </div>
                 <div>
@@ -170,9 +156,10 @@ const ContactPage = () => {
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    onBlur={() => onBlur("email")}
                     placeholder={t("contactPage.form.emailPlaceholder")}
                     required
-                    className="bg-card border-border"
+                    className={`bg-card border-border ${cls("email", isValidEmail(formData.email))}`}
                   />
                 </div>
                 <div className="flex items-center gap-2">
@@ -233,10 +220,11 @@ const ContactPage = () => {
                     id="message"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onBlur={() => onBlur("message")}
                     placeholder={t("contactPage.form.messagePlaceholder")}
                     required
                     rows={5}
-                    className="bg-card border-border"
+                    className={`bg-card border-border ${cls("message", formData.message.trim().length > 0)}`}
                   />
                 </div>
                 <Button 
@@ -268,12 +256,7 @@ const ContactPage = () => {
                     <div>
                       <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
                       {info.href ? (
-                        <a 
-                          href={info.href}
-                          className="text-foreground hover:text-primary transition-colors"
-                        >
-                          {info.value}
-                        </a>
+                        <a href={info.href} className="text-foreground hover:text-primary transition-colors">{info.value}</a>
                       ) : (
                         <p className="text-foreground">{info.value}</p>
                       )}

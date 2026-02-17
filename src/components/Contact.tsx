@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import MoistureBackground from "./MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { productSizes } from "@/lib/product-sizes";
+import { useFieldValidation } from "@/hooks/useFieldValidation";
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -24,6 +25,9 @@ const Contact = () => {
     size: "",
   });
   const [productEnquiry, setProductEnquiry] = useState(false);
+  const { onBlur, cls, reset } = useFieldValidation();
+
+  const isValidEmail = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
   const productOptions = [
     { value: "drybag-i", label: t("products.drybagI") },
@@ -55,6 +59,7 @@ const Contact = () => {
       });
       setFormData({ name: "", email: "", company: "", message: "", product: "", size: "" });
       setProductEnquiry(false);
+      reset();
     } catch {
       toast({
         title: t("contact.toast.error"),
@@ -142,7 +147,8 @@ const Contact = () => {
                       placeholder={t("contact.form.placeholder.name")}
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="bg-background border-border"
+                      onBlur={() => onBlur("name")}
+                      className={`bg-background border-border ${cls("name", formData.name.trim().length > 0)}`}
                     />
                   </div>
                   <div>
@@ -154,7 +160,8 @@ const Contact = () => {
                       placeholder={t("contact.form.placeholder.email")}
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="bg-background border-border"
+                      onBlur={() => onBlur("email")}
+                      className={`bg-background border-border ${cls("email", isValidEmail(formData.email))}`}
                     />
                   </div>
                 </div>
@@ -231,7 +238,8 @@ const Contact = () => {
                     rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="bg-background border-border resize-none"
+                    onBlur={() => onBlur("message")}
+                    className={`bg-background border-border resize-none ${cls("message", formData.message.trim().length > 0)}`}
                   />
                 </div>
 
