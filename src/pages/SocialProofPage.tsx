@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Star, Quote, Play, Award, Anchor, Ship, Factory, Truck, Box, Globe } from "lucide-react";
+import { Star, Quote, Award, Truck } from "lucide-react";
 import varoLogo from "@/assets/logo-varo.png";
 import babydanLogo from "@/assets/logo-babydan.png";
 import kkWindLogo from "@/assets/logo-kk-wind.svg";
@@ -46,30 +46,6 @@ const SocialProofPage = () => {
       company: t("socialProof.review3.company"),
       text: t("socialProof.review3.text"),
       rating: 5,
-    },
-  ];
-
-  const videoTestimonials = [
-    {
-      name: t("socialProof.video1.name"),
-      role: t("socialProof.video1.role"),
-      company: t("socialProof.video1.company"),
-      thumbnail: "/placeholder.svg",
-      videoUrl: "#",
-    },
-    {
-      name: t("socialProof.video2.name"),
-      role: t("socialProof.video2.role"),
-      company: t("socialProof.video2.company"),
-      thumbnail: "/placeholder.svg",
-      videoUrl: "#",
-    },
-    {
-      name: t("socialProof.video3.name"),
-      role: t("socialProof.video3.role"),
-      company: t("socialProof.video3.company"),
-      thumbnail: "/placeholder.svg",
-      videoUrl: "#",
     },
   ];
 
@@ -208,64 +184,6 @@ const SocialProofPage = () => {
                       {review.role}, {review.company}
                     </p>
                   </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Video Testimonials Section */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              {t("socialProof.videoTitle")}
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              {t("socialProof.videoSubtitle")}
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {videoTestimonials.map((video, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group cursor-pointer"
-              >
-                {/* Video Thumbnail */}
-                <div className="relative aspect-video bg-card border border-border rounded-sm overflow-hidden mb-4 group-hover:border-primary/50 transition-colors">
-                  <img
-                    src={video.thumbnail}
-                    alt={`${video.name} testimonial`}
-                    className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-primary/90 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all">
-                      <Play className="w-6 h-6 text-primary-foreground ml-1" />
-                    </div>
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                </div>
-
-                {/* Video Info */}
-                <div>
-                  <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
-                    {video.name}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {video.role}, {video.company}
-                  </p>
                 </div>
               </motion.div>
             ))}
