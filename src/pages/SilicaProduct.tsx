@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productSilica from "@/assets/product-silica-gel.jpg";
+import productSilica from "@/assets/product-silica-gel.webp";
 
 const SilicaProduct = () => {
   const { t } = useLanguage();

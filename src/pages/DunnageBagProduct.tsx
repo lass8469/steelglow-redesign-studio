@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productDunnage from "@/assets/product-dunnage-bag.jpg";
+import productDunnage from "@/assets/product-dunnage-bag.webp";
 
 const DunnageBagProduct = () => {
   const { t } = useLanguage();

@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productMolecularSieve from "@/assets/product-molecular-sieve.png";
+import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 
 const MolecularSieveProduct = () => {
   const { t } = useLanguage();

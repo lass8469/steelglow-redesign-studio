@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productEdgeProtectors from "@/assets/product-edge-protectors.jpg";
+import productEdgeProtectors from "@/assets/product-edge-protectors.webp";
 
 const EdgeProtectorsProduct = () => {
   const { t } = useLanguage();

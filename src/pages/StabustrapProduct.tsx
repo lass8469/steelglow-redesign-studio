@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
-import productStabustrap from "@/assets/product-stabustrap.png";
+import productStabustrap from "@/assets/product-stabustrap.webp";
 
 const StabustrapProduct = () => {
   const { t } = useLanguage();
