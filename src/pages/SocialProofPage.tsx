@@ -5,7 +5,7 @@ import babydanLogo from "@/assets/logo-babydan.png";
 import kkWindLogo from "@/assets/logo-kk-wind.svg";
 import envasesLogo from "@/assets/logo-envases.png";
 import r2Logo from "@/assets/logo-r2.svg";
-import palbyLogo from "@/assets/logo-palby.svg";
+import palbyLogo from "@/assets/logo-palby.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
