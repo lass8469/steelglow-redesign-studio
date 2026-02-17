@@ -186,8 +186,8 @@ const translations: Record<Language, Record<string, string>> = {
 
     // About Page
     "aboutPage.badge": "About us",
-    "aboutPage.title1": "Our job is to make",
-    "aboutPage.title2": "your job easier.",
+    "aboutPage.title1": "We handle moisture.",
+    "aboutPage.title2": "You handle business.",
     "aboutPage.description": "Your products deserve to arrive in perfect condition — and that's exactly what we've dedicated ourselves to for over four decades. We know that every shipment comes with its own set of challenges, and our job is to make sure moisture isn't one of them.",
     "aboutPage.decadesTitle": "Four decades of expertise",
     "aboutPage.decadesDesc1": "Our mission, since 1979, has been to reliably and responsibly protect products from moisture. We offer custom moisture control solutions designed to safeguard your goods, focusing on long-term performance and sustainability.",
@@ -1038,8 +1038,8 @@ const translations: Record<Language, Record<string, string>> = {
 
     // About Page
     "aboutPage.badge": "Om os",
-    "aboutPage.title1": "Vores job er at gøre",
-    "aboutPage.title2": "dit job lettere.",
+    "aboutPage.title1": "Vi håndterer fugt.",
+    "aboutPage.title2": "Du håndterer forretningen.",
     "aboutPage.description": "Dine produkter fortjener at ankomme i perfekt stand — og det er præcis, hvad vi har dedikeret os til i over fire årtier. Vi ved, at hver forsendelse har sine egne udfordringer, og vores job er at sikre, at fugt ikke er en af dem.",
     "aboutPage.decadesTitle": "Fire årtiers ekspertise",
     "aboutPage.decadesDesc1": "Vores mission, siden 1979, har været pålideligt og ansvarligt at beskytte produkter mod fugt. Vi tilbyder skræddersyede fugtkontrolløsninger designet til at beskytte dine varer med fokus på langsigtet ydeevne og bæredygtighed.",
