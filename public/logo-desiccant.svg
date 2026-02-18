@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="hsl(24, 85%, 52%)" />
+      <stop offset="100%" stop-color="hsl(18, 80%, 48%)" />
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;display=swap');
+    </style>
+  </defs>
+  <text
+    x="200" y="45"
+    text-anchor="middle"
+    font-family="'Space Grotesk', sans-serif"
+    font-weight="900"
+    font-size="52"
+    letter-spacing="-1.5"
+    fill="url(#brandGradient)"
+  >DESICCANT</text>
+</svg>
