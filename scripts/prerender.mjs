@@ -2,8 +2,8 @@
 /**
  * SSG Pre-render Script
  *
- * Generates static HTML for every route so search engines see fully
- * rendered content on a traditional static host (Apache / cPanel).
+ * Generates static HTML for every route so search engines and LLMs
+ * see fully rendered content on a traditional static host.
  *
  * Usage:
  *   1. npm run build
@@ -14,7 +14,7 @@
 
 import { createServer } from "http";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
-import { join, dirname } from "path";
+import { join, dirname, extname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -23,15 +23,13 @@ const PORT = 4173;
 const BASE_URL = "https://desiccant.com";
 
 // ---------------------------------------------------------------------------
-// Route list — imported dynamically from the shared config
+// Route list
 // ---------------------------------------------------------------------------
 async function loadRoutes() {
   try {
-    // Try loading compiled config (after vite build the .ts won't run directly)
     const { routes } = await import("../prerender.config.ts");
     return routes;
   } catch {
-    // Fallback: inline list (keeps script self-contained if ts import fails)
     console.log("⚠  Could not import prerender.config.ts, using inline routes.");
     const basePaths = [
       "", "/products", "/about", "/applications", "/blog", "/contact",
@@ -72,7 +70,9 @@ function createStaticServer() {
 
   return createServer((req, res) => {
     let filePath = join(DIST_DIR, req.url === "/" ? "index.html" : req.url);
-    if (!existsSync(filePath)) filePath = join(DIST_DIR, "index.html");
+    if (!existsSync(filePath) || !extname(filePath)) {
+      filePath = join(DIST_DIR, "index.html");
+    }
 
     try {
       const content = readFileSync(filePath);
@@ -89,7 +89,8 @@ function createStaticServer() {
 }
 
 // ---------------------------------------------------------------------------
-// Post-process: inject canonical, hreflang, lang, strip dev artifacts
+// Post-process: inject canonical, hreflang, lang, strip dev artifacts,
+// force animation visibility for static HTML
 // ---------------------------------------------------------------------------
 function postProcess(html, route) {
   const lang = route.startsWith("/da") ? "da" : "en";
@@ -129,13 +130,22 @@ function postProcess(html, route) {
   html = html.replace(/http:\/\/localhost:\d+/g, BASE_URL);
 
   // 5. Strip Vite HMR / dev-only scripts
+  html = html.replace(/<script[^>]*\/@vite\/client[^>]*><\/script>/g, "");
+  html = html.replace(/<script[^>]*\/@react-refresh[^>]*><\/script>/g, "");
+
+  // 6. Force all animated elements to be visible in static HTML
+  //    This ensures crawlers/LLMs see the content even without JS
   html = html.replace(
-    /<script[^>]*\/@vite\/client[^>]*><\/script>/g,
-    ""
-  );
-  html = html.replace(
-    /<script[^>]*\/@react-refresh[^>]*><\/script>/g,
-    ""
+    "</head>",
+    `  <style>
+    /* SSG: force all animated content visible for crawlers */
+    .animate-fade-in-up, .animate-fade-in, .animate-slide-in-left,
+    [class*="animate-fade"], [class*="animate-slide"] {
+      opacity: 1 !important;
+      transform: none !important;
+      animation: none !important;
+    }
+  </style>\n  </head>`
   );
 
   return html;
@@ -145,7 +155,6 @@ function postProcess(html, route) {
 // Main
 // ---------------------------------------------------------------------------
 async function prerender() {
-  // Graceful check for puppeteer
   let puppeteer;
   try {
     puppeteer = await import("puppeteer");
@@ -169,15 +178,26 @@ async function prerender() {
   console.log(`🌐 Dev server → http://localhost:${PORT}\n`);
 
   const browser = await puppeteer.launch({
-    headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    headless: "new",
+    args: ["--no-sandbox", "--disable-setuid-sandbox", "--disable-gpu"],
   });
 
   let success = 0;
   let failed = 0;
+  let contentWarnings = 0;
 
   for (const route of routes) {
     const page = await browser.newPage();
+
+    // Capture console errors from the React app
+    const pageErrors = [];
+    page.on("console", (msg) => {
+      if (msg.type() === "error") pageErrors.push(msg.text());
+    });
+    page.on("pageerror", (err) => {
+      pageErrors.push(err.message);
+    });
+
     try {
       await page.setUserAgent(
         "Mozilla/5.0 (compatible; PrerendererBot/1.0; +https://desiccant.com)"
@@ -186,19 +206,37 @@ async function prerender() {
       const url = `http://localhost:${PORT}${route}`;
       await page.goto(url, { waitUntil: "networkidle0", timeout: 30_000 });
 
-      // Wait for React to hydrate
+      // Wait for React to hydrate — look for actual content, not just children
       await page.waitForFunction(
         () => {
           const root = document.getElementById("root");
-          return root && root.children.length > 0;
+          if (!root || root.children.length === 0) return false;
+          // Check for substantial text content (at least 100 chars = real page)
+          const text = root.innerText || "";
+          return text.length > 100;
         },
-        { timeout: 10_000 }
+        { timeout: 15_000 }
       );
 
-      // Allow meta-tag hooks (usePageMeta, useJsonLd, HrefLangTags) to fire
-      await page.evaluate(() => new Promise((r) => setTimeout(r, 2000)));
+      // Extra buffer for meta-tag hooks (usePageMeta, useJsonLd, HrefLangTags)
+      await page.evaluate(() => new Promise((r) => setTimeout(r, 3000)));
 
       let html = await page.content();
+
+      // Verify content was actually captured
+      const textLength = await page.evaluate(() => {
+        const root = document.getElementById("root");
+        return (root?.innerText || "").length;
+      });
+
+      if (textLength < 100) {
+        console.log(`  ⚠️  ${route} — only ${textLength} chars of text (may be empty)`);
+        contentWarnings++;
+        if (pageErrors.length > 0) {
+          console.log(`      Console errors: ${pageErrors.slice(0, 3).join(" | ")}`);
+        }
+      }
+
       html = postProcess(html, route);
 
       // Write to dist/<route>/index.html
@@ -206,10 +244,13 @@ async function prerender() {
       mkdirSync(dirname(outputPath), { recursive: true });
       writeFileSync(outputPath, html, "utf-8");
 
-      console.log(`  ✅ ${route}`);
+      console.log(`  ✅ ${route} (${textLength} chars)`);
       success++;
     } catch (err) {
       console.log(`  ❌ ${route} — ${err.message}`);
+      if (pageErrors.length > 0) {
+        console.log(`      Console errors: ${pageErrors.slice(0, 3).join(" | ")}`);
+      }
       failed++;
     } finally {
       await page.close();
@@ -221,6 +262,7 @@ async function prerender() {
 
   console.log(`\n🏁 Pre-rendering complete`);
   console.log(`   ✅ ${success} succeeded`);
+  if (contentWarnings) console.log(`   ⚠️  ${contentWarnings} with low content`);
   if (failed) console.log(`   ❌ ${failed} failed`);
   console.log(`\n📂 Static files in: ${DIST_DIR}`);
   console.log(
