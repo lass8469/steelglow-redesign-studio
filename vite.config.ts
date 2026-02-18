@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
-import vike from "vike/plugin"; // 1. Import Vike
 
 export default defineConfig(({ mode }) => ({
   server: {
@@ -14,7 +13,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   plugins: [
-    vike(), // 2. Add Vike plugin
     react(),
     mode === "development" && componentTagger(),
     ViteImageOptimizer({
@@ -26,9 +24,5 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-  // 3. Recommended: Explicitly allow SSR build to handle your Lovable assets
-  build: {
-    ssr: true,
   },
 }));
