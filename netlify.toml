@@ -1,3 +1,8 @@
 [build]
-  command = "which google-chrome || which chromium || which chromium-browser || find /usr -name 'chrome' 2>/dev/null || find /usr -name 'chromium*' 2>/dev/null"
+  command = "npm install && vite build && node scripts/prerender.mjs"
   publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
