@@ -97,38 +97,26 @@ const SocialProofPage = () => {
             </h2>
           </motion.div>
           
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center"
-          >
-            {trustedLogos.map((logo, index) => {
-              const IconComponent = logo.icon as any;
-              return (
-                <motion.div
+          <div className="overflow-hidden">
+            <div className="logo-marquee-track">
+              {[...trustedLogos, ...trustedLogos].map((logo, index) => (
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex items-center justify-center gap-2 h-20 px-4 bg-card/50 border border-border/50 rounded-sm hover:border-primary/30 transition-all group hover:bg-card/80"
+                  className="flex items-center justify-center gap-2 h-20 px-4 mx-4 bg-card/50 border border-border/50 rounded-sm hover:border-primary/30 transition-all group hover:bg-card/80 flex-shrink-0"
                 >
                   {logo.logo ? (
                     <img src={logo.logo} alt={logo.name} className={`h-full w-auto object-contain ${logo.name === 'KK Wind Solutions' ? 'scale-[1.8]' : logo.name === 'R2 Group' ? 'scale-[1.4]' : ''}`} />
                   ) : (
                     <>
-                      <IconComponent className={`w-5 h-5 ${logo.accent ? 'text-primary' : 'text-muted-foreground'} group-hover:text-primary transition-colors`} />
                       <span className={`font-bold text-sm tracking-tight ${logo.accent ? 'text-foreground' : 'text-muted-foreground'} group-hover:text-foreground transition-colors`}>
                         {logo.name}
                       </span>
                     </>
                   )}
-                </motion.div>
-              );
-            })}
-          </motion.div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
