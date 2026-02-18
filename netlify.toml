@@ -6,8 +6,9 @@
   # Ensure Puppeteer downloads Chrome in Netlify CI
   PUPPETEER_SKIP_DOWNLOAD = "false"
 
-# SPA fallback for any route not pre-rendered
+# SPA fallback — only if no pre-rendered file exists
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
