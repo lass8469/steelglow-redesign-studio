@@ -106,7 +106,7 @@ const SocialProofPage = () => {
                     className="flex items-center justify-center h-16 px-10 flex-shrink-0"
                   >
                     {logo.logo ? (
-                      <img src={logo.logo} alt={logo.name} className={`h-full w-auto object-contain ${logo.name === 'KK Wind Solutions' ? 'scale-[1.8]' : logo.name === 'R2 Group' ? 'scale-[1.4]' : ''}`} />
+                      <img src={logo.logo} alt={logo.name} className="max-h-10 w-auto object-contain" />
                     ) : (
                       <span className="font-bold text-sm tracking-tight text-muted-foreground whitespace-nowrap">
                         {logo.name}
