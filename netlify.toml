@@ -1,8 +1,12 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && node scripts/prerender.mjs"
   publish = "dist"
 
-# SPA fallback — serve index.html for all routes without a static file
+[build.environment]
+  # Ensure Puppeteer downloads Chrome in Netlify CI
+  PUPPETEER_SKIP_DOWNLOAD = "false"
+
+# SPA fallback for any route not pre-rendered
 [[redirects]]
   from = "/*"
   to = "/index.html"
