@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import faqHero from "@/assets/faq-hero.webp";
 import {
   Accordion,
@@ -30,6 +31,16 @@ const FAQPage = () => {
     { question: t("faqPage.q9"), answer: t("faqPage.a9") },
     { question: t("faqPage.q10"), answer: t("faqPage.a10") },
   ];
+
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  });
 
   return (
     <div className="min-h-screen bg-background">

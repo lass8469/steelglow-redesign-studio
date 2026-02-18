@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const BASE_URL = window.location.origin;
+const BASE_URL = "https://desiccant.com";
 
 const HrefLangTags = () => {
   const location = useLocation();

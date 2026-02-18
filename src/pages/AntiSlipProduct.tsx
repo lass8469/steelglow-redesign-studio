@@ -9,11 +9,21 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import productAntislip from "@/assets/product-antislip.webp";
 
 const AntiSlipProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.antislip.title"), t("meta.antislip.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Anti-Slip Sheets",
+    description: t("meta.antislip.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productAntislip}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
   const specifications = [
     { label: t("antislip.spec.material"), value: t("antislip.spec.materialValue") },
     { label: t("antislip.spec.friction"), value: t("antislip.spec.frictionValue") },

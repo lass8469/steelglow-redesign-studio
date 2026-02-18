@@ -9,11 +9,21 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import productDrybagI from "@/assets/product-drybag-i.webp";
 
 const DryBagIProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.drybagI.title"), t("meta.drybagI.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "DRY-BAG I Container Desiccant",
+    description: t("meta.drybagI.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productDrybagI}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
 
   const specifications = [
     { label: t("drybagI.spec.material"), value: t("drybagI.spec.materialValue") },

@@ -9,11 +9,21 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import productRetail from "@/assets/product-retail.webp";
 
 const RetailProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.retail.title"), t("meta.retail.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "DRY BAG Retail Consumer Products",
+    description: t("meta.retail.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productRetail}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
   const specifications = [
     { label: t("retail.spec.material"), value: t("retail.spec.materialValue") },
     { label: t("retail.spec.duration"), value: t("retail.spec.durationValue") },

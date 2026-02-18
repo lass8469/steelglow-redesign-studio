@@ -9,11 +9,21 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import productEdgeProtectors from "@/assets/product-edge-protectors.webp";
 
 const EdgeProtectorsProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.edge.title"), t("meta.edge.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Edge Protectors",
+    description: t("meta.edge.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productEdgeProtectors}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
   const specifications = [
     { label: t("edge.spec.material"), value: t("edge.spec.materialValue") },
     { label: t("edge.spec.thickness"), value: t("edge.spec.thicknessValue") },
