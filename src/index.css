@@ -346,3 +346,10 @@
     transform: translateX(-50%);
   }
 }
+
+/* Logo marquee animation */
+.logo-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 40s linear infinite;
+}
