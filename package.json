@@ -14,6 +14,8 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@prerenderer/renderer-jsdom": "^0.6.0",
+"@prerenderer/prerenderer": "^0.6.0",
     "vite-react-ssg": "latest",
     "sharp": "^0.33.0",
     "svgo": "^3.0.0",
