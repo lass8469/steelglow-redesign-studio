@@ -206,14 +206,15 @@ async function prerender() {
       const url = `http://localhost:${PORT}${route}`;
       await page.goto(url, { waitUntil: "networkidle0", timeout: 30_000 });
 
-      // Wait for React to hydrate — look for actual content, not just children
+      // Wait for React to hydrate — look for actual HTML elements inside root
       await page.waitForFunction(
         () => {
           const root = document.getElementById("root");
           if (!root || root.children.length === 0) return false;
-          // Check for substantial text content (at least 100 chars = real page)
+          // Check that root contains real rendered HTML tags, not just text
+          const hasStructure = root.querySelector("h1, h2, nav, footer, section");
           const text = root.innerText || "";
-          return text.length > 100;
+          return hasStructure && text.length > 100;
         },
         { timeout: 15_000 }
       );
@@ -221,7 +222,19 @@ async function prerender() {
       // Extra buffer for meta-tag hooks (usePageMeta, useJsonLd, HrefLangTags)
       await page.evaluate(() => new Promise((r) => setTimeout(r, 3000)));
 
+      // Capture the fully rendered DOM including all React-rendered HTML
       let html = await page.content();
+
+      // Verify the captured HTML actually contains rendered elements inside #root
+      const rootHtmlLength = await page.evaluate(() => {
+        const root = document.getElementById("root");
+        return root ? root.innerHTML.length : 0;
+      });
+
+      if (rootHtmlLength < 500) {
+        console.log(`  ⚠️  ${route} — root innerHTML only ${rootHtmlLength} chars (DOM may not be captured)`);
+        contentWarnings++;
+      }
 
       // Verify content was actually captured
       const textLength = await page.evaluate(() => {
@@ -244,7 +257,7 @@ async function prerender() {
       mkdirSync(dirname(outputPath), { recursive: true });
       writeFileSync(outputPath, html, "utf-8");
 
-      console.log(`  ✅ ${route} (${textLength} chars)`);
+      console.log(`  ✅ ${route} (${textLength} text chars, ${rootHtmlLength} HTML chars)`);
       success++;
     } catch (err) {
       console.log(`  ❌ ${route} — ${err.message}`);
