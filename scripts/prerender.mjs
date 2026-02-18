@@ -178,7 +178,11 @@ async function prerender() {
   server.listen(PORT);
   console.log(`🌐 Static server running on http://localhost:${PORT}\n`);
 
-  const browser = await launch({ headless: true });
+  const browser = await launch({
+  executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/usr/bin/google-chrome-stable',
+  args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  headless: true,
+});
   const page = await browser.newPage();
 
   // Set a realistic user-agent so the SPA behaves normally
