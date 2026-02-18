@@ -111,7 +111,7 @@ const Footer = () => {
           
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} DRY-BAG. {t("footer.rights")}
+              © {new Date().getFullYear()} DESICCANT. {t("footer.rights")}
             </p>
             <div className="flex gap-6">
               <LocalizedLink to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">

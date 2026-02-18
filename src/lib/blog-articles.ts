@@ -73,7 +73,7 @@ export const articles: Record<string, Article> = {
     readTime: "7 min read",
     category: "Technical",
     heroImage: blogVaporPressure,
-    author: "DRY-BAG Technical Team",
+    author: "DESICCANT Technical Team",
 
     sections: [
       {
@@ -256,7 +256,7 @@ export const articles: Record<string, Article> = {
     readTime: "8 min read",
     category: "Technical",
     heroImage: blogContainerRain,
-    author: "DRY-BAG Technical Team",
+    author: "DESICCANT Technical Team",
 
     sections: [
       {
@@ -369,7 +369,7 @@ export const articles: Record<string, Article> = {
       {
         type: "quote",
         content: "Unlike active systems, desiccants have no moving parts, require no power, and cannot 'fail' in the traditional sense. They simply continue absorbing moisture until saturated.",
-        attribution: "DRY-BAG Technical Advisory",
+        attribution: "DESICCANT Technical Advisory",
       },
 
       {
@@ -417,7 +417,7 @@ export const articles: Record<string, Article> = {
     readTime: "10 min read",
     category: "Technical",
     heroImage: blogChemistryClay,
-    author: "DRY-BAG Technical Team",
+    author: "DESICCANT Technical Team",
 
     sections: [
       {
@@ -637,7 +637,7 @@ export const articles: Record<string, Article> = {
     readTime: "12 min read",
     category: "Technical",
     heroImage: blogDatalogger,
-    author: "DRY-BAG Technical Team",
+    author: "DESICCANT Technical Team",
 
     sections: [
       {
@@ -828,7 +828,7 @@ export const articles: Record<string, Article> = {
       {
         type: "quote",
         content: "The sensors don't solve moisture problems, but they prove your solutions are working — and that proof is increasingly valuable in an industry where trust alone no longer suffices.",
-        attribution: "DRY-BAG Technical Advisory",
+        attribution: "DESICCANT Technical Advisory",
       },
     ],
 
@@ -850,7 +850,7 @@ export const articles: Record<string, Article> = {
     readTime: "15 min read",
     category: "Technical",
     heroImage: blogAgricultureFeed,
-    author: "DRY-BAG Technical Team",
+    author: "DESICCANT Technical Team",
 
     sections: [
       {
@@ -1034,7 +1034,7 @@ export const articles: Record<string, Article> = {
       {
         type: "quote",
         content: "The beans aren't just cargo; they're living products whose quality reflects every decision made during their journey from farm to consumer.",
-        attribution: "DRY-BAG Technical Advisory",
+        attribution: "DESICCANT Technical Advisory",
       },
     ],
 
@@ -1056,7 +1056,7 @@ export const articles: Record<string, Article> = {
     readTime: "18 min read",
     category: "Technical",
     heroImage: blogMoldGrowth,
-    author: "DRY-BAG Technical Team",
+    author: "DESICCANT Technical Team",
 
     sections: [
       {
@@ -1213,7 +1213,7 @@ export const articles: Record<string, Article> = {
       {
         type: "quote",
         content: "The cost differential between prevention and damage is so extreme — perhaps $500 in protection vs. $50,000 in damaged cargo — that any compromise on humidity control is economically irrational.",
-        attribution: "DRY-BAG Technical Advisory",
+        attribution: "DESICCANT Technical Advisory",
       },
       {
         type: "text",
