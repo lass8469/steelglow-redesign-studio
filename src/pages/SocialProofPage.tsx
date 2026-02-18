@@ -102,7 +102,7 @@ const SocialProofPage = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center"
+            className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 items-center"
           >
             {trustedLogos.map((logo, index) => {
               const IconComponent = logo.icon as any;
