@@ -10,10 +10,20 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 
 const DataloggerProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.datalogger.title"), t("meta.datalogger.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Temperature & Humidity Datalogger",
+    description: t("meta.datalogger.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productDatalogger}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
   const specifications = [
     { label: t("datalogger.spec.duration"), value: t("datalogger.spec.durationValue") },
     { label: t("datalogger.spec.params"), value: t("datalogger.spec.paramsValue") },

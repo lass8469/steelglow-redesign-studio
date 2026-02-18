@@ -297,4 +297,83 @@
     <priority>0.4</priority>
   </url>
 
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://desiccant.com/en/blog/vapor-pressure-wooden-pallets</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/vapor-pressure-wooden-pallets" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/vapor-pressure-wooden-pallets" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desiccant.com/da/blog/vapor-pressure-wooden-pallets</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/vapor-pressure-wooden-pallets" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/vapor-pressure-wooden-pallets" />
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://desiccant.com/en/blog/container-rain-dew-point-physics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/container-rain-dew-point-physics" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/container-rain-dew-point-physics" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desiccant.com/da/blog/container-rain-dew-point-physics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/container-rain-dew-point-physics" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/container-rain-dew-point-physics" />
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://desiccant.com/en/blog/chemistry-clay-mo-clay-vs-silica-gel</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/chemistry-clay-mo-clay-vs-silica-gel" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/chemistry-clay-mo-clay-vs-silica-gel" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desiccant.com/da/blog/chemistry-clay-mo-clay-vs-silica-gel</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/chemistry-clay-mo-clay-vs-silica-gel" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/chemistry-clay-mo-clay-vs-silica-gel" />
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://desiccant.com/en/blog/data-loggers-vs-desiccants</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/data-loggers-vs-desiccants" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/data-loggers-vs-desiccants" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desiccant.com/da/blog/data-loggers-vs-desiccants</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/data-loggers-vs-desiccants" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/data-loggers-vs-desiccants" />
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://desiccant.com/en/blog/agriculture-feed-moisture-living-cargo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/agriculture-feed-moisture-living-cargo" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/agriculture-feed-moisture-living-cargo" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desiccant.com/da/blog/agriculture-feed-moisture-living-cargo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/agriculture-feed-moisture-living-cargo" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/agriculture-feed-moisture-living-cargo" />
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://desiccant.com/en/blog/mold-growth-timelines-80-rh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/mold-growth-timelines-80-rh" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/mold-growth-timelines-80-rh" />
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://desiccant.com/da/blog/mold-growth-timelines-80-rh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/mold-growth-timelines-80-rh" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/mold-growth-timelines-80-rh" />
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

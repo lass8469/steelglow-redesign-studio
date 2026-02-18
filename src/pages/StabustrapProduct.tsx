@@ -9,11 +9,21 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import productStabustrap from "@/assets/product-stabustrap.webp";
 
 const StabustrapProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.stabustrap.title"), t("meta.stabustrap.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Stabustrap Strapping System",
+    description: t("meta.stabustrap.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productStabustrap}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
   const specifications = [
     { label: t("stabustrap.spec.material"), value: t("stabustrap.spec.materialValue") },
     { label: t("stabustrap.spec.holding"), value: t("stabustrap.spec.holdingValue") },

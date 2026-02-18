@@ -9,6 +9,7 @@ import { articles, ArticleSection } from "@/lib/blog-articles";
 import { articlesDa } from "@/lib/blog-articles-da";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 
 const renderSection = (section: ArticleSection, index: number) => {
   switch (section.type) {
@@ -117,6 +118,16 @@ const BlogArticlePage = () => {
     article ? `${article.title} - Cargo Intelligence` : t("meta.blog.title"),
     article ? article.excerpt : t("meta.blog.description")
   );
+  useJsonLd(article ? {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt,
+    author: { "@type": "Person", name: article.author || "Desiccant.com" },
+    datePublished: article.date,
+    publisher: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    image: article.heroImage,
+  } : null);
 
   if (!article) {
     return (

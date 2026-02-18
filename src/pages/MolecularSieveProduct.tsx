@@ -9,11 +9,21 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 
 const MolecularSieveProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.molecular.title"), t("meta.molecular.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Molecular Sieve Desiccant",
+    description: t("meta.molecular.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productMolecularSieve}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
   const specifications = [
     { label: t("molecular.spec.pore"), value: t("molecular.spec.poreValue") },
     { label: t("molecular.spec.absorption"), value: t("molecular.spec.absorptionValue") },

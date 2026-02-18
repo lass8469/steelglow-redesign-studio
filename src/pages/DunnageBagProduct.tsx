@@ -9,11 +9,21 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import productDunnage from "@/assets/product-dunnage-bag.webp";
 
 const DunnageBagProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.dunnage.title"), t("meta.dunnage.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Dunnage Bag",
+    description: t("meta.dunnage.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productDunnage}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
   const specifications = [
     { label: t("dunnage.spec.material"), value: t("dunnage.spec.materialValue") },
     { label: t("dunnage.spec.inflation"), value: t("dunnage.spec.inflationValue") },

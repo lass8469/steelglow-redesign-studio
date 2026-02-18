@@ -9,11 +9,21 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import productSilica from "@/assets/product-silica-gel.webp";
 
 const SilicaProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.silica.title"), t("meta.silica.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Silica Gel Desiccant",
+    description: t("meta.silica.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productSilica}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
   const specifications = [
     { label: t("silica.spec.material"), value: t("silica.spec.materialValue") },
     { label: t("silica.spec.absorption"), value: t("silica.spec.absorptionValue") },

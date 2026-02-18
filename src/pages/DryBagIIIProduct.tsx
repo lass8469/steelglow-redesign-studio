@@ -9,11 +9,21 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
 import productDrybagIII from "@/assets/product-drybag-iii.webp";
 
 const DryBagIIIProduct = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.drybagIII.title"), t("meta.drybagIII.description"));
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "DRY-BAG III Bentonite Clay Desiccant",
+    description: t("meta.drybagIII.description"),
+    brand: { "@type": "Brand", name: "Desiccant.com" },
+    image: `https://desiccant.com${productDrybagIII}`,
+    manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+  });
   const specifications = [
     { label: t("drybagIII.spec.material"), value: t("drybagIII.spec.materialValue") },
     { label: t("drybagIII.spec.absorption"), value: t("drybagIII.spec.absorptionValue") },
