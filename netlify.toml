@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "vite build && node scripts/prerender.mjs"
   publish = "dist"
 
 [[redirects]]
