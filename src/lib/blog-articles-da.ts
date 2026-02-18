@@ -22,7 +22,7 @@ export const articlesDa: Record<string, Article> = {
     readTime: "7 min læsning",
     category: "Teknisk",
     heroImage: blogVaporPressure,
-    author: "DRY-BAG Teknisk Team",
+    author: "DESICCANT Teknisk Team",
 
     sections: [
       {
@@ -196,7 +196,7 @@ export const articlesDa: Record<string, Article> = {
     readTime: "8 min læsning",
     category: "Teknisk",
     heroImage: blogContainerRain,
-    author: "DRY-BAG Teknisk Team",
+    author: "DESICCANT Teknisk Team",
 
     sections: [
       {
@@ -305,7 +305,7 @@ export const articlesDa: Record<string, Article> = {
       {
         type: "quote",
         content: "I modsætning til aktive systemer har tørremidler ingen bevægelige dele, kræver ingen strøm og kan ikke 'fejle' i traditionel forstand. De fortsætter simpelthen med at absorbere fugt, indtil de er mættede.",
-        attribution: "DRY-BAG Teknisk Rådgivning",
+        attribution: "DESICCANT Teknisk Rådgivning",
       },
       {
         type: "heading",
@@ -351,7 +351,7 @@ export const articlesDa: Record<string, Article> = {
     readTime: "10 min læsning",
     category: "Teknisk",
     heroImage: blogChemistryClay,
-    author: "DRY-BAG Teknisk Team",
+    author: "DESICCANT Teknisk Team",
 
     sections: [
       {
@@ -546,7 +546,7 @@ export const articlesDa: Record<string, Article> = {
     readTime: "12 min læsning",
     category: "Teknisk",
     heroImage: blogDatalogger,
-    author: "DRY-BAG Teknisk Team",
+    author: "DESICCANT Teknisk Team",
 
     sections: [
       {
@@ -725,7 +725,7 @@ export const articlesDa: Record<string, Article> = {
       {
         type: "quote",
         content: "Sensorerne løser ikke fugtproblemer, men de beviser, at dine løsninger virker — og det bevis er stadig mere værdifuldt i en branche, hvor tillid alene ikke længere er tilstrækkeligt.",
-        attribution: "DRY-BAG Teknisk Rådgivning",
+        attribution: "DESICCANT Teknisk Rådgivning",
       },
     ],
 
@@ -747,7 +747,7 @@ export const articlesDa: Record<string, Article> = {
     readTime: "15 min læsning",
     category: "Teknisk",
     heroImage: blogAgricultureFeed,
-    author: "DRY-BAG Teknisk Team",
+    author: "DESICCANT Teknisk Team",
 
     sections: [
       {
@@ -919,7 +919,7 @@ export const articlesDa: Record<string, Article> = {
       {
         type: "quote",
         content: "Bønnerne er ikke bare last; de er levende produkter, hvis kvalitet afspejler enhver beslutning truffet under deres rejse fra gård til forbruger.",
-        attribution: "DRY-BAG Teknisk Rådgivning",
+        attribution: "DESICCANT Teknisk Rådgivning",
       },
     ],
 
@@ -941,7 +941,7 @@ export const articlesDa: Record<string, Article> = {
     readTime: "18 min læsning",
     category: "Teknisk",
     heroImage: blogMoldGrowth,
-    author: "DRY-BAG Teknisk Team",
+    author: "DESICCANT Teknisk Team",
 
     sections: [
       {
@@ -1089,7 +1089,7 @@ export const articlesDa: Record<string, Article> = {
       {
         type: "quote",
         content: "Omkostningsforskellen mellem forebyggelse og skade er så ekstrem — måske $500 i beskyttelse vs. $50.000 i beskadiget gods — at ethvert kompromis med fugtkontrol er økonomisk irrationelt.",
-        attribution: "DRY-BAG Teknisk Rådgivning",
+        attribution: "DESICCANT Teknisk Rådgivning",
       },
       {
         type: "text",
