@@ -1,14 +1,27 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-import { componentTagger } from "lovable-tagger";
-import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+/**
+ * Pre-rendering Configuration for SEO
+ * 
+ * This script generates static HTML for all routes after building.
+ * 
+ * USAGE (after exporting from Lovable):
+ * 1. npm install
+ * 2. npm run build
+ * 3. PRERENDER=true npx vite-plugin-prerender  (or use the prerender script below)
+ * 
+ * Alternatively, use the prerender.sh script.
+ * 
+ * HOW IT WORKS:
+ * - Serves the built dist/ folder on a local server
+ * - Uses Puppeteer to visit each route and capture the rendered HTML
+ * - Saves the HTML as static files (e.g., dist/en/index.html, dist/en/about/index.html)
+ * - Search engines can now crawl fully rendered content
+ * 
+ * REQUIREMENTS:
+ * - Node.js 18+
+ * - Puppeteer (npm install puppeteer --save-dev)
+ */
 
-// Pre-rendering is only used in production builds (not in Lovable preview).
-// After exporting, run `npm run build` locally to generate static HTML for SEO.
-const enablePrerender = process.env.PRERENDER === "true";
-
-const staticRoutes = [
+export const routes = [
   "/en",
   "/da",
   "/en/products",
@@ -29,7 +42,6 @@ const staticRoutes = [
   "/da/testimonials",
   "/en/privacy",
   "/da/privacy",
-  // Product pages
   "/en/silica",
   "/da/silica",
   "/en/drybag-i",
@@ -54,7 +66,6 @@ const staticRoutes = [
   "/da/datalogger",
   "/en/dunnage-bags",
   "/da/dunnage-bags",
-  // Blog articles
   "/en/blog/vapor-pressure-wooden-pallets",
   "/da/blog/vapor-pressure-wooden-pallets",
   "/en/blog/container-rain-dew-point-physics",
@@ -68,26 +79,3 @@ const staticRoutes = [
   "/en/blog/mold-growth-timelines-80-rh",
   "/da/blog/mold-growth-timelines-80-rh",
 ];
-
-export default defineConfig(({ mode }) => ({
-  server: {
-    host: "::",
-    port: 8080,
-    hmr: {
-      overlay: false,
-    },
-  },
-  plugins: [
-    react(),
-    mode === "development" && componentTagger(),
-    ViteImageOptimizer({
-      jpg: { quality: 80 },
-      png: { quality: 80 },
-    }),
-  ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
-}));
