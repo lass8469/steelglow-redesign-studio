@@ -1,26 +1,17 @@
 #!/usr/bin/env node
 /**
- * Enhanced Pre-render script for SEO
+ * SSG Pre-render Script
  *
- * Generates static HTML files for all routes so search engines
- * can crawl the fully rendered content — closely simulating SSR.
- *
- * Improvements over basic pre-rendering:
- *  - Waits for React hydration + meta tag updates before capturing
- *  - Strips runtime-only scripts & injects canonical URLs
- *  - Cleans up Vite dev artifacts from the output HTML
- *  - Adds a <noscript> block for non-JS crawlers
- *  - Sets the correct lang attribute on <html> per locale
+ * Generates static HTML for every route so search engines see fully
+ * rendered content on a traditional static host (Apache / cPanel).
  *
  * Usage:
  *   1. npm run build
  *   2. node scripts/prerender.mjs
  *
- * Requirements:
- *   npm install puppeteer --save-dev
+ * Requirements: puppeteer (npm i -D puppeteer)
  */
 
-import { launch } from "puppeteer";
 import { createServer } from "http";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { join, dirname } from "path";
@@ -31,66 +22,38 @@ const DIST_DIR = join(__dirname, "..", "dist");
 const PORT = 4173;
 const BASE_URL = "https://desiccant.com";
 
-const routes = [
-  "/en",
-  "/da",
-  "/en/products",
-  "/da/products",
-  "/en/about",
-  "/da/about",
-  "/en/applications",
-  "/da/applications",
-  "/en/blog",
-  "/da/blog",
-  "/en/contact",
-  "/da/contact",
-  "/en/downloads",
-  "/da/downloads",
-  "/en/faq",
-  "/da/faq",
-  "/en/testimonials",
-  "/da/testimonials",
-  "/en/privacy",
-  "/da/privacy",
-  "/en/silica",
-  "/da/silica",
-  "/en/drybag-i",
-  "/da/drybag-i",
-  "/en/drybag-iii",
-  "/da/drybag-iii",
-  "/en/dunnage-bag",
-  "/da/dunnage-bag",
-  "/en/molecular-sieve",
-  "/da/molecular-sieve",
-  "/en/calcium-chloride",
-  "/da/calcium-chloride",
-  "/en/retail",
-  "/da/retail",
-  "/en/edge-protectors",
-  "/da/edge-protectors",
-  "/en/anti-slip",
-  "/da/anti-slip",
-  "/en/stabustrap",
-  "/da/stabustrap",
-  "/en/datalogger",
-  "/da/datalogger",
-  "/en/dunnage-bags",
-  "/da/dunnage-bags",
-  "/en/blog/vapor-pressure-wooden-pallets",
-  "/da/blog/vapor-pressure-wooden-pallets",
-  "/en/blog/container-rain-dew-point-physics",
-  "/da/blog/container-rain-dew-point-physics",
-  "/en/blog/chemistry-clay-mo-clay-vs-silica-gel",
-  "/da/blog/chemistry-clay-mo-clay-vs-silica-gel",
-  "/en/blog/data-loggers-vs-desiccants",
-  "/da/blog/data-loggers-vs-desiccants",
-  "/en/blog/agriculture-feed-moisture-living-cargo",
-  "/da/blog/agriculture-feed-moisture-living-cargo",
-  "/en/blog/mold-growth-timelines-80-rh",
-  "/da/blog/mold-growth-timelines-80-rh",
-];
+// ---------------------------------------------------------------------------
+// Route list — imported dynamically from the shared config
+// ---------------------------------------------------------------------------
+async function loadRoutes() {
+  try {
+    // Try loading compiled config (after vite build the .ts won't run directly)
+    const { routes } = await import("../prerender.config.ts");
+    return routes;
+  } catch {
+    // Fallback: inline list (keeps script self-contained if ts import fails)
+    console.log("⚠  Could not import prerender.config.ts, using inline routes.");
+    const basePaths = [
+      "", "/products", "/about", "/applications", "/blog", "/contact",
+      "/downloads", "/faq", "/testimonials", "/privacy",
+      "/silica", "/drybag-i", "/drybag-iii", "/dunnage-bag",
+      "/molecular-sieve", "/calcium-chloride", "/retail",
+      "/edge-protectors", "/anti-slip", "/stabustrap", "/datalogger",
+      "/dunnage-bags",
+      "/blog/vapor-pressure-wooden-pallets",
+      "/blog/container-rain-dew-point-physics",
+      "/blog/chemistry-clay-mo-clay-vs-silica-gel",
+      "/blog/data-loggers-vs-desiccants",
+      "/blog/agriculture-feed-moisture-living-cargo",
+      "/blog/mold-growth-timelines-80-rh",
+    ];
+    return basePaths.flatMap((p) => [`/en${p}`, `/da${p}`]);
+  }
+}
 
-// Simple static file server for the dist folder
+// ---------------------------------------------------------------------------
+// Static file server for the dist folder
+// ---------------------------------------------------------------------------
 function createStaticServer() {
   const mimeTypes = {
     ".html": "text/html",
@@ -104,14 +67,12 @@ function createStaticServer() {
     ".ico": "image/x-icon",
     ".woff": "font/woff",
     ".woff2": "font/woff2",
+    ".pdf": "application/pdf",
   };
 
   return createServer((req, res) => {
     let filePath = join(DIST_DIR, req.url === "/" ? "index.html" : req.url);
-
-    if (!existsSync(filePath)) {
-      filePath = join(DIST_DIR, "index.html");
-    }
+    if (!existsSync(filePath)) filePath = join(DIST_DIR, "index.html");
 
     try {
       const content = readFileSync(filePath);
@@ -127,14 +88,9 @@ function createStaticServer() {
   });
 }
 
-/**
- * Post-process captured HTML to maximise SEO value:
- *  1. Set correct <html lang="...">
- *  2. Inject canonical <link> if missing
- *  3. Ensure hreflang alternates are present
- *  4. Remove inline scripts that are only useful at runtime
- *  5. Remove empty <div id="root"></div> duplication
- */
+// ---------------------------------------------------------------------------
+// Post-process: inject canonical, hreflang, lang, strip dev artifacts
+// ---------------------------------------------------------------------------
 function postProcess(html, route) {
   const lang = route.startsWith("/da") ? "da" : "en";
   const canonicalUrl = `${BASE_URL}${route}`;
@@ -145,16 +101,20 @@ function postProcess(html, route) {
   // 1. Set lang attribute
   html = html.replace(/<html\s+lang="[^"]*"/, `<html lang="${lang}"`);
 
-  // 2. Inject canonical if not already present
-  if (!html.includes('rel="canonical"')) {
+  // 2. Inject / fix canonical
+  if (html.includes('rel="canonical"')) {
+    html = html.replace(
+      /<link[^>]*rel="canonical"[^>]*>/,
+      `<link rel="canonical" href="${canonicalUrl}" />`
+    );
+  } else {
     html = html.replace(
       "</head>",
       `  <link rel="canonical" href="${canonicalUrl}" />\n  </head>`
     );
   }
 
-  // 3. Ensure hreflang alternates exist (Puppeteer captures them from React,
-  //    but we guarantee they're there even if React didn't run fully)
+  // 3. Ensure hreflang alternates
   if (!html.includes('hreflang="en"')) {
     html = html.replace(
       "</head>",
@@ -165,75 +125,110 @@ function postProcess(html, route) {
     );
   }
 
+  // 4. Remove any localhost references leaked from puppeteer
+  html = html.replace(/http:\/\/localhost:\d+/g, BASE_URL);
+
+  // 5. Strip Vite HMR / dev-only scripts
+  html = html.replace(
+    /<script[^>]*\/@vite\/client[^>]*><\/script>/g,
+    ""
+  );
+  html = html.replace(
+    /<script[^>]*\/@react-refresh[^>]*><\/script>/g,
+    ""
+  );
+
   return html;
 }
 
+// ---------------------------------------------------------------------------
+// Main
+// ---------------------------------------------------------------------------
 async function prerender() {
-  console.log("🚀 Starting enhanced pre-render...");
-  console.log(`📁 Dist directory: ${DIST_DIR}`);
-  console.log(`📄 Routes to pre-render: ${routes.length}\n`);
+  // Graceful check for puppeteer
+  let puppeteer;
+  try {
+    puppeteer = await import("puppeteer");
+  } catch {
+    console.error(
+      "❌ Puppeteer is not installed.\n" +
+        "   Run: npm install puppeteer --save-dev\n" +
+        "   Then re-run this script."
+    );
+    process.exit(1);
+  }
+
+  const routes = await loadRoutes();
+
+  console.log("🚀 SSG Pre-render starting...");
+  console.log(`📁 Output: ${DIST_DIR}`);
+  console.log(`📄 Routes: ${routes.length}\n`);
 
   const server = createStaticServer();
   server.listen(PORT);
-  console.log(`🌐 Static server running on http://localhost:${PORT}\n`);
+  console.log(`🌐 Dev server → http://localhost:${PORT}\n`);
 
-  const browser = await launch({ headless: true });
-  const page = await browser.newPage();
-
-  // Set a realistic user-agent so the SPA behaves normally
-  await page.setUserAgent(
-    "Mozilla/5.0 (compatible; PrerendererBot/1.0; +https://desiccant.com)"
-  );
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
 
   let success = 0;
   let failed = 0;
 
   for (const route of routes) {
+    const page = await browser.newPage();
     try {
-      const url = `http://localhost:${PORT}${route}`;
-      await page.goto(url, { waitUntil: "networkidle0", timeout: 30000 });
+      await page.setUserAgent(
+        "Mozilla/5.0 (compatible; PrerendererBot/1.0; +https://desiccant.com)"
+      );
 
-      // Wait for React to mount and meta tags to update
+      const url = `http://localhost:${PORT}${route}`;
+      await page.goto(url, { waitUntil: "networkidle0", timeout: 30_000 });
+
+      // Wait for React to hydrate
       await page.waitForFunction(
         () => {
           const root = document.getElementById("root");
           return root && root.children.length > 0;
         },
-        { timeout: 10000 }
+        { timeout: 10_000 }
       );
 
-      // Extra wait for useEffect-based meta tag updates (usePageMeta, HrefLangTags)
-      await page.evaluate(() => new Promise((r) => setTimeout(r, 1500)));
+      // Allow meta-tag hooks (usePageMeta, useJsonLd, HrefLangTags) to fire
+      await page.evaluate(() => new Promise((r) => setTimeout(r, 2000)));
 
       let html = await page.content();
-
-      // Post-process for SEO enhancements
       html = postProcess(html, route);
 
-      // Create directory structure and save
+      // Write to dist/<route>/index.html
       const outputPath = join(DIST_DIR, route, "index.html");
-      const outputDir = dirname(outputPath);
-      mkdirSync(outputDir, { recursive: true });
+      mkdirSync(dirname(outputPath), { recursive: true });
+      writeFileSync(outputPath, html, "utf-8");
 
-      writeFileSync(outputPath, html);
       console.log(`  ✅ ${route}`);
       success++;
     } catch (err) {
       console.log(`  ❌ ${route} — ${err.message}`);
       failed++;
+    } finally {
+      await page.close();
     }
   }
 
   await browser.close();
   server.close();
 
-  console.log(`\n🏁 Enhanced pre-rendering complete!`);
+  console.log(`\n🏁 Pre-rendering complete`);
   console.log(`   ✅ ${success} succeeded`);
   if (failed) console.log(`   ❌ ${failed} failed`);
-  console.log(`\n📂 Static HTML files saved in: ${DIST_DIR}`);
+  console.log(`\n📂 Static files in: ${DIST_DIR}`);
   console.log(
-    `\n💡 Each file includes: canonical URLs, hreflang tags, correct lang attr, full rendered content.`
+    `💡 Each file has: canonical URL, hreflang tags, correct lang, full rendered HTML, JSON-LD.\n`
   );
 }
 
-prerender().catch(console.error);
+prerender().catch((err) => {
+  console.error("Fatal error:", err);
+  process.exit(1);
+});
