@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite-react-ssg build",
+    "build": "vite build && node scripts/prerender.mjs",
+  "prebuild": "npx puppeteer browsers install chrome",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
