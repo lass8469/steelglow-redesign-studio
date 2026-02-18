@@ -20,7 +20,7 @@
  *   npm install puppeteer --save-dev
  */
 
-import pkg from "puppeteer";
+import pkg from "puppeteer-core";
 const { launch } = pkg;
 import { createServer } from "http";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
