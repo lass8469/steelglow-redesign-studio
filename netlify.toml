@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && npx puppeteer browsers install chrome && node scripts/prerender.mjs"
   publish = "dist"
 
 # SPA fallback — serve index.html for all routes without a static file
