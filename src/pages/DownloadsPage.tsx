@@ -40,6 +40,7 @@ const DownloadsPage = () => {
     { value: "calcium-chloride-sds", label: "Calcium Chloride Safety Data Sheet" },
     { value: "molecular-sieve-tds", label: "Molecular Sieve Technical Data Sheet" },
     { value: "molecular-sieve-sds", label: "Molecular Sieve Safety Data Sheet" },
+    { value: "other", label: t("downloadsPage.form.otherOption") },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -177,7 +178,9 @@ const DownloadsPage = () => {
                     type="text"
                     value={formData.company}
                     onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    className="bg-card border-border"
+                    onBlur={() => onBlur("company")}
+                    className={`bg-card border-border ${cls("company", formData.company.trim().length > 0)}`}
+                    required
                   />
                 </div>
                 <Button
