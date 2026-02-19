@@ -4,6 +4,7 @@ import blogChemistryClay from "@/assets/blog-chemistry-clay.webp";
 import blogDatalogger from "@/assets/blog-datalogger.webp";
 import blogAgricultureFeed from "@/assets/blog-agriculture-feed.webp";
 import blogMoldGrowth from "@/assets/blog-mold-growth.webp";
+import productSilicaGel from "@/assets/product-silica-gel.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -1102,6 +1103,276 @@ export const articlesDa: Record<string, Article> = {
       description: "Vores tekniske team kan hjælpe dig med at vælge de rigtige tørremiddelløsninger og overvågningsstrategier for at holde fugtigheden under kritiske grænseværdier under hele transporten.",
       buttonText: "Få ekspertrådgivning",
       buttonLink: "/contact",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: Silica Gel Tørremiddel Guide
+  // ------------------------------------------------------------
+  "silica-gel-desiccant-guide": {
+    title: "Hvad er silica gel tørremiddel? Komplet guide til fugtkontrol ved forsendelse og opbevaring",
+    excerpt: "Lær hvordan silica gel tørremiddel fungerer, hvorfor det er den foretrukne fugtfjerner til e-handel, elektronik, medicin og fødevareemballage — og hvordan du vælger den rigtige størrelse fugtpose.",
+    date: "2025-02-20",
+    readTime: "10 min læsning",
+    category: "Guide",
+    heroImage: productSilicaGel,
+    author: "DESICCANT Teknisk Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "Silica gel tørremiddel er verdens mest udbredte fugtfjerner — og med god grund. Uanset om du sender elektronik, pakker medicin eller opbevarer følsomme varer, hjælper en forståelse af, hvordan silica gel fungerer, dig med at vælge det rigtige produkt til fugtbeskyttelse af dit lager.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvad er silica gel tørremiddel?",
+      },
+      {
+        type: "text",
+        content: "Silica gel er en syntetisk, porøs form af siliciumdioxid (SiO₂) — det samme stof, der findes i kvarts og sand. Trods navnet er det slet ikke en gel; det er et granulært fast stof med et enormt internt overfladeareal skabt af millioner af mikroskopiske porer. Disse porer fanger fysisk og holder vanddamp gennem en proces kaldet adsorption, hvilket holder den omgivende luft — og alt pakket med det — tørt.",
+      },
+      {
+        type: "text",
+        content: "Silica gel fugtposer bruges på tværs af næsten alle industrier, netop fordi materialet er ugiftigt, lugtfrit, kemisk inert og yderst effektivt over et bredt temperatur- og fugtighedsområde. Som industri tørremiddel tilbyder det uovertruffen alsidighed til fugtkontrol.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvordan absorberer silica gel fugt?",
+      },
+      {
+        type: "text",
+        content: "Videnskaben bag silica gel er ligetil. Hvert granulat indeholder et indviklet netværk af bittesmå porer, der tilsammen giver det et overfladeareal på op til 800 m² per gram — omtrent størrelsen af to tennisbaner pakket ind i et enkelt gram materiale. Når fugtig luft kommer i kontakt med granulerne, tiltrækkes vandmolekyler og holdes fast i porerne af van der Waals-kræfter.",
+      },
+      {
+        type: "text",
+        content: "Denne proces foregår passivt — ingen elektricitet, ingen kemikalier, ingen bevægelige dele. Fugtposen sidder simpelthen inde i din emballage og trækker stille fugt væk fra luftlommen omkring dit produkt. Den fortsætter med at arbejde, indtil porerne er mættet, eller indtil den omgivende fugtighed falder under ligevægtspunktet.",
+      },
+      {
+        type: "callout",
+        title: "Adsorption vs. absorption",
+        content: "Silica gel reagerer ikke kemisk med vand — det holder det fysisk fast gennem adsorption (overfladeadhæsion), ikke absorption (opsugning). Derfor er det sikkert, stabilt og genanvendeligt, når det regenereres ved opvarmning.",
+      },
+
+      {
+        type: "heading",
+        content: "Typer af silica gel tørremiddel",
+      },
+      {
+        type: "subheading",
+        content: "Ikke-indikerende silica gel",
+      },
+      {
+        type: "text",
+        content: "Standardtypen — hvide eller gennemsigtige granuler, der absorberer fugt lydløst uden farveskift. Dette er den form, der bruges i de fleste e-handels- og industrielle emballager, herunder Tyvek®-fugtposerne fra Desiccant.com. Den er ideel, når du ønsker pålidelig, ren fugtbeskyttelse uden visuelle indikatorer.",
+      },
+      {
+        type: "subheading",
+        content: "Indikerende silica gel (blå eller orange)",
+      },
+      {
+        type: "text",
+        content: "Indikerende silica gel skifter farve, når det nærmer sig mætning — traditionelt blå til pink (koboltklorid) eller orange til grøn (sikrere, koboltfri alternativer). Disse bruges i applikationer, hvor det er vigtigt at overvåge fugtabsorptionen visuelt, såsom instrumentkasser eller genbrugelige opbevaringsbeholdere.",
+      },
+
+      {
+        type: "heading",
+        content: "Silica gel vs. andre tørremidler: sammenligning",
+      },
+      {
+        type: "text",
+        content: "Når du vælger mellem forskellige typer tørremidler, er de vigtigste faktorer absorptionskapacitet, fugtighedsområde, genanvendelighed og anvendelsesegnethed.",
+      },
+      {
+        type: "list",
+        items: [
+          "Silica gel: Op til ~40 % vægtabsorption, bedst ved 20–80 % RF, genanvendelig (regenerér ved 120–150°C), FDA/EU fødevaresikker — ideel til fugtposer i e-handel og generel opbevaring.",
+          "Molecular sieve: Op til ~25 % vægtabsorption, bedst ved meget lav RF (<40 %), genanvendelig (250–300°C) — foretrukket industri tørremiddel til medicin, gasser og ultratørre applikationer.",
+          "Calciumchlorid: Over 100 % vægtabsorption, bedst til høj fugtighed og kondensprevention, ikke genanvendelig (opløses) — ideel til skibscontainere og store lastrum.",
+        ],
+      },
+      {
+        type: "text",
+        content: "For størstedelen af e-handels- og standard in-box-applikationer tilbyder silica gel tørremiddel den bedste balance mellem pris, sikkerhed og fugtkontrol. Driftsområdet på 20–80 % relativ fugtighed dækker næsten alle standard lager- og transportmiljøer.",
+      },
+
+      {
+        type: "heading",
+        content: "Almindelige anvendelser for silica gel fugtposer",
+      },
+      {
+        type: "subheading",
+        content: "E-handelsforsendelser",
+      },
+      {
+        type: "text",
+        content: "Transportrejsen fra lager til dør kan udsætte pakker for betydelige fugtighedsudsving — opvarmede lastbiler, kolde læssedocks, fugtige klimaer. En korrekt dimensioneret fugtpose i forsendelseskassen fungerer som en usynlig fugtbarriere og forhindrer kondensering, korrosion og skimmeldannelse.",
+      },
+      {
+        type: "subheading",
+        content: "Elektronik og instrumenter",
+      },
+      {
+        type: "text",
+        content: "Fugt er fjenden for printkort, forbindelser og følsomme sensorer. Selv kortvarig eksponering for høj fugtighed kan forårsage oxidering, kortslutning og nedsat ydeevne. Elektronikproducenter inkluderer silica gel fugtposer i både detailemballage og langtidsopbevaring.",
+      },
+      {
+        type: "subheading",
+        content: "Medicin og kosttilskud",
+      },
+      {
+        type: "text",
+        content: "Aktive farmaceutiske ingredienser og kosttilskud er ofte hygroskopiske — de absorberer fugt fra luften, hvilket kan nedbryde potens, forårsage klumpdannelse eller fremme mikrobiel vækst. Silica gel tørremiddel hjælper producenter med at opretholde holdbarhed og overholde FDA- og EU-emballageregler.",
+      },
+      {
+        type: "subheading",
+        content: "Fødevareemballage og tørvarer",
+      },
+      {
+        type: "text",
+        content: "Tørret kød, tørrede frugter, proteinpulver, krydderier og andre tøre fødevarer har enorm gavn af fugtbeskyttelse med tørremiddel. Fødevaregodkendt silica gel forhindrer fugtoptagelse, der fører til teksturforringelse, klumpdannelse og fordærv — uden behov for kemiske konserveringsmidler.",
+      },
+      {
+        type: "subheading",
+        content: "Tøj og lædervarer",
+      },
+      {
+        type: "text",
+        content: "Tekstiler og læder kan udvikle meldug og mugne lugte overraskende hurtigt under fugtige forhold. Fugtposer i skokasser, tøjposer og opbevaringsbeholdere forhindrer de fugtniveauer, der gør det muligt for skimmel at etablere sig.",
+      },
+
+      {
+        type: "heading",
+        content: "Valg af den rigtige størrelse fugtpose",
+      },
+      {
+        type: "text",
+        content: "Størrelsen på fugtposen afhænger af tre faktorer: det interne volumen af emballagen, emballagematerialets fugtbarriereegenskaber og de forventede temperatur- og fugtighedsforhold under opbevaring og transport.",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Op til 0,5 liter — 1g pose: Små elektroniktilbehør, smykker",
+          "0,5–2 liter — 5g pose: Fodtøj, kosttilskud, småt tøj",
+          "2–5 liter — 10g pose: Elektronik, mellemstore detailkasser",
+          "5–8 liter — 12,5g pose: Medicinske apparater, instrumentkasser",
+          "8–20 liter — 25g pose: Stor elektronik, flervare-forsendelser",
+        ],
+      },
+      {
+        type: "text",
+        content: "Ved tvivl er det at foretrække at vælge en lidt for stor størrelse — overskydende tørremiddelkapacitet gør ingen skade, mens underdimensionering efterlader produkter sårbare over for fugtskader.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvorfor Tyvek®-emballage er vigtigt",
+      },
+      {
+        type: "text",
+        content: "Ikke alle fugtposer er ens. Posematerialet bestemmer, hvor hurtigt fugt kan passere igennem til silica gel-granulerne, og om støv eller partikler kan slippe ud i det emballerede produkt.",
+      },
+      {
+        type: "text",
+        content: "Tyvek® er det foretrukne valg til tørremiddelemballage. Det er meget gennemtrængeligt for vanddamp, modstandsdygtigt over for rivning og perforering, og afgørende — det er støvfrit. Silica gel tørremidlerne fra Desiccant.com er indkapslet i støvfri Tyvek®-poser, der gør dem velegnede til selv de mest følsomme fugtkontrolanvendelser.",
+      },
+
+      {
+        type: "heading",
+        content: "Silica gel sikkerhed: er det giftigt?",
+      },
+      {
+        type: "text",
+        content: "Standard, ikke-indikerende silica gel er ugiftigt og sikkert til brug i fødevare-, medicin- og forbrugerproduktemballer. Det er kemisk inert — det reagerer ikke med de produkter, det beskytter, afgiver ikke skadelige forbindelser og vil ikke forurene fødevarer eller medicin ved utilsigtet berøring.",
+      },
+      {
+        type: "text",
+        content: "\"MÅ IKKE SPISES\"-mærkaten på silica gel poser er en kvælningsforholdsregel, ikke en giftighedsadvarsel. Granulerne er i bund og grund inerte sandlignende partikler.",
+      },
+      {
+        type: "callout",
+        title: "Lovgivningsmæssig note",
+        content: "For EU-markeder skal der søges overensstemmelse med Kommissionens forordning (EU) Nr. 10/2011 om plastmaterialer til kontakt med fødevarer. For US-markeder dækker FDA 21 CFR 182.90 silica gel i fødevareemballage. Alle silica gel tørremidler fra Desiccant.com overholder FDA- og EU-emballageregler.",
+      },
+
+      {
+        type: "heading",
+        content: "Kan silica gel genbruges?",
+      },
+      {
+        type: "text",
+        content: "Ja. I modsætning til calciumchlorid-tørremidler, der opløses ved mætning, kan silica gel regenereres og genbruges ved at drive den indfangede fugt ud med varme. Den typiske regenereringsproces indebærer opvarmning til 120–150°C i 1–2 timer.",
+      },
+      {
+        type: "text",
+        content: "For industrielle tørremiddel-poser i Tyvek®-emballage er regenerering mindre praktisk — poserne er designet til engangsbrug, hvor udskiftning er mere omkostningseffektivt.",
+      },
+
+      {
+        type: "heading",
+        content: "Opbevaring af silica gel fugtposer",
+      },
+      {
+        type: "text",
+        content: "For at bevare effektiviteten før brug bør fugtposer opbevares i forseglet, fugtsikker emballage — helst den originale forseglede pose eller kasse. Hold dem væk fra omgivelser med høj fugtighed, og undgå at åbne bulkemballage, før du er klar til at bruge poserne.",
+      },
+      {
+        type: "text",
+        content: "De fleste producenter anbefaler at bruge tørremiddelposer inden for 12–18 måneder efter fremstilling, hvis de opbevares i deres originale forseglede emballage.",
+      },
+
+      {
+        type: "heading",
+        content: "Ofte stillede spørgsmål",
+      },
+      {
+        type: "subheading",
+        content: "Hvor mange fugtposer skal jeg bruge per kasse?",
+      },
+      {
+        type: "text",
+        content: "Typisk er én fugtpose per kasse tilstrækkelig til standard e-handelsemballage, forudsat at posestørrelsen er korrekt tilpasset pakkevolumenet. Til større kasser kan flere mindre poser fordelt i pakken give mere jævn fugtkontrol end én stor pose.",
+      },
+      {
+        type: "subheading",
+        content: "Kan silica gel forhindre skimmel fuldstændigt?",
+      },
+      {
+        type: "text",
+        content: "Silica gel reducerer risikoen for skimmel markant ved at holde den relative fugtighed under den 60–70 % tærskel, hvor de fleste skimmelsvampe begynder at vokse. Det er yderst effektivt, men ikke en garanti — hvis produkter allerede har overfladefugt ved indpakning, kan skimmelsporer stadig finde tilstrækkeligt fugt.",
+      },
+      {
+        type: "subheading",
+        content: "Er silica gel sikkert i fødevareemballage?",
+      },
+      {
+        type: "text",
+        content: "Ikke-indikerende silica gel, der overholder FDA- og EU-regler for fødevarekontakt, er sikkert til brug i fødevareemballage. Det bør ikke have direkte kontakt med fødevarer, men er egnet til brug i samme emballagevolumen.",
+      },
+      {
+        type: "subheading",
+        content: "Hvad er forskellen på silica gel og molecular sieve?",
+      },
+      {
+        type: "text",
+        content: "Molecular sieve er mere effektivt ved meget lave fugtighedsniveauer og højere temperaturer, hvilket gør det til det foretrukne industri tørremiddel til farmaceutiske og kemiske applikationer. Silica gel er mere omkostningseffektivt til generel fugtkontrol og yder bedre i det mellemfugtige område, der er typisk for de fleste transport- og opbevaringsmiljøer.",
+      },
+      {
+        type: "subheading",
+        content: "Hvor længe holder en silica gel fugtpose i en pakke?",
+      },
+      {
+        type: "text",
+        content: "Det afhænger af emballagens fugttransmissionshastighed (MVTR) samt den omgivende fugtighed og temperatur. I en godt forseglet kasse under typiske lagerforhold (20–25°C, 50–60 % RF) kan en korrekt dimensioneret silica gel fugtpose forblive effektiv i måneder. Under dårligt forseglede eller meget fugtige forhold kan den mættes inden for uger.",
+      },
+    ],
+
+    cta: {
+      heading: "Klar til at beskytte dine produkter mod fugtskader?",
+      description: "Desiccant.com leverer silica gel tørremiddelposer i størrelser fra 1g til 25g, pakket i støvfri Tyvek® til e-handel, elektronik, medicin og fødevarer.",
+      buttonText: "Se silica gel tørremiddel",
+      buttonLink: "/silica",
     },
   },
 };
