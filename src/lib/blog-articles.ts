@@ -1900,6 +1900,181 @@ export const articles: Record<string, Article> = {
   },
 
   // ------------------------------------------------------------
+  // ARTICLE: Data Logger Verification
+  // ------------------------------------------------------------
+  "data-logger-verification-guide": {
+    title: "Did Your Desiccant Actually Work? How Data Loggers Verify Your Moisture Protection Strategy",
+    excerpt: "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A temperature and humidity data logger closes that gap.",
+    date: "2025-02-23",
+    readTime: "12 min read",
+    category: "Guide",
+    heroImage: blogDatalogger,
+    author: "DESICCANT Technical Team",
+    canonicalPath: "/datalogger",
+
+    sections: [
+      {
+        type: "text",
+        content: "You selected the right desiccant. You calculated the correct quantity for the container volume. You packed it carefully alongside your cargo. But once the container doors close and your shipment disappears into the logistics chain, a critical question remains unanswered until the goods arrive: did the moisture protection actually work?",
+      },
+      {
+        type: "text",
+        content: "A desiccant does its job silently and invisibly. It absorbs moisture from the air inside the container, but without a way to measure what happened, you are relying entirely on assumption. A temperature and humidity data logger closes that gap. It is the instrument that turns your moisture strategy from a calculated guess into a verified, documented outcome.",
+      },
+      {
+        type: "heading",
+        content: "The Problem with Desiccants Alone",
+      },
+      {
+        type: "text",
+        content: "Desiccants — whether silica gel, molecular sieve, calcium chloride, or a container desiccant like the DRY BAG range — are engineered to absorb moisture from the air. When correctly specified and deployed, they are highly effective at preventing the condensation, corrosion, mould, and humidity-related damage that plague international freight.",
+      },
+      {
+        type: "text",
+        content: "But desiccants have limits. If the moisture load exceeds their capacity — perhaps because the route took longer than expected, the container was opened repeatedly at intermediate ports, or the cargo itself outgassed more moisture than anticipated — the protection can be overwhelmed without any visible sign on arrival. The saturated desiccant looks identical to a functioning one. The goods may appear undamaged, only for problems to emerge later in storage.",
+      },
+      {
+        type: "text",
+        content: "Without recorded humidity data from inside the container, you cannot know whether your desiccant maintained safe conditions throughout the journey, at what point (if any) conditions breached acceptable humidity thresholds, or whether the right quantity was deployed for that route and that cargo type. A data logger answers all of these questions.",
+      },
+      {
+        type: "heading",
+        content: "What a Data Logger Measures and Records",
+      },
+      {
+        type: "text",
+        content: "A temperature and humidity data logger is a compact, self-contained device that records both ambient temperature and relative humidity (RH) at regular intervals throughout a shipment. The Desiccant.com data loggers are USB-format: they connect to any standard computer, and automatically generate a comprehensive environmental report on insertion — no specialist software required.",
+      },
+      {
+        type: "text",
+        content: "With up to 120 days of continuous monitoring time and durable construction suited to the demands of sea, air, and road freight, they run the full duration of even the longest international export journeys. The resulting report gives you a complete, timestamped record of every condition inside your container from departure to arrival.",
+      },
+      {
+        type: "heading",
+        content: "The Humidity Curve: Your Desiccant's Performance Trace",
+      },
+      {
+        type: "text",
+        content: "The humidity graph — relative humidity plotted over time — is the central evidence of how well your desiccant performed. A well-functioning moisture protection strategy produces a recognisable pattern: you will typically see RH start at a moderate level, then gradually decline as the desiccant absorbs ambient moisture and stabilises conditions inside the container. The line should then hold relatively steady throughout transit, remaining well below the critical 70–75% threshold above which mould, corrosion, and condensation become serious risks.",
+      },
+      {
+        type: "list",
+        items: [
+          "Steady decline then plateau below 60% RH: Strong result. Your desiccant was correctly specified and held conditions throughout the journey. The cargo was protected.",
+          "Decline followed by a gradual climb back upward: The desiccant was approaching saturation toward the end of the journey. The cargo may have been protected, but the margin was thin. For longer routes or heavier moisture loads, a higher-capacity product — or more units — should be considered next time.",
+          "Flat or rising line from the start: The desiccant had little effect, was incorrectly positioned, was deployed in insufficient quantity, or was already saturated before the journey began. This is a specification or deployment problem that needs to be corrected.",
+          "Sharp humidity spikes: These indicate external events — typically container doors being opened, or rapid temperature drops causing condensation. A strong spike followed by a recovery shows your desiccant responded and reabsorbed the excess moisture. A spike that does not recover signals the desiccant was overwhelmed at that point.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "The Temperature Graph: Understanding Why Humidity Behaved as It Did",
+      },
+      {
+        type: "text",
+        content: "Temperature and humidity are inseparable. Warm air holds more moisture; as air cools, its relative humidity rises and condensation can form. Reading the temperature graph alongside the humidity graph reveals the cause-and-effect story of your shipment.",
+      },
+      {
+        type: "text",
+        content: "If you see a humidity spike, look at the temperature trace at the same timestamp. If temperature dropped sharply just before the spike — for example when a ship entered colder waters, or when cargo was transferred to a cold-storage area — the spike is a predictable condensation response, not a desiccant failure. Your desiccant's job in that moment was to absorb the condensed moisture before it reached your goods. If the humidity recovered, it succeeded.",
+      },
+      {
+        type: "text",
+        content: "Conversely, if temperature was stable throughout a section of the journey and humidity still climbed steadily, that points to a desiccant capacity issue rather than a temperature-driven condensation event. The distinction is important: it tells you whether you need a more robust desiccant type (like calcium chloride for high moisture loads) or simply more of the same product.",
+      },
+      {
+        type: "heading",
+        content: "Summary Statistics: Your Compliance Verification",
+      },
+      {
+        type: "text",
+        content: "The report summary gives you the minimum, maximum, and average humidity recorded across the entire journey. These numbers are your headline verification figures. If your goods require storage below 65% RH and the maximum recorded was 58%, you have documented, verifiable proof that conditions remained within specification throughout transit.",
+      },
+      {
+        type: "text",
+        content: "This is also the data that supports quality control sign-off, customer assurance documentation, regulatory compliance records, and dispute resolution with carriers or freight forwarders. Without it, any claim that moisture conditions were maintained is simply an assertion. With it, you have evidence.",
+      },
+      {
+        type: "heading",
+        content: "Alarm Events: Pinpointing Where the Strategy Was Tested",
+      },
+      {
+        type: "text",
+        content: "If your logger was configured with humidity alarm thresholds, the report will flag each event where RH exceeded those limits — including when it occurred, how long it lasted, and how far conditions deviated. These alarm events are not failures in isolation; they are the moments where your desiccant was most heavily tested. Cross-reference the alarm timestamp with the shipping itinerary and you can often identify exactly which leg of the journey — which port, which carrier, which climate zone — is your highest risk point. That knowledge directly informs how you adjust your desiccant strategy for future shipments on that route.",
+      },
+      {
+        type: "heading",
+        content: "Building a Smarter Moisture Strategy Over Time",
+      },
+      {
+        type: "text",
+        content: "The most valuable aspect of combining data loggers with desiccants is not what you learn from a single shipment — it is the pattern that emerges across many shipments. Each logger report is a data point that builds a clearer picture of your specific risk profile.",
+      },
+      {
+        type: "text",
+        content: "Over successive shipments, you will start to see which routes consistently stress your moisture protection and which are comfortably within the capacity of your current desiccant setup. You will learn at which point in a particular voyage humidity typically peaks — whether that's mid-ocean in the tropics, during port dwell time, or on the final road leg to the consignee. You will identify whether seasonal variation affects your results and whether certain cargo types need a more aggressive moisture management approach than others.",
+      },
+      {
+        type: "text",
+        content: "This kind of data-driven refinement is the difference between a moisture strategy that is vaguely adequate and one that is precisely calibrated. It allows you to move from over-specifying desiccant on low-risk routes (adding unnecessary cost) and under-specifying on high-risk routes (accepting unnecessary damage risk) to a targeted, optimised approach based on real-world evidence from your own shipments.",
+      },
+      {
+        type: "heading",
+        content: "Choosing the Right Desiccant Based on What the Data Shows",
+      },
+      {
+        type: "text",
+        content: "Data logger findings often point directly toward which desiccant product is the best fit for a given route or cargo. Here is how common data patterns map to desiccant decisions:",
+      },
+      {
+        type: "list",
+        items: [
+          "Gradual humidity climb that approaches but doesn't breach 70% RH: Your current desiccant type is appropriate but you need greater capacity. Upgrade to the next size of DRY BAG container desiccant or increase the number of units deployed.",
+          "Sharp, recurring humidity spikes during temperature drops: Condensation is the primary threat. Calcium chloride desiccants — which perform particularly well in high-moisture-load, variable-temperature conditions — or the DRY BAG III, designed for container use in humid environments, are worth considering.",
+          "Consistently flat, low humidity across all journeys: Your strategy is working and may even be over-specified for this route. You could trial a lighter or smaller desiccant product and use the logger to confirm the reduced specification still holds.",
+          "High RH from the very start with no decline: Check desiccant placement and packaging integrity. The desiccant may not have been in contact with the air inside the container, or the product may have been compromised before loading. Silica gel and molecular sieve desiccants are sensitive to pre-exposure; damaged or incorrectly stored product should not be used.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Who Should Be Using Data Loggers",
+      },
+      {
+        type: "text",
+        content: "Any exporter that already uses desiccants should be using a data logger — at least on a representative sample of shipments. In practice, the need is most acute in the following sectors:",
+      },
+      {
+        type: "list",
+        items: [
+          "Pharmaceuticals and healthcare: Regulatory frameworks such as GDP (Good Distribution Practice) increasingly require documented evidence of environmental conditions throughout the supply chain. A data logger provides the audit trail.",
+          "Electronics and precision instruments: Moisture damage to circuit boards and components often appears days or weeks after delivery. Logger data from the shipment provides objective evidence about whether conditions during transit were responsible.",
+          "Food and agricultural products: HACCP compliance and food safety regulations require demonstrated cold chain and humidity control. Logger reports support due diligence documentation.",
+          "Any exporter with recurring moisture damage claims: If you are seeing unexplained damage on specific routes or with specific carriers, a data logger will quickly tell you whether the environment inside the container is the culprit — or whether the cause lies elsewhere.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Know That Your Cargo Was Protected",
+      },
+      {
+        type: "text",
+        content: "Deploying a desiccant is the first step. Verifying that it worked is the step that completes the loop — and the one that makes every future shipment more reliable, more efficiently protected, and more defensible if questions arise.",
+      },
+      {
+        type: "text",
+        content: "Desiccant.com's temperature and humidity data loggers offer up to 120 days of continuous monitoring, automatic USB report generation, and the durable build quality required for international freight conditions. Paired with our desiccant product range — from silica gel and molecular sieve to the DRY BAG container desiccant series — they give you a complete moisture management system with built-in verification.",
+      },
+    ],
+
+    cta: {
+      heading: "Verify your moisture protection strategy",
+      description: "Explore our USB data loggers with up to 120 days of continuous monitoring — no software required. Pair with our desiccant range for a complete, verified moisture management system.",
+      buttonText: "View data loggers",
+      buttonLink: "/datalogger",
+    },
+  },
+
+  // ------------------------------------------------------------
   // ADD MORE ARTICLES BELOW
   // ------------------------------------------------------------
 
