@@ -9,6 +9,7 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-home.jpg`;
 interface PageMetaOptions {
   ogImage?: string;
   ogType?: string;
+  canonicalPath?: string; // Override canonical URL path (e.g., "/en/drybag-i")
 }
 
 export const usePageMeta = (
@@ -60,7 +61,9 @@ export const usePageMeta = (
       canonical.rel = "canonical";
       document.head.appendChild(canonical);
     }
-    canonical.href = `${BASE_URL}${location.pathname}`;
+    canonical.href = options?.canonicalPath
+      ? `${BASE_URL}${options.canonicalPath}`
+      : `${BASE_URL}${location.pathname}`;
 
     return () => {
       document.title = DEFAULT_TITLE;

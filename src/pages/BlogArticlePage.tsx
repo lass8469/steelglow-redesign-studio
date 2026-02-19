@@ -114,10 +114,11 @@ const BlogArticlePage = () => {
   const { t, language } = useLanguage();
   const articleSource = language === 'da' ? articlesDa : articles;
   const article = slug ? (articleSource[slug] || articles[slug]) : null;
+  const canonicalOverride = article?.canonicalPath ? `/${language}${article.canonicalPath}` : undefined;
   usePageMeta(
     article ? `${article.title} - Cargo Intelligence` : t("meta.blog.title"),
     article ? article.excerpt : t("meta.blog.description"),
-    { ogImage: article?.heroImage || "/og-blog.jpg", ogType: article ? "article" : "website" }
+    { ogImage: article?.heroImage || "/og-blog.jpg", ogType: article ? "article" : "website", canonicalPath: canonicalOverride }
   );
   useJsonLd(article ? {
     "@context": "https://schema.org",

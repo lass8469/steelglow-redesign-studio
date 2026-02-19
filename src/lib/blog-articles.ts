@@ -5,6 +5,7 @@ import blogDatalogger from "@/assets/blog-datalogger.webp";
 import blogAgricultureFeed from "@/assets/blog-agriculture-feed.webp";
 import blogMoldGrowth from "@/assets/blog-mold-growth.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
+import productDrybagI from "@/assets/product-drybag-i.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -45,6 +46,7 @@ export interface Article {
   category: string;       // e.g., "Technical", "Best Practices", "Case Study"
   heroImage: string;      // Hero image URL or path
   author?: string;
+  canonicalPath?: string; // Override canonical URL path (e.g., "/drybag-i")
   
   // CONTENT - Array of sections in order
   sections: ArticleSection[];
@@ -1241,6 +1243,7 @@ export const articles: Record<string, Article> = {
     category: "Guide",
     heroImage: productSilicaGel,
     author: "DESICCANT Technical Team",
+    canonicalPath: "/silica",
 
     sections: [
       {
@@ -1505,6 +1508,208 @@ export const articles: Record<string, Article> = {
       description: "Desiccant.com supplies silica gel desiccant sachets in sizes from 1g to 25g, packaged in dust-free Tyvek® for e-commerce, electronics, pharma, and food applications.",
       buttonText: "View silica gel desiccant",
       buttonLink: "/silica",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: DRY BAG I — Clay Desiccant Guide
+  // ------------------------------------------------------------
+  "drybag-i-clay-desiccant-guide": {
+    title: "The Original DRY BAG I: Why Denmark's Clay Desiccant Is the Gold Standard for Container Moisture Protection",
+    excerpt: "Discover what makes DRY BAG I different — from its Moclay formula and 80% absorption capacity to its 90-day protection window. The definitive guide to clay desiccant bags for container shipping.",
+    date: "2025-02-21",
+    readTime: "12 min read",
+    category: "Guide",
+    heroImage: productDrybagI,
+    author: "DESICCANT Technical Team",
+    canonicalPath: "/drybag-i",
+
+    sections: [
+      {
+        type: "text",
+        content: "Moisture is one of the most destructive and underestimated forces in global shipping. From corroded metal parts to mould-covered food products, from peeling labels to caked powder — container rain claims cost exporters billions each year. And yet the solution has existed since 1979, handcrafted in Denmark, and refined over four decades into what is now widely regarded as the most effective and sustainable container desiccant on the market: the original DRY BAG I.",
+      },
+      {
+        type: "text",
+        content: "This article explores what makes DRY BAG I different, how it works, which industries rely on it most, and why its Moclay formula continues to outperform alternatives that have come and gone since.",
+      },
+
+      {
+        type: "heading",
+        content: "What is the DRY BAG I?",
+      },
+      {
+        type: "text",
+        content: "The DRY BAG I is a handmade clay desiccant bag designed specifically for moisture control inside shipping containers and industrial packaging. It is produced by DESICCANT A/S in Denmark and distributed through desiccant.com, which serves as the primary channel for bulk and commercial orders worldwide.",
+      },
+      {
+        type: "text",
+        content: "What sets it apart from the dozens of competing desiccant products on the market is the core material: Moclay — a naturally occurring, locally sourced Danish clay with exceptional hygroscopic properties. Combined with a breathable non-woven fabric bag and an integrated hanging hook, the result is a product that is practical, powerful, and purpose-built for the demands of long-haul container shipping.",
+      },
+      {
+        type: "text",
+        content: "Each bag is sewn by hand at a production facility in Denmark — partly by volunteers with physical or mental disabilities at a drop-in centre in Northern Aarhus. This is not a marketing story. It is a genuine part of the product's identity, and it has been for over 20 years.",
+      },
+
+      {
+        type: "heading",
+        content: "The science behind Moclay: why clay matters",
+      },
+      {
+        type: "text",
+        content: "Not all desiccants are equal. The most commonly used materials in the industry are silica gel, calcium chloride, and various clay compounds. Each has its role, but for container shipping — where temperature fluctuations cause humidity to condense on the inside walls in what is known as \"container sweat\" or \"container rain\" — clay desiccant bags hold a significant advantage.",
+      },
+      {
+        type: "subheading",
+        content: "Moclay composition",
+      },
+      {
+        type: "text",
+        content: "Moclay is a montmorillonite-rich clay found in the Jutland region of Denmark. Its layered mineral structure gives it a high surface area relative to its mass, allowing it to capture and hold water vapour efficiently without releasing liquid. This is critical: a desiccant that reaches saturation and begins to drip creates its own moisture problem. DRY BAG I is designed to remain drip-free even at full saturation, meaning there is no secondary damage risk from the desiccant bag itself.",
+      },
+      {
+        type: "subheading",
+        content: "Absorption capacity",
+      },
+      {
+        type: "text",
+        content: "The absorption capacity of DRY BAG I is up to 80% of its own weight in moisture — a figure that rivals and, in extended-transit conditions, surpasses many competing products. More importantly, this capacity is sustained over time. DRY BAG I absorbs moisture over a period of up to 90 days, which covers the full duration of most long-haul ocean freight journeys.",
+      },
+      {
+        type: "callout",
+        title: "Extended protection window",
+        content: "The Moclay formula extends the effective absorption window by approximately 30% longer than standard clay alternatives, providing meaningful coverage for transoceanic routes that standard desiccant products cannot reliably serve.",
+      },
+
+      {
+        type: "heading",
+        content: "Container rain: understanding the problem DRY BAG I solves",
+      },
+      {
+        type: "text",
+        content: "When a container is loaded and sealed, the air inside carries a certain level of humidity. As the container travels — through warm humid ports, cold ocean air, temperature swings between day and night — the dew point of the air inside fluctuates. When the interior temperature drops below the dew point, moisture condenses on the walls, ceiling, and any cooler surfaces. This is container rain.",
+      },
+      {
+        type: "text",
+        content: "The consequences are wide-ranging and affect virtually every cargo type:",
+      },
+      {
+        type: "list",
+        items: [
+          "Food and agricultural products: Moisture accelerates mould growth, causes caking and clumping of powders, softens packaging, and can render entire shipments unsaleable. Coffee, cocoa, dairy powder, feed additives, and canned goods are all vulnerable.",
+          "Electronics: Condensation causes short circuits, oxidation of contacts, and failure of components. Even sealed packaging offers limited protection if moisture levels remain high long enough.",
+          "Industrial goods: Metal parts corrode, wooden pallets swell, paperboard boxes collapse, and adhesive labels peel away — affecting both product integrity and regulatory traceability.",
+        ],
+      },
+      {
+        type: "text",
+        content: "DRY BAG I addresses all of these by maintaining a lower average relative humidity inside the container throughout the journey. By absorbing excess moisture before it can condense, it prevents container rain from forming in the first place.",
+      },
+
+      {
+        type: "heading",
+        content: "How to use DRY BAG I in a shipping container",
+      },
+      {
+        type: "text",
+        content: "DRY BAG I is designed for straightforward application. Each bag features an integrated hook at the top, which hangs directly onto the designated hanging eyes found in the upper corners of standard ISO shipping containers. No tools, adhesives, or installation time beyond a few seconds per bag.",
+      },
+      {
+        type: "text",
+        content: "Bags are packaged in pairs, reflecting the typical workflow of hanging two bags simultaneously — one on each side of the container door end, or distributed according to the cargo type and container size. The number of desiccant bags required depends on the nature of the goods, the expected humidity of the shipping route, the duration of transit, and whether the cargo is hygroscopic by nature.",
+      },
+
+      {
+        type: "heading",
+        content: "Industries that rely on DRY BAG I",
+      },
+      {
+        type: "text",
+        content: "DRY BAG I has been trusted across a wide range of sectors since its introduction in 1979. Its FDA-approved materials make it safe for use alongside sensitive goods, and its Danish Food & Agriculture approval makes it suitable for food contact environments.",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Dairy and food powder exports — products like milk powder, whey, and infant formula are highly hygroscopic and extremely sensitive to moisture exposure during container transit.",
+          "Coffee and cocoa — commodities where moisture control directly affects flavour, aroma, and shelf life over months of bulk transport.",
+          "Canned goods — despite sealed packaging, vulnerable to label damage, rusting of lids, and secondary packaging degradation.",
+          "Feed and agricultural additives — hygroscopic materials that clump, degrade, or become unsaleable when exposed to excessive humidity.",
+          "Electronics — require consistent low-humidity environments to prevent oxidation and condensation damage during ocean freight.",
+          "Anti-corrosion applications — bare metal parts, machinery, and tools shipped without adequate moisture control frequently arrive with surface corrosion.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "Sustainability: the environmental case for DRY BAG I",
+      },
+      {
+        type: "text",
+        content: "The Moclay raw material is sourced locally in Denmark, significantly reducing transportation emissions compared to products that rely on imported minerals. The production facility operates with environmental responsibility as an explicit goal, backed by lifecycle assessment (LCA) reports.",
+      },
+      {
+        type: "callout",
+        title: "Low carbon footprint",
+        content: "Every 2 kg DRY BAG generates approximately 0.58 kg CO₂ equivalent — one of the lowest carbon footprints of any desiccant product in its class. After use, DRY BAG I can be disposed of as ordinary household waste without environmental hazard. It contains no DMF and no toxic substances.",
+      },
+      {
+        type: "text",
+        content: "The product is also reusable. Once saturated, the clay inside can be reheated to drive off the absorbed moisture, restoring a significant portion of the original absorption capacity — a meaningful reduction in consumable waste for operations that can accommodate the recharging process.",
+      },
+
+      {
+        type: "heading",
+        content: "DRY BAG I vs. competing desiccant products",
+      },
+      {
+        type: "text",
+        content: "The desiccant market offers a wide variety of products. Understanding where DRY BAG I fits in comparison to common alternatives is essential for choosing the right moisture control solution.",
+      },
+      {
+        type: "list",
+        items: [
+          "Silica gel is widely used for small-scale or enclosed packaging applications. It absorbs moisture effectively at low humidity levels but has a relatively limited total capacity and is less effective in the temperature-variable environment of a shipping container. Explore silica gel desiccant options for in-box applications.",
+          "Calcium chloride desiccants have an exceptionally high absorption capacity and are a strong choice for high-humidity environments and heavy-duty container applications. They excel where large volumes of moisture need to be captured quickly.",
+          "Generic clay desiccants are widely available at low cost but typically have lower absorption capacity, shorter effective duration, and less rigorous quality control than DRY BAG I.",
+        ],
+      },
+      {
+        type: "text",
+        content: "DRY BAG I sits in a distinct position: clay-based for drip-free performance, high capacity for extended absorption, sustainably produced with traceable materials, FDA and food authority approved, and backed by over 45 years of use in demanding container export environments.",
+      },
+
+      {
+        type: "heading",
+        content: "Quality, traceability, and customisation",
+      },
+      {
+        type: "text",
+        content: "DRY BAG I is produced under strict quality control at every stage, from raw material sourcing to finished product. Traceability across the full value chain is maintained, which is increasingly important for exporters operating under food safety regulations, pharmaceutical standards, or sustainability reporting requirements.",
+      },
+      {
+        type: "text",
+        content: "For businesses with brand or compliance requirements, DRY BAG I is available as a white-label product — produced with your own logo and branding. This makes it suitable for distributors, logistics providers, and large-scale exporters who want a premium, certified desiccant solution under their own identity.",
+      },
+
+      {
+        type: "heading",
+        content: "Conclusion",
+      },
+      {
+        type: "text",
+        content: "The DRY BAG I is not a product that needs to compete on price alone. Its combination of high absorption capacity, extended duration, drip-free performance, food authority approval, sustainable production, and four-plus decades of proven use in container export makes it a straightforward choice for exporters who cannot afford the cost of moisture-damaged cargo.",
+      },
+      {
+        type: "text",
+        content: "Whether you are shipping dairy powder from Europe, coffee from Latin America, electronics from Asia, or animal feed across the globe, the challenge of container moisture is the same. The original DRY BAG I has been solving that challenge since 1979.",
+      },
+    ],
+
+    cta: {
+      heading: "Protect your cargo with the original DRY BAG I",
+      description: "Request a quote for DRY BAG I clay desiccant bags — trusted by exporters worldwide since 1979 for container moisture protection.",
+      buttonText: "View DRY BAG I",
+      buttonLink: "/drybag-i",
     },
   },
 
