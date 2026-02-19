@@ -81,7 +81,7 @@ const DunnageBagProduct = () => {
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,hsl(var(--primary)/0.08),transparent_50%)]" />
                   <img
                     src={productDunnage}
-                    alt="Dunnage Bag Cargo Stabilization"
+                    alt={t("dunnage.imgAlt")}
                     loading="lazy"
                     className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105 relative z-10"
                   />
