@@ -330,6 +330,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.articleNotFoundDesc": "The article you're looking for doesn't exist.",
     "blogPage.backButton": "Back to Cargo Intelligence",
     "blogPage.category.technical": "Technical",
+    "blogPage.category.guide": "Guide",
     "blogPage.minRead": "min read",
     // Blog post content
     "blogPage.post1.title": "Vapor pressure explained: Why moisture \"hides\" in wooden pallets and how to get it out",
@@ -344,6 +345,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post5.excerpt": "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
     "blogPage.post6.title": "Mold growth timelines: how many days of 80% RH does it take to ruin a shipment?",
     "blogPage.post6.excerpt": "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
+    "blogPage.post7.title": "What is silica gel desiccant? Complete guide to moisture control for shipping & storage",
+    "blogPage.post7.excerpt": "Learn how silica gel desiccant works, why it's the go-to moisture absorber for e-commerce, electronics, pharmaceuticals, and food packaging — and how to choose the right desiccant bag size.",
 
     // Downloads Page
     "downloadsPage.title1": "Resources",
@@ -1233,6 +1236,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.articleNotFoundDesc": "Den artikel, du leder efter, findes ikke.",
     "blogPage.backButton": "Tilbage til Cargo Intelligence",
     "blogPage.category.technical": "Teknisk",
+    "blogPage.category.guide": "Guide",
     "blogPage.minRead": "min læsning",
     // Blog post content
     "blogPage.post1.title": "Damptryk forklaret: Hvorfor fugt gemmer sig i træpaller — og hvordan du får den ud",
@@ -1247,6 +1251,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post5.excerpt": "Kaffebønner er stadig biologiske organismer, selv i en skibscontainer. Derfor er det afgørende at forstå samspillet mellem respiration, varme og fugt.",
     "blogPage.post6.title": "Skimmelvækst: Hvor mange dage ved 80 % RF skal der til, før en forsendelse er ødelagt?",
     "blogPage.post6.excerpt": "Svaret er ikke et simpelt antal dage. Skimmel følger ikke en fast tidsplan — det er de bagvedliggende faktorer, der afgør, om du forebygger skaden eller først opdager den ved ankomst.",
+    "blogPage.post7.title": "Hvad er silica gel tørremiddel? Komplet guide til fugtkontrol ved forsendelse og opbevaring",
+    "blogPage.post7.excerpt": "Lær hvordan silica gel tørremiddel fungerer, hvorfor det er den foretrukne fugtfjerner til e-handel, elektronik, medicin og fødevareemballage — og hvordan du vælger den rigtige fugtpose.",
 
     // Downloads Page
     "downloadsPage.title1": "Ressourcer",

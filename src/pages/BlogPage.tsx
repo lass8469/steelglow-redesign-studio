@@ -15,6 +15,14 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "silica-gel-desiccant-guide",
+      titleKey: "blogPage.post7.title",
+      excerptKey: "blogPage.post7.excerpt",
+      date: "2025-02-20",
+      readTime: "10",
+      category: "Guide",
+    },
+    {
       slug: "mold-growth-timelines-80-rh",
       titleKey: "blogPage.post6.title",
       excerptKey: "blogPage.post6.excerpt",
@@ -156,7 +164,7 @@ const BlogPage = () => {
                   </div>
                   <CardHeader className="pb-2">
                     <Badge variant="secondary" className="w-fit mb-2">
-                      {t("blogPage.category.technical")}
+                      {t(`blogPage.category.${post.category.toLowerCase()}`)}
                     </Badge>
                     <h2 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                       {t(post.titleKey)}
