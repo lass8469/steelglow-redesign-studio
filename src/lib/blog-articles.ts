@@ -1545,7 +1545,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The DRY BAG I is a handmade clay desiccant bag designed specifically for moisture control inside shipping containers and industrial packaging. It is produced by DESICCANT A/S in Denmark and distributed through desiccant.com, which serves as the primary channel for bulk and commercial orders worldwide.",
+        content: "The DRY BAG I is a handmade clay desiccant bag designed specifically for moisture control inside shipping containers and industrial packaging. It is produced by DRY-BAG A/S in Denmark and distributed through desiccant.com, which serves as the primary channel for bulk and commercial orders worldwide.",
       },
       {
         type: "text",
