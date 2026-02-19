@@ -9,6 +9,7 @@ import productDrybagI from "@/assets/product-drybag-i.webp";
 import productDunnageBag from "@/assets/product-dunnage-bag.webp";
 import productAntislip from "@/assets/product-antislip.webp";
 import productStabustrap from "@/assets/product-stabustrap.webp";
+import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -2296,6 +2297,220 @@ export const articlesDa: Record<string, Article> = {
       description: "Udforsk Stabustrap — det genanvendelige, elastiske båndsystem, der sikrer paller på fem sekunder uden engangsplastaffald. Anmod om tilbud eller prøve i dag.",
       buttonText: "Se Stabustrap",
       buttonLink: "/stabustrap",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: DRY BAG Retail — Industriel fugtsikring til hobby & hjem
+  // ------------------------------------------------------------
+  "dry-bag-retail-moisture-absorber-guide": {
+    title: "DRY BAG Retail – Industriel fugtsikring til båd, campingvogn og hjem",
+    excerpt: "Den samme gennemprøvede Moclay-formel fra global containerforsendelse — nu som en regenererbar, drypfri fugtabsorbent til båd, campingvogn, autocamper, kælder og garage. Opfundet og fremstillet i Danmark.",
+    date: "2025-02-26",
+    readTime: "14 min læsning",
+    category: "Guide",
+    heroImage: blogRetailDrybag,
+    author: "DESICCANT Teknisk Team",
+    canonicalPath: "/retail",
+
+    sections: [
+      {
+        type: "text",
+        content: "Fugt er den stille ødelægger af opbevarede værdier. Lades den ukontrolleret i en lukket bådkahyt, en campingvogn parkeret til vinter, et kælderrum eller en garage, forårsager fugtig luft skimmel, rust, råd i træ, lugt i stoffer og korrosion af elektronik.",
+      },
+      {
+        type: "text",
+        content: "De fleste fugtabsorbenter på markedet i dag er baseret på calciumchlorid — en saltbaseret forbindelse, der bliver flydende, efterhånden som den absorberer fugt, og samler sig i en saltlage, der skal opfanges i en spildbakke. Håndteres en sådan forkert, kan væsken plette polstring, korrodere metaloverflader eller skabe en glat fare på et bådsdæk.",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail tager en fundamentalt anderledes tilgang. Opfundet og fremstillet i Danmark af DRY-BAG anvender den den samme gennemprøvede Moclay-formel, der er kernen i den originale DRY-BAG I — et produkt, der har opnået tillid i industriel containerforsendelse verden over. DRY BAG Retail leverer langtidsholdbar, ren og intelligent fugtstyring til private forbrugere. Ingen saltlage. Ingen spildbakke. Ingen rod.",
+      },
+      {
+        type: "quote",
+        content: "Den samme formel, som DRY-BAG opfandt til at beskytte millionlaster, der krydser Atlanten, er nu tilgængelig i en håndlavet retailpose — dimensioneret til din bådkahyt, campingvogn eller kælderhylde.",
+      },
+      {
+        type: "heading",
+        content: "Hvad er DRY BAG Retail?",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail er en håndlavet tørremiddelpose fremstillet i Danmark, fyldt med den patenterede Moclay fugtabsorberende forbindelse. Hver pose har et klart vindue, så du kan overvåge mætningen med et blik, og er forseglet i en lufttæt zip-lock-emballage for at bevare den fulde absorptionskapacitet, indtil du har brug for den.",
+      },
+      {
+        type: "text",
+        content: "I modsætning til calciumchloridprodukter absorberer Moclay-formlen fugt som et fast stof — den bliver ikke flydende. Det betyder, at DRY BAG Retail forbliver ren og tør at håndtere gennem hele sin levetid, hvilket gør den ideel til brug i rum, hvor et væskespild ville forårsage reel skade: bådinteriører, polstrede campingvognssæder, indrettede kælderrum og lukkede garager.",
+      },
+      {
+        type: "text",
+        content: "Når posen når mætning — synligt gennem det klare vindue — smider du den ikke ud. Du regenererer den simpelthen i en almindelig ovn, hvorved den fulde absorptionskapacitet genskabes, og produktets levetid forlænges over flere sæsoner.",
+      },
+      {
+        type: "heading",
+        content: "Vigtigste egenskaber",
+      },
+      {
+        type: "list",
+        items: [
+          "Original DRY-BAG I-formel — Den samme Moclay-forbindelse opfundet af DRY-BAG til industriel containerforsendelse, nu skaleret til hjemme- og hobbyapplikationer.",
+          "Drypfri af design — Moclay absorberer fugt som fast stof. Der dannes aldrig saltlagevæske — sikkert for polstring, træ, metal og elektronik i nærheden.",
+          "Ingen spildbakke påkrævet — Calciumchloridprodukter kræver en bakke til at opfange den flydende væske. DRY BAG Retail behøver ingen — placer den hvor som helst uden risiko for spild.",
+          "Fuldt regenererbar — Tør den mættede pose i en almindelig køkkenovn, og den vender tilbage til fuld kapacitet. Brug den sæson efter sæson og reducer omkostninger og affald.",
+          "Klart vinduesindikator — Overvåg mætningen med et blik uden at åbne posen. Vid præcis, hvornår du skal regenerere — ingen gætterier, intet spildt produkt.",
+          "Håndlavet i Danmark — Hver pose er individuelt fremstillet i Danmark med lokalt indkøbte, miljøvenlige materialer og FDA-godkendte forbindelser.",
+          "Op til 90 dages brug — Sæt den og glem den. Hver opladning giver op til 90 dages kontinuerlig fugtabsorption, før regenerering er nødvendig.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Perfekt til enhver hobbyopbevaringssituation",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail er designet til private forbrugere, der ønsker professionel fugtstyring uden kompleksiteten eller rodet fra industrielle løsninger. Den passer naturligt ind i de rum, hvor hobbygrej, sæsonkøretøjer og elskede ejendele opbevares.",
+      },
+      {
+        type: "subheading",
+        content: "Både og marinemiljøer",
+      },
+      {
+        type: "text",
+        content: "En lukket bådkahyt om vinteren er et af de mest udfordrende fugtmiljøer, man kan forestille sig — forseglet fra ventilation, udsat for temperaturudsving og omgivet af vand. DRY BAG Retail er særligt velegnet her, fordi dens drypfri design betyder, at der er nul risiko for, at saltlagevæske beskadiger teaktræsdæk, polstring eller maritim elektronik. Placer poser i kahytten, under køjer, i skabe og i motorbrønden for omfattende dækning.",
+      },
+      {
+        type: "subheading",
+        content: "Campingvogne, autocampere og caravaner",
+      },
+      {
+        type: "text",
+        content: "Sæsonopbevaring af en campingvogn eller caravan kan efterlade stoffer med en muggen lugt, metalbeslag korroderede og kondensplamager på tværs af alle indvendige overflader. Et par DRY BAG Retail-enheder placeret i interiøret — på hylder, i skabe og under sæder — opretholder sunde fugtighedsniveauer gennem hele vintersæsonen. Fordi poserne er faste og drypfri, kan de efterlades oven på polstrede bænke og madrasser.",
+      },
+      {
+        type: "subheading",
+        content: "Kældre og garager",
+      },
+      {
+        type: "text",
+        content: "Underjordiske og dårligt ventilerede rum ophoer fugt hele året. Uanset om du opbevarer vin, værktøj, sæsonbetonet sportsudstyr eller vigtige dokumenter, fremmer vedvarende fugtighed skimmelvækst, metaloxidation og materialenedbrydning. DRY BAG Retail giver et rent, vedligeholdelsesfrit fugtforsvar uden at kræve dræning, bakker eller elektricitet.",
+      },
+      {
+        type: "heading",
+        content: "Hvorfor den industrielle formel gør en forskel",
+      },
+      {
+        type: "text",
+        content: "De fleste tørremidler til detailsalg er udviklet fra bunden til forbrugerprisniveauer med forbindelser optimeret til pris frem for ydeevne. DRY BAG Retail starter fra et helt andet udgangspunkt: Moclay-formlen, som DRY-BAG opfandt til den originale DRY-BAG I, der bruges til at beskytte last i havcontainere — et af de mest krævende fugtmiljøer på jorden.",
+      },
+      {
+        type: "text",
+        content: "Havcontainere oplever dramatiske temperatur- og fugtighedsudsving, når de passerer mellem klimazoner. De involverede fugtmængder kan være enorme. DRY-BAG I blev konstrueret til at absorbere disse belastninger pålideligt, uden væskedannelse, uden spild og uden at beskadige den last, den beskytter. Den samme ingeniørdisciplin er det, der får DRY BAG Retail til at skille sig ud på forbrugermarkedet.",
+      },
+      {
+        type: "quote",
+        content: "Når en formel har vundet tillid hos internationale shippingoperatører, der beskytter højværdi-containerlast, kan du være sikker på, at den kan håndtere din bådkahyt eller campingvogn uden besvær.",
+      },
+      {
+        type: "heading",
+        content: "DRY BAG Retail vs. calciumchlorid-fugtabsorbenter",
+      },
+      {
+        type: "text",
+        content: "Calciumchloridprodukter dominerer butikshylderne, fordi de er billige at producere. Men for hobbyentusiaster og husejere, der giver noget om at beskytte deres ejendele, er kompromiserne betydelige.",
+      },
+      {
+        type: "list",
+        items: [
+          "Spildbakke: DRY BAG Retail forbliver fast — ikke påkrævet. Calciumchlorid bliver flydende saltlage — spildbakke uundværlig.",
+          "Risiko for væskespild: DRY BAG Retail er drypfri af design. Calciumchlorid har høj risiko — saltlage kan plette og korrodere.",
+          "Genanvendelighed: DRY BAG Retail er ovnregenerbar og genanvendelig. Calciumchlorid er engangsaffald til deponi.",
+          "Mætningssynlighed: DRY BAG Retail har en klar vinduesindikator. Calciumchloridprodukter er ofte uigennemsigtige.",
+          "Sikker nær følsomme materialer: DRY BAG Retail er helt tør at håndtere. Calciumchlorid medfører risiko, hvis saltlage spilder eller sprøjter.",
+          "Miljøpåvirkning: DRY BAG Retail er genanvendelig med minimalt affald. Calciumchlorid betyder engangs-plastikkopper og affaldssaltlage.",
+          "Formeloprindelse: DRY BAG Retail bruger industriel Moclay af shippingkvalitet. Calciumchlorid er en forbrugerkvalitets-saltforbindelse.",
+          "Fremstillet i Danmark: DRY BAG Retail er opfundet og håndlavet i Danmark af DRY-BAG. Calciumchloridprodukter er typisk importerede.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Sådan regenererer du din DRY BAG Retail",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Tjek vinduet — Overvåg det klare vindue regelmæssigt. Når indikatoren viser fuld mætning, er det tid til at regenerere frem for at erstatte.",
+          "Placer i ovnen — Åbn den åndbare pose lidt og placer den i en almindelig køkkenovn ved lav temperatur for at drive den absorberede fugt ud som damp.",
+          "Afkøl og forsegl — Lad posen køle af, og forsegl den derefter i sin originale lufttætte zip-lock-emballage, indtil du er klar til at bruge den igen.",
+          "Geninstaller — Placer den regenererede pose tilbage i din båd, campingvogn, kælder eller garage — klar til op til 90 dages fugtabsorption mere.",
+        ],
+      },
+      {
+        type: "text",
+        content: "Over en typisk bådejerskabs- eller campingvognsperiode kan en enkelt DRY BAG Retail regenereres over flere sæsoner, hvilket dramatisk reducerer både driftsomkostninger og plastaffald sammenlignet med engangscalciumchlorid-alternativer.",
+      },
+      {
+        type: "heading",
+        content: "Bæredygtighed: Indbygget i produktet",
+      },
+      {
+        type: "text",
+        content: "Danske forbrugere og virksomheder stiller med rette høje krav til bæredygtighed. DRY BAG Retail adresserer dette på flere niveauer. Moclay-formlen er ugiftig og sikker for standard husholdningsbortskaffelse. Poserne er fremstillet af åndbaret non-woven-materiale med lokalt indkøbte råvarer og miljøansvarlige produktionsmetoder i Danmark.",
+      },
+      {
+        type: "text",
+        content: "Produktets regenererbarhed er dets stærkeste bæredygtighedsreference. En forbruger, der regenererer sin DRY BAG Retail fem gange i løbet af sit campingvognsejerskab, har undgået fem engangs-plastikkopper til deponi, fem ladninger saltlagevæske, der kræver bortskaffelse, og fem erstatningskøb. For en nation, der er forpligtet til cirkulære økonomiprincipper, er DRY BAG Retail det logiske valg.",
+      },
+      {
+        type: "heading",
+        content: "Ofte stillede spørgsmål",
+      },
+      {
+        type: "subheading",
+        content: "Er DRY BAG Retail sikker at bruge nær polstring og træ?",
+      },
+      {
+        type: "text",
+        content: "Ja. Fordi Moclay-formlen absorberer fugt som et fast stof og aldrig danner væske, er der ingen risiko for saltlage- eller vandskade på polstring, træoverflader, læder eller elektronik i nærheden. Den kan placeres direkte på eller ved siden af følsomme materialer uden beskyttelsesbakke.",
+      },
+      {
+        type: "subheading",
+        content: "Hvordan ved jeg, hvornår posen er mættet?",
+      },
+      {
+        type: "text",
+        content: "Hver DRY BAG Retail har et klart vindue, hvori du kan overvåge tilstanden af Moclay-fyldningen. Når indikatoren viser fuld mætning, er det tid til at regenerere posen i din ovn — ingen grund til at åbne posen eller gætte.",
+      },
+      {
+        type: "subheading",
+        content: "Hvor mange gange kan jeg regenerere posen?",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail er designet til gentagen regenerering over flere sæsoncyklusser. Mange brugere får adskillige års brug ud af en enkelt pose, hvilket gør den markant mere økonomisk og miljøvenlig end engangscalciumchlorid-alternativer over tid.",
+      },
+      {
+        type: "subheading",
+        content: "Hvordan sammenligner den sig med den industrielle DRY-BAG I?",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail bruger den samme Moclay-formel som den originale DRY-BAG I, der bruges til at beskytte last i havcontainere. Retailversionen er dimensioneret og pakket til private forbrugerapplikationer — både, campingvogne, kældre, garager — snarere end industrielle containervolumener. Den kemiske absorptionskemi er identisk.",
+      },
+      {
+        type: "subheading",
+        content: "Kan forhandlere i Danmark sælge DRY BAG Retail?",
+      },
+      {
+        type: "text",
+        content: "Ja. DRY BAG Retail er tilgængelig til detaildistribution over hele Danmark. Bådudstyrskæder, frilufts- og campingforhandlere samt byggmarkeder, der er interesserede i at føre produktet, er velkomne til at kontakte desiccant.com for at drøfte distributionsvilkår.",
+      },
+    ],
+
+    cta: {
+      heading: "Hold dine værdier tørre — sæson efter sæson",
+      description: "DRY BAG Retail er det rene, regenererbare, spildfri alternativ til engangsfugtabsorbenter. Fremstillet i Danmark med industriel Moclay-formel. Op til 90 dages brug per opladning, genanvendelig over flere sæsoner.",
+      buttonText: "Se DRY BAG Retail",
+      buttonLink: "/retail",
     },
   },
 };

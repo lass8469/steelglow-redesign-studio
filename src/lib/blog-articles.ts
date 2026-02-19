@@ -9,6 +9,7 @@ import productDrybagI from "@/assets/product-drybag-i.webp";
 import productDunnageBag from "@/assets/product-dunnage-bag.webp";
 import productAntislip from "@/assets/product-antislip.webp";
 import productStabustrap from "@/assets/product-stabustrap.webp";
+import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -2462,6 +2463,224 @@ export const articles: Record<string, Article> = {
       description: "Explore Stabustrap — the reusable, elastic strapping system that secures pallets in five seconds with zero single-use plastic waste. Request a quote or sample today.",
       buttonText: "View Stabustrap",
       buttonLink: "/stabustrap",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: DRY BAG Retail — Industrial-Grade Moisture Protection
+  // ------------------------------------------------------------
+  "dry-bag-retail-moisture-absorber-guide": {
+    title: "DRY BAG Retail – Industrial-Grade Moisture Protection for Boats, Campers & Home",
+    excerpt: "The same trusted Moclay formula used in global container shipping — now available as a regenerable, drip-free moisture absorber for boats, campers, RVs, basements, and garages. Made in Denmark.",
+    date: "2025-02-26",
+    readTime: "14 min read",
+    category: "Guide",
+    heroImage: blogRetailDrybag,
+    author: "DESICCANT Technical Team",
+    canonicalPath: "/retail",
+
+    sections: [
+      {
+        type: "text",
+        content: "Moisture is the silent destroyer of stored valuables. Left unchecked in a closed boat cabin, a camper van parked for winter, a basement storage room, or a garage, damp air causes mould, rust, wood rot, fabric odours, and electronic corrosion.",
+      },
+      {
+        type: "text",
+        content: "Most consumer moisture absorbers on the market today are built around calcium chloride — a salt-based compound that liquefies as it absorbs humidity, pooling into a brine solution that must be carefully contained in a spill tray. Handle one incorrectly and the liquid can stain upholstery, corrode metal surfaces, or create a slippery hazard on a boat deck.",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail takes a fundamentally different approach. Invented and manufactured in Denmark by DRY-BAG, it uses the same proven Moclay formula at the heart of the original DRY-BAG I — a product trusted in industrial container shipping worldwide. DRY BAG Retail delivers long-lasting, clean, and intelligent moisture control for private consumers. No brine. No spill tray. No mess.",
+      },
+      {
+        type: "quote",
+        content: "The same formula that DRY-BAG invented for protecting million-euro cargo shipments crossing the Atlantic is now available in a handmade retail bag — sized for your boat cabin, caravan, or basement shelf.",
+      },
+      {
+        type: "heading",
+        content: "What Is DRY BAG Retail?",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail is a handcrafted desiccant bag made in Denmark, filled with the proprietary Moclay moisture-absorbing compound. Each bag features a clear window so you can monitor saturation at a glance, and is sealed in an airtight zip-lock package to maintain full absorption capacity until the moment you need it.",
+      },
+      {
+        type: "text",
+        content: "Unlike calcium chloride products, the Moclay formula absorbs moisture as a solid — it does not liquefy. This means DRY BAG Retail remains clean and dry to handle throughout its entire working life, making it ideal for use in spaces where a liquid spill would cause real damage: boat interiors, upholstered caravan seating, finished basement areas, and enclosed garage storage.",
+      },
+      {
+        type: "text",
+        content: "When the bag reaches saturation — visible through the clear window — you don't throw it away. You simply regenerate it in a standard oven, restoring its full absorption capacity and extending the product's working life across multiple seasonal cycles.",
+      },
+      {
+        type: "heading",
+        content: "Key Features",
+      },
+      {
+        type: "list",
+        items: [
+          "Original DRY-BAG I Formula — The same Moclay compound invented by DRY-BAG for industrial container shipping, now scaled for home and hobby applications.",
+          "Drip-Free by Design — Moclay absorbs moisture as a solid. No brine liquid forms, ever — making it safe for upholstery, wood, metal, and electronics nearby.",
+          "No Spill Tray Required — Calcium chloride products demand a tray to catch pooling liquid. DRY BAG Retail needs none — place it anywhere with zero spill risk.",
+          "Fully Regenerable — Dry the saturated bag in a standard kitchen oven and it returns to full capacity. Use it season after season, reducing cost and waste.",
+          "Clear Window Indicator — Monitor saturation at a glance without opening the bag. Know exactly when to regenerate — no guesswork, no wasted product.",
+          "Handmade in Denmark — Each bag is individually crafted in Denmark using locally sourced, eco-friendly materials and FDA-approved compounds.",
+          "Up to 90 Days Per Use — Set it and forget it. Each charge provides up to 90 days of continuous moisture absorption before regeneration is needed.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Perfect For Every Hobby Storage Situation",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail is designed for private consumers who want professional-grade moisture control without the complexity or mess of industrial solutions. It fits naturally into the spaces where hobby gear, seasonal vehicles, and cherished possessions are stored.",
+      },
+      {
+        type: "subheading",
+        content: "Boats and Marine Environments",
+      },
+      {
+        type: "text",
+        content: "A closed boat cabin over winter is one of the most challenging moisture environments imaginable — sealed from ventilation, subject to temperature swings, and surrounded by water. DRY BAG Retail is particularly well suited here because its drip-free design means there is zero risk of brine liquid damaging teak decking, upholstery, or marine electronics. Place bags in the cabin, under berths, in lockers, and in the engine bay for comprehensive coverage.",
+      },
+      {
+        type: "subheading",
+        content: "Campers, RVs, and Caravans",
+      },
+      {
+        type: "text",
+        content: "Seasonal storage of a camper or caravan can leave fabrics smelling musty, metal fixings corroded, and condensation stains across every interior surface. A few DRY BAG Retail units placed throughout the interior — on shelves, in cupboards, and under seating — maintain healthy humidity levels throughout the off-season. Because the bags are solid and drip-free, they can be left in place even over upholstered benches and mattresses.",
+      },
+      {
+        type: "subheading",
+        content: "Basements and Garages",
+      },
+      {
+        type: "text",
+        content: "Below-ground and poorly ventilated spaces accumulate moisture year-round. Whether you store wine, tools, seasonal sports equipment, or important documents, persistent humidity encourages mould growth, metal oxidation, and material degradation. DRY BAG Retail provides a clean, low-maintenance moisture defence without requiring drainage, trays, or electricity.",
+      },
+      {
+        type: "heading",
+        content: "Why the Industrial Formula Makes a Difference",
+      },
+      {
+        type: "text",
+        content: "Most retail desiccant products are engineered from the ground up for consumer price points, using compounds optimised for cost rather than performance. DRY BAG Retail begins from a completely different starting point: the Moclay formula that DRY-BAG invented for the original DRY-BAG I, used to protect cargo in ocean shipping containers — one of the most demanding humidity environments on earth.",
+      },
+      {
+        type: "text",
+        content: "Ocean containers experience dramatic temperature and humidity swings as they transit between climatic zones. The moisture loads involved can be enormous. The DRY-BAG I was engineered to absorb those loads reliably, without liquid formation, without spills, and without damaging the cargo it protects. That same engineering discipline is what makes DRY BAG Retail stand apart in the consumer market.",
+      },
+      {
+        type: "quote",
+        content: "When a formula has earned the trust of international shipping operators protecting high-value container cargo, you can be confident it will handle your boat cabin or caravan without difficulty.",
+      },
+      {
+        type: "text",
+        content: "The breathable non-woven bag material is chosen for the same reason it is used industrially: it maximises moisture capture from the surrounding air while ensuring zero liquid can escape, even when the desiccant is fully saturated. The result is a product that performs exceptionally and stays completely clean from first use to regeneration.",
+      },
+      {
+        type: "heading",
+        content: "DRY BAG Retail vs. Calcium Chloride Moisture Absorbers",
+      },
+      {
+        type: "text",
+        content: "Calcium chloride products dominate retail shelves because they are cheap to produce. But for hobbyists and homeowners who care about protecting their belongings, the trade-offs are significant.",
+      },
+      {
+        type: "list",
+        items: [
+          "Spill tray: DRY BAG Retail stays solid — not required. Calcium chloride liquefies into brine — spill tray essential.",
+          "Liquid spill risk: DRY BAG Retail is drip-free by design. Calcium chloride carries high risk — brine can stain and corrode.",
+          "Reusability: DRY BAG Retail is oven-regenerable and reusable. Calcium chloride is single-use landfill waste.",
+          "Saturation visibility: DRY BAG Retail has a clear window indicator. Calcium chloride products are often opaque.",
+          "Safe near sensitive materials: DRY BAG Retail is completely dry to handle. Calcium chloride carries risk if brine spills or splashes.",
+          "Environmental impact: DRY BAG Retail is reusable with minimal waste. Calcium chloride means single-use plastic cups and waste brine.",
+          "Formula origin: DRY BAG Retail uses industrial shipping-grade Moclay. Calcium chloride is a consumer-grade salt compound.",
+          "Made in Denmark: DRY BAG Retail is invented and handmade in Denmark by DRY-BAG. Calcium chloride products are typically imported.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "How to Regenerate Your DRY BAG Retail",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Check the Window — Monitor the clear window regularly. When the indicator shows full saturation, it is time to regenerate rather than replace.",
+          "Place in Oven — Open the breathable bag slightly and place it in a standard kitchen oven at a low temperature to drive off the absorbed moisture as steam.",
+          "Cool & Reseal — Allow the bag to cool, then reseal it in its original airtight zip-lock packaging until you are ready to deploy it again.",
+          "Redeploy — Place the regenerated bag back in your boat, camper, basement, or garage — ready for up to another 90 days of moisture absorption.",
+        ],
+      },
+      {
+        type: "text",
+        content: "Over a typical boat or caravan ownership period, a single DRY BAG Retail can be regenerated across multiple seasons, dramatically reducing both running costs and plastic waste compared to single-use calcium chloride alternatives.",
+      },
+      {
+        type: "heading",
+        content: "Sustainability: Built Into the Product",
+      },
+      {
+        type: "text",
+        content: "Danish consumers and businesses rightly hold sustainability to a high standard. DRY BAG Retail addresses this on multiple levels. The Moclay formula is non-toxic and safe for standard household disposal at end of life. The bags are made from breathable non-woven material using locally sourced inputs and environmentally responsible production methods in Denmark.",
+      },
+      {
+        type: "text",
+        content: "Most significantly, the product's regenerability is its strongest sustainability credential. A consumer who regenerates their DRY BAG Retail five times over the life of their caravan ownership has avoided five single-use plastic cups going to landfill, five lots of brine liquid requiring disposal, and five replacement purchase trips. For a nation committed to circular economy principles, DRY BAG Retail is the logical choice.",
+      },
+      {
+        type: "heading",
+        content: "Frequently Asked Questions",
+      },
+      {
+        type: "subheading",
+        content: "Is DRY BAG Retail safe to use near upholstery and wood?",
+      },
+      {
+        type: "text",
+        content: "Yes. Because the Moclay formula absorbs moisture as a solid and never forms a liquid, there is no risk of brine or water damage to upholstery, wood surfaces, leather, or electronics nearby. It can be placed directly on or beside sensitive materials with no protective tray required.",
+      },
+      {
+        type: "subheading",
+        content: "How do I know when the bag is saturated?",
+      },
+      {
+        type: "text",
+        content: "Each DRY BAG Retail features a clear window through which you can monitor the state of the Moclay fill. When the indicator shows full saturation, it is time to regenerate the bag in your oven — no need to open the bag or guess.",
+      },
+      {
+        type: "subheading",
+        content: "How many times can I regenerate the bag?",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail is designed for repeated regeneration across multiple seasonal cycles. Many users get several years of use from a single bag, making it significantly more economical and environmentally friendly than disposable calcium chloride alternatives over time.",
+      },
+      {
+        type: "subheading",
+        content: "How does it compare to the industrial DRY-BAG I?",
+      },
+      {
+        type: "text",
+        content: "DRY BAG Retail uses the same Moclay formula as the original DRY-BAG I, which is used to protect cargo in ocean shipping containers. The retail version is sized and packaged for private consumer applications — boats, campers, basements, garages — rather than industrial container volumes. The core absorption chemistry is identical.",
+      },
+      {
+        type: "subheading",
+        content: "Can retailers in Denmark stock DRY BAG Retail?",
+      },
+      {
+        type: "text",
+        content: "Yes. DRY BAG Retail is available for retail distribution across Denmark. Marine chandleries, outdoor and camping retailers, and hardware stores interested in stocking the product are welcome to contact desiccant.com to discuss distribution terms.",
+      },
+    ],
+
+    cta: {
+      heading: "Keep Your Valuables Dry — Season After Season",
+      description: "DRY BAG Retail is the clean, regenerable, spill-free alternative to disposable moisture absorbers. Made in Denmark with industrial-grade Moclay formula. Up to 90 days per charge, reusable across multiple seasons.",
+      buttonText: "View DRY BAG Retail",
+      buttonLink: "/retail",
     },
   },
 
