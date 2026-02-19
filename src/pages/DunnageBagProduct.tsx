@@ -11,11 +11,17 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import productDunnage from "@/assets/product-dunnage-bag.webp";
 
 const DunnageBagProduct = () => {
-  const { t } = useLanguage();
-  usePageMeta(t("meta.dunnage.title"), t("meta.dunnage.description"), { ogImage: productDunnage });
+  const { t, language } = useLanguage();
+  usePageMeta(t("meta.dunnage.title"), t("meta.dunnage.description"), { ogImage: productDunnage, canonicalPath: `/${language}/dunnage-bag` });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("productPage.products"), path: `/${language}/products` },
+    { name: "Dunnage Bag", path: `/${language}/dunnage-bag` },
+  ]);
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -24,6 +30,13 @@ const DunnageBagProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDunnage}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    category: "Cargo Protection",
+    sku: "DUNNAGE",
+    offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/dunnage-bag` },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Material", value: "PP-woven and kraft paper" },
+      { "@type": "PropertyValue", name: "Type", value: "Inflatable void filler" },
+    ],
   });
   const specifications = [
     { label: t("dunnage.spec.material"), value: t("dunnage.spec.materialValue") },

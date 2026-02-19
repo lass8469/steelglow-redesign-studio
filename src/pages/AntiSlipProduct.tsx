@@ -11,11 +11,17 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import productAntislip from "@/assets/product-antislip.webp";
 
 const AntiSlipProduct = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.antislip.title"), t("meta.antislip.description"), { ogImage: productAntislip });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("productPage.products"), path: `/${language}/products` },
+    { name: "Anti-Slip Sheets", path: `/${language}/anti-slip` },
+  ]);
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -24,6 +30,9 @@ const AntiSlipProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productAntislip}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    category: "Cargo Protection",
+    sku: "AS",
+    offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/anti-slip` },
   });
   const specifications = [
     { label: t("antislip.spec.material"), value: t("antislip.spec.materialValue") },

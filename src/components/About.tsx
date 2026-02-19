@@ -1,5 +1,6 @@
 import { Shield, Leaf, Globe, Award } from "lucide-react";
 import MoistureBackground from "./MoistureBackground";
+import LocalizedLink from "./LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
@@ -10,21 +11,25 @@ const About = () => {
       icon: Globe,
       title: t("about.feature1.title"),
       description: t("about.feature1.desc"),
+      link: "/applications",
     },
     {
       icon: Award,
       title: t("about.feature2.title"),
       description: t("about.feature2.desc"),
+      link: "/products",
     },
     {
       icon: Leaf,
       title: t("about.feature3.title"),
       description: t("about.feature3.desc"),
+      link: "/products",
     },
     {
       icon: Shield,
       title: t("about.feature4.title"),
       description: t("about.feature4.desc"),
+      link: "/applications",
     },
   ];
 
@@ -50,33 +55,34 @@ const About = () => {
 
               <div className="grid sm:grid-cols-2 gap-6">
                 {features.map((feature) => (
-                  <div
+                  <LocalizedLink
                     key={feature.title}
-                    className="flex gap-4 p-4 rounded-lg bg-accent/50 hover:bg-accent transition-colors"
+                    to={feature.link}
+                    className="flex gap-4 p-4 rounded-lg bg-accent/50 hover:bg-accent transition-colors group"
                   >
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <feature.icon className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">{feature.title}</h3>
+                      <h3 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors">{feature.title}</h3>
                       <p className="text-sm text-muted-foreground">{feature.description}</p>
                     </div>
-                  </div>
+                  </LocalizedLink>
                 ))}
               </div>
             </div>
 
             {/* Visual element */}
             <div className="relative">
-              <div className="aspect-square rounded-2xl p-8 lg:p-12">
+              <LocalizedLink to="/about" className="block aspect-square rounded-2xl p-8 lg:p-12 group">
                 <div className="h-full rounded-xl flex items-center justify-center">
                   <div className="text-center p-8">
-                    <div className="text-8xl lg:text-9xl font-black text-gradient mb-4">45+</div>
+                    <div className="text-8xl lg:text-9xl font-black text-gradient mb-4 group-hover:scale-105 transition-transform">45+</div>
                     <div className="text-xl lg:text-2xl font-semibold text-foreground">{t("about.yearsExcellence")}</div>
                     <div className="text-muted-foreground">{t("about.protectingCargo")}</div>
                   </div>
                 </div>
-              </div>
+              </LocalizedLink>
               
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" />

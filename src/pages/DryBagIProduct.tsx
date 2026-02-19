@@ -11,11 +11,17 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import productDrybagI from "@/assets/product-drybag-i.webp";
 
 const DryBagIProduct = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.drybagI.title"), t("meta.drybagI.description"), { ogImage: productDrybagI });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("productPage.products"), path: `/${language}/products` },
+    { name: "DRY-BAG I", path: `/${language}/drybag-i` },
+  ]);
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -24,6 +30,21 @@ const DryBagIProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDrybagI}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    category: "Industrial Desiccants",
+    sku: "DB-I",
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      priceCurrency: "EUR",
+      price: "0",
+      priceValidUntil: "2027-12-31",
+      url: `https://desiccant.com/${language}/drybag-i`,
+    },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Active Material", value: "Bentonite Clay (Mo-Clay)" },
+      { "@type": "PropertyValue", name: "Absorption Capacity", value: "Up to 150% of its weight" },
+      { "@type": "PropertyValue", name: "Protection Duration", value: "Up to 60 days" },
+    ],
   });
 
   const specifications = [
@@ -84,6 +105,8 @@ const DryBagIProduct = () => {
                     src={productDrybagI}
                     alt={t("drybagI.imgAlt")}
                     loading="lazy"
+                    width={600}
+                    height={600}
                     className="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105 relative z-10"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent z-20" />

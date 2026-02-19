@@ -11,11 +11,17 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import productSilica from "@/assets/product-silica-gel.webp";
 
 const SilicaProduct = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.silica.title"), t("meta.silica.description"), { ogImage: productSilica });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("productPage.products"), path: `/${language}/products` },
+    { name: "Silica Gel", path: `/${language}/silica` },
+  ]);
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -24,6 +30,14 @@ const SilicaProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productSilica}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    category: "Industrial Desiccants",
+    sku: "SG",
+    offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/silica` },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Active Material", value: "Silica Gel (SiO₂)" },
+      { "@type": "PropertyValue", name: "Absorption Capacity", value: "Up to 35% of its weight" },
+      { "@type": "PropertyValue", name: "Compliance", value: "FDA compliant, DMF-free" },
+    ],
   });
   const specifications = [
     { label: t("silica.spec.material"), value: t("silica.spec.materialValue") },

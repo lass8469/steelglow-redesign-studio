@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const DEFAULT_TITLE = "Desiccant.com - Industrial Desiccants & Cargo Protection";
 const DEFAULT_DESCRIPTION = "Industrial desiccants and cargo protection solutions from Denmark since 1979. Silica gel, clay desiccants, dunnage bags, and monitoring devices for global shipping.";
@@ -9,7 +10,7 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-home.jpg`;
 interface PageMetaOptions {
   ogImage?: string;
   ogType?: string;
-  canonicalPath?: string; // Override canonical URL path (e.g., "/en/drybag-i")
+  canonicalPath?: string;
 }
 
 export const usePageMeta = (
@@ -18,6 +19,7 @@ export const usePageMeta = (
   options?: PageMetaOptions
 ) => {
   const location = useLocation();
+  const { language } = useLanguage();
   const ogImage = options?.ogImage
     ? (options.ogImage.startsWith("http") ? options.ogImage : `${BASE_URL}${options.ogImage}`)
     : DEFAULT_OG_IMAGE;
@@ -26,7 +28,6 @@ export const usePageMeta = (
   useEffect(() => {
     document.title = title;
 
-    // Description
     const setMeta = (attr: string, key: string, value: string) => {
       let el = document.querySelector(`meta[${attr}="${key}"]`);
       if (!el) {
@@ -47,6 +48,12 @@ export const usePageMeta = (
     setMeta("property", "og:image", ogImage);
     setMeta("property", "og:type", ogType);
     setMeta("property", "og:site_name", "Desiccant.com");
+
+    // OG locale tags
+    const currentLocale = language === "da" ? "da_DK" : "en_US";
+    const alternateLocale = language === "da" ? "en_US" : "da_DK";
+    setMeta("property", "og:locale", currentLocale);
+    setMeta("property", "og:locale:alternate", alternateLocale);
 
     // Twitter Card tags
     setMeta("name", "twitter:card", "summary_large_image");
@@ -77,5 +84,5 @@ export const usePageMeta = (
       setMeta("name", "twitter:image", DEFAULT_OG_IMAGE);
       if (canonical) canonical.href = `${BASE_URL}/`;
     };
-  }, [title, description, location.pathname, ogImage, ogType]);
+  }, [title, description, location.pathname, ogImage, ogType, language]);
 };

@@ -55,7 +55,7 @@ const appRoutes = (
     <Route path="faq" element={<FAQPage />} />
     <Route path="testimonials" element={<SocialProofPage />} />
     <Route path="privacy" element={<PrivacyPage />} />
-    <Route path="dunnage-bags" element={<DunnageBagProduct />} />
+    <Route path="dunnage-bags" element={<Navigate to="../dunnage-bag" replace />} />
   </>
 );
 

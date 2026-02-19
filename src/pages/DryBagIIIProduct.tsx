@@ -11,11 +11,17 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import productDrybagIII from "@/assets/product-drybag-iii.webp";
 
 const DryBagIIIProduct = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.drybagIII.title"), t("meta.drybagIII.description"), { ogImage: productDrybagIII });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("productPage.products"), path: `/${language}/products` },
+    { name: "DRY-BAG III", path: `/${language}/drybag-iii` },
+  ]);
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -24,6 +30,14 @@ const DryBagIIIProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDrybagIII}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    category: "Industrial Desiccants",
+    sku: "DB-III",
+    offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/drybag-iii` },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Active Material", value: "Calcium Chloride + Bentonite Clay" },
+      { "@type": "PropertyValue", name: "Absorption Capacity", value: "Up to 280% of its weight" },
+      { "@type": "PropertyValue", name: "Protection Duration", value: "Up to 90 days" },
+    ],
   });
   const specifications = [
     { label: t("drybagIII.spec.material"), value: t("drybagIII.spec.materialValue") },
