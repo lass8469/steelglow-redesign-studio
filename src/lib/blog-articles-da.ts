@@ -5,6 +5,7 @@ import blogDatalogger from "@/assets/blog-datalogger.webp";
 import blogAgricultureFeed from "@/assets/blog-agriculture-feed.webp";
 import blogMoldGrowth from "@/assets/blog-mold-growth.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
+import productDrybagI from "@/assets/product-drybag-i.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -1117,6 +1118,7 @@ export const articlesDa: Record<string, Article> = {
     category: "Guide",
     heroImage: productSilicaGel,
     author: "DESICCANT Teknisk Team",
+    canonicalPath: "/silica",
 
     sections: [
       {
@@ -1373,6 +1375,204 @@ export const articlesDa: Record<string, Article> = {
       description: "Desiccant.com leverer silica gel tørremiddelposer i størrelser fra 1g til 25g, pakket i støvfri Tyvek® til e-handel, elektronik, medicin og fødevarer.",
       buttonText: "Se silica gel tørremiddel",
       buttonLink: "/silica",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: DRY BAG I — Lertørremiddel Guide
+  // ------------------------------------------------------------
+  "drybag-i-clay-desiccant-guide": {
+    title: "Den originale DRY BAG I: Hvorfor Danmarks lertørremiddel er guldstandarden for fugtbeskyttelse i containere",
+    excerpt: "Oplev hvad der gør DRY BAG I anderledes — fra Moclay-formlen og 80 % absorptionskapacitet til 90 dages fugtbeskyttelse. Den komplette guide til tørremiddelposer til containerforsendelse.",
+    date: "2025-02-21",
+    readTime: "12 min læsning",
+    category: "Guide",
+    heroImage: productDrybagI,
+    author: "DESICCANT Teknisk Team",
+    canonicalPath: "/drybag-i",
+
+    sections: [
+      {
+        type: "text",
+        content: "Fugt er en af de mest destruktive og undervurderede kræfter i global shipping. Fra korroderede metaldele til skimmelbelagte fødevarer, fra løsnede etiketter til sammenklumpet pulver — fragtskader fra containerregn koster eksportører milliarder hvert år. Og dog har løsningen eksisteret siden 1979, håndlavet i Danmark og forfinet over fire årtier til det, der nu bredt betragtes som det mest effektive og bæredygtige tørremiddel til containere på markedet: den originale DRY BAG I.",
+      },
+      {
+        type: "text",
+        content: "Denne artikel udforsker, hvad der gør DRY BAG I anderledes, hvordan det virker, hvilke industrier der er mest afhængige af det, og hvorfor Moclay-formlen fortsat overgår alternativer.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvad er DRY BAG I?",
+      },
+      {
+        type: "text",
+        content: "DRY BAG I er en håndlavet fugtpose af ler, designet specifikt til fugtkontrol i skibscontainere og industriel emballage. Den produceres af DESICCANT A/S i Danmark og distribueres gennem desiccant.com, som er den primære kanal for bulk- og erhvervsordrer verden over.",
+      },
+      {
+        type: "text",
+        content: "Det, der adskiller den fra konkurrerende tørremidler på markedet, er kernematerialet: Moclay — en naturligt forekommende, lokalt indvundet dansk ler med exceptionelle hygroskopiske egenskaber. Kombineret med en åndbar non-woven stofpose og en integreret ophængningskrog er resultatet et produkt, der er praktisk, kraftfuldt og specialbygget til kravene ved langdistance containerforsendelse.",
+      },
+      {
+        type: "text",
+        content: "Hver pose er syet i hånden på et produktionsanlæg i Danmark — delvist af frivillige med fysiske eller mentale handicap ved et værested i Nordaarhus. Dette er ikke en marketinghistorie. Det er en ægte del af produktets identitet og har været det i over 20 år.",
+      },
+
+      {
+        type: "heading",
+        content: "Videnskaben bag Moclay: Hvorfor ler er vigtigt",
+      },
+      {
+        type: "text",
+        content: "Ikke alle tørremidler er lige gode. De mest anvendte materialer i industrien er silica gel, calciumchlorid og forskellige lerforbindelser. Hver har sin rolle, men til containerforsendelse — hvor temperaturudsving får fugt til at kondensere på indervæggene i det, der er kendt som containerregn — har lertørremidler en markant fordel.",
+      },
+      {
+        type: "subheading",
+        content: "Moclay-sammensætning",
+      },
+      {
+        type: "text",
+        content: "Moclay er en montmorillonit-rig ler fra Jylland i Danmark. Dens lagdelte mineralstruktur giver et højt overfladeareal i forhold til massen, hvilket gør det muligt at indfange og holde vanddamp effektivt uden at frigive væske. Dette er afgørende: et tørremiddel, der når mætning og begynder at dryppe, skaber sit eget fugtproblem. DRY BAG I er designet til at forblive drypfri selv ved fuld mætning.",
+      },
+      {
+        type: "subheading",
+        content: "Absorptionskapacitet",
+      },
+      {
+        type: "text",
+        content: "DRY BAG I's absorptionskapacitet er op til 80 % af sin egen vægt i fugt — et tal der matcher og under langvarige transitforhold overgår mange konkurrerende produkter. Vigtigere er det, at denne kapacitet opretholdes over tid med fugtbeskyttelse i op til 90 dage, hvilket dækker den fulde varighed af de fleste langdistance oceanforsendelser.",
+      },
+      {
+        type: "callout",
+        title: "Forlænget beskyttelsesvindue",
+        content: "Moclay-formlen forlænger det effektive absorptionsvindue med ca. 30 % længere end standard leralternativer, hvilket giver meningsfuld dækning for transoceaniske ruter, som standard tørremidler ikke pålideligt kan betjene.",
+      },
+
+      {
+        type: "heading",
+        content: "Containerregn: Forståelse af det problem DRY BAG I løser",
+      },
+      {
+        type: "text",
+        content: "Når en container lastes og forsegles, bærer luften indeni et vist fugtighedsniveau. Når containeren rejser — gennem varme, fugtige havne, kold havluft, temperaturudsving mellem dag og nat — svinger dugpunktet for luften inde i containeren. Når den indre temperatur falder under dugpunktet, kondenserer fugt på vægge, loft og alle køligere overflader. Dette er containerregn.",
+      },
+      {
+        type: "list",
+        items: [
+          "Fødevarer og landbrugsprodukter: Fugt accelererer skimmelvækst, forårsager sammenklumpning af pulvere, blødgør emballage og kan gøre hele forsendelser usælgelige.",
+          "Elektronik: Kondensering forårsager kortslutninger, oxidering af kontakter og komponentsvigt — selv forseglet emballage giver begrænset fugtbeskyttelse.",
+          "Industrivarer: Metaldele korroderer, træpaller svulmer, papkasser kollapser og klæbeetiketter løsner — med konsekvenser for fragtskade og sporbarhed.",
+        ],
+      },
+      {
+        type: "text",
+        content: "DRY BAG I adresserer alt dette ved at opretholde en lavere gennemsnitlig relativ fugtighed inde i containeren gennem hele rejsen. Ved at absorbere overskydende fugt, før den kan kondensere, forhindrer det containerregn i at dannes.",
+      },
+
+      {
+        type: "heading",
+        content: "Sådan bruges DRY BAG I i en skibscontainer",
+      },
+      {
+        type: "text",
+        content: "DRY BAG I er designet til enkel anvendelse. Hver fugtpose har en integreret krog i toppen, der hænges direkte på ophængningsøjerne i de øvre hjørner af standard ISO-skibscontainere. Ingen værktøj, klæbemidler eller installationstid ud over få sekunder per pose.",
+      },
+      {
+        type: "text",
+        content: "Poserne pakkes parvis, hvilket afspejler det typiske workflow med at hænge to poser op samtidig. Antallet af tørremiddelposer, der er nødvendige, afhænger af godsets art, den forventede fugtighed på forsendelsesruten, transitvarighed, og om lasten er hygroskopisk af natur.",
+      },
+
+      {
+        type: "heading",
+        content: "Industrier der stoler på DRY BAG I",
+      },
+      {
+        type: "text",
+        content: "DRY BAG I har været betroet på tværs af en bred vifte af sektorer siden introduktionen i 1979. FDA-godkendte materialer gør den sikker til brug sammen med følsomt gods, og dansk Fødevarestyrelses godkendelse gør den egnet til fødevarekontaktmiljøer.",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Mejeri- og fødevarepulvereksport — produkter som mælkepulver, valle og modermælkserstatning er yderst hygroskopiske og ekstremt følsomme over for fugt under containertransport.",
+          "Kaffe og kakao — råvarer hvor fugtkontrol direkte påvirker smag, aroma og holdbarhed over måneder af bulktransport.",
+          "Konserves — trods forseglet emballage sårbar over for etiketskader, rust på låg og sekundær emballageforringelse.",
+          "Foder og landbrugstilsætningsstoffer — hygroskopiske materialer der klumper, nedbrydes eller bliver usælgelige ved overdreven fugtighed.",
+          "Elektronik — kræver konsekvent lav fugtighed for at forhindre oxidering og kondenseringsskader under søfragt.",
+          "Antikorrosionsanvendelser — blanke metaldele, maskiner og værktøj, der sendes uden tilstrækkelig fugtbeskyttelse, ankommer ofte med overfladekorrosion.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "Bæredygtighed: miljøargumentet for DRY BAG I",
+      },
+      {
+        type: "text",
+        content: "Moclay-råmaterialet indvindes lokalt i Danmark, hvilket markant reducerer transportemissioner sammenlignet med produkter, der er afhængige af importerede mineraler. Produktionsanlægget drives med miljøansvar som eksplicit mål, understøttet af livscyklusvurderinger (LCA).",
+      },
+      {
+        type: "callout",
+        title: "Lavt CO₂-aftryk",
+        content: "Hver 2 kg DRY BAG genererer ca. 0,58 kg CO₂-ækvivalent — et af de laveste kulstofaftryk for noget tørremiddel i sin klasse. Efter brug kan DRY BAG I bortskaffes som almindeligt husholdningsaffald uden miljøfare. Den indeholder ingen DMF og ingen giftige stoffer.",
+      },
+      {
+        type: "text",
+        content: "Produktet er også genanvendeligt. Når det er mættet, kan leret genopvarmes for at drive den absorberede fugt ud, hvilket genopretter en betydelig del af den oprindelige absorptionskapacitet — en meningsfuld reduktion i forbrugsaffald.",
+      },
+
+      {
+        type: "heading",
+        content: "DRY BAG I vs. konkurrerende tørremidler",
+      },
+      {
+        type: "text",
+        content: "Tørremiddelmarkedet tilbyder et bredt udvalg af produkter. At forstå, hvor DRY BAG I placerer sig i sammenligning med almindelige alternativer, er afgørende for at vælge den rigtige løsning til fugtkontrol.",
+      },
+      {
+        type: "list",
+        items: [
+          "Silica gel bruges bredt til småskala eller lukkede emballageanvendelser. Det absorberer fugt effektivt ved lav fugtighed, men har relativt begrænset totalkapacitet og er mindre effektivt i containermiljøer med temperaturudsving. Se silica gel tørremiddel til in-box fugtbeskyttelse.",
+          "Calciumchlorid-tørremidler har exceptionelt høj absorptionskapacitet og er et stærkt valg til høj-fugtighedsmiljøer og tungere containeranvendelser.",
+          "Generiske lertørremidler er bredt tilgængelige til lav pris, men har typisk lavere absorptionskapacitet, kortere effektiv varighed og mindre streng kvalitetskontrol end DRY BAG I.",
+        ],
+      },
+      {
+        type: "text",
+        content: "DRY BAG I indtager en særlig position: lerbaseret for drypfri ydeevne, høj kapacitet for forlænget absorption, bæredygtigt produceret med sporbare materialer, FDA- og fødevaremyndighedsgodkendt, og understøttet af over 45 års brug i krævende containereksportmiljøer.",
+      },
+
+      {
+        type: "heading",
+        content: "Kvalitet, sporbarhed og tilpasning",
+      },
+      {
+        type: "text",
+        content: "DRY BAG I produceres under streng kvalitetskontrol i hvert trin, fra råvareindkøb til færdigt produkt. Sporbarhed gennem hele værdikæden opretholdes, hvilket er stadig vigtigere for eksportører under fødevaresikkerhedsregler, farmaceutiske standarder eller bæredygtighedsrapportering.",
+      },
+      {
+        type: "text",
+        content: "For virksomheder med branding- eller compliancekrav er DRY BAG I tilgængelig som white-label-produkt — produceret med dit eget logo og branding. Dette gør den velegnet til distributører, logistikudbydere og storskalaeksportører, der ønsker en premium, certificeret tørremiddelløsning under egen identitet.",
+      },
+
+      {
+        type: "heading",
+        content: "Konklusion",
+      },
+      {
+        type: "text",
+        content: "DRY BAG I er ikke et produkt, der behøver at konkurrere på pris alene. Dens kombination af høj absorptionskapacitet, forlænget varighed, drypfri ydeevne, fødevaremyndighedsgodkendelse, bæredygtig produktion og over fire årtiers dokumenteret brug i containereksport gør den til et oplagt valg for eksportører, der ikke har råd til fragtskader fra fugt.",
+      },
+      {
+        type: "text",
+        content: "Uanset om du sender mejeripulver fra Europa, kaffe fra Latinamerika, elektronik fra Asien eller dyrefoder verden over, er udfordringen med containerfugt den samme. Den originale DRY BAG I har løst den udfordring siden 1979.",
+      },
+    ],
+
+    cta: {
+      heading: "Beskyt dit gods med den originale DRY BAG I",
+      description: "Anmod om et tilbud på DRY BAG I lertørremiddelposer — betroet af eksportører verden over siden 1979 til fugtbeskyttelse i containere.",
+      buttonText: "Se DRY BAG I",
+      buttonLink: "/drybag-i",
     },
   },
 };
