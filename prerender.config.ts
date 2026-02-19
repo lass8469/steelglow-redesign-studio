@@ -44,6 +44,7 @@ const basePaths = [
   "/blog/mold-growth-timelines-80-rh",
   "/blog/silica-gel-desiccant-guide",
   "/blog/drybag-i-clay-desiccant-guide",
+  "/blog/dunnage-bags-container-loading-guide",
 ];
 
 /** All routes with language prefixes — used by prerender & vite */

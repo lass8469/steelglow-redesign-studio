@@ -6,6 +6,7 @@ import blogAgricultureFeed from "@/assets/blog-agriculture-feed.webp";
 import blogMoldGrowth from "@/assets/blog-mold-growth.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
 import productDrybagI from "@/assets/product-drybag-i.webp";
+import productDunnageBag from "@/assets/product-dunnage-bag.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -1573,6 +1574,170 @@ export const articlesDa: Record<string, Article> = {
       description: "Anmod om et tilbud på DRY BAG I lertørremiddelposer — betroet af eksportører verden over siden 1979 til fugtbeskyttelse i containere.",
       buttonText: "Se DRY BAG I",
       buttonLink: "/drybag-i",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: Luftpuder til Containerlastning
+  // ------------------------------------------------------------
+  "dunnage-bags-container-loading-guide": {
+    title: "Luftpuder til containerlastning: Sådan stopper du godsskift, før det koster dig dyrt",
+    excerpt: "Lær hvordan luftpuder (dunnage bags) forhindrer lastsikring-problemer i containere, lastbiler og togvogne. Dækker PP/PE vs. kraftpapir, dimensionering og kombination med tørremidler for komplet fragtsikkerhed.",
+    date: "2025-02-22",
+    readTime: "11 min læsning",
+    category: "Guide",
+    heroImage: productDunnageBag,
+    author: "DESICCANT Teknisk Team",
+    canonicalPath: "/dunnage-bag",
+
+    sections: [
+      {
+        type: "text",
+        content: "Fragtskade under transport er en af de mest frustrerende og undgåelige omkostninger i logistik. Produkter ankommer knuste, komprimerede eller kontaminerede — ikke på grund af noget, der skete ved afsendelse eller modtagelse, men på grund af det, der skete undervejs. Bevægelse inde i en container under vej-, jernbane- eller søtransport er en af de hyppigste årsager til fragtskader verden over.",
+      },
+      {
+        type: "text",
+        content: "Løsningen er ofte enklere end forventet. Luftpuder — oppustelige tomrumstasker placeret mellem og omkring gods — er et af de mest effektive, praktiske og omkostningseffektive værktøjer til lastsikring i enhver form for godstransport.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvad er en luftpude (dunnage bag)?",
+      },
+      {
+        type: "text",
+        content: "En luftpude er en oppustelig pose designet til at udfylde tomrummene mellem gods inde i en skibscontainer, lastbil eller togvogn. Når den er pustet op, udvider den sig og presser fast mod det omgivende gods, fastholder det på plads og forhindrer sideværts bevægelse under transport.",
+      },
+      {
+        type: "text",
+        content: "Begrebet \"dunnage\" har en lang historie inden for shipping — det refererede oprindeligt til løst materiale brugt til at beskytte gods mod fugt eller kontakt med skibsbunden. I dag repræsenterer oppustelige luftpuder den moderne standard for lastsikring: hurtigere at installere end surring, lettere end træafstivning og tilpasningsdygtige til næsten enhver lastkonfiguration.",
+      },
+
+      {
+        type: "heading",
+        content: "Problemet de løser: Hvorfor tomrum er farlige",
+      },
+      {
+        type: "text",
+        content: "Når en container eller lastbil lastes, er det sjældent muligt at pakke gods så tæt, at der ikke er plads mellem paller, kasser eller stablede varer. Selv et mellemrum på få centimeter tillader gods at forskyde sig, når køretøjet accelererer, bremser, drejer eller rammer ujævnt underlag.",
+      },
+      {
+        type: "callout",
+        title: "De reelle omkostninger ved godsskift",
+        content: "Knust emballage, ødelagte produkter, kontamineret gods, fejlede kvalitetsinspektioner, kundeklager, forsikringskrav og de logistiske omkostninger ved returneringer — alt sammen konsekvenser af et problem, der kunne have været løst ved lastning med de rigtige luftpuder.",
+      },
+
+      {
+        type: "heading",
+        content: "Sådan fungerer luftpuder",
+      },
+      {
+        type: "text",
+        content: "Før containerdørene lukkes, placeres luftpuder i tomrummene mellem gods — vandret mellem stablede paller, lodret mellem gods og containervægge, eller i ethvert mellemrum, hvor bevægelse kan opstå. De pustes derefter op med en standard luftkompressor eller håndpumpe gennem en integreret ventil.",
+      },
+      {
+        type: "text",
+        content: "Oppustningstrykket er justerbart: for lidt, og puden giver ikke tilstrækkelig afstivning; for meget, og den risikerer at beskadige godset. Når de er pustet op, holder luftpuderne trykket gennem hele rejsen og opretholder en fast og konsistent afstivning indtil containeren åbnes.",
+      },
+
+      {
+        type: "heading",
+        content: "Typer af luftpuder: PP/PE-vævet vs. kraftpapir",
+      },
+      {
+        type: "subheading",
+        content: "PP/PE-vævede luftpuder",
+      },
+      {
+        type: "text",
+        content: "Fremstillet af vævet polypropylen med en polyethylen-indre blære tilbyder disse luftpuder exceptionel rivestyrke, punkteringsmodstand og fugtbestandighed. Velegnede til tungt gods og krævende miljøer, og ofte genanvendelige ved omhyggelig håndtering.",
+      },
+      {
+        type: "subheading",
+        content: "Kraftpapir-luftpuder",
+      },
+      {
+        type: "text",
+        content: "Med en højstyrke kraftpapir-yderskal lamineret med en polyethylen-indre blære er kraftpapir-luftpuder en lettere og mere økonomisk mulighed. De er fuldt genanvendelige efter brug, hvilket stemmer overens med stadig strengere krav til affald og bæredygtighed.",
+      },
+
+      {
+        type: "heading",
+        content: "Valg af den rigtige størrelse luftpude",
+      },
+      {
+        type: "text",
+        content: "Den oppustede luftpude skal udfylde tomrummet tæt med passende tryk — hverken strakt til grænsen eller delvist fyldt. For containere med flere tomrum af forskellige størrelser kan det være nødvendigt at bruge luftpuder i forskellige dimensioner. Desiccant.com tilbyder et bredt udvalg af størrelser specifikt til dette formål.",
+      },
+
+      {
+        type: "heading",
+        content: "Anvendelser: vej-, jernbane- og søfragt",
+      },
+      {
+        type: "list",
+        items: [
+          "Vejtransport: Hurtig acceleration, bremsning, svingkræfter og vejoverfladens vibrationer bidrager alle til godsbevægelse. Luftpuder placeret mellem paller eliminerer effektivt sideværts forskydning.",
+          "Jernbanefragt: Togvogne oplever betydelige langsgående stød under kobling og bremsning. Luftpuder placeret mellem gods og endvægge absorberer og modstår disse kræfter.",
+          "Søfragt: Containerskibe udsætter gods for kontinuerlig bevægelse i flere akser over uger. Korrekt oppustede luftpuder i alle væsentlige tomrum er standardpraksis for lastsikring.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "Kombination af luftpuder med andre godsbeskyttelsesløsninger",
+      },
+      {
+        type: "text",
+        content: "Luftpuder adresserer én specifik årsag til fragtskade: bevægelse pga. tomrum. For containerforsendelser, hvor fugt også er et problem, kan kombination af luftpuder med tørremidler som DRY BAG I adressere både fysisk bevægelse og fugtskader i én arbejdsgang ved lastning.",
+      },
+      {
+        type: "text",
+        content: "Kantbeskyttere, antiskrid-ark og surringssystemer kan også bruges sammen med luftpuder, hvor godstype eller transitforhold kræver yderligere fugtbeskyttelse og lastsikring ved specifikke punkter.",
+      },
+
+      {
+        type: "heading",
+        content: "Bæredygtighedsovervejelser",
+      },
+      {
+        type: "text",
+        content: "Kraftpapir-luftpuder er genanvendelige via standard papirgenbrugstrømme. PP/PE-vævede luftpuder er genanvendelige som plast og kan genbruges over flere forsendelser. En genanvendelig vævet luftpude, der bruges ti eller tyve gange, har et markant lavere miljøaftryk per brug end ethvert engångsalternativ.",
+      },
+
+      {
+        type: "heading",
+        content: "Praktiske tips til effektiv brug af luftpuder",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Vurder alle tomrum før oppustning. Gennemgå den lastede container og identificer hvert mellemrum, der er stort nok til at tillade bevægelse.",
+          "Pust aldrig luftpuder op mod containerdøre eller ikke-stive overflader. De skal altid pustes op mod fast gods eller stive containervægge.",
+          "Brug det korrekte oppustningstryk for godsvægt og tomrumsstørrelse. Under-oppustede luftpuder giver ikke tilstrækkelig afstivning; over-oppustede risikerer at sprænge eller beskadige gods.",
+          "Opbevar ubrugte luftpuder fladt og tørt. Vævede luftpuder til genbrug bør inspiceres før hver brug.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "Konklusion",
+      },
+      {
+        type: "text",
+        content: "Fragtskade fra godsskift er et forudsigeligt og forebyggeligt problem. Luftpuder tilbyder en af de mest tidseffektive, omkostningseffektive og alsidige løsninger til lastsikring — hurtige at installere, tilpasningsdygtige til enhver transportform og tilgængelige i materialevalg, der opfylder både ydeevne- og bæredygtighedsmål.",
+      },
+      {
+        type: "text",
+        content: "Uanset om du fylder tomrum i en 40-fods container på vej over Stillehavet, afstiver paller i en vejfragttrailer eller sikrer gods i en togvogn — den rigtige luftpude eliminerer risikoen, før den bliver et krav.",
+      },
+    ],
+
+    cta: {
+      heading: "Beskyt dit gods mod forskydningsskader",
+      description: "Desiccant.com leverer luftpuder i PP/PE-vævet og kraftpapir i et bredt udvalg af størrelser til vej-, jernbane- og søfragt.",
+      buttonText: "Se luftpuder",
+      buttonLink: "/dunnage-bag",
     },
   },
 };
