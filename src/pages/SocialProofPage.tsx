@@ -169,11 +169,11 @@ const SocialProofPage = () => {
                 {/* Reviewer Info */}
                 <div className="flex items-center gap-4">
                   {review.image ? (
-                    <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                    <div className="w-28 h-28 rounded-full overflow-hidden flex-shrink-0">
                       <img src={review.image} alt={review.name} className="w-full h-full object-cover object-top" />
                     </div>
                   ) : (
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                    <div className="w-28 h-28 bg-primary/10 rounded-full flex items-center justify-center">
                       <span className="text-primary font-semibold text-xl">
                         {review.name.charAt(0)}
                       </span>
