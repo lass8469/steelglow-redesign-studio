@@ -11,6 +11,7 @@ import productAntislip from "@/assets/product-antislip.webp";
 import productStabustrap from "@/assets/product-stabustrap.webp";
 import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
 import blogContainerDesiccantGuide from "@/assets/blog-container-desiccant-guide.webp";
+import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -2766,6 +2767,197 @@ export const articlesDa: Record<string, Article> = {
     cta: {
       heading: "Brug for hjælp til at vælge det rigtige containertørremiddel?",
       description: "Vores tekniske team kan anbefale den rigtige tørremiddeltype, mængde og placeringsstrategi baseret på dit gods, din rute og containerforhold. Kontakt os for en skræddersyet anbefaling.",
+      buttonText: "Kontakt vores team",
+      buttonLink: "/contact",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: Molekylsigte — Hvorfor porestørrelse er afgørende
+  // ------------------------------------------------------------
+  "molecular-sieve-pore-size-guide": {
+    title: "Molekylsigte: Hvorfor porestørrelse er afgørende",
+    excerpt: "Molekylsigter arbejder på molekylært niveau — de udvælger fysisk, hvilke molekyler der må trænge ind i deres struktur. Den selektivitet bestemmes næsten udelukkende af én variabel: porestørrelse.",
+    date: "2025-02-28",
+    readTime: "18 min læsetid",
+    category: "Teknisk",
+    heroImage: productMolecularSieve,
+    author: "DESICCANT Technical Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "Molekylsigter er blandt de mest præcist konstruerede tørremiddelmaterialer, der findes. I modsætning til silikagel eller calciumchlorid, som absorberer fugt vilkårligt fra den omgivende atmosfære, arbejder molekylsigter på molekylært niveau — de udvælger fysisk, hvilke molekyler der får lov til at trænge ind i deres struktur, og hvilke der afvises. Den selektivitet bestemmes næsten udelukkende af én variabel: porestørrelse.",
+      },
+      {
+        type: "text",
+        content: "At forstå porestørrelse er ikke blot en akademisk øvelse. Det er forskellen mellem en molekylsigte, der løser dit tørrings- eller separationsproblem, og en der ikke virker — eller endnu værre, aktivt forstyrrer din proces. Uanset om du tørrer et opløsningsmiddel, renser en gasstrøm eller beskytter et farmaceutisk produkt, kan valget af den forkerte porestørrelse gøre et ellers fremragende materiale fuldstændig ineffektivt.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvad er en molekylsigte?",
+      },
+      {
+        type: "text",
+        content: "En molekylsigte er et krystallinsk aluminosilikatmateriale — en zeolit — med en usædvanligt ensartet indre porestruktur. Materialet er gennemhullet med millioner af bittesmå hulrum og kanaler, hver med en præcist defineret åbning målt i ångström (Å), hvor en ångström svarer til en ti-milliardtedel af en meter.",
+      },
+      {
+        type: "text",
+        content: "Når et molekyle møder en molekylsigte, sker en af to ting: det er enten lille nok til at passere gennem poreåbningen og blive fanget inde, eller det er for stort og springer simpelthen af overfladen. Dette er den \"sigte\"-virkning, der giver materialet sit navn. Det er ikke en kemisk reaktion, og det er ikke en fysisk adsorption drevet af polaritet eller overfladeaffinitet alene — det er bogstaveligt talt et størrelsesbaseret filter, der opererer på skalaen af individuelle atomer.",
+      },
+      {
+        type: "callout",
+        title: "Ekstraordinært overfladeareal",
+        content: "Det interne overfladeareal af en molekylsigte overstiger ofte 700 kvadratmeter per gram materiale. Hvert af disse kvadratmeter er tilgængeligt for adsorption, hvilket er grunden til, at molekylsigter kan holde imponerende mængder fugt eller andre målmolekyler i forhold til deres masse.",
+      },
+
+      {
+        type: "heading",
+        content: "Sådan defineres porestørrelse",
+      },
+      {
+        type: "text",
+        content: "Molekylsigtens porestørrelser klassificeres efter type — mest almindeligt 3A, 4A, 5A og 13X — hvor tallet refererer til den effektive porediameter i ångström. Bogstavet angiver den kationtype, der modificerer basiszeolitstrukturen for at opnå den specifikke åbning.",
+      },
+      {
+        type: "text",
+        content: "Dette klassifikationssystem er vigtigt, fordi det giver dig en direkte, praktisk måde at matche sigten med de molekyler, du vil fange eller udelukke. Poreåbningen fungerer som en hård fysisk tærskel: molekyler med en kinetisk diameter mindre end porestørrelsen passerer igennem; molekyler større end porestørrelsen gør det ikke.",
+      },
+
+      {
+        type: "heading",
+        content: "De fire hovedtyper og hvad de gør",
+      },
+
+      {
+        type: "subheading",
+        content: "3A — Den strammeste sigte",
+      },
+      {
+        type: "text",
+        content: "Med en porediameter på 3 ångström er 3A-molekylsigten den mest selektive, der er tilgængelig i standard industriel og laboratoriebrug. Ved denne størrelse er poren stor nok til at optage vandmolekyler (kinetisk diameter ca. 2,6 Å), men udelukker næsten alt andet, herunder ethanol, methanol og de fleste kulbrinter.",
+      },
+      {
+        type: "text",
+        content: "Dette gør 3A til det foretrukne materiale, hvor du har brug for at fjerne vand fra et system uden at sigten interagerer med andre komponenter. Den bruges i vid udstrækning til tørring af polære væsker som ethanol, methanol og andre opløsningsmidler, der ville blive co-adsorberet af en mindre selektiv sigte.",
+      },
+
+      {
+        type: "subheading",
+        content: "4A — Arbejdshesten til generelle formål",
+      },
+      {
+        type: "text",
+        content: "4A-molekylsigten har en porediameter på 4 ångström, hvilket åbner op for et betydeligt bredere udvalg af adsorberbare molekyler. Ved denne størrelse optager sigten vand, kuldioxid, svovldioxid, hydrogensulfid, ethylen og propylen, mens den stadig udelukker større molekyler som propan og tungere kulbrinter.",
+      },
+      {
+        type: "text",
+        content: "4A er den mest udbredte molekylsigtetype på tværs af industrien. Den er standardmaterialet til statiske tørremiddelapplikationer — tørremiddelposer i farmaceutisk emballage, elektronichemballage og ethvert forseglet miljø, hvor fugtstyring er påkrævet over en længere periode.",
+      },
+      {
+        type: "callout",
+        title: "Industristandard",
+        content: "Når nogen refererer generisk til \"molekylsigte\" uden at specificere en type, henviser de oftest til 4A-varianten.",
+      },
+
+      {
+        type: "subheading",
+        content: "5A — Separationsspecialisten",
+      },
+      {
+        type: "text",
+        content: "Ved 5 ångström optager 5A-molekylsigten et væsentligt bredere udvalg af molekyler, herunder normale (retlinede) paraffiner og olefiner, mens forgrenede og cykliske molekyler udelukkes. Denne størrelsesgræns gør 5A unikt egnet til separationsprocesser frem for simpel tørring.",
+      },
+      {
+        type: "text",
+        content: "5A-sigten er grundlaget for tryksvingsadsorptionsprocesser (PSA), der bruges til at producere kvælstof og ilt med høj renhed fra luft, og til at separere normale paraffiner fra iso-paraffiner i olieraffinering.",
+      },
+
+      {
+        type: "subheading",
+        content: "13X — Den største standardsigte",
+      },
+      {
+        type: "text",
+        content: "13X-molekylsigten har den største poreåbning af de almindelige typer, på ca. 10 ångström. Ved denne diameter kan sigten optage molekyler op til ca. 8 ångström i kinetisk diameter og fanger en bred vifte af forbindelser, herunder aromater og større ringstrukturer.",
+      },
+      {
+        type: "text",
+        content: "13X bruges almindeligvis til samtidig fjernelse af vand og kuldioxid fra gasstrømme, et kritisk trin i luftseparationsanlæg før kryogen behandling. Den bruges også til oprensning af flydende kulbrinter og generel gastørring.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvorfor det er dyrt at vælge den forkerte porestørrelse",
+      },
+      {
+        type: "text",
+        content: "Konsekvenserne af at vælge den forkerte porestørrelse spænder fra let underydelse til fuldstændig procesfejl. Er poren for lille, kan målmolekylerne ikke komme ind, og sigten gør intet nyttigt. Er poren for stor, mister sigten selektivitet og kan co-adsorbere molekyler, du ikke ønsker at fjerne.",
+      },
+      {
+        type: "callout",
+        title: "Farmaceutiske og fødevaregodkendte applikationer",
+        content: "I regulerede industrier er valg af porestørrelse kritisk af sikkerhedsgrunde. En molekylsigte i kontakt med et aktivt stof må ikke adsorbere det stof — og kun en korrekt specificeret porestørrelse garanterer den udelukkelse.",
+      },
+
+      {
+        type: "heading",
+        content: "Porestørrelse og regenerering",
+      },
+      {
+        type: "text",
+        content: "Molekylsigter regenereres ved at tilføre varme, reducere tryk eller en kombination af begge dele. Porestørrelse påvirker, hvor let regenerering kan opnås. Mindre porestørrelser skaber en stærkere energetisk binding, hvilket kræver højere regenereringstemperaturer.",
+      },
+      {
+        type: "text",
+        content: "I praksis ligger regenereringstemperaturer for standard molekylsigter typisk i intervallet 200–350°C, men det præcise mål afhænger af poretypen, adsorbatet og det krævede restfugtniveau efter regenerering.",
+      },
+
+      {
+        type: "heading",
+        content: "Porestørrelse vs. partikelstørrelse: En vigtig forskel",
+      },
+      {
+        type: "text",
+        content: "En almindelig kilde til forvirring er forskellen mellem porestørrelse og partikelstørrelse. Porestørrelse refererer til den interne kanaldiameter — den molekylære sigtningstærskel. Partikelstørrelse refererer til de fysiske dimensioner af sigtekuglerne eller -pellets — typisk fra 1,5 mm til 8 mm i diameter.",
+      },
+      {
+        type: "text",
+        content: "Når du specificerer en molekylsigte, skal du typisk definere begge dele: typen (som sætter porestørrelsen) og formfaktoren (som sætter partikelstørrelse og form — kugle, pellet eller pulver).",
+      },
+
+      {
+        type: "heading",
+        content: "Valg af den rigtige porestørrelse: En praktisk ramme",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Identificer dit målmolekyle og dets kinetiske diameter — dette bestemmer den mindste krævede porestørrelse.",
+          "Vurder selektivitetsbehov — er der andre molekyler i din processtrøm, der ikke må adsorberes? Hvis ja, vælg den mindste porestørrelse, der stadig optager dit mål.",
+          "Evaluer kapacitetskrav — en mere selektiv sigte dedikerer hele sit interne overfladeareal til et snævrere udvalg af molekyler.",
+          "Overvej regenerering — hvis sigten bruges i en cyklisk proces, skal den krævede temperatur for din valgte poretype være kompatibel med dit udstyr og energibudget.",
+        ],
+      },
+      {
+        type: "text",
+        content: "I de fleste fugtbekæmpelsesapplikationer — emballagetørremidler, opløsningsmiddeltørring, gasdehydrering — vil valget stå mellem 3A eller 4A. Til gasseparation og -oprensning bliver 5A og 13X relevante. Er du i tvivl, så kontakt en tørremiddelspecialist med specifikationerne for din proces.",
+      },
+
+      {
+        type: "heading",
+        content: "Opsummering",
+      },
+      {
+        type: "text",
+        content: "Molekylsigter er ikke et standardprodukt. Porestørrelsen — hvad enten det er 3A, 4A, 5A eller 13X — definerer, hvad materialet fanger, og hvad det ignorerer, og den selektivitet er hele grundlaget for teknologiens værdi. At vælge den rigtige porestørrelse kræver forståelse af dit målmolekyle, din processtrøm og dine regenereringsbegrænsninger.",
+      },
+    ],
+
+    cta: {
+      heading: "Brug for hjælp til at vælge den rigtige molekylsigte?",
+      description: "Vores tekniske team kan anbefale den optimale porestørrelse og formfaktor til din specifikke applikation — uanset om det er opløsningsmiddeltørring, gasseparation eller farmaceutisk emballage.",
       buttonText: "Kontakt vores team",
       buttonLink: "/contact",
     },

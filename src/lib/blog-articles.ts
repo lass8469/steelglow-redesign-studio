@@ -11,6 +11,7 @@ import productAntislip from "@/assets/product-antislip.webp";
 import productStabustrap from "@/assets/product-stabustrap.webp";
 import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
 import blogContainerDesiccantGuide from "@/assets/blog-container-desiccant-guide.webp";
+import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -2948,6 +2949,229 @@ export const articles: Record<string, Article> = {
     cta: {
       heading: "Need help choosing the right container desiccant?",
       description: "Our technical team can recommend the right desiccant type, quantity, and placement strategy based on your cargo, route, and container conditions. Contact us for a tailored recommendation.",
+      buttonText: "Contact our team",
+      buttonLink: "/contact",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: Molecular Sieve — Why Pore Size Matters
+  // ------------------------------------------------------------
+  "molecular-sieve-pore-size-guide": {
+    title: "Molecular Sieve: Why Pore Size Matters",
+    excerpt: "Molecular sieves work at the molecular level — physically selecting which molecules enter their structure. That selectivity is determined almost entirely by one variable: pore size.",
+    date: "2025-02-28",
+    readTime: "18 min read",
+    category: "Technical",
+    heroImage: productMolecularSieve,
+    author: "DESICCANT Technical Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "Molecular sieves are among the most precisely engineered desiccant materials in existence. Unlike silica gel or calcium chloride, which absorb moisture indiscriminately from the surrounding atmosphere, molecular sieves work at the molecular level — physically selecting which molecules are allowed to enter their structure and which are turned away. That selectivity is determined almost entirely by one variable: pore size.",
+      },
+      {
+        type: "text",
+        content: "Understanding pore size isn't just an academic exercise. It's the difference between a molecular sieve that solves your drying or separation problem and one that fails to perform — or worse, actively interferes with your process. Whether you're drying a solvent, purifying a gas stream, or protecting a pharmaceutical product, choosing the wrong pore size can render an otherwise excellent material completely ineffective.",
+      },
+
+      {
+        type: "heading",
+        content: "What Is a Molecular Sieve?",
+      },
+      {
+        type: "text",
+        content: "A molecular sieve is a crystalline aluminosilicate material — a zeolite — with an extraordinarily uniform internal pore structure. The material is riddled with millions of tiny cavities and channels, each with a precisely defined opening measured in angstroms (Å), where one angstrom equals one ten-billionth of a metre.",
+      },
+      {
+        type: "text",
+        content: "When a molecule encounters a molecular sieve, one of two things happens: it is either small enough to pass through the pore opening and become trapped inside, or it is too large and simply bounces off the surface. This is the \"sieving\" action that gives the material its name. It isn't a chemical reaction, and it isn't a physical adsorption driven by polarity or surface affinity alone — it is literally a size-based filter operating at the scale of individual atoms.",
+      },
+      {
+        type: "callout",
+        title: "Extraordinary surface area",
+        content: "The internal surface area of a molecular sieve often exceeds 700 square metres per gram of material. Every one of those square metres is available for adsorption, which is why molecular sieves can hold impressive quantities of moisture or other target molecules relative to their mass.",
+      },
+
+      {
+        type: "heading",
+        content: "How Pore Size Is Defined",
+      },
+      {
+        type: "text",
+        content: "Molecular sieve pore sizes are classified by type — most commonly 3A, 4A, 5A, and 13X — where the number refers to the effective pore diameter in angstroms. The letter indicates the cation type that modifies the base zeolite structure to achieve that specific opening.",
+      },
+      {
+        type: "text",
+        content: "This classification system matters because it gives you a direct, practical way to match the sieve to the molecules you want to capture or exclude. The pore opening acts as a hard physical threshold: molecules with a kinetic diameter smaller than the pore size pass through; molecules larger than the pore size do not.",
+      },
+
+      {
+        type: "heading",
+        content: "The Four Main Types and What They Do",
+      },
+
+      {
+        type: "subheading",
+        content: "3A — The Tightest Sieve",
+      },
+      {
+        type: "text",
+        content: "With a pore diameter of 3 angstroms, the 3A molecular sieve is the most selective available in standard industrial and laboratory use. At this size, the pore is large enough to admit water molecules (kinetic diameter approximately 2.6 Å) but excludes almost everything else, including ethanol, methanol, and most hydrocarbons.",
+      },
+      {
+        type: "text",
+        content: "This makes 3A the material of choice wherever you need to remove water from a system without the sieve interacting with other components. It is widely used for drying polar liquids such as ethanol, methanol, and other solvents that would be co-adsorbed by a less selective sieve. It is also the standard choice for drying cracked gas and other hydrocarbon streams, and is commonly used in the production of insulating glass units where long-term moisture control inside hermetically sealed glazing units is critical.",
+      },
+      {
+        type: "text",
+        content: "Because the 3A sieve essentially ignores everything larger than water, it does not compete for adsorption capacity by loading up with other molecules from the process stream. That selectivity preserves capacity for water and extends the useful working life of the material.",
+      },
+
+      {
+        type: "subheading",
+        content: "4A — The General-Purpose Workhorse",
+      },
+      {
+        type: "text",
+        content: "The 4A molecular sieve has a pore diameter of 4 angstroms, which opens up the range of adsorbable molecules considerably. At this size, the sieve admits water, carbon dioxide, sulphur dioxide, hydrogen sulphide, ethylene, and propylene, while still excluding larger molecules such as propane and heavier hydrocarbons.",
+      },
+      {
+        type: "text",
+        content: "The 4A is the most widely used molecular sieve type across industry. It is the standard material for static desiccant applications — desiccant sachets in pharmaceutical packaging, electronics packaging, and any sealed environment where moisture control is required over a long period without regeneration. It also serves as the baseline for many gas drying processes where water and a limited range of small gases need to be removed simultaneously.",
+      },
+      {
+        type: "callout",
+        title: "Industry default",
+        content: "When someone refers generically to \"molecular sieve\" without specifying a type, they are most often referring to the 4A variant.",
+      },
+
+      {
+        type: "subheading",
+        content: "5A — The Separation Specialist",
+      },
+      {
+        type: "text",
+        content: "At 5 angstroms, the 5A molecular sieve admits a significantly broader range of molecules, including normal (straight-chain) paraffins and olefins, while excluding branched-chain and cyclic molecules. This size threshold — the point at which branched hydrocarbons become too wide to enter — makes 5A uniquely suited to separation processes rather than simple drying.",
+      },
+      {
+        type: "text",
+        content: "The 5A sieve is the foundation of pressure swing adsorption (PSA) processes used to produce high-purity nitrogen and oxygen from air, and to separate normal paraffins from iso-paraffins in petroleum refining. It is also used for the removal of mercaptans and other sulphur compounds from natural gas streams.",
+      },
+      {
+        type: "text",
+        content: "In these applications, the pore size isn't just determining what gets adsorbed and what doesn't — it is actively differentiating between molecules of similar chemistry but different geometry, enabling separations that would be impractical or impossible by other means.",
+      },
+
+      {
+        type: "subheading",
+        content: "13X — The Largest Standard Sieve",
+      },
+      {
+        type: "text",
+        content: "The 13X molecular sieve has the largest pore opening of the common types, at approximately 10 angstroms. At this diameter, the sieve can admit molecules up to about 8 angstroms in kinetic diameter, capturing a wide range of compounds including aromatics, larger-ring structures, and bulkier hydrocarbon molecules.",
+      },
+      {
+        type: "text",
+        content: "The 13X is commonly used for the simultaneous removal of water and carbon dioxide from gas streams, a critical step in air separation plants before cryogenic processing. It is also used in the purification of liquid hydrocarbons, natural gas sweetening, and general gas drying where a wide adsorption range is desirable.",
+      },
+      {
+        type: "text",
+        content: "Because 13X admits a broader class of molecules than smaller sieve types, it is not the right choice where selectivity is important. However, where the goal is maximum capacity across a range of target molecules, or where the process stream contains larger molecules that must be captured, its wide pore opening is an advantage.",
+      },
+
+      {
+        type: "heading",
+        content: "Why Getting Pore Size Wrong Is Costly",
+      },
+      {
+        type: "text",
+        content: "The consequences of selecting the wrong pore size range from mild underperformance to complete process failure.",
+      },
+      {
+        type: "text",
+        content: "If the pore is too small, target molecules cannot enter and the sieve does nothing useful. A 3A sieve used where carbon dioxide removal is required will not capture CO₂ — the molecule is too large to enter. The sieve will absorb water efficiently and ignore everything else.",
+      },
+      {
+        type: "text",
+        content: "If the pore is too large, the sieve loses selectivity and may co-adsorb molecules you don't want to remove. This wastes adsorption capacity, shortens the regeneration cycle, and in solvent drying applications can mean that the sieve irreversibly adsorbs your product along with the water.",
+      },
+      {
+        type: "callout",
+        title: "Pharmaceutical and food-grade applications",
+        content: "In regulated industries, pore size selection is critical for safety reasons. A molecular sieve in contact with an active compound must not adsorb that compound — and only a correctly specified pore size guarantees that exclusion.",
+      },
+
+      {
+        type: "heading",
+        content: "Pore Size and Regeneration",
+      },
+      {
+        type: "text",
+        content: "Molecular sieves are regenerated — that is, the adsorbed molecules are driven out and the material is returned to its original capacity — by applying heat, reducing pressure, or a combination of both. Pore size affects how easily regeneration can be achieved.",
+      },
+      {
+        type: "text",
+        content: "Smaller pore sizes create a stronger energetic bond between the sieve and the adsorbed molecule. Water adsorbed in a 3A sieve, for example, requires higher regeneration temperatures than water adsorbed in a 13X sieve, because the tighter pore geometry means the adsorptive forces are stronger. This has direct implications for the energy cost and equipment design of any cyclic adsorption process.",
+      },
+      {
+        type: "text",
+        content: "In practice, regeneration temperatures for standard molecular sieves typically fall in the range of 200–350°C, but the precise target depends on the pore type, the adsorbate, and the required residual moisture level after regeneration.",
+      },
+
+      {
+        type: "heading",
+        content: "Pore Size vs. Particle Size: An Important Distinction",
+      },
+      {
+        type: "text",
+        content: "A common source of confusion is the difference between pore size and particle size. Pore size refers to the internal channel diameter — the molecular-level sieving threshold. Particle size refers to the physical dimensions of the sieve beads or pellets — typically ranging from 1.5mm to 8mm in diameter for industrial applications.",
+      },
+      {
+        type: "text",
+        content: "Particle size affects bed pressure drop, mass transfer rate, and the physical handling characteristics of the material. Pore size determines what the material will and won't adsorb. Both matter, but they are independent variables. A 4A molecular sieve is available in multiple particle sizes without any change to its 4-angstrom pore structure or adsorption selectivity.",
+      },
+      {
+        type: "text",
+        content: "When specifying a molecular sieve, you will typically need to define both: the type (which sets pore size) and the form factor (which sets particle size and shape — bead, pellet, or powder).",
+      },
+
+      {
+        type: "heading",
+        content: "Choosing the Right Pore Size: A Practical Framework",
+      },
+      {
+        type: "text",
+        content: "The starting point is always the target molecule. What are you trying to adsorb, and what kinetic diameter does it have? This single question narrows the pore size selection considerably.",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Identify your target molecule and its kinetic diameter — this determines the minimum pore size required.",
+          "Assess selectivity needs — are there other molecules in your process stream that must not be adsorbed? If yes, choose the smallest pore size that still admits your target.",
+          "Evaluate capacity requirements — a more selective sieve dedicates all its internal surface area to a narrower range of molecules, which can be an advantage or limitation depending on concentrations.",
+          "Consider regeneration — if the sieve will be used in a cyclic process, the temperature required for your chosen pore type must be compatible with your equipment and energy budget.",
+        ],
+      },
+      {
+        type: "text",
+        content: "In most moisture-control applications — packaging desiccants, solvent drying, gas dehydration — the choice will come down to 3A or 4A. For gas separation and purification, 5A and 13X become relevant. When in doubt, consult a desiccant specialist with the specifics of your process: feed composition, target outlet specification, temperature, pressure, and required cycle life.",
+      },
+
+      {
+        type: "heading",
+        content: "Summary",
+      },
+      {
+        type: "text",
+        content: "Molecular sieves are not a commodity product. The pore size — whether 3A, 4A, 5A, or 13X — defines what the material will capture and what it will ignore, and that selectivity is the entire basis of the technology's value. Choosing the right pore size requires understanding your target molecule, your process stream, and your regeneration constraints. Getting it right delivers precise, reliable performance. Getting it wrong means the sieve either does nothing useful or does too much — and in either case, the result is a process that fails to meet specification.",
+      },
+    ],
+
+    cta: {
+      heading: "Need help selecting the right molecular sieve?",
+      description: "Our technical team can recommend the optimal pore size and form factor for your specific application — whether it's solvent drying, gas separation, or pharmaceutical packaging.",
       buttonText: "Contact our team",
       buttonLink: "/contact",
     },
