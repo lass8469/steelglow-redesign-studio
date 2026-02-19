@@ -1412,7 +1412,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "DRY BAG I er en håndlavet fugtpose af ler, designet specifikt til fugtkontrol i skibscontainere og industriel emballage. Den produceres af DESICCANT A/S i Danmark og distribueres gennem desiccant.com, som er den primære kanal for bulk- og erhvervsordrer verden over.",
+        content: "DRY BAG I er en håndlavet fugtpose af ler, designet specifikt til fugtkontrol i skibscontainere og industriel emballage. Den produceres af DRY-BAG A/S i Danmark og distribueres gennem desiccant.com, som er den primære kanal for bulk- og erhvervsordrer verden over.",
       },
       {
         type: "text",
