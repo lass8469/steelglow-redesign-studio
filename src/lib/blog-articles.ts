@@ -6,6 +6,7 @@ import blogAgricultureFeed from "@/assets/blog-agriculture-feed.webp";
 import blogMoldGrowth from "@/assets/blog-mold-growth.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
 import productDrybagI from "@/assets/product-drybag-i.webp";
+import productDunnageBag from "@/assets/product-dunnage-bag.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -1710,6 +1711,191 @@ export const articles: Record<string, Article> = {
       description: "Request a quote for DRY BAG I clay desiccant bags — trusted by exporters worldwide since 1979 for container moisture protection.",
       buttonText: "View DRY BAG I",
       buttonLink: "/drybag-i",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: Dunnage Bags for Container Loading
+  // ------------------------------------------------------------
+  "dunnage-bags-container-loading-guide": {
+    title: "Dunnage Bags for Container Loading: How to Stop Cargo Shifting Before It Costs You",
+    excerpt: "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and how to combine them with desiccants for complete cargo protection.",
+    date: "2025-02-22",
+    readTime: "11 min read",
+    category: "Guide",
+    heroImage: productDunnageBag,
+    author: "DESICCANT Technical Team",
+    canonicalPath: "/dunnage-bag",
+
+    sections: [
+      {
+        type: "text",
+        content: "Cargo damage in transit is one of the most frustrating and avoidable costs in logistics. Products arrive broken, compressed, or contaminated — not because of anything that happened at origin or destination, but because of what happened in between. Movement inside a container during road, rail, or sea transport is a leading cause of freight claims worldwide.",
+      },
+      {
+        type: "text",
+        content: "The fix is often simpler than people expect. Dunnage bags — inflatable void-fill bags placed between and around cargo — are one of the most effective, practical, and cost-efficient tools available for stabilising loads in any mode of freight transport.",
+      },
+
+      {
+        type: "heading",
+        content: "What is a dunnage bag?",
+      },
+      {
+        type: "text",
+        content: "A dunnage bag is an inflatable bag designed to fill the void spaces between cargo inside a shipping container, truck, or railcar. Once inflated, the bag expands to press firmly against the surrounding cargo, bracing it in place and preventing lateral movement during transit.",
+      },
+      {
+        type: "text",
+        content: "The term \"dunnage\" itself has a long history in shipping — it originally referred to any loose material used to protect cargo from moisture or contact with the vessel floor. Today, inflatable dunnage bags represent the modern standard for load stabilisation: faster to deploy than strapping, lighter than timber bracing, and adaptable to almost any cargo configuration.",
+      },
+
+      {
+        type: "heading",
+        content: "The problem they solve: why void spaces are dangerous",
+      },
+      {
+        type: "text",
+        content: "When a container or truck is loaded, it is rarely possible to pack goods so tightly that no space remains between pallets, crates, or stacked items. Even a gap of a few centimetres allows cargo to shift when the vehicle accelerates, brakes, corners, or hits a rough surface.",
+      },
+      {
+        type: "text",
+        content: "That movement is cumulative and destructive. A pallet that shifts slightly on every corner of a long road journey can arrive with significant damage to the product, the packaging, or both. In sea freight, where containers are subject to the constant pitch and roll of ocean swells for days or weeks, even well-packed cargo can suffer if void spaces are left unfilled.",
+      },
+      {
+        type: "callout",
+        title: "The real cost of cargo shifting",
+        content: "Crushed packaging, broken products, contaminated goods, failed quality inspections, customer complaints, insurance claims, and the logistical cost of returns and replacements — all downstream effects of a problem that could have been addressed at the point of loading with the right dunnage bags.",
+      },
+
+      {
+        type: "heading",
+        content: "How dunnage bags work",
+      },
+      {
+        type: "text",
+        content: "Before the container doors are closed, dunnage bags are placed in the void spaces between cargo — horizontally between stacks of pallets, vertically between cargo and container walls, or in any gap where movement could occur. They are then inflated using a standard air compressor or hand pump through an integrated valve, expanding to fill the available space and applying even pressure to the surrounding cargo.",
+      },
+      {
+        type: "text",
+        content: "The inflation pressure is adjustable: too little and the bag does not provide sufficient bracing force; too much and the bag risks damaging the cargo through excessive pressure. Once inflated, the bags hold their pressure throughout the journey, maintaining a firm and consistent brace until the container is opened at destination.",
+      },
+
+      {
+        type: "heading",
+        content: "Types of dunnage bags: PP/PE woven vs. kraft paper",
+      },
+      {
+        type: "subheading",
+        content: "PP/PE woven dunnage bags",
+      },
+      {
+        type: "text",
+        content: "Made from woven polypropylene with a polyethylene inner bladder, these dunnage bags offer exceptional tear strength, puncture resistance, and moisture resistance. Well suited for heavy loads and demanding environments, polywoven bags are more durable than kraft paper alternatives and are often reusable if handled carefully. Their elasticity provides greater surface contact with cargo, translating to more even distribution of bracing force.",
+      },
+      {
+        type: "subheading",
+        content: "Kraft paper dunnage bags",
+      },
+      {
+        type: "text",
+        content: "Using a high-tensile kraft paper outer shell laminated with a polyethylene inner bladder, kraft paper dunnage bags are a lighter and more economical option. Widely used for less demanding loads and for shippers who prefer a more sustainable or recyclable single-use option. Kraft paper bags are entirely recyclable after use, aligning with increasingly strict waste and sustainability requirements.",
+      },
+      {
+        type: "text",
+        content: "Choosing between the two comes down primarily to the weight and nature of the cargo, the transit conditions, and whether reusability is a priority. Both types are available in a wide range of sizes to accommodate different void dimensions and container configurations.",
+      },
+
+      {
+        type: "heading",
+        content: "Choosing the right size dunnage bag",
+      },
+      {
+        type: "text",
+        content: "Matching bag size to void size is one of the most important factors in dunnage bag performance. The inflated bag should fill the void snugly with appropriate pressure — neither stretched to its limits nor partially filled. Most dunnage bags are available in standardised widths and lengths, and the correct size is determined by measuring the void space before loading begins.",
+      },
+      {
+        type: "text",
+        content: "For containers with multiple void spaces of different sizes — common in mixed cargo loads — it may be necessary to use bags of different dimensions across the same container. Desiccant.com offers a wide range of sizes specifically to accommodate this variability.",
+      },
+
+      {
+        type: "heading",
+        content: "Applications: road, rail, and sea freight",
+      },
+      {
+        type: "list",
+        items: [
+          "Road freight: Rapid acceleration, braking, cornering forces, and road surface vibration all contribute to cargo movement. Dunnage bags deployed between pallets in truck trailers effectively eliminate lateral shifting.",
+          "Rail freight: Train carriages experience significant longitudinal shocks during coupling and braking. Dunnage bags positioned between cargo and end walls absorb and resist these forces.",
+          "Sea freight: Container ships subject cargo to continuous motion in multiple axes over weeks. Filling all significant void spaces with properly inflated dunnage bags is standard practice for serious container exporters.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "Dunnage bags and transport safety",
+      },
+      {
+        type: "text",
+        content: "Beyond cargo damage, load stability in road freight has direct implications for road safety. Improperly secured loads can shift in ways that alter a vehicle's centre of gravity, affecting handling and braking. The use of appropriate void-fill and load-securing materials is increasingly a regulatory requirement across Europe and many other markets.",
+      },
+
+      {
+        type: "heading",
+        content: "Combining dunnage bags with other cargo protection solutions",
+      },
+      {
+        type: "text",
+        content: "Dunnage bags address one specific cause of cargo damage: movement due to void spaces. For container shipments where moisture is also a concern — covering a wide range of goods from food products to electronics to machinery — pairing dunnage bags with desiccants such as the DRY BAG I addresses both physical movement and humidity damage in a single loading workflow.",
+      },
+      {
+        type: "text",
+        content: "Edge protectors, anti-slip sheets, and strapping systems can also be used alongside dunnage bags where the cargo type or transit conditions call for additional protection. The goal is always the same: ensure that the goods arrive in exactly the condition they left.",
+      },
+
+      {
+        type: "heading",
+        content: "Sustainability considerations",
+      },
+      {
+        type: "text",
+        content: "Kraft paper dunnage bags are recyclable through standard paper recycling streams. Polywoven PP/PE bags are recyclable as plastics and, importantly, are reusable across multiple shipments. A reusable polywoven bag used ten or twenty times has a significantly lower per-use environmental footprint than any single-use alternative.",
+      },
+
+      {
+        type: "heading",
+        content: "Practical tips for using dunnage bags effectively",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Assess all void spaces before beginning inflation. Walk through the loaded container and identify every gap large enough to allow movement.",
+          "Never inflate bags against container doors or any non-rigid surface. Bags should always be inflated against firm cargo or rigid container walls.",
+          "Use the correct inflation pressure for the cargo weight and void size. Under-inflated bags don't provide adequate bracing; over-inflated bags risk bursting or damaging cargo.",
+          "Store unused bags flat and dry. Polywoven bags intended for reuse should be inspected before each use to confirm the valve and outer shell are undamaged.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "Conclusion",
+      },
+      {
+        type: "text",
+        content: "Cargo damage from load shifting is a predictable and preventable problem. Dunnage bags offer one of the most time-efficient, cost-effective, and versatile solutions available — quick to deploy, adaptable to any transport mode, and available in material options to suit both performance requirements and sustainability goals.",
+      },
+      {
+        type: "text",
+        content: "Whether you are filling voids in a 40-foot container heading across the Pacific, bracing pallets in a road freight trailer, or securing goods in a railcar, the right dunnage bag eliminates the risk before it becomes a claim.",
+      },
+    ],
+
+    cta: {
+      heading: "Protect your cargo from shifting damage",
+      description: "Desiccant.com supplies dunnage bags in PP/PE woven and kraft paper constructions across a wide range of sizes for road, rail, and sea freight.",
+      buttonText: "View dunnage bags",
+      buttonLink: "/dunnage-bag",
     },
   },
 
