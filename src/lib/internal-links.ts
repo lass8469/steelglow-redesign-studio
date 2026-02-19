@@ -59,6 +59,7 @@ export const productLinks: Record<string, ProductLinkConfig> = {
       { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
     ],
     relatedArticles: [
+      { slug: "molecular-sieve-pore-size-guide", labelKey: "relatedArticles.molecularSieveGuide" },
       { slug: "chemistry-clay-mo-clay-vs-silica-gel", labelKey: "relatedArticles.chemistryGuide" },
     ],
   },
@@ -151,6 +152,7 @@ export const articleRelatedSlugs: Record<string, string[]> = {
   "stabustrap-reusable-pallet-strapping": ["anti-slip-sheets-pallet-load-stability", "dunnage-bags-container-loading-guide", "container-desiccant-stuffing-guide"],
   "dry-bag-retail-moisture-absorber-guide": ["silica-gel-desiccant-guide", "mold-growth-timelines-80-rh", "drybag-i-clay-desiccant-guide"],
   "container-desiccant-stuffing-guide": ["container-rain-dew-point-physics", "drybag-i-clay-desiccant-guide", "mold-growth-timelines-80-rh"],
+  "molecular-sieve-pore-size-guide": ["chemistry-clay-mo-clay-vs-silica-gel", "silica-gel-desiccant-guide", "dry-bag-retail-moisture-absorber-guide"],
 };
 
 // Applications page → product links per industry

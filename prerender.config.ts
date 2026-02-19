@@ -50,6 +50,7 @@ const basePaths = [
   "/blog/stabustrap-reusable-pallet-strapping",
   "/blog/dry-bag-retail-moisture-absorber-guide",
   "/blog/container-desiccant-stuffing-guide",
+  "/blog/molecular-sieve-pore-size-guide",
 ];
 
 /** All routes with language prefixes — used by prerender & vite */

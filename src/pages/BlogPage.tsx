@@ -33,6 +33,14 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "molecular-sieve-pore-size-guide",
+      titleKey: "blogPage.post15.title",
+      excerptKey: "blogPage.post15.excerpt",
+      date: "2025-02-28",
+      readTime: "18",
+      category: "Technical",
+    },
+    {
       slug: "container-desiccant-stuffing-guide",
       titleKey: "blogPage.post14.title",
       excerptKey: "blogPage.post14.excerpt",
