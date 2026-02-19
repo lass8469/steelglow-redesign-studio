@@ -49,6 +49,7 @@ const basePaths = [
   "/blog/anti-slip-sheets-pallet-load-stability",
   "/blog/stabustrap-reusable-pallet-strapping",
   "/blog/dry-bag-retail-moisture-absorber-guide",
+  "/blog/container-desiccant-stuffing-guide",
 ];
 
 /** All routes with language prefixes — used by prerender & vite */

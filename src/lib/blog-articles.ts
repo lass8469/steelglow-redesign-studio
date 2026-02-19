@@ -10,6 +10,7 @@ import productDunnageBag from "@/assets/product-dunnage-bag.webp";
 import productAntislip from "@/assets/product-antislip.webp";
 import productStabustrap from "@/assets/product-stabustrap.webp";
 import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
+import blogContainerDesiccantGuide from "@/assets/blog-container-desiccant-guide.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -2681,6 +2682,274 @@ export const articles: Record<string, Article> = {
       description: "DRY BAG Retail is the clean, regenerable, spill-free alternative to disposable moisture absorbers. Made in Denmark with industrial-grade Moclay formula. Up to 90 days per charge, reusable across multiple seasons.",
       buttonText: "View DRY BAG Retail",
       buttonLink: "/retail",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: Container Desiccant — Complete Guide to Moisture Control
+  // ------------------------------------------------------------
+  "container-desiccant-stuffing-guide": {
+    title: "Container Desiccant: The Complete Guide to Moisture Control When Stuffing a Shipping Container",
+    excerpt: "From inspecting the container before loading to choosing the right desiccant and smart stuffing practices — everything you need to protect cargo from moisture damage during ocean shipping.",
+    date: "2025-02-27",
+    readTime: "16 min read",
+    category: "Guide",
+    heroImage: blogContainerDesiccantGuide,
+    author: "DESICCANT Technical Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "Cargo damage from moisture is one of the most persistent — and preventable — problems in international shipping. Whether you're exporting furniture, electronics, textiles, food products, or industrial machinery, the enemy is almost always the same: humidity. Container desiccants are your primary line of defence, but their effectiveness depends entirely on how well you prepare the container before and during the stuffing process.",
+      },
+      {
+        type: "text",
+        content: "This guide covers everything you need to know — from inspecting the container before a single box goes in, to choosing the right desiccant product, to loading practices that give your cargo the best possible chance of arriving in perfect condition.",
+      },
+      {
+        type: "heading",
+        content: "Why Moisture Is Such a Problem in Shipping Containers",
+      },
+      {
+        type: "text",
+        content: "When a ship moves between climates — say, from cold Northern Europe into the humid tropics — the temperature inside a steel container fluctuates dramatically. Warm, moist air enters the container during loading, and as temperatures drop at sea, that moisture condenses on the coldest surfaces: the steel walls, the roof, and the cargo itself. This phenomenon is known as \"container rain\" or \"container sweat,\" and it can destroy an entire shipment.",
+      },
+      {
+        type: "text",
+        content: "Wooden pallet boards and container floors are particularly problematic, as they absorb and slowly release moisture throughout the voyage. A floor that looks perfectly dry to the eye can hold enough residual moisture to raise the relative humidity inside a sealed container to damaging levels within days.",
+      },
+      {
+        type: "text",
+        content: "Container desiccants work by absorbing that airborne moisture before it condenses, keeping the relative humidity inside the container below the critical threshold — typically below 60% RH — at which mould, corrosion, and cargo damage become serious risks.",
+      },
+      {
+        type: "heading",
+        content: "Step 1: Inspect the Container Before You Load Anything",
+      },
+      {
+        type: "text",
+        content: "The single biggest mistake shippers make is loading a container without properly inspecting it first. A compromised container makes any desiccant solution significantly less effective, because moisture-laden outside air will continuously enter through gaps and holes, overwhelming even the best desiccant product.",
+      },
+      {
+        type: "subheading",
+        content: "The Light Test",
+      },
+      {
+        type: "text",
+        content: "This is one of the simplest and most effective container inspection techniques, and it costs nothing. Step inside the empty container, close the doors behind you, and stand in darkness for a minute or two while your eyes adjust. Then look carefully at the walls, roof, and floor. Any holes, gaps around door seals, or corroded patches will show up as pinpricks or streaks of light. Pay particular attention to the corners and the area where the wall panels meet the floor — these are common failure points on older containers.",
+      },
+      {
+        type: "callout",
+        title: "Key Rule",
+        content: "If you can see light, moisture (and air) can get in. Mark the problem areas with chalk and have them sealed before proceeding. A silicone sealant or self-adhesive butyl tape works well for small gaps. For larger structural issues, request a replacement container.",
+      },
+      {
+        type: "subheading",
+        content: "Check the Door Seals",
+      },
+      {
+        type: "text",
+        content: "Run your hand along the rubber gaskets on both doors. They should feel supple and create a firm, continuous seal when the doors are closed. Cracked, brittle, or compressed gaskets are one of the most common sources of moisture ingress and are easily overlooked during a visual inspection in daylight.",
+      },
+      {
+        type: "text",
+        content: "Press a piece of paper between the door and the frame, close the door, and try to pull it out. If it slides free without resistance, the seal is inadequate.",
+      },
+      {
+        type: "subheading",
+        content: "Look for Rust, Staining, and Odours",
+      },
+      {
+        type: "text",
+        content: "Rust streaks on the interior walls suggest previous moisture ingress. Dark staining or a musty smell can indicate mould from a prior shipment. A container that smells of chemicals, pesticides, or food may also contaminate your cargo. Any of these are grounds for requesting a different unit.",
+      },
+      {
+        type: "subheading",
+        content: "Inspect the Floor",
+      },
+      {
+        type: "text",
+        content: "The timber floorboards in most shipping containers are typically made from tropical hardwoods such as Apitong (Keruing) or, increasingly, bamboo composite. These materials are inherently moisture-retentive, especially in containers that have travelled through humid regions or sat in a port during the rainy season.",
+      },
+      {
+        type: "text",
+        content: "Measure the moisture content of the wooden floor using a pin-type or pinless moisture meter. This is a simple, inexpensive tool that gives you a reliable moisture reading in seconds. Insert the probes at several points across the floor — near the doors, in the middle, and at the far end — as moisture levels can vary considerably.",
+      },
+      {
+        type: "callout",
+        title: "Floor Moisture Threshold",
+        content: "For most cargo types, you want a floor moisture content below 18–20%. If readings are higher, the floor will off-gas significant moisture during the voyage. Request a different container, allow the container to air out for 24–48 hours, or consult your desiccant supplier about a high-moisture solution.",
+      },
+      {
+        type: "heading",
+        content: "Step 2: Choose the Right Container Desiccant",
+      },
+      {
+        type: "text",
+        content: "Not all desiccants are created equal. The right product depends on the voyage duration, the nature of your cargo, the expected climate route, and the total air volume inside the loaded container.",
+      },
+      {
+        type: "subheading",
+        content: "Why Silica Gel Is One of the Worst Choices for Container Shipping",
+      },
+      {
+        type: "text",
+        content: "Silica gel is probably the most widely recognised desiccant in the world — it's the small sachet tucked inside every shoe box, handbag, and electronics package. That familiarity leads many shippers to reach for it first when they think about moisture protection. It's a mistake that can cost them dearly.",
+      },
+      {
+        type: "text",
+        content: "The fundamental problem is absorption capacity. Silica gel typically absorbs around 20–30% of its own weight in moisture under ideal laboratory conditions. Inside a real shipping container — where temperatures swing dramatically, humidity is high, and the desiccant needs to perform continuously for 30, 45, or even 60 days — that performance degrades significantly.",
+      },
+      {
+        type: "text",
+        content: "There's a second, equally serious problem: silica gel has a saturation ceiling. Once it reaches capacity, it stops absorbing entirely. It holds what it has taken in, but it cannot take in any more. In a sealed container on a long voyage, this means the desiccant could be exhausted within the first week or two, leaving your cargo completely unprotected for the remainder of the journey.",
+      },
+      {
+        type: "text",
+        content: "Perhaps most critically, silica gel is reversible — meaning it releases moisture back into the air when temperatures rise. This is useful in laboratory settings where you want to regenerate and reuse desiccant, but in a shipping container it's a liability. As the container heats up during the day or passes through warmer climates, silica gel can actively expel moisture it had previously absorbed, temporarily spiking the relative humidity inside the container and potentially causing the very condensation damage you were trying to prevent.",
+      },
+      {
+        type: "callout",
+        title: "Important",
+        content: "For these reasons — low absorption capacity, early saturation, and the risk of moisture release — silica gel should be considered unsuitable as a primary container desiccant for any shipment of meaningful duration or value.",
+      },
+      {
+        type: "subheading",
+        content: "Calcium Chloride-Based Desiccants",
+      },
+      {
+        type: "text",
+        content: "These are the workhorses of container moisture control. Calcium chloride absorbs moisture at a far higher rate and total capacity than silica gel, making it far better suited to the conditions inside a shipping container. As it absorbs moisture, it undergoes a chemical reaction and converts to a stable brine gel or liquid, which is safely retained within the product's packaging — it does not release the absorbed moisture back into the air.",
+      },
+      {
+        type: "text",
+        content: "Calcium chloride desiccants are available in a variation of formats, including blankets, strips, or bags, giving shippers the flexibility to choose the format that best suits their cargo type and loading configuration.",
+      },
+      {
+        type: "subheading",
+        content: "Clay Desiccants",
+      },
+      {
+        type: "text",
+        content: "Montmorillonite clay desiccants are a natural, cost-effective option that performs well at moderate temperatures. They are less effective in high-heat environments (above 50°C), where they can actually begin to release absorbed moisture — a critical limitation for containers passing through equatorial shipping lanes in peak summer.",
+      },
+      {
+        type: "heading",
+        content: "Step 3: Prepare the Cargo Before Loading",
+      },
+      {
+        type: "text",
+        content: "The container is only one part of the moisture equation. The cargo and its packaging bring their own moisture load.",
+      },
+      {
+        type: "list",
+        items: [
+          "Allow cargo to acclimatise. If goods have been stored in a climate-controlled warehouse, moving them abruptly into hot, humid loading dock conditions can cause condensation on the cargo surface before it even enters the container.",
+          "Use moisture-barrier packaging for sensitive goods. Poly bags, vacuum-sealed foil pouches, and shrink wrap all help isolate individual items from the container atmosphere. For electronics, machinery, and precision instruments, desiccant sachets can be included inside the packaging as a second layer of protection.",
+          "Dry out packaging materials. Cardboard boxes, wooden crates, and paper wrapping all contain moisture. If these materials have been stored in a damp warehouse or exposed to rain, they will off-gas significantly during the voyage.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Step 4: Best Practices During the Stuffing Process",
+      },
+      {
+        type: "text",
+        content: "How you load the container has a direct impact on how effective your desiccant will be.",
+      },
+      {
+        type: "subheading",
+        content: "Work Quickly in Humid Conditions",
+      },
+      {
+        type: "text",
+        content: "The longer a container sits open during loading, the more humid air enters and saturates the interior space. On a hot, humid day at the port, try to complete the stuffing as efficiently as possible and close and seal the doors promptly when done.",
+      },
+      {
+        type: "callout",
+        title: "Avoid Loading in Rain",
+        content: "Rain doesn't just fall on cargo — it raises the ambient humidity dramatically, and all of that moisture-laden air gets sealed inside the container with your shipment. Avoid loading during or immediately after rain if at all possible.",
+      },
+      {
+        type: "subheading",
+        content: "Don't Block Airflow Around Desiccants",
+      },
+      {
+        type: "text",
+        content: "Desiccant blankets, strips, and bags should all be positioned with space around them to allow airflow. If cargo is stacked directly against them, absorption becomes localised and much of the container's air volume goes unprotected. For best results, distribute desiccants at regular intervals along the length of the container, alternating between left and right sides where possible.",
+      },
+      {
+        type: "text",
+        content: "Floor-placed bags should be positioned in the gaps between pallets or along the side walls — not buried under cargo where air circulation is restricted.",
+      },
+      {
+        type: "subheading",
+        content: "Use Dunnage Bags Carefully",
+      },
+      {
+        type: "text",
+        content: "Dunnage bags are commonly used to fill void space between cargo and prevent shifting during transit. While useful for load security, they can also trap pockets of humid air. This isn't a reason to avoid them, but large voids can reduce the effectiveness of your desiccant by limiting air circulation, so try to minimise unnecessary empty space where possible.",
+      },
+      {
+        type: "subheading",
+        content: "Consider a Moisture-Absorbent Floor Layer",
+      },
+      {
+        type: "text",
+        content: "For high-value or particularly moisture-sensitive cargo, placing a layer of craft paper, desiccant mat, or silica gel sheeting on the container floor before loading pallets provides an additional buffer against floor-sourced moisture. This is especially worthwhile when floor moisture content readings are on the higher end.",
+      },
+      {
+        type: "subheading",
+        content: "Seal Ventilation Plugs (With Caution)",
+      },
+      {
+        type: "text",
+        content: "Many containers have small ventilation plugs near the top corners. These are designed to allow minor pressure equalisation, but they also allow moist air to enter. Some shippers choose to seal these with tape for high-value moisture-sensitive shipments. This is a viable strategy, but only when your desiccant solution is properly specified for the voyage — a completely sealed container with no desiccant will accumulate moisture rapidly.",
+      },
+      {
+        type: "heading",
+        content: "Step 5: Documentation and Monitoring",
+      },
+      {
+        type: "text",
+        content: "For high-value shipments, consider including a temperature and humidity data logger inside the container. These small, inexpensive devices record conditions throughout the voyage and provide an invaluable record if a cargo damage claim is ever disputed. They also help you refine your desiccant strategy over time based on actual voyage data rather than estimates.",
+      },
+      {
+        type: "text",
+        content: "Note the container number, the floor moisture reading, the desiccant products and quantities used, and the ambient conditions at time of loading. This documentation takes five minutes and can save enormous headaches later.",
+      },
+      {
+        type: "heading",
+        content: "Common Mistakes to Avoid",
+      },
+      {
+        type: "list",
+        items: [
+          "Relying on desiccant alone without inspecting the container. No desiccant can compensate for a container with broken door seals or holes in the roof. Inspection comes first.",
+          "Ignoring the floor. The wooden floor is often the largest single source of moisture in a container. Measuring it takes two minutes and can fundamentally change your preparation strategy.",
+          "Loading in the rain. Even a brief downpour can dramatically raise the moisture load inside a container that's been sitting open at the dock.",
+          "Placing all desiccants in one location. Moisture absorption works best when desiccant is distributed throughout the container. A cluster of bags at the door end does very little for cargo at the far end.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Summary",
+      },
+      {
+        type: "text",
+        content: "Effective moisture control in shipping containers is a system, not a single product. Container desiccants are a critical component, but they perform best when paired with a thorough pre-loading inspection — including the light test and a floor moisture reading — careful cargo preparation, and smart loading practices.",
+      },
+      {
+        type: "text",
+        content: "Take the time to inspect every container before it's stuffed, measure the floor moisture, position your desiccants properly, and seal the container promptly. These steps cost very little in time or money, and they dramatically reduce the risk of moisture damage — one of the most common and most preventable causes of cargo loss in international trade.",
+      },
+    ],
+
+    cta: {
+      heading: "Need help choosing the right container desiccant?",
+      description: "Our technical team can recommend the right desiccant type, quantity, and placement strategy based on your cargo, route, and container conditions. Contact us for a tailored recommendation.",
+      buttonText: "Contact our team",
+      buttonLink: "/contact",
     },
   },
 

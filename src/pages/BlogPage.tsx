@@ -15,6 +15,14 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "container-desiccant-stuffing-guide",
+      titleKey: "blogPage.post14.title",
+      excerptKey: "blogPage.post14.excerpt",
+      date: "2025-02-27",
+      readTime: "16",
+      category: "Guide",
+    },
+    {
       slug: "dry-bag-retail-moisture-absorber-guide",
       titleKey: "blogPage.post13.title",
       excerptKey: "blogPage.post13.excerpt",

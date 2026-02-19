@@ -10,6 +10,7 @@ import productDunnageBag from "@/assets/product-dunnage-bag.webp";
 import productAntislip from "@/assets/product-antislip.webp";
 import productStabustrap from "@/assets/product-stabustrap.webp";
 import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
+import blogContainerDesiccantGuide from "@/assets/blog-container-desiccant-guide.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -2511,6 +2512,262 @@ export const articlesDa: Record<string, Article> = {
       description: "DRY BAG Retail er det rene, regenererbare, spildfri alternativ til engangsfugtabsorbenter. Fremstillet i Danmark med industriel Moclay-formel. Op til 90 dages brug per opladning, genanvendelig over flere sæsoner.",
       buttonText: "Se DRY BAG Retail",
       buttonLink: "/retail",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: Container-tørremiddel — Komplet guide til fugtstyring
+  // ------------------------------------------------------------
+  "container-desiccant-stuffing-guide": {
+    title: "Container-tørremiddel: Den komplette guide til fugtstyring ved stuffning af en skibscontainer",
+    excerpt: "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte stuffningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
+    date: "2025-02-27",
+    readTime: "16 min læsning",
+    category: "Guide",
+    heroImage: blogContainerDesiccantGuide,
+    author: "DESICCANT Teknisk Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "Fugtskader på gods er et af de mest vedvarende — og mest forebyggelige — problemer i international shipping. Uanset om du eksporterer møbler, elektronik, tekstiler, fødevarer eller industrimaskiner, er fjenden næsten altid den samme: luftfugtighed. Containertørremidler er dit primære forsvar, men deres effektivitet afhænger helt af, hvor godt du forbereder containeren før og under stuffningsprocessen.",
+      },
+      {
+        type: "text",
+        content: "Denne guide dækker alt, du behøver at vide — fra inspektion af containeren før en eneste kasse kommer ind, til valg af det rigtige tørremiddelprodukt, til lastepraksisser, der giver dit gods den bedst mulige chance for at ankomme i perfekt stand.",
+      },
+      {
+        type: "heading",
+        content: "Hvorfor fugt er et så stort problem i skibscontainere",
+      },
+      {
+        type: "text",
+        content: "Når et skib bevæger sig mellem klimazoner — fx fra koldt Nordeuropa ind i de fugtige troper — svinger temperaturen inde i en stålcontainer dramatisk. Varm, fugtig luft trænger ind i containeren under lastning, og når temperaturen falder til havs, kondenserer denne fugt på de koldeste overflader: stålvæggene, loftet og selve godset. Dette fænomen er kendt som \"containerregn\" eller \"containersved\", og det kan ødelægge en hel forsendelse.",
+      },
+      {
+        type: "text",
+        content: "Træpaller og containergulve er særligt problematiske, da de absorberer og langsomt frigiver fugt gennem hele rejsen. Et gulv, der ser helt tørt ud, kan indeholde tilstrækkelig restfugt til at hæve den relative luftfugtighed inde i en forseglet container til skadelige niveauer inden for få dage.",
+      },
+      {
+        type: "text",
+        content: "Containertørremidler fungerer ved at absorbere den luftbårne fugt, inden den kondenserer, og holder den relative luftfugtighed inde i containeren under den kritiske tærskel — typisk under 60 % RH — ved hvilken skimmel, korrosion og godsskader bliver alvorlige risici.",
+      },
+      {
+        type: "heading",
+        content: "Trin 1: Inspicer containeren før du laster noget",
+      },
+      {
+        type: "text",
+        content: "Den største fejl, afsendere begår, er at laste en container uden at inspicere den ordentligt først. En kompromitteret container gør enhver tørremiddelløsning markant mindre effektiv, fordi fugtmættet udeluft løbende vil trænge ind gennem sprækker og huller og overvælde selv det bedste tørremiddelprodukt.",
+      },
+      {
+        type: "subheading",
+        content: "Lystesten",
+      },
+      {
+        type: "text",
+        content: "Dette er en af de enkleste og mest effektive containertestmetoder, og den koster ingenting. Stig ind i den tomme container, luk dørene bag dig, og stå i mørke i et minut eller to, mens dine øjne vænner sig. Kig derefter omhyggeligt på vægge, loft og gulv. Eventuelle huller, sprækker omkring dørpakninger eller korroderede partier vil vise sig som lyspletter eller striber. Vær særlig opmærksom på hjørnerne og området, hvor vægpanelerne møder gulvet — disse er hyppige fejlsteder på ældre containere.",
+      },
+      {
+        type: "callout",
+        title: "Nøgleregel",
+        content: "Kan du se lys, kan fugt (og luft) komme ind. Marker problemområderne med kridt og få dem forseglet, inden du fortsætter. Silikonekit eller selvklæbende butylbånd fungerer fint til små sprækker. Ved større strukturelle problemer skal du anmode om en erstatningscontainer.",
+      },
+      {
+        type: "subheading",
+        content: "Tjek dørpakningerne",
+      },
+      {
+        type: "text",
+        content: "Kør hånden langs gummipakningerne på begge døre. De bør føles smidige og danne en fast, sammenhængende tætning, når dørene er lukket. Revnede, sprøde eller sammenpressede pakninger er en af de hyppigste kilder til fugtindtrængning og overses let ved en visuel inspektion i dagslys.",
+      },
+      {
+        type: "subheading",
+        content: "Kontrollér for rust, pletter og lugt",
+      },
+      {
+        type: "text",
+        content: "Ruststriber på indervæggene antyder tidligere fugtindtrængning. Mørke pletter eller en muggen lugt kan indikere skimmel fra en tidligere forsendelse. En container, der lugter af kemikalier, pesticider eller fødevarer, kan også forurene dit gods. Alt dette er grundlag for at anmode om en anden enhed.",
+      },
+      {
+        type: "subheading",
+        content: "Inspicer gulvet",
+      },
+      {
+        type: "text",
+        content: "Trægulvbræderne i de fleste skibscontainere er typisk lavet af tropisk hårdttræ som Apitong (Keruing) eller i stigende grad bambus-komposit. Disse materialer er i sagens natur fugtfastholdende, især i containere, der har rejst gennem fugtige regioner eller stået i en havn i regnsæsonen.",
+      },
+      {
+        type: "text",
+        content: "Mål fugtindholdet i trægulvet med et stift- eller stiftfrit fugtighedsmåler. Dette er et simpelt, billigt værktøj, der giver dig en pålidelig fugtighedsaflæsning på få sekunder. Indsæt proberne på flere steder hen over gulvet — nær dørene, i midten og ved den fjerne ende — da fugtighedsniveauerne kan variere betragteligt.",
+      },
+      {
+        type: "callout",
+        title: "Gulvfugttærskel",
+        content: "For de fleste godstyper bør gulvfugtindholdet være under 18–20 %. Hvis aflæsningerne er højere, vil gulvet afgasse betydelig fugt under rejsen. Anmod om en anden container, lad containeren lufte ud i 24–48 timer, eller konsulter din tørremiddelleverandør om en løsning til høj-fugt-forhold.",
+      },
+      {
+        type: "heading",
+        content: "Trin 2: Vælg det rigtige containertørremiddel",
+      },
+      {
+        type: "text",
+        content: "Ikke alle tørremidler er skabt ens. Det rigtige produkt afhænger af rejsens varighed, dit gods' karakter, den forventede klimarute og det samlede luftvolumen i den lastede container.",
+      },
+      {
+        type: "subheading",
+        content: "Hvorfor silicagel er et af de dårligste valg til containerforsendelse",
+      },
+      {
+        type: "text",
+        content: "Silicagel er sandsynligvis det mest udbredte tørremiddel i verden — det er den lille pose i enhver skoboks og elektronikemballage. Den familiaritet får mange afsendere til at gribe efter det først. Det er en fejl, der kan koste dyrt.",
+      },
+      {
+        type: "text",
+        content: "Det grundlæggende problem er absorptionskapaciteten. Silicagel absorberer typisk kun 20–30 % af sin egen vægt under ideelle laboratorieforhold. Inde i en reel skibscontainer — med dramatiske temperatursvingninger, høj luftfugtighed og behov for kontinuerlig ydeevne i 30, 45 eller 60 dage — degraderes denne ydeevne markant.",
+      },
+      {
+        type: "text",
+        content: "Der er et andet, lige så alvorligt problem: silicagel har et mætningsloft. Når det når kapacitet, stopper det helt med at absorbere. I en forseglet container på en lang rejse kan tørremidlet være opbrugt inden for den første uge eller to, hvilket efterlader dit gods helt ubeskyttet resten af rejsen.",
+      },
+      {
+        type: "text",
+        content: "Måske mest kritisk er det, at silicagel er reversibelt — det frigiver fugt tilbage i luften, når temperaturen stiger. I en skibscontainer er dette en liability. Når containeren opvarmes, kan silicagel aktivt udstøde fugt, den tidligere har absorberet, og midlertidigt øge den relative luftfugtighed og potentielt forårsage den kondensskade, man forsøgte at forebygge.",
+      },
+      {
+        type: "callout",
+        title: "Vigtigt",
+        content: "Af disse grunde — lav absorptionskapacitet, tidlig mætning og risiko for fugtfrigivelse — bør silicagel betragtes som uegnet som primært containertørremiddel for enhver forsendelse af meningsfuld varighed eller værdi.",
+      },
+      {
+        type: "subheading",
+        content: "Calciumchloridbaserede tørremidler",
+      },
+      {
+        type: "text",
+        content: "Disse er arbejdshestene inden for containerfugtstyring. Calciumchlorid absorberer fugt med langt højere hastighed og totalkapacitet end silicagel. Når det absorberer fugt, gennemgår det en kemisk reaktion og omdannes til en stabil saltlagegel eller -væske, som sikkert tilbageholdes i produktets emballage — det frigiver ikke den absorberede fugt tilbage i luften.",
+      },
+      {
+        type: "subheading",
+        content: "Lertørremidler",
+      },
+      {
+        type: "text",
+        content: "Montmorillonit-lertørremidler er en naturlig, omkostningseffektiv mulighed, der fungerer godt ved moderate temperaturer. De er mindre effektive i højvarmemiljøer (over 50 °C), hvor de faktisk kan begynde at frigive absorberet fugt — en kritisk begrænsning for containere, der passerer ækvatoriale shippingruter om sommeren.",
+      },
+      {
+        type: "heading",
+        content: "Trin 3: Forbered godset før lastning",
+      },
+      {
+        type: "text",
+        content: "Containeren er kun en del af fugtligningen. Godset og dets emballage bringer deres egen fugtbelastning.",
+      },
+      {
+        type: "list",
+        items: [
+          "Lad godset akklimatisere. Hvis varer har været opbevaret i et klimastyret lager, kan den bratte flytning til varme, fugtige lastningsbetingelser forårsage kondens på godsoverfladen, før det overhovedet kommer ind i containeren.",
+          "Brug fugtbarriereemballage til følsomt gods. Polyposer, vakuumforseglede foliepakninger og krympefolie hjælper alle med at isolere individuelle varer fra containeratmosfæren. Til elektronik, maskiner og præcisionsinstrumenter kan tørremiddelposer inkluderes i emballagen som et ekstra beskyttelseslag.",
+          "Tør emballagematerialer. Papkasser, trækasser og papirindpakning indeholder alle fugt. Hvis disse materialer har været opbevaret i et fugtigt lager eller eksponeret for regn, vil de afgasse betydeligt under rejsen.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Trin 4: Bedste praksis under stuffningsprocessen",
+      },
+      {
+        type: "text",
+        content: "Hvordan du laster containeren har direkte indvirkning på, hvor effektivt dit tørremiddel vil være.",
+      },
+      {
+        type: "subheading",
+        content: "Arbejd hurtigt i fugtige forhold",
+      },
+      {
+        type: "text",
+        content: "Jo længere en container står åben under lastning, jo mere fugtig luft trænger ind og mætter det indre rum. På en varm, fugtig dag i havnen bør du fuldføre stuffningen så effektivt som muligt og lukke og forsegle dørene prompte, når du er færdig.",
+      },
+      {
+        type: "callout",
+        title: "Undgå lastning i regnvejr",
+        content: "Regn falder ikke bare på godset — det hæver den omgivende luftfugtighed dramatisk, og al den fugtmættede luft forsegles inde i containeren med din forsendelse. Undgå lastning under eller umiddelbart efter regn, hvis det overhovedet er muligt.",
+      },
+      {
+        type: "subheading",
+        content: "Blokér ikke luftstrømmen omkring tørremidler",
+      },
+      {
+        type: "text",
+        content: "Tørremiddeltæpper, strips og poser bør alle placeres med plads omkring dem for at tillade luftcirkulation. Hvis gods stables direkte op mod dem, bliver absorptionen lokaliseret, og meget af containerens luftvolumen forbliver ubeskyttet. For bedste resultater fordeles tørremidler med jævne mellemrum langs containerens længde, vekslende mellem venstre og højre side.",
+      },
+      {
+        type: "subheading",
+        content: "Brug dunnage bags med omtanke",
+      },
+      {
+        type: "text",
+        content: "Dunnage bags bruges almindeligvis til at udfylde tomrum mellem gods og forhindre forskydning under transport. De er nyttige for lastsikring, men kan også fange lommer af fugtig luft. Store tomrum kan reducere effektiviteten af dit tørremiddel ved at begrænse luftcirkulationen, så forsøg at minimere unødvendigt tomt rum.",
+      },
+      {
+        type: "subheading",
+        content: "Overvej et fugtabsorberende gulvlag",
+      },
+      {
+        type: "text",
+        content: "Til højværdi eller særligt fugtfølsomt gods kan et lag af kraftpapir, tørremiddelmåtte eller silicagel-ark på containergulvet før lastning af paller give en ekstra buffer mod gulvstammende fugt. Dette er særligt gavnligt, når gulvfugtaflæsningerne er i den høje ende.",
+      },
+      {
+        type: "subheading",
+        content: "Forsegl ventilationspropper (med forsigtighed)",
+      },
+      {
+        type: "text",
+        content: "Mange containere har små ventilationspropper nær de øverste hjørner. Disse er designet til at tillade mindre trykudligning, men de lader også fugtig luft trænge ind. Nogle afsendere vælger at forsegle disse med tape til højværdi fugtfølsomme forsendelser. Det er en farbar strategi, men kun når din tørremiddelløsning er korrekt specificeret til rejsen.",
+      },
+      {
+        type: "heading",
+        content: "Trin 5: Dokumentation og overvågning",
+      },
+      {
+        type: "text",
+        content: "Til højværdiforsendelser bør du overveje at inkludere en temperatur- og fugtighedsdatalogger inde i containeren. Disse små, billige enheder registrerer forholdene gennem hele rejsen og giver en uvurderlig dokumentation, hvis en skadessag nogensinde bestrides. De hjælper dig også med at forfine din tørremiddelstrategi over tid baseret på faktiske rejsedata frem for estimater.",
+      },
+      {
+        type: "text",
+        content: "Notér containernummeret, gulvfugtaflæsningen, de anvendte tørremiddelprodukter og mængder samt de omgivende forhold ved lastning. Denne dokumentation tager fem minutter og kan spare enorme hovedpiner senere.",
+      },
+      {
+        type: "heading",
+        content: "Hyppige fejl at undgå",
+      },
+      {
+        type: "list",
+        items: [
+          "At stole på tørremidlet alene uden at inspicere containeren. Intet tørremiddel kan kompensere for en container med defekte dørpakninger eller huller i taget. Inspektion kommer først.",
+          "At ignorere gulvet. Trægulvet er ofte den største enkeltstående fugtkilde i en container. At måle det tager to minutter og kan fundamentalt ændre din forberedelse.",
+          "At laste i regnvejr. Selv et kort regnskyl kan dramatisk hæve fugtbelastningen inde i en container, der har stået åben.",
+          "At placere alle tørremidler ét sted. Fugtabsorption fungerer bedst, når tørremidlet er fordelt i hele containeren. En klynge af poser ved dørenden gør meget lidt for gods i den fjerne ende.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Sammenfatning",
+      },
+      {
+        type: "text",
+        content: "Effektiv fugtstyring i skibscontainere er et system, ikke et enkelt produkt. Containertørremidler er en kritisk komponent, men de yder bedst, når de kombineres med en grundig inspektion før lastning — herunder lystesten og en gulvfugtaflæsning — omhyggelig godsforberedelse og smarte lastepraksisser.",
+      },
+      {
+        type: "text",
+        content: "Tag dig tid til at inspicere enhver container, før den stuffes, mål gulvfugten, placer dine tørremidler korrekt, og forsegl containeren prompte. Disse trin koster meget lidt i tid eller penge og reducerer dramatisk risikoen for fugtskader — en af de mest almindelige og mest forebyggelige årsager til godstab i international handel.",
+      },
+    ],
+
+    cta: {
+      heading: "Brug for hjælp til at vælge det rigtige containertørremiddel?",
+      description: "Vores tekniske team kan anbefale den rigtige tørremiddeltype, mængde og placeringsstrategi baseret på dit gods, din rute og containerforhold. Kontakt os for en skræddersyet anbefaling.",
+      buttonText: "Kontakt vores team",
+      buttonLink: "/contact",
     },
   },
 };
