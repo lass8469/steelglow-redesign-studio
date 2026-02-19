@@ -4,6 +4,7 @@ import {
   Beaker, Shirt, Cog, ArrowRight 
 } from "lucide-react";
 import LocalizedLink from "@/components/LocalizedLink";
+import { industryProductLinks } from "@/lib/internal-links";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -17,47 +18,47 @@ const ApplicationsPage = () => {
 
   const industries = [
     {
-      icon: Pill,
+      icon: Pill, key: "pharmaceutical",
       title: t("applicationsPage.pharmaceutical.title"),
       description: t("applicationsPage.pharmaceutical.desc"),
     },
     {
-      icon: Cpu,
+      icon: Cpu, key: "electronics",
       title: t("applicationsPage.electronics.title"),
       description: t("applicationsPage.electronics.desc"),
     },
     {
-      icon: Apple,
+      icon: Apple, key: "food",
       title: t("applicationsPage.food.title"),
       description: t("applicationsPage.food.desc"),
     },
     {
-      icon: Truck,
+      icon: Truck, key: "logistics",
       title: t("applicationsPage.logistics.title"),
       description: t("applicationsPage.logistics.desc"),
     },
     {
-      icon: Car,
+      icon: Car, key: "automotive",
       title: t("applicationsPage.automotive.title"),
       description: t("applicationsPage.automotive.desc"),
     },
     {
-      icon: Wind,
+      icon: Wind, key: "wind",
       title: t("applicationsPage.wind.title"),
       description: t("applicationsPage.wind.desc"),
     },
     {
-      icon: Beaker,
+      icon: Beaker, key: "chemical",
       title: t("applicationsPage.chemical.title"),
       description: t("applicationsPage.chemical.desc"),
     },
     {
-      icon: Shirt,
+      icon: Shirt, key: "textile",
       title: t("applicationsPage.textile.title"),
       description: t("applicationsPage.textile.desc"),
     },
     {
-      icon: Cog,
+      icon: Cog, key: "metal",
       title: t("applicationsPage.metal.title"),
       description: t("applicationsPage.metal.desc"),
     },
@@ -126,7 +127,21 @@ const ApplicationsPage = () => {
               >
                 <industry.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-xl font-semibold text-foreground mb-3">{industry.title}</h3>
-                <p className="text-muted-foreground text-sm">{industry.description}</p>
+                <p className="text-muted-foreground text-sm mb-4">{industry.description}</p>
+                {industryProductLinks[industry.key] && (
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {industryProductLinks[industry.key].map((link) => (
+                      <LocalizedLink
+                        key={link.path}
+                        to={link.path}
+                        className="inline-flex items-center gap-1 text-xs text-primary hover:text-primary/80 font-medium transition-colors"
+                      >
+                        {t(link.labelKey).split("—")[0].trim()}
+                        <ArrowRight className="w-3 h-3" />
+                      </LocalizedLink>
+                    ))}
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>

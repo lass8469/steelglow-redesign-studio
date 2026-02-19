@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { articles, ArticleSection } from "@/lib/blog-articles";
 import { articlesDa } from "@/lib/blog-articles-da";
 import { useLanguage } from "@/contexts/LanguageContext";
+import RelatedArticles from "@/components/RelatedArticles";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
 
@@ -249,16 +250,8 @@ const BlogArticlePage = () => {
         </div>
       </section>
 
-      {/* Related Articles Placeholder */}
-      <section className="py-12 border-t border-border">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-sm text-muted-foreground">
-              {t("blogPage.moreArticles")}
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Related Articles */}
+      {slug && <RelatedArticles currentSlug={slug} />}
 
       <Footer />
     </div>

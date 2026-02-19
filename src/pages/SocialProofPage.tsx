@@ -11,6 +11,7 @@ import christianPhoto from "@/assets/testimonial-christian.webp";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
+import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
@@ -206,12 +207,12 @@ const SocialProofPage = () => {
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
               {t("socialProof.ctaDesc")}
             </p>
-            <a
-              href="/contact"
+            <LocalizedLink
+              to="/contact"
               className="inline-flex items-center gap-2 px-8 py-3 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors"
             >
               {t("socialProof.ctaButton")}
-            </a>
+            </LocalizedLink>
           </motion.div>
         </div>
       </section>
