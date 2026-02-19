@@ -7,6 +7,7 @@ import blogMoldGrowth from "@/assets/blog-mold-growth.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
 import productDrybagI from "@/assets/product-drybag-i.webp";
 import productDunnageBag from "@/assets/product-dunnage-bag.webp";
+import productAntislip from "@/assets/product-antislip.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -1921,6 +1922,214 @@ export const articlesDa: Record<string, Article> = {
       description: "Udforsk vores USB-dataloggere med op til 120 dages kontinuerlig overvågning — intet software påkrævet. Kombinér med vores tørremiddelsortiment for et komplet, verificeret fugtstyringssystem.",
       buttonText: "Se dataloggere",
       buttonLink: "/datalogger",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: Anti-Slip Sheets til paller
+  // ------------------------------------------------------------
+  "anti-slip-sheets-pallet-load-stability": {
+    title: "Anti-Slip Sheets: Den smarte måde at stabilisere pallelæs under transport",
+    excerpt: "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
+    date: "2025-02-24",
+    readTime: "10 min læsning",
+    category: "Guide",
+    heroImage: productAntislip,
+    author: "DESICCANT Teknisk Team",
+    canonicalPath: "/anti-slip",
+
+    sections: [
+      {
+        type: "text",
+        content: "Hvert år mister virksomheder i Danmark og Norden betydelige beløb på godsskader forårsaget af ét forebyggeligt problem: godsskift under transport. Uanset om varer kører ad danske motorveje, overføres mellem distributionscentre eller lastes i containere, er kræfterne på et pallelæs ubarmhjertige. Acceleration, opbremsning, kurvekørsel og vibrationer forsøger alle at forskyde stablede lag. Når det sker, knuses emballage, produkter beskadiges og returvarer hober sig op.",
+      },
+      {
+        type: "text",
+        content: "Løsningen behøver hverken være kompliceret eller dyr. Anti-Slip Sheets tilbyder en gennemprøvet og omkostningseffektiv måde at øge friktionen mellem lag af gods og holde hvert pallelæs præcis, hvor det skal være.",
+      },
+      {
+        type: "quote",
+        content: "Et enkelt lag Anti-Slip Sheet mellem pallens niveauer kan reducere sideværts bevægelse markant — og give ro i sindet fra lager til modtager.",
+        attribution: "DESICCANT Teknisk Rådgivning",
+      },
+      {
+        type: "heading",
+        content: "Hvad er Anti-Slip Sheets?",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets er specialfremstillede papirark med en højfriktionsbelægning. De placeres mellem lag af gods på en palle — mellem kasser, sække, bakker eller andre emballagetyper — og virker ved drastisk at øge friktionskoefficienten ved hvert kontaktpunkt.",
+      },
+      {
+        type: "text",
+        content: "Resultatet er et pallelæs, der opfører sig som én sammenhængende enhed og modstår de sideværts og langsgående kræfter, der opstår under vej-, bane- og søtransport.",
+      },
+      {
+        type: "heading",
+        content: "Vigtigste egenskaber",
+      },
+      {
+        type: "list",
+        items: [
+          "Papirkonstruktion i høj kvalitet — fremstillet af holdbart, industrielt papir designet til at yde under vægten og bevægelsesstresserne fra et fuldt pallelæs.",
+          "Overlegen friktionsydelse — den friktionsforstærkede overflade holder lagene låst fast under acceleration, opbremsning og kurvekørsel.",
+          "Miljøvenlig og genanvendelig — fuldt genanvendelig og i overensstemmelse med cirkulær økonomi-standarder.",
+          "Tilpasselige størrelser — fås i størrelser tilpasset dine palledimensioner, inklusive standard europaller (1200×800 mm) eller specialmål.",
+          "Let og nem at håndtere — minimal ekstra vægt, enkel at påføre af lagerpersonale uden specialværktøj eller oplæring.",
+          "Omkostningseffektiv beskyttelse — en af de billigste godsikringsløsninger pr. palle med et overbevisende afkast fra færre skadeskrav.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Hvem har gavn af Anti-Slip Sheets?",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets er en alsidig løsning, der skaber værdi på tværs af stort set alle sektorer, der flytter palleteret gods. Brancher, der aktuelt drager fordel af produktet, omfatter:",
+      },
+      {
+        type: "list",
+        items: [
+          "Logistik- og 3PL-operatører",
+          "Fødevare- og drikkevareproducenter",
+          "Farmaceutiske distributører",
+          "Industrielle komponentproducenter",
+          "Detailhandelsvirksomheder",
+          "E-commerce-fulfilmentcentre",
+          "Bygge- og anlægsmaterialer",
+          "Kemiske og farligt-gods-emballager",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Øjeblikkeligt afkast",
+        content: "Hvis din drift stabler gods på paller og transporterer det, er Anti-Slip Sheets relevante — og afkastet er øjeblikkeligt, når den første beskadigede forsendelse forhindres.",
+      },
+      {
+        type: "heading",
+        content: "Sådan fungerer Anti-Slip Sheets i praksis",
+      },
+      {
+        type: "subheading",
+        content: "1. Påføring",
+      },
+      {
+        type: "text",
+        content: "Inden næste lag gods placeres på pallen, lægges ét Anti-Slip Sheet fladt hen over laget nedenunder. Ingen klæbemidler, intet specialudstyr og ingen ekstra oplæring. De fleste lagerteams kan integrere processen i deres normale palleteringsrutine på få minutter.",
+      },
+      {
+        type: "subheading",
+        content: "2. Under transport",
+      },
+      {
+        type: "text",
+        content: "Friktionsoverfladen griber fat i emballagen både nedenunder og ovenover og skaber modstand mod sideværts bevægelse. Når køretøjet bremser, svinger eller rammer ujævne vejoverflader, forhindrer arket stakken i at forskyde sig — det vil sige, at lagene glider ud af linje.",
+      },
+      {
+        type: "subheading",
+        content: "3. Ved destinationen",
+      },
+      {
+        type: "text",
+        content: "Godset ankommer i samme stand, som det forlod lageret. Arkene fjernes simpelthen og sendes til papirgenanvendelse sammen med standard pap, hvilket bidrager til bæredygtighedsrapportering og overholdelse af affaldshåndteringsregler.",
+      },
+      {
+        type: "callout",
+        title: "Universel kompatibilitet",
+        content: "Anti-Slip Sheets er kompatible med alle gængse palletyper, herunder EUR/EPAL-europallen (1200×800 mm), ISO-halvpallen og specialfremstillede platforme.",
+      },
+      {
+        type: "heading",
+        content: "Anti-Slip Sheets vs. andre laststabiliseringsmetoder",
+      },
+      {
+        type: "subheading",
+        content: "Strækfilm og bånding",
+      },
+      {
+        type: "text",
+        content: "Strækfilm og bånding er udbredt og effektiv til at binde et pallelæs udefra. De forhindrer dog ikke intern lag-til-lag-bevægelse. Anti-Slip Sheets virker indefra og ud og supplerer strækfilm frem for at erstatte den. Sammen giver de omfattende beskyttelse.",
+      },
+      {
+        type: "subheading",
+        content: "Luftpuder (Dunnage bags)",
+      },
+      {
+        type: "text",
+        content: "Luftpuder udfylder tomrum i containere og trailere for at forhindre hele paller i at flytte sig. Til lagstabilitet inden for en enkelt pallestabel er Anti-Slip Sheets den mere målrettede og omkostningseffektive løsning. Begge produkttyper er tilgængelige via desiccant.com for komplet godsbeskyttelse.",
+      },
+      {
+        type: "subheading",
+        content: "Kantbeskyttere",
+      },
+      {
+        type: "text",
+        content: "Kantbeskyttere beskytter hjørner og kanter på pallelæs mod båndskader og stød. De adresserer en anden skadestype. Anti-Slip Sheets adresserer friktionsfladen mellem lag — et hul, som kantbeskyttere alene ikke kan lukke.",
+      },
+      {
+        type: "callout",
+        title: "Kombineret beskyttelsesstrategi",
+        content: "For omfattende godsbeskyttelse kombinerer logistikoperatører i stigende grad Anti-Slip Sheets, luftpuder og kantbeskyttere fra én leverandør for enkelhed og omkostningseffektivitet.",
+      },
+      {
+        type: "heading",
+        content: "Bæredygtighed: Opfyldelse af miljøstandarder",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets er fremstillet af genanvendeligt papir og er enkle at bortskaffe ansvarligt efter brug. Ved at reducere godsskader bidrager de også indirekte til bæredygtighedsmål: færre beskadigede varer betyder færre erstatningsforsendelser, mindre spildt produkt og et lavere samlet CO₂-aftryk pr. leveret enhed.",
+      },
+      {
+        type: "heading",
+        content: "Ofte stillede spørgsmål",
+      },
+      {
+        type: "subheading",
+        content: "Hvilke størrelser er tilgængelige?",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets fås i tilpasselige størrelser. Europaller (1200×800 mm) er de mest almindelige, og ark i disse mål er umiddelbart tilgængelige. Kontakt os for at specificere dine palledimensioner.",
+      },
+      {
+        type: "subheading",
+        content: "Kan Anti-Slip Sheets bruges med fødevareemballage?",
+      },
+      {
+        type: "text",
+        content: "Ja. Anti-Slip Sheets er egnede til brug med fødevare- og drikkevareemballage. De kommer ikke i direkte kontakt med fødevarer og er sikre at anvende i fødevaregodkendte logistikmiljøer.",
+      },
+      {
+        type: "subheading",
+        content: "Hvor mange ark har jeg brug for pr. palle?",
+      },
+      {
+        type: "text",
+        content: "Typisk placeres ét ark mellem hvert lag gods. En standardpalle med fire lag produkter vil bruge tre ark. Dit faktiske behov afhænger af antallet af lag og vægtfordelingen af dit læs.",
+      },
+      {
+        type: "subheading",
+        content: "Er de genanvendelige?",
+      },
+      {
+        type: "text",
+        content: "Ja. Anti-Slip Sheets er papirbaserede og kan genanvendes sammen med pap i de standard papir- og papgenanvendelsesordninger.",
+      },
+      {
+        type: "subheading",
+        content: "Virker de på alle palletyper?",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets fungerer på alle gængse palletyper, herunder EPAL-europaller, halvpaller og specialfremstillede industrielle platforme. De er lige effektive på træ-, plast- og kompositpalleoverflader.",
+      },
+    ],
+
+    cta: {
+      heading: "Klar til at stabilisere dine pallelæs?",
+      description: "Udforsk vores Anti-Slip Sheets — tilgængelige i tilpasselige størrelser til alle standard palleformater. Kontakt os for en prøve eller for at drøfte dine behov.",
+      buttonText: "Se Anti-Slip Sheets",
+      buttonLink: "/anti-slip",
     },
   },
 };

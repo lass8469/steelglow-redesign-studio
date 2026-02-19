@@ -7,6 +7,7 @@ import blogMoldGrowth from "@/assets/blog-mold-growth.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
 import productDrybagI from "@/assets/product-drybag-i.webp";
 import productDunnageBag from "@/assets/product-dunnage-bag.webp";
+import productAntislip from "@/assets/product-antislip.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -2071,6 +2072,214 @@ export const articles: Record<string, Article> = {
       description: "Explore our USB data loggers with up to 120 days of continuous monitoring — no software required. Pair with our desiccant range for a complete, verified moisture management system.",
       buttonText: "View data loggers",
       buttonLink: "/datalogger",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: Anti-Slip Sheets for Pallets
+  // ------------------------------------------------------------
+  "anti-slip-sheets-pallet-load-stability": {
+    title: "Anti-Slip Sheets: The Smart Way to Stabilise Pallet Loads in Transit",
+    excerpt: "High-friction paper sheets that protect your cargo from shifting — a proven, cost-effective way to increase friction between layers of goods and keep every pallet stack exactly where it should be.",
+    date: "2025-02-24",
+    readTime: "10 min read",
+    category: "Guide",
+    heroImage: productAntislip,
+    author: "DESICCANT Technical Team",
+    canonicalPath: "/anti-slip",
+
+    sections: [
+      {
+        type: "text",
+        content: "Every year, businesses across Denmark and the wider Nordic region lose significant revenue to cargo damage caused by one preventable problem: load shifting during transport. Whether goods are travelling by truck along Danish motorways, being transferred between distribution hubs, or loaded into ocean containers, the forces acting on a pallet stack are relentless. Acceleration, braking, cornering, and vibration all conspire to move stacked layers out of alignment. When that happens, packaging is crushed, products are damaged, and returns pile up.",
+      },
+      {
+        type: "text",
+        content: "The solution does not have to be complicated or expensive. Anti-Slip Sheets offer a proven, cost-effective way to increase friction between layers of goods and keep every pallet stack exactly where it should be.",
+      },
+      {
+        type: "quote",
+        content: "A single layer of Anti-Slip Sheet between pallet tiers can reduce lateral movement by a significant margin — delivering peace of mind from the warehouse to the final recipient.",
+        attribution: "DESICCANT Technical Advisory",
+      },
+      {
+        type: "heading",
+        content: "What Are Anti-Slip Sheets?",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets are specially engineered paper sheets with a high-friction surface coating. They are placed between layers of goods on a pallet — between boxes, bags, trays, or other packaging types — and work by dramatically increasing the coefficient of friction at each interface.",
+      },
+      {
+        type: "text",
+        content: "The result is a pallet stack that behaves as a single cohesive unit, resisting the lateral and longitudinal forces experienced during road, rail, and sea transport.",
+      },
+      {
+        type: "heading",
+        content: "Key Features",
+      },
+      {
+        type: "list",
+        items: [
+          "High-quality paper construction — made from durable, industrial-grade paper designed to perform under the weight and movement stresses of a full pallet load.",
+          "Superior friction performance — the friction-enhanced surface keeps layers locked in place during acceleration, braking, and cornering.",
+          "Eco-friendly and recyclable — fully recyclable and aligned with circular economy standards.",
+          "Customisable sizes — available in sizes tailored to your pallet dimensions, including standard Euro pallets (1200×800 mm) or custom footprints.",
+          "Lightweight and easy to handle — minimal added weight, simple to apply by warehouse staff without special tools or training.",
+          "Cost-effective protection — one of the lowest-cost cargo protection solutions available per pallet, with a compelling return on investment from reduced damage claims.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Who Benefits from Anti-Slip Sheets?",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets are a versatile solution that adds value across virtually every sector that moves palletised goods. Industries currently benefiting from this product include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Logistics and 3PL operators",
+          "Food and beverage producers",
+          "Pharmaceutical distributors",
+          "Industrial parts manufacturers",
+          "Consumer goods retailers",
+          "E-commerce fulfilment centres",
+          "Building and construction materials",
+          "Chemical and hazmat packaging",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Immediate ROI",
+        content: "If your operation stacks goods on pallets and moves them by any mode of transport, Anti-Slip Sheets are relevant — and the return on investment is immediate when the first damaged shipment is prevented.",
+      },
+      {
+        type: "heading",
+        content: "How Anti-Slip Sheets Work in Practice",
+      },
+      {
+        type: "subheading",
+        content: "1. Application",
+      },
+      {
+        type: "text",
+        content: "Before the next tier of goods is placed on a pallet, a single Anti-Slip Sheet is laid flat across the layer below. No adhesives, no specialist equipment, and no additional training required. Most warehouse teams can integrate the process into their normal palletising workflow within minutes.",
+      },
+      {
+        type: "subheading",
+        content: "2. In Transit",
+      },
+      {
+        type: "text",
+        content: "The friction surface grips both the packaging below and the packaging above, creating resistance against lateral movement. When the vehicle brakes, corners, or encounters uneven road surfaces, the sheet prevents the stack from racking — the term for when the layers slide out of alignment.",
+      },
+      {
+        type: "subheading",
+        content: "3. At the Destination",
+      },
+      {
+        type: "text",
+        content: "Goods arrive in the same condition they left the warehouse. The sheets are simply removed and sent for paper recycling alongside standard cardboard, contributing to sustainability reporting and compliance with waste management regulations.",
+      },
+      {
+        type: "callout",
+        title: "Universal Compatibility",
+        content: "Anti-Slip Sheets are compatible with all common pallet types, including the EUR/EPAL Euro pallet (1200×800 mm), the ISO half pallet, and custom-sized platforms.",
+      },
+      {
+        type: "heading",
+        content: "Anti-Slip Sheets vs. Other Load Stabilisation Methods",
+      },
+      {
+        type: "subheading",
+        content: "Stretch Wrap and Strapping",
+      },
+      {
+        type: "text",
+        content: "Stretch film and strapping are widely used and effective for binding a pallet load from the outside. However, they do not prevent internal layer-to-layer movement. Anti-Slip Sheets work from the inside out, complementing stretch wrap rather than replacing it. Together, they provide comprehensive protection.",
+      },
+      {
+        type: "subheading",
+        content: "Dunnage Bags",
+      },
+      {
+        type: "text",
+        content: "Dunnage bags fill void space within containers and trailers to prevent whole-pallet movement. For layer-level stability within a single pallet stack, Anti-Slip Sheets are the more targeted and cost-efficient solution. Both product types are available through desiccant.com for complete cargo protection coverage.",
+      },
+      {
+        type: "subheading",
+        content: "Edge Protectors",
+      },
+      {
+        type: "text",
+        content: "Edge protectors guard the corners and edges of pallet loads from strap damage and impact. They address a different failure mode. Anti-Slip Sheets address the friction interface between layers — a gap that edge protectors alone cannot close.",
+      },
+      {
+        type: "callout",
+        title: "Combined Protection Strategy",
+        content: "For comprehensive cargo protection, logistics operators increasingly combine Anti-Slip Sheets, dunnage bags, and edge protectors sourced through a single supplier for simplicity and cost efficiency.",
+      },
+      {
+        type: "heading",
+        content: "Sustainability: Meeting Environmental Standards",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets are made from recyclable paper, making them straightforward to dispose of responsibly at the end of use. By reducing cargo damage, they also contribute indirectly to sustainability goals: fewer damaged goods means fewer replacement shipments, less wasted product, and a lower overall carbon footprint per unit delivered.",
+      },
+      {
+        type: "heading",
+        content: "Frequently Asked Questions",
+      },
+      {
+        type: "subheading",
+        content: "What sizes are available?",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets are available in customisable sizes. Euro pallets (1200×800 mm) are the most common and sheets sized to these are readily available. Contact us to specify your standard pallet dimensions.",
+      },
+      {
+        type: "subheading",
+        content: "Can Anti-Slip Sheets be used with food packaging?",
+      },
+      {
+        type: "text",
+        content: "Yes. Anti-Slip Sheets are suitable for use with food and beverage packaging. They do not come into direct contact with food products and are safe for use in food-grade logistics environments.",
+      },
+      {
+        type: "subheading",
+        content: "How many sheets do I need per pallet?",
+      },
+      {
+        type: "text",
+        content: "Typically one sheet is placed between each tier of goods. A standard pallet with four tiers of product would use three sheets. Your actual requirement depends on the number of layers and the weight distribution of your load.",
+      },
+      {
+        type: "subheading",
+        content: "Are they recyclable?",
+      },
+      {
+        type: "text",
+        content: "Yes. Anti-Slip Sheets are paper-based and can be recycled alongside cardboard in standard paper and cardboard recycling streams.",
+      },
+      {
+        type: "subheading",
+        content: "Do they work on all pallet types?",
+      },
+      {
+        type: "text",
+        content: "Anti-Slip Sheets work on all common pallet types, including EPAL Euro pallets, half pallets, and custom industrial platforms. They are equally effective on wood, plastic, and composite pallet surfaces.",
+      },
+    ],
+
+    cta: {
+      heading: "Ready to stabilise your pallet loads?",
+      description: "Explore our Anti-Slip Sheets — available in customisable sizes for all standard pallet formats. Contact us for a sample or to discuss your requirements.",
+      buttonText: "View Anti-Slip Sheets",
+      buttonLink: "/anti-slip",
     },
   },
 

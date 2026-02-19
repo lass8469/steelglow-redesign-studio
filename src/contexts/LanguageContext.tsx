@@ -353,6 +353,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post9.excerpt": "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and combining with desiccants for complete cargo protection.",
     "blogPage.post10.title": "Did your desiccant actually work? How data loggers verify your moisture protection strategy",
     "blogPage.post10.excerpt": "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A data logger closes that gap.",
+    "blogPage.post11.title": "Anti-Slip Sheets: The smart way to stabilise pallet loads in transit",
+    "blogPage.post11.excerpt": "High-friction paper sheets that protect your cargo from shifting — a proven, cost-effective way to increase friction between layers and keep every pallet stack exactly where it should be.",
 
     // Downloads Page
     "downloadsPage.title1": "Resources",
@@ -1265,6 +1267,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post9.excerpt": "Lær hvordan luftpuder forhindrer godsskift i containere, lastbiler og togvogne. Dækker PP/PE vs. kraftpapir, dimensionering og kombination med tørremidler for komplet lastsikring.",
     "blogPage.post10.title": "Virkede dit tørremiddel? Sådan verificerer dataloggere din fugtbeskyttelsesstrategi",
     "blogPage.post10.excerpt": "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",
+    "blogPage.post11.title": "Anti-Slip Sheets: Den smarte måde at stabilisere pallelæs under transport",
+    "blogPage.post11.excerpt": "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
 
     // Downloads Page
     "downloadsPage.title1": "Ressourcer",

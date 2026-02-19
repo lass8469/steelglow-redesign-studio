@@ -46,6 +46,7 @@ const basePaths = [
   "/blog/drybag-i-clay-desiccant-guide",
   "/blog/dunnage-bags-container-loading-guide",
   "/blog/data-logger-verification-guide",
+  "/blog/anti-slip-sheets-pallet-load-stability",
 ];
 
 /** All routes with language prefixes — used by prerender & vite */

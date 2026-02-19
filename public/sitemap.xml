@@ -552,4 +552,22 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog: Anti-Slip Sheets -->
+  <url>
+    <loc>https://desiccant.com/en/blog/anti-slip-sheets-pallet-load-stability</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/anti-slip-sheets-pallet-load-stability" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/anti-slip-sheets-pallet-load-stability" />
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://desiccant.com/da/blog/anti-slip-sheets-pallet-load-stability</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/anti-slip-sheets-pallet-load-stability" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/anti-slip-sheets-pallet-load-stability" />
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
