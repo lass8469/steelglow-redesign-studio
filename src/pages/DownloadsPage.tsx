@@ -15,7 +15,7 @@ import { submitWeb3Form } from "@/lib/web3forms";
 import { useFieldValidation } from "@/hooks/useFieldValidation";
 
 const DownloadsPage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.downloads.title"), t("meta.downloads.description"), { ogImage: "/og-downloads.jpg" });
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -213,7 +213,7 @@ const DownloadsPage = () => {
                   {t("downloadsPage.csrDesc")}
                 </p>
                 <a
-                  href="/downloads/dry-bag-csr.pdf"
+                  href={`/downloads/${language}/dry-bag-csr.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors text-sm"
@@ -233,7 +233,7 @@ const DownloadsPage = () => {
                   {t("downloadsPage.vetDesc")}
                 </p>
                 <a
-                  href="/downloads/danish-veterinary-certificate.pdf"
+                  href={`/downloads/${language}/danish-veterinary-certificate.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground font-medium rounded-sm hover:bg-primary/90 transition-colors text-sm"
