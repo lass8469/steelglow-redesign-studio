@@ -190,9 +190,10 @@ const SocialProofPage = () => {
                   )}
                   <div>
                     <p className="font-semibold text-foreground">{review.name}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {review.role ? `${review.role}, ${review.company}` : review.company}
-                    </p>
+                    {review.role && (
+                      <p className="text-sm text-muted-foreground">{review.role}</p>
+                    )}
+                    <p className="text-sm text-muted-foreground">{review.company}</p>
                   </div>
                 </div>
               </motion.div>
