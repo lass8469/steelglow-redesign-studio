@@ -588,4 +588,22 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Blog: DRY BAG Retail Guide -->
+  <url>
+    <loc>https://desiccant.com/en/blog/dry-bag-retail-moisture-absorber-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/dry-bag-retail-moisture-absorber-guide" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/dry-bag-retail-moisture-absorber-guide" />
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://desiccant.com/da/blog/dry-bag-retail-moisture-absorber-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/dry-bag-retail-moisture-absorber-guide" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/dry-bag-retail-moisture-absorber-guide" />
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
