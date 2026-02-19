@@ -1,5 +1,6 @@
 import { ArrowLeft, Package, RefreshCw, Zap, Check, ChevronRight } from "lucide-react";
 import SpecSheetDialog from "@/components/SpecSheetDialog";
+import RelatedProducts from "@/components/RelatedProducts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -202,6 +203,7 @@ const StabustrapProduct = () => {
           </Tabs>
         </div>
       </section>
+      <RelatedProducts productKey="stabustrap" />
       <MoistureBackground className="bg-background">
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8 text-center">

@@ -1,5 +1,6 @@
 import { ArrowLeft, Package, Shield, Droplets, Check, ChevronRight } from "lucide-react";
 import SpecSheetDialog from "@/components/SpecSheetDialog";
+import RelatedProducts from "@/components/RelatedProducts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -63,6 +64,7 @@ const SilicaProduct = () => {
         <TabsContent value="sizes" className="mt-8"><div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">{sizes.map((s)=>(<Card key={s.weight} className={`bg-card/50 border-border transition-all duration-300 hover:border-primary/50 hover:shadow-lg ${s.popular?"ring-2 ring-primary/50":""}`}><CardContent className="p-6 text-center relative">{s.popular&&(<span className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 text-xs font-semibold bg-primary text-primary-foreground rounded-full">{t("productPage.mostPopular")}</span>)}<h3 className="text-3xl font-black text-foreground mb-2">{s.weight}</h3><p className="text-sm text-muted-foreground">{s.description}</p></CardContent></Card>))}</div></TabsContent>
         <TabsContent value="applications" className="mt-8"><Card className="bg-card/50 border-border"><CardContent className="p-6 lg:p-8"><div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">{applications.map((a)=>(<div key={a} className="flex items-center gap-3 py-3 px-4 rounded-lg bg-background/50 border border-border/50"><Check className="h-5 w-5 text-primary flex-shrink-0"/><span className="text-foreground">{a}</span></div>))}</div></CardContent></Card></TabsContent>
       </Tabs></div></section>
+      <RelatedProducts productKey="silica" />
       <MoistureBackground className="bg-background"><section className="py-16 lg:py-24"><div className="container mx-auto px-4 lg:px-8 text-center"><h2 className="text-3xl lg:text-4xl font-black tracking-tight mb-4">{t("silica.ctaTitle1")}<span className="text-gradient">{t("silica.ctaTitle2")}</span></h2><p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">{t("silica.ctaDesc")}</p><div className="flex flex-col sm:flex-row gap-4 justify-center"><Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">{t("productPage.contactSales")}</Button><Button size="lg" variant="ghost" className="text-primary hover:text-primary hover:bg-primary/10" asChild><LocalizedLink to="/products"><ArrowLeft className="mr-2 h-5 w-5"/>{t("productPage.viewAllProducts")}</LocalizedLink></Button></div></div></section></MoistureBackground>
       <Footer />
     </div>
