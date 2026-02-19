@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build && node scripts/prerender.mjs"
+  command = "npx puppeteer browsers install chrome && npm run build && node scripts/prerender.mjs"
   publish = "dist"
 
 [build.environment]
