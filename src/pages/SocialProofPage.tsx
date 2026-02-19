@@ -7,6 +7,7 @@ import envasesLogo from "@/assets/logo-envases.png";
 import r2Logo from "@/assets/logo-r2.svg";
 import palbyLogo from "@/assets/logo-palby.png";
 import srpackLogo from "@/assets/logo-srpack.png";
+import christianPhoto from "@/assets/testimonial-christian.webp";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -42,6 +43,7 @@ const SocialProofPage = () => {
       company: t("socialProof.review2.company"),
       text: t("socialProof.review2.text"),
       rating: 5,
+      image: christianPhoto,
     },
     {
       name: t("socialProof.review3.name"),
@@ -166,11 +168,17 @@ const SocialProofPage = () => {
 
                 {/* Reviewer Info */}
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-primary font-semibold text-lg">
-                      {review.name.charAt(0)}
-                    </span>
-                  </div>
+                  {review.image ? (
+                    <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                      <img src={review.image} alt={review.name} className="w-full h-full object-cover object-top" />
+                    </div>
+                  ) : (
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                      <span className="text-primary font-semibold text-lg">
+                        {review.name.charAt(0)}
+                      </span>
+                    </div>
+                  )}
                   <div>
                     <p className="font-semibold text-foreground">{review.name}</p>
                     <p className="text-sm text-muted-foreground">
