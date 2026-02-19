@@ -2519,8 +2519,8 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Container-tørremiddel — Komplet guide til fugtstyring
   // ------------------------------------------------------------
   "container-desiccant-stuffing-guide": {
-    title: "Container-tørremiddel: Den komplette guide til fugtstyring ved stuffning af en skibscontainer",
-    excerpt: "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte stuffningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
+    title: "Container-tørremiddel: Den komplette guide til fugtstyring ved lastning af en skibscontainer",
+    excerpt: "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte lastningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
     date: "2025-02-27",
     readTime: "16 min læsning",
     category: "Guide",
@@ -2530,7 +2530,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Fugtskader på gods er et af de mest vedvarende — og mest forebyggelige — problemer i international shipping. Uanset om du eksporterer møbler, elektronik, tekstiler, fødevarer eller industrimaskiner, er fjenden næsten altid den samme: luftfugtighed. Containertørremidler er dit primære forsvar, men deres effektivitet afhænger helt af, hvor godt du forbereder containeren før og under stuffningsprocessen.",
+        content: "Fugtskader på gods er et af de mest vedvarende — og mest forebyggelige — problemer i international shipping. Uanset om du eksporterer møbler, elektronik, tekstiler, fødevarer eller industrimaskiner, er fjenden næsten altid den samme: luftfugtighed. Containertørremidler er dit primære forsvar, men deres effektivitet afhænger helt af, hvor godt du forbereder containeren før og under lastningsprocessen.",
       },
       {
         type: "text",
@@ -2673,7 +2673,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "heading",
-        content: "Trin 4: Bedste praksis under stuffningsprocessen",
+        content: "Trin 4: Bedste praksis under lastningsprocessen",
       },
       {
         type: "text",
@@ -2685,7 +2685,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Jo længere en container står åben under lastning, jo mere fugtig luft trænger ind og mætter det indre rum. På en varm, fugtig dag i havnen bør du fuldføre stuffningen så effektivt som muligt og lukke og forsegle dørene prompte, når du er færdig.",
+        content: "Jo længere en container står åben under lastning, jo mere fugtig luft trænger ind og mætter det indre rum. På en varm, fugtig dag i havnen bør du fuldføre lastningen så effektivt som muligt og lukke og forsegle dørene prompte, når du er færdig.",
       },
       {
         type: "callout",

@@ -1279,8 +1279,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post12.excerpt": "Et elastisk, genanvendeligt båndsystem, der påføres på sekunder, holder læsset sikkert og eliminerer engangsplast fra intern pallehåndtering.",
     "blogPage.post13.title": "DRY BAG Retail – Industriel fugtsikring til båd, campingvogn og hjem",
     "blogPage.post13.excerpt": "Den samme gennemprøvede Moclay-formel fra global containerforsendelse — nu som en regenererbar, drypfri fugtabsorbent til båd, campingvogn, autocamper, kælder og garage. Fremstillet i Danmark.",
-    "blogPage.post14.title": "Container-tørremiddel: Den komplette guide til fugtstyring ved stuffning af en skibscontainer",
-    "blogPage.post14.excerpt": "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte stuffningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
+    "blogPage.post14.title": "Container-tørremiddel: Den komplette guide til fugtstyring ved lastning af en skibscontainer",
+    "blogPage.post14.excerpt": "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte lastningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
 
     // Downloads Page
     "downloadsPage.title1": "Ressourcer",
