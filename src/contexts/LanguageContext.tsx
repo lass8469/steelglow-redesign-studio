@@ -355,6 +355,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post10.excerpt": "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A data logger closes that gap.",
     "blogPage.post11.title": "Anti-Slip Sheets: The smart way to stabilise pallet loads in transit",
     "blogPage.post11.excerpt": "High-friction paper sheets that protect your cargo from shifting — a proven, cost-effective way to increase friction between layers and keep every pallet stack exactly where it should be.",
+    "blogPage.post12.title": "Stabustrap: The smarter, greener alternative to stretch film for internal pallet transport",
+    "blogPage.post12.excerpt": "An elastic, reusable strapping system that applies in seconds, holds loads securely, and eliminates single-use plastic waste from internal pallet handling.",
 
     // Downloads Page
     "downloadsPage.title1": "Resources",
@@ -1269,6 +1271,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post10.excerpt": "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",
     "blogPage.post11.title": "Anti-Slip Sheets: Den smarte måde at stabilisere pallelæs under transport",
     "blogPage.post11.excerpt": "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
+    "blogPage.post12.title": "Stabustrap: Det smartere, grønnere alternativ til strækfilm til intern palletransport",
+    "blogPage.post12.excerpt": "Et elastisk, genanvendeligt båndsystem, der påføres på sekunder, holder læsset sikkert og eliminerer engangsplast fra intern pallehåndtering.",
 
     // Downloads Page
     "downloadsPage.title1": "Ressourcer",
