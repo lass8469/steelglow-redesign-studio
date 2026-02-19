@@ -1,252 +1,210 @@
 
 
-# SEO Internal Linking Blueprint for Desiccant.com
+# SEO and LLM Optimization Gap Analysis
+
+## Current State Summary
+
+The site already has solid foundations: per-page meta tags, hreflang alternates, JSON-LD for Organization/Product/FAQ/Article, canonical URLs, a comprehensive sitemap, Google Analytics, and prerendering for all routes. The recent internal linking work (RelatedProducts, RelatedArticles components) addresses crawl depth. Here is what is still missing to reach professional-grade SEO and LLM discoverability.
 
 ---
 
-## 1. Topic Cluster Map
+## Gap 1: No llms.txt File (Critical for LLM Optimization)
 
-The site naturally organizes into **3 pillar clusters** with supporting content:
+The emerging `llms.txt` standard (llmstxt.org) tells AI models what your site does, what content is available, and how to cite it. You have no `public/llms.txt` or `public/llms-full.txt`.
 
-```text
-                         HOME (/)
-                           |
-          +----------------+----------------+
-          |                |                |
-     PRODUCTS          APPLICATIONS       ABOUT
-     (pillar)           (pillar)         (pillar)
-          |                |                |
-    +-----+-----+         |          +-----+-----+
-    |     |     |         |          |           |
-  Desic- Cargo  Other   9 industry  Testimonials
-  cants  Prot.  Prods   verticals     FAQ
-    |     |     |                    Downloads
-    |     |     |                    Blog (hub)
-    |     |     |                       |
-    v     v     v              14 technical articles
-  [5pp] [4pp] [2pp]         (cluster content)
-```
-
-### Cluster A: Moisture Protection (Desiccants)
-- **Pillar**: /products
-- **Cluster pages**: /drybag-i, /drybag-iii, /silica, /molecular-sieve, /calcium-chloride, /retail
-- **Supporting blog**: silica-gel-desiccant-guide, drybag-i-clay-desiccant-guide, chemistry-clay-mo-clay-vs-silica-gel, container-rain-dew-point-physics, vapor-pressure-wooden-pallets, mold-growth-timelines-80-rh, container-desiccant-stuffing-guide, dry-bag-retail-moisture-absorber-guide
-
-### Cluster B: Cargo Protection
-- **Pillar**: /products
-- **Cluster pages**: /dunnage-bag, /dunnage-bags, /edge-protectors, /anti-slip, /stabustrap
-- **Supporting blog**: dunnage-bags-container-loading-guide, anti-slip-sheets-pallet-load-stability, stabustrap-reusable-pallet-strapping
-
-### Cluster C: Monitoring and Verification
-- **Pillar**: /products (via datalogger)
-- **Cluster pages**: /datalogger
-- **Supporting blog**: data-loggers-vs-desiccants, data-logger-verification-guide, agriculture-feed-moisture-living-cargo
+**Action:** Create `public/llms.txt` with a structured summary of the company, product catalog, blog topics, and preferred citation format. Optionally create `public/llms-full.txt` with expanded product descriptions.
 
 ---
 
-## 2. Current Internal Linking Audit -- Problems Found
+## Gap 2: No BreadcrumbList JSON-LD Structured Data
 
-### Critical Issues
+Product pages render visual breadcrumbs (Home > Products > DRY-BAG I) but there is zero `BreadcrumbList` JSON-LD markup. Google uses this for rich breadcrumb display in SERPs, and LLMs use it to understand site hierarchy.
 
-| Issue | Severity | Pages Affected |
-|---|---|---|
-| **Product pages are dead ends** -- no cross-links to related products or blog articles | HIGH | All 11 product pages |
-| **Blog articles have zero inline internal links** -- article body is plain text with no hyperlinks | HIGH | All 14 blog articles |
-| **ApplicationsPage has no links to specific products** -- industry cards don't connect to relevant product pages | HIGH | /applications |
-| **AboutPage has zero internal links** (except CTA to /contact) | MEDIUM | /about |
-| **FAQPage has zero internal links** in answers (except CTA to /contact) | MEDIUM | /faq |
-| **SocialProofPage CTA uses raw `<a>` tag** instead of LocalizedLink -- broken language prefix | HIGH | /testimonials |
-| **BlogArticlePage has no "Related Articles" section** -- just a placeholder text | MEDIUM | All blog article pages |
-| **DownloadsPage has no links to product pages** | MEDIUM | /downloads |
-| **Homepage About section has no links** to /about, /products, or /applications | MEDIUM | / |
-
-### Orphan/Semi-Orphan Pages
-- **/faq** -- only accessible from mobile nav and footer, not from desktop main nav
-- **/downloads** -- only in navbar as "Resources" button and footer
-- **/testimonials** -- in nav but no contextual links from other pages
-- **/privacy** -- only in footer (acceptable)
+**Action:** Create a reusable `useBreadcrumbJsonLd` hook that injects BreadcrumbList schema. Apply to all 11 product pages, the blog hub, and all blog article pages.
 
 ---
 
-## 3. Internal Link Map -- Recommended Changes
+## Gap 3: Product Schema Missing Key Properties
 
-### A. Product Pages (all 11 pages)
+Current Product JSON-LD only has `name`, `description`, `brand`, `image`, `manufacturer`. Missing fields that Google explicitly supports:
 
-Each product page currently has: breadcrumb (Home > Products > [Product]) + CTA "View All Products" link. That's only 3 links total.
+- `sku` or `mpn` (product identifiers)
+- `category` (e.g., "Industrial Desiccants")
+- `offers` (even without a price, an `Offer` with `availability` and `priceCurrency` triggers rich results)
+- `aggregateRating` (if testimonials exist per product)
+- `additionalProperty` (for specs like absorption rate, shelf life)
 
-**Add to each product page -- "Related Products" section before the CTA:**
+**Action:** Enrich Product JSON-LD on all 11 product pages with `category`, `offers` (availability: InStock, priceOnRequest pattern), and `additionalProperty` for key specs.
 
-| Product Page | Related Products to Link | Related Blog to Link |
-|---|---|---|
-| /drybag-i | /drybag-iii, /calcium-chloride, /silica | drybag-i-clay-desiccant-guide, container-desiccant-stuffing-guide |
-| /drybag-iii | /drybag-i, /calcium-chloride, /molecular-sieve | chemistry-clay-mo-clay-vs-silica-gel, container-rain-dew-point-physics |
-| /silica | /molecular-sieve, /drybag-i, /retail | silica-gel-desiccant-guide, mold-growth-timelines-80-rh |
-| /molecular-sieve | /silica, /calcium-chloride, /drybag-iii | chemistry-clay-mo-clay-vs-silica-gel |
-| /calcium-chloride | /drybag-i, /drybag-iii, /molecular-sieve | container-rain-dew-point-physics, container-desiccant-stuffing-guide |
-| /dunnage-bag | /edge-protectors, /anti-slip, /stabustrap | dunnage-bags-container-loading-guide |
-| /edge-protectors | /anti-slip, /stabustrap, /dunnage-bag | anti-slip-sheets-pallet-load-stability |
-| /anti-slip | /edge-protectors, /stabustrap, /dunnage-bag | anti-slip-sheets-pallet-load-stability |
-| /stabustrap | /anti-slip, /edge-protectors, /dunnage-bag | stabustrap-reusable-pallet-strapping |
-| /retail | /silica, /drybag-i | dry-bag-retail-moisture-absorber-guide |
-| /datalogger | /drybag-i, /silica, /calcium-chloride | data-loggers-vs-desiccants, data-logger-verification-guide |
+---
 
-**Implementation**: Add a "Related Solutions" grid section with 3 product cards + 2 blog article cards before each product page's final CTA section. Also add an "Explore industry applications" link to /applications.
+## Gap 4: Article Schema Missing Key Properties
 
-### B. Blog Articles -- Inline Links + Related Articles
+Current Article JSON-LD is missing:
 
-**For each blog article, add:**
-1. Inline contextual links within article body text (via a new "link" section type or by enriching existing text sections with JSX links)
-2. A "Related Articles" grid at the bottom showing 3 related articles
+- `dateModified` (Google uses this to show freshness)
+- `mainEntityOfPage` (canonical URL reference)
+- `publisher.logo` (required for Article rich results)
+- `wordCount` (helps LLMs assess content depth)
+- `articleSection` (maps to category)
+- `inLanguage` (critical for multilingual sites)
 
-**Article-to-article link map:**
+**Action:** Extend Article JSON-LD with these properties across all 14 blog articles.
 
-| Article | Link to Products | Link to Sibling Articles |
-|---|---|---|
-| vapor-pressure-wooden-pallets | /drybag-i, /datalogger | container-rain-dew-point-physics, mold-growth-timelines-80-rh |
-| container-rain-dew-point-physics | /drybag-i, /drybag-iii, /calcium-chloride | vapor-pressure-wooden-pallets, container-desiccant-stuffing-guide |
-| chemistry-clay-mo-clay-vs-silica-gel | /drybag-i, /silica | silica-gel-desiccant-guide, drybag-i-clay-desiccant-guide |
-| data-loggers-vs-desiccants | /datalogger, /drybag-i | data-logger-verification-guide, container-rain-dew-point-physics |
-| agriculture-feed-moisture-living-cargo | /drybag-i, /datalogger | mold-growth-timelines-80-rh, vapor-pressure-wooden-pallets |
-| mold-growth-timelines-80-rh | /drybag-i, /silica, /calcium-chloride | vapor-pressure-wooden-pallets, container-rain-dew-point-physics |
-| silica-gel-desiccant-guide | /silica | chemistry-clay-mo-clay-vs-silica-gel, mold-growth-timelines-80-rh |
-| drybag-i-clay-desiccant-guide | /drybag-i | chemistry-clay-mo-clay-vs-silica-gel, container-desiccant-stuffing-guide |
-| dunnage-bags-container-loading-guide | /dunnage-bag, /edge-protectors | anti-slip-sheets-pallet-load-stability, stabustrap-reusable-pallet-strapping |
-| data-logger-verification-guide | /datalogger | data-loggers-vs-desiccants, agriculture-feed-moisture-living-cargo |
-| anti-slip-sheets-pallet-load-stability | /anti-slip, /edge-protectors | dunnage-bags-container-loading-guide, stabustrap-reusable-pallet-strapping |
-| stabustrap-reusable-pallet-strapping | /stabustrap | anti-slip-sheets-pallet-load-stability, dunnage-bags-container-loading-guide |
-| dry-bag-retail-moisture-absorber-guide | /retail, /silica | silica-gel-desiccant-guide, mold-growth-timelines-80-rh |
-| container-desiccant-stuffing-guide | /drybag-i, /drybag-iii, /calcium-chloride | container-rain-dew-point-physics, drybag-i-clay-desiccant-guide |
+---
 
-### C. ApplicationsPage -- Add Product Links per Industry
+## Gap 5: No Speakable Structured Data
 
-Each industry card should link to 1-2 relevant products:
+Google supports `speakable` markup on Article and WebPage schemas, which identifies sections suitable for text-to-speech and voice assistant answers. This is directly relevant for LLM and voice search optimization.
 
-| Industry | Product Links |
+**Action:** Add `speakable` property to Article JSON-LD pointing to the article headline and first paragraph CSS selectors.
+
+---
+
+## Gap 6: Homepage Missing JSON-LD WebSite + SearchAction
+
+The homepage has Organization schema in the static HTML, but no `WebSite` schema with `potentialAction: SearchAction`. This is what enables the Google sitelinks search box.
+
+**Action:** Add WebSite JSON-LD with SearchAction to the homepage (even if search isn't implemented yet, it signals site structure to Google).
+
+---
+
+## Gap 7: Blog Hub Page Missing JSON-LD
+
+The `/blog` page has zero structured data. It should have:
+- `CollectionPage` or `Blog` schema listing all articles
+- This helps search engines and LLMs understand the blog as a content hub
+
+**Action:** Add Blog/CollectionPage JSON-LD to BlogPage.tsx.
+
+---
+
+## Gap 8: No Semantic HTML Landmarks
+
+Blog articles render content inside a generic `<article>` tag but sections lack semantic structure:
+- No `<header>` wrapping the article meta
+- No `<main>` element on any page
+- No `<aside>` for related content sections
+- No `<time datetime="...">` for dates (currently just formatted text)
+
+These landmarks help both search engines and LLMs parse page structure.
+
+**Action:** Add `<main>` to all page layouts, wrap article dates in `<time datetime>` elements, add `<header>` and `<aside>` to article pages.
+
+---
+
+## Gap 9: No Open Graph Locale Tags
+
+OG tags include title, description, image, URL, type, and site_name. Missing:
+- `og:locale` (e.g., `en_US` or `da_DK`)
+- `og:locale:alternate` (the other language)
+
+These are important for multilingual social sharing and LLM language detection.
+
+**Action:** Add `og:locale` and `og:locale:alternate` to the `usePageMeta` hook.
+
+---
+
+## Gap 10: Images Missing Dimensions in HTML
+
+Product images and blog hero images use `<img>` tags without explicit `width` and `height` attributes. This causes CLS (Cumulative Layout Shift) which hurts Core Web Vitals scores.
+
+**Action:** Add `width` and `height` attributes to key images (hero images, product images) to enable browser aspect ratio pre-calculation.
+
+---
+
+## Gap 11: No `<link rel="preconnect">` for External Origins
+
+The site loads Google Analytics from `googletagmanager.com` and `google-analytics.com` but has no preconnect hints. This adds latency.
+
+**Action:** Add `<link rel="preconnect">` and `<link rel="dns-prefetch">` to `index.html` for Google Analytics domains.
+
+---
+
+## Gap 12: Footer LinkedIn Link Points to Generic URL
+
+The footer links to `https://linkedin.com` instead of the actual company LinkedIn page (`https://www.linkedin.com/company/dry-bag-denmark/` per the Organization JSON-LD).
+
+**Action:** Fix the Footer LinkedIn URL to the real company page.
+
+---
+
+## Gap 13: No `lastmod` Dynamic Values in Sitemap
+
+All sitemap entries have the same static `lastmod` date. While acceptable, having article-specific dates (matching the `date` field in blog-articles.ts) would improve freshness signals.
+
+**Action:** This requires a build-time script enhancement. Lower priority, but note for future.
+
+---
+
+## Gap 14: Duplicate Route /dunnage-bag and /dunnage-bags
+
+Both routes render the same `DunnageBagProduct` component. This creates duplicate content. Only one should be canonical; the other should redirect.
+
+**Action:** Remove `/dunnage-bags` as a route and add a redirect to `/dunnage-bag`, or set a canonical URL on the duplicate.
+
+---
+
+## Gap 15: Homepage About Section Has No Internal Links
+
+The `About.tsx` component (homepage section) renders text and feature cards with zero clickable links. It should link to `/about`, `/products`, and `/applications`.
+
+**Action:** Make the "45+" stat link to `/about`, feature cards link to `/products` or `/applications`.
+
+---
+
+## Gap 16: FAQ Answers Have No Inline Links
+
+FAQ answers are plain text strings from translations. They mention products and concepts but contain no links.
+
+**Action:** Convert FAQ answers to support inline links (either via a simple markdown-to-JSX parser or by splitting answers into segments with link data).
+
+---
+
+## Implementation Priority
+
+| Priority | Gap | Impact | Effort |
+|---|---|---|---|
+| 1 | llms.txt | High (LLM discoverability) | Low |
+| 2 | BreadcrumbList JSON-LD | High (SERP rich results) | Low |
+| 3 | Article schema enrichment | High (freshness signals) | Low |
+| 4 | Product schema enrichment | High (rich results eligibility) | Medium |
+| 5 | og:locale tags | Medium (multilingual SEO) | Low |
+| 6 | Semantic HTML landmarks | Medium (crawl quality) | Medium |
+| 7 | Footer LinkedIn fix | Low (trust signal) | Trivial |
+| 8 | Preconnect hints | Medium (Core Web Vitals) | Trivial |
+| 9 | Duplicate dunnage route | Medium (duplicate content) | Low |
+| 10 | Homepage About links | Medium (internal linking) | Low |
+| 11 | Image dimensions | Medium (CLS/Core Web Vitals) | Medium |
+| 12 | WebSite + SearchAction schema | Medium (sitelinks) | Low |
+| 13 | Blog hub JSON-LD | Medium (content hub signal) | Low |
+| 14 | Speakable markup | Low-Medium (voice/LLM) | Low |
+| 15 | FAQ inline links | Medium (internal linking) | Medium |
+| 16 | Dynamic sitemap lastmod | Low (freshness) | High |
+
+## Content Gaps (Requiring New Written Content)
+
+These were identified in the previous blueprint and remain unaddressed:
+
+| Missing Content | SEO Value |
 |---|---|
-| Pharmaceutical | /silica, /molecular-sieve |
-| Electronics | /silica, /molecular-sieve |
-| Food | /drybag-i, /calcium-chloride |
-| Logistics | /dunnage-bag, /anti-slip |
-| Automotive | /drybag-iii, /edge-protectors |
-| Wind Energy | /drybag-i, /stabustrap |
-| Chemical | /molecular-sieve, /calcium-chloride |
-| Textile | /silica, /drybag-i |
-| Metal | /drybag-iii, /calcium-chloride |
+| "Calcium chloride vs clay desiccants" article | Fills product-specific content gap |
+| "Molecular sieve: Why pore size matters" article | No supporting content for this product |
+| "Edge protectors: Preventing crush damage" article | No blog support for cargo cluster |
+| "DRY-BAG III for long ocean voyages" article | High-value commercial keyword gap |
+| "How to choose the right desiccant: Buyer's guide" | Pillar content opportunity, links all desiccant products |
+| Industry case studies (wind, pharma, automotive) | Builds E-E-A-T signals, supports /applications |
 
-### D. AboutPage -- Add Contextual Links
+## Technical Implementation Summary
 
-Add links to: /products (in "What We Offer" section), /applications, /testimonials (in company description), /blog (in offerings section).
-
-### E. FAQPage -- Add Inline Links in Answers
-
-FAQ answers should contain contextual links to relevant product pages and blog articles where the answer references specific products or concepts.
-
-### F. Homepage -- Add Links in About Section
-
-The About component on the homepage should link "45+ years" to /about, feature icons should link to /applications, and the section should include a "View all products" link to /products.
-
-### G. Fix SocialProofPage CTA Bug
-
-Line 209-214 in SocialProofPage.tsx uses a raw `<a href="/contact">` instead of `<LocalizedLink to="/contact">`. This breaks the language prefix routing.
-
----
-
-## 4. Anchor Text Strategy
-
-### Anchor Mix Targets
-
-| Type | Target % | Example |
-|---|---|---|
-| Exact match | 10% max | "silica gel desiccant", "container desiccants" |
-| Partial match | 30% | "our silica gel range", "clay-based desiccant solutions" |
-| Semantic variation | 25% | "moisture absorption products", "cargo securing solutions" |
-| Natural sentence | 20% | "learn how dew point physics affects your shipments", "see what our customers say" |
-| Branded | 15% | "DRY-BAG I", "DESICCANT Stabustrap", "Desiccant.com's range" |
-
-### Anchor Examples by Product
-
-| Product | Exact (10%) | Partial (30%) | Semantic (25%) | Natural (20%) | Branded (15%) |
-|---|---|---|---|---|---|
-| /drybag-i | "clay desiccant" | "clay-based container desiccant" | "moisture protection for ocean freight" | "discover how to prevent container rain" | "DRY-BAG I" |
-| /silica | "silica gel" | "silica gel sachets" | "pharmaceutical-grade moisture absorber" | "explore small-format desiccant options" | "Desiccant.com Silica Gel" |
-| /dunnage-bag | "dunnage bags" | "inflatable void fillers" | "prevent cargo shifting in transit" | "see how air bags stabilise your load" | "our Dunnage Bag range" |
-| /anti-slip | "anti-slip sheets" | "pallet grip sheets" | "prevent load slippage" | "keep pallets from sliding during transport" | "DESICCANT Anti-Slip" |
-
-### Over-Optimization Risks to Avoid
-- Do NOT use "container desiccant" as anchor for both /drybag-i and /drybag-iii -- this causes cannibalization. Use "clay desiccant bags" for DRY-BAG I and "high-capacity calcium chloride desiccant" for DRY-BAG III.
-- Do NOT link /silica and /molecular-sieve with the same "industrial desiccant" anchor. Differentiate: "silica gel beads" vs "molecular sieve pellets".
-- The /dunnage-bag and /dunnage-bags routes serve the same component -- consolidate to one canonical URL to avoid duplicate content signals.
-
----
-
-## 5. Link Frequency Guidelines
-
-Based on 1 link per 120-180 words:
-
-| Page Type | Estimated Word Count | Target Links | Pillar | Cluster | Commercial |
-|---|---|---|---|---|---|
-| Product page | ~400 words | 3-4 body links | 1 (/products) | 2 related products | 1 (/contact) |
-| Blog article | ~1500-2500 words | 10-18 body links | 1 (/products) | 4-6 articles + 3-4 products | 1-2 (/contact, /downloads) |
-| Applications | ~600 words | 4-5 body links | 1 (/products) | 2-3 product links | 1 (/contact) |
-| About | ~500 words | 3-4 body links | 1 (/products) | 1 (/applications), 1 (/testimonials) | 1 (/contact) |
-| FAQ | ~800 words | 5-6 inline links | 1 (/products) | 3-4 product/blog | 1 (/contact) |
-| Homepage | ~300 words | 3-4 section links | N/A (is the pillar) | 2 (/products, /applications) | 1 (/contact) |
-
----
-
-## 6. Missing Content Opportunities
-
-| Gap | Suggested New Content | Cluster Fit |
-|---|---|---|
-| No calcium-chloride-specific blog article | "Calcium chloride vs clay desiccants: When to choose high-capacity absorption" | Cluster A |
-| No molecular-sieve-specific blog article | "Molecular sieve desiccants: Why pore size matters for gas and moisture separation" | Cluster A |
-| No edge-protectors-specific blog article | "Edge protectors and corner boards: Preventing crush damage in stacked pallets" | Cluster B |
-| No DRY-BAG III-specific blog article | "DRY-BAG III: High-capacity calcium chloride desiccant for long ocean voyages" | Cluster A |
-| No industry case study content | Case studies per industry vertical (pharma, automotive, wind) linking to /applications and products | Cross-cluster |
-| No comparison/buying guide | "How to choose the right desiccant: A complete buyer's guide" -- links to all 5 desiccant products | Cluster A pillar |
-
----
-
-## 7. Implementation Plan
-
-### Phase 1: Quick Fixes (structural)
-1. Fix SocialProofPage.tsx raw `<a>` tag to `<LocalizedLink>`
-2. Add "Related Products" section component (reusable across all product pages)
-3. Add "Related Articles" section to BlogArticlePage.tsx (replace placeholder)
-
-### Phase 2: Product Page Cross-Links
-4. Add related products + blog links to all 11 product pages
-5. Add /applications link to product page CTAs
-
-### Phase 3: Blog Internal Links
-6. Add a new section type "rich-text" to the article framework that supports inline links (or convert key text sections to include JSX link components)
-7. Build the related articles data mapping and render 3 related articles at article bottom
-
-### Phase 4: Supporting Page Links
-8. Add product links to ApplicationsPage industry cards
-9. Add contextual links to AboutPage sections
-10. Add inline links in FAQPage answers
-11. Add product links to DownloadsPage
-12. Add links in Homepage About component
-
-### Phase 5: Content Gaps
-13. Create 4-6 new blog articles to fill the content gaps identified above
-
----
-
-## 8. Technical Implementation Details
-
-### New Reusable Component: RelatedProducts
-Create `src/components/RelatedProducts.tsx` -- a grid of 3 product cards + 2 blog article cards that accepts configuration props. Used on every product page.
-
-### New Component: RelatedArticles
-Create `src/components/RelatedArticles.tsx` -- a grid of 3 article cards for the blog article page. Add a `relatedSlugs` field to the Article type to define relationships.
-
-### Article Type Extension
-Add to the `Article` interface in `blog-articles.ts`:
-- `relatedSlugs?: string[]` -- array of 3 related article slugs
-- `productLinks?: { path: string; label: string }[]` -- products referenced in the article
-
-### Rich Text in Articles
-Add a new section type `"rich-text"` that accepts JSX-compatible content with inline links, or modify the `"text"` type to support markdown-style links that get parsed into `<LocalizedLink>` components during rendering.
+The plan involves:
+1. Creating `public/llms.txt` (new file)
+2. Creating a `useBreadcrumbJsonLd` hook (new file)
+3. Enriching existing `useJsonLd` calls across product and article pages
+4. Adding `og:locale` support to `usePageMeta`
+5. Adding `<main>`, `<time>`, `<header>`, `<aside>` semantic elements
+6. Adding preconnect links to `index.html`
+7. Fixing the Footer LinkedIn URL
+8. Resolving the /dunnage-bags duplicate route
+9. Adding links to Homepage About section and FAQ answers
 
