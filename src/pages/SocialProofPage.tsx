@@ -152,7 +152,7 @@ const SocialProofPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-card border border-border rounded-sm p-8 relative group hover:border-primary/30 transition-colors"
+                className="bg-card border border-border rounded-sm p-8 relative group hover:border-primary/30 transition-colors flex flex-col"
               >
                 <Quote className="absolute top-6 right-6 w-8 h-8 text-primary/20 group-hover:text-primary/40 transition-colors" />
                 
@@ -171,7 +171,7 @@ const SocialProofPage = () => {
                 )}
 
                 {/* Review Text */}
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-6 leading-relaxed flex-1">
                   "{review.text}"
                 </p>
 
