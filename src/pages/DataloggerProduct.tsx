@@ -14,7 +14,7 @@ import { useJsonLd } from "@/hooks/useJsonLd";
 
 const DataloggerProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.datalogger.title"), t("meta.datalogger.description"));
+  usePageMeta(t("meta.datalogger.title"), t("meta.datalogger.description"), { ogImage: productDatalogger });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

@@ -10,7 +10,7 @@ import aboutHeroBg from "@/assets/about-hero.webp";
 
 const AboutPage = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.about.title"), t("meta.about.description"));
+  usePageMeta(t("meta.about.title"), t("meta.about.description"), { ogImage: "/og-about.jpg" });
 
   const stats = [
     { value: "45+", label: t("aboutPage.stat1") },

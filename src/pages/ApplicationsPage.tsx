@@ -13,7 +13,7 @@ import applicationsHeroBg from "@/assets/applications-hero.webp";
 
 const ApplicationsPage = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.applications.title"), t("meta.applications.description"));
+  usePageMeta(t("meta.applications.title"), t("meta.applications.description"), { ogImage: "/og-applications.jpg" });
 
   const industries = [
     {

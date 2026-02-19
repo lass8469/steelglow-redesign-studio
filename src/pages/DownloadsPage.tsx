@@ -16,7 +16,7 @@ import { useFieldValidation } from "@/hooks/useFieldValidation";
 
 const DownloadsPage = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.downloads.title"), t("meta.downloads.description"));
+  usePageMeta(t("meta.downloads.title"), t("meta.downloads.description"), { ogImage: "/og-downloads.jpg" });
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({

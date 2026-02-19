@@ -14,7 +14,7 @@ import productDunnage from "@/assets/product-dunnage-bag.webp";
 
 const DunnageBagProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.dunnage.title"), t("meta.dunnage.description"));
+  usePageMeta(t("meta.dunnage.title"), t("meta.dunnage.description"), { ogImage: productDunnage });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

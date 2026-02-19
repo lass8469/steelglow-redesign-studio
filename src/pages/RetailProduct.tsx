@@ -14,7 +14,7 @@ import productRetail from "@/assets/product-retail.webp";
 
 const RetailProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.retail.title"), t("meta.retail.description"));
+  usePageMeta(t("meta.retail.title"), t("meta.retail.description"), { ogImage: productRetail });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

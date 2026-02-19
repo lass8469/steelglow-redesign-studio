@@ -17,7 +17,7 @@ import {
 
 const FAQPage = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.faq.title"), t("meta.faq.description"));
+  usePageMeta(t("meta.faq.title"), t("meta.faq.description"), { ogImage: "/og-faq.jpg" });
 
   const faqs = [
     { question: t("faqPage.q1"), answer: t("faqPage.a1") },

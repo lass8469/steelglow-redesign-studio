@@ -14,7 +14,7 @@ import productStabustrap from "@/assets/product-stabustrap.webp";
 
 const StabustrapProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.stabustrap.title"), t("meta.stabustrap.description"));
+  usePageMeta(t("meta.stabustrap.title"), t("meta.stabustrap.description"), { ogImage: productStabustrap });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

@@ -11,7 +11,7 @@ import { articles } from "@/lib/blog-articles";
 
 const BlogPage = () => {
   const { t, language } = useLanguage();
-  usePageMeta(t("meta.blog.title"), t("meta.blog.description"));
+  usePageMeta(t("meta.blog.title"), t("meta.blog.description"), { ogImage: "/og-blog.jpg" });
 
   const blogPosts = [
     {

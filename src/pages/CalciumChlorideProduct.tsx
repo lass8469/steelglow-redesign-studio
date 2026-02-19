@@ -14,7 +14,7 @@ import productCalciumChloride from "@/assets/product-calcium-chloride.webp";
 
 const CalciumChlorideProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.calcium.title"), t("meta.calcium.description"));
+  usePageMeta(t("meta.calcium.title"), t("meta.calcium.description"), { ogImage: productCalciumChloride });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

@@ -14,7 +14,7 @@ import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 
 const MolecularSieveProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.molecular.title"), t("meta.molecular.description"));
+  usePageMeta(t("meta.molecular.title"), t("meta.molecular.description"), { ogImage: productMolecularSieve });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

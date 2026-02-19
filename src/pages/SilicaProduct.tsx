@@ -14,7 +14,7 @@ import productSilica from "@/assets/product-silica-gel.webp";
 
 const SilicaProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.silica.title"), t("meta.silica.description"));
+  usePageMeta(t("meta.silica.title"), t("meta.silica.description"), { ogImage: productSilica });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

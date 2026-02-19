@@ -10,7 +10,7 @@ import { usePageMeta } from "@/hooks/usePageMeta";
 
 const Index = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.home.title"), t("meta.home.description"));
+  usePageMeta(t("meta.home.title"), t("meta.home.description"), { ogImage: "/og-home.jpg" });
    return (
      <div className="min-h-screen bg-background">
        <Navbar />
