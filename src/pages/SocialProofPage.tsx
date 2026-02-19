@@ -18,7 +18,6 @@ const SocialProofPage = () => {
   const { t } = useLanguage();
   usePageMeta(t("meta.testimonials.title"), t("meta.testimonials.description"), { ogImage: "/og-testimonials.jpg" });
 
-  // Placeholder logos - replace with actual company logos
   const trustedLogos = [
     { name: "VARO", icon: null, accent: true, logo: varoLogo },
     { name: "BabyDan", icon: null, accent: false, logo: babydanLogo },
