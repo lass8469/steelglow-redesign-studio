@@ -15,6 +15,14 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "stabustrap-reusable-pallet-strapping",
+      titleKey: "blogPage.post12.title",
+      excerptKey: "blogPage.post12.excerpt",
+      date: "2025-02-25",
+      readTime: "12",
+      category: "Guide",
+    },
+    {
       slug: "anti-slip-sheets-pallet-load-stability",
       titleKey: "blogPage.post11.title",
       excerptKey: "blogPage.post11.excerpt",

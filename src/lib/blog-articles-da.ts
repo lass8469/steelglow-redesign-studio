@@ -8,6 +8,7 @@ import productSilicaGel from "@/assets/product-silica-gel.webp";
 import productDrybagI from "@/assets/product-drybag-i.webp";
 import productDunnageBag from "@/assets/product-dunnage-bag.webp";
 import productAntislip from "@/assets/product-antislip.webp";
+import productStabustrap from "@/assets/product-stabustrap.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -2130,6 +2131,179 @@ export const articlesDa: Record<string, Article> = {
       description: "Udforsk vores Anti-Slip Sheets — tilgængelige i tilpasselige størrelser til alle standard palleformater. Kontakt os for en prøve eller for at drøfte dine behov.",
       buttonText: "Se Anti-Slip Sheets",
       buttonLink: "/anti-slip",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: Stabustrap — Genanvendeligt pallebånd
+  // ------------------------------------------------------------
+  "stabustrap-reusable-pallet-strapping": {
+    title: "Stabustrap: Det smartere, grønnere alternativ til strækfilm til intern palletransport",
+    excerpt: "Et elastisk, genanvendeligt båndsystem, der påføres på sekunder, holder læsset sikkert og eliminerer engangsplast fra intern pallehåndtering.",
+    date: "2025-02-25",
+    readTime: "12 min læsning",
+    category: "Guide",
+    heroImage: productStabustrap,
+    author: "DESICCANT Teknisk Team",
+    canonicalPath: "/stabustrap",
+
+    sections: [
+      {
+        type: "text",
+        content: "Strækfilm er overalt i logistikken. Gå igennem et hvilket som helst lager, produktionsgulv eller distributionscenter, og du vil se det — ruller af engangsplastfilm viklet rundt om paller og kasser metervis, forbrugt kilometervis og smidt ud tonnevis. Til ekstern forsendelse, hvor læs udsættes for de fulde belastninger fra vej-, bane- og søtransport, kan strækfilm være passende. Men til intern håndtering — flytning af paller mellem arbejdsstationer, overførsel af gods mellem lagerområder eller stabilisering af læs til korte transporter inden for en facilitet — er det en langsom, spildsom og ofte unødvendig løsning.",
+      },
+      {
+        type: "text",
+        content: "Stabustrap er et specialudviklet alternativ: et elastisk båndsystem designet specifikt til intern palletransport og intern logistikhåndtering. Det påføres på sekunder uden udstyr, holder læs sikkert uden at beskadige emballage, og er fuldt genanvendeligt og genbrugeligt.",
+      },
+      {
+        type: "heading",
+        content: "Hvad er Stabustrap?",
+      },
+      {
+        type: "text",
+        content: "Stabustrap er et elastisk, genanvendeligt båndsystem, der vikles rundt om palleteret gods for at sikre det under intern flytning og håndtering. Til forskel fra strækfilm, der indkapsler et helt pallelæs i lag af plast, påføres Stabustrap som ét bånd — eller et lille antal bånd — løkket rundt om læsset på strategiske punkter for at forhindre pakker i at vælte eller forskyde sig.",
+      },
+      {
+        type: "text",
+        content: "Produktet virker gennem selve båndets elasticitet. Når det strækkes og fastgøres rundt om et læs, udøver det et konstant indadrettet tryk, der holder kasser, containere, tromler, sække og andre emballageformater fast mod hinanden. Ingen varmeforsegling, intet værktøj, intet udstyr påkrævet — kun båndet og et par hænder.",
+      },
+      {
+        type: "callout",
+        title: "Fem sekunders påføring",
+        content: "En enkelt operatør kan sikre en palle på ca. fem sekunder med Stabustrap sammenlignet med flere minutter med strækfilm. Båndet fjernes på sekunder og genbruges straks på næste palle.",
+      },
+      {
+        type: "heading",
+        content: "Problemet med strækfilm til intern logistik",
+      },
+      {
+        type: "text",
+        content: "Strækfilm blev standardløsningen til pallesikring, fordi den virker — den er fleksibel, bredt tilgængelig og effektiv til at stabilisere næsten enhver type læs. Men den blev primært designet til udgående forsendelse og ekstern transport. Til intern logistik er argumentet for strækfilm langt svagere, og ulemperne bliver mere markante.",
+      },
+      {
+        type: "list",
+        items: [
+          "Den er langsom — korrekt indpakning af en palle tager flere minutter. I et miljø med høj gennemstrømning, hvor hundredvis af paller flyttes dagligt, akkumuleres den tid til en betydelig driftsomkostning.",
+          "Den er spildsom — strækfilm er et engangsplastprodukt. Når den fjernes, kasseres den typisk og genererer betydelige mængder plastaffald.",
+          "Den kan beskadige emballage — påført forkert eller for stramt udøver strækfilm ujævnt tryk på kasser, især ved hjørner og kanter.",
+          "Den er ergonomisk belastende — gentagen bøjning, rotation og trækning af strækfilm rundt om paller er fysisk krævende og en kendt årsag til muskuloskeletale belastninger hos lagermedarbejdere.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Sådan fungerer Stabustrap",
+      },
+      {
+        type: "text",
+        content: "Påføringsprocessen er lige så enkel, som den lyder. Stabustrap-båndet strækkes manuelt rundt om læsset — hen over kassernes forside, rundt om pallens fulde omkreds eller diagonalt over stakken afhængigt af læskonfigurationen — og enderne fastgøres for at holde spændingen. Båndets elastiske egenskaber opretholder konstant tryk mod læsset under hele håndteringen.",
+      },
+      {
+        type: "text",
+        content: "Der behøves ingen værktøjer. Ingen oplæring ud over en kort demonstration. Når pallen når sin destination, frigøres båndet på sekunder og kan straks genbruges på næste palle. Et enkelt Stabustrap-bånd kan genbruges gentagne gange over dets levetid med betydelige besparelser i både materialeomkostninger og affald.",
+      },
+      {
+        type: "heading",
+        content: "Hvad Stabustrap kan sikre",
+      },
+      {
+        type: "text",
+        content: "Stabustrap er designet til at fungere med en bred vifte af læstyper og emballageformater. Det er ikke en løsning bygget til én produktkategori — den tilpasser sig, hvad læsset kræver.",
+      },
+      {
+        type: "list",
+        items: [
+          "Kasser og kartoner — forbrugsvarer, fødevare- og drikkevarer, farmaceutisk emballage og detailvarer holdes sikkert uden kantknusning eller overfladeskader.",
+          "Tromler og containere — bånd påført horisontalt rundt om en række tromler holder dem fast mod hinanden og forhindrer rotation eller væltning under håndtering.",
+          "Sække og poser — almindeligt brugt i landbrug, fødevareforarbejdning, kemisk og mineralindustri — Stabustrap giver hurtig og effektiv stabilisering uden at gennembore eller komprimere emballagen.",
+          "Industrielle dele og samlinger — for læs op til ca. ét ton giver Stabustrap tilstrækkelig holdekraft til typiske interne håndteringsbetingelser.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Ideelle miljøer for Stabustrap",
+      },
+      {
+        type: "list",
+        items: [
+          "Lagre og logistikcentre — flytning af paller mellem lagerzoner, fra modtagelse til indlagring, fra pluk til afsendelsesklargøring.",
+          "Produktions- og produktionsanlæg — hyppig flytning af igangværende arbejder mellem produktionstrin, monteringsområder og kvalitetskontrolstationer.",
+          "Fødevare- og drikkevareproducenter — Stabustraps genanvendelige sammensætning og rene påføringsproces passer godt til fødevaresikre håndteringsmiljøer.",
+          "Forbrugsvareproducenter og -distributører — kombinationen af hastighed, palleintegritet og reduceret emballageaffald er særlig værdifuld i spidsbelastningsperioder.",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Bæredygtighed: Argumentet i tal",
+      },
+      {
+        type: "text",
+        content: "Et enkelt Stabustrap-bånd vejer få gram. Det samme læs sikret med strækfilm kan kræve hundredvis af gram til kilogram plast pr. palle — materiale, der bruges én gang og derefter kasseres. På tværs af et anlæg, der behandler betydelige mængder dagligt, omsættes denne forskel i materialeforbrug direkte til en betydelig reduktion i plastaffald pr. år.",
+      },
+      {
+        type: "text",
+        content: "Stabustrap er fuldt genanvendeligt ved endt levetid. I modsætning til strækfilm, der ofte er kontamineret med fødevare- eller produktrester og ender i almindelige affaldsstrømme, kan Stabustrap-bånd genanvendes gennem standard genanvendelsesprocesser.",
+      },
+      {
+        type: "callout",
+        title: "Målbar bæredygtighedspåvirkning",
+        content: "For virksomheder med formelle bæredygtighedsrapporteringskrav eller ESG-mål er overgangen fra strækfilm til genanvendeligt bånd til intern logistik en kvantificerbar og rapporterbar reduktion i engangsplastforbrug.",
+      },
+      {
+        type: "heading",
+        content: "Stabustrap vs. strækfilm: En praktisk sammenligning",
+      },
+      {
+        type: "list",
+        items: [
+          "Påføringstid — strækfilm tager minutter pr. palle; Stabustrap tager sekunder. I lagre med høj omsætning påvirker denne forskel direkte gennemstrømningen.",
+          "Genanvendelighed — en strækfilmrulle forbruges og kasseres; et Stabustrap-bånd genvindes og genbruges, potentielt hundredvis af gange.",
+          "Emballageskader — Stabustrap påfører jævnt, konsistent tryk uden det lokaliserede kanttryk, som strækfilm kan skabe.",
+          "Ergonomi — påføring af et bånd i taljehøjde er fysisk neutralt; gentagen rotation rundt om en palle med en strækfilmapplikator er det ikke.",
+          "Miljøaftryk — markant mindre materialeforbrug, ingen engangsplastaffald, fuldt genanvendeligt ved endt levetid.",
+        ],
+      },
+      {
+        type: "text",
+        content: "Til ekstern forsendelse og langdistancefragt, hvor læs skal klare længere tids håndtering og miljøpåvirkning, er strækfilm fortsat et gyldigt valg. Stabustrap er ikke positioneret til at erstatte det i alle anvendelser — det er positioneret til at erstatte det der, hvor det ikke behøver at blive brugt i første omgang.",
+      },
+      {
+        type: "heading",
+        content: "Kombination af Stabustrap med andre godsikringsløsninger",
+      },
+      {
+        type: "list",
+        items: [
+          "Anti-slip sheets placeret mellem pallelag tilføjer friktion, der modvirker sideværts forskydning, og arbejder sammen med Stabustraps perimeterfiksering for en mere stabil stak.",
+          "Kantbeskyttere ved pallelæssets hjørner beskytter emballage mod det lokaliserede tryk fra enhver bånding.",
+          "Til udgående forsendelser adresserer luftpuder (dunnage bags) udfyldnings- og forskydningsudfordringerne i containertransport, mens tørremidler som DRY BAG I beskytter følsomt gods mod fugtskader under transit.",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Komplet godsbeskyttelse",
+        content: "Kombinationen af interne håndteringsløsninger (Stabustrap, anti-slip sheets) og ekstern forsendelsesbeskyttelse (luftpuder, tørremidler, kantbeskyttere) repræsenterer en komplet tilgang til godsintegritet fra lagergulvet til destinationen.",
+      },
+      {
+        type: "heading",
+        content: "Konklusion",
+      },
+      {
+        type: "text",
+        content: "Argumentet for Stabustrap i intern logistik er klart og konsistent: det er hurtigere at påføre end strækfilm, blødere ved emballage, genanvendeligt over hele dets levetid, fuldt genanvendeligt og mærkbart bedre for arbejdspladsergnomien. For lagre, produktionsanlæg og distributionscentre, hvor paller flyttes regelmæssigt i et kontrolleret miljø, erstatter det en langsom, spildsom og fysisk krævende proces med én, der tager fem sekunder og genererer intet engangsplastaffald.",
+      },
+      {
+        type: "quote",
+        content: "Strækfilmvanen i intern logistik er dybt indgroet, men den er ikke svær at ændre — og fordelene ved at ændre den er øjeblikkelige og målbare.",
+        attribution: "DESICCANT Teknisk Rådgivning",
+      },
+    ],
+
+    cta: {
+      heading: "Klar til at eliminere strækfilm fra intern håndtering?",
+      description: "Udforsk Stabustrap — det genanvendelige, elastiske båndsystem, der sikrer paller på fem sekunder uden engangsplastaffald. Anmod om tilbud eller prøve i dag.",
+      buttonText: "Se Stabustrap",
+      buttonLink: "/stabustrap",
     },
   },
 };
