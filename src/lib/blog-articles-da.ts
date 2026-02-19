@@ -949,7 +949,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Svaret er ikke et simpelt antal dage. Skimmel opererer ikke efter en fast tidsplan, og 80% relativ fugtighed betyder meget forskellige ting afhængigt af temperatur, godstype, tilgængelige næringsstoffer, og om du måler atmosfærisk fugtighed eller overfladeforhold. Forståelse af disse variabler adskiller afsendere, der forebygger skimmelskader, fra dem der opdager det ved destinationen.",
+        content: "Svaret er ikke et bestemt antal dage. Skimmel følger ikke noget fast skema, og 80 % relativ fugtighed (RF) betyder vidt forskellige ting afhængigt af temperaturen, godstypen, de tilgængelige næringsstoffer og om man måler luftfugtighed eller overfladeforhold. Det er netop forståelsen af disse faktorer, der adskiller afsendere, som forebygger skimmelskader, fra dem, der opdager skaden ved destinationen.",
       },
       {
         type: "heading",
@@ -957,40 +957,44 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Skimmelsporer er allestedsnærværende. De findes på praktisk talt alle organiske materialer, i luften, på containeroverflader og i hele godshåndteringsfaciliteter. Spørgsmålet er ikke, om sporer er til stede, men om forholdene tillader dem at spire og formere sig.",
+        content: "Skimmelsporer er overalt. De sidder på stort set alle organiske materialer, i luften, på containeroverflader og i godshåndteringsfaciliteter verden over. Spørgsmålet er ikke, om sporerne er til stede — det er de altid — men om forholdene tillader dem at spire og brede sig.",
       },
       {
         type: "text",
-        content: "Spiring kræver tre elementer samtidigt: tilstrækkelig fugt, passende temperatur og tilgængelige næringsstoffer. Sporer kan forblive i dvale i årevis under tørre forhold og derefter aktiveres inden for timer, når de udsættes for fugt. Den indledende spiringsfase tager typisk 24-48 timer ved 80% RF og 25°C for almindelige skimmelarter som Aspergillus og Penicillium. I dette vindue absorberer sporerne vand, svulmer op og begynder at danne hyfer (trådlignende filamenter), der vil blive skimmelkolonien.",
+        content: "For at spiring kan finde sted, skal tre betingelser være opfyldt på én gang: tilstrækkelig fugt, passende temperatur og tilgængelige næringsstoffer. Sporer kan ligge i dvale i årevis under tørre forhold og aktiveres inden for få timer, så snart de udsættes for fugt.",
       },
       {
         type: "text",
-        content: "Efter spiring opstår synlig vækst inden for 3-5 dage under gunstige forhold. Det er her, de fleste først bemærker skimmel — ser fnugagtige pletter på overflader eller misfarvning på organiske materialer. Skaden er dog allerede begyndt under den usynlige spiringsfase. Når skimmel er synlig, har kolonier gennemtrængt overfladematerialer og etableret fødestruktur, der gør fuldstændig fjernelse umulig uden at ødelægge substratet.",
+        content: "Selve spiringen tager typisk 24–48 timer ved 80 % RF og 25 °C for almindelige skimmelarter som Aspergillus og Penicillium. I dette tidsrum optager sporerne vand, svulmer op og begynder at danne hyfer — trådlignende filamenter, der vokser sig til en skimmelkoloni.",
+      },
+      {
+        type: "text",
+        content: "Synlig vækst opstår herefter inden for 3–5 dage under gunstige forhold. Det er normalt her, man opdager skimlen for første gang: fnugagtige pletter på overflader eller misfarvning på organiske materialer. Skaden er imidlertid begyndt allerede under den usynlige spiringsfase. Når skimlen kan ses med det blotte øje, har kolonierne allerede trængt ind i overfladematerialerne og etableret en fødestruktur, der gør det umuligt at fjerne skimlen helt uden at ødelægge substratet.",
       },
       {
         type: "callout",
         title: "Eksponentiel vækst",
-        content: "En lille skimmelplet kan fordoble i areal hver 24-48 timer under vedvarende gunstige forhold. En møntstørrelse plet på dag fem bliver håndfladestørrelse på dag syv og kan dække kvadratmetre på dag ti. Tidlig opdagelse er enormt vigtigt.",
+        content: "En lille skimmelplet kan fordoble sit areal hvert 24–48. time, så længe forholdene er gunstige. En møntstor plet på dag fem kan have nået håndfladeformat på dag syv og dække kvadratmetre på dag ti. Tidlig opdagelse er afgørende.",
       },
       {
         type: "heading",
-        content: "Hvorfor 80% RF er den kritiske grænse",
+        content: "Hvorfor 80 % RF er den kritiske grænse",
       },
       {
         type: "text",
-        content: "De fleste skimmelarter kræver minimum 80% relativ fugtighed for aktiv vækst, selvom nogle arter spirer ved 75% RF, og et par aggressive stammer kan begynde ved 70% RF. Denne grænse eksisterer, fordi skimmelvækst kræver flydende vand, ikke bare vanddamp. Under 80% RF udvikler de fleste overflader ikke de tynde fugtfilm, som skimmel har brug for til at fodre og vokse.",
+        content: "De fleste skimmelarter kræver mindst 80 % RF for aktivt at vokse, om end visse arter spirer ved 75 % RF, og et par aggressive stammer kan sætte i gang allerede ved 70 % RF. Grænsen eksisterer, fordi skimmelvækst forudsætter flydende vand — ikke blot vanddamp. Under 80 % RF dannes der på de fleste overflader ikke den tynde fugtfilm, som skimmel behøver for at ernære sig og vokse.",
       },
       {
         type: "text",
-        content: "Forholdet mellem relativ fugtighed og overfladefugt er komplekst. En container ved 80% RF betyder ikke, at hver overflade har flydende vand. Temperatur er enormt vigtig. En overflade med samme temperatur som den omgivende luft ved 80% RF forbliver tør. Men en overflade, der er bare 2-3°C koldere end luften, kan nå sit dugpunkt, hvor vanddamp kondenserer til væske.",
+        content: "Sammenhængen mellem relativ fugtighed og overfladefugt er dog kompleks. At en container måler 80 % RF, betyder ikke, at alle overflader er fugtige. Her spiller temperaturen en afgørende rolle: En overflade, der har samme temperatur som den omgivende luft, forbliver tør ved 80 % RF. Men er overfladen blot 2–3 °C koldere end luften, kan den nå sit dugpunkt, og vanddamp kondenserer til flydende vand.",
       },
       {
         type: "text",
-        content: "Hygroskopiske materialer som træ, papir, tekstiler og fødevarer absorberer fugt fra luften og koncentrerer den på deres overflader, hvilket skaber mikromiljøer med effektivt 100% RF, selv når containerluften måler 80% RF. Dette forklarer, hvorfor skimmel optræder på godsoverflader, før det optræder på containervægge.",
+        content: "Hygroskopiske materialer — træ, papir, tekstiler og fødevarer — suger fugt ud af luften og koncentrerer den på overfladen. Derved opstår mikromiljøer med op mod 100 % RF, selv når containerluften måler 80 %. Det er derfor, skimmel som regel viser sig på godset, før den dukker op på containervæggene.",
       },
       {
         type: "text",
-        content: "Nogle materialer sænker den effektive fugtighedsgrænse for skimmelvækst ved at give så rigeligt næringsstoffer, at svampe kan vokse med mindre end optimal fugt. Sukkerholdige produkter, proteinrige varer og cellulosebaserede materialer understøtter skimmelvækst ved lavere fugtighedsniveauer end inerte materialer.",
+        content: "Visse materialer sænker desuden den effektive fugtgrænse for skimmelvækst, fordi de stiller så rigeligt med næringsstoffer til rådighed, at svampe kan gro med under optimal fugt. Sukkerholdige produkter, proteinrige varer og cellulosebaserede materialer understøtter skimmelvækst ved lavere fugtighedsniveauer end inerte materialer.",
       },
       {
         type: "heading",
@@ -998,16 +1002,24 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Skimmelvæksthastigheder fordobles nogenlunde med hver 10°C temperaturstigning inden for det levedygtige område (cirka 0-40°C for de fleste arter). Ved 15°C og 80% RF kan spiring tage 72-96 timer og synlig vækst 7-10 dage. Ved 25°C og de samme 80% RF forekommer spiring inden for 24-48 timer og synlig vækst inden for 3-5 dage. Ved 35°C komprimeres disse tidslinjer yderligere til 12-24 timer for spiring og 2-3 dage for synlig vækst.",
+        content: "Skimmelvæksthastigheden fordobles omtrent for hver 10 °C temperaturstigning inden for arternes levedygtige interval (ca. 0–40 °C for de fleste).",
+      },
+      {
+        type: "list",
+        items: [
+          "Ved 15 °C og 80 % RF kan spiring tage 72–96 timer, og synlig vækst 7–10 dage.",
+          "Ved 25 °C og samme 80 % RF sker spiring inden for 24–48 timer og synlig vækst inden for 3–5 dage.",
+          "Ved 35 °C komprimeres forløbet yderligere: spiring på 12–24 timer og synlig vækst på 2–3 dage.",
+        ],
       },
       {
         type: "callout",
         title: "Tropisk vs. tempereret risiko",
-        content: "En container i Singapore ved 32°C og 80% RF kan udvikle betydelig skimmel inden for tre dage, mens den samme container i Rotterdam ved 18°C og 80% RF kan tolerere den samme fugtighed i en uge, før lignende skader optræder.",
+        content: "En container i Singapore ved 32 °C og 80 % RF kan udvikle betydelig skimmel på tre dage. Den samme container i Rotterdam ved 18 °C og 80 % RF kan tåle den samme fugtighed i en uge, inden tilsvarende skader opstår.",
       },
       {
         type: "text",
-        content: "Temperatursvingninger accelererer skimmelvækst ud over, hvad stabile temperaturer ville forårsage. Daglige temperaturcyklusser driver fugtkondensation og fordampningsmønstre, der skaber gentagne gange befugtede overflader — perfekt til skimmelspiring.",
+        content: "Temperaturudsving accelererer skimmelvæksten yderligere. Daglige temperatursvingninger driver gentagne kondensations- og fordampningscyklusser, der befugter overflader igen og igen — ideelle betingelser for skimmelspiring.",
       },
       {
         type: "heading",
@@ -1016,12 +1028,12 @@ export const articlesDa: Record<string, Article> = {
       {
         type: "list",
         items: [
-          "Kaffebønner: indledende skimmel inden for 5-7 dage ved 80% RF og 25°C. Bønner med 13% fugtindhold kan mugne inden for tre dage.",
-          "Kakaobønner: synlig skimmel inden for 4-6 dage, med intern skimmel og mykotoksinproduktion, der potentielt begynder tidligere.",
-          "Tekstiler og læder: overfladeskimmel inden for 3-5 dage under vedvarende 80% RF-forhold.",
-          "Træprodukter: skimmel inden for 5-7 dage; konstruktionstræ (krydsfinér, spånplader) ofte hurtigere ved 3-5 dage.",
-          "Korn og cerealier: 10-14 dage ved korrekt 14% fugtindhold, men kun 5-7 dage ved 16% fugtindhold.",
-          "Papirprodukter: skimmel inden for 3-5 dage — papir er i det væsentlige ren cellulose, et ideelt skimmelnæringsstof.",
+          "Kaffebønner: Begyndende skimmel inden for 5–7 dage ved 80 % RF og 25 °C. Bønner med 13 % fugtindhold kan mugne inden for tre dage.",
+          "Kakaobønner: Synlig skimmel inden for 4–6 dage; intern skimmel og mykotoksinproduktion kan begynde endnu tidligere.",
+          "Tekstiler og læder: Overfladeskimmel inden for 3–5 dage ved vedvarende 80 % RF.",
+          "Træprodukter: Skimmel inden for 5–7 dage; konstruktionstræ (krydsfinér, spånplader) ofte hurtigere — 3–5 dage.",
+          "Korn og cerealier: 10–14 dage ved korrekt fugtindhold på 14 %, men kun 5–7 dage ved 16 % fugtindhold.",
+          "Papirprodukter: Skimmel inden for 3–5 dage — papir er i det væsentlige ren cellulose og et ideelt vækstmedium for skimmel.",
         ],
       },
       {
@@ -1030,15 +1042,15 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "En container, der oplever 80% RF kontinuerligt i syv dage, udgør en meget anderledes risiko end en, der stiger til 80% RF i otte timer dagligt, men falder til 60% RF mellem spidserne. Den intermitterende eksponering tillader overflader at tørre delvist mellem fugtperioderne, hvilket afbryder skimmelvækstcyklusser.",
+        content: "En container, der oplever 80 % RF kontinuerligt i syv dage, udgør en langt større risiko end én, der kortvarigt når 80 % RF i otte timer dagligt og falder til 60 % RF imellem. De periodiske udsving giver overflader mulighed for at tørre delvist, hvilket bryder skimmelvækstcyklussen.",
       },
       {
         type: "text",
-        content: "Delvis tørring giver dog ikke fuldstændig beskyttelse. Hver fugtighedsspids over 80% RF bidrager til kumulativ skade. Skimmel, der begynder at spire under en otte-timers spids, dør ikke nødvendigvis, når fugtigheden falder; den går i dvale og genoptager væksten under næste spids.",
+        content: "Delvis udtørring er dog ingen garanti. Hver gang fugtigheden stiger over 80 % RF, bidrager det til den samlede skade. Skimmel, der begynder at spire under en ottetime-spids, dør ikke nødvendigvis, når fugtigheden falder igen — den går i dvale og genoptager væksten ved næste spids.",
       },
       {
         type: "text",
-        content: "Otte sammenhængende dage ved 80% RF garanterer næsten synlig skimmel på sårbart gods. Den samme samlede tid fordelt som intermitterende spidser over en 30-dages rejse producerer måske kun mindre pletdannelse. Det er derfor, dataloggere er så værdifulde — de skelner mellem vedvarende problematiske forhold og intermitterende spidser, der bærer forskellige risikoprofiler.",
+        content: "Otte sammenhængende dage ved 80 % RF fører nærmest uundgåeligt til synlig skimmel på sårbart gods. Den samme samlede eksponeringstid fordelt som kortvarige spidser over en 30-dages rejse giver måske kun mindre pletdannelse. Netop derfor er dataloggere så værdifulde: de skelner mellem vedvarende problematiske forhold og kortvarige spidser med vidt forskellig risikoprofil.",
       },
       {
         type: "heading",
@@ -1046,27 +1058,23 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Synlig skimmel er bekymrende, men den usynlige fare er mykotoksiner — giftige metabolitter, som nogle skimmelarter producerer under vækst. Aflatoksiner produceret af Aspergillus-arter er potente kræftfremkaldende stoffer. Ochratoksin fra Penicillium- og Aspergillus-arter påvirker nyre- og leverfunktion. Disse toksiner persisterer, selv efter skimmel er dræbt eller fjernet.",
+        content: "Synlig skimmel er bekymrende i sig selv, men den usynlige fare er mykotoksiner — giftige stoffer, som visse skimmelarter producerer under vækst. Aflatoksiner fra Aspergillus-arter er potente kræftfremkaldende stoffer. Ochratoksin fra Penicillium- og Aspergillus-arter belaster nyre og lever. Disse toksiner persisterer, selv efter skimlen er dræbt eller fjernet.",
       },
       {
         type: "callout",
         title: "Ingen sikker sanering",
-        content: "Der er ingen sikker måde at fjerne mykotoksiner fra kontaminerede fødevarer. Vask virker ikke, fordi toksiner trænger dybt ind i materialer. Tilberedning virker ikke, fordi mykotoksiner forbliver stabile ved temperaturer, der ville ødelægge selve skimlen.",
-      },
-      {
-        type: "text",
-        content: "Tidslinjen for at 'ødelægge en forsendelse' af fødevarelast kan være kortere end tidslinjen for synlig skimmel. Kaffe kontamineret med ochratoksin viser måske ingen synlig skimmel, men tester over sikkerhedsgrænserne efter blot 3-4 dage med forhold, der er gunstige for toksinproducerende skimmelarter.",
+        content: "Der findes ingen måde at fjerne mykotoksiner fra forurenet fødevarer på. Vask hjælper ikke, fordi toksiner trænger dybt ind i materialet. Opvarmning hjælper ikke, fordi mykotoksiner er stabile ved temperaturer, der ellers ville dræbe skimlen. En fødevareforsendelse kan altså være uopretteligt skadet, inden synlig skimmel overhovedet optræder. Kaffe forurenet med ochratoksin kan eksempelvis teste over sikkerhedsgrænserne efter blot 3–4 dage under gunstige forhold for toksinproducerende arter — helt uden synlige skimmeltegn.",
       },
       {
         type: "heading",
-        content: "Forebyggelsesvinduer og interventionspunkter",
+        content: "Forebyggelsesvinduer og handlemuligheder",
       },
       {
         type: "numbered-list",
         items: [
-          "Første 48 timer: Skimmelsporer spirer, men har endnu ikke etableret kolonier. Reduktion af fugtighed i dette vindue kan afbryde spiring — næsten 100% effektivt.",
-          "Dag 3-5: Tidlige kolonier dannes, men væksten forbliver begrænset. Interventionseffektiviteten falder til 70-80%. Materialer kan vise let misfarvning eller mugne lugte.",
-          "Efter dag 7: Skimmelkolonier er etablerede, og skaden er omfattende. Intervention begrænser yderligere spredning, men kan ikke vende eksisterende skader.",
+          "De første 48 timer: Skimmelsporer spirer, men kolonier er endnu ikke etablerede. Sænkes fugtigheden i dette vindue, kan spiring afbrydes — med næsten 100 % effekt.",
+          "Dag 3–5: Tidlige kolonier dannes, men væksten er stadig begrænset. Effekten af indgriben falder til 70–80 %. Materialer kan vise svag misfarvning eller en muggen lugt.",
+          "Efter dag 7: Skimmelkolonier er veletablerede og skaden omfattende. Indgriben begrænser yderligere spredning, men kan ikke vende eksisterende skader.",
         ],
       },
       {
@@ -1075,28 +1083,28 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Selvom præcise tidslinjer varierer, er en praktisk retningslinje, at sårbart gods aldrig bør opleve 80% RF i mere end 72 timer kontinuerligt. Dette tre-dages vindue giver en sikkerhedsmargin, der tager højde for temperaturvariationer, forskelle i godstilstand og måleusikkerheder.",
+        content: "Selvom præcise tidslinjer varierer, er en praktisk retningslinje, at sårbart gods aldrig bør udsættes for 80 % RF i mere end 72 timer ad gangen. Dette tre-dages vindue giver en sikkerhedsmargin, der tager højde for temperaturvariationer, godsets tilstand og måleusikkerheder.",
       },
       {
         type: "text",
-        content: "Realtidsovervågningsalarmer bør udløses ved 75-80% RF vedvarende i mere end 48 timer, hvilket giver 24 timer til at implementere intervention, før 72-timers grænsen er nået.",
-      },
-      {
-        type: "text",
-        content: "For fødevareprodukter, hvor der er risiko for mykotoksin-kontaminering, giver en endnu mere konservativ 48-timers grænse mening. Potentialet for usynlig toksinproduktion, før synlig skimmel optræder, retfærdiggør behandling af enhver vedvarende periode over 80% RF som uacceptabel.",
+        content: "Realtidsalarmer bør aktiveres ved 75–80 % RF vedvarende i mere end 48 timer — det giver 24 timers handlemulighed, inden 72-timersgrænsen nås. For fødevarer med risiko for mykotoksinkontaminering giver en endnu mere konservativ 48-timersgrænse mening: muligheden for usynlig toksinproduktion, inden synlig skimmel opstår, gør enhver vedvarende periode over 80 % RF uacceptabel.",
       },
       {
         type: "heading",
-        content: "Forebyggelse forbliver den eneste levedygtige strategi",
+        content: "Forebyggelse er den eneste holdbare strategi",
       },
       {
         type: "quote",
-        content: "Omkostningsforskellen mellem forebyggelse og skade er så ekstrem — måske $500 i beskyttelse vs. $50.000 i beskadiget gods — at ethvert kompromis med fugtkontrol er økonomisk irrationelt.",
+        content: "Omkostningsforskellen mellem forebyggelse og skade er så ekstrem — måske 500 $ i beskyttelse over for 50.000 $ i beskadiget gods — at ethvert kompromis med fugtstyringen er økonomisk uforsvarligt.",
         attribution: "DESICCANT Teknisk Rådgivning",
       },
       {
         type: "text",
-        content: "Når skimmel begynder, kan det ikke fuldt ud vendes. Rengøring fjerner overfladekolonier, men ikke intern gennemtrængning. Mykotoksiner persisterer, efter skimmel er dræbt. Pletter og lugte bliver permanente. Tilstrækkeligt tørremiddel, korrekt containervalg, lastpræ-konditionering og realtidsovervågning er ikke valgfrie risikobegrænsende foranstaltninger — de er essentielle krav for succesfuld forsendelse af skimmelfølsomme produkter.",
+        content: "Når skimmel først har fæstet sig, kan skaden ikke fuldt ud udbedres. Rengøring fjerner overfladekolonier, men ikke skimmel, der har trængt ind i materialet. Mykotoksiner består, efter skimlen er dræbt. Pletter og mugne lugte er permanente.",
+      },
+      {
+        type: "text",
+        content: "Tilstrækkeligt tørringsmiddel, korrekt containervalg, forudgående konditionering af lasten og realtidsovervågning er ikke blot valgfrie forholdsregler — de er basale krav for en vellykket forsendelse af skimmelfølsomme produkter.",
       },
     ],
 
