@@ -14,7 +14,7 @@ import productAntislip from "@/assets/product-antislip.webp";
 
 const AntiSlipProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.antislip.title"), t("meta.antislip.description"));
+  usePageMeta(t("meta.antislip.title"), t("meta.antislip.description"), { ogImage: productAntislip });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

@@ -4,32 +4,56 @@ import { useLocation } from "react-router-dom";
 const DEFAULT_TITLE = "Desiccant.com - Industrial Desiccants & Cargo Protection";
 const DEFAULT_DESCRIPTION = "Industrial desiccants and cargo protection solutions from Denmark since 1979. Silica gel, clay desiccants, dunnage bags, and monitoring devices for global shipping.";
 const BASE_URL = "https://desiccant.com";
+const DEFAULT_OG_IMAGE = `${BASE_URL}/og-home.jpg`;
 
-export const usePageMeta = (title: string, description: string) => {
+interface PageMetaOptions {
+  ogImage?: string;
+  ogType?: string;
+}
+
+export const usePageMeta = (
+  title: string,
+  description: string,
+  options?: PageMetaOptions
+) => {
   const location = useLocation();
+  const ogImage = options?.ogImage
+    ? (options.ogImage.startsWith("http") ? options.ogImage : `${BASE_URL}${options.ogImage}`)
+    : DEFAULT_OG_IMAGE;
+  const ogType = options?.ogType || "website";
 
   useEffect(() => {
     document.title = title;
 
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.setAttribute("name", "description");
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute("content", description);
+    // Description
+    const setMeta = (attr: string, key: string, value: string) => {
+      let el = document.querySelector(`meta[${attr}="${key}"]`);
+      if (!el) {
+        el = document.createElement("meta");
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("content", value);
+      return el;
+    };
 
-    // Update OG tags
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute("content", title);
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute("content", description);
+    const meta = setMeta("name", "description", description);
 
-    // Update OG URL
-    let ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) ogUrl.setAttribute("content", `${BASE_URL}${location.pathname}`);
+    // OG tags
+    setMeta("property", "og:title", title);
+    setMeta("property", "og:description", description);
+    setMeta("property", "og:url", `${BASE_URL}${location.pathname}`);
+    setMeta("property", "og:image", ogImage);
+    setMeta("property", "og:type", ogType);
+    setMeta("property", "og:site_name", "Desiccant.com");
 
-    // Manage canonical link
+    // Twitter Card tags
+    setMeta("name", "twitter:card", "summary_large_image");
+    setMeta("name", "twitter:title", title);
+    setMeta("name", "twitter:description", description);
+    setMeta("name", "twitter:image", ogImage);
+
+    // Canonical
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) {
       canonical = document.createElement("link");
@@ -41,9 +65,14 @@ export const usePageMeta = (title: string, description: string) => {
     return () => {
       document.title = DEFAULT_TITLE;
       if (meta) meta.setAttribute("content", DEFAULT_DESCRIPTION);
-      if (ogTitle) ogTitle.setAttribute("content", DEFAULT_TITLE);
-      if (ogDesc) ogDesc.setAttribute("content", DEFAULT_DESCRIPTION);
+      setMeta("property", "og:title", DEFAULT_TITLE);
+      setMeta("property", "og:description", DEFAULT_DESCRIPTION);
+      setMeta("property", "og:image", DEFAULT_OG_IMAGE);
+      setMeta("property", "og:type", "website");
+      setMeta("name", "twitter:title", DEFAULT_TITLE);
+      setMeta("name", "twitter:description", DEFAULT_DESCRIPTION);
+      setMeta("name", "twitter:image", DEFAULT_OG_IMAGE);
       if (canonical) canonical.href = `${BASE_URL}/`;
     };
-  }, [title, description, location.pathname]);
+  }, [title, description, location.pathname, ogImage, ogType]);
 };

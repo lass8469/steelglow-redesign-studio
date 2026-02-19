@@ -14,7 +14,7 @@ import productEdgeProtectors from "@/assets/product-edge-protectors.webp";
 
 const EdgeProtectorsProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.edge.title"), t("meta.edge.description"));
+  usePageMeta(t("meta.edge.title"), t("meta.edge.description"), { ogImage: productEdgeProtectors });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

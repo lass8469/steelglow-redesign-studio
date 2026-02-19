@@ -20,7 +20,7 @@ import productDatalogger from "@/assets/product-datalogger.webp";
 
 const ProductsPage = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.products.title"), t("meta.products.description"));
+  usePageMeta(t("meta.products.title"), t("meta.products.description"), { ogImage: "/og-products.jpg" });
 
   const desiccantProducts = [
     {

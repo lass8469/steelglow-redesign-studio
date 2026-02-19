@@ -14,7 +14,7 @@ import productDrybagIII from "@/assets/product-drybag-iii.webp";
 
 const DryBagIIIProduct = () => {
   const { t } = useLanguage();
-  usePageMeta(t("meta.drybagIII.title"), t("meta.drybagIII.description"));
+  usePageMeta(t("meta.drybagIII.title"), t("meta.drybagIII.description"), { ogImage: productDrybagIII });
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",

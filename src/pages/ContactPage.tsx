@@ -20,7 +20,7 @@ import { useFieldValidation } from "@/hooks/useFieldValidation";
 const ContactPage = () => {
   const { toast } = useToast();
   const { t } = useLanguage();
-  usePageMeta(t("meta.contact.title"), t("meta.contact.description"));
+  usePageMeta(t("meta.contact.title"), t("meta.contact.description"), { ogImage: "/og-contact.jpg" });
   const [formData, setFormData] = useState({
     name: "",
     email: "",

@@ -116,7 +116,8 @@ const BlogArticlePage = () => {
   const article = slug ? (articleSource[slug] || articles[slug]) : null;
   usePageMeta(
     article ? `${article.title} - Cargo Intelligence` : t("meta.blog.title"),
-    article ? article.excerpt : t("meta.blog.description")
+    article ? article.excerpt : t("meta.blog.description"),
+    { ogImage: article?.heroImage || "/og-blog.jpg", ogType: article ? "article" : "website" }
   );
   useJsonLd(article ? {
     "@context": "https://schema.org",
