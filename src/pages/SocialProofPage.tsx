@@ -49,6 +49,7 @@ const SocialProofPage = () => {
       role: t("socialProof.review3.role"),
       company: t("socialProof.review3.company"),
       text: t("socialProof.review3.text"),
+      highlight: t("socialProof.review3.highlight"),
       rating: 5,
     },
   ];
@@ -159,6 +160,13 @@ const SocialProofPage = () => {
                     <Star key={i} className="w-4 h-4 fill-primary text-primary" />
                   ))}
                 </div>
+
+                {/* Highlight Quote */}
+                {review.highlight && (
+                  <p className="text-foreground font-bold mb-3 leading-relaxed">
+                    "{review.highlight}"
+                  </p>
+                )}
 
                 {/* Review Text */}
                 <p className="text-muted-foreground mb-6 leading-relaxed">
