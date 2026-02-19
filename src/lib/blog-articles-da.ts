@@ -757,23 +757,23 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Kaffebønner holder ikke op med at være biologiske organismer, når de lastes i skibscontainere. Det gør kakao, korn, dyrefoder eller tørrede frugter heller ikke. Disse landbrugsprodukter fortsætter metaboliske processer under transport — de forbruger ilt, genererer varme og udveksler fugt med deres omgivelser. At behandle dem som inert gods garanterer problemer.",
+        content: "Kaffebønner holder ikke op med at være levende organismer, blot fordi de lastes i en skibscontainer. Det samme gælder kakao, korn, dyrefoder og tørret frugt. Disse landbrugsprodukter fortsætter deres metaboliske processer undervejs – de forbruger ilt, afgiver varme og udveksler fugt med omgivelserne. Behandler man dem som almindeligt gods, er problemerne garanterede.",
       },
       {
         type: "heading",
-        content: "Hvorfor landbrugslast opfører sig anderledes",
+        content: "Derfor opfører landbrugslast sig anderledes",
       },
       {
         type: "text",
-        content: "De fleste forarbejdede varer forbliver kemisk stabile under forsendelse. Stål respirerer ikke. Plastik genererer ikke varme. Elektronik frigiver ikke fugtdamp. Landbrugsprodukter gør alle tre ting, og samspillet mellem disse processer skaber kaskaderende problemer, som simple tørremidler ikke kan løse.",
+        content: "De fleste forarbejdede varer er kemisk stabile under transport. Stål respirerer ikke. Plastik genererer ikke varme. Elektronik afgiver ikke vanddamp. Landbrugsprodukter gør alle tre ting, og samspillet imellem dem skaber en kædereaktion, som simple tørremidler ikke kan håndtere.",
       },
       {
         type: "text",
-        content: "Kaffebønner eksemplificerer disse udfordringer. Grøn kaffe (uristet) indeholder levende celler, der fortsætter respiration efter høst. Denne cellulære aktivitet forbruger ilt og producerer kuldioxid, vanddamp og varme. Respirationshastigheden stiger eksponentielt med temperaturen, hvilket betyder, at en solopvarmet container udløser accelereret metabolisk aktivitet, der genererer mere varme, som driver hurtigere respiration, og skaber en selvforstærkende cyklus.",
+        content: "Kaffebønner illustrerer udfordringen godt. Grøn kaffe – altså uristet – indeholder levende celler, der fortsætter med at respirere efter høsten. Denne cellulære aktivitet forbruger ilt og producerer kuldioxid, vanddamp og varme. Særligt problematisk er det, at respirationshastigheden stiger eksponentielt med temperaturen. En container, der opvarmes i solen, sætter gang i accelereret metabolisk aktivitet, som genererer mere varme, som driver hurtigere respiration – en selvforstærkende spiral.",
       },
       {
         type: "text",
-        content: "Fugtindholdet i landbrugslast er ikke fast. En kaffebønne med 12% fugtindhold i et 60% relativt fugtigt miljø vil gradvist tørre ud, tabe vægt og potentielt udvikle off-flavors. Den samme bønne i 75% fugtighed vil absorbere fugt, svulme op og blive sårbar over for skimmel. I modsætning til forarbejdede varer med stabile fugtprofiler equilibrerer landbrugsprodukter aktivt med deres omgivelser under hele transporten.",
+        content: "Fugtindholdet i landbrugslast er desuden ikke en fast størrelse. En kaffebønne med 12 % fugtindhold i et miljø med 60 % relativ luftfugtighed vil gradvist afgive fugt, tabe vægt og potentielt udvikle bismage. Den samme bønne ved 75 % luftfugtighed vil derimod absorbere fugt, svulme op og blive sårbar over for skimmel. I modsætning til forarbejdede varer equilibrerer landbrugsprodukter aktivt med deres omgivelser hele vejen fra afsendelse til ankomst.",
       },
       {
         type: "heading",
@@ -781,16 +781,16 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Disse tre faktorer interagerer på måder, der gør landbrugslast unikt udfordrende. Respiration genererer metabolisk varme. Varme øger respirationshastighederne og driver fugt fra lasten ud i den omgivende luft. Fugt muliggør mikrobiel aktivitet, der genererer yderligere varme. Systemet fodrer sig selv.",
+        content: "De tre faktorer – respiration, varme og fugt – forstærker hinanden på måder, der gør landbrugslast særligt vanskelig at håndtere. Respiration genererer varme. Varme øger respirationshastigheden og driver fugt ud af lasten og ind i containerens luft. Fugt muliggør mikrobiel aktivitet, som genererer endnu mere varme. Systemet nærer sig selv.",
       },
       {
         type: "text",
-        content: "I en forseglet container kan denne trekant spiralere ud af kontrol. Temperaturen stiger fra 25°C ved lastning til 45°C inden for dage, efterhånden som metabolisk varme akkumuleres. Ved disse forhøjede temperaturer fordobles eller tredobles respirationshastighederne, hvilket frigiver mere fugtdamp i containeratmosfæren. Når fugtigheden når mætning (100% RF), begynder kondensation på kølere overflader, og det frie vand muliggør skimmelvækst, der tilføjer biologisk varme til metabolisk varme.",
+        content: "I en forseglet container kan denne mekanisme løbe løbsk. Temperaturen kan stige fra 25 °C ved lastning til 45 °C i løbet af få dage, efterhånden som den metaboliske varme ophobes. Ved disse temperaturer fordobles eller tredobles respirationshastigheden, og der frigives yderligere vanddamp i containeratmosfæren. Når luftfugtigheden når mætningspunktet ved 100 % relativ luftfugtighed, begynder der at kondensere vand på de køligere overflader. Det frie vand muliggør skimmelvækst, som bidrager med biologisk varme oven i den metaboliske – og nu er spiralen for alvor i gang.",
       },
       {
         type: "callout",
         title: "Spontan opvarmning",
-        content: "En container med tilsyneladende tørt korn, lastet ved sikkert 14% fugtindhold, kan udvikle interne hotspots over 60°C alene gennem metabolisk opvarmning. Når containeren når destinationen, har lasten selvkogt sig til en sammensmeltet, muggen masse, der kun er en brøkdel af sin oprindelige værdi værd.",
+        content: "En container med tilsyneladende tørt korn, lastet ved et tilsyneladende sikkert fugtindhold på 14 %, kan udvikle indre hotspots på over 60 °C udelukkende som følge af metabolisk opvarmning. Ankomstkontrol kan i sådanne tilfælde afsløre en sammensmeltet, muggen masse, der er en brøkdel af sin oprindelige værdi værd.",
       },
       {
         type: "heading",
@@ -798,132 +798,124 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Ethvert landbrugsprodukt har en kritisk fugtighedsgrænse, over hvilken mikrobiel aktivitet bliver ukontrollerbar. For grøn kaffe ligger denne grænse omkring 12,5% fugtindhold. Under dette niveau forbliver bønner stabile på ubestemt tid. Over det formerer skimmel og bakterier sig.",
+        content: "Ethvert landbrugsprodukt har en kritisk fugtgrænse, over hvilken mikrobiel aktivitet bliver ukontrollerbar. For grøn kaffe ligger den grænse ved ca. 12,5 % fugtindhold. Under dette niveau er bønnerne stabile på ubestemt tid. Over det formerer skimmel og bakterier sig.",
       },
       {
         type: "text",
-        content: "Udfordringen ligger i at opretholde dette fugtighedsniveau gennem varierende fugtighedsforhold. Kaffebønner med 12% fugtindhold er i ligevægt med cirka 60% relativ fugtighed ved 20°C. Hvis containerfugtigheden overstiger dette ligevægtspunkt, absorberer bønnerne fugt og krydser ind i farezonen. Hvis fugtigheden falder for lavt, tørrer bønnerne for meget ud, bliver skøre og mister de flygtige forbindelser, der definerer kaffekvalitet.",
+        content: "Udfordringen er at holde fugtindholdet på dette niveau på trods af skiftende omgivelser. Kaffebønner med 12 % fugtindhold er i ligevægt med ca. 60 % relativ luftfugtighed ved 20 °C. Overskrider luftfugtigheden i containeren dette ligevægtspunkt, absorberer bønnerne fugt og bevæger sig ind i farezonen. Falder luftfugtigheden derimod for meget, tørrer bønnerne for meget ud, bliver sprøde og mister de flygtige aromaforbindelser, der definerer kaffekvaliteten.",
       },
       {
         type: "text",
-        content: "Forskellige afgrøder har forskellige sikre fugtighedsniveauer. Kakaobønner tolererer op til 7,5% fugt. Ris opbevares sikkert ved 14% eller derunder. Sojabønner kræver under 13%. Dyrefoderspecifikationer varierer efter formulering, men kræver generelt under 13% for at forhindre skimmelvækst og mykotoksinproduktion.",
+        content: "De kritiske niveauer varierer fra afgrøde til afgrøde. Kakaobønner tåler op til 7,5 % fugt. Ris opbevares sikkert ved højst 14 %. Sojabønner kræver under 13 %. Dyrefoder varierer efter sammensætning, men kræver generelt under 13 % for at forhindre skimmelvækst og mykotoksinproduktion.",
       },
       {
         type: "heading",
-        content: "Temperaturstyring som primær kontrol",
+        content: "Temperaturstyring som den primære indsats",
       },
       {
         type: "text",
-        content: "At kontrollere temperaturen er mere effektivt end at bekæmpe fugt direkte, når man sender landbrugslast. Reduktion af temperaturen fra 30°C til 15°C kan reducere respirationshastighederne med 75%, hvilket dramatisk reducerer metabolisk varme, fugtgenerering og skimmelrisiko samtidigt.",
+        content: "Frem for at bekæmpe fugten direkte er det langt mere effektivt at styre temperaturen, når man sender landbrugslast. En sænkning fra 30 °C til 15 °C kan reducere respirationshastigheden med op til 75 % og reducerer dermed på én gang den metaboliske varme, fugtgenereringen og skimmelrisikoen.",
       },
       {
         type: "text",
-        content: "Dette forklarer, hvorfor højværdi-landbrugsprodukter i stigende grad sendes i kølecontainere, selvom de ikke kræver frysning. Specialkaffe, premium kakao og frøkorn transporteres ved 12-18°C — ikke fordi køling i sig selv er nødvendig, men fordi det bremser biologiske processer til håndterbare hastigheder.",
+        content: "Det forklarer, hvorfor stadig flere højværdi-landbrugsprodukter sendes i kølecontainere, selv om de ikke kræver egentlig nedfrysning. Specialkaffe, premium kakao og frøkorn transporteres ved 12–18 °C – ikke fordi køling er nødvendig i sig selv, men fordi det bremser de biologiske processer ned til et niveau, der er til at arbejde med.",
       },
       {
         type: "heading",
-        content: "Ventilationsstrategier og risici",
+        content: "Ventilationsstrategier – og hvornår de slår fejl",
       },
       {
         type: "text",
-        content: "Konventionel visdom foreslår ventilation af containere med landbrugslast for at fjerne fugt og varme. Dette virker under specifikke omstændigheder, men fejler eller forværrer problemer under andre. Den afgørende variabel er eksterne luftforhold i forhold til containerens indre miljø.",
+        content: "Konventionel visdom foreskriver ventilation af containere med landbrugslast for at fjerne fugt og varme. Det virker under bestemte betingelser – men kan under andre betingelser forværre situationen markant.",
       },
       {
         type: "text",
-        content: "At åbne ventiler virker, når den ydre luft er tørrere og køligere end containerluften. Ved krydsning fra fugtige troper til tempererede zoner kan ventilation gradvist udveksle fugtig inderluft med tørrere omgivende luft, hvilket hjælper lasten med at equilibrere til lavere fugtighedsniveauer.",
+        content: "Den afgørende faktor er, om den ydre luft er tørrere og køligere end luften inde i containeren. Er den det, kan ventilation gradvist udveksle den fugtige inderluft med tørrere omgivende luft og hjælpe lasten med at stabilisere sig på et lavere fugtighedsniveau.",
       },
       {
         type: "callout",
-        title: "Hvornår ventilation fejler",
-        content: "Ventilation fejler katastrofalt, når den ydre luft er fugtigere end inderluften. Lastning i en tropisk havn og åbning af ventiler indfører mættet luft, der straks kondenserer på godsoverflader, når containeren bevæger sig ind i køligere farvande. Dette afsætter frit vand direkte på produkter og garanterer skimmelvækst.",
+        title: "Hvornår ventilation slår fejl",
+        content: "Lastes containeren i en tropisk havn og åbnes ventilerne undervejs, introducerer man mættet varm luft, der straks kondenserer på de kølere produktoverflader, når containeren bevæger sig ind i køligere farvande. Det afsætter frit vand direkte på varerne og giver optimale betingelser for skimmelvækst.",
       },
       {
         type: "heading",
-        content: "Tørremidlernes begrænsninger med respirerende last",
+        content: "Tørremidlernes begrænsninger ved respirerende last",
       },
       {
         type: "text",
-        content: "Standard containertørremidler absorberer fugt fra luften, men kan ikke forhindre landbrugslast i at generere fugt gennem respiration. Et calciumchlorid-tørremiddel bedømt til 10 liters fugtkapacitet lyder imponerende, indtil du beregner, at en container med kaffebønner, der respirerer ved typiske hastigheder, frigiver 15-20 liter fugt over en 30-dages rejse.",
+        content: "Standard containertørremidler absorberer fugt fra luften, men de kan ikke forhindre landbrugslast i at generere fugt gennem respiration. Et calciumchlorid-tørremiddel med en kapacitet på 10 liter lyder imponerende – indtil man regner på, at en container med kaffebønner, der respirerer normalt, frigiver 15–20 liter fugt over en 30 dages rejse.",
       },
       {
         type: "text",
-        content: "Det betyder ikke, at tørremidler er ubrugelige, men deres rolle skifter fra primær fugtkontrol til kondensationsstyring. De kan ikke forhindre lasten i at frigive fugt, men de kan absorbere tilstrækkelig atmosfærisk fugt til at forhindre mætning og kondensation på containeroverflader.",
+        content: "Det gør ikke tørremidler ubrugelige, men deres funktion forskydes. De er ikke egnet som den primære fugtkontrol – til gengæld kan de absorbere nok atmosfærisk fugt til at forhindre mætning og kondensation på containerens indervægge og -loft.",
       },
       {
         type: "text",
-        content: "Tørremiddelplacering er vigtigere med respirerende last end med inert gods. Fugt stiger fra selve lasten i stedet for primært at komme ind via containerlækager eller ekstern fugtighed. Distribution af tørremiddelposer gennem hele lasten, især i midthøjde og øvre niveauer, hvor fugt akkumuleres, er mere effektiv end at placere alt tørremiddel nær containerdørene.",
+        content: "Placeringen af tørremidler er vigtigere ved respirerende last end ved inert gods. Da fugten her stiger fra selve lasten og ikke primært trænger ind udefra, er det mere effektivt at fordele tørremiddelposerne igennem hele lasten – særligt i midthøjde og øverst, hvor fugten naturligt samler sig – frem for at samle dem ved containerdørene.",
       },
       {
         type: "heading",
-        content: "Overvågningsstrategier for levende last",
+        content: "Overvågning af levende last",
       },
       {
         type: "text",
-        content: "Dataloggere bliver essentielle snarere end valgfrie, når man sender landbrugsprodukter, fordi deres adfærd ændrer sig uforudsigeligt baseret på initialt fugtindhold, omgivende forhold og lastkarakteristika, der ikke fuldt ud kan kendes ved lastning.",
+        content: "Dataloggere er ikke valgfri luksus, men en egentlig nødvendighed, når man sender landbrugsprodukter. Lastens adfærd ændrer sig uforudsigeligt afhængigt af det initiale fugtindhold, omgivelserne undervejs og lastens egne karakteristika – forhold der aldrig fuldt ud kendes ved lastning.",
       },
       {
         type: "text",
-        content: "Temperaturovervågning afslører udviklende hotspots, før de bliver destruktive. En sensoraflæsning, der klatrer fra 25°C til 35°C over fem dage, signalerer accelererende respiration, der vil forværres uden indgreb.",
+        content: "Temperaturovervågning afslører udviklende hotspots, inden de gør alvorlig skade. En sensoraflæsning, der klatrer fra 25 °C til 35 °C over fem dage, er et klart signal om accelererende respiration, der vil forværres uden indgreb.",
       },
       {
         type: "text",
-        content: "Nogle landbrugsafsendere bruger nu multipunkts sensorarrays med 4-6 loggere fordelt i hele containeren i stedet for en enkelt enhed. Dette afslører rumlige variationer, der er enormt vigtige med respirerende last.",
+        content: "Nogle afsendere af landbrugsprodukter bruger i dag multipunktsarrays med 4–6 loggere fordelt i containeren frem for en enkelt enhed. Derved afsløres de rumlige variationer i temperatur og fugtighed, som er af afgørende betydning netop med respirerende last.",
       },
       {
         type: "heading",
-        content: "Lastforberedelse og kildeforhold",
+        content: "Lastforberedelse og forholdene ved kilden",
       },
       {
         type: "text",
-        content: "Den mest effektive fugtstyring sker før lastning. Landbrugsprodukter bør nå ligevægtsfugtindhold i klimakontrollerede faciliteter i stedet for at equilibrere inde i containere under transport.",
+        content: "Den mest effektive fugtstyring begynder allerede inden lastning. Landbrugsprodukter bør nå deres ligevægtsfugtindhold i klimastyrede faciliteter frem for at equilibrere inde i containeren undervejs.",
       },
       {
         type: "text",
-        content: "Nogle importører specificerer nu ikke kun mål-fugtindhold, men også maksimal variation inden for et parti. Et krav om \"12% +/- 0,5%\" tvinger leverandører til at investere i mere kontrolleret tørring og mere nøjagtig måling, hvilket reducerer det spektrum af forhold, der skal styres under transport.",
+        content: "Nogle importører stiller i dag krav ikke blot til et målrettet fugtindhold, men også til den maksimale variation inden for et parti. Et krav om fx \"12 % ± 0,5 %\" tvinger leverandørerne til at investere i mere kontrolleret tørring og mere præcis måling – og reducerer det spektrum af forhold, der skal håndteres under transporten.",
       },
       {
         type: "heading",
-        content: "Blandede laster og kontamineringsrisici",
+        content: "Blandede laster og kontaminering",
       },
       {
         type: "text",
-        content: "Kombination af forskellige landbrugsprodukter i en enkelt container multiplicerer fugtstyringskompleksiteten. Kaffe og kakao har forskellige ligevægtsfugtpunkter. Ris og sojabønner respirerer med forskellige hastigheder. Dyrefoder og korn reagerer forskelligt på temperaturændringer.",
+        content: "Kombinerer man forskellige landbrugsprodukter i samme container, ganger man kompleksiteten i fugtstyringen. Kaffe og kakao har forskellige ligevægtspunkter. Ris og sojabønner respirerer med forskellig hastighed. Dyrefoder og korn reagerer forskelligt på temperatursvingninger.",
       },
       {
         type: "text",
-        content: "Kontaminering udgør yderligere bekymringer med foder- og fødevareprodukter. Mange landbrugsvarer er følsomme over for lugte, og den samme container, der sikkert transporterede kaffe på den forrige rejse, kan bibeholde flygtige forbindelser, der forurener den næste last.",
+        content: "Hertil kommer risikoen for lugtforurening. Mange landbrugsvarer er følsomme over for fremmedlugte, og en container, der sidst transporterede kaffe, kan indeholde flygtige aromaforbindelser, der forurener den næste last.",
       },
       {
         type: "heading",
-        content: "Økonomiske beregninger",
+        content: "Klimaforandringernes indvirkning",
       },
       {
         type: "text",
-        content: "Specialkaffe sælges måske for $4-6 pr. pund. Muggen kaffe med off-flavors bringer måske $0,50 pr. pund eller afvises helt. En container med 18.000 pund kaffe repræsenterer $70.000-110.000 i værdi, som fugtstyringsfejl kan ødelægge. Omkostningerne til korrekt temperaturkontrol, overvågning og forberedelse til at forhindre dette tab overstiger sjældent $500-1.000 pr. container.",
+        content: "Stigende globale temperaturer og øget nedbør i traditionelt tørre dyrkningsregioner ændrer vilkårene for fugtstyring i landbrugsforsendelse. Kafferegioner, der historisk set bød på naturligt tørre forhold til forarbejdning, oplever nu fugtige høstsæsoner, som komplicerer tørringen.",
+      },
+      {
+        type: "text",
+        content: "Dette pres accelererer teknologiadoptionen. Overvågningssystemer, der for fem år siden var forbeholdt dem med ekstra ressourcer, er ved at blive standard for dem, der vil håndtere uforudsigelige forhold. Bundlinjen i landbrugsforsendelse ændrer sig grundlæggende, efterhånden som marginen mellem acceptable og problematiske fugtniveauer indsnævres.",
       },
       {
         type: "heading",
-        content: "Tilpasning til klimaforandringer",
+        content: "Praktiske protokoller for vellykket forsendelse",
       },
       {
         type: "text",
-        content: "Stigende globale temperaturer og øget fugtighed i traditionelt tørre dyrkningsregioner ændrer landbrugets fugtstyring. Kafferegioner, der historisk producerede naturligt tørre forhold til forarbejdning, oplever nu fugtige høstsæsoner, der komplicerer tørring.",
-      },
-      {
-        type: "text",
-        content: "Dette klimapres accelererer teknologiadoption. Overvågningssystemer, der var valgfri luksus for fem år siden, bliver essentielle til håndtering af uforudsigelige forhold. Økonomien i landbrugsforsendelse ændrer sig fundamentalt, efterhånden som marginen mellem acceptable og problematiske fugtforhold indsnævres.",
-      },
-      {
-        type: "heading",
-        content: "Praktiske protokoller for succesfuld landbrugsforsendelse",
-      },
-      {
-        type: "text",
-        content: "Succesfuld landbrugsforsendelse kræver at behandle lasten som det levende, respirerende biologiske materiale, det er, i stedet for som inert fragt. Dette betyder at måle faktisk fugtindhold ved lastning i stedet for at antage overholdelse, bruge temperatur- og fugtighedsovervågning til at spore biologisk aktivitet under transport og vælge transportmetoder baseret på specifikke lastkarakteristika og ruteforhold.",
+        content: "Vellykket forsendelse af landbrugsprodukter kræver, at man behandler lasten som det levende, respirerende biologiske materiale, den er – ikke som inert fragt. Det indebærer at måle det faktiske fugtindhold ved lastning i stedet for at antage, at leverandørens dokumentation holder; at bruge temperatur- og fugtighedsovervågning til aktivt at følge den biologiske aktivitet undervejs; og at vælge transportmetode ud fra de konkrete lastkarakteristika og ruteforhold.",
       },
       {
         type: "quote",
-        content: "Bønnerne er ikke bare last; de er levende produkter, hvis kvalitet afspejler enhver beslutning truffet under deres rejse fra gård til forbruger.",
+        content: "Bønnerne er ikke bare last – de er levende produkter, hvis kvalitet afspejler enhver beslutning truffet på vejen fra mark til kop.",
         attribution: "DESICCANT Teknisk Rådgivning",
       },
     ],
