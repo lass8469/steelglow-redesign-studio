@@ -1,33 +1,136 @@
 RewriteEngine On
 
-# Force HTTPS
+# ─── 1. HTTPS Enforcement ───
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redirect bare / to /en
+# ─── 2. www to non-www ───
+RewriteCond %{HTTP_HOST} ^www\.desiccant\.com [NC]
+RewriteRule ^(.*)$ https://desiccant.com/$1 [R=301,L]
+
+# ─── 3. Strip index.html ───
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index\.html [NC]
+RewriteRule ^index\.html$ /en [R=301,L]
+
+# ─── 4. 301 REDIRECTS: Old Clean URLs → New Structure ───
+
+# English Pages
+RewriteRule ^About-us/?$ /en/about [R=301,L,NC]
+RewriteRule ^Applications/?$ /en/applications [R=301,L,NC]
+RewriteRule ^Contact/?$ /en/contact [R=301,L,NC]
+RewriteRule ^Downloads/?$ /en/downloads [R=301,L,NC]
+RewriteRule ^Privacy/?$ /en/privacy [R=301,L,NC]
+RewriteRule ^FAQ/?$ /en/faq [R=301,L,NC]
+RewriteRule ^Cargo/?$ /en/products [R=301,L,NC]
+RewriteRule ^Desiccants/?$ /en/products [R=301,L,NC]
+
+# English Products
+RewriteRule ^Anti-slip/?$ /en/anti-slip [R=301,L,NC]
+RewriteRule ^Calcium-chloride/?$ /en/calcium-chloride [R=301,L,NC]
+RewriteRule ^Datalogger/?$ /en/datalogger [R=301,L,NC]
+RewriteRule ^Drybag/?$ /en/drybag-i [R=301,L,NC]
+RewriteRule ^DrybagIII/?$ /en/drybag-iii [R=301,L,NC]
+RewriteRule ^Dunnage-bags/?$ /en/dunnage-bags [R=301,L,NC]
+RewriteRule ^EdgeProtectors/?$ /en/edge-protectors [R=301,L,NC]
+RewriteRule ^MolecularSieve/?$ /en/molecular-sieve [R=301,L,NC]
+RewriteRule ^Retail/?$ /en/retail [R=301,L,NC]
+RewriteRule ^Silica/?$ /en/silica [R=301,L,NC]
+RewriteRule ^Stabustrap/?$ /en/stabustrap [R=301,L,NC]
+
+# Danish Pages
+RewriteRule ^Om-os/?$ /da/about [R=301,L,NC]
+RewriteRule ^Anvendelsesmuligheder/?$ /da/applications [R=301,L,NC]
+RewriteRule ^Kontakt/?$ /da/contact [R=301,L,NC]
+RewriteRule ^Ressourcer/?$ /da/downloads [R=301,L,NC]
+RewriteRule ^Privatlivspolitik/?$ /da/privacy [R=301,L,NC]
+RewriteRule ^Lastbeskyttelse/?$ /da/products [R=301,L,NC]
+RewriteRule ^Fugtbeskyttelse/?$ /da/products [R=301,L,NC]
+
+# Danish Products
+RewriteRule ^da/Anti-slip/?$ /da/anti-slip [R=301,L,NC]
+RewriteRule ^da/SuperAbsorber/?$ /da/calcium-chloride [R=301,L,NC]
+RewriteRule ^da/datalogger/?$ /da/datalogger [R=301,L,NC]
+RewriteRule ^da/DryBag1/?$ /da/drybag-i [R=301,L,NC]
+RewriteRule ^da/DryBagIII/?$ /da/drybag-iii [R=301,L,NC]
+RewriteRule ^Luftpuder/?$ /da/dunnage-bags [R=301,L,NC]
+RewriteRule ^Kantbeskyttere/?$ /da/edge-protectors [R=301,L,NC]
+RewriteRule ^da/MolecularSieve/?$ /da/molecular-sieve [R=301,L,NC]
+RewriteRule ^da/Retail/?$ /da/retail [R=301,L,NC]
+RewriteRule ^da/Silica/?$ /da/silica [R=301,L,NC]
+RewriteRule ^da/Stabustrap/?$ /da/stabustrap [R=301,L,NC]
+
+# ─── 301 REDIRECTS: Old Physical .html Paths → New Structure ───
+
+# English physical paths
+RewriteRule ^aboutus/about\.html$ /en/about [R=301,L,NC]
+RewriteRule ^applications/applications\.html$ /en/applications [R=301,L,NC]
+RewriteRule ^contact/contact\.html$ /en/contact [R=301,L,NC]
+RewriteRule ^downloads/resources\.html$ /en/downloads [R=301,L,NC]
+RewriteRule ^privacy-policy/privacy\.html$ /en/privacy [R=301,L,NC]
+RewriteRule ^FAQ/FAQ\.html$ /en/faq [R=301,L,NC]
+RewriteRule ^productlanding/cargo\.html$ /en/products [R=301,L,NC]
+RewriteRule ^productlanding/desiccants\.html$ /en/products [R=301,L,NC]
+
+# English product physical paths
+RewriteRule ^products/anti-slip/antislip\.html$ /en/anti-slip [R=301,L,NC]
+RewriteRule ^products/calcium-chloride/blanket\.html$ /en/calcium-chloride [R=301,L,NC]
+RewriteRule ^products/datalogger/datalogger\.html$ /en/datalogger [R=301,L,NC]
+RewriteRule ^products/drybagi/db1\.html$ /en/drybag-i [R=301,L,NC]
+RewriteRule ^products/drybagiii/db3\.html$ /en/drybag-iii [R=301,L,NC]
+RewriteRule ^products/dunnage/dunnage\.html$ /en/dunnage-bags [R=301,L,NC]
+RewriteRule ^products/edgeprotectors/edge\.html$ /en/edge-protectors [R=301,L,NC]
+RewriteRule ^products/molecularsieve/molecular\.html$ /en/molecular-sieve [R=301,L,NC]
+RewriteRule ^products/retail/retail\.html$ /en/retail [R=301,L,NC]
+RewriteRule ^products/silica/silica\.html$ /en/silica [R=301,L,NC]
+RewriteRule ^products/stabustrap/stabustrap\.html$ /en/stabustrap [R=301,L,NC]
+
+# Danish physical paths
+RewriteRule ^da/index\.html$ /da [R=301,L,NC]
+RewriteRule ^da/aboutus/about\.html$ /da/about [R=301,L,NC]
+RewriteRule ^da/applications/applications\.html$ /da/applications [R=301,L,NC]
+RewriteRule ^da/contact/contact\.html$ /da/contact [R=301,L,NC]
+RewriteRule ^da/downloads/resources\.html$ /da/downloads [R=301,L,NC]
+RewriteRule ^da/privacy-policy/privacy\.html$ /da/privacy [R=301,L,NC]
+RewriteRule ^da/productlanding/cargo\.html$ /da/products [R=301,L,NC]
+RewriteRule ^da/productlanding/desiccants\.html$ /da/products [R=301,L,NC]
+
+# Danish product physical paths
+RewriteRule ^da/products/antislip\.html$ /da/anti-slip [R=301,L,NC]
+RewriteRule ^da/products/blanket\.html$ /da/calcium-chloride [R=301,L,NC]
+RewriteRule ^da/products/datalogger\.html$ /da/datalogger [R=301,L,NC]
+RewriteRule ^da/products/db1\.html$ /da/drybag-i [R=301,L,NC]
+RewriteRule ^da/products/db3\.html$ /da/drybag-iii [R=301,L,NC]
+RewriteRule ^da/products/dunnage\.html$ /da/dunnage-bags [R=301,L,NC]
+RewriteRule ^da/products/edge\.html$ /da/edge-protectors [R=301,L,NC]
+RewriteRule ^da/products/molecular\.html$ /da/molecular-sieve [R=301,L,NC]
+RewriteRule ^da/products/retail\.html$ /da/retail [R=301,L,NC]
+RewriteRule ^da/products/silica\.html$ /da/silica [R=301,L,NC]
+RewriteRule ^da/products/stabustrap\.html$ /da/stabustrap [R=301,L,NC]
+
+# ─── 5. Root Redirect ───
 RewriteRule ^$ /en [L,R=302]
 
-# Serve pre-rendered index.html if directory exists
+# ─── 6. Pre-rendered File Serving ───
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
 RewriteRule ^(.*)$ /$1/index.html [L]
 
-# If the file exists, serve it directly (JS, CSS, images, fonts)
+# ─── 7. Static File Passthrough ───
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteRule ^ - [L]
 
-# SPA fallback — serve root index.html for all other routes
+# ─── 8. SPA Fallback ───
 RewriteRule ^ /index.html [L]
 
-# ─── Compression ───
+# ─── 9. Performance: Compression ───
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/xml application/xml
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/xml application/xml text/plain
 </IfModule>
 
-# ─── Browser Caching ───
+# ─── 9. Performance: Browser Caching ───
 <IfModule mod_expires.c>
   ExpiresActive On
 
-  # Assets with content hash in filename — cache aggressively
+  # Hashed assets — cache aggressively
   <FilesMatch "\.(js|css)$">
     ExpiresDefault "access plus 1 year"
     Header set Cache-Control "public, max-age=31536000, immutable"
@@ -44,19 +147,30 @@ RewriteRule ^ /index.html [L]
     ExpiresDefault "access plus 10 minutes"
     Header set Cache-Control "public, max-age=600, must-revalidate"
   </FilesMatch>
+
+  # PDFs
+  <FilesMatch "\.pdf$">
+    ExpiresDefault "access plus 1 month"
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
 </IfModule>
 
-# ─── Security Headers ───
+# ─── 10. Security Headers ───
 <IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
-  Header set X-Frame-Options "SAMEORIGIN"
-  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-# ─── MIME Types ───
+# ─── 11. MIME Types ───
 AddType application/javascript .js .mjs
 AddType text/css .css
 AddType image/webp .webp
 AddType image/svg+xml .svg
 AddType font/woff2 .woff2
 AddType font/woff .woff
+AddType application/pdf .pdf
+
+# ─── 12. Prevent Directory Listing ───
+Options -Indexes
