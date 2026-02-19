@@ -43,6 +43,7 @@ const SocialProofPage = () => {
       role: t("socialProof.review2.role"),
       company: t("socialProof.review2.company"),
       text: t("socialProof.review2.text"),
+      highlight: t("socialProof.review2.highlight"),
       rating: 5,
     },
     {
