@@ -351,6 +351,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post8.excerpt": "Discover what makes DRY BAG I different — from its Moclay formula and 80% absorption capacity to its 90-day protection window. The definitive guide to clay desiccant bags for container shipping.",
     "blogPage.post9.title": "Dunnage bags for container loading: How to stop cargo shifting before it costs you",
     "blogPage.post9.excerpt": "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and combining with desiccants for complete cargo protection.",
+    "blogPage.post10.title": "Did your desiccant actually work? How data loggers verify your moisture protection strategy",
+    "blogPage.post10.excerpt": "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A data logger closes that gap.",
 
     // Downloads Page
     "downloadsPage.title1": "Resources",
@@ -1261,6 +1263,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post8.excerpt": "Oplev hvad der gør DRY BAG I anderledes — fra Moclay-formlen og 80 % absorptionskapacitet til 90 dages fugtbeskyttelse. Den komplette guide til tørremiddelposer til containerforsendelse.",
     "blogPage.post9.title": "Luftpuder til containerlastning: Sådan stopper du godsskift, før det koster dig dyrt",
     "blogPage.post9.excerpt": "Lær hvordan luftpuder forhindrer godsskift i containere, lastbiler og togvogne. Dækker PP/PE vs. kraftpapir, dimensionering og kombination med tørremidler for komplet lastsikring.",
+    "blogPage.post10.title": "Virkede dit tørremiddel? Sådan verificerer dataloggere din fugtbeskyttelsesstrategi",
+    "blogPage.post10.excerpt": "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",
 
     // Downloads Page
     "downloadsPage.title1": "Ressourcer",
