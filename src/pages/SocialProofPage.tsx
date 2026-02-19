@@ -36,6 +36,7 @@ const SocialProofPage = () => {
       company: t("socialProof.review1.company"),
       text: t("socialProof.review1.text"),
       rating: 5,
+      image: christianPhoto,
     },
     {
       name: t("socialProof.review2.name"),
@@ -43,7 +44,6 @@ const SocialProofPage = () => {
       company: t("socialProof.review2.company"),
       text: t("socialProof.review2.text"),
       rating: 5,
-      image: christianPhoto,
     },
     {
       name: t("socialProof.review3.name"),
@@ -169,12 +169,12 @@ const SocialProofPage = () => {
                 {/* Reviewer Info */}
                 <div className="flex items-center gap-4">
                   {review.image ? (
-                    <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                    <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                       <img src={review.image} alt={review.name} className="w-full h-full object-cover object-top" />
                     </div>
                   ) : (
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                      <span className="text-primary font-semibold text-lg">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                      <span className="text-primary font-semibold text-xl">
                         {review.name.charAt(0)}
                       </span>
                     </div>
