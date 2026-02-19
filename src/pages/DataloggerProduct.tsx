@@ -12,10 +12,16 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 
 const DataloggerProduct = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.datalogger.title"), t("meta.datalogger.description"), { ogImage: productDatalogger });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("productPage.products"), path: `/${language}/products` },
+    { name: "Datalogger", path: `/${language}/datalogger` },
+  ]);
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -24,6 +30,14 @@ const DataloggerProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDatalogger}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    category: "Monitoring Equipment",
+    sku: "DL",
+    offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/datalogger` },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Parameters", value: "Temperature & Humidity" },
+      { "@type": "PropertyValue", name: "Connectivity", value: "USB" },
+      { "@type": "PropertyValue", name: "Report Format", value: "PDF" },
+    ],
   });
   const specifications = [
     { label: t("datalogger.spec.duration"), value: t("datalogger.spec.durationValue") },

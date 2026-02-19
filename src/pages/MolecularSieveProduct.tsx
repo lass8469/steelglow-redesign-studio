@@ -11,11 +11,17 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 
 const MolecularSieveProduct = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.molecular.title"), t("meta.molecular.description"), { ogImage: productMolecularSieve });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("productPage.products"), path: `/${language}/products` },
+    { name: "Molecular Sieve", path: `/${language}/molecular-sieve` },
+  ]);
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -24,6 +30,14 @@ const MolecularSieveProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productMolecularSieve}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    category: "Industrial Desiccants",
+    sku: "MS",
+    offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/molecular-sieve` },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Active Material", value: "Synthetic Zeolite" },
+      { "@type": "PropertyValue", name: "Pore Sizes", value: "3Å and 4Å" },
+      { "@type": "PropertyValue", name: "Dew Point", value: "Down to -70°C" },
+    ],
   });
   const specifications = [
     { label: t("molecular.spec.pore"), value: t("molecular.spec.poreValue") },

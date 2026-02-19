@@ -11,6 +11,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import RelatedArticles from "@/components/RelatedArticles";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 
 const renderSection = (section: ArticleSection, index: number) => {
   switch (section.type) {
@@ -69,6 +70,8 @@ const renderSection = (section: ArticleSection, index: number) => {
                src={section.src} 
                alt={section.alt}
                loading="lazy"
+               width={800}
+               height={450}
                className="w-full h-full object-cover"
             />
           </div>
@@ -121,6 +124,21 @@ const BlogArticlePage = () => {
     article ? article.excerpt : t("meta.blog.description"),
     { ogImage: article?.heroImage || "/og-blog.jpg", ogType: article ? "article" : "website", canonicalPath: canonicalOverride }
   );
+
+  // BreadcrumbList JSON-LD
+  useBreadcrumbJsonLd(article ? [
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: "Blog", path: `/${language}/blog` },
+    { name: article.title, path: `/${language}/blog/${slug}` },
+  ] : []);
+
+  // Enriched Article JSON-LD
+  const wordCount = article ? article.sections.reduce((count, section) => {
+    if ('content' in section && typeof section.content === 'string') return count + section.content.split(/\s+/).length;
+    if ('items' in section) return count + section.items.join(' ').split(/\s+/).length;
+    return count;
+  }, 0) : 0;
+
   useJsonLd(article ? {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -128,21 +146,35 @@ const BlogArticlePage = () => {
     description: article.excerpt,
     author: { "@type": "Person", name: article.author || "Desiccant.com" },
     datePublished: article.date,
-    publisher: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    dateModified: article.date,
+    publisher: {
+      "@type": "Organization",
+      name: "DESICCANT A/S",
+      url: "https://desiccant.com",
+      logo: { "@type": "ImageObject", url: "https://desiccant.com/logo-desiccant.svg" },
+    },
     image: article.heroImage,
+    mainEntityOfPage: { "@type": "WebPage", "@id": `https://desiccant.com/${language}/blog/${slug}` },
+    wordCount,
+    articleSection: article.category,
+    inLanguage: language === "da" ? "da" : "en",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".article-headline", ".article-excerpt"],
+    },
   } : null);
 
   if (!article) {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
-        <div className="container mx-auto px-4 py-32 text-center">
+        <main className="container mx-auto px-4 py-32 text-center">
           <h1 className="text-2xl font-bold text-foreground mb-4">{t("blogPage.articleNotFound")}</h1>
           <p className="text-muted-foreground mb-6">{t("blogPage.articleNotFoundDesc")}</p>
           <LocalizedLink to="/blog">
             <Button>{t("blogPage.backButton")}</Button>
           </LocalizedLink>
-        </div>
+        </main>
         <Footer />
       </div>
     );
@@ -153,7 +185,7 @@ const BlogArticlePage = () => {
       <Navbar />
       
       {/* Article Header */}
-      <section className="pt-32 pb-8 bg-gradient-to-b from-accent/30 to-background">
+      <header className="pt-32 pb-8 bg-gradient-to-b from-accent/30 to-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <LocalizedLink 
@@ -168,10 +200,12 @@ const BlogArticlePage = () => {
               {article.category}
             </Badge>
             
-            <h1 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">
+            <h1 className="article-headline text-3xl lg:text-4xl font-bold text-foreground mb-6">
               {article.title}
             </h1>
             
+            <p className="article-excerpt text-lg text-muted-foreground mb-4">{article.excerpt}</p>
+
             <div className="flex flex-wrap items-center gap-4 lg:gap-6 text-sm text-muted-foreground">
               {article.author && (
                 <span className="flex items-center gap-2">
@@ -179,14 +213,14 @@ const BlogArticlePage = () => {
                   {article.author}
                 </span>
               )}
-              <span className="flex items-center gap-2">
+              <time dateTime={article.date} className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 {new Date(article.date).toLocaleDateString(language === 'da' ? 'da-DK' : 'en-US', { 
                   month: 'long', 
                   day: 'numeric', 
                   year: 'numeric' 
                 })}
-              </span>
+              </time>
               <span className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
                 {article.readTime}
@@ -198,7 +232,7 @@ const BlogArticlePage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* Hero Image */}
       <section className="pb-8">
@@ -209,6 +243,8 @@ const BlogArticlePage = () => {
                 src={article.heroImage} 
                 alt={article.title}
                 loading="lazy"
+                width={800}
+                height={450}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -217,13 +253,13 @@ const BlogArticlePage = () => {
       </section>
 
       {/* Article Content */}
-      <section className="py-8">
+      <main className="py-8">
         <div className="container mx-auto px-4 lg:px-8">
           <article className="max-w-3xl mx-auto">
             {article.sections.map((section, index) => renderSection(section, index))}
           </article>
         </div>
-      </section>
+      </main>
 
       {/* Article CTA */}
       <section className="py-16">
@@ -251,7 +287,11 @@ const BlogArticlePage = () => {
       </section>
 
       {/* Related Articles */}
-      {slug && <RelatedArticles currentSlug={slug} />}
+      {slug && (
+        <aside>
+          <RelatedArticles currentSlug={slug} />
+        </aside>
+      )}
 
       <Footer />
     </div>

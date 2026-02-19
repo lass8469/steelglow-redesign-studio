@@ -11,11 +11,17 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import productCalciumChloride from "@/assets/product-calcium-chloride.webp";
 
 const CalciumChlorideProduct = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.calcium.title"), t("meta.calcium.description"), { ogImage: productCalciumChloride });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("productPage.products"), path: `/${language}/products` },
+    { name: "Calcium Chloride", path: `/${language}/calcium-chloride` },
+  ]);
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
@@ -24,6 +30,13 @@ const CalciumChlorideProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productCalciumChloride}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
+    category: "Industrial Desiccants",
+    sku: "CaCl2",
+    offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/calcium-chloride` },
+    additionalProperty: [
+      { "@type": "PropertyValue", name: "Active Material", value: "Calcium Chloride (CaCl₂)" },
+      { "@type": "PropertyValue", name: "Absorption Capacity", value: "Up to 280% of its weight" },
+    ],
   });
   const specifications = [
     { label: t("calcium.spec.active"), value: t("calcium.spec.activeValue") },

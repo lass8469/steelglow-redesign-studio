@@ -7,11 +7,29 @@ import { Badge } from "@/components/ui/badge";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import { articles } from "@/lib/blog-articles";
 
 const BlogPage = () => {
   const { t, language } = useLanguage();
   usePageMeta(t("meta.blog.title"), t("meta.blog.description"), { ogImage: "/og-blog.jpg" });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: "Blog", path: `/${language}/blog` },
+  ]);
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Cargo Intelligence — Technical Blog",
+    description: t("meta.blog.description"),
+    url: `https://desiccant.com/${language}/blog`,
+    publisher: {
+      "@type": "Organization",
+      name: "DESICCANT A/S",
+      logo: { "@type": "ImageObject", url: "https://desiccant.com/logo-desiccant.svg" },
+    },
+  });
 
   const blogPosts = [
     {

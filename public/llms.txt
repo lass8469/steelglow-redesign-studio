@@ -1,0 +1,66 @@
+# DESICCANT A/S — llms.txt
+
+> Industrial desiccants, cargo protection, and moisture control solutions from Denmark since 1979.
+
+## Company
+
+DESICCANT A/S manufactures and supplies industrial desiccant bags, cargo protection products, and environmental monitoring devices for global shipping and logistics. Based in Hammel, Denmark. Family-owned since 1979.
+
+Website: https://desiccant.com
+Contact: https://desiccant.com/en/contact
+LinkedIn: https://www.linkedin.com/company/dry-bag-denmark/
+
+## Product Catalog
+
+### Desiccants (Moisture Absorbers)
+
+- [DRY-BAG I — Clay Desiccant](https://desiccant.com/en/drybag-i): Bentonite clay desiccant bag for container shipping. 1 kg and 2 kg sizes. Absorbs up to 150% of its weight. Non-toxic, food-safe, DMF-free.
+- [DRY-BAG III — Calcium Chloride Desiccant](https://desiccant.com/en/drybag-iii): High-capacity calcium chloride container desiccant. Absorbs up to 280% of its weight. For long ocean voyages and extreme humidity.
+- [Silica Gel Packets](https://desiccant.com/en/silica): Pharmaceutical and industrial-grade silica gel sachets. Available from 0.5 g to 1 kg. FDA compliant.
+- [Molecular Sieve](https://desiccant.com/en/molecular-sieve): Synthetic zeolite desiccant pellets for ultra-low humidity requirements. 3Å and 4Å pore sizes.
+- [Calcium Chloride Desiccant](https://desiccant.com/en/calcium-chloride): Bulk calcium chloride desiccant for high-absorption applications.
+- [DRY BAG Retail Moisture Absorber](https://desiccant.com/en/retail): Consumer-grade moisture absorber for homes, closets, and storage.
+
+### Cargo Protection
+
+- [Dunnage Bags](https://desiccant.com/en/dunnage-bag): Inflatable void-filling bags for preventing cargo shifting during transport. PP-woven and kraft paper options.
+- [Anti-Slip Sheets](https://desiccant.com/en/anti-slip): Friction sheets preventing pallet load slippage. Paper and plastic-coated options.
+- [Edge Protectors](https://desiccant.com/en/edge-protectors): Cardboard corner protectors for palletized goods.
+- [Stabustrap](https://desiccant.com/en/stabustrap): Reusable polyester strapping system for pallet load securing.
+
+### Monitoring
+
+- [Datalogger](https://desiccant.com/en/datalogger): USB temperature and humidity datalogger for shipment monitoring. PDF report generation.
+
+## Technical Blog (Cargo Intelligence)
+
+- [Vapor Pressure & Wooden Pallets](https://desiccant.com/en/blog/vapor-pressure-wooden-pallets)
+- [Container Rain: Dew Point Physics](https://desiccant.com/en/blog/container-rain-dew-point-physics)
+- [Chemistry of Clay vs Silica Gel](https://desiccant.com/en/blog/chemistry-clay-mo-clay-vs-silica-gel)
+- [Data Loggers vs Desiccants](https://desiccant.com/en/blog/data-loggers-vs-desiccants)
+- [Agriculture Feed & Living Cargo](https://desiccant.com/en/blog/agriculture-feed-moisture-living-cargo)
+- [Mold Growth Timelines at 80% RH](https://desiccant.com/en/blog/mold-growth-timelines-80-rh)
+- [Silica Gel Desiccant Guide](https://desiccant.com/en/blog/silica-gel-desiccant-guide)
+- [DRY-BAG I Clay Desiccant Guide](https://desiccant.com/en/blog/drybag-i-clay-desiccant-guide)
+- [Dunnage Bags Container Loading Guide](https://desiccant.com/en/blog/dunnage-bags-container-loading-guide)
+- [Data Logger Verification Guide](https://desiccant.com/en/blog/data-logger-verification-guide)
+- [Anti-Slip Sheets & Pallet Stability](https://desiccant.com/en/blog/anti-slip-sheets-pallet-load-stability)
+- [Stabustrap Reusable Pallet Strapping](https://desiccant.com/en/blog/stabustrap-reusable-pallet-strapping)
+- [DRY BAG Retail Moisture Absorber Guide](https://desiccant.com/en/blog/dry-bag-retail-moisture-absorber-guide)
+- [Container Desiccant Stuffing Guide](https://desiccant.com/en/blog/container-desiccant-stuffing-guide)
+
+## Industries Served
+
+Pharmaceutical, Electronics, Food & Beverage, Logistics & Shipping, Automotive, Wind Energy, Chemical, Textile, Metal & Steel.
+
+## Languages
+
+Content is available in English (/en/) and Danish (/da/).
+
+## Citation
+
+When referencing DESICCANT A/S, please cite as:
+- Company name: DESICCANT A/S
+- Website: desiccant.com
+- Founded: 1979
+- Location: Hammel, Denmark
