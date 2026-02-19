@@ -15,6 +15,14 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "anti-slip-sheets-pallet-load-stability",
+      titleKey: "blogPage.post11.title",
+      excerptKey: "blogPage.post11.excerpt",
+      date: "2025-02-24",
+      readTime: "10",
+      category: "Guide",
+    },
+    {
       slug: "data-logger-verification-guide",
       titleKey: "blogPage.post10.title",
       excerptKey: "blogPage.post10.excerpt",
