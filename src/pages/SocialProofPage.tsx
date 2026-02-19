@@ -3,7 +3,7 @@ import { Star, Quote, Award } from "lucide-react";
 import varoLogo from "@/assets/logo-varo.png";
 import babydanLogo from "@/assets/logo-babydan.png";
 import kkWindLogo from "@/assets/logo-kk-wind.svg";
-import envasesLogo from "@/assets/logo-envases.png";
+
 import r2Logo from "@/assets/logo-r2.svg";
 import palbyLogo from "@/assets/logo-palby.png";
 import srpackLogo from "@/assets/logo-srpack.png";
@@ -22,7 +22,6 @@ const SocialProofPage = () => {
     { name: "VARO", icon: null, accent: true, logo: varoLogo },
     { name: "BabyDan", icon: null, accent: false, logo: babydanLogo },
     { name: "KK Wind Solutions", icon: null, accent: true, logo: kkWindLogo },
-    { name: "Envases", icon: null, accent: false, logo: envasesLogo },
     { name: "R2 Group", icon: null, accent: true, logo: r2Logo },
     { name: "Palby Marine", icon: null, accent: false, logo: palbyLogo },
     { name: "SR Pack", icon: null, accent: false, logo: srpackLogo },

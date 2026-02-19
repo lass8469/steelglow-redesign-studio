@@ -354,6 +354,3 @@
   animation: marquee-scroll 25s linear infinite;
 }
 
-.logo-marquee-track:hover {
-  animation-play-state: paused;
-}
