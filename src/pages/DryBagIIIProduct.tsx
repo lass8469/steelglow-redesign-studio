@@ -98,7 +98,7 @@ const DryBagIIIProduct = () => {
             </div>
             <div className="grid sm:grid-cols-3 gap-4 pt-4">{features.map((f)=>(<div key={f.title} className="text-center p-4 rounded-lg bg-card/50 border border-border/50"><f.icon className="h-8 w-8 text-primary mx-auto mb-2"/><h3 className="font-semibold text-sm text-foreground">{f.title}</h3></div>))}</div>
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 glow-orange">{t("productPage.requestQuote")}</Button>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 glow-orange" asChild><a href="mailto:contact@dry-bag.com">{t("productPage.requestQuote")}</a></Button>
               <SpecSheetDialog productKey="drybag-iii" productName="DRY-BAG III" />
             </div>
           </div>
@@ -121,7 +121,7 @@ const DryBagIIIProduct = () => {
         <h2 className="text-3xl lg:text-4xl font-black tracking-tight mb-4">{t("drybagIII.ctaTitle1")}<span className="text-gradient">{t("drybagIII.ctaTitle2")}</span></h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">{t("drybagIII.ctaDesc")}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">{t("productPage.contactSales")}</Button>
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8" asChild><a href="mailto:contact@dry-bag.com">{t("productPage.contactSales")}</a></Button>
           <Button size="lg" variant="ghost" className="text-primary hover:text-primary hover:bg-primary/10" asChild><LocalizedLink to="/products"><ArrowLeft className="mr-2 h-5 w-5"/>{t("productPage.viewAllProducts")}</LocalizedLink></Button>
         </div>
       </div></section></MoistureBackground>

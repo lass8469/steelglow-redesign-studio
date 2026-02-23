@@ -225,7 +225,22 @@ const BlogArticlePage = () => {
                 <Clock className="h-4 w-4" />
                 {article.readTime}
               </span>
-              <Button variant="ghost" size="sm" className="ml-auto">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="ml-auto"
+                onClick={async () => {
+                  const url = window.location.href;
+                  const title = article.title;
+                  if (navigator.share) {
+                    navigator.share({ title, url }).catch(() => {});
+                  } else {
+                    await navigator.clipboard.writeText(url);
+                    const { toast } = await import("sonner");
+                    toast.success("Link copied!");
+                  }
+                }}
+              >
                 <Share2 className="h-4 w-4 mr-2" />
                 {t("blogPage.share")}
               </Button>

@@ -137,11 +137,8 @@ const DryBagIProduct = () => {
                   ))}
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                  <Button
-                    size="lg"
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 glow-orange"
-                  >
-                    {t("productPage.requestQuote")}
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 glow-orange" asChild>
+                    <a href="mailto:contact@dry-bag.com">{t("productPage.requestQuote")}</a>
                   </Button>
                   <SpecSheetDialog productKey="drybag-i" productName="DRY-BAG I" />
                 </div>
@@ -242,8 +239,8 @@ const DryBagIProduct = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">{t("drybagI.ctaDesc")}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">
-                {t("productPage.contactSales")}
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8" asChild>
+                <a href="mailto:contact@dry-bag.com">{t("productPage.contactSales")}</a>
               </Button>
               <Button size="lg" variant="ghost" className="text-primary hover:text-primary hover:bg-primary/10" asChild>
                 <LocalizedLink to="/products">
