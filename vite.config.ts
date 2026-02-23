@@ -23,6 +23,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
+        hashCharacters: "hex",
         entryFileNames: (chunkInfo) =>
           `assets/${chunkInfo.name.toLowerCase()}-[hash].js`,
         chunkFileNames: (chunkInfo) =>
