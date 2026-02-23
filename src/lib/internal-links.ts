@@ -160,36 +160,45 @@ export const industryProductLinks: Record<string, RelatedProductLink[]> = {
   pharmaceutical: [
     { path: "/silica", labelKey: "relatedProducts.silica" },
     { path: "/molecular-sieve", labelKey: "relatedProducts.molecular" },
+    { path: "/datalogger", labelKey: "relatedProducts.datalogger" },
   ],
   electronics: [
     { path: "/silica", labelKey: "relatedProducts.silica" },
     { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
+    { path: "/datalogger", labelKey: "relatedProducts.datalogger" },
   ],
   food: [
     { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
     { path: "/calcium-chloride", labelKey: "relatedProducts.calcium" },
+    { path: "/datalogger", labelKey: "relatedProducts.datalogger" },
   ],
   logistics: [
     { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
     { path: "/dunnage-bags", labelKey: "relatedProducts.dunnage" },
+    { path: "/datalogger", labelKey: "relatedProducts.datalogger" },
   ],
   automotive: [
     { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
     { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
+    { path: "/datalogger", labelKey: "relatedProducts.datalogger" },
   ],
   wind: [
     { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
+    { path: "/datalogger", labelKey: "relatedProducts.datalogger" },
   ],
   chemical: [
     { path: "/molecular-sieve", labelKey: "relatedProducts.molecular" },
     { path: "/silica", labelKey: "relatedProducts.silica" },
+    { path: "/datalogger", labelKey: "relatedProducts.datalogger" },
   ],
   textile: [
     { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
     { path: "/silica", labelKey: "relatedProducts.silica" },
+    { path: "/datalogger", labelKey: "relatedProducts.datalogger" },
   ],
   metal: [
     { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
     { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
+    { path: "/datalogger", labelKey: "relatedProducts.datalogger" },
   ],
 };
