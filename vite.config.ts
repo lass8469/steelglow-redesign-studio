@@ -20,6 +20,18 @@ export default defineConfig(({ mode }) => ({
       png: { quality: 80 },
     }),
   ].filter(Boolean),
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: (chunkInfo) =>
+          `assets/${chunkInfo.name.toLowerCase()}-[hash].js`,
+        chunkFileNames: (chunkInfo) =>
+          `assets/${chunkInfo.name.toLowerCase()}-[hash].js`,
+        assetFileNames: (assetInfo) =>
+          `assets/${assetInfo.names?.[0]?.toLowerCase() ?? 'asset'}-[hash][extname]`,
+      },
+    },
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
