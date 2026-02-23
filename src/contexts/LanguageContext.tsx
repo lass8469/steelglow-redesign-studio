@@ -1016,7 +1016,7 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.badge": "Brancheførende beskyttelse",
     "hero.title1": "DIN PARTNER INDEN FOR",
     "hero.title2": "FUGTKONTROL",
-    "hero.title3": "& GODSSIKKERHED",
+    "hero.title3": "& LASTSIKRING",
     "hero.description": "Oplev vores innovative tørremidler og fugtbeskyttelsesløsninger til beskyttelse af dine varer mod fugtskader. Fugtposer, fugtkontrol og lastsikring verden over.",
     "hero.exploreProducts": "Udforsk produkter",
     "hero.contactUs": "Kontakt os",
