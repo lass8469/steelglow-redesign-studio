@@ -22,7 +22,6 @@ const Footer = () => {
     resources: [
       { label: t("footer.downloads"), href: "/downloads" },
       { label: t("nav.faq"), href: "/faq" },
-      { label: t("footer.technicalSpecs"), href: "/downloads" },
       { label: t("footer.testimonials"), href: "/testimonials" },
     ],
   };
