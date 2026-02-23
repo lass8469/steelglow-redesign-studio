@@ -163,34 +163,33 @@ export const industryProductLinks: Record<string, RelatedProductLink[]> = {
   ],
   electronics: [
     { path: "/silica", labelKey: "relatedProducts.silica" },
-    { path: "/molecular-sieve", labelKey: "relatedProducts.molecular" },
+    { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
   ],
   food: [
     { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
     { path: "/calcium-chloride", labelKey: "relatedProducts.calcium" },
   ],
   logistics: [
+    { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
     { path: "/dunnage-bags", labelKey: "relatedProducts.dunnage" },
-    { path: "/anti-slip", labelKey: "relatedProducts.antiSlip" },
   ],
   automotive: [
     { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
-    { path: "/edge-protectors", labelKey: "relatedProducts.edge" },
+    { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
   ],
   wind: [
-    { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
-    { path: "/stabustrap", labelKey: "relatedProducts.stabustrap" },
+    { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
   ],
   chemical: [
     { path: "/molecular-sieve", labelKey: "relatedProducts.molecular" },
-    { path: "/calcium-chloride", labelKey: "relatedProducts.calcium" },
+    { path: "/silica", labelKey: "relatedProducts.silica" },
   ],
   textile: [
+    { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
     { path: "/silica", labelKey: "relatedProducts.silica" },
-    { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
   ],
   metal: [
     { path: "/drybag-iii", labelKey: "relatedProducts.drybagIII" },
-    { path: "/calcium-chloride", labelKey: "relatedProducts.calcium" },
+    { path: "/drybag-i", labelKey: "relatedProducts.drybagI" },
   ],
 };
