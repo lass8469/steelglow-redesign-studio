@@ -7,6 +7,7 @@ import kkWindLogo from "@/assets/logo-kk-wind.svg";
 import r2Logo from "@/assets/logo-r2.svg";
 import palbyLogo from "@/assets/logo-palby.png";
 import srpackLogo from "@/assets/logo-srpack.png";
+import tripleaLogo from "@/assets/logo-triplea.png";
 import christianPhoto from "@/assets/testimonial-christian.webp";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -26,6 +27,7 @@ const SocialProofPage = () => {
     { name: "R2 Group", icon: null, accent: true, logo: r2Logo },
     { name: "Palby Marine", icon: null, accent: false, logo: palbyLogo },
     { name: "SR Pack", icon: null, accent: false, logo: srpackLogo },
+    { name: "Triple A", icon: null, accent: false, logo: tripleaLogo },
   ];
 
   const textReviews = [
