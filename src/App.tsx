@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,28 +8,30 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import LanguageLayout from "@/components/LanguageLayout";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
-import SilicaProduct from "./pages/SilicaProduct";
-import DryBagIProduct from "./pages/DryBagIProduct";
-import DryBagIIIProduct from "./pages/DryBagIIIProduct";
-import DunnageBagProduct from "./pages/DunnageBagProduct";
-import MolecularSieveProduct from "./pages/MolecularSieveProduct";
-import CalciumChlorideProduct from "./pages/CalciumChlorideProduct";
-import RetailProduct from "./pages/RetailProduct";
-import EdgeProtectorsProduct from "./pages/EdgeProtectorsProduct";
-import AntiSlipProduct from "./pages/AntiSlipProduct";
-import StabustrapProduct from "./pages/StabustrapProduct";
-import DataloggerProduct from "./pages/DataloggerProduct";
-import AboutPage from "./pages/AboutPage";
-import ApplicationsPage from "./pages/ApplicationsPage";
-import BlogPage from "./pages/BlogPage";
-import BlogArticlePage from "./pages/BlogArticlePage";
-import SocialProofPage from "./pages/SocialProofPage";
-import ContactPage from "./pages/ContactPage";
-import DownloadsPage from "./pages/DownloadsPage";
-import FAQPage from "./pages/FAQPage";
-import PrivacyPage from "./pages/PrivacyPage";
-import NotFound from "./pages/NotFound";
-import ProductsPage from "./pages/ProductsPage";
+
+// Lazy-loaded routes for code splitting
+const SilicaProduct = lazy(() => import("./pages/SilicaProduct"));
+const DryBagIProduct = lazy(() => import("./pages/DryBagIProduct"));
+const DryBagIIIProduct = lazy(() => import("./pages/DryBagIIIProduct"));
+const DunnageBagProduct = lazy(() => import("./pages/DunnageBagProduct"));
+const MolecularSieveProduct = lazy(() => import("./pages/MolecularSieveProduct"));
+const CalciumChlorideProduct = lazy(() => import("./pages/CalciumChlorideProduct"));
+const RetailProduct = lazy(() => import("./pages/RetailProduct"));
+const EdgeProtectorsProduct = lazy(() => import("./pages/EdgeProtectorsProduct"));
+const AntiSlipProduct = lazy(() => import("./pages/AntiSlipProduct"));
+const StabustrapProduct = lazy(() => import("./pages/StabustrapProduct"));
+const DataloggerProduct = lazy(() => import("./pages/DataloggerProduct"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const ApplicationsPage = lazy(() => import("./pages/ApplicationsPage"));
+const BlogPage = lazy(() => import("./pages/BlogPage"));
+const BlogArticlePage = lazy(() => import("./pages/BlogArticlePage"));
+const SocialProofPage = lazy(() => import("./pages/SocialProofPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+const DownloadsPage = lazy(() => import("./pages/DownloadsPage"));
+const FAQPage = lazy(() => import("./pages/FAQPage"));
+const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+const ProductsPage = lazy(() => import("./pages/ProductsPage"));
 
 const queryClient = new QueryClient();
 
@@ -74,18 +77,15 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
-          <Routes>
-            {/* Root redirects to preferred language */}
-            <Route path="/" element={<RootRedirect />} />
-            
-            {/* Language-prefixed routes */}
-            <Route path="/:lang" element={<LanguageLayout />}>
-              {appRoutes}
-            </Route>
-
-            {/* Catch-all */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <Suspense fallback={<div className="min-h-screen bg-background" />}>
+            <Routes>
+              <Route path="/" element={<RootRedirect />} />
+              <Route path="/:lang" element={<LanguageLayout />}>
+                {appRoutes}
+              </Route>
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </BrowserRouter>
       </TooltipProvider>
     </LanguageProvider>
