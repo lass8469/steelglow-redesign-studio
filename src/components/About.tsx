@@ -55,19 +55,18 @@ const About = () => {
 
               <div className="grid sm:grid-cols-2 gap-6">
                 {features.map((feature) => (
-                  <LocalizedLink
+                  <div
                     key={feature.title}
-                    to={feature.link}
-                    className="flex gap-4 p-4 rounded-lg bg-accent/50 hover:bg-accent transition-colors group"
+                    className="flex gap-4 p-4 rounded-lg bg-accent/50"
                   >
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <feature.icon className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1 group-hover:text-primary transition-colors">{feature.title}</h3>
+                      <h3 className="font-semibold text-foreground mb-1">{feature.title}</h3>
                       <p className="text-sm text-muted-foreground">{feature.description}</p>
                     </div>
-                  </LocalizedLink>
+                  </div>
                 ))}
               </div>
             </div>
