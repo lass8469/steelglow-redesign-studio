@@ -56,9 +56,9 @@ const FAQPage = () => {
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 pt-24">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0.01, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="max-w-3xl"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-sm mb-6">

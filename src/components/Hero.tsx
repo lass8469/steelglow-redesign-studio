@@ -32,7 +32,7 @@ const Hero = () => {
             </span>
           </div>
           
-          <h1 className="animate-fade-in-up delay-100 text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-tight mb-6">
+          <h1 className="animate-fade-in-up text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight leading-tight mb-6">
             {t("hero.title1")}
             <br />
             <span className="text-gradient">{t("hero.title2")}</span>
@@ -40,11 +40,11 @@ const Hero = () => {
             {t("hero.title3")}
           </h1>
           
-          <p className="animate-fade-in-up delay-200 text-lg sm:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
+          <p className="animate-fade-in-up delay-100 text-lg sm:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
             {t("hero.description")}
           </p>
 
-          <div className="animate-fade-in-up delay-300 flex flex-wrap gap-4">
+          <div className="animate-fade-in-up delay-200 flex flex-wrap gap-4">
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 h-14 text-base glow-orange group"
@@ -68,7 +68,7 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="animate-fade-in-up delay-400 mt-16 grid grid-cols-3 gap-8 max-w-lg">
+          <div className="animate-fade-in-up delay-200 mt-16 grid grid-cols-3 gap-8 max-w-lg">
             <div>
               <div className="text-3xl lg:text-4xl font-black text-primary">45+</div>
               <div className="text-sm text-muted-foreground">{t("hero.yearsExperience")}</div>

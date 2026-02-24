@@ -87,9 +87,9 @@ const DownloadsPage = () => {
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 pt-24">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0.01, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="max-w-3xl"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
