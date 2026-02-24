@@ -69,9 +69,9 @@ const AboutPage = () => {
         
         <div className="w-full h-full flex items-center justify-center px-4 md:px-6 relative z-10 pt-20">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0.01, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="max-w-3xl mx-auto text-center"
           >
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest uppercase bg-primary/10 text-primary border border-primary/20 rounded-full">

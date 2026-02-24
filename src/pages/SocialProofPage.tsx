@@ -68,9 +68,9 @@ const SocialProofPage = () => {
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 pt-32 pb-16">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0.01, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="max-w-4xl mx-auto text-center"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-sm mb-6">
