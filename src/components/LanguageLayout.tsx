@@ -20,7 +20,7 @@ const LanguageLayout = () => {
         setLanguage(lang as "en" | "da");
       }
     }
-  }, [lang]);
+  }, [lang, language]);
 
   return (
     <>
