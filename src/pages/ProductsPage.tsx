@@ -109,7 +109,10 @@ const ProductsPage = () => {
   ];
 
   const ProductCard = ({ product }: { product: typeof desiccantProducts[0] }) => (
-    <div className="product-card group bg-card border border-border rounded-xl overflow-hidden">
+    <LocalizedLink
+      to={product.link}
+      className="product-card group bg-card border border-border rounded-xl overflow-hidden block hover:border-primary/50 transition-colors"
+    >
       <div className="relative aspect-square overflow-hidden bg-muted">
         <img
           src={product.image}
@@ -130,19 +133,12 @@ const ProductsPage = () => {
         <p className="text-sm text-muted-foreground mb-4">
           {product.description}
         </p>
-        <Button
-          variant="ghost"
-          size="sm"
-          className="text-primary hover:text-primary hover:bg-primary/10 -ml-3 group/btn"
-          asChild
-        >
-          <LocalizedLink to={product.link}>
-            {t("productsPage.learnMore")}
-            <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-          </LocalizedLink>
-        </Button>
+        <span className="inline-flex items-center text-primary text-sm font-medium group/btn">
+          {t("productsPage.learnMore")}
+          <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+        </span>
       </div>
-    </div>
+    </LocalizedLink>
   );
 
   return (
