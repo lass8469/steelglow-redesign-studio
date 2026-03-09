@@ -10,7 +10,7 @@ import { usePageMeta } from "@/hooks/usePageMeta";
 import { useJsonLd } from "@/hooks/useJsonLd";
 
 const Index = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.home.title"), t("meta.home.description"), { ogImage: "/og-home.jpg" });
 
   // Organization + WebSite JSON-LD (moved from index.html for per-page control)

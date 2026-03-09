@@ -10,11 +10,25 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import applicationsHeroBg from "@/assets/applications-hero.webp";
 
 const ApplicationsPage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.applications.title"), t("meta.applications.description"), { ogImage: "/og-applications.jpg" });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("meta.applications.title"), path: `/${language}/applications` },
+  ]);
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: t("meta.applications.title"),
+    description: t("meta.applications.description"),
+    inLanguage: language,
+    url: `https://desiccant.com/${language}/applications`,
+  });
 
   const industries = [
     {

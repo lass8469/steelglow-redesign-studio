@@ -15,10 +15,24 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 
 const SocialProofPage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.testimonials.title"), t("meta.testimonials.description"), { ogImage: "/og-testimonials.jpg" });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("meta.testimonials.title"), path: `/${language}/testimonials` },
+  ]);
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: t("meta.testimonials.title"),
+    description: t("meta.testimonials.description"),
+    inLanguage: language,
+    url: `https://desiccant.com/${language}/testimonials`,
+  });
 
   const trustedLogos = [
     { name: "VARO", icon: null, accent: true, logo: varoLogo },
