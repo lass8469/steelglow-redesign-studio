@@ -1434,7 +1434,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "subheading",
-        content: "Moclay-sammensætning",
+        content: "Lerets unikke egenskaber",
       },
       {
         type: "text",
