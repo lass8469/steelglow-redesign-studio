@@ -30,7 +30,8 @@ const SilicaProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productSilica}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
-    category: "Industrial Desiccants",
+    category: t("productsPage.desiccantsBadge"),
+    inLanguage: language,
     sku: "SG",
     offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/silica` },
     additionalProperty: [

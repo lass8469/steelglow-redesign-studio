@@ -30,7 +30,8 @@ const DunnageBagProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDunnage}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
-    category: "Cargo Protection",
+    category: t("productsPage.cargoBadge"),
+    inLanguage: language,
     sku: "DUNNAGE",
     offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/dunnage-bag` },
     additionalProperty: [

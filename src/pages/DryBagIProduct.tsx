@@ -30,7 +30,8 @@ const DryBagIProduct = () => {
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDrybagI}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
-    category: "Industrial Desiccants",
+    category: t("productsPage.desiccantsBadge"),
+    inLanguage: language,
     sku: "DB-I",
     offers: {
       "@type": "Offer",
