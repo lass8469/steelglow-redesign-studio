@@ -25,7 +25,7 @@ const StabustrapProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Stabustrap Strapping System",
+    name: t("stabustrap.title") + " " + t("stabustrap.titleHighlight"),
     description: t("meta.stabustrap.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productStabustrap}`,
