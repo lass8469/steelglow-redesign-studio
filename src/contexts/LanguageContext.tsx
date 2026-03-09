@@ -1304,7 +1304,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post6.excerpt": "Svaret er ikke et simpelt antal dage. Skimmel følger ikke en fast tidsplan — det er de bagvedliggende faktorer, der afgør, om du forebygger skaden eller først opdager den ved ankomst.",
     "blogPage.post7.title": "Hvad er silica gel tørremiddel? Komplet guide til fugtkontrol ved forsendelse og opbevaring",
     "blogPage.post7.excerpt": "Lær hvordan silica gel tørremiddel fungerer, hvorfor det er den foretrukne fugtfjerner til e-handel, elektronik, medicin og fødevareemballage — og hvordan du vælger den rigtige fugtpose.",
-    "blogPage.post8.title": "Den originale DRY BAG I: Hvorfor Danmarks lertørremiddel er guldstandarden for fugtbeskyttelse i containere",
+    "blogPage.post8.title": "DRY BAG I: Den effektive løsning mod fugt i containere",
     "blogPage.post8.excerpt": "Oplev hvad der gør DRY BAG I anderledes — fra Moclay-formlen og 80 % absorptionskapacitet til 90 dages fugtbeskyttelse. Den komplette guide til tørremiddelposer til containerforsendelse.",
     "blogPage.post9.title": "Sådan forhindrer luftpuder forskydning af gods i containere",
     "blogPage.post9.excerpt": "Lær hvordan luftpuder forhindrer godsskift i containere, lastbiler og togvogne. Dækker PP/PE vs. kraftpapir, dimensionering og kombination med tørremidler for komplet lastsikring.",

@@ -1388,7 +1388,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: DRY BAG I — Lertørremiddel Guide
   // ------------------------------------------------------------
   "drybag-i-clay-desiccant-guide": {
-    title: "Den originale DRY BAG I: Hvorfor Danmarks lertørremiddel er guldstandarden for fugtbeskyttelse i containere",
+    title: "DRY BAG I: Den effektive løsning mod fugt i containere",
     excerpt: "Oplev hvad der gør DRY BAG I anderledes — fra Moclay-formlen og 80 % absorptionskapacitet til 90 dages fugtbeskyttelse. Den komplette guide til tørremiddelposer til containerforsendelse.",
     date: "2025-02-21",
     readTime: "12 min læsning",
