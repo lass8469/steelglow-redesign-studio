@@ -25,7 +25,7 @@ const AntiSlipProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Anti-Slip Sheets",
+    name: t("antislip.title") + " " + t("antislip.titleHighlight"),
     description: t("meta.antislip.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productAntislip}`,
