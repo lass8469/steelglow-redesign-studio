@@ -25,7 +25,7 @@ const DryBagIIIProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "DRY-BAG III Bentonite Clay Desiccant",
+    name: t("drybagIII.title") + " " + t("drybagIII.titleHighlight"),
     description: t("meta.drybagIII.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDrybagIII}`,
