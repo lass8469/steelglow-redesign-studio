@@ -25,7 +25,7 @@ const SilicaProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Silica Gel Desiccant",
+    name: t("silica.title") + " " + t("silica.titleHighlight"),
     description: t("meta.silica.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productSilica}`,
