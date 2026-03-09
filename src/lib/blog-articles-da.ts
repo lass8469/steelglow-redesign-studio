@@ -1426,7 +1426,7 @@ export const articlesDa: Record<string, Article> = {
 
       {
         type: "heading",
-        content: "Videnskaben bag Moclay: Hvorfor ler er vigtigt",
+        content: "Mo-ler: Den unikke danske lertype bag effektiv fugtbeskyttelse",
       },
       {
         type: "text",
