@@ -25,7 +25,7 @@ const DryBagIProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "DRY-BAG I Container Desiccant",
+    name: t("drybagI.title") + " " + t("drybagI.titleHighlight"),
     description: t("meta.drybagI.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDrybagI}`,
