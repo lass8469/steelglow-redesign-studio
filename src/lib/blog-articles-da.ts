@@ -1438,7 +1438,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Moclay er en montmorillonit-rig ler fra Jylland i Danmark. Dens lagdelte mineralstruktur giver et højt overfladeareal i forhold til massen, hvilket gør det muligt at indfange og holde vanddamp effektivt uden at frigive væske. Dette er afgørende: et tørremiddel, der når mætning og begynder at dryppe, skaber sit eget fugtproblem. DRY BAG I er designet til at forblive drypfri selv ved fuld mætning.",
+        content: "Mo-ler er en montmorillonit-rig ler fra Jylland i Danmark. Dens lagdelte mineralstruktur giver et højt overfladeareal i forhold til massen, hvilket gør det muligt at indfange og holde vanddamp effektivt uden at frigive væske. Dette er afgørende: et tørremiddel, der når mætning og begynder at dryppe, skaber sit eget fugtproblem. DRY BAG I er designet til at forblive drypfri selv ved fuld mætning.",
       },
       {
         type: "subheading",
