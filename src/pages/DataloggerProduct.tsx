@@ -25,7 +25,7 @@ const DataloggerProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Temperature & Humidity Datalogger",
+    name: t("datalogger.title") + " " + t("datalogger.titleHighlight"),
     description: t("meta.datalogger.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDatalogger}`,
