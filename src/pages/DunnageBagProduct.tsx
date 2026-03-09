@@ -25,7 +25,7 @@ const DunnageBagProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Dunnage Bag",
+    name: t("dunnage.title") + " " + t("dunnage.titleHighlight"),
     description: t("meta.dunnage.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDunnage}`,
