@@ -1306,7 +1306,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post7.excerpt": "Lær hvordan silica gel tørremiddel fungerer, hvorfor det er den foretrukne fugtfjerner til e-handel, elektronik, medicin og fødevareemballage — og hvordan du vælger den rigtige fugtpose.",
     "blogPage.post8.title": "Den originale DRY BAG I: Hvorfor Danmarks lertørremiddel er guldstandarden for fugtbeskyttelse i containere",
     "blogPage.post8.excerpt": "Oplev hvad der gør DRY BAG I anderledes — fra Moclay-formlen og 80 % absorptionskapacitet til 90 dages fugtbeskyttelse. Den komplette guide til tørremiddelposer til containerforsendelse.",
-    "blogPage.post9.title": "Luftpuder til containerlastning: Sådan stopper du godsskift, før det koster dig dyrt",
+    "blogPage.post9.title": "Sådan forhindrer luftpuder forskydning af gods i containere",
     "blogPage.post9.excerpt": "Lær hvordan luftpuder forhindrer godsskift i containere, lastbiler og togvogne. Dækker PP/PE vs. kraftpapir, dimensionering og kombination med tørremidler for komplet lastsikring.",
     "blogPage.post10.title": "Virkede dit tørremiddel? Sådan verificerer dataloggere din fugtbeskyttelsesstrategi",
     "blogPage.post10.excerpt": "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",

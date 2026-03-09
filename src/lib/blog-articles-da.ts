@@ -1586,7 +1586,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Luftpuder til Containerlastning
   // ------------------------------------------------------------
   "dunnage-bags-container-loading-guide": {
-    title: "Luftpuder til containerlastning: Sådan stopper du godsskift, før det koster dig dyrt",
+    title: "Sådan forhindrer luftpuder forskydning af gods i containere",
     excerpt: "Lær hvordan luftpuder (dunnage bags) forhindrer lastsikring-problemer i containere, lastbiler og togvogne. Dækker PP/PE vs. kraftpapir, dimensionering og kombination med tørremidler for komplet fragtsikkerhed.",
     date: "2025-02-22",
     readTime: "11 min læsning",
