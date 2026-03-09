@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -17,6 +19,18 @@ import { useFieldValidation } from "@/hooks/useFieldValidation";
 const DownloadsPage = () => {
   const { t, language } = useLanguage();
   usePageMeta(t("meta.downloads.title"), t("meta.downloads.description"), { ogImage: "/og-downloads.jpg" });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("meta.downloads.title"), path: `/${language}/downloads` },
+  ]);
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: t("meta.downloads.title"),
+    description: t("meta.downloads.description"),
+    inLanguage: language,
+    url: `https://desiccant.com/${language}/downloads`,
+  });
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({

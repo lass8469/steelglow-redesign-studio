@@ -6,11 +6,31 @@ import MoistureBackground from "@/components/MoistureBackground";
 import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import aboutHeroBg from "@/assets/about-hero.webp";
 
 const AboutPage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.about.title"), t("meta.about.description"), { ogImage: "/og-about.jpg" });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("meta.about.title"), path: `/${language}/about` },
+  ]);
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: t("meta.about.title"),
+    description: t("meta.about.description"),
+    inLanguage: language,
+    url: `https://desiccant.com/${language}/about`,
+    mainEntity: {
+      "@type": "Organization",
+      name: "DESICCANT A/S",
+      foundingDate: "1979",
+      url: "https://desiccant.com",
+    },
+  });
 
   const stats = [
     { value: "45+", label: t("aboutPage.stat1") },

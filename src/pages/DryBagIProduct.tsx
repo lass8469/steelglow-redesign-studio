@@ -25,12 +25,13 @@ const DryBagIProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "DRY-BAG I Container Desiccant",
+    name: t("drybagI.title") + " " + t("drybagI.titleHighlight"),
     description: t("meta.drybagI.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDrybagI}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
-    category: "Industrial Desiccants",
+    category: t("productsPage.desiccantsBadge"),
+    inLanguage: language,
     sku: "DB-I",
     offers: {
       "@type": "Offer",

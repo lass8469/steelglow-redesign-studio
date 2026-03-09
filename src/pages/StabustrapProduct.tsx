@@ -25,12 +25,13 @@ const StabustrapProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Stabustrap Strapping System",
+    name: t("stabustrap.title") + " " + t("stabustrap.titleHighlight"),
     description: t("meta.stabustrap.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productStabustrap}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
-    category: "Cargo Protection",
+    category: t("productsPage.cargoBadge"),
+    inLanguage: language,
     sku: "STAB",
     offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/stabustrap` },
   });

@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import productDrybagI from "@/assets/product-drybag-i.webp";
 import productDrybagIII from "@/assets/product-drybag-iii.webp";
 import productSilicaGel from "@/assets/product-silica-gel.webp";
@@ -19,8 +21,36 @@ import productRetail from "@/assets/product-retail.webp";
 import productDatalogger from "@/assets/product-datalogger.webp";
 
 const ProductsPage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.products.title"), t("meta.products.description"), { ogImage: "/og-products.jpg" });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("meta.products.title"), path: `/${language}/products` },
+  ]);
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: t("meta.products.title"),
+    description: t("meta.products.description"),
+    inLanguage: language,
+    url: `https://desiccant.com/${language}/products`,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "DRY-BAG I", url: `https://desiccant.com/${language}/drybag-i` },
+        { "@type": "ListItem", position: 2, name: "DRY-BAG III", url: `https://desiccant.com/${language}/drybag-iii` },
+        { "@type": "ListItem", position: 3, name: "Silica Gel", url: `https://desiccant.com/${language}/silica` },
+        { "@type": "ListItem", position: 4, name: t("products.molecular"), url: `https://desiccant.com/${language}/molecular-sieve` },
+        { "@type": "ListItem", position: 5, name: t("products.calcium"), url: `https://desiccant.com/${language}/calcium-chloride` },
+        { "@type": "ListItem", position: 6, name: "Dunnage Bag", url: `https://desiccant.com/${language}/dunnage-bag` },
+        { "@type": "ListItem", position: 7, name: t("products.edge"), url: `https://desiccant.com/${language}/edge-protectors` },
+        { "@type": "ListItem", position: 8, name: t("products.antiSlip"), url: `https://desiccant.com/${language}/anti-slip` },
+        { "@type": "ListItem", position: 9, name: "Stabustrap", url: `https://desiccant.com/${language}/stabustrap` },
+        { "@type": "ListItem", position: 10, name: t("products.retail"), url: `https://desiccant.com/${language}/retail` },
+        { "@type": "ListItem", position: 11, name: "Datalogger", url: `https://desiccant.com/${language}/datalogger` },
+      ],
+    },
+  });
 
   const desiccantProducts = [
     {

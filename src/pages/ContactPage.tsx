@@ -12,6 +12,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 import { submitWeb3Form } from "@/lib/web3forms";
 import contactHeroBg from "@/assets/contact-hero.webp";
 import { productSizes } from "@/lib/product-sizes";
@@ -19,8 +21,39 @@ import { useFieldValidation } from "@/hooks/useFieldValidation";
 
 const ContactPage = () => {
   const { toast } = useToast();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.contact.title"), t("meta.contact.description"), { ogImage: "/og-contact.jpg" });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("meta.contact.title"), path: `/${language}/contact` },
+  ]);
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: t("meta.contact.title"),
+    description: t("meta.contact.description"),
+    inLanguage: language,
+    url: `https://desiccant.com/${language}/contact`,
+    mainEntity: {
+      "@type": "LocalBusiness",
+      name: "DESICCANT A/S",
+      telephone: "+4586190500",
+      email: "dry-bag@desiccant.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Odinsvej 21",
+        addressLocality: "Hedensted",
+        postalCode: "8722",
+        addressCountry: "DK",
+      },
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "16:00",
+      },
+    },
+  });
   const [formData, setFormData] = useState({
     name: "",
     email: "",

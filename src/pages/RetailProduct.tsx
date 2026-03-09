@@ -25,12 +25,13 @@ const RetailProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "DRY BAG Retail Consumer Products",
+    name: t("retail.title") + " " + t("retail.titleHighlight"),
     description: t("meta.retail.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productRetail}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
-    category: "Consumer Moisture Absorbers",
+    category: t("productsPage.otherBadge"),
+    inLanguage: language,
     sku: "RETAIL",
     offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/retail` },
   });

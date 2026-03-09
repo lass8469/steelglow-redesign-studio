@@ -25,12 +25,13 @@ const DataloggerProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Temperature & Humidity Datalogger",
+    name: t("datalogger.title") + " " + t("datalogger.titleHighlight"),
     description: t("meta.datalogger.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productDatalogger}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
-    category: "Monitoring Equipment",
+    category: t("productsPage.otherBadge"),
+    inLanguage: language,
     sku: "DL",
     offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/datalogger` },
     additionalProperty: [

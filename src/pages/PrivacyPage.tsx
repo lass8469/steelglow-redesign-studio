@@ -5,10 +5,24 @@ import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useJsonLd } from "@/hooks/useJsonLd";
+import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
 
 const PrivacyPage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   usePageMeta(t("meta.privacy.title"), t("meta.privacy.description"), { ogImage: "/og-home.jpg" });
+  useBreadcrumbJsonLd([
+    { name: t("productPage.home"), path: `/${language}` },
+    { name: t("meta.privacy.title"), path: `/${language}/privacy` },
+  ]);
+  useJsonLd({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: t("meta.privacy.title"),
+    description: t("meta.privacy.description"),
+    inLanguage: language,
+    url: `https://desiccant.com/${language}/privacy`,
+  });
 
   return (
     <div className="min-h-screen bg-background">

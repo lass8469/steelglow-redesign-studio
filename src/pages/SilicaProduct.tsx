@@ -25,12 +25,13 @@ const SilicaProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Silica Gel Desiccant",
+    name: t("silica.title") + " " + t("silica.titleHighlight"),
     description: t("meta.silica.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productSilica}`,
     manufacturer: { "@type": "Organization", name: "Desiccant.com", url: "https://desiccant.com" },
-    category: "Industrial Desiccants",
+    category: t("productsPage.desiccantsBadge"),
+    inLanguage: language,
     sku: "SG",
     offers: { "@type": "Offer", availability: "https://schema.org/InStock", priceCurrency: "EUR", price: "0", priceValidUntil: "2027-12-31", url: `https://desiccant.com/${language}/silica` },
     additionalProperty: [
