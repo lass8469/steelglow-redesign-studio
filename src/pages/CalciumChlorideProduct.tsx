@@ -25,7 +25,7 @@ const CalciumChlorideProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Calcium Chloride Absorber",
+    name: t("calcium.title") + " " + t("calcium.titleHighlight"),
     description: t("meta.calcium.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productCalciumChloride}`,
