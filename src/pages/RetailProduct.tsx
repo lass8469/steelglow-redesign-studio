@@ -25,7 +25,7 @@ const RetailProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "DRY BAG Retail Consumer Products",
+    name: t("retail.title") + " " + t("retail.titleHighlight"),
     description: t("meta.retail.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productRetail}`,
