@@ -25,7 +25,7 @@ const EdgeProtectorsProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Edge Protectors",
+    name: t("edge.title") + " " + t("edge.titleHighlight"),
     description: t("meta.edge.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productEdgeProtectors}`,
