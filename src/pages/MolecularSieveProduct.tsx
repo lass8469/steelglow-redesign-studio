@@ -25,7 +25,7 @@ const MolecularSieveProduct = () => {
   useJsonLd({
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Molecular Sieve Desiccant",
+    name: t("molecular.title") + " " + t("molecular.titleHighlight"),
     description: t("meta.molecular.description"),
     brand: { "@type": "Brand", name: "Desiccant.com" },
     image: `https://desiccant.com${productMolecularSieve}`,
