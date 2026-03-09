@@ -1,127 +1,52 @@
 
 
-## Fix LCP Penalty from Fade-In Animations
+## Add Per-Page JSON-LD Schema with Full Language Support
 
-### The Problem
+### Current State
 
-PageSpeed measures LCP as the time when the largest visible content element finishes rendering. Your `animate-fade-in-up` animation starts elements at `opacity: 0` and takes 600ms to reach `opacity: 1`, with staggered delays up to 400ms. The browser cannot mark the LCP element as "painted" until it becomes visible -- so **every millisecond of animation delay is added directly to your LCP score**.
+- **`index.html`** has a hardcoded Organization JSON-LD that appears on **every page in both languages** -- this is the "Organization on all pages" issue.
+- **7 pages have NO schema at all**: AboutPage, ApplicationsPage, ContactPage, DownloadsPage, SocialProofPage, ProductsPage, PrivacyPage.
+- **Pages that DO have schema** (product pages, FAQ, blog) already use `language` for URLs and `t()` for some descriptions, so they partially support both languages.
+- **Issue**: Some product schemas have hardcoded English strings (e.g. `name: "Silica Gel Desiccant"`, `category: "Industrial Desiccants"`) that don't change for `/da/` routes.
 
-### LCP Elements by Page
+### What Changes
 
-| Page | LCP Element | Animation Delay |
-|------|------------|-----------------|
-| Homepage `/` | `<h1>` with hero title | `animate-fade-in-up delay-100` = **700ms added** |
-| About `/about` | `<h1>` inside `motion.div` | `initial={{ opacity: 0 }}` + 800ms duration = **800ms added** |
-| Applications `/applications` | `<h1>` inside `motion.div` | Same pattern = **800ms added** |
-| Products `/products` | `<h1>` hero title | No animation (clean) |
-| Contact `/contact` | `<h1>` inside `motion.div` | **800ms added** |
-| FAQ `/faq` | `<h1>` hero heading | Likely animated via parent |
-| Testimonials `/testimonials` | `<h1>` inside `motion.div` | **800ms added** |
-| Downloads `/downloads` | `<h1>` hero heading | Likely animated via parent |
-| Individual product pages | `<h1>` product title | No animation (clean) |
+#### 1. Remove hardcoded Organization from `index.html`
+Delete the JSON-LD block (lines 47-68). Move it into `Index.tsx` via `useJsonLd`.
 
-### Solution: Animate Without Hiding
+#### 2. `Index.tsx` -- Add Organization schema dynamically
+Add Organization + existing WebSite schema. Use `language` to set `inLanguage` and localized URL.
 
-Instead of starting at `opacity: 0` (invisible to PageSpeed), start elements at `opacity: 1` and use a **transform-only** animation. Transforms don't affect LCP timing because the element is already painted and visible.
+#### 3. Add schema to 7 missing pages (both languages)
+Each page will use `t()` for translatable fields and `language` for URLs:
 
-This preserves the visual "slide up" entrance effect while keeping elements visible to the browser from the first paint.
+| Page | Schema Type | Language-aware fields |
+|------|-----------|----------------------|
+| **ProductsPage** | `CollectionPage` + `ItemList` | `name`, `description` via `t()`, product URLs via `/${language}/...` |
+| **AboutPage** | `AboutPage` | `name`, `description` via `t()`, `inLanguage` |
+| **ContactPage** | `ContactPage` + `LocalBusiness` | `name`, `description` via `t()`, `inLanguage` |
+| **ApplicationsPage** | `WebPage` | `name`, `description` via `t()`, `inLanguage` |
+| **DownloadsPage** | `WebPage` | `name`, `description` via `t()`, `inLanguage` |
+| **SocialProofPage** | `WebPage` | `name`, `description` via `t()`, `inLanguage` |
+| **PrivacyPage** | `WebPage` | `name`, `description` via `t()`, `inLanguage` |
 
-### Technical Changes
+All will also get `useBreadcrumbJsonLd` with localized breadcrumb names and paths.
 
-#### 1. `src/index.css` -- Change fadeInUp to transform-only
+#### 4. Fix existing product schemas for language support
+Product pages currently have hardcoded English `name` values (e.g. `"Silica Gel Desiccant"`). Update these to use `t()` where translations exist, and add `inLanguage: language` to each schema.
 
-Replace the current `fadeInUp` keyframe and `animate-fade-in-up` class:
-
-**Before:**
-```css
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-```
-
-**After:**
-```css
-.animate-fade-in-up {
-  animation: fadeInUp 0.5s ease-out both;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0.01;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-```
-
-Using `opacity: 0.01` instead of `0` is a known technique -- the element is "painted" (satisfies LCP) but visually imperceptible. Combined with a shorter `translateY(20px)` and faster `0.5s` duration, the animation still looks smooth but no longer blocks LCP.
-
-#### 2. `src/components/Hero.tsx` -- Remove stagger delays from above-the-fold content
-
-Remove `delay-100` from the `<h1>` tag specifically, since this is the LCP element. The badge above can keep its animation. Reduce other delays:
-
-- Badge: no delay (keep as-is)
-- `<h1>`: remove `delay-100` class
-- Description: change `delay-200` to `delay-100`
-- Buttons: change `delay-300` to `delay-200`
-- Stats: change `delay-400` to `delay-200`
-
-This shaves ~100ms off the LCP element and tightens the stagger cascade.
-
-#### 3. Sub-page hero sections -- Replace `motion.div` initial opacity with near-visible start
-
-For pages using Framer Motion (`AboutPage`, `ApplicationsPage`, `ContactPage`, `SocialProofPage`), change the hero `motion.div` from:
-
-```tsx
-initial={{ opacity: 0, y: 30 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{ duration: 0.8 }}
-```
-
-To:
-
-```tsx
-initial={{ opacity: 0.01, y: 16 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{ duration: 0.4 }}
-```
-
-This cuts ~400ms from LCP on every sub-page while keeping a subtle entrance animation.
-
-#### 4. `src/index.css` -- Same treatment for `fadeIn`
-
-```css
-@keyframes fadeIn {
-  from { opacity: 0.01; }
-  to { opacity: 1; }
-}
-```
+#### 5. How SSG captures per-language schema
+The prerender script visits both `/en/about` and `/da/about` separately. Each visit triggers `useJsonLd` with the correct language context, so the pre-rendered HTML for `/da/about` will contain Danish schema and `/en/about` will contain English schema. No additional SSG changes needed.
 
 ### Files Modified
+- `index.html` -- remove hardcoded Organization JSON-LD
+- `src/pages/Index.tsx` -- add Organization schema
+- `src/pages/AboutPage.tsx` -- add AboutPage schema + breadcrumb
+- `src/pages/ApplicationsPage.tsx` -- add WebPage schema + breadcrumb
+- `src/pages/ContactPage.tsx` -- add ContactPage + LocalBusiness schema + breadcrumb
+- `src/pages/DownloadsPage.tsx` -- add WebPage schema + breadcrumb
+- `src/pages/SocialProofPage.tsx` -- add WebPage schema + breadcrumb
+- `src/pages/ProductsPage.tsx` -- add CollectionPage + ItemList schema + breadcrumb
+- `src/pages/PrivacyPage.tsx` -- add WebPage schema + breadcrumb
+- All 11 product pages -- add `inLanguage` property to existing Product schema
 
-- `src/index.css` -- Update `fadeIn` and `fadeInUp` keyframes to use `opacity: 0.01`
-- `src/components/Hero.tsx` -- Reduce/remove stagger delays on LCP elements
-- `src/pages/AboutPage.tsx` -- Fix hero motion.div initial opacity + shorter duration
-- `src/pages/ApplicationsPage.tsx` -- Same fix
-- `src/pages/ContactPage.tsx` -- Same fix
-- `src/pages/SocialProofPage.tsx` -- Same fix
-
-### Expected Impact
-
-- **Homepage LCP**: ~700ms improvement (animation delay removed from h1)
-- **Sub-pages LCP**: ~400-800ms improvement each
-- **Visual change**: Animations are slightly faster and subtler, but the entrance effect is preserved
