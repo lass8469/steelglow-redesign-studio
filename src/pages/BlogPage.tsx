@@ -84,7 +84,7 @@ const BlogPage = () => {
       slug: "data-logger-verification-guide",
       titleKey: "blogPage.post10.title",
       excerptKey: "blogPage.post10.excerpt",
-      date: "2025-02-23",
+      date: "2026-02-23",
       readTime: "12",
       category: "Guide",
     },
