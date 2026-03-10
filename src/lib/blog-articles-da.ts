@@ -1753,7 +1753,7 @@ export const articlesDa: Record<string, Article> = {
   "data-logger-verification-guide": {
     title: "Hvordan ved du, om dit tørremiddel har virket?",
     excerpt: "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",
-    date: "2025-02-23",
+    date: "2026-02-23",
     readTime: "12 min læsning",
     category: "Guide",
     heroImage: blogDatalogger,
