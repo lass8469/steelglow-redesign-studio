@@ -424,7 +424,7 @@ export const articles: Record<string, Article> = {
   "chemistry-clay-mo-clay-vs-silica-gel": {
     title: "Clay desiccant vs. silica gel: Which is better for shipping?",
     excerpt: "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "10 min read",
     category: "Technical",
     heroImage: blogChemistryClay,
