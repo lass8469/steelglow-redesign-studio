@@ -2295,7 +2295,7 @@ export const articles: Record<string, Article> = {
   "stabustrap-reusable-pallet-strapping": {
     title: "Reusable pallet strapping: Greener alternative to stretch film",
     excerpt: "An elastic, reusable strapping system that applies in seconds, holds loads securely, and eliminates single-use plastic waste from internal pallet handling.",
-    date: "2025-02-25",
+    date: "2026-02-25",
     readTime: "12 min read",
     category: "Guide",
     heroImage: productStabustrap,
