@@ -752,7 +752,7 @@ export const articlesDa: Record<string, Article> = {
   "agriculture-feed-moisture-living-cargo": {
     title: "Sådan beskytter du kaffebønner og landbrugsvarer mod fugt under transport",
     excerpt: "Kaffebønner er stadig biologiske organismer, selv i en skibscontainer. Derfor er det afgørende at forstå samspillet mellem respiration, varme og fugt.",
-    date: "2025-02-15",
+    date: "2026-02-15",
     readTime: "15 min læsning",
     category: "Teknisk",
     heroImage: blogAgricultureFeed,
