@@ -1525,7 +1525,7 @@ export const articles: Record<string, Article> = {
   "drybag-i-clay-desiccant-guide": {
     title: "DRY-BAG I: The effective solution against moisture in containers",
     excerpt: "Discover what makes DRY BAG I different — from its Moclay formula and 80% absorption capacity to its 90-day protection window. The definitive guide to clay desiccant bags for container shipping.",
-    date: "2025-02-21",
+    date: "2026-02-21",
     readTime: "12 min read",
     category: "Guide",
     heroImage: productDrybagI,
