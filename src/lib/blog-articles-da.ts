@@ -1120,7 +1120,7 @@ export const articlesDa: Record<string, Article> = {
   "silica-gel-desiccant-guide": {
     title: "Hvad er silica gel tørremiddel? Komplet guide til fugtkontrol ved forsendelse og opbevaring",
     excerpt: "Lær hvordan silica gel tørremiddel fungerer, hvorfor det er den foretrukne fugtfjerner til e-handel, elektronik, medicin og fødevareemballage — og hvordan du vælger den rigtige størrelse fugtpose.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     readTime: "10 min læsning",
     category: "Guide",
     heroImage: productSilicaGel,
