@@ -2306,7 +2306,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: DRY BAG Retail — Industriel fugtsikring til hobby & hjem
   // ------------------------------------------------------------
   "dry-bag-retail-moisture-absorber-guide": {
-    title: "DRY BAG Retail – Industriel fugtsikring til båd, campingvogn og hjem",
+    title: "Stop fugt i båd, campingvogn og kælder – her er løsningen",
     excerpt: "Den samme gennemprøvede Moclay-formel fra global containerforsendelse — nu som en regenererbar, drypfri fugtabsorbent til båd, campingvogn, autocamper, kælder og garage. Opfundet og fremstillet i Danmark.",
     date: "2025-02-26",
     readTime: "14 min læsning",
