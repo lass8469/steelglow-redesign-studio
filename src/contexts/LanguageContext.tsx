@@ -1314,7 +1314,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post11.excerpt": "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
     "blogPage.post12.title": "Stabustrap: Det smartere, grønnere alternativ til strækfilm til intern palletransport",
     "blogPage.post12.excerpt": "Et elastisk, genanvendeligt båndsystem, der påføres på sekunder, holder læsset sikkert og eliminerer engangsplast fra intern pallehåndtering.",
-    "blogPage.post13.title": "DRY BAG Retail – Industriel fugtsikring til båd, campingvogn og hjem",
+    "blogPage.post13.title": "Stop fugt i båd, campingvogn og kælder – her er løsningen",
     "blogPage.post13.excerpt": "Den samme gennemprøvede Moclay-formel fra global containerforsendelse — nu som en regenererbar, drypfri fugtabsorbent til båd, campingvogn, autocamper, kælder og garage. Fremstillet i Danmark.",
     "blogPage.post14.title": "Container-tørremiddel: Den komplette guide til fugtstyring ved lastning af en skibscontainer",
     "blogPage.post14.excerpt": "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte lastningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
