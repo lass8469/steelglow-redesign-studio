@@ -2779,7 +2779,7 @@ export const articlesDa: Record<string, Article> = {
   "molecular-sieve-pore-size-guide": {
     title: "Hvad er molekylsigte, og hvilken variant skal du bruge?",
     excerpt: "Molekylsigter arbejder på molekylært niveau — de udvælger fysisk, hvilke molekyler der må trænge ind i deres struktur. Den selektivitet bestemmes næsten udelukkende af én variabel: porestørrelse.",
-    date: "2025-02-28",
+    date: "2026-02-28",
     readTime: "18 min læsetid",
     category: "Teknisk",
     heroImage: productMolecularSieve,
