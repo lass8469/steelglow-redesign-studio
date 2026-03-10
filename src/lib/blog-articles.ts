@@ -76,7 +76,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Vapor Pressure & Wooden Pallets
   // ------------------------------------------------------------
   "vapor-pressure-wooden-pallets": {
-    title: "Vapor pressure explained: Why moisture \"hides\" in wooden pallets and how to get it out",
+    title: "How wooden pallets cause condensation inside shipping containers",
     excerpt: "Understanding the physics of vapor pressure reveals why wooden pallets trap moisture deep within their structure — and how to remove it effectively.",
     date: "2025-02-10",
     readTime: "7 min read",
