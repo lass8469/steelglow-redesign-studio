@@ -353,7 +353,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post9.excerpt": "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and combining with desiccants for complete cargo protection.",
     "blogPage.post10.title": "Did your desiccant actually work? How data loggers verify your moisture protection strategy",
     "blogPage.post10.excerpt": "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A data logger closes that gap.",
-    "blogPage.post11.title": "Anti-Slip Sheets: The smart way to stabilise pallet loads in transit",
+    "blogPage.post11.title": "Prevent cargo from sliding on pallets during transport",
     "blogPage.post11.excerpt": "High-friction paper sheets that protect your cargo from shifting — a proven, cost-effective way to increase friction between layers and keep every pallet stack exactly where it should be.",
     "blogPage.post12.title": "Reusable pallet strapping: Greener alternative to stretch film",
     "blogPage.post12.excerpt": "An elastic, reusable strapping system that applies in seconds, holds loads securely, and eliminates single-use plastic waste from internal pallet handling.",
