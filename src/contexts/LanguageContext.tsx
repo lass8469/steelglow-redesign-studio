@@ -335,7 +335,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Blog post content
     "blogPage.post1.title": "Vapor pressure explained: Why moisture \"hides\" in wooden pallets and how to get it out",
     "blogPage.post1.excerpt": "Understanding the physics of vapor pressure reveals why wooden pallets trap moisture deep within their structure — and how to remove it effectively.",
-    "blogPage.post2.title": "Container rain: Why dew point physics makes moisture damage inevitable during ocean transit",
+    "blogPage.post2.title": "Condensation inside shipping containers: Why it happens and how to prevent it",
     "blogPage.post2.excerpt": "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
     "blogPage.post3.title": "Clay desiccant vs. silica gel: Which is better for shipping?",
     "blogPage.post3.excerpt": "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
