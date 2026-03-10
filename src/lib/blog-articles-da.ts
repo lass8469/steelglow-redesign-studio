@@ -1391,7 +1391,7 @@ export const articlesDa: Record<string, Article> = {
   "drybag-i-clay-desiccant-guide": {
     title: "DRY BAG I: Den effektive løsning mod fugt i containere",
     excerpt: "Oplev hvad der gør DRY BAG I anderledes — fra Moclay-formlen og 80 % absorptionskapacitet til 90 dages fugtbeskyttelse. Den komplette guide til tørremiddelposer til containerforsendelse.",
-    date: "2025-02-21",
+    date: "2026-02-21",
     readTime: "12 min læsning",
     category: "Guide",
     heroImage: productDrybagI,
