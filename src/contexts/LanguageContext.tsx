@@ -361,7 +361,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post13.excerpt": "The same trusted Moclay formula from global container shipping — now as a regenerable, drip-free moisture absorber for boats, campers, RVs, basements, and garages. Made in Denmark.",
     "blogPage.post14.title": "Container Desiccant: The complete guide to moisture control when stuffing a shipping container",
     "blogPage.post14.excerpt": "From inspecting the container before loading to choosing the right desiccant and smart stuffing practices — everything you need to protect cargo from moisture damage during ocean shipping.",
-    "blogPage.post15.title": "Molecular Sieve: Why Pore Size Matters",
+    "blogPage.post15.title": "What Is Molecular Sieve Desiccant — and which version do you need?",
     "blogPage.post15.excerpt": "Molecular sieves work at the molecular level — physically selecting which molecules enter their structure. That selectivity is determined almost entirely by one variable: pore size.",
     "relatedArticles.molecularSieveGuide": "molecular sieve pore size guide",
 
