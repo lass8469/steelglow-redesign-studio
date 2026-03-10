@@ -1530,7 +1530,7 @@ export const articles: Record<string, Article> = {
     date: "2026-02-21",
     readTime: "12 min read",
     category: "Guide",
-    heroImage: productDrybagI,
+    heroImage: blogDrybagIContainer,
     author: "DESICCANT Technical Team",
     canonicalPath: "/drybag-i",
 

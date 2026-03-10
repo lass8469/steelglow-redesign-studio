@@ -1396,7 +1396,7 @@ export const articlesDa: Record<string, Article> = {
     date: "2026-02-21",
     readTime: "12 min læsning",
     category: "Guide",
-    heroImage: productDrybagI,
+    heroImage: blogDrybagIContainer,
     author: "DESICCANT Teknisk Team",
     canonicalPath: "/drybag-i",
 
