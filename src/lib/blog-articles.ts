@@ -2472,7 +2472,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: DRY BAG Retail — Industrial-Grade Moisture Protection
   // ------------------------------------------------------------
   "dry-bag-retail-moisture-absorber-guide": {
-    title: "DRY BAG Retail – Industrial-Grade Moisture Protection for Boats, Campers & Home",
+    title: "Moisture absorber for boats, caravans, basements and garages",
     excerpt: "The same trusted Moclay formula used in global container shipping — now available as a regenerable, drip-free moisture absorber for boats, campers, RVs, basements, and garages. Made in Denmark.",
     date: "2025-02-26",
     readTime: "14 min read",
