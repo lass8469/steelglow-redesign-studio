@@ -2690,7 +2690,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Container Desiccant — Complete Guide to Moisture Control
   // ------------------------------------------------------------
   "container-desiccant-stuffing-guide": {
-    title: "Container Desiccant: The Complete Guide to Moisture Control When Stuffing a Shipping Container",
+    title: "How to protect cargo from moisture in a shipping container",
     excerpt: "From inspecting the container before loading to choosing the right desiccant and smart stuffing practices — everything you need to protect cargo from moisture damage during ocean shipping.",
     date: "2025-02-27",
     readTime: "16 min read",
