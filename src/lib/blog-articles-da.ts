@@ -551,7 +551,7 @@ export const articlesDa: Record<string, Article> = {
   "data-loggers-vs-desiccants": {
     title: "Dataloggere vs. tørremidler: Bevis at din fugtstrategi virker med sensorer",
     excerpt: "Tørremidler absorberer fugt. Dataloggere dokumenterer, hvad der skete. I moderne logistik har du brug for begge — men af vidt forskellige grunde.",
-    date: "2025-02-13",
+    date: "2026-02-13",
     readTime: "12 min læsning",
     category: "Teknisk",
     heroImage: blogDatalogger,
