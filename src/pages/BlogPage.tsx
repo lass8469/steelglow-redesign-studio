@@ -60,7 +60,7 @@ const BlogPage = () => {
       slug: "dry-bag-retail-moisture-absorber-guide",
       titleKey: "blogPage.post13.title",
       excerptKey: "blogPage.post13.excerpt",
-      date: "2025-02-26",
+      date: "2026-02-26",
       readTime: "14",
       category: "Guide",
     },
