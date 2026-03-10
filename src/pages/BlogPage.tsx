@@ -124,7 +124,7 @@ const BlogPage = () => {
       slug: "agriculture-feed-moisture-living-cargo",
       titleKey: "blogPage.post5.title",
       excerptKey: "blogPage.post5.excerpt",
-      date: "2025-02-15",
+      date: "2026-02-15",
       readTime: "15",
       category: "Technical",
     },
