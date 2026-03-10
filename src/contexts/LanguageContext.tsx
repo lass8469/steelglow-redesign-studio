@@ -1308,7 +1308,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post8.excerpt": "Oplev hvad der gør DRY BAG I anderledes — fra Moclay-formlen og 80 % absorptionskapacitet til 90 dages fugtbeskyttelse. Den komplette guide til tørremiddelposer til containerforsendelse.",
     "blogPage.post9.title": "Sådan forhindrer luftpuder forskydning af gods i containere",
     "blogPage.post9.excerpt": "Lær hvordan luftpuder forhindrer godsskift i containere, lastbiler og togvogne. Dækker PP/PE vs. kraftpapir, dimensionering og kombination med tørremidler for komplet lastsikring.",
-    "blogPage.post10.title": "Virkede dit tørremiddel? Sådan verificerer dataloggere din fugtbeskyttelsesstrategi",
+    "blogPage.post10.title": "Hvordan ved du, om dit tørremiddel har virket?",
     "blogPage.post10.excerpt": "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",
     "blogPage.post11.title": "Sådan forhindrer du gods i at glide på paller under transport",
     "blogPage.post11.excerpt": "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
