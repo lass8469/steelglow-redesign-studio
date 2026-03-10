@@ -1,127 +1,48 @@
 
 
-## Fix LCP Penalty from Fade-In Animations
+## Plan: Add "What is a Desiccant?" Blog Article
 
-### The Problem
+This is a comprehensive guide article with tables, bullet lists, numbered lists, callouts, and FAQ sections. The article exists in both English and Danish. The uploaded hero image (Desiccant.webp) will be used.
 
-PageSpeed measures LCP as the time when the largest visible content element finishes rendering. Your `animate-fade-in-up` animation starts elements at `opacity: 0` and takes 600ms to reach `opacity: 1`, with staggered delays up to 400ms. The browser cannot mark the LCP element as "painted" until it becomes visible -- so **every millisecond of animation delay is added directly to your LCP score**.
+### Key challenge: Tables
+The current `ArticleSection` type does **not** support tables. The Word documents contain comparison tables (e.g., desiccant types comparison). I need to add a `"table"` section type and render it.
 
-### LCP Elements by Page
+### Changes
 
-| Page | LCP Element | Animation Delay |
-|------|------------|-----------------|
-| Homepage `/` | `<h1>` with hero title | `animate-fade-in-up delay-100` = **700ms added** |
-| About `/about` | `<h1>` inside `motion.div` | `initial={{ opacity: 0 }}` + 800ms duration = **800ms added** |
-| Applications `/applications` | `<h1>` inside `motion.div` | Same pattern = **800ms added** |
-| Products `/products` | `<h1>` hero title | No animation (clean) |
-| Contact `/contact` | `<h1>` inside `motion.div` | **800ms added** |
-| FAQ `/faq` | `<h1>` hero heading | Likely animated via parent |
-| Testimonials `/testimonials` | `<h1>` inside `motion.div` | **800ms added** |
-| Downloads `/downloads` | `<h1>` hero heading | Likely animated via parent |
-| Individual product pages | `<h1>` product title | No animation (clean) |
+**1. Add `table` section type** (`src/lib/blog-articles.ts` + `src/pages/BlogArticlePage.tsx`)
+- Extend `ArticleSection` union with: `{ type: "table"; headers: string[]; rows: string[][] }`
+- Add table rendering in `renderSection` with a styled responsive table
 
-### Solution: Animate Without Hiding
+**2. Copy hero image** (`user-uploads://Desiccant.webp` → `src/assets/blog-desiccant-guide.webp`)
 
-Instead of starting at `opacity: 0` (invisible to PageSpeed), start elements at `opacity: 1` and use a **transform-only** animation. Transforms don't affect LCP timing because the element is already painted and visible.
+**3. Add English article** (`src/lib/blog-articles.ts`)
+- Slug: `what-is-a-desiccant-complete-guide`
+- Full structured content from the English Word doc with ~25+ sections including:
+  - Text paragraphs (absorption vs adsorption, RH, hygroscopic materials, etc.)
+  - Bullet lists (moisture damage types, container condensation causes, etc.)
+  - Numbered lists (6 factors for choosing desiccants)
+  - **Comparison table** (4 desiccant types: silica gel, clay, molecular sieve, calcium chloride)
+  - Callouts (practical calculation example, container sizing)
+  - Subheadings for FAQ section (6 Q&As as heading+text pairs)
+  - CTA linking to contact page
 
-This preserves the visual "slide up" entrance effect while keeping elements visible to the browser from the first paint.
+**4. Add Danish article** (`src/lib/blog-articles-da.ts`)
+- Same slug, full Danish translation from the Danish Word doc
 
-### Technical Changes
+**5. Add blog listing entry** (`src/pages/BlogPage.tsx`)
+- New post at position 1 (newest) in the `blogPosts` array
+- Slug: `what-is-a-desiccant-complete-guide`
+- Category: "Guide"
+- Read time: ~20 min
 
-#### 1. `src/index.css` -- Change fadeInUp to transform-only
+**6. Add translation keys** (`src/contexts/LanguageContext.tsx`)
+- English and Danish keys for `blogPage.post16.title` and `blogPage.post16.excerpt`
 
-Replace the current `fadeInUp` keyframe and `animate-fade-in-up` class:
+### Files to modify
+1. `src/lib/blog-articles.ts` — Add table type + English article (~200 lines)
+2. `src/lib/blog-articles-da.ts` — Danish article (~200 lines)
+3. `src/pages/BlogArticlePage.tsx` — Add table renderer
+4. `src/pages/BlogPage.tsx` — Add post 16 to listing
+5. `src/contexts/LanguageContext.tsx` — Add EN+DA translation keys
+6. Copy hero image to `src/assets/`
 
-**Before:**
-```css
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-```
-
-**After:**
-```css
-.animate-fade-in-up {
-  animation: fadeInUp 0.5s ease-out both;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0.01;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-```
-
-Using `opacity: 0.01` instead of `0` is a known technique -- the element is "painted" (satisfies LCP) but visually imperceptible. Combined with a shorter `translateY(20px)` and faster `0.5s` duration, the animation still looks smooth but no longer blocks LCP.
-
-#### 2. `src/components/Hero.tsx` -- Remove stagger delays from above-the-fold content
-
-Remove `delay-100` from the `<h1>` tag specifically, since this is the LCP element. The badge above can keep its animation. Reduce other delays:
-
-- Badge: no delay (keep as-is)
-- `<h1>`: remove `delay-100` class
-- Description: change `delay-200` to `delay-100`
-- Buttons: change `delay-300` to `delay-200`
-- Stats: change `delay-400` to `delay-200`
-
-This shaves ~100ms off the LCP element and tightens the stagger cascade.
-
-#### 3. Sub-page hero sections -- Replace `motion.div` initial opacity with near-visible start
-
-For pages using Framer Motion (`AboutPage`, `ApplicationsPage`, `ContactPage`, `SocialProofPage`), change the hero `motion.div` from:
-
-```tsx
-initial={{ opacity: 0, y: 30 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{ duration: 0.8 }}
-```
-
-To:
-
-```tsx
-initial={{ opacity: 0.01, y: 16 }}
-animate={{ opacity: 1, y: 0 }}
-transition={{ duration: 0.4 }}
-```
-
-This cuts ~400ms from LCP on every sub-page while keeping a subtle entrance animation.
-
-#### 4. `src/index.css` -- Same treatment for `fadeIn`
-
-```css
-@keyframes fadeIn {
-  from { opacity: 0.01; }
-  to { opacity: 1; }
-}
-```
-
-### Files Modified
-
-- `src/index.css` -- Update `fadeIn` and `fadeInUp` keyframes to use `opacity: 0.01`
-- `src/components/Hero.tsx` -- Reduce/remove stagger delays on LCP elements
-- `src/pages/AboutPage.tsx` -- Fix hero motion.div initial opacity + shorter duration
-- `src/pages/ApplicationsPage.tsx` -- Same fix
-- `src/pages/ContactPage.tsx` -- Same fix
-- `src/pages/SocialProofPage.tsx` -- Same fix
-
-### Expected Impact
-
-- **Homepage LCP**: ~700ms improvement (animation delay removed from h1)
-- **Sub-pages LCP**: ~400-800ms improvement each
-- **Visual change**: Animations are slightly faster and subtler, but the entrance effect is preserved
