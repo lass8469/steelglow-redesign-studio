@@ -1750,7 +1750,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Datalogger Verifikation
   // ------------------------------------------------------------
   "data-logger-verification-guide": {
-    title: "Virkede dit tørremiddel? Sådan verificerer temperatur- og fugtighedsdataloggere din fugtbeskyttelsesstrategi",
+    title: "Hvordan ved du, om dit tørremiddel har virket?",
     excerpt: "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",
     date: "2025-02-23",
     readTime: "12 min læsning",
