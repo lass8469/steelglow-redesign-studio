@@ -44,7 +44,7 @@ const BlogPage = () => {
       slug: "molecular-sieve-pore-size-guide",
       titleKey: "blogPage.post15.title",
       excerptKey: "blogPage.post15.excerpt",
-      date: "2025-02-28",
+      date: "2026-02-28",
       readTime: "18",
       category: "Technical",
     },
