@@ -76,7 +76,7 @@ const BlogPage = () => {
       slug: "anti-slip-sheets-pallet-load-stability",
       titleKey: "blogPage.post11.title",
       excerptKey: "blogPage.post11.excerpt",
-      date: "2025-02-24",
+      date: "2026-02-24",
       readTime: "10",
       category: "Guide",
     },
