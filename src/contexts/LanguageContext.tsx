@@ -1322,6 +1322,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post14.excerpt": "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte lastningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
     "blogPage.post15.title": "Hvad er molekylsigte, og hvilken variant skal du bruge?",
     "blogPage.post15.excerpt": "Molekylsigter arbejder på molekylært niveau — de udvælger fysisk, hvilke molekyler der må trænge ind i deres struktur. Den selektivitet bestemmes næsten udelukkende af én variabel: porestørrelse.",
+    "blogPage.post16.title": "Hvad er desiccant? Komplet guide til tørremidler",
+    "blogPage.post16.excerpt": "En desiccant er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften. Denne komplette guide dækker typer, dimensionering, anvendelser og valg af det rigtige tørremiddel.",
     "relatedArticles.molecularSieveGuide": "guide til molekylsigte porestørrelse",
 
     // Downloads Page
