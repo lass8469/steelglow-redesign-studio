@@ -52,7 +52,7 @@ const BlogPage = () => {
       slug: "container-desiccant-stuffing-guide",
       titleKey: "blogPage.post14.title",
       excerptKey: "blogPage.post14.excerpt",
-      date: "2025-02-27",
+      date: "2026-02-27",
       readTime: "16",
       category: "Guide",
     },
