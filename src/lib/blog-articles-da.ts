@@ -2520,7 +2520,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Container-tørremiddel — Komplet guide til fugtstyring
   // ------------------------------------------------------------
   "container-desiccant-stuffing-guide": {
-    title: "Container-tørremiddel: Den komplette guide til fugtstyring ved lastning af en skibscontainer",
+    title: "Sådan beskytter du gods mod fugt i skibscontainere",
     excerpt: "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte lastningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
     date: "2025-02-27",
     readTime: "16 min læsning",
