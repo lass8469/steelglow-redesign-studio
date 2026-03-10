@@ -749,7 +749,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Landbrug & foder
   // ------------------------------------------------------------
   "agriculture-feed-moisture-living-cargo": {
-    title: "Landbrug og foder: Fugtstyring af levende last som kaffebønner",
+    title: "Sådan beskytter du kaffebønner og landbrugsvarer mod fugt under transport",
     excerpt: "Kaffebønner er stadig biologiske organismer, selv i en skibscontainer. Derfor er det afgørende at forstå samspillet mellem respiration, varme og fugt.",
     date: "2025-02-15",
     readTime: "15 min læsning",
