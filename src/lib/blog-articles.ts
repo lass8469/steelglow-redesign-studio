@@ -3185,7 +3185,7 @@ export const articles: Record<string, Article> = {
   "what-is-a-desiccant-complete-guide": {
     title: "What is a Desiccant? Complete Guide to Desiccants",
     excerpt: "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air. This complete guide covers desiccant types, sizing, applications, and how to choose the right one.",
-    date: "2025-03-01",
+    date: "2026-03-01",
     readTime: "20 min read",
     category: "Guide",
     heroImage: blogDesiccantGuide,
