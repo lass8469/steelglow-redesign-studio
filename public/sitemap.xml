@@ -658,5 +658,21 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://desiccant.com/en/blog/what-is-a-desiccant-complete-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/what-is-a-desiccant-complete-guide" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/what-is-a-desiccant-complete-guide" />
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://desiccant.com/da/blog/what-is-a-desiccant-complete-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://desiccant.com/en/blog/what-is-a-desiccant-complete-guide" />
+    <xhtml:link rel="alternate" hreflang="da" href="https://desiccant.com/da/blog/what-is-a-desiccant-complete-guide" />
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
 </urlset>
