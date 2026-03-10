@@ -2087,7 +2087,7 @@ export const articles: Record<string, Article> = {
   "anti-slip-sheets-pallet-load-stability": {
     title: "Prevent cargo from sliding on pallets during transport",
     excerpt: "High-friction paper sheets that protect your cargo from shifting — a proven, cost-effective way to increase friction between layers of goods and keep every pallet stack exactly where it should be.",
-    date: "2025-02-24",
+    date: "2026-02-24",
     readTime: "10 min read",
     category: "Guide",
     heroImage: productAntislip,
