@@ -2309,7 +2309,7 @@ export const articlesDa: Record<string, Article> = {
   "dry-bag-retail-moisture-absorber-guide": {
     title: "Stop fugt i båd, campingvogn og kælder – her er løsningen",
     excerpt: "Den samme gennemprøvede Moclay-formel fra global containerforsendelse — nu som en regenererbar, drypfri fugtabsorbent til båd, campingvogn, autocamper, kælder og garage. Opfundet og fremstillet i Danmark.",
-    date: "2025-02-26",
+    date: "2026-02-26",
     readTime: "14 min læsning",
     category: "Guide",
     heroImage: blogRetailDrybag,
