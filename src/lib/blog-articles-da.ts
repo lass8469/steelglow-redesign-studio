@@ -356,7 +356,7 @@ export const articlesDa: Record<string, Article> = {
   "chemistry-clay-mo-clay-vs-silica-gel": {
     title: "Lertørremiddel vs. silica gel – hvad er bedst til din forsendelse?",
     excerpt: "De grundlæggende forskelle mellem naturligt ler og syntetisk silikagel — og hvorfor mo-ler yder bedre med mindre miljøbelastning.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "10 min læsning",
     category: "Teknisk",
     heroImage: blogChemistryClay,
