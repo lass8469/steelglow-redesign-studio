@@ -341,7 +341,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post3.excerpt": "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
     "blogPage.post4.title": "Data loggers vs. desiccants: using sensors to prove your moisture strategy is working",
     "blogPage.post4.excerpt": "Desiccants absorb moisture. Data loggers record what happened. In modern logistics, you need both — but for very different reasons.",
-    "blogPage.post5.title": "Agriculture & feed: managing moisture in \"living\" cargo like coffee beans",
+    "blogPage.post5.title": "How to protect coffee beans and agricultural goods from moisture in transit",
     "blogPage.post5.excerpt": "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
     "blogPage.post6.title": "How quickly does mold grow on cargo — and how do you stop it?",
     "blogPage.post6.excerpt": "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
