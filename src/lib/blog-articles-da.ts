@@ -1932,7 +1932,7 @@ export const articlesDa: Record<string, Article> = {
     date: "2026-02-24",
     readTime: "10 min læsning",
     category: "Guide",
-    heroImage: productAntislip,
+    heroImage: blogAntislipPallet,
     author: "DESICCANT Teknisk Team",
     canonicalPath: "/anti-slip",
 
