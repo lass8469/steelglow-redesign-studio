@@ -259,7 +259,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Container Rain
   // ------------------------------------------------------------
   "container-rain-dew-point-physics": {
-    title: "Container rain: Why dew point physics makes moisture damage inevitable during ocean transit",
+    title: "Condensation inside shipping containers: Why it happens and how to prevent it",
     excerpt: "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
     date: "2025-02-10",
     readTime: "8 min read",
