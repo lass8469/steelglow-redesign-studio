@@ -345,7 +345,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post5.excerpt": "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
     "blogPage.post6.title": "Mold growth timelines: how many days of 80% RH does it take to ruin a shipment?",
     "blogPage.post6.excerpt": "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
-    "blogPage.post7.title": "What is silica gel desiccant? Complete guide to moisture control for shipping & storage",
+    "blogPage.post7.title": "Silica Gel Desiccant: What it is, how it works, and when to use it",
     "blogPage.post7.excerpt": "Learn how silica gel desiccant works, why it's the go-to moisture absorber for e-commerce, electronics, pharmaceuticals, and food packaging — and how to choose the right desiccant bag size.",
     "blogPage.post8.title": "DRY-BAG I: The effective solution against moisture in containers",
     "blogPage.post8.excerpt": "Discover what makes DRY BAG I different — from its Moclay formula and 80% absorption capacity to its 90-day protection window. The definitive guide to clay desiccant bags for container shipping.",
