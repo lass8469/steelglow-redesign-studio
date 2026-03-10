@@ -1521,7 +1521,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: DRY BAG I — Clay Desiccant Guide
   // ------------------------------------------------------------
   "drybag-i-clay-desiccant-guide": {
-    title: "The Original DRY BAG I: Why Denmark's Clay Desiccant Is the Gold Standard for Container Moisture Protection",
+    title: "DRY-BAG I: The effective solution against moisture in containers",
     excerpt: "Discover what makes DRY BAG I different — from its Moclay formula and 80% absorption capacity to its 90-day protection window. The definitive guide to clay desiccant bags for container shipping.",
     date: "2025-02-21",
     readTime: "12 min read",
