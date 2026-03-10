@@ -100,7 +100,7 @@ const BlogPage = () => {
       slug: "drybag-i-clay-desiccant-guide",
       titleKey: "blogPage.post8.title",
       excerptKey: "blogPage.post8.excerpt",
-      date: "2025-02-21",
+      date: "2026-02-21",
       readTime: "12",
       category: "Guide",
     },
