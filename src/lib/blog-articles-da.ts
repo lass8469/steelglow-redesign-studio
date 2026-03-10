@@ -15,6 +15,7 @@ import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 import blogDesiccantGuide from "@/assets/blog-desiccant-guide.webp";
 import blogAntislipPallet from "@/assets/blog-antislip-pallet.webp";
 import blogDrybagIContainer from "@/assets/blog-drybag-i-container.webp";
+import blogDunnageBag from "@/assets/blog-dunnage-bag.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -1594,7 +1595,7 @@ export const articlesDa: Record<string, Article> = {
     date: "2026-02-22",
     readTime: "11 min læsning",
     category: "Guide",
-    heroImage: productDunnageBag,
+    heroImage: blogDunnageBag,
     author: "DESICCANT Teknisk Team",
     canonicalPath: "/dunnage-bag",
 
