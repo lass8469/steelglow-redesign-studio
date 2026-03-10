@@ -333,7 +333,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.category.guide": "Guide",
     "blogPage.minRead": "min read",
     // Blog post content
-    "blogPage.post1.title": "Vapor pressure explained: Why moisture \"hides\" in wooden pallets and how to get it out",
+    "blogPage.post1.title": "How wooden pallets cause condensation inside shipping containers",
     "blogPage.post1.excerpt": "Understanding the physics of vapor pressure reveals why wooden pallets trap moisture deep within their structure — and how to remove it effectively.",
     "blogPage.post2.title": "Condensation inside shipping containers: Why it happens and how to prevent it",
     "blogPage.post2.excerpt": "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
