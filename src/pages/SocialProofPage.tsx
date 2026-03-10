@@ -199,7 +199,7 @@ const SocialProofPage = () => {
                 <div className="flex items-center gap-4">
                   {review.image ? (
                     <div className="w-28 h-28 rounded-full overflow-hidden flex-shrink-0">
-                      <img src={review.image} alt={review.name} className="w-full h-full object-cover object-top scale-[1.25]" />
+                      <img src={review.image} alt={review.name} className={`w-full h-full object-cover ${review.name === "Christina Rosenkvist" ? "scale-[1.4] object-[center_15%]" : "object-top scale-[1.25]"}`} />
                     </div>
                   ) : (
                     <div className="w-28 h-28 bg-primary/10 rounded-full flex items-center justify-center">
