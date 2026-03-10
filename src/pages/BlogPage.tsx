@@ -156,7 +156,7 @@ const BlogPage = () => {
       slug: "vapor-pressure-wooden-pallets",
       titleKey: "blogPage.post1.title",
       excerptKey: "blogPage.post1.excerpt",
-      date: "2025-02-10",
+      date: "2026-02-10",
       readTime: "7",
       category: "Technical",
     },
