@@ -108,7 +108,7 @@ const BlogPage = () => {
       slug: "silica-gel-desiccant-guide",
       titleKey: "blogPage.post7.title",
       excerptKey: "blogPage.post7.excerpt",
-      date: "2025-02-20",
+      date: "2026-02-20",
       readTime: "10",
       category: "Guide",
     },
