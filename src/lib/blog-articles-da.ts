@@ -353,7 +353,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Lerets kemi
   // ------------------------------------------------------------
   "chemistry-clay-mo-clay-vs-silica-gel": {
-    title: "Lerets kemi: Hvorfor dansk mo-ler slår traditionel silikagel",
+    title: "Lertørremiddel vs. silica gel – hvad er bedst til din forsendelse?",
     excerpt: "De grundlæggende forskelle mellem naturligt ler og syntetisk silikagel — og hvorfor mo-ler yder bedre med mindre miljøbelastning.",
     date: "2025-02-10",
     readTime: "10 min læsning",
