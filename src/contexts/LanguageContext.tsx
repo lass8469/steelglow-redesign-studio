@@ -1310,7 +1310,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post9.excerpt": "Lær hvordan luftpuder forhindrer godsskift i containere, lastbiler og togvogne. Dækker PP/PE vs. kraftpapir, dimensionering og kombination med tørremidler for komplet lastsikring.",
     "blogPage.post10.title": "Virkede dit tørremiddel? Sådan verificerer dataloggere din fugtbeskyttelsesstrategi",
     "blogPage.post10.excerpt": "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",
-    "blogPage.post11.title": "Anti-Slip Sheets: Den smarte måde at stabilisere pallelæs under transport",
+    "blogPage.post11.title": "Sådan forhindrer du gods i at glide på paller under transport",
     "blogPage.post11.excerpt": "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
     "blogPage.post12.title": "Stabustrap: Det smartere, grønnere alternativ til strækfilm til intern palletransport",
     "blogPage.post12.excerpt": "Et elastisk, genanvendeligt båndsystem, der påføres på sekunder, holder læsset sikkert og eliminerer engangsplast fra intern pallehåndtering.",
