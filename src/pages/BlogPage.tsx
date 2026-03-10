@@ -148,7 +148,7 @@ const BlogPage = () => {
       slug: "container-rain-dew-point-physics",
       titleKey: "blogPage.post2.title",
       excerptKey: "blogPage.post2.excerpt",
-      date: "2025-02-10",
+      date: "2026-02-10",
       readTime: "8",
       category: "Technical",
     },
