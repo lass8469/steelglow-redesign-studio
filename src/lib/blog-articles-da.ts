@@ -2776,7 +2776,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTICLE: Molekylsigte — Hvorfor porestørrelse er afgørende
   // ------------------------------------------------------------
   "molecular-sieve-pore-size-guide": {
-    title: "Molekylsigte: Hvorfor porestørrelse er afgørende",
+    title: "Hvad er molekylsigte, og hvilken variant skal du bruge?",
     excerpt: "Molekylsigter arbejder på molekylært niveau — de udvælger fysisk, hvilke molekyler der må trænge ind i deres struktur. Den selektivitet bestemmes næsten udelukkende af én variabel: porestørrelse.",
     date: "2025-02-28",
     readTime: "18 min læsetid",

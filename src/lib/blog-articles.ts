@@ -2958,7 +2958,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Molecular Sieve — Why Pore Size Matters
   // ------------------------------------------------------------
   "molecular-sieve-pore-size-guide": {
-    title: "Molecular Sieve: Why Pore Size Matters",
+    title: "What Is Molecular Sieve Desiccant — and which version do you need?",
     excerpt: "Molecular sieves work at the molecular level — physically selecting which molecules enter their structure. That selectivity is determined almost entirely by one variable: pore size.",
     date: "2025-02-28",
     readTime: "18 min read",
