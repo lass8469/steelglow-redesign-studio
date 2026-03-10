@@ -9,6 +9,8 @@ import palbyLogo from "@/assets/logo-palby.png";
 import srpackLogo from "@/assets/logo-srpack.png";
 import tripleaLogo from "@/assets/logo-triplea.png";
 import christianPhoto from "@/assets/testimonial-christian.webp";
+import christinaPhoto from "@/assets/testimonial-christina.webp";
+import andersPhoto from "@/assets/testimonial-anders.webp";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
