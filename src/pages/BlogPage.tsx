@@ -140,7 +140,7 @@ const BlogPage = () => {
       slug: "chemistry-clay-mo-clay-vs-silica-gel",
       titleKey: "blogPage.post3.title",
       excerptKey: "blogPage.post3.excerpt",
-      date: "2025-02-10",
+      date: "2026-02-10",
       readTime: "10",
       category: "Technical",
     },
