@@ -1300,7 +1300,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post4.excerpt": "Tørremidler absorberer fugt. Dataloggere dokumenterer, hvad der skete. I moderne logistik har du brug for begge — men af vidt forskellige grunde.",
     "blogPage.post5.title": "Sådan beskytter du kaffebønner og landbrugsvarer mod fugt under transport",
     "blogPage.post5.excerpt": "Kaffebønner er stadig biologiske organismer, selv i en skibscontainer. Derfor er det afgørende at forstå samspillet mellem respiration, varme og fugt.",
-    "blogPage.post6.title": "Skimmelvækst: Hvor mange dage ved 80 % RF skal der til, før en forsendelse er ødelagt?",
+    "blogPage.post6.title": "Hvornår opstår skimmel under forsendelse – og hvordan stopper du det?",
     "blogPage.post6.excerpt": "Svaret er ikke et simpelt antal dage. Skimmel følger ikke en fast tidsplan — det er de bagvedliggende faktorer, der afgør, om du forebygger skaden eller først opdager den ved ankomst.",
     "blogPage.post7.title": "Hvad er silica gel tørremiddel? Komplet guide til fugtkontrol ved forsendelse og opbevaring",
     "blogPage.post7.excerpt": "Lær hvordan silica gel tørremiddel fungerer, hvorfor det er den foretrukne fugtfjerner til e-handel, elektronik, medicin og fødevareemballage — og hvordan du vælger den rigtige fugtpose.",
