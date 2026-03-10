@@ -2136,7 +2136,7 @@ export const articlesDa: Record<string, Article> = {
   "stabustrap-reusable-pallet-strapping": {
     title: "Stabustrap: Det smartere, grønnere alternativ til strækfilm til intern palletransport",
     excerpt: "Et elastisk, genanvendeligt båndsystem, der påføres på sekunder, holder læsset sikkert og eliminerer engangsplast fra intern pallehåndtering.",
-    date: "2025-02-25",
+    date: "2026-02-25",
     readTime: "12 min læsning",
     category: "Guide",
     heroImage: productStabustrap,
