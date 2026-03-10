@@ -263,7 +263,7 @@ export const articles: Record<string, Article> = {
   "container-rain-dew-point-physics": {
     title: "Condensation inside shipping containers: Why it happens and how to prevent it",
     excerpt: "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "8 min read",
     category: "Technical",
     heroImage: blogContainerRain,
