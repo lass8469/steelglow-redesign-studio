@@ -1908,7 +1908,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Data Logger Verification
   // ------------------------------------------------------------
   "data-logger-verification-guide": {
-    title: "Did Your Desiccant Actually Work? How Data Loggers Verify Your Moisture Protection Strategy",
+    title: "How do you know if your desiccant actually worked?",
     excerpt: "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A temperature and humidity data logger closes that gap.",
     date: "2025-02-23",
     readTime: "12 min read",
