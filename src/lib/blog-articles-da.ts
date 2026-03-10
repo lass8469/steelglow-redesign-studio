@@ -27,7 +27,7 @@ export const articlesDa: Record<string, Article> = {
   "vapor-pressure-wooden-pallets": {
     title: "Fugt i træpaller – hvorfor det sker, og hvad kan du gøre ved det?",
     excerpt: "Damptrykkets fysik afslører, hvorfor træpaller holder på fugten dybt inde i strukturen — og hvad du kan gøre ved det.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "7 min læsning",
     category: "Teknisk",
     heroImage: blogVaporPressure,
