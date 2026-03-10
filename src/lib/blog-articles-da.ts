@@ -13,6 +13,7 @@ import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
 import blogContainerDesiccantGuide from "@/assets/blog-container-desiccant-guide.webp";
 import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 import blogDesiccantGuide from "@/assets/blog-desiccant-guide.webp";
+import blogAntislipPallet from "@/assets/blog-antislip-pallet.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
