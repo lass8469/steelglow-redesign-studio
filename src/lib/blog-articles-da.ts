@@ -2970,7 +2970,7 @@ export const articlesDa: Record<string, Article> = {
   "what-is-a-desiccant-complete-guide": {
     title: "Hvad er desiccant? Komplet guide til tørremidler",
     excerpt: "En desiccant er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften. Denne komplette guide dækker typer, dimensionering, anvendelser og valg af det rigtige tørremiddel.",
-    date: "2025-03-01",
+    date: "2026-03-01",
     readTime: "20 min læsning",
     category: "Guide",
     heroImage: blogDesiccantGuide,
