@@ -1723,7 +1723,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Dunnage Bags for Container Loading
   // ------------------------------------------------------------
   "dunnage-bags-container-loading-guide": {
-    title: "Dunnage Bags for Container Loading: How to Stop Cargo Shifting Before It Costs You",
+    title: "Dunnage bags for shipping containers: What they are and do you need them?",
     excerpt: "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and how to combine them with desiccants for complete cargo protection.",
     date: "2025-02-22",
     readTime: "11 min read",
