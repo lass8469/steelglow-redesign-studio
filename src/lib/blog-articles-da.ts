@@ -1925,7 +1925,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Anti-Slip Sheets til paller
   // ------------------------------------------------------------
   "anti-slip-sheets-pallet-load-stability": {
-    title: "Anti-Slip Sheets: Den smarte måde at stabilisere pallelæs under transport",
+    title: "Sådan forhindrer du gods i at glide på paller under transport",
     excerpt: "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
     date: "2025-02-24",
     readTime: "10 min læsning",
