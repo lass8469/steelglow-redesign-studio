@@ -349,7 +349,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post7.excerpt": "Learn how silica gel desiccant works, why it's the go-to moisture absorber for e-commerce, electronics, pharmaceuticals, and food packaging — and how to choose the right desiccant bag size.",
     "blogPage.post8.title": "The original DRY BAG I: Why Denmark's clay desiccant is the gold standard for container moisture protection",
     "blogPage.post8.excerpt": "Discover what makes DRY BAG I different — from its Moclay formula and 80% absorption capacity to its 90-day protection window. The definitive guide to clay desiccant bags for container shipping.",
-    "blogPage.post9.title": "Dunnage bags for container loading: How to stop cargo shifting before it costs you",
+    "blogPage.post9.title": "Dunnage bags for shipping containers: What they are and do you need them?",
     "blogPage.post9.excerpt": "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and combining with desiccants for complete cargo protection.",
     "blogPage.post10.title": "How do you know if your desiccant actually worked?",
     "blogPage.post10.excerpt": "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A data logger closes that gap.",
