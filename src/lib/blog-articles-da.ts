@@ -201,7 +201,7 @@ export const articlesDa: Record<string, Article> = {
   "container-rain-dew-point-physics": {
     title: "Kondens i skibscontainere – hvad det er, og hvordan du undgår det",
     excerpt: "De termodynamiske kræfter, der forvandler skibscontainere til kondenskamre — og den eneste løsning, der virker i stor skala.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "8 min læsning",
     category: "Teknisk",
     heroImage: blogContainerRain,
