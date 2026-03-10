@@ -80,7 +80,7 @@ export const articles: Record<string, Article> = {
   "vapor-pressure-wooden-pallets": {
     title: "How wooden pallets cause condensation inside shipping containers",
     excerpt: "Understanding the physics of vapor pressure reveals why wooden pallets trap moisture deep within their structure — and how to remove it effectively.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "7 min read",
     category: "Technical",
     heroImage: blogVaporPressure,
@@ -263,7 +263,7 @@ export const articles: Record<string, Article> = {
   "container-rain-dew-point-physics": {
     title: "Condensation inside shipping containers: Why it happens and how to prevent it",
     excerpt: "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "8 min read",
     category: "Technical",
     heroImage: blogContainerRain,
@@ -424,7 +424,7 @@ export const articles: Record<string, Article> = {
   "chemistry-clay-mo-clay-vs-silica-gel": {
     title: "Clay desiccant vs. silica gel: Which is better for shipping?",
     excerpt: "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "10 min read",
     category: "Technical",
     heroImage: blogChemistryClay,
@@ -644,7 +644,7 @@ export const articles: Record<string, Article> = {
   "data-loggers-vs-desiccants": {
     title: "Data-logger vs. desiccant: What's the difference and do you need both?",
     excerpt: "Desiccants absorb moisture. Data loggers record what happened. In modern logistics, you need both — but for very different reasons.",
-    date: "2025-02-13",
+    date: "2026-02-13",
     readTime: "12 min read",
     category: "Technical",
     heroImage: blogDatalogger,
@@ -857,7 +857,7 @@ export const articles: Record<string, Article> = {
   "agriculture-feed-moisture-living-cargo": {
     title: "How to protect coffee beans and agricultural goods from moisture in transit",
     excerpt: "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
-    date: "2025-02-15",
+    date: "2026-02-15",
     readTime: "15 min read",
     category: "Technical",
     heroImage: blogAgricultureFeed,
@@ -1063,7 +1063,7 @@ export const articles: Record<string, Article> = {
   "mold-growth-timelines-80-rh": {
     title: "How quickly does mold grow on cargo — and how do you stop it?",
     excerpt: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
-    date: "2025-02-18",
+    date: "2026-02-18",
     readTime: "18 min read",
     category: "Technical",
     heroImage: blogMoldGrowth,
@@ -1246,7 +1246,7 @@ export const articles: Record<string, Article> = {
   "silica-gel-desiccant-guide": {
     title: "Silica Gel Desiccant: What it is, how it works, and when to use it",
     excerpt: "Learn how silica gel desiccant works, why it's the go-to moisture absorber for e-commerce shipping, electronics, pharmaceuticals, and food packaging — and how to choose the right size for your needs.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     readTime: "10 min read",
     category: "Guide",
     heroImage: productSilicaGel,
@@ -1525,7 +1525,7 @@ export const articles: Record<string, Article> = {
   "drybag-i-clay-desiccant-guide": {
     title: "DRY-BAG I: The effective solution against moisture in containers",
     excerpt: "Discover what makes DRY BAG I different — from its Moclay formula and 80% absorption capacity to its 90-day protection window. The definitive guide to clay desiccant bags for container shipping.",
-    date: "2025-02-21",
+    date: "2026-02-21",
     readTime: "12 min read",
     category: "Guide",
     heroImage: productDrybagI,
@@ -1727,7 +1727,7 @@ export const articles: Record<string, Article> = {
   "dunnage-bags-container-loading-guide": {
     title: "Dunnage bags for shipping containers: What they are and do you need them?",
     excerpt: "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and how to combine them with desiccants for complete cargo protection.",
-    date: "2025-02-22",
+    date: "2026-02-22",
     readTime: "11 min read",
     category: "Guide",
     heroImage: productDunnageBag,
@@ -1912,7 +1912,7 @@ export const articles: Record<string, Article> = {
   "data-logger-verification-guide": {
     title: "How do you know if your desiccant actually worked?",
     excerpt: "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A temperature and humidity data logger closes that gap.",
-    date: "2025-02-23",
+    date: "2026-02-23",
     readTime: "12 min read",
     category: "Guide",
     heroImage: blogDatalogger,
@@ -2087,7 +2087,7 @@ export const articles: Record<string, Article> = {
   "anti-slip-sheets-pallet-load-stability": {
     title: "Prevent cargo from sliding on pallets during transport",
     excerpt: "High-friction paper sheets that protect your cargo from shifting — a proven, cost-effective way to increase friction between layers of goods and keep every pallet stack exactly where it should be.",
-    date: "2025-02-24",
+    date: "2026-02-24",
     readTime: "10 min read",
     category: "Guide",
     heroImage: productAntislip,
@@ -2295,7 +2295,7 @@ export const articles: Record<string, Article> = {
   "stabustrap-reusable-pallet-strapping": {
     title: "Reusable pallet strapping: Greener alternative to stretch film",
     excerpt: "An elastic, reusable strapping system that applies in seconds, holds loads securely, and eliminates single-use plastic waste from internal pallet handling.",
-    date: "2025-02-25",
+    date: "2026-02-25",
     readTime: "12 min read",
     category: "Guide",
     heroImage: productStabustrap,
@@ -2476,7 +2476,7 @@ export const articles: Record<string, Article> = {
   "dry-bag-retail-moisture-absorber-guide": {
     title: "Moisture absorber for boats, caravans, basements and garages",
     excerpt: "The same trusted Moclay formula used in global container shipping — now available as a regenerable, drip-free moisture absorber for boats, campers, RVs, basements, and garages. Made in Denmark.",
-    date: "2025-02-26",
+    date: "2026-02-26",
     readTime: "14 min read",
     category: "Guide",
     heroImage: blogRetailDrybag,
@@ -2694,7 +2694,7 @@ export const articles: Record<string, Article> = {
   "container-desiccant-stuffing-guide": {
     title: "How to protect cargo from moisture in a shipping container",
     excerpt: "From inspecting the container before loading to choosing the right desiccant and smart stuffing practices — everything you need to protect cargo from moisture damage during ocean shipping.",
-    date: "2025-02-27",
+    date: "2026-02-27",
     readTime: "16 min read",
     category: "Guide",
     heroImage: blogContainerDesiccantGuide,
@@ -2962,7 +2962,7 @@ export const articles: Record<string, Article> = {
   "molecular-sieve-pore-size-guide": {
     title: "What Is Molecular Sieve Desiccant — and which version do you need?",
     excerpt: "Molecular sieves work at the molecular level — physically selecting which molecules enter their structure. That selectivity is determined almost entirely by one variable: pore size.",
-    date: "2025-02-28",
+    date: "2026-02-28",
     readTime: "18 min read",
     category: "Technical",
     heroImage: productMolecularSieve,
@@ -3185,7 +3185,7 @@ export const articles: Record<string, Article> = {
   "what-is-a-desiccant-complete-guide": {
     title: "What is a Desiccant? Complete Guide to Desiccants",
     excerpt: "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air. This complete guide covers desiccant types, sizing, applications, and how to choose the right one.",
-    date: "2025-03-01",
+    date: "2026-03-01",
     readTime: "20 min read",
     category: "Guide",
     heroImage: blogDesiccantGuide,

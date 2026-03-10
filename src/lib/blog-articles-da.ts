@@ -27,7 +27,7 @@ export const articlesDa: Record<string, Article> = {
   "vapor-pressure-wooden-pallets": {
     title: "Fugt i træpaller – hvorfor det sker, og hvad kan du gøre ved det?",
     excerpt: "Damptrykkets fysik afslører, hvorfor træpaller holder på fugten dybt inde i strukturen — og hvad du kan gøre ved det.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "7 min læsning",
     category: "Teknisk",
     heroImage: blogVaporPressure,
@@ -201,7 +201,7 @@ export const articlesDa: Record<string, Article> = {
   "container-rain-dew-point-physics": {
     title: "Kondens i skibscontainere – hvad det er, og hvordan du undgår det",
     excerpt: "De termodynamiske kræfter, der forvandler skibscontainere til kondenskamre — og den eneste løsning, der virker i stor skala.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "8 min læsning",
     category: "Teknisk",
     heroImage: blogContainerRain,
@@ -356,7 +356,7 @@ export const articlesDa: Record<string, Article> = {
   "chemistry-clay-mo-clay-vs-silica-gel": {
     title: "Lertørremiddel vs. silica gel – hvad er bedst til din forsendelse?",
     excerpt: "De grundlæggende forskelle mellem naturligt ler og syntetisk silikagel — og hvorfor mo-ler yder bedre med mindre miljøbelastning.",
-    date: "2025-02-10",
+    date: "2026-02-10",
     readTime: "10 min læsning",
     category: "Teknisk",
     heroImage: blogChemistryClay,
@@ -551,7 +551,7 @@ export const articlesDa: Record<string, Article> = {
   "data-loggers-vs-desiccants": {
     title: "Dataloggere vs. tørremidler: Bevis at din fugtstrategi virker med sensorer",
     excerpt: "Tørremidler absorberer fugt. Dataloggere dokumenterer, hvad der skete. I moderne logistik har du brug for begge — men af vidt forskellige grunde.",
-    date: "2025-02-13",
+    date: "2026-02-13",
     readTime: "12 min læsning",
     category: "Teknisk",
     heroImage: blogDatalogger,
@@ -752,7 +752,7 @@ export const articlesDa: Record<string, Article> = {
   "agriculture-feed-moisture-living-cargo": {
     title: "Sådan beskytter du kaffebønner og landbrugsvarer mod fugt under transport",
     excerpt: "Kaffebønner er stadig biologiske organismer, selv i en skibscontainer. Derfor er det afgørende at forstå samspillet mellem respiration, varme og fugt.",
-    date: "2025-02-15",
+    date: "2026-02-15",
     readTime: "15 min læsning",
     category: "Teknisk",
     heroImage: blogAgricultureFeed,
@@ -938,7 +938,7 @@ export const articlesDa: Record<string, Article> = {
   "mold-growth-timelines-80-rh": {
     title: "Hvornår opstår skimmel under forsendelse – og hvordan stopper du det?",
     excerpt: "Svaret er ikke et simpelt antal dage. Skimmel følger ikke en fast tidsplan — det er de bagvedliggende faktorer, der afgør, om du forebygger skaden eller først opdager den ved ankomst.",
-    date: "2025-02-18",
+    date: "2026-02-18",
     readTime: "18 min læsning",
     category: "Teknisk",
     heroImage: blogMoldGrowth,
@@ -1120,7 +1120,7 @@ export const articlesDa: Record<string, Article> = {
   "silica-gel-desiccant-guide": {
     title: "Hvad er silica gel tørremiddel? Komplet guide til fugtkontrol ved forsendelse og opbevaring",
     excerpt: "Lær hvordan silica gel tørremiddel fungerer, hvorfor det er den foretrukne fugtfjerner til e-handel, elektronik, medicin og fødevareemballage — og hvordan du vælger den rigtige størrelse fugtpose.",
-    date: "2025-02-20",
+    date: "2026-02-20",
     readTime: "10 min læsning",
     category: "Guide",
     heroImage: productSilicaGel,
@@ -1391,7 +1391,7 @@ export const articlesDa: Record<string, Article> = {
   "drybag-i-clay-desiccant-guide": {
     title: "DRY BAG I: Den effektive løsning mod fugt i containere",
     excerpt: "Oplev hvad der gør DRY BAG I anderledes — fra Moclay-formlen og 80 % absorptionskapacitet til 90 dages fugtbeskyttelse. Den komplette guide til tørremiddelposer til containerforsendelse.",
-    date: "2025-02-21",
+    date: "2026-02-21",
     readTime: "12 min læsning",
     category: "Guide",
     heroImage: productDrybagI,
@@ -1589,7 +1589,7 @@ export const articlesDa: Record<string, Article> = {
   "dunnage-bags-container-loading-guide": {
     title: "Sådan forhindrer luftpuder forskydning af gods i containere",
     excerpt: "Lær hvordan luftpuder (dunnage bags) forhindrer lastsikring-problemer i containere, lastbiler og togvogne. Dækker PP/PE vs. kraftpapir, dimensionering og kombination med tørremidler for komplet fragtsikkerhed.",
-    date: "2025-02-22",
+    date: "2026-02-22",
     readTime: "11 min læsning",
     category: "Guide",
     heroImage: productDunnageBag,
@@ -1753,7 +1753,7 @@ export const articlesDa: Record<string, Article> = {
   "data-logger-verification-guide": {
     title: "Hvordan ved du, om dit tørremiddel har virket?",
     excerpt: "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",
-    date: "2025-02-23",
+    date: "2026-02-23",
     readTime: "12 min læsning",
     category: "Guide",
     heroImage: blogDatalogger,
@@ -1928,7 +1928,7 @@ export const articlesDa: Record<string, Article> = {
   "anti-slip-sheets-pallet-load-stability": {
     title: "Sådan forhindrer du gods i at glide på paller under transport",
     excerpt: "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
-    date: "2025-02-24",
+    date: "2026-02-24",
     readTime: "10 min læsning",
     category: "Guide",
     heroImage: productAntislip,
@@ -2136,7 +2136,7 @@ export const articlesDa: Record<string, Article> = {
   "stabustrap-reusable-pallet-strapping": {
     title: "Stabustrap: Det smartere, grønnere alternativ til strækfilm til intern palletransport",
     excerpt: "Et elastisk, genanvendeligt båndsystem, der påføres på sekunder, holder læsset sikkert og eliminerer engangsplast fra intern pallehåndtering.",
-    date: "2025-02-25",
+    date: "2026-02-25",
     readTime: "12 min læsning",
     category: "Guide",
     heroImage: productStabustrap,
@@ -2309,7 +2309,7 @@ export const articlesDa: Record<string, Article> = {
   "dry-bag-retail-moisture-absorber-guide": {
     title: "Stop fugt i båd, campingvogn og kælder – her er løsningen",
     excerpt: "Den samme gennemprøvede Moclay-formel fra global containerforsendelse — nu som en regenererbar, drypfri fugtabsorbent til båd, campingvogn, autocamper, kælder og garage. Opfundet og fremstillet i Danmark.",
-    date: "2025-02-26",
+    date: "2026-02-26",
     readTime: "14 min læsning",
     category: "Guide",
     heroImage: blogRetailDrybag,
@@ -2523,7 +2523,7 @@ export const articlesDa: Record<string, Article> = {
   "container-desiccant-stuffing-guide": {
     title: "Sådan beskytter du gods mod fugt i skibscontainere",
     excerpt: "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte lastningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
-    date: "2025-02-27",
+    date: "2026-02-27",
     readTime: "16 min læsning",
     category: "Guide",
     heroImage: blogContainerDesiccantGuide,
@@ -2779,7 +2779,7 @@ export const articlesDa: Record<string, Article> = {
   "molecular-sieve-pore-size-guide": {
     title: "Hvad er molekylsigte, og hvilken variant skal du bruge?",
     excerpt: "Molekylsigter arbejder på molekylært niveau — de udvælger fysisk, hvilke molekyler der må trænge ind i deres struktur. Den selektivitet bestemmes næsten udelukkende af én variabel: porestørrelse.",
-    date: "2025-02-28",
+    date: "2026-02-28",
     readTime: "18 min læsetid",
     category: "Teknisk",
     heroImage: productMolecularSieve,
@@ -2970,7 +2970,7 @@ export const articlesDa: Record<string, Article> = {
   "what-is-a-desiccant-complete-guide": {
     title: "Hvad er desiccant? Komplet guide til tørremidler",
     excerpt: "En desiccant er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften. Denne komplette guide dækker typer, dimensionering, anvendelser og valg af det rigtige tørremiddel.",
-    date: "2025-03-01",
+    date: "2026-03-01",
     readTime: "20 min læsning",
     category: "Guide",
     heroImage: blogDesiccantGuide,
