@@ -1294,7 +1294,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post1.excerpt": "Damptrykkets fysik afslører, hvorfor træpaller holder på fugten dybt inde i strukturen — og hvad du kan gøre ved det.",
     "blogPage.post2.title": "Containerregn: Når dugpunktsfysik gør fugtskader uundgåelige til søs",
     "blogPage.post2.excerpt": "De termodynamiske kræfter, der forvandler skibscontainere til kondenskamre — og den eneste løsning, der virker i stor skala.",
-    "blogPage.post3.title": "Lerets kemi: Hvorfor dansk mo-ler slår traditionel silikagel",
+    "blogPage.post3.title": "Lertørremiddel vs. silica gel – hvad er bedst til din forsendelse?",
     "blogPage.post3.excerpt": "De grundlæggende forskelle mellem naturligt ler og syntetisk silikagel — og hvorfor mo-ler yder bedre med mindre miljøbelastning.",
     "blogPage.post4.title": "Dataloggere vs. tørremidler: Bevis at din fugtstrategi virker med sensorer",
     "blogPage.post4.excerpt": "Tørremidler absorberer fugt. Dataloggere dokumenterer, hvad der skete. I moderne logistik har du brug for begge — men af vidt forskellige grunde.",
