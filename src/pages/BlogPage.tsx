@@ -132,7 +132,7 @@ const BlogPage = () => {
       slug: "data-loggers-vs-desiccants",
       titleKey: "blogPage.post4.title",
       excerptKey: "blogPage.post4.excerpt",
-      date: "2025-02-13",
+      date: "2026-02-13",
       readTime: "12",
       category: "Technical",
     },
