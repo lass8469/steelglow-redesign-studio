@@ -1292,7 +1292,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Blog post content
     "blogPage.post1.title": "Fugt i træpaller – hvorfor det sker, og hvad kan du gøre ved det?",
     "blogPage.post1.excerpt": "Damptrykkets fysik afslører, hvorfor træpaller holder på fugten dybt inde i strukturen — og hvad du kan gøre ved det.",
-    "blogPage.post2.title": "Containerregn: Når dugpunktsfysik gør fugtskader uundgåelige til søs",
+    "blogPage.post2.title": "Kondens i skibscontainere – hvad det er, og hvordan du undgår det",
     "blogPage.post2.excerpt": "De termodynamiske kræfter, der forvandler skibscontainere til kondenskamre — og den eneste løsning, der virker i stor skala.",
     "blogPage.post3.title": "Lertørremiddel vs. silica gel – hvad er bedst til din forsendelse?",
     "blogPage.post3.excerpt": "De grundlæggende forskelle mellem naturligt ler og syntetisk silikagel — og hvorfor mo-ler yder bedre med mindre miljøbelastning.",
