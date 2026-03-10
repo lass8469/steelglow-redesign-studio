@@ -72,7 +72,7 @@ const SocialProofPage = () => {
       text: t("socialProof.review3.text"),
       highlight: t("socialProof.review3.highlight"),
       rating: 5,
-      image: andersPhoto,
+      image: christinaPhoto,
     },
   ];
 
