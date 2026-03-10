@@ -116,7 +116,7 @@ const BlogPage = () => {
       slug: "mold-growth-timelines-80-rh",
       titleKey: "blogPage.post6.title",
       excerptKey: "blogPage.post6.excerpt",
-      date: "2025-02-18",
+      date: "2026-02-18",
       readTime: "18",
       category: "Technical",
     },
