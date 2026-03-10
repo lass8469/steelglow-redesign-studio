@@ -1727,7 +1727,7 @@ export const articles: Record<string, Article> = {
   "dunnage-bags-container-loading-guide": {
     title: "Dunnage bags for shipping containers: What they are and do you need them?",
     excerpt: "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and how to combine them with desiccants for complete cargo protection.",
-    date: "2025-02-22",
+    date: "2026-02-22",
     readTime: "11 min read",
     category: "Guide",
     heroImage: productDunnageBag,
