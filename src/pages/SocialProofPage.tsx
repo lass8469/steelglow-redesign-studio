@@ -9,6 +9,8 @@ import palbyLogo from "@/assets/logo-palby.png";
 import srpackLogo from "@/assets/logo-srpack.png";
 import tripleaLogo from "@/assets/logo-triplea.png";
 import christianPhoto from "@/assets/testimonial-christian.webp";
+import christinaPhoto from "@/assets/testimonial-christina.webp";
+import andersPhoto from "@/assets/testimonial-anders.webp";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MoistureBackground from "@/components/MoistureBackground";
@@ -61,6 +63,7 @@ const SocialProofPage = () => {
       text: t("socialProof.review2.text"),
       highlight: t("socialProof.review2.highlight"),
       rating: 5,
+      image: christinaPhoto,
     },
     {
       name: t("socialProof.review3.name"),
@@ -69,6 +72,7 @@ const SocialProofPage = () => {
       text: t("socialProof.review3.text"),
       highlight: t("socialProof.review3.highlight"),
       rating: 5,
+      image: andersPhoto,
     },
   ];
 
