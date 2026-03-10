@@ -12,6 +12,7 @@ import productStabustrap from "@/assets/product-stabustrap.webp";
 import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
 import blogContainerDesiccantGuide from "@/assets/blog-container-desiccant-guide.webp";
 import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
+import blogDesiccantGuide from "@/assets/blog-desiccant-guide.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -2958,6 +2959,402 @@ export const articlesDa: Record<string, Article> = {
     cta: {
       heading: "Brug for hjælp til at vælge den rigtige molekylsigte?",
       description: "Vores tekniske team kan anbefale den optimale porestørrelse og formfaktor til din specifikke applikation — uanset om det er opløsningsmiddeltørring, gasseparation eller farmaceutisk emballage.",
+      buttonText: "Kontakt vores team",
+      buttonLink: "/contact",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: Hvad er desiccant? Komplet guide
+  // ------------------------------------------------------------
+  "what-is-a-desiccant-complete-guide": {
+    title: "Hvad er desiccant? Komplet guide til tørremidler",
+    excerpt: "En desiccant er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften. Denne komplette guide dækker typer, dimensionering, anvendelser og valg af det rigtige tørremiddel.",
+    date: "2025-03-01",
+    readTime: "20 min læsning",
+    category: "Guide",
+    heroImage: blogDesiccantGuide,
+    author: "DESICCANT Teknisk Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "En desiccant – også kaldet et tørremiddel – er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften for at reducere den relative luftfugtighed i et lukket rum. Desiccants bruges i emballage, lager og transport til at beskytte produkter mod kondens, korrosion og skimmelsvamp.",
+      },
+
+      { type: "heading", content: "Hvad er en desiccant?" },
+      {
+        type: "text",
+        content: "En desiccant – på dansk kaldet et tørremiddel – er et kemisk stof med evnen til at tiltrække og binde vandmolekyler fra omgivende luft. Ordet stammer fra det latinske 'desiccare', som betyder 'at udtørre'. I daglig tale bruges betegnelserne tørremiddel, fugtfjerner og fugtabsorber synonymt, men i tekniske sammenhænge skelner man ofte nøje mellem absorption og adsorption.",
+      },
+
+      { type: "heading", content: "Absorption vs. adsorption – hvad er forskellen?" },
+      {
+        type: "text",
+        content: "Absorption er en proces, hvor vandmolekyler optages inde i materialet på kemisk eller fysisk vis – ligesom en svamp, der suger vand. Adsorption derimod er en overfladebundet proces, hvor vandmolekyler binder sig til overfladen af materialet uden at ændre dets grundlæggende struktur. Silica gel er et klassisk adsorberende tørremiddel, mens calciumchlorid typisk absorberer fugt i kemisk forstand.",
+      },
+
+      { type: "heading", content: "Hvorfor er fugt et problem i emballage og transport?" },
+      {
+        type: "text",
+        content: "Fugt er en af de mest ødelæggende faktorer for produkter under opbevaring og forsendelse. Relativ luftfugtighed (RH) angiver mængden af vanddamp i luften som en procentdel af den maksimale mængde, luften kan holde ved en given temperatur. Når luftfugtigheden stiger – eller temperaturen falder – kondenserer vanddamp og afsætter sig som flydende vand på produktoverflader.",
+      },
+      {
+        type: "text",
+        content: "I globale forsyningskæder kan en container med elektronik, maskiner eller farmaceutiske produkter passere gennem tropiske klimazoner, opleve store temperatursvingninger på havet eller stå opmagasineret i varme eller fugtige lagre. Under sådanne vilkår kan selv kortvarig fugteksponering forårsage:",
+      },
+      {
+        type: "list",
+        items: [
+          "Korrosion og oxidering af metaloverflader og elektroniske komponenter",
+          "Skimmelsvamp og bakterievækst på organiske materialer",
+          "Degradering af kemiske og farmaceutiske produkter",
+          "Klumpning i pulvere og granulater",
+          "Lagspaltning, bøjning og svækkelse af papir, pap og træ",
+          "Nedsat klæbeevne i lim og tape",
+        ],
+      },
+      {
+        type: "text",
+        content: "Desiccants løser dette problem ved aktivt at reducere den relative luftfugtighed i det lukkede rum og dermed forhindre kondens og fugtskader.",
+      },
+
+      { type: "heading", content: "Hvordan fungerer desiccants?" },
+      {
+        type: "text",
+        content: "For at forstå, hvordan tørremidler virker, er det nødvendigt at forstå grundlæggende begreber om fugt i luft.",
+      },
+
+      { type: "subheading", content: "Relativ luftfugtighed (RH)" },
+      {
+        type: "text",
+        content: "Luft indeholder altid en vis mængde vanddamp. Den relative luftfugtighed angiver, hvor mættet luften er med vanddamp i forhold til det maksimum, den kan holde ved en given temperatur. Ved 100 % RH er luften fuldt mættet, og kondens opstår. Varm luft binder mere vanddamp end kold luft – derfor fører et fald i temperaturen direkte til øget relativ luftfugtighed og eventuel kondens.",
+      },
+      {
+        type: "text",
+        content: "I en forseglet emballage eller container er mængden af luft – og dermed fugt – begrænset. Et tørremiddel trækker vandmolekylerne ud af luften, sænker den relative luftfugtighed og skaber et stabilt, tørt mikromiljø.",
+      },
+
+      { type: "subheading", content: "Hygroskopiske materialer og deres virkemåde" },
+      {
+        type: "text",
+        content: "Hygroskopiske materialer er stoffer med høj affinitet for vandmolekyler. De eksisterer naturligt (som salt og sukker, der klumper i fugtig luft) eller fremstilles industrielt til brug som tørremidler. De mest udbredte industrielle tørremidler har en mikroporøs eller krystallinsk struktur med enormt stort overfladeareal – silica gel kan f.eks. have et indre overfladeareal på op til 800 m² pr. gram materiale.",
+      },
+      {
+        type: "text",
+        content: "Denne enorme interne overflade tiltrækker og fastholder vandmolekyler via van der Waals-kræfter (fysisk adsorption) eller kemiske bindinger. Processen er typisk reversibel: ved opvarmning frigives vandet igen, og tørremidlet kan regenereres.",
+      },
+
+      { type: "subheading", content: "Ligevægtsfugtighed og mætning" },
+      {
+        type: "text",
+        content: "Et tørremiddel arbejder ikke i det uendelige. Det når til sidst en ligevægt med omgivelserne – en tilstand kaldet ligevægtsfugtighed – hvor tørremidlet hverken optager eller afgiver fugt. Når tørremidlet er fuldt mættet, ophører dets beskyttende funktion. Derfor er det afgørende at dimensionere mængden af tørremiddel korrekt til den pågældende applikation.",
+      },
+
+      { type: "heading", content: "De mest almindelige typer desiccants" },
+      {
+        type: "text",
+        content: "Markedet tilbyder en bred vifte af tørremidler, hver med specifikke egenskaber og anvendelsesområder. De fire mest anvendte industrielle typer er silica gel, lerbaseret tørremiddel (clay), molecular sieve og calciumchlorid.",
+      },
+
+      { type: "subheading", content: "Silica gel" },
+      {
+        type: "text",
+        content: "Silica gel er det mest udbredte tørremiddel på verdensplan og fremstilles af amorf siliciumdioxid (SiO₂) i en porøs, granuleret form. Det er kemisk inert, ugiftigt og fås i varianter med eller uden fugtighedsindikator.",
+      },
+      {
+        type: "list",
+        items: [
+          "Absorptionskapacitet: Op til 30–40 % af sin egen vægt i vanddamp",
+          "Effektivt temperaturområde: 20–40 °C (optimalt)",
+          "Anvendelse: Elektronik, farmaceutisk, lædervarer, fødevarer, optik",
+          "Fordel: Lav pris, bredt tilgængeligt, kan regenereres ved ~120 °C",
+          "Ulempe: Reduceret effektivitet ved temperaturer over 50 °C og ved meget lav RH",
+        ],
+      },
+
+      { type: "subheading", content: "Ler (montmorillonit)" },
+      {
+        type: "text",
+        content: "Aktiveret ler (montmorillonit-ler) er en naturlig aluminiumsilikat, der behandles termisk for at aktivere dets adsorptive egenskaber. Det er en af de billigste tørremidler og er derfor populært i bulk-anvendelser.",
+      },
+      {
+        type: "list",
+        items: [
+          "Absorptionskapacitet: Op til 25–30 % af sin egen vægt",
+          "Effektivt temperaturområde: Op til ca. 50 °C",
+          "Anvendelse: Forsendelsesemballage, containertransport, generel industri",
+          "Fordel: Laveste pris, miljøvenlig (naturligt mineral), god til standardtemperaturer",
+          "Ulempe: Mister effektivitet dramatisk over 50 °C; kan afgive fugt igen ved høje temperaturer",
+        ],
+      },
+
+      { type: "subheading", content: "Molekylsigte (molecular sieve)" },
+      {
+        type: "text",
+        content: "Molekylsigter er syntetiske zeolitter – krystallinske aluminiumsilikater med ensartede, præcist definerede porer på molekylært niveau (typisk 3Å, 4Å, 5Å eller 13X). Porernes størrelse bestemmer præcis, hvilke molekyler der kan optages.",
+      },
+      {
+        type: "list",
+        items: [
+          "Absorptionskapacitet: 20–25 % ved lav RH – men fastholder kapaciteten selv ved meget lav fugtighed",
+          "Effektivt temperaturområde: Op til 300 °C",
+          "Anvendelse: Naturgas-tørring, insulated glass units (IGU), luftseparation, farmaci, specialkemi",
+          "Fordel: Ekstremt effektiv ved lav RH (under 10 %); arbejder selv ved høje temperaturer",
+          "Ulempe: Dyrere end silica gel og ler; overophedning kan frigive bundet vand i en puls",
+        ],
+      },
+
+      { type: "subheading", content: "Calciumchlorid" },
+      {
+        type: "text",
+        content: "Calciumchlorid (CaCl₂) er det foretrukne tørremiddel til containertransport og adskiller sig fundamentalt fra andre tørremidler. CaCl₂ absorberer fugt kemisk – men for at forhindre den absorberede væske i at lække ud af posen, blandes stivelse med calciumchlorid. Når saltet absorberer fugt, reagerer det med stivelsen og danner en tyk, gellignende masse, der forbliver inde i Tyvek-posen uden at lække.",
+      },
+      {
+        type: "list",
+        items: [
+          "Absorptionskapacitet: Op til 350 % af sin egen vægt – markant højere end silica gel og ler",
+          "Effektivt temperaturområde: 0–40 °C (typiske containerbetingelser)",
+          "Anvendelse: Containertransport, søfragt, eksport af maskiner og råvarer, lagerbeskyttelse",
+          "Fordel: Ekstremt høj fugtkapacitet; stivelse sikrer at den absorberede væske omdannes til gel og forbliver i posen uden spild",
+          "Ulempe: Kan ikke regenereres; er korroderende ved direkte kontakt i opløst form; ikke egnet til emballage med produktkontakt",
+        ],
+      },
+
+      { type: "heading", content: "Sammenligningstabel: De fire primære desiccanttyper" },
+      {
+        type: "table",
+        headers: ["Type", "Kapacitet (% af vægt)", "Temp. område", "Typiske anvendelser", "Fordele", "Ulemper"],
+        rows: [
+          ["Silica gel", "30–40 %", "20–50 °C", "Elektronik, farmaci, fødevarer", "Billig, inert, regenererbar", "Reduceret effekt > 50 °C"],
+          ["Clay (ler)", "25–30 %", "Op til 50 °C", "Containertransport, bulk", "Billigst, miljøvenlig", "Afgiver fugt ved høj temp."],
+          ["Molekylsigte", "20–25 %", "Op til 300 °C", "Gas-tørring, IGU, farmaci", "Effektiv ved lav RH, høj temp.", "Dyr, kræver omhyggelig håndtering"],
+          ["Calciumchlorid + stivelse", "Op til 350 %", "0–40 °C", "Containertransport, søfragt, eksport", "Meget høj kapacitet, stivelse holder gel", "Kan ikke regenereres; korroderende"],
+        ],
+      },
+
+      { type: "heading", content: "Hvor bruges desiccants?" },
+      {
+        type: "text",
+        content: "Desiccants anvendes i et bredt spektrum af industrier og applikationer – overalt hvor fugt udgør en risiko for produktkvalitet og holdbarhed.",
+      },
+
+      { type: "subheading", content: "Containertransport og eksport" },
+      {
+        type: "text",
+        content: "En af de mest kritiske applikationer for tørremidler er containerforsendelse. En standard 20-fods eller 40-fods sø-container kan indeholde op til 400 liter vand i luften ved fuld mætning ved tropiske temperaturer. Når temperaturen falder om natten eller i koldere klimazoner, kondenserer denne vanddamp og kan dryppe ned på godset – det fænomen, der i industrien kaldes 'container rain' eller kondens i containere.",
+      },
+      {
+        type: "list",
+        items: [
+          "Containeren lastes i varmt, fugtigt klima og sejler til koldere regioner",
+          "Træpaller, pap eller anden organisk emballage afgiver fugt",
+          "Store temperatursvingninger mellem dag og nat opstår på åbent hav",
+          "Containeren ikke er tæt og optager ekstern fugtig luft under transit",
+        ],
+      },
+      {
+        type: "text",
+        content: "Løsningen er container-desiccants – store poseformede tørremidler (typisk calciumchlorid eller ler), der ophænges i containerens loft og absorberer den fugtige luft, inden den kondenserer.",
+      },
+
+      { type: "subheading", content: "Elektronik og halvledere" },
+      {
+        type: "text",
+        content: "Elektroniske komponenter er ekstremt følsomme over for fugt. Fugtighed kan forårsage elektrisk kortslutning, oxidering af lederbaner og korrosion af stikforbindelser. I SMD-komponenter kan absorberet fugt ekspandere hurtigt under lodning ved høje temperaturer og forårsage 'popcorn-effekten' – indre revner i komponenthuset. Industristandarderne IPC/JEDEC J-STD-033 specificerer nøjagtigt, hvordan fugtsensitive komponenter skal emballeres, opbevares og håndteres.",
+      },
+
+      { type: "subheading", content: "Farmaceutiske produkter" },
+      {
+        type: "text",
+        content: "Farmaci er en af de strengest regulerede sektorer inden for fugtstyring. Mange aktive farmaceutiske ingredienser er hygroskopiske og kan hydrolysere, agglomerere eller miste potens ved fugteksponering. Desiccants i farmaceutiske emballager – typisk silica gel i pose eller kanister, eller molecular sieve til kritiske produkter – er et krav i GMP-regulerede produktionsmiljøer.",
+      },
+
+      { type: "subheading", content: "Fødevarer og kvalitetssikring" },
+      {
+        type: "text",
+        content: "I fødevareindustrien er fugt en primær driver for fordærv, klumpdannelse og udvikling af skimmelsvamp. Tørrede produkter som kaffe, krydderier, nødder, pulverprodukter og tørret frugt er særligt sårbare. Desiccants i forseglet emballage forlænger holdbarheden og bibeholder produktets sensoriske egenskaber. FDA og EU-forordninger stiller krav om, at desiccants til kontakt med fødevarer er godkendt til formålet.",
+      },
+
+      { type: "subheading", content: "Eksport af maskiner og industriudstyr" },
+      {
+        type: "text",
+        content: "Eksport af tunge maskiner, hydrauliske systemer og præcisionsinstrumenter indebærer lange transittider og uforudsigelige klimaforhold. Rust og korrosion på bearbejdede metaloverflader kan opstå på dage, hvis fugtniveauet ikke kontrolleres. VCI-produkter bruges ofte i kombination med tørremidler for maksimal beskyttelse.",
+      },
+
+      { type: "heading", content: "Hvordan vælger man den rigtige desiccant?" },
+      {
+        type: "text",
+        content: "Valget af tørremiddel er ikke en one-size-fits-all beslutning. Den forkerte desiccant kan enten give utilstrækkelig beskyttelse eller unødigt høje omkostninger. Følgende faktorer er afgørende:",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Temperatur under transport og opbevaring — Temperaturintervallet bestemmer, hvilke typer der er effektive. Ler-baserede tørremidler er ideelle op til ~50 °C men kan frigive fugt igen ved højere temperaturer. Molecular sieves er det eneste valg til meget høje eller meget lave temperaturer.",
+          "Relativ luftfugtighed og produktets kritiske RH — Hvert produkt har en kritisk relativ luftfugtighed (cRH), over hvilken skader opstår. For de fleste elektronikprodukter er cRH < 50 %. For farmaceutiske produkter kan den være < 30 % eller endda < 20 %.",
+          "Transporttid og holdbarhed — En lang søfragt (30–45 dage) kræver et tørremiddel med tilstrækkelig kapacitet til at holde i hele perioden. Korte forsendelser på 2–5 dage stiller langt mindre krav til kapaciteten.",
+          "Emballagetype og tæthed — En hermetisk forseglet aluminiumspose med lavt WVTR udgør et lukket system, hvor tørremidlet kun skal håndtere den fugt, der allerede er inde i emballagen. En papkasse er derimod et semi-åbent system, der konstant optager ekstern fugt.",
+          "Produktets følsomhed og regulatoriske krav — Anvendes desiccants til farmaceutiske eller food-grade applikationer kræver det certificerede eller godkendte desiccanttyper. Elektronikprodukter skal emballeres i henhold til JEDEC-standarder.",
+          "Pris vs. ydelse — Ler er billigst og dækker de fleste standardapplikationer. Silica gel tilbyder høj kapacitet og fleksibilitet til moderat pris. Molecular sieve er dyrest men også uundværlig i kritiske applikationer.",
+        ],
+      },
+
+      { type: "heading", content: "Hvor meget desiccant har man brug for?" },
+      {
+        type: "text",
+        content: "Dimensionering af tørremiddelmængden er en af de mest kritiske – og oftest undervurderede – faktorer i fugtstyring. Bruger man for lidt, er produktet ikke tilstrækkeligt beskyttet. Bruger man for meget, øger man unødigt omkostninger og emballageomfang.",
+      },
+
+      { type: "subheading", content: "Fugtbelastning (moisture load)" },
+      {
+        type: "text",
+        content: "Fugtbelastningen er den samlede mængde fugt, som tørremidlet skal absorbere i løbet af sin levetid i emballagen. Den består af to dele:",
+      },
+      {
+        type: "list",
+        items: [
+          "Oprindelig fugt: Fugt allerede til stede i luften inde i emballagen på forseglingspunktet",
+          "Indtrængende fugt: Fugt der diffunderer ind gennem emballagematerialet over tid",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Formel for fugtbelastning",
+        content: "Fugtbelastning (g) = Initial fugtmasse (g) + Transmitteret fugt over tid (g)",
+      },
+
+      { type: "subheading", content: "Praktisk beregningseksempel" },
+      {
+        type: "text",
+        content: "Forestil dig, at du skal sende en kasse elektronik i en forseglet aluminiumspose (lav WVTR):",
+      },
+      {
+        type: "list",
+        items: [
+          "Luftvolumen inde i emballagen = 2 liter",
+          "Forseglingsbetingelser: 25 °C og 60 % RH (mætningsindhold ≈ 23 g/m³)",
+          "Initial fugtmasse: 2 liter × 23 g/m³ × 0,60 = ca. 0,028 g",
+          "WVTR for aluminiumspose: Ca. 0,01 g/m²/dag",
+          "Posens areal: 0,05 m²",
+          "Transporttid: 30 dage",
+          "Transmitteret fugt: 0,01 × 0,05 × 30 = 0,015 g",
+          "Total fugtbelastning ≈ 0,028 + 0,015 = 0,043 g",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Resultat",
+        content: "Med en sikkerhedsfaktor på 5× (standardpraksis i industrien): 0,043 × 5 ≈ 0,22 g fugtkapacitet nødvendig. Et standard 1-gram silica gel-brev (med ~30 % kapacitet = 0,3 g) er mere end tilstrækkeligt i dette eksempel.",
+      },
+
+      { type: "subheading", content: "Container desiccant-dimensionering" },
+      {
+        type: "text",
+        content: "For en full container load (FCL) med blandet gods på en 30-dages søfragt gennem troperne anbefales typisk 10–20 stk. container-tørremiddel. Poserne skal hænges i containerens integrerede ophængningsøjer – placeret jævnt fordelt langs containerens sider – så der kan strømme luft frit forbi dem.",
+      },
+      {
+        type: "list",
+        items: [
+          "Godstype – hygroskopiske materialer (fx træ, tekstiler, fødevarer) afgiver selv fugt og kræver større kapacitet",
+          "Ruten – temperatur- og fugtudsving varierer markant mellem ruter",
+          "Fyldningsgrad – en halvfyldt container indeholder mere fri luft og dermed mere fugt",
+          "Containerens placering på skibet – containere på dæk udsættes for større temperatursvingninger",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Vigtigt",
+        content: "Netop fordi så mange faktorer spiller ind – og flere af dem ligger uden for afsenderens kontrol – er det kritisk at indhente rådgivning hos en fagkyndig leverandør inden afsendelse. Forkert dimensionering er en af de hyppigste årsager til fugtskadet gods og efterfølgende reklamationer.",
+      },
+
+      { type: "heading", content: "Fordele ved at bruge desiccants" },
+      {
+        type: "text",
+        content: "Investering i korrekt fugtstyring med desiccants er en af de mest omkostningseffektive kvalitetssikringsforanstaltninger i emballage og logistik:",
+      },
+      {
+        type: "list",
+        items: [
+          "Beskyttelse mod korrosion — Metaloverflader oxiderer eksponentielt hurtigere med stigende luftfugtighed. Et tørremiddel, der holder RH under 40 %, kan forlænge holdbarheden dramatisk.",
+          "Forebyggelse af skimmelsvamp — Skimmelsvamp kræver typisk RH over 70–80 % for at vokse. Ved at holde luftfugtigheden under dette niveau elimineres risikoen effektivt.",
+          "Opretholdelse af produktkvalitet og compliance — For regulerede industrier er dokumenteret fugtkontrol et lovkrav og en forudsætning for GMP-krav.",
+          "Reduktion af reklamationer og returvarer — Fugtskader under transport er en af de hyppigste årsager til godsskader i international handel.",
+          "Forlænget holdbarhed — Tørremidler forlænger holdbarheden på en lang række produkter, reducerer spild og styrker brandets omdømme.",
+        ],
+      },
+
+      { type: "heading", content: "Bæredygtighed og cirkulær økonomi" },
+      {
+        type: "text",
+        content: "Genbrugelige desiccants (silica gel, molecular sieve, DRY-BAG I) kan regenereres og genanvendes i hundredvis af cyklusser, hvis de håndteres korrekt. Dette reducerer materialeforbrug og affaldsmængder og understøtter virksomheders bæredygtighedsmål.",
+      },
+
+      { type: "heading", content: "Ofte stillede spørgsmål om desiccants" },
+
+      { type: "subheading", content: "Hvad er forskellen på et tørremiddel og en absorbent?" },
+      {
+        type: "text",
+        content: "Et tørremiddel er specifikt designet til at absorbere eller adsorbere vanddamp fra luft og holde den bundet. En absorbent er en bredere betegnelse for ethvert materiale, der optager væske eller gas. Alle tørremidler er absorbenter, men ikke alle absorbenter er tørremidler.",
+      },
+
+      { type: "subheading", content: "Hvor meget fugt kan silica gel absorbere?" },
+      {
+        type: "text",
+        content: "Silica gel kan typisk absorbere 25–40 % af sin egen tørvægt i vanddamp, afhængigt af temperatur og relativ luftfugtighed. Ved 25 °C og 75 % RH nærmer absorption sig det øvre interval. Et 1-grams silica gel-brev kan altså absorbere op til 0,4 g vand.",
+      },
+
+      { type: "subheading", content: "Kan tørremidler genbruges?" },
+      {
+        type: "text",
+        content: "Ja, de fleste industrielle tørremidler kan regenereres. Silica gel regenereres ved opvarmning til 120–150 °C i 1–2 timer. Molecular sieves regenereres ved 250–350 °C. Lerbaserede tørremidler kan regenereres men er ofte for billige til, at det kan betale sig. Calciumchlorid-baserede container desiccants kan derimod ikke regenereres, da de omdannes til en vandig opløsning.",
+      },
+
+      { type: "subheading", content: "Hvor længe virker et tørremiddel?" },
+      {
+        type: "text",
+        content: "Levetiden afhænger af fugtbelastningen, emballagetætheden og mængden af desiccant. I en forseglet, lav-WVTR emballage kan et korrekt dimensioneret tørremiddel beskytte i op til 2 år. I en semi-åben emballage eller container med høj fugtpåvirkning kan levetiden være nede på 30–60 dage.",
+      },
+
+      { type: "subheading", content: "Er desiccants farlige?" },
+      {
+        type: "text",
+        content: "Silica gel og lerbaserede tørremidler er ikke-giftige og klassificeres som ikke-farlige stoffer. Dog er de ikke til indtagelse og bør opbevares utilgængeligt for børn. Molecular sieves kan afgive varme ved absorption af større mængder vand og bør håndteres med forsigtighed. Calciumchlorid er let ætsende i opløst form. Læs altid leverandørens sikkerhedsdatablad (SDS).",
+      },
+
+      { type: "subheading", content: "Hvordan ved jeg, om et tørremiddel er mættet?" },
+      {
+        type: "text",
+        content: "Fugtighedsindikatorkort placeres i emballagen og ændrer farve ved definerede RH-niveauer (typisk 10 %, 30 %, 60 %). Silica gel med farveindikator skifter synligt farve, når det nærmer sig mætning. Disse indikatorer er standardkrav i elektronikemballage i henhold til IPC/JEDEC.",
+      },
+
+      { type: "subheading", content: "Hvad er en desiccant unit (DU)?" },
+      {
+        type: "text",
+        content: "En desiccant unit (DU), som defineret i MIL-D-3464 og JEDEC-standarderne, er den mængde tørremiddel, der kan absorbere minimum 6 g vand ved 25 °C ved 40 % RH og minimum 3 g vand ved 25 °C ved 10 % RH. Emballageberegninger angives ofte i units for at standardisere dimensioneringen.",
+      },
+
+      { type: "heading", content: "Konklusion" },
+      {
+        type: "text",
+        content: "Desiccants er en uundgåelig del af moderne emballage, logistik og produktbeskyttelse. I en verden med globale forsyningskæder, komplekse klimaforhold og stigende krav til produktkvalitet er effektiv fugtkontrol ikke en luksus – det er en nødvendighed.",
+      },
+      {
+        type: "text",
+        content: "Fra en simpel silica gel-pose i en boks med elektronik til industrielle container desiccants, der beskytter dyrt maskineri under søfragt, handler det altid om det samme grundlæggende princip: at holde relativ luftfugtighed under det kritiske niveau, der kan forårsage skader.",
+      },
+      {
+        type: "text",
+        content: "Det rette valg af desiccant afhænger af en grundig forståelse af produktets følsomhed, transportbetingelserne, emballagetype og regulatoriske krav. En systematisk tilgang til fugtbelastningsberegning og et tæt samarbejde med en erfaren leverandør er vejen til pålidelig, dokumenteret produktbeskyttelse.",
+      },
+      {
+        type: "text",
+        content: "Investerer du i korrekt fugtstyring, investerer du i produktkvalitet, kundernes tillid og din virksomheds omdømme – og reducerer de skjulte omkostninger ved fugtskader, reklamationer og destruktion af varer.",
+      },
+    ],
+
+    cta: {
+      heading: "Spørgsmål om valg af tørremiddel?",
+      description: "Kontakt os for en uforpligtende rådgivning og dimensioneringsberegning til din specifikke applikation.",
       buttonText: "Kontakt vores team",
       buttonLink: "/contact",
     },

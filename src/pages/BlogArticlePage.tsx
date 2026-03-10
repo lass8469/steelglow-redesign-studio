@@ -107,6 +107,34 @@ const renderSection = (section: ArticleSection, index: number) => {
           )}
         </blockquote>
       );
+
+    case "table":
+      return (
+        <div key={index} className="my-8 overflow-x-auto rounded-xl border border-border">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-accent/50">
+                {section.headers.map((header, i) => (
+                  <th key={i} className="px-4 py-3 text-left font-semibold text-foreground whitespace-nowrap">
+                    {header}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {section.rows.map((row, ri) => (
+                <tr key={ri} className="border-t border-border even:bg-accent/20">
+                  {row.map((cell, ci) => (
+                    <td key={ci} className="px-4 py-3 text-muted-foreground">
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
     
     default:
       return null;

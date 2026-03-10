@@ -12,6 +12,7 @@ import productStabustrap from "@/assets/product-stabustrap.webp";
 import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
 import blogContainerDesiccantGuide from "@/assets/blog-container-desiccant-guide.webp";
 import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
+import blogDesiccantGuide from "@/assets/blog-desiccant-guide.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -41,7 +42,8 @@ export type ArticleSection =
   | { type: "numbered-list"; items: string[] }
   | { type: "image"; src: string; alt: string; caption?: string }
   | { type: "callout"; title: string; content: string }
-  | { type: "quote"; content: string; attribution?: string };
+  | { type: "quote"; content: string; attribution?: string }
+  | { type: "table"; headers: string[]; rows: string[][] };
 
 export interface Article {
   // METADATA
@@ -3172,6 +3174,410 @@ export const articles: Record<string, Article> = {
     cta: {
       heading: "Need help selecting the right molecular sieve?",
       description: "Our technical team can recommend the optimal pore size and form factor for your specific application — whether it's solvent drying, gas separation, or pharmaceutical packaging.",
+      buttonText: "Contact our team",
+      buttonLink: "/contact",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: What is a Desiccant? Complete Guide
+  // ------------------------------------------------------------
+  "what-is-a-desiccant-complete-guide": {
+    title: "What is a Desiccant? Complete Guide to Desiccants",
+    excerpt: "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air. This complete guide covers desiccant types, sizing, applications, and how to choose the right one.",
+    date: "2025-03-01",
+    readTime: "20 min read",
+    category: "Guide",
+    heroImage: blogDesiccantGuide,
+    author: "DESICCANT Technical Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air, maintaining a dry environment inside packaging or a sealed space. Desiccants are used in industry to protect products from moisture damage, corrosion, and mold during storage and transport.",
+      },
+
+      { type: "heading", content: "What is a desiccant?" },
+      {
+        type: "text",
+        content: "A desiccant is a chemical substance with the ability to attract and bind water molecules from surrounding air. The word derives from the Latin 'desiccare', meaning 'to dry out'. In everyday language, the terms desiccant, dehumidifier, and moisture absorber are used interchangeably, but in technical contexts a distinction is often made between absorption and adsorption.",
+      },
+
+      { type: "heading", content: "Absorption vs. adsorption – what is the difference?" },
+      {
+        type: "text",
+        content: "Absorption is a process where water molecules are taken up inside the material, chemically or physically – like a sponge soaking up water. Adsorption, on the other hand, is a surface-bound process where water molecules bind to the surface of the material without altering its fundamental structure. Silica gel is a classic adsorbing desiccant, while calcium chloride typically absorbs moisture in a chemical sense.",
+      },
+
+      { type: "heading", content: "Why is moisture a problem in packaging and transport?" },
+      {
+        type: "text",
+        content: "Moisture is one of the most destructive factors for products during storage and shipping. Relative humidity (RH) indicates the amount of water vapor in the air as a percentage of the maximum amount the air can hold at a given temperature. When humidity rises – or temperature drops – water vapor condenses and deposits as liquid water on product surfaces.",
+      },
+      {
+        type: "text",
+        content: "In global supply chains, a container of electronics, machinery, or pharmaceutical products may pass through tropical climate zones, experience large temperature fluctuations at sea, or be stored in hot or humid warehouses. Under such conditions, even brief moisture exposure can cause:",
+      },
+      {
+        type: "list",
+        items: [
+          "Corrosion and oxidation of metal surfaces and electronic components",
+          "Mold and bacterial growth on organic materials",
+          "Degradation of chemical and pharmaceutical products",
+          "Caking in powders and granulates",
+          "Delamination, warping, and weakening of paper, cardboard, and wood",
+          "Reduced adhesion in glues and tape",
+        ],
+      },
+      {
+        type: "text",
+        content: "Desiccants solve this problem by actively reducing the relative humidity in the enclosed space, thereby preventing condensation and moisture damage.",
+      },
+
+      { type: "heading", content: "How do desiccants work?" },
+      {
+        type: "text",
+        content: "To understand how desiccants work, it is necessary to understand basic concepts about moisture in air.",
+      },
+
+      { type: "subheading", content: "Relative humidity (RH)" },
+      {
+        type: "text",
+        content: "Air always contains some amount of water vapor. Relative humidity indicates how saturated the air is with water vapor relative to the maximum it can hold at a given temperature. At 100% RH, the air is fully saturated and condensation occurs. Warm air holds more water vapor than cold air – therefore a drop in temperature directly leads to increased relative humidity and possible condensation.",
+      },
+      {
+        type: "text",
+        content: "In sealed packaging or a container, the amount of air – and thus moisture – is limited. A desiccant draws water molecules out of the air, lowers the relative humidity, and creates a stable, dry microenvironment.",
+      },
+
+      { type: "subheading", content: "Hygroscopic materials and how they work" },
+      {
+        type: "text",
+        content: "Hygroscopic materials are substances with high affinity for water molecules. They exist naturally (like salt and sugar that clump in humid air) or are manufactured industrially for use as desiccants. The most common industrial desiccants have a microporous or crystalline structure with an enormously large surface area – silica gel, for example, can have an internal surface area of up to 800 m² per gram of material.",
+      },
+      {
+        type: "text",
+        content: "This enormous internal surface attracts and retains water molecules via van der Waals forces (physical adsorption) or chemical bonds. The process is typically reversible: when heated, the water is released again and the desiccant can be regenerated.",
+      },
+
+      { type: "subheading", content: "Equilibrium moisture and saturation" },
+      {
+        type: "text",
+        content: "A desiccant does not work indefinitely. It eventually reaches an equilibrium with its surroundings – a state called equilibrium moisture content – where the desiccant neither absorbs nor releases moisture. Once the desiccant is fully saturated, its protective function ceases. It is therefore critical to correctly size the amount of desiccant for the specific application.",
+      },
+
+      { type: "heading", content: "The most common types of desiccants" },
+      {
+        type: "text",
+        content: "The market offers a wide range of desiccants, each with specific properties and applications. The four most widely used industrial types are silica gel, clay-based desiccant, molecular sieve, and calcium chloride.",
+      },
+
+      { type: "subheading", content: "Silica gel" },
+      {
+        type: "text",
+        content: "Silica gel is the most widely used desiccant in the world and is made from amorphous silicon dioxide (SiO₂) in a porous, granulated form. It is chemically inert, non-toxic, and available with or without a moisture indicator.",
+      },
+      {
+        type: "list",
+        items: [
+          "Absorption capacity: Up to 30–40% of its own weight in water vapor",
+          "Effective temperature range: 20–40 °C (optimal)",
+          "Applications: Electronics, pharmaceuticals, leather goods, food, optics",
+          "Advantage: Low cost, widely available, can be regenerated at ~120 °C",
+          "Disadvantage: Reduced effectiveness at temperatures above 50 °C and at very low RH",
+        ],
+      },
+
+      { type: "subheading", content: "Clay (montmorillonite)" },
+      {
+        type: "text",
+        content: "Activated clay (montmorillonite clay) is a natural aluminum silicate that is thermally treated to activate its adsorptive properties. It is one of the cheapest desiccants and is therefore popular in bulk applications.",
+      },
+      {
+        type: "list",
+        items: [
+          "Absorption capacity: Up to 25–30% of its own weight",
+          "Effective temperature range: Up to approx. 50 °C",
+          "Applications: Shipping packaging, container transport, general industry",
+          "Advantage: Lowest cost, environmentally friendly (natural mineral), good for standard temperatures",
+          "Disadvantage: Loses effectiveness dramatically above 50 °C; can release moisture again at high temperatures",
+        ],
+      },
+
+      { type: "subheading", content: "Molecular sieve" },
+      {
+        type: "text",
+        content: "Molecular sieves are synthetic zeolites – crystalline aluminosilicates with uniform, precisely defined pores at the molecular level (typically 3Å, 4Å, 5Å, or 13X). The pore size determines exactly which molecules can be adsorbed.",
+      },
+      {
+        type: "list",
+        items: [
+          "Absorption capacity: 20–25% at low RH – but retains capacity even at very low humidity",
+          "Effective temperature range: Up to 300 °C",
+          "Applications: Natural gas drying, insulated glass units (IGU), air separation, pharmaceuticals, specialty chemicals",
+          "Advantage: Extremely effective at low RH (below 10%); works even at high temperatures",
+          "Disadvantage: More expensive than silica gel and clay; overheating can release bound water in a pulse",
+        ],
+      },
+
+      { type: "subheading", content: "Calcium chloride" },
+      {
+        type: "text",
+        content: "Calcium chloride (CaCl₂) is the preferred desiccant for container transport and differs fundamentally from other desiccants. CaCl₂ absorbs moisture chemically – but to prevent the absorbed liquid from leaking out of the bag, starch is blended with the calcium chloride. When the salt absorbs moisture, it reacts with the starch and forms a thick, gel-like mass that stays inside the Tyvek bag without leaking. This allows far greater moisture absorption relative to weight compared to silica gel or clay – making it ideal for the heavy moisture loads that arise in containers during long sea voyages.",
+      },
+      {
+        type: "list",
+        items: [
+          "Absorption capacity: Up to 350% of its own weight – significantly higher than silica gel and clay",
+          "Effective temperature range: 0–40 °C (typical container conditions)",
+          "Applications: Container transport, sea freight, export of machinery and raw materials, warehouse protection",
+          "Advantage: Extremely high moisture capacity; starch ensures the absorbed liquid turns to gel and stays in the bag without spillage; suitable for large containers",
+          "Disadvantage: Cannot be regenerated; corrosive on direct contact in dissolved form; not suitable for packaging with product contact",
+        ],
+      },
+
+      { type: "heading", content: "Comparison table: The four primary desiccant types" },
+      {
+        type: "table",
+        headers: ["Type", "Capacity (% of weight)", "Temp. range", "Typical applications", "Advantages", "Disadvantages"],
+        rows: [
+          ["Silica gel", "30–40%", "20–50 °C", "Electronics, pharma, food", "Cheap, inert, regenerable", "Reduced effect > 50 °C"],
+          ["Clay", "25–30%", "Up to 50 °C", "Container transport, bulk", "Cheapest, eco-friendly", "Releases moisture at high temp."],
+          ["Molecular sieve", "20–25%", "Up to 300 °C", "Gas drying, IGU, pharma", "Effective at low RH, high temp.", "Expensive, requires careful handling"],
+          ["Calcium chloride + starch", "Up to 350%", "0–40 °C", "Container transport, sea freight, export", "Very high capacity, starch retains gel", "Non-regenerable, corrosive in liquid form"],
+        ],
+      },
+
+      { type: "heading", content: "Where are desiccants used?" },
+      {
+        type: "text",
+        content: "Desiccants are used across a wide spectrum of industries and applications – wherever moisture poses a risk to product quality and shelf life.",
+      },
+
+      { type: "subheading", content: "Container transport and export" },
+      {
+        type: "text",
+        content: "One of the most critical applications for desiccants is container shipping. A standard 20-foot or 40-foot sea container can hold up to 400 liters of water in the air at full saturation in tropical temperatures. When the temperature drops at night or in colder climate zones, this water vapor condenses and can drip onto the cargo – a phenomenon known in the industry as 'container rain' or container condensation.",
+      },
+      {
+        type: "text",
+        content: "Container condensation typically occurs when:",
+      },
+      {
+        type: "list",
+        items: [
+          "The container is loaded in a warm, humid climate and sails to colder regions",
+          "Wooden pallets, cardboard, or other organic packaging releases moisture (off-gassing)",
+          "Large temperature fluctuations between day and night occur on the open sea",
+          "The container is not airtight and absorbs external humid air during transit",
+        ],
+      },
+      {
+        type: "text",
+        content: "The solution is container desiccants – large bagged desiccants (typically calcium chloride or a clay mixture like DRY-BAG I) that are hung from the container ceiling and absorb humid air before it condenses.",
+      },
+
+      { type: "subheading", content: "Electronics and semiconductors" },
+      {
+        type: "text",
+        content: "Electronic components are extremely sensitive to moisture. Humidity can cause electrical short circuits, oxidation of circuit traces, and corrosion of connectors. In SMD (Surface Mount Device) components, absorbed moisture can expand rapidly during soldering at high temperatures and cause the 'popcorn effect' – internal cracks in the component housing. Industry standards IPC/JEDEC J-STD-033 specify exactly how moisture-sensitive components must be packaged, stored, and handled with desiccants and humidity indicator cards.",
+      },
+
+      { type: "subheading", content: "Pharmaceutical products" },
+      {
+        type: "text",
+        content: "Pharmaceuticals represent one of the most strictly regulated sectors in moisture management. Many active pharmaceutical ingredients are hygroscopic and can hydrolyze, agglomerate, or lose potency when exposed to moisture. Desiccants in pharmaceutical packaging – typically silica gel in sachets or canisters, or molecular sieve for critical products – are a requirement in GMP-regulated production environments. ICH Q1A and other regulatory guidelines specify which stability tests are necessary to document product shelf life under defined climatic conditions.",
+      },
+
+      { type: "subheading", content: "Food and quality assurance" },
+      {
+        type: "text",
+        content: "In the food industry, moisture is a primary driver of spoilage, caking, and mold growth. Dried products such as coffee, spices, nuts, powder products, and dried fruit are particularly vulnerable. Desiccants in sealed packaging extend shelf life and preserve the sensory properties of the product. FDA and EU regulations require that desiccants intended for contact with food are approved for that purpose.",
+      },
+
+      { type: "subheading", content: "Export of machinery and industrial equipment" },
+      {
+        type: "text",
+        content: "Exporting heavy machinery, hydraulic systems, and precision instruments involves long transit times and unpredictable climatic conditions. Rust and corrosion on machined metal surfaces can develop within days if moisture levels are not controlled. VCI products (Volatile Corrosion Inhibitors) are often used in combination with desiccants for maximum protection.",
+      },
+
+      { type: "heading", content: "How to choose the right desiccant?" },
+      {
+        type: "text",
+        content: "Choosing a desiccant is not a one-size-fits-all decision. The wrong desiccant can either provide insufficient protection or result in unnecessarily high costs. The following factors are decisive:",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Temperature during transport and storage — The temperature range determines which types are effective. Clay-based desiccants are ideal up to ~50 °C but can release moisture again at higher temperatures. Molecular sieves are the best option for very high or very low temperatures.",
+          "Relative humidity and the product's critical RH — Every product has a critical relative humidity (cRH) above which damage occurs. For most electronics, cRH is < 50%. For pharmaceutical products, it may be < 30% or even < 20%. The amount of desiccant must be sized to keep RH below this level throughout the transit period.",
+          "Transit time and shelf life — A long sea voyage (30–45 days) requires a desiccant with sufficient capacity to last the entire period. Short shipments of 2–5 days place much lower demands on capacity.",
+          "Packaging type and seal integrity — A hermetically sealed aluminum bag with low WVTR constitutes a closed system where the desiccant only needs to handle the moisture already inside. A cardboard box is a semi-open system that constantly absorbs external moisture.",
+          "Product sensitivity and regulatory requirements — Pharmaceutical or food-grade applications require certified or approved desiccant types. Electronic products must be packaged in accordance with JEDEC standards.",
+          "Price vs. performance — Clay is the cheapest and covers most standard applications. Silica gel offers high capacity and flexibility at a moderate price. Molecular sieve is the most expensive but also indispensable in critical applications. Always choose the desiccant that meets the technical requirements.",
+        ],
+      },
+
+      { type: "heading", content: "How much desiccant do you need?" },
+      {
+        type: "text",
+        content: "Sizing the amount of desiccant is one of the most critical – and often underrated – factors of moisture management. Using too little means the product is not sufficiently protected. Using too much unnecessarily increases costs and packaging volume.",
+      },
+
+      { type: "subheading", content: "Moisture load" },
+      {
+        type: "text",
+        content: "The moisture load is the total amount of moisture the desiccant must absorb over its lifetime in the packaging. It consists of two parts:",
+      },
+      {
+        type: "list",
+        items: [
+          "Initial moisture: Moisture already present in the air inside the packaging at the sealing point",
+          "Ingressing moisture: Moisture that diffuses through the packaging material over time",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Moisture load formula",
+        content: "Moisture load (g) = Initial moisture mass (g) + Transmitted moisture over time (g)",
+      },
+
+      { type: "subheading", content: "Practical calculation example" },
+      {
+        type: "text",
+        content: "Imagine you need to ship a box of electronics in a sealed aluminum bag (low WVTR):",
+      },
+      {
+        type: "list",
+        items: [
+          "Air volume inside the packaging = 2 liters",
+          "Sealing conditions: 25 °C and 60% RH (saturation content ≈ 23 g/m³)",
+          "Initial moisture mass: 2 liters × 23 g/m³ × 0.60 = approx. 0.028 g",
+          "WVTR for aluminum bag: Approx. 0.01 g/m²/day",
+          "Bag surface area: 0.05 m²",
+          "Transit time: 30 days",
+          "Transmitted moisture: 0.01 × 0.05 × 30 = 0.015 g",
+          "Total moisture load ≈ 0.028 + 0.015 = 0.043 g",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Result",
+        content: "With a safety factor of 5× (standard industry practice): 0.043 × 5 ≈ 0.22 g moisture capacity required. A standard 1-gram silica gel sachet (with ~30% capacity = 0.3 g) is more than sufficient in this example.",
+      },
+
+      { type: "subheading", content: "Container desiccant sizing" },
+      {
+        type: "text",
+        content: "For a full container load (FCL) with mixed cargo on a 30-day sea voyage through the tropics, 10–20 container desiccant bags are typically recommended. The bags must be hung from the container's integrated hanging hooks – distributed evenly along the container sides – to allow air to flow freely past them. Free air circulation is essential: if bags are wedged against cargo or walls, their effectiveness is significantly reduced.",
+      },
+      {
+        type: "text",
+        content: "The exact amount depends on factors not all within the sender's control:",
+      },
+      {
+        type: "list",
+        items: [
+          "Cargo type – hygroscopic materials (e.g. wood, textiles, food) release moisture and require greater capacity than inert cargo such as metal or plastic",
+          "The route – temperature and humidity fluctuations vary significantly between routes",
+          "Fill level – a half-filled container contains more free air and thus more moisture",
+          "Container placement on the ship – containers on deck are exposed to greater temperature fluctuations than those in the hold",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Important",
+        content: "Because so many factors are at play – and several of them lie outside the sender's control – it is critical to obtain advice from a knowledgeable supplier before shipping. Incorrect sizing is one of the most common causes of moisture-damaged goods and subsequent claims.",
+      },
+
+      { type: "heading", content: "Benefits of using desiccants" },
+      {
+        type: "text",
+        content: "Investing in proper moisture management with desiccants is one of the most cost-effective quality assurance measures in packaging and logistics. The benefits extend far beyond the immediate:",
+      },
+      {
+        type: "list",
+        items: [
+          "Protection against corrosion — Metal surfaces oxidize exponentially faster with increasing humidity. At RH above 60%, corrosion processes accelerate significantly. A desiccant that keeps RH below 40% can dramatically extend the service life of steel and aluminum components.",
+          "Prevention of mold growth — Mold typically requires RH above 70–80% to grow. By keeping humidity below this level, the risk is effectively eliminated. Critical for products made of textile, leather, wood, paper, and organic materials.",
+          "Maintaining product quality and compliance — For regulated industries such as pharmaceuticals, documented moisture control is not just an advantage – it is a legal requirement. Proper use of desiccants is often a prerequisite for complying with GMP requirements.",
+          "Reduction of complaints and returns — Moisture damage during transport is one of the most common causes of cargo damage and claims in international trade.",
+          "Extended shelf life — Desiccants extend the shelf life of products from snacks and dietary supplements to razor blades and machine oil, reducing waste and strengthening brand reputation.",
+        ],
+      },
+
+      { type: "heading", content: "Sustainability and circular economy" },
+      {
+        type: "text",
+        content: "Reusable desiccants (silica gel, molecular sieve, DRY-BAG I) can be regenerated and reused hundreds of times if handled correctly. This reduces material consumption and waste and supports companies' sustainability goals.",
+      },
+
+      { type: "heading", content: "Frequently asked questions about desiccants" },
+
+      { type: "subheading", content: "What is the difference between a desiccant and an absorbent?" },
+      {
+        type: "text",
+        content: "A desiccant is specifically designed to absorb or adsorb water vapor from air and keep it bound. An absorbent is a broader term for any material that takes up liquid or gas. All desiccants are absorbents, but not all absorbents are desiccants.",
+      },
+
+      { type: "subheading", content: "How much moisture can silica gel absorb?" },
+      {
+        type: "text",
+        content: "Silica gel can typically absorb 25–40% of its own dry weight in water vapor, depending on temperature and relative humidity. At 25 °C and 75% RH, absorption approaches the upper range. A 1-gram silica gel sachet can therefore absorb up to 0.4 g of water.",
+      },
+
+      { type: "subheading", content: "Can desiccants be reused?" },
+      {
+        type: "text",
+        content: "Yes, most industrial desiccants can be regenerated. Silica gel is regenerated by heating to 120–150 °C for 1–2 hours. Molecular sieves are regenerated at 250–350 °C. Clay-based desiccants can be regenerated but are often too cheap to make this worthwhile. Calcium chloride-based container desiccants cannot be regenerated as they are converted into an aqueous solution.",
+      },
+
+      { type: "subheading", content: "How long does a desiccant last?" },
+      {
+        type: "text",
+        content: "Service life depends on the moisture load, packaging seal integrity, and the amount of desiccant. In sealed, low-WVTR packaging, a correctly sized desiccant can protect for up to 2 years. In semi-open packaging or containers with high moisture exposure, service life can be as low as 30–60 days. Humidity indicator cards inside the packaging visually show when the desiccant is saturated.",
+      },
+
+      { type: "subheading", content: "Are desiccants dangerous?" },
+      {
+        type: "text",
+        content: "Silica gel and clay-based desiccants are non-toxic and classified as non-hazardous substances. However, they are not for ingestion and should be stored out of reach of children. Molecular sieves can release heat when absorbing larger amounts of water and should be handled with care. Calcium chloride is mildly corrosive in dissolved form. Always read the supplier's Safety Data Sheet (SDS).",
+      },
+
+      { type: "subheading", content: "How do I know if a desiccant is saturated?" },
+      {
+        type: "text",
+        content: "Humidity indicator cards are placed inside the packaging and change color at defined RH levels (typically 10%, 30%, 60%). Silica gel with a color indicator visibly changes color when approaching saturation. These indicators are a standard requirement in electronics packaging under IPC/JEDEC.",
+      },
+
+      { type: "subheading", content: "What is a desiccant unit (DU)?" },
+      {
+        type: "text",
+        content: "A desiccant unit (DU), as defined in MIL-D-3464 and JEDEC standards, is the amount of desiccant that can absorb a minimum of 6 g of water at 25 °C at 40% RH and a minimum of 3 g of water at 25 °C at 10% RH. Packaging calculations are often expressed in units to standardize sizing.",
+      },
+
+      { type: "heading", content: "Conclusion" },
+      {
+        type: "text",
+        content: "Desiccants are an indispensable part of modern packaging, logistics, and product protection. In a world of global supply chains, complex climatic conditions, and increasing demands for product quality, effective moisture control is not a luxury – it is a necessity.",
+      },
+      {
+        type: "text",
+        content: "From a simple silica gel sachet in a box of electronics to industrial container desiccants protecting expensive machinery during sea freight, it always comes down to the same fundamental principle: keeping relative humidity below the critical level that can cause damage.",
+      },
+      {
+        type: "text",
+        content: "The right choice of desiccant depends on a thorough understanding of the product's sensitivity, transport conditions, packaging type, and regulatory requirements. A systematic approach to moisture load calculation and close collaboration with an experienced supplier is the path to reliable, documented product protection.",
+      },
+      {
+        type: "text",
+        content: "By investing in proper moisture management, you invest in product quality, customer confidence, and your company's reputation – while reducing the hidden costs of moisture damage, claims, and destruction of goods.",
+      },
+    ],
+
+    cta: {
+      heading: "Questions about choosing a desiccant?",
+      description: "Contact us for a no-obligation consultation and sizing calculation for your specific application.",
       buttonText: "Contact our team",
       buttonLink: "/contact",
     },
