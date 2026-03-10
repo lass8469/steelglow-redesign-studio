@@ -644,7 +644,7 @@ export const articles: Record<string, Article> = {
   "data-loggers-vs-desiccants": {
     title: "Data-logger vs. desiccant: What's the difference and do you need both?",
     excerpt: "Desiccants absorb moisture. Data loggers record what happened. In modern logistics, you need both — but for very different reasons.",
-    date: "2025-02-13",
+    date: "2026-02-13",
     readTime: "12 min read",
     category: "Technical",
     heroImage: blogDatalogger,
