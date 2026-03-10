@@ -1290,7 +1290,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.category.guide": "Guide",
     "blogPage.minRead": "min læsning",
     // Blog post content
-    "blogPage.post1.title": "Damptryk forklaret: Hvorfor fugt gemmer sig i træpaller — og hvordan du får den ud",
+    "blogPage.post1.title": "Fugt i træpaller – hvorfor det sker, og hvad kan du gøre ved det?",
     "blogPage.post1.excerpt": "Damptrykkets fysik afslører, hvorfor træpaller holder på fugten dybt inde i strukturen — og hvad du kan gøre ved det.",
     "blogPage.post2.title": "Containerregn: Når dugpunktsfysik gør fugtskader uundgåelige til søs",
     "blogPage.post2.excerpt": "De termodynamiske kræfter, der forvandler skibscontainere til kondenskamre — og den eneste løsning, der virker i stor skala.",
