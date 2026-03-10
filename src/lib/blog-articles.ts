@@ -857,7 +857,7 @@ export const articles: Record<string, Article> = {
   "agriculture-feed-moisture-living-cargo": {
     title: "How to protect coffee beans and agricultural goods from moisture in transit",
     excerpt: "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
-    date: "2025-02-15",
+    date: "2026-02-15",
     readTime: "15 min read",
     category: "Technical",
     heroImage: blogAgricultureFeed,
