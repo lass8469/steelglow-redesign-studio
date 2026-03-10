@@ -1063,7 +1063,7 @@ export const articles: Record<string, Article> = {
   "mold-growth-timelines-80-rh": {
     title: "How quickly does mold grow on cargo — and how do you stop it?",
     excerpt: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
-    date: "2025-02-18",
+    date: "2026-02-18",
     readTime: "18 min read",
     category: "Technical",
     heroImage: blogMoldGrowth,
