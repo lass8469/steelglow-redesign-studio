@@ -13,6 +13,7 @@ import blogRetailDrybag from "@/assets/blog-retail-drybag.webp";
 import blogContainerDesiccantGuide from "@/assets/blog-container-desiccant-guide.webp";
 import productMolecularSieve from "@/assets/product-molecular-sieve.webp";
 import blogDesiccantGuide from "@/assets/blog-desiccant-guide.webp";
+import blogAntislipPallet from "@/assets/blog-antislip-pallet.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -2090,7 +2091,7 @@ export const articles: Record<string, Article> = {
     date: "2026-02-24",
     readTime: "10 min read",
     category: "Guide",
-    heroImage: productAntislip,
+    heroImage: blogAntislipPallet,
     author: "DESICCANT Technical Team",
     canonicalPath: "/anti-slip",
 
