@@ -41,7 +41,8 @@ export type ArticleSection =
   | { type: "numbered-list"; items: string[] }
   | { type: "image"; src: string; alt: string; caption?: string }
   | { type: "callout"; title: string; content: string }
-  | { type: "quote"; content: string; attribution?: string };
+  | { type: "quote"; content: string; attribution?: string }
+  | { type: "table"; headers: string[]; rows: string[][] };
 
 export interface Article {
   // METADATA
