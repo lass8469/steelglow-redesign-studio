@@ -339,7 +339,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post2.excerpt": "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
     "blogPage.post3.title": "The chemistry of clay: why Danish Mo-clay outperforms traditional silica gel",
     "blogPage.post3.excerpt": "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
-    "blogPage.post4.title": "Data loggers vs. desiccants: using sensors to prove your moisture strategy is working",
+    "blogPage.post4.title": "Data-logger vs. desiccant: What's the difference and do you need both?",
     "blogPage.post4.excerpt": "Desiccants absorb moisture. Data loggers record what happened. In modern logistics, you need both — but for very different reasons.",
     "blogPage.post5.title": "How to protect coffee beans and agricultural goods from moisture in transit",
     "blogPage.post5.excerpt": "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
