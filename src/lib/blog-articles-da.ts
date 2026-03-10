@@ -1928,7 +1928,7 @@ export const articlesDa: Record<string, Article> = {
   "anti-slip-sheets-pallet-load-stability": {
     title: "Sådan forhindrer du gods i at glide på paller under transport",
     excerpt: "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
-    date: "2025-02-24",
+    date: "2026-02-24",
     readTime: "10 min læsning",
     category: "Guide",
     heroImage: productAntislip,
