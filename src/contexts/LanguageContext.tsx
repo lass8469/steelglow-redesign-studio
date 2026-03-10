@@ -343,7 +343,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post4.excerpt": "Desiccants absorb moisture. Data loggers record what happened. In modern logistics, you need both — but for very different reasons.",
     "blogPage.post5.title": "Agriculture & feed: managing moisture in \"living\" cargo like coffee beans",
     "blogPage.post5.excerpt": "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
-    "blogPage.post6.title": "Mold growth timelines: how many days of 80% RH does it take to ruin a shipment?",
+    "blogPage.post6.title": "How quickly does mold grow on cargo — and how do you stop it?",
     "blogPage.post6.excerpt": "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
     "blogPage.post7.title": "Silica Gel Desiccant: What it is, how it works, and when to use it",
     "blogPage.post7.excerpt": "Learn how silica gel desiccant works, why it's the go-to moisture absorber for e-commerce, electronics, pharmaceuticals, and food packaging — and how to choose the right desiccant bag size.",
