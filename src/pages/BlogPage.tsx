@@ -274,10 +274,6 @@ const BlogPage = () => {
                             year: 'numeric' 
                           })}
                         </span>
-                        <span className="flex items-center gap-1">
-                          <Clock className="h-4 w-4" />
-                          {post.readTime} {t("blogPage.minRead")}
-                        </span>
                       </div>
                       <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </div>

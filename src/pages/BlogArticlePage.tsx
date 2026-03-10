@@ -249,10 +249,6 @@ const BlogArticlePage = () => {
                   year: 'numeric' 
                 })}
               </time>
-              <span className="flex items-center gap-2">
-                <Clock className="h-4 w-4" />
-                {article.readTime}
-              </span>
               <Button
                 variant="ghost"
                 size="sm"
