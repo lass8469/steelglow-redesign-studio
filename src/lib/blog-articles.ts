@@ -1059,7 +1059,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Mold Growth Timelines
   // ------------------------------------------------------------
   "mold-growth-timelines-80-rh": {
-    title: "Mold growth timelines: how many days of 80% RH does it take to ruin a shipment?",
+    title: "How quickly does mold grow on cargo — and how do you stop it?",
     excerpt: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
     date: "2025-02-18",
     readTime: "18 min read",
