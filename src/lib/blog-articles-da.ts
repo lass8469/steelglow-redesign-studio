@@ -938,7 +938,7 @@ export const articlesDa: Record<string, Article> = {
   "mold-growth-timelines-80-rh": {
     title: "Hvornår opstår skimmel under forsendelse – og hvordan stopper du det?",
     excerpt: "Svaret er ikke et simpelt antal dage. Skimmel følger ikke en fast tidsplan — det er de bagvedliggende faktorer, der afgør, om du forebygger skaden eller først opdager den ved ankomst.",
-    date: "2025-02-18",
+    date: "2026-02-18",
     readTime: "18 min læsning",
     category: "Teknisk",
     heroImage: blogMoldGrowth,
