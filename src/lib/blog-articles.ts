@@ -420,7 +420,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: The Chemistry of Clay
   // ------------------------------------------------------------
   "chemistry-clay-mo-clay-vs-silica-gel": {
-    title: "The chemistry of clay: why Danish Mo-clay outperforms traditional silica gel",
+    title: "Clay desiccant vs. silica gel: Which is better for shipping?",
     excerpt: "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
     date: "2025-02-10",
     readTime: "10 min read",
