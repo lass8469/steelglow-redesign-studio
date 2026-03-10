@@ -1298,7 +1298,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post3.excerpt": "De grundlæggende forskelle mellem naturligt ler og syntetisk silikagel — og hvorfor mo-ler yder bedre med mindre miljøbelastning.",
     "blogPage.post4.title": "Dataloggere vs. tørremidler: Bevis at din fugtstrategi virker med sensorer",
     "blogPage.post4.excerpt": "Tørremidler absorberer fugt. Dataloggere dokumenterer, hvad der skete. I moderne logistik har du brug for begge — men af vidt forskellige grunde.",
-    "blogPage.post5.title": "Landbrug og foder: Fugtstyring af levende last som kaffebønner",
+    "blogPage.post5.title": "Sådan beskytter du kaffebønner og landbrugsvarer mod fugt under transport",
     "blogPage.post5.excerpt": "Kaffebønner er stadig biologiske organismer, selv i en skibscontainer. Derfor er det afgørende at forstå samspillet mellem respiration, varme og fugt.",
     "blogPage.post6.title": "Skimmelvækst: Hvor mange dage ved 80 % RF skal der til, før en forsendelse er ødelagt?",
     "blogPage.post6.excerpt": "Svaret er ikke et simpelt antal dage. Skimmel følger ikke en fast tidsplan — det er de bagvedliggende faktorer, der afgør, om du forebygger skaden eller først opdager den ved ankomst.",
