@@ -76,7 +76,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Vapor Pressure & Wooden Pallets
   // ------------------------------------------------------------
   "vapor-pressure-wooden-pallets": {
-    title: "Vapor pressure explained: Why moisture \"hides\" in wooden pallets and how to get it out",
+    title: "How wooden pallets cause condensation inside shipping containers",
     excerpt: "Understanding the physics of vapor pressure reveals why wooden pallets trap moisture deep within their structure — and how to remove it effectively.",
     date: "2025-02-10",
     readTime: "7 min read",
@@ -259,7 +259,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Container Rain
   // ------------------------------------------------------------
   "container-rain-dew-point-physics": {
-    title: "Container rain: Why dew point physics makes moisture damage inevitable during ocean transit",
+    title: "Condensation inside shipping containers: Why it happens and how to prevent it",
     excerpt: "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
     date: "2025-02-10",
     readTime: "8 min read",
@@ -420,7 +420,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: The Chemistry of Clay
   // ------------------------------------------------------------
   "chemistry-clay-mo-clay-vs-silica-gel": {
-    title: "The chemistry of clay: why Danish Mo-clay outperforms traditional silica gel",
+    title: "Clay desiccant vs. silica gel: Which is better for shipping?",
     excerpt: "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
     date: "2025-02-10",
     readTime: "10 min read",
@@ -640,7 +640,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Data Loggers vs. Desiccants
   // ------------------------------------------------------------
   "data-loggers-vs-desiccants": {
-    title: "Data loggers vs. desiccants: using sensors to prove your moisture strategy is working",
+    title: "Data-logger vs. desiccant: What's the difference and do you need both?",
     excerpt: "Desiccants absorb moisture. Data loggers record what happened. In modern logistics, you need both — but for very different reasons.",
     date: "2025-02-13",
     readTime: "12 min read",
@@ -853,7 +853,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Agriculture & Feed - Managing Moisture in Living Cargo
   // ------------------------------------------------------------
   "agriculture-feed-moisture-living-cargo": {
-    title: "Agriculture & feed: managing moisture in \"living\" cargo like coffee beans",
+    title: "How to protect coffee beans and agricultural goods from moisture in transit",
     excerpt: "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Understanding the respiration-heat-moisture triangle is essential for protecting agricultural cargo.",
     date: "2025-02-15",
     readTime: "15 min read",
@@ -1059,7 +1059,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Mold Growth Timelines
   // ------------------------------------------------------------
   "mold-growth-timelines-80-rh": {
-    title: "Mold growth timelines: how many days of 80% RH does it take to ruin a shipment?",
+    title: "How quickly does mold grow on cargo — and how do you stop it?",
     excerpt: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule — understanding the variables separates shippers who prevent damage from those who discover it at destination.",
     date: "2025-02-18",
     readTime: "18 min read",
@@ -1242,7 +1242,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Silica Gel Desiccant Guide
   // ------------------------------------------------------------
   "silica-gel-desiccant-guide": {
-    title: "What Is Silica Gel Desiccant? Complete Guide to Moisture Control for Shipping & Storage",
+    title: "Silica Gel Desiccant: What it is, how it works, and when to use it",
     excerpt: "Learn how silica gel desiccant works, why it's the go-to moisture absorber for e-commerce shipping, electronics, pharmaceuticals, and food packaging — and how to choose the right size for your needs.",
     date: "2025-02-20",
     readTime: "10 min read",
@@ -1521,7 +1521,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: DRY BAG I — Clay Desiccant Guide
   // ------------------------------------------------------------
   "drybag-i-clay-desiccant-guide": {
-    title: "The Original DRY BAG I: Why Denmark's Clay Desiccant Is the Gold Standard for Container Moisture Protection",
+    title: "DRY-BAG I: The effective solution against moisture in containers",
     excerpt: "Discover what makes DRY BAG I different — from its Moclay formula and 80% absorption capacity to its 90-day protection window. The definitive guide to clay desiccant bags for container shipping.",
     date: "2025-02-21",
     readTime: "12 min read",
@@ -1723,7 +1723,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Dunnage Bags for Container Loading
   // ------------------------------------------------------------
   "dunnage-bags-container-loading-guide": {
-    title: "Dunnage Bags for Container Loading: How to Stop Cargo Shifting Before It Costs You",
+    title: "Dunnage bags for shipping containers: What they are and do you need them?",
     excerpt: "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and how to combine them with desiccants for complete cargo protection.",
     date: "2025-02-22",
     readTime: "11 min read",
@@ -1908,7 +1908,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Data Logger Verification
   // ------------------------------------------------------------
   "data-logger-verification-guide": {
-    title: "Did Your Desiccant Actually Work? How Data Loggers Verify Your Moisture Protection Strategy",
+    title: "How do you know if your desiccant actually worked?",
     excerpt: "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A temperature and humidity data logger closes that gap.",
     date: "2025-02-23",
     readTime: "12 min read",
@@ -2083,7 +2083,7 @@ export const articles: Record<string, Article> = {
   // ARTIKEL: Anti-Slip Sheets for Pallets
   // ------------------------------------------------------------
   "anti-slip-sheets-pallet-load-stability": {
-    title: "Anti-Slip Sheets: The Smart Way to Stabilise Pallet Loads in Transit",
+    title: "Prevent cargo from sliding on pallets during transport",
     excerpt: "High-friction paper sheets that protect your cargo from shifting — a proven, cost-effective way to increase friction between layers of goods and keep every pallet stack exactly where it should be.",
     date: "2025-02-24",
     readTime: "10 min read",
@@ -2291,7 +2291,7 @@ export const articles: Record<string, Article> = {
   // ARTIKEL: Stabustrap — Reusable Pallet Strapping
   // ------------------------------------------------------------
   "stabustrap-reusable-pallet-strapping": {
-    title: "Stabustrap: The Smarter, Greener Alternative to Stretch Film for Internal Pallet Transport",
+    title: "Reusable pallet strapping: Greener alternative to stretch film",
     excerpt: "An elastic, reusable strapping system that applies in seconds, holds loads securely, and eliminates single-use plastic waste from internal pallet handling.",
     date: "2025-02-25",
     readTime: "12 min read",
@@ -2472,7 +2472,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: DRY BAG Retail — Industrial-Grade Moisture Protection
   // ------------------------------------------------------------
   "dry-bag-retail-moisture-absorber-guide": {
-    title: "DRY BAG Retail – Industrial-Grade Moisture Protection for Boats, Campers & Home",
+    title: "Moisture absorber for boats, caravans, basements and garages",
     excerpt: "The same trusted Moclay formula used in global container shipping — now available as a regenerable, drip-free moisture absorber for boats, campers, RVs, basements, and garages. Made in Denmark.",
     date: "2025-02-26",
     readTime: "14 min read",
@@ -2690,7 +2690,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Container Desiccant — Complete Guide to Moisture Control
   // ------------------------------------------------------------
   "container-desiccant-stuffing-guide": {
-    title: "Container Desiccant: The Complete Guide to Moisture Control When Stuffing a Shipping Container",
+    title: "How to protect cargo from moisture in a shipping container",
     excerpt: "From inspecting the container before loading to choosing the right desiccant and smart stuffing practices — everything you need to protect cargo from moisture damage during ocean shipping.",
     date: "2025-02-27",
     readTime: "16 min read",
@@ -2958,7 +2958,7 @@ export const articles: Record<string, Article> = {
   // ARTICLE: Molecular Sieve — Why Pore Size Matters
   // ------------------------------------------------------------
   "molecular-sieve-pore-size-guide": {
-    title: "Molecular Sieve: Why Pore Size Matters",
+    title: "What Is Molecular Sieve Desiccant — and which version do you need?",
     excerpt: "Molecular sieves work at the molecular level — physically selecting which molecules enter their structure. That selectivity is determined almost entirely by one variable: pore size.",
     date: "2025-02-28",
     readTime: "18 min read",

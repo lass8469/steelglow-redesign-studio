@@ -24,7 +24,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Damptryk & Træpaller
   // ------------------------------------------------------------
   "vapor-pressure-wooden-pallets": {
-    title: "Damptryk forklaret: Hvorfor fugt gemmer sig i træpaller — og hvordan du får den ud",
+    title: "Fugt i træpaller – hvorfor det sker, og hvad kan du gøre ved det?",
     excerpt: "Damptrykkets fysik afslører, hvorfor træpaller holder på fugten dybt inde i strukturen — og hvad du kan gøre ved det.",
     date: "2025-02-10",
     readTime: "7 min læsning",
@@ -353,7 +353,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Lerets kemi
   // ------------------------------------------------------------
   "chemistry-clay-mo-clay-vs-silica-gel": {
-    title: "Lerets kemi: Hvorfor dansk mo-ler slår traditionel silikagel",
+    title: "Lertørremiddel vs. silica gel – hvad er bedst til din forsendelse?",
     excerpt: "De grundlæggende forskelle mellem naturligt ler og syntetisk silikagel — og hvorfor mo-ler yder bedre med mindre miljøbelastning.",
     date: "2025-02-10",
     readTime: "10 min læsning",
@@ -749,7 +749,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Landbrug & foder
   // ------------------------------------------------------------
   "agriculture-feed-moisture-living-cargo": {
-    title: "Landbrug og foder: Fugtstyring af levende last som kaffebønner",
+    title: "Sådan beskytter du kaffebønner og landbrugsvarer mod fugt under transport",
     excerpt: "Kaffebønner er stadig biologiske organismer, selv i en skibscontainer. Derfor er det afgørende at forstå samspillet mellem respiration, varme og fugt.",
     date: "2025-02-15",
     readTime: "15 min læsning",
@@ -935,7 +935,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Skimmelvækst-tidslinjer
   // ------------------------------------------------------------
   "mold-growth-timelines-80-rh": {
-    title: "Skimmelvækst: Hvor mange dage ved 80 % RF skal der til, før en forsendelse er ødelagt?",
+    title: "Hvornår opstår skimmel under forsendelse – og hvordan stopper du det?",
     excerpt: "Svaret er ikke et simpelt antal dage. Skimmel følger ikke en fast tidsplan — det er de bagvedliggende faktorer, der afgør, om du forebygger skaden eller først opdager den ved ankomst.",
     date: "2025-02-18",
     readTime: "18 min læsning",
@@ -1750,7 +1750,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Datalogger Verifikation
   // ------------------------------------------------------------
   "data-logger-verification-guide": {
-    title: "Virkede dit tørremiddel? Sådan verificerer temperatur- og fugtighedsdataloggere din fugtbeskyttelsesstrategi",
+    title: "Hvordan ved du, om dit tørremiddel har virket?",
     excerpt: "Et tørremiddel arbejder lydløst og usynligt. Uden registrerede fugtighedsdata fra containerens indre kan du ikke vide, om beskyttelsen holdt. En datalogger lukker det hul.",
     date: "2025-02-23",
     readTime: "12 min læsning",
@@ -1925,7 +1925,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Anti-Slip Sheets til paller
   // ------------------------------------------------------------
   "anti-slip-sheets-pallet-load-stability": {
-    title: "Anti-Slip Sheets: Den smarte måde at stabilisere pallelæs under transport",
+    title: "Sådan forhindrer du gods i at glide på paller under transport",
     excerpt: "Friktionspapir, der beskytter dit gods mod at glide — en gennemprøvet og omkostningseffektiv løsning til at øge friktionen mellem lag og holde pallelæsset på plads.",
     date: "2025-02-24",
     readTime: "10 min læsning",
@@ -2306,7 +2306,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: DRY BAG Retail — Industriel fugtsikring til hobby & hjem
   // ------------------------------------------------------------
   "dry-bag-retail-moisture-absorber-guide": {
-    title: "DRY BAG Retail – Industriel fugtsikring til båd, campingvogn og hjem",
+    title: "Stop fugt i båd, campingvogn og kælder – her er løsningen",
     excerpt: "Den samme gennemprøvede Moclay-formel fra global containerforsendelse — nu som en regenererbar, drypfri fugtabsorbent til båd, campingvogn, autocamper, kælder og garage. Opfundet og fremstillet i Danmark.",
     date: "2025-02-26",
     readTime: "14 min læsning",
@@ -2520,7 +2520,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTIKEL: Container-tørremiddel — Komplet guide til fugtstyring
   // ------------------------------------------------------------
   "container-desiccant-stuffing-guide": {
-    title: "Container-tørremiddel: Den komplette guide til fugtstyring ved lastning af en skibscontainer",
+    title: "Sådan beskytter du gods mod fugt i skibscontainere",
     excerpt: "Fra inspektion af containeren før lastning til valg af det rigtige tørremiddel og smarte lastningspraksisser — alt hvad du skal vide for at beskytte gods mod fugtskader under havtransport.",
     date: "2025-02-27",
     readTime: "16 min læsning",
@@ -2776,7 +2776,7 @@ export const articlesDa: Record<string, Article> = {
   // ARTICLE: Molekylsigte — Hvorfor porestørrelse er afgørende
   // ------------------------------------------------------------
   "molecular-sieve-pore-size-guide": {
-    title: "Molekylsigte: Hvorfor porestørrelse er afgørende",
+    title: "Hvad er molekylsigte, og hvilken variant skal du bruge?",
     excerpt: "Molekylsigter arbejder på molekylært niveau — de udvælger fysisk, hvilke molekyler der må trænge ind i deres struktur. Den selektivitet bestemmes næsten udelukkende af én variabel: porestørrelse.",
     date: "2025-02-28",
     readTime: "18 min læsetid",
