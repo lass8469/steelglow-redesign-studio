@@ -337,7 +337,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post1.excerpt": "Understanding the physics of vapor pressure reveals why wooden pallets trap moisture deep within their structure — and how to remove it effectively.",
     "blogPage.post2.title": "Container rain: Why dew point physics makes moisture damage inevitable during ocean transit",
     "blogPage.post2.excerpt": "Understanding the thermodynamic forces that turn shipping containers into condensation chambers, and the only proven solution that works at scale.",
-    "blogPage.post3.title": "The chemistry of clay: why Danish Mo-clay outperforms traditional silica gel",
+    "blogPage.post3.title": "Clay desiccant vs. silica gel: Which is better for shipping?",
     "blogPage.post3.excerpt": "Understanding the fundamental differences between natural clay and synthetic silica gel desiccants reveals why Mo-clay offers superior performance with lower environmental impact.",
     "blogPage.post4.title": "Data-logger vs. desiccant: What's the difference and do you need both?",
     "blogPage.post4.excerpt": "Desiccants absorb moisture. Data loggers record what happened. In modern logistics, you need both — but for very different reasons.",
