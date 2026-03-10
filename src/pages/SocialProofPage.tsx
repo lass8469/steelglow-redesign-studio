@@ -73,6 +73,7 @@ const SocialProofPage = () => {
       highlight: t("socialProof.review3.highlight"),
       rating: 5,
       image: andersPhoto,
+    },
   ];
 
   return (
