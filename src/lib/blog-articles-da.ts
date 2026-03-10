@@ -2963,7 +2963,6 @@ export const articlesDa: Record<string, Article> = {
       buttonLink: "/contact",
     },
   },
-  },
 
   // ------------------------------------------------------------
   // ARTIKEL: Hvad er desiccant? Komplet guide
