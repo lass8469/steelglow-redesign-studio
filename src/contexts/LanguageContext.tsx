@@ -351,7 +351,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post8.excerpt": "Discover what makes DRY BAG I different — from its Moclay formula and 80% absorption capacity to its 90-day protection window. The definitive guide to clay desiccant bags for container shipping.",
     "blogPage.post9.title": "Dunnage bags for container loading: How to stop cargo shifting before it costs you",
     "blogPage.post9.excerpt": "Learn how dunnage bags prevent cargo shifting in containers, trucks, and railcars. Covers PP/PE woven vs. kraft paper types, sizing, and combining with desiccants for complete cargo protection.",
-    "blogPage.post10.title": "Did your desiccant actually work? How data loggers verify your moisture protection strategy",
+    "blogPage.post10.title": "How do you know if your desiccant actually worked?",
     "blogPage.post10.excerpt": "A desiccant works silently and invisibly. Without recorded humidity data from inside the container, you cannot know whether your protection held. A data logger closes that gap.",
     "blogPage.post11.title": "Prevent cargo from sliding on pallets during transport",
     "blogPage.post11.excerpt": "High-friction paper sheets that protect your cargo from shifting — a proven, cost-effective way to increase friction between layers and keep every pallet stack exactly where it should be.",
