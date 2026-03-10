@@ -357,7 +357,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post11.excerpt": "High-friction paper sheets that protect your cargo from shifting — a proven, cost-effective way to increase friction between layers and keep every pallet stack exactly where it should be.",
     "blogPage.post12.title": "Stabustrap: The smarter, greener alternative to stretch film for internal pallet transport",
     "blogPage.post12.excerpt": "An elastic, reusable strapping system that applies in seconds, holds loads securely, and eliminates single-use plastic waste from internal pallet handling.",
-    "blogPage.post13.title": "DRY BAG Retail – Industrial-grade moisture protection for boats, campers & home",
+    "blogPage.post13.title": "Moisture absorber for boats, caravans, basements and garages",
     "blogPage.post13.excerpt": "The same trusted Moclay formula from global container shipping — now as a regenerable, drip-free moisture absorber for boats, campers, RVs, basements, and garages. Made in Denmark.",
     "blogPage.post14.title": "How to protect cargo from moisture in a shipping container",
     "blogPage.post14.excerpt": "From inspecting the container before loading to choosing the right desiccant and smart stuffing practices — everything you need to protect cargo from moisture damage during ocean shipping.",
