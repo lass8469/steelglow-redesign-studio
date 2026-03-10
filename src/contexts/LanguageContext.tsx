@@ -363,6 +363,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post14.excerpt": "From inspecting the container before loading to choosing the right desiccant and smart stuffing practices — everything you need to protect cargo from moisture damage during ocean shipping.",
     "blogPage.post15.title": "What Is Molecular Sieve Desiccant — and which version do you need?",
     "blogPage.post15.excerpt": "Molecular sieves work at the molecular level — physically selecting which molecules enter their structure. That selectivity is determined almost entirely by one variable: pore size.",
+    "blogPage.post16.title": "What is a Desiccant? Complete guide to desiccants",
+    "blogPage.post16.excerpt": "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air. This complete guide covers desiccant types, sizing, applications, and how to choose the right one.",
     "relatedArticles.molecularSieveGuide": "molecular sieve pore size guide",
 
     // Downloads Page
