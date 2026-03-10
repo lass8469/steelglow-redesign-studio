@@ -36,7 +36,7 @@ const BlogPage = () => {
       slug: "what-is-a-desiccant-complete-guide",
       titleKey: "blogPage.post16.title",
       excerptKey: "blogPage.post16.excerpt",
-      date: "2025-03-01",
+      date: "2026-03-01",
       readTime: "20",
       category: "Guide",
     },
