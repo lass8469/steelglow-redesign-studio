@@ -16,6 +16,7 @@ import blogDesiccantGuide from "@/assets/blog-desiccant-guide.webp";
 import blogAntislipPallet from "@/assets/blog-antislip-pallet.webp";
 import blogDrybagIContainer from "@/assets/blog-drybag-i-container.webp";
 import blogDunnageBag from "@/assets/blog-dunnage-bag.webp";
+import blogMoisturePackaging from "@/assets/blog-moisture-packaging.webp";
 // ============================================================
 // BLOG ARTICLE DATA - Easy to edit framework
 // ============================================================
@@ -3581,6 +3582,339 @@ export const articles: Record<string, Article> = {
     cta: {
       heading: "Questions about choosing a desiccant?",
       description: "Contact us for a no-obligation consultation and sizing calculation for your specific application.",
+      buttonText: "Contact our team",
+      buttonLink: "/contact",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTICLE: Moisture in Packaging
+  // ------------------------------------------------------------
+  "moisture-in-packaging": {
+    title: "Moisture in packaging: Causes, damage, and effective prevention",
+    excerpt: "Everything about moisture in packaging: causes, types of damage, and the most effective solution. Read the complete guide from Desiccant.com – specialists in industrial desiccants.",
+    date: "2026-03-15",
+    readTime: "15 min read",
+    category: "Guide",
+    heroImage: blogMoisturePackaging,
+    author: "DESICCANT Technical Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "Moisture in packaging is one of the most underestimated causes of product damage throughout the supply chain. Every year, companies suffer significant losses due to rust, mould, deformed packaging, and dissatisfied customers – damage that in many cases could have been avoided with the right moisture protection.",
+      },
+      {
+        type: "text",
+        content: "In this article, we walk through why moisture occurs in packaging, which products are most at risk, and how you can effectively protect your goods with industrial desiccants – whether they are transported locally or across continents.",
+      },
+
+      {
+        type: "heading",
+        content: "Why moisture in packaging is a problem",
+      },
+      {
+        type: "text",
+        content: "Even under seemingly normal conditions, the relative humidity inside packaging can exceed critical thresholds – and it can happen quickly.",
+      },
+      {
+        type: "text",
+        content: "The problem is particularly pronounced because moisture is invisible. There are no visual signs until the damage has already occurred: the packaging is soft and deformed, the product is rusty, or mould has taken hold.",
+      },
+      {
+        type: "text",
+        content: "For companies that pack, store, and ship goods, moisture is a risk that is hard to see but easy to prevent – provided it is addressed at the right stage of the packaging process.",
+      },
+
+      {
+        type: "heading",
+        content: "Causes of moisture in packaging",
+      },
+      {
+        type: "subheading",
+        content: "Condensation due to temperature fluctuations",
+      },
+      {
+        type: "text",
+        content: "The most common cause of moisture in packaging is condensation. When a product packed at room temperature moves into colder surroundings – or vice versa – the air's ability to retain water vapour changes. The excess water condenses and settles as water droplets on surfaces inside the packaging.",
+      },
+      {
+        type: "text",
+        content: "This is particularly problematic in:",
+      },
+      {
+        type: "list",
+        items: [
+          "Transport from cold climate zones to warm destinations, where warm humid air condenses on the cold goods",
+          "Transport from warm climate zones to cold destinations, where the goods cool down and condensation forms on surfaces inside the packaging",
+          "Storage in warehouse facilities with varying outdoor temperatures, where repeated temperature shifts gradually build up moisture inside the packaging",
+        ],
+      },
+      {
+        type: "subheading",
+        content: "High humidity at the time of packing",
+      },
+      {
+        type: "text",
+        content: "If products are packed in environments with high relative humidity, the moist air is sealed inside the packaging. Even without further temperature changes, this can result in moisture levels high enough to cause damage over time.",
+      },
+      {
+        type: "subheading",
+        content: "Container rain during sea transport",
+      },
+      {
+        type: "text",
+        content: "A well-known phenomenon in international container shipping is what is called container rain. The air's ability to hold moisture drops significantly when temperature falls. In a container that heats up during the day and cools down at night, moisture from cargo, pallets, and air is forced out as water droplets – which collect on the ceiling and walls and drip down onto the cargo.",
+      },
+      {
+        type: "text",
+        content: "Sea transport routes that cross climate zones – such as from Southeast Asia to Northern Europe – are particularly vulnerable.",
+      },
+      {
+        type: "subheading",
+        content: "Hygroscopic materials",
+      },
+      {
+        type: "text",
+        content: "Many packaging materials are hygroscopic, meaning they absorb and release moisture in response to the surrounding humidity. Corrugated cardboard, paper, textiles, and wood are typical examples. These materials act as an internal moisture source, slowly releasing stored moisture inside the packaging – even if the external humidity drops.",
+      },
+
+      {
+        type: "heading",
+        content: "What damage does moisture in packaging cause?",
+      },
+      {
+        type: "text",
+        content: "Moisture attacks both the product and the packaging. The damage profile varies depending on the product type, but the consequences are always costly:",
+      },
+      {
+        type: "subheading",
+        content: "Rust and corrosion on metal parts",
+      },
+      {
+        type: "text",
+        content: "Metals such as steel, iron, and copper oxidise rapidly at elevated humidity levels. Even brief exposure can leave visible rust marks that make the product unsaleable or unfit for use.",
+      },
+      {
+        type: "subheading",
+        content: "Mould and bacterial growth",
+      },
+      {
+        type: "text",
+        content: "Organic materials such as textiles, leather, wood, and food products are particularly vulnerable. Mould can establish itself at relative humidity levels above 60–70% and is both hazardous to health and difficult to remove.",
+      },
+      {
+        type: "subheading",
+        content: "Damaged packaging",
+      },
+      {
+        type: "text",
+        content: "Moisture degrades corrugated cardboard and paper, reducing the strength and stability of the packaging. This can lead to packaging that loses its load-bearing capacity, damaged products, and issues in automated warehouse systems.",
+      },
+      {
+        type: "subheading",
+        content: "Electronic failures and short circuits",
+      },
+      {
+        type: "text",
+        content: "Electronics are extremely sensitive to moisture. Condensation on circuit boards can cause short circuits, oxidation of contacts, and permanent component failures.",
+      },
+      {
+        type: "subheading",
+        content: "Odour and discolouration",
+      },
+      {
+        type: "text",
+        content: "Textiles, paper goods, and other absorbent materials absorb odours and become discoloured when exposed to moisture. This is often enough for end customers to make a complaint – regardless of whether the product technically functions correctly.",
+      },
+
+      {
+        type: "heading",
+        content: "The effective solution: Industrial desiccants",
+      },
+      {
+        type: "text",
+        content: "The most direct and reliable method for combating moisture in packaging is the use of industrial desiccants. A desiccant is a hygroscopic material that actively absorbs water molecules from the air inside the packaging, thereby lowering the relative humidity to a safe level.",
+      },
+      {
+        type: "text",
+        content: "Unlike passive ventilation or packaging optimisation alone, desiccants work regardless of variations in the surrounding environment. They are an active barrier against moisture.",
+      },
+      {
+        type: "subheading",
+        content: "How desiccants work",
+      },
+      {
+        type: "text",
+        content: "When a desiccant is placed inside packaging, it immediately begins to bind water molecules from the surrounding air. The process is physical or chemical depending on the type, and it continues until the desiccant's capacity is exhausted – or until the moisture level has been reduced to a point where there is nothing more to absorb.",
+      },
+      {
+        type: "text",
+        content: "The result is:",
+      },
+      {
+        type: "list",
+        items: [
+          "Lower relative humidity inside the packaging",
+          "Reduced condensation during temperature fluctuations",
+          "Protected products throughout the entire transport and storage process",
+        ],
+      },
+      {
+        type: "subheading",
+        content: "Types of industrial desiccants",
+      },
+      {
+        type: "callout",
+        title: "Silica gel",
+        content: "Silica gel is the most widely used desiccant for industrial applications. It absorbs effectively at relative humidity levels from 20–90% and is non-reactive, non-toxic, and approved for use in packaging for food products and electronics, among others.",
+      },
+      {
+        type: "callout",
+        title: "Activated clay desiccants",
+        content: "Clay-based desiccants are a cost-effective solution for general transport and storage. They perform best at moderate temperatures and are a good choice when moisture absorption requirements are not extreme and price is an important factor.",
+      },
+      {
+        type: "callout",
+        title: "Molecular sieves",
+        content: "Molecular sieves are the most effective type of desiccant at very low relative humidity levels. They absorb water molecules down to below 10% RH and are primarily used in critical applications within the pharmaceutical industry, advanced electronics, and the aviation industry.",
+      },
+      {
+        type: "callout",
+        title: "Calcium chloride-based desiccants",
+        content: "Calcium chloride absorbs up to several times its own weight in water and is particularly well-suited for container shipping and situations involving extreme moisture. It is the preferred solution against container rain.",
+      },
+
+      {
+        type: "heading",
+        content: "When should you use desiccants?",
+      },
+      {
+        type: "text",
+        content: "Desiccants are relevant in most industries and packaging situations. The need is greatest when one or more of the following conditions apply:",
+      },
+      {
+        type: "list",
+        items: [
+          "Transport time exceeds 24–48 hours",
+          "The route crosses climate zones or seasons",
+          "The product consists of metals, electronics, food, textiles, medicines, or hygiene items",
+          "The packaging is made from hygroscopic materials such as cardboard or wood",
+          "The goods are to be stored for an extended period before sale or use",
+        ],
+      },
+      {
+        type: "text",
+        content: "Typical areas of application include e-commerce shipments, sea containers, industrial long-term storage, pharmaceutical products, and exports to countries with high humidity.",
+      },
+
+      {
+        type: "heading",
+        content: "How much desiccant do you need?",
+      },
+      {
+        type: "text",
+        content: "The amount of desiccant required depends on several factors:",
+      },
+      {
+        type: "list",
+        items: [
+          "Internal volume of the packaging: The larger the volume, the more moisture needs to be absorbed",
+          "Transport time and route: Long routes across climate zones require high capacity",
+          "Product type and moisture sensitivity: Highly sensitive products require a lower RH target",
+          "Properties of the packaging material: Hygroscopic materials contribute additional moisture loading",
+        ],
+      },
+      {
+        type: "text",
+        content: "The correct amount varies from situation to situation. Contact us for specific guidance tailored to your products, your packaging, and your transport routes.",
+      },
+
+      {
+        type: "heading",
+        content: "Practical steps: How to reduce moisture in packaging",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Pack in controlled environments. Avoid packing during periods of high humidity, such as early in the morning or in rooms without climate control.",
+          "Use airtight or moisture-barrier packaging. Polyethylene film and aluminium foil significantly reduce moisture exchange with the surroundings.",
+          "Add the right desiccant. Choose type and quantity based on the product, the packaging, and the transport process.",
+          "Minimise temperature fluctuations. Insulation and correct loading in containers reduces the risk of condensation.",
+          "Consider a moisture indicator. Moisture indicator cards inside the packaging provide you and your customer with visible documentation that humidity levels have been kept under control.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "Frequently asked questions about moisture in packaging",
+      },
+      {
+        type: "subheading",
+        content: "What causes moisture in packaging?",
+      },
+      {
+        type: "text",
+        content: "Moisture in packaging arises primarily from condensation due to temperature fluctuations, high humidity at the time of packing, and moisture release from hygroscopic materials such as cardboard and wood.",
+      },
+      {
+        type: "subheading",
+        content: "How do you remove moisture from packaging?",
+      },
+      {
+        type: "text",
+        content: "The most effective method is to use industrial desiccants, which actively absorb water molecules from the air inside the packaging and lower the relative humidity.",
+      },
+      {
+        type: "subheading",
+        content: "What is container rain?",
+      },
+      {
+        type: "text",
+        content: "Container rain is a phenomenon where moisture inside a sea container condenses on the container walls and ceiling and drips down onto the goods. It typically occurs due to temperature variations during sea transport and is effectively prevented with calcium chloride desiccants.",
+      },
+      {
+        type: "subheading",
+        content: "Which type of desiccant is best for electronics?",
+      },
+      {
+        type: "text",
+        content: "Silica gel is the preferred choice for electronics, as it absorbs effectively across a broad range of humidity levels and is non-reactive. For highly critical components, molecular sieves may be necessary.",
+      },
+      {
+        type: "subheading",
+        content: "Can moisture damage products during transport?",
+      },
+      {
+        type: "text",
+        content: "Yes. Moisture can cause rust on metal parts, short circuits in electronics, mould in organic materials, and deformation of packaging. Even brief exposure to high humidity can be enough to render a product unsaleable.",
+      },
+      {
+        type: "subheading",
+        content: "Can desiccants be reused?",
+      },
+      {
+        type: "text",
+        content: "Certain types, including silica gel, can be regenerated by heating and reused. Calcium chloride-based desiccants are typically single-use products.",
+      },
+
+      {
+        type: "heading",
+        content: "Protect your products from moisture – from dispatch to delivery",
+      },
+      {
+        type: "text",
+        content: "Moisture in packaging is a predictable problem with a concrete solution. With the right industrial desiccants, you can protect your products effectively, reduce complaints, and ensure that goods arrive in the condition your customers expect.",
+      },
+      {
+        type: "text",
+        content: "At Desiccant.com, we supply industrial desiccants to manufacturers, exporters, and logistics companies throughout Europe. Our range covers all needs – from standard silica gel sachets to specialised container absorbers designed to combat container rain.",
+      },
+    ],
+
+    cta: {
+      heading: "Need help choosing the right moisture protection?",
+      description: "Contact us for advice on the right solution for your products and transport routes.",
       buttonText: "Contact our team",
       buttonLink: "/contact",
     },

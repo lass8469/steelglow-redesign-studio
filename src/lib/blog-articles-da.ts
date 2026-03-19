@@ -16,6 +16,7 @@ import blogDesiccantGuide from "@/assets/blog-desiccant-guide.webp";
 import blogAntislipPallet from "@/assets/blog-antislip-pallet.webp";
 import blogDrybagIContainer from "@/assets/blog-drybag-i-container.webp";
 import blogDunnageBag from "@/assets/blog-dunnage-bag.webp";
+import blogMoisturePackaging from "@/assets/blog-moisture-packaging.webp";
 import { Article } from "./blog-articles";
 
 // ============================================================
@@ -3358,6 +3359,339 @@ export const articlesDa: Record<string, Article> = {
     cta: {
       heading: "Spørgsmål om valg af tørremiddel?",
       description: "Kontakt os for en uforpligtende rådgivning og dimensioneringsberegning til din specifikke applikation.",
+      buttonText: "Kontakt vores team",
+      buttonLink: "/contact",
+    },
+  },
+
+  // ------------------------------------------------------------
+  // ARTIKEL: Fugt i emballage
+  // ------------------------------------------------------------
+  "moisture-in-packaging": {
+    title: "Fugt i emballage: Årsager, skader og effektiv forebyggelse",
+    excerpt: "Alt om fugt i emballage: årsager, skadetyper og den mest effektive løsning. Læs den komplette guide fra Desiccant.com – specialister i industrielle tørremidler.",
+    date: "2026-03-15",
+    readTime: "15 min læsning",
+    category: "Guide",
+    heroImage: blogMoisturePackaging,
+    author: "DESICCANT Teknisk Team",
+
+    sections: [
+      {
+        type: "text",
+        content: "Fugt i emballage er en af de mest undervurderede årsager til produktskader i hele forsyningskæden. Hvert år lider virksomheder store tab som følge af rust, skimmel, deformeret emballage og utilfredse kunder – skader der i mange tilfælde kunne have været undgået med den rette fugtbeskyttelse.",
+      },
+      {
+        type: "text",
+        content: "I denne artikel gennemgår vi, hvorfor fugt opstår i emballage, hvilke produkter der er mest udsatte, og hvordan du med industrielle tørremidler kan beskytte dine varer effektivt – uanset om de transporteres lokalt eller på tværs af kontinenter.",
+      },
+
+      {
+        type: "heading",
+        content: "Derfor er fugt i emballage et problem",
+      },
+      {
+        type: "text",
+        content: "Selv ved tilsyneladende normale forhold kan den relative luftfugtighed inde i en emballage overstige kritiske grænser – og det kan ske hurtigt.",
+      },
+      {
+        type: "text",
+        content: "Problemet er særligt udtalt, fordi fugt er usynlig. Der er ingen visuelle tegn, før skaden er sket: emballagen er blød og deformeret, produktet er rustent, eller skimmelen har sat sig.",
+      },
+      {
+        type: "text",
+        content: "For virksomheder, der pakker, opbevarer og sender varer, er fugt en risiko, der er svær at se, men nem at forebygge – forudsat at den adresseres det rette sted i emballageprocessen.",
+      },
+
+      {
+        type: "heading",
+        content: "Årsager til fugt i emballage",
+      },
+      {
+        type: "subheading",
+        content: "Kondens som følge af temperaturudsving",
+      },
+      {
+        type: "text",
+        content: "Den hyppigste årsag til fugt i emballage er kondens. Når et produkt pakket ved stuetemperatur bevæger sig ind i kolde omgivelser – og omvendt – ændres luftens evne til at holde på vanddamp. Det overskydende vand kondenserer og afsættes som vanddråber på overflader inde i emballagen.",
+      },
+      {
+        type: "text",
+        content: "Dette er særligt problematisk ved:",
+      },
+      {
+        type: "list",
+        items: [
+          "Transport fra kolde klimazoner til varme destinationer, hvor varm fugtig luft kondenserer på det kolde gods",
+          "Transport fra varme klimazoner til kolde destinationer, hvor godset afkøles og kondens dannes på overflader inde i emballagen",
+          "Opbevaring i lagerfaciliteter med varierende udetemperatur, hvor gentagne temperaturskift over tid opbygger fugt inde i emballagen",
+        ],
+      },
+      {
+        type: "subheading",
+        content: "Høj luftfugtighed ved pakningstidspunktet",
+      },
+      {
+        type: "text",
+        content: "Hvis produkter pakkes i omgivelser med høj relativ luftfugtighed, lukkes den fugtige luft inde i emballagen. Selv uden yderligere temperaturændringer kan det give fugtniveauer, der er tilstrækkeligt høje til at forårsage skader over tid.",
+      },
+      {
+        type: "subheading",
+        content: "Container rain under søtransport",
+      },
+      {
+        type: "text",
+        content: "Et velkendt fænomen inden for international containerfragt er det, man på engelsk kalder container rain. Luftens evne til at binde fugt falder markant, når temperaturen falder. I en container, der opvarmes om dagen og afkøles om natten, betyder det, at fugt fra gods, paller og luft tvinges ud som vanddråber – der samler sig på loft og vægge og drypper ned over lasten.",
+      },
+      {
+        type: "text",
+        content: "Søtransportruter, der krydser klimazoner – fx fra Sydøstasien til Nordeuropa – er særligt udsatte.",
+      },
+      {
+        type: "subheading",
+        content: "Hygroskopiske materialer",
+      },
+      {
+        type: "text",
+        content: "Mange emballagematerialer er hygroskopiske, det vil sige, de optager og afgiver fugt i takt med omgivelsernes luftfugtighed. Bølgepap, papir, tekstil og træ er typiske eksempler. Disse materialer fungerer som en intern fugtkilde, der langsomt afgiver den oplagrede fugt inde i emballagen – selv hvis den ydre luftfugtighed falder.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvilke skader forårsager fugt i emballage?",
+      },
+      {
+        type: "text",
+        content: "Fugt angriber både produktet og emballagen. Skadesbilledet varierer afhængigt af produkttype, men konsekvenserne er altid omkostningsfulde:",
+      },
+      {
+        type: "subheading",
+        content: "Rust og korrosion på metaldele",
+      },
+      {
+        type: "text",
+        content: "Metaller som stål, jern og kobber oxiderer hurtigt ved forhøjet luftfugtighed. Selv kortvarig eksponering kan sætte synlige rustmærker, der gør produktet usælgeligt eller uegnet til brug.",
+      },
+      {
+        type: "subheading",
+        content: "Skimmel og bakterievækst",
+      },
+      {
+        type: "text",
+        content: "Organiske materialer som tekstil, læder, træ og fødevarer er særligt sårbare. Skimmel kan etablere sig ved relativ luftfugtighed over 60–70 % og er både sundhedsskadeligt og svært at fjerne.",
+      },
+      {
+        type: "subheading",
+        content: "Beskadiget emballage",
+      },
+      {
+        type: "text",
+        content: "Fugt nedbryder bølgepap og papir, hvilket reducerer styrkens og stabiliteten i emballagen. Det kan føre til emballage der mister bæreevnen, ødelagde produkter og problemer i automatiserede lagersystemer.",
+      },
+      {
+        type: "subheading",
+        content: "Elektroniske fejl og kortslutninger",
+      },
+      {
+        type: "text",
+        content: "Elektronik er ekstremt følsom over for fugt. Kondens på kredsløb kan forårsage kortslutninger, oxidation af kontakter og permanente komponentfejl.",
+      },
+      {
+        type: "subheading",
+        content: "Lugt og misfarvning",
+      },
+      {
+        type: "text",
+        content: "Tekstiler, papirvarer og andre absorptive materialer optager lugt og misfarves ved fugtpåvirkning. Det er ofte nok til, at slutkunden reklamerer – uanset om produktet teknisk set fungerer.",
+      },
+
+      {
+        type: "heading",
+        content: "Den effektive løsning: Industrielle tørremidler",
+      },
+      {
+        type: "text",
+        content: "Den mest direkte og pålidelige metode til at bekæmpe fugt i emballage er brugen af industrielle tørremidler – også kaldet desiccants. Et desiccant er et hygroskopisk materiale, der aktivt absorberer vandmolekyler fra luften inde i emballagen og dermed sænker den relative luftfugtighed til et sikkert niveau.",
+      },
+      {
+        type: "text",
+        content: "I modsætning til passiv ventilation eller emballageoptimering alene, virker desiccants uanset omgivelsernes variationer. De er en aktiv barriere mod fugt.",
+      },
+      {
+        type: "subheading",
+        content: "Sådan virker desiccants",
+      },
+      {
+        type: "text",
+        content: "Når et desiccant placeres inde i en emballage, begynder det straks at binde vandmolekyler fra den omgivende luft. Processen er fysisk eller kemisk afhængigt af typen, og den fortsætter, indtil desiccantets kapacitet er opbrugt – eller fugtniveauet er bragt så langt ned, at der ikke er mere at absorbere.",
+      },
+      {
+        type: "text",
+        content: "Resultatet er:",
+      },
+      {
+        type: "list",
+        items: [
+          "Lavere relativ luftfugtighed inde i emballagen",
+          "Reduceret kondensation ved temperaturudsving",
+          "Beskyttet produkt gennem hele transport- og opbevaringsforløbet",
+        ],
+      },
+      {
+        type: "subheading",
+        content: "Typer af industrielle tørremidler",
+      },
+      {
+        type: "callout",
+        title: "Silica gel",
+        content: "Silica gel er det mest udbredte desiccant til industriel brug. Det absorberer effektivt ved relative luftfugtighedsniveauer fra 20–90 % og er ikke-reaktivt, ikke-giftigt og godkendt til brug i emballage til bl.a. fødevarer og elektronik.",
+      },
+      {
+        type: "callout",
+        title: "Aktiveret lermineral (clay desiccants)",
+        content: "Lerbaserede tørremidler er en budgetvenlig løsning til generel transport og opbevaring. De fungerer bedst ved moderate temperaturer og er et godt valg, når kravene til fugtabsorption ikke er ekstreme, og prisen er en vigtig faktor.",
+      },
+      {
+        type: "callout",
+        title: "Molecular sieves (molekylærsigte)",
+        content: "Molecular sieves er den mest effektive desiccanttype ved meget lav relativ luftfugtighed. De absorberer vandmolekyler ned til under 10 % RH og bruges primært i kritiske applikationer inden for medicinalindustrien, avanceret elektronik og luftfartsindustrien.",
+      },
+      {
+        type: "callout",
+        title: "Calciumklorid-baserede desiccants",
+        content: "Calciumklorid absorberer op til flere gange sin egen vægt i vand og er særligt velegnet til containerfragt og situationer med ekstrem fugt. Det er den foretrukne løsning mod container rain.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvornår bør du bruge desiccants?",
+      },
+      {
+        type: "text",
+        content: "Desiccants er relevante i de fleste industrier og emballagesituationer. Behovet er størst, når ét eller flere af følgende forhold gælder:",
+      },
+      {
+        type: "list",
+        items: [
+          "Transporttiden overstiger 24–48 timer",
+          "Ruten krydser klimazoner eller årstider",
+          "Produktet er metaller, elektronik, fødevarer, tekstiler, medicin eller hygiejneartikler",
+          "Emballagen er lavet af hygroskopiske materialer som pap eller træ",
+          "Varerne skal opbevares over en længere periode inden salg eller brug",
+        ],
+      },
+      {
+        type: "text",
+        content: "Typiske anvendelsesområder inkluderer e-commerce forsendelser, søcontainere, industriel langtidsopbevaring, farmaceutiske produkter og eksport til lande med høj luftfugtighed.",
+      },
+
+      {
+        type: "heading",
+        content: "Hvor meget desiccant skal du bruge?",
+      },
+      {
+        type: "text",
+        content: "Mængden af desiccant afhænger af flere faktorer:",
+      },
+      {
+        type: "list",
+        items: [
+          "Emballagens indre volumen: Jo større volumen, desto mere fugt skal absorberes",
+          "Transporttid og rute: Lange ruter over klimazoner kræver høj kapacitet",
+          "Produkttype og fugtfølsomhed: Meget følsomme produkter kræver lavere RH-mål",
+          "Emballagematerialets egenskaber: Hygroskopiske materialer tilfører ekstra fugtbelastning",
+        ],
+      },
+      {
+        type: "text",
+        content: "Den korrekte mængde er forskellig fra situation til situation. Kontakt os for specifik vejledning tilpasset dine produkter, din emballage og dine transportruter.",
+      },
+
+      {
+        type: "heading",
+        content: "Praktiske trin: Sådan reducerer du fugt i emballage",
+      },
+      {
+        type: "numbered-list",
+        items: [
+          "Pak i kontrollerede omgivelser. Undgå pakning i perioder med høj luftfugtighed, fx tidligt om morgenen eller i rum uden klimakontrol.",
+          "Brug lufttæt eller fugtbarriererende emballage. Polyethylen-folie og aluminiumsfolie reducerer fugtudveksling med omgivelserne markant.",
+          "Tilsæt det rette desiccant. Vælg type og mængde ud fra produktet, emballagen og transportforløbet.",
+          "Minimer temperaturudsving. Isolering og korrekt lastning i containere reducerer kondensationsrisikoen.",
+          "Overvej fugtindikator. Fugtindikatorkort inde i emballagen giver dig og kunden synlig dokumentation for, at fugtniveauet har været under kontrol.",
+        ],
+      },
+
+      {
+        type: "heading",
+        content: "Ofte stillede spørgsmål om fugt i emballage",
+      },
+      {
+        type: "subheading",
+        content: "Hvad forårsager fugt i emballage?",
+      },
+      {
+        type: "text",
+        content: "Fugt i emballage opstår primært som følge af kondens ved temperaturudsving, høj luftfugtighed ved pakningstidspunktet og fugtafgivelse fra hygroskopiske materialer som pap og træ.",
+      },
+      {
+        type: "subheading",
+        content: "Hvordan fjerner man fugt fra emballage?",
+      },
+      {
+        type: "text",
+        content: "Den mest effektive metode er at anvende industrielle tørremidler (desiccants), der aktivt absorberer vandmolekyler fra luften inde i emballagen og sænker den relative luftfugtighed.",
+      },
+      {
+        type: "subheading",
+        content: "Hvad er container rain?",
+      },
+      {
+        type: "text",
+        content: "Container rain er et fænomen, hvor fugt inde i en søcontainer kondenserer på containervægge og tag og drypper ned på varerne. Det opstår typisk ved temperaturvariationer under søtransport og forebygges effektivt med calciumklorid-desiccants.",
+      },
+      {
+        type: "subheading",
+        content: "Hvilken type desiccant er bedst til elektronik?",
+      },
+      {
+        type: "text",
+        content: "Silica gel er det foretrukne valg til elektronik, da det absorberer effektivt over et bredt fugtniveau og er ikke-reaktivt. Til meget kritiske komponenter kan molecular sieves være nødvendige.",
+      },
+      {
+        type: "subheading",
+        content: "Kan fugt ødelægge produkter under transport?",
+      },
+      {
+        type: "text",
+        content: "Ja. Fugt kan forårsage rust på metaldele, kortslutninger i elektronik, skimmel i organiske materialer og deformering af emballage. Selv kortvarig eksponering for høj luftfugtighed kan være nok til at gøre et produkt usælgeligt.",
+      },
+      {
+        type: "subheading",
+        content: "Kan man genbruge desiccants?",
+      },
+      {
+        type: "text",
+        content: "Visse typer, herunder silica gel, kan regenereres ved opvarmning og genanvendes. Calciumklorid-baserede desiccants er typisk engangsprodukter.",
+      },
+
+      {
+        type: "heading",
+        content: "Beskyt dine produkter mod fugt – fra afsendelse til levering",
+      },
+      {
+        type: "text",
+        content: "Fugt i emballage er et forudsigeligt problem med en konkret løsning. Med de rette industrielle tørremidler kan du beskytte dine produkter effektivt, reducere reklamationer og sikre, at varerne ankommer i den stand, dine kunder forventer.",
+      },
+      {
+        type: "text",
+        content: "Hos Desiccant.com leverer vi industrielle tørremidler til producenter, eksportører og logistikvirksomheder i hele Europa. Vores sortiment dækker alle behov – fra standardposer til silica gel til specialiserede containerabsorbere mod container rain.",
+      },
+    ],
+
+    cta: {
+      heading: "Brug for hjælp til at vælge den rette fugtbeskyttelse?",
+      description: "Kontakt os for rådgivning om den rigtige løsning til dine produkter og transportruter.",
       buttonText: "Kontakt vores team",
       buttonLink: "/contact",
     },

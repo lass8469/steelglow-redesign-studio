@@ -33,6 +33,14 @@ const BlogPage = () => {
 
   const blogPosts = [
     {
+      slug: "moisture-in-packaging",
+      titleKey: "blogPage.post17.title",
+      excerptKey: "blogPage.post17.excerpt",
+      date: "2026-03-15",
+      readTime: "15",
+      category: "Guide",
+    },
+    {
       slug: "what-is-a-desiccant-complete-guide",
       titleKey: "blogPage.post16.title",
       excerptKey: "blogPage.post16.excerpt",

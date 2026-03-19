@@ -153,6 +153,8 @@ export const articleRelatedSlugs: Record<string, string[]> = {
   "dry-bag-retail-moisture-absorber-guide": ["silica-gel-desiccant-guide", "mold-growth-timelines-80-rh", "drybag-i-clay-desiccant-guide"],
   "container-desiccant-stuffing-guide": ["container-rain-dew-point-physics", "drybag-i-clay-desiccant-guide", "mold-growth-timelines-80-rh"],
   "molecular-sieve-pore-size-guide": ["chemistry-clay-mo-clay-vs-silica-gel", "silica-gel-desiccant-guide", "dry-bag-retail-moisture-absorber-guide"],
+  "what-is-a-desiccant-complete-guide": ["moisture-in-packaging", "silica-gel-desiccant-guide", "container-rain-dew-point-physics"],
+  "moisture-in-packaging": ["what-is-a-desiccant-complete-guide", "container-rain-dew-point-physics", "mold-growth-timelines-80-rh"],
 };
 
 // Applications page → product links per industry
