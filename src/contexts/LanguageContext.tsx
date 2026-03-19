@@ -1326,6 +1326,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post15.excerpt": "Molekylsigter arbejder på molekylært niveau — de udvælger fysisk, hvilke molekyler der må trænge ind i deres struktur. Den selektivitet bestemmes næsten udelukkende af én variabel: porestørrelse.",
     "blogPage.post16.title": "Hvad er desiccant? Komplet guide til tørremidler",
     "blogPage.post16.excerpt": "En desiccant er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften. Denne komplette guide dækker typer, dimensionering, anvendelser og valg af det rigtige tørremiddel.",
+    "blogPage.post17.title": "Fugt i emballage: Årsager, skader og effektiv forebyggelse",
+    "blogPage.post17.excerpt": "Alt om fugt i emballage: årsager, skadetyper og den mest effektive løsning. Læs den komplette guide fra Desiccant.com – specialister i industrielle tørremidler.",
     "relatedArticles.molecularSieveGuide": "guide til molekylsigte porestørrelse",
 
     // Downloads Page
