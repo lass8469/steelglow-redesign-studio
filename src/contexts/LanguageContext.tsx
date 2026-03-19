@@ -365,6 +365,8 @@ const translations: Record<Language, Record<string, string>> = {
     "blogPage.post15.excerpt": "Molecular sieves work at the molecular level — physically selecting which molecules enter their structure. That selectivity is determined almost entirely by one variable: pore size.",
     "blogPage.post16.title": "What is a Desiccant? Complete guide to desiccants",
     "blogPage.post16.excerpt": "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air. This complete guide covers desiccant types, sizing, applications, and how to choose the right one.",
+    "blogPage.post17.title": "Moisture in packaging: Causes, damage, and effective prevention",
+    "blogPage.post17.excerpt": "Everything about moisture in packaging: causes, types of damage, and the most effective solution. Read the complete guide from Desiccant.com – specialists in industrial desiccants.",
     "relatedArticles.molecularSieveGuide": "molecular sieve pore size guide",
 
     // Downloads Page
