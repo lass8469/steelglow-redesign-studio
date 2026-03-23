@@ -23,8 +23,14 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-6VBQ7QYGD1');
+      var screenRes = window.screen.width + 'x' + window.screen.height;
+      var botResolutions = ['1280x1200', '3840x2160', '800x600', '1920x890', '1024x1024', '1600x1600', '2000x2000', '1366x1366'];
+      if (botResolutions.indexOf(screenRes) === -1) {
+        gtag('js', new Date());
+        gtag('config', 'G-6VBQ7QYGD1', {
+          'traffic_type': 'external'
+        });
+      }
     </script>
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
