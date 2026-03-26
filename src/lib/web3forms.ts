@@ -1,4 +1,4 @@
-const WEB3FORMS_ACCESS_KEY = "2a8d7c6c-8bdf-47bf-8a04-e171651dd101";
+const WEB3FORMS_ACCESS_KEY = "079a8668-2fee-48c7-9065-e674c666bf3d";
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 interface Web3FormsData {
