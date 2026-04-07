@@ -308,27 +308,27 @@ const ContactPage = () => {
                   href="https://www.linkedin.com/company/dry-bag-denmark/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 transition-colors"
+                  className="group inline-flex items-center gap-2"
                 >
-                  <Linkedin className="w-5 h-5 text-primary group-hover:text-muted-foreground transition-colors" />
+                  <Linkedin className="w-5 h-5 text-primary" />
                   <span className="text-muted-foreground group-hover:text-primary transition-colors">LinkedIn</span>
                 </a>
                 <a 
                   href="https://www.facebook.com/profile.php?id=61554673160641"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 transition-colors"
+                  className="group inline-flex items-center gap-2"
                 >
-                  <Facebook className="w-5 h-5 text-primary group-hover:text-muted-foreground transition-colors" />
+                  <Facebook className="w-5 h-5 text-primary" />
                   <span className="text-muted-foreground group-hover:text-primary transition-colors">Facebook</span>
                 </a>
                 <a 
                   href="https://www.youtube.com/@DRY-BAG"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 transition-colors"
+                  className="group inline-flex items-center gap-2"
                 >
-                  <Youtube className="w-5 h-5 text-primary group-hover:text-muted-foreground transition-colors" />
+                  <Youtube className="w-5 h-5 text-primary" />
                   <span className="text-muted-foreground group-hover:text-primary transition-colors">YouTube</span>
                 </a>
                 </div>
