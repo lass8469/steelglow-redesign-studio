@@ -321,6 +321,15 @@ const ContactPage = () => {
                   <Facebook className="w-5 h-5" />
                   <span>Facebook</span>
                 </a>
+                <a 
+                  href="https://www.youtube.com/@DRY-BAG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Youtube className="w-5 h-5" />
+                  <span>YouTube</span>
+                </a>
               </div>
 
               <div className="mt-8 p-6 bg-card rounded-sm border border-border">
