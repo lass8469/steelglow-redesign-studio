@@ -308,28 +308,28 @@ const ContactPage = () => {
                   href="https://www.linkedin.com/company/dry-bag-denmark/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                  className="group inline-flex items-center gap-2 transition-colors"
                 >
-                  <Linkedin className="w-5 h-5" />
-                  <span>LinkedIn</span>
+                  <Linkedin className="w-5 h-5 text-primary group-hover:text-muted-foreground transition-colors" />
+                  <span className="text-muted-foreground group-hover:text-primary transition-colors">LinkedIn</span>
                 </a>
                 <a 
                   href="https://www.facebook.com/profile.php?id=61554673160641"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                  className="group inline-flex items-center gap-2 transition-colors"
                 >
-                  <Facebook className="w-5 h-5" />
-                  <span>Facebook</span>
+                  <Facebook className="w-5 h-5 text-primary group-hover:text-muted-foreground transition-colors" />
+                  <span className="text-muted-foreground group-hover:text-primary transition-colors">Facebook</span>
                 </a>
                 <a 
                   href="https://www.youtube.com/@DRY-BAG"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                  className="group inline-flex items-center gap-2 transition-colors"
                 >
-                  <Youtube className="w-5 h-5" />
-                  <span>YouTube</span>
+                  <Youtube className="w-5 h-5 text-primary group-hover:text-muted-foreground transition-colors" />
+                  <span className="text-muted-foreground group-hover:text-primary transition-colors">YouTube</span>
                 </a>
                 </div>
               </div>
