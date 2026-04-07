@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Linkedin, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -112,6 +112,7 @@ const ContactPage = () => {
   const contactInfo = [
     { icon: Mail, label: t("contactPage.email"), value: "dry-bag@desiccant.com", href: "mailto:dry-bag@desiccant.com" },
     { icon: Phone, label: t("contactPage.phone"), value: "+45 86 19 05 00", href: "tel:+4586190500" },
+    { icon: MessageCircle, label: "WhatsApp", value: "+45 22 63 17 00", href: "https://wa.me/4522631700" },
     { icon: MapPin, label: t("contactPage.address"), value: "Odinsvej 21, 8722 Hedensted, Denmark", href: null },
     { icon: Clock, label: t("contactPage.hours"), value: t("contactPage.hoursValue"), href: null },
   ];
