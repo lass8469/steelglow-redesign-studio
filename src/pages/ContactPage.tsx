@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, Linkedin, MessageCircle, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Linkedin, MessageCircle, Facebook, Youtube } from "lucide-react";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -320,6 +320,15 @@ const ContactPage = () => {
                 >
                   <Facebook className="w-5 h-5" />
                   <span>Facebook</span>
+                </a>
+                <a 
+                  href="https://www.youtube.com/@DRY-BAG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Youtube className="w-5 h-5" />
+                  <span>YouTube</span>
                 </a>
               </div>
 
