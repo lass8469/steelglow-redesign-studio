@@ -303,6 +303,7 @@ const ContactPage = () => {
 
               <div className="mt-8 pt-8 border-t border-border">
                 <h3 className="font-semibold text-foreground mb-4">{t("contactPage.followUs")}</h3>
+                <div className="flex flex-wrap gap-4">
                 <a 
                   href="https://www.linkedin.com/company/dry-bag-denmark/"
                   target="_blank"
@@ -330,6 +331,7 @@ const ContactPage = () => {
                   <Youtube className="w-5 h-5" />
                   <span>YouTube</span>
                 </a>
+                </div>
               </div>
 
               <div className="mt-8 p-6 bg-card rounded-sm border border-border">
