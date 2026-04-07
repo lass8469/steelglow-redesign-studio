@@ -312,6 +312,15 @@ const ContactPage = () => {
                   <Linkedin className="w-5 h-5" />
                   <span>LinkedIn</span>
                 </a>
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61554673160641"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Facebook className="w-5 h-5" />
+                  <span>Facebook</span>
+                </a>
               </div>
 
               <div className="mt-8 p-6 bg-card rounded-sm border border-border">
