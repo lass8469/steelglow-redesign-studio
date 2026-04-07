@@ -331,6 +331,7 @@ const ContactPage = () => {
                   <Youtube className="w-5 h-5" />
                   <span>YouTube</span>
                 </a>
+                </div>
               </div>
 
               <div className="mt-8 p-6 bg-card rounded-sm border border-border">
