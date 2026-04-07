@@ -2,6 +2,7 @@ import LocalizedLink from "./LocalizedLink";
 import MoistureBackground from "./MoistureBackground";
 import { useLanguage } from "@/contexts/LanguageContext";
 import Logo from "./Logo";
+import { Linkedin, Facebook, Youtube } from "lucide-react";
 
 const Footer = () => {
   const { t } = useLanguage();
