@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, Linkedin, MessageCircle, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Linkedin, MessageCircle, Facebook, Youtube } from "lucide-react";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
