@@ -834,7 +834,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "You don't actually choose between data loggers and desiccants; you need both. Desiccants control moisture; sensors document whether that control succeeded. Together they create a defendable, optimizable moisture management system that standalone desiccants cannot provide.",
+        content: "You don't actually choose between data loggers and desiccants; you need both. Desiccants control moisture; sensors document whether that control succeeded. Together they create a defendable, optimizable moisture management system that standalone desiccants cannot provide. Learn how to [verify your desiccant performance](/blog/data-logger-verification-guide) with recorded data.",
       },
       {
         type: "text",
