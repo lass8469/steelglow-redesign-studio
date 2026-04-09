@@ -781,7 +781,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Fugtindholdet i landbrugslast er desuden ikke en fast størrelse. En kaffebønne med 12 % fugtindhold i et miljø med 60 % relativ luftfugtighed vil gradvist afgive fugt, tabe vægt og potentielt udvikle bismage. Den samme bønne ved 75 % luftfugtighed vil derimod absorbere fugt, svulme op og blive sårbar over for skimmel. I modsætning til forarbejdede varer equilibrerer landbrugsprodukter aktivt med deres omgivelser hele vejen fra afsendelse til ankomst.",
+        content: "Fugtindholdet i landbrugslast er desuden ikke en fast størrelse. En kaffebønne med 12 % fugtindhold i et miljø med 60 % relativ luftfugtighed vil gradvist afgive fugt, tabe vægt og potentielt udvikle bismage. Den samme bønne ved 75 % luftfugtighed vil derimod absorbere fugt, svulme op og blive sårbar over for [skimmel inden for dage](/blog/mold-growth-timelines-80-rh). I modsætning til forarbejdede varer equilibrerer landbrugsprodukter aktivt med deres omgivelser hele vejen fra afsendelse til ankomst.",
       },
       {
         type: "heading",
