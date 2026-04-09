@@ -338,7 +338,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Fysikken er entydig: temperaturen vil variere, dugpunktskondensation vil forekomme, og fugtskader vil opstå — medmindre den fugt opfanges, før den kondenserer. Tørremidler repræsenterer den eneste passive, pålidelige, økonomisk skalerbare løsning på denne grundlæggende udfordring.",
+        content: "Fysikken er entydig: temperaturen vil variere, dugpunktskondensation vil forekomme, og fugtskader vil opstå — medmindre den fugt opfanges, før den kondenserer. Tørremidler repræsenterer den eneste passive, pålidelige, økonomisk skalerbare løsning på denne grundlæggende udfordring. Læs vores komplette guide til [containertørremidler og korrekt lastning](/blog/container-desiccant-stuffing-guide).",
       },
       {
         type: "text",
