@@ -370,7 +370,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Desiccant moisture absorbers work with physics rather than against it. These passive moisture control systems — typically calcium chloride or clay-based formulations — absorb water vapor from the air, preventing it from reaching dew point and condensing on surfaces.",
+        content: "Desiccant moisture absorbers work with physics rather than against it. These passive moisture control systems — typically [calcium chloride](/calcium-chloride) or [clay-based formulations](/drybag-i) — absorb water vapor from the air, preventing it from reaching dew point and condensing on surfaces.",
       },
       {
         type: "callout",
