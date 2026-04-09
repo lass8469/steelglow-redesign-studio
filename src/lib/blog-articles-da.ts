@@ -414,7 +414,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Adsorptionsisotermen for mo-ler viser overlegen ydeevne i de mellemfugtighedsområder, der er mest relevante for produktopbevaring og -forsendelse, typisk mellem 40% og 70% relativ fugtighed. Mens silikagel kan vise højere kapacitet ved ekstreme fugtighedsniveauer, yder lertørremidler mere effektivt under virkelige forhold, hvor forebyggelse af fugtighedssvingninger betyder mere end opnåelse af absolut tørhed.",
+        content: "Adsorptionsisotermen for mo-ler viser overlegen ydeevne i de mellemfugtighedsområder, der er mest relevante for produktopbevaring og -forsendelse, typisk mellem 40% og 70% relativ fugtighed. Mens silikagel kan vise højere kapacitet ved ekstreme fugtighedsniveauer, yder [lertørremidler som DRY-BAG I](/drybag-i) mere effektivt under virkelige forhold, hvor forebyggelse af fugtighedssvingninger betyder mere end opnåelse af absolut tørhed.",
       },
       {
         type: "heading",
