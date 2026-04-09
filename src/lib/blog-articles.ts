@@ -2727,7 +2727,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Container desiccants work by absorbing that airborne moisture before it condenses, keeping the relative humidity inside the container below the critical threshold — typically below 60% RH — at which mould, corrosion, and cargo damage become serious risks.",
+        content: "Container desiccants work by absorbing that airborne moisture before it condenses, keeping the relative humidity inside the container below the critical threshold — typically below 60% RH — at which [mould, corrosion, and cargo damage](/blog/mold-growth-timelines-80-rh) become serious risks.",
       },
       {
         type: "heading",
