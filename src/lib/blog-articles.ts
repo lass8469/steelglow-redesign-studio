@@ -2838,7 +2838,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Montmorillonite clay desiccants are a natural, cost-effective option that performs well at moderate temperatures. They are less effective in high-heat environments (above 50°C), where they can actually begin to release absorbed moisture — a critical limitation for containers passing through equatorial shipping lanes in peak summer.",
+        content: "Montmorillonite [clay desiccants like DRY-BAG I](/drybag-i) are a natural, cost-effective option that performs well at moderate temperatures. They are less effective in high-heat environments (above 50°C), where they can actually begin to release absorbed moisture — a critical limitation for containers passing through equatorial shipping lanes in peak summer.",
       },
       {
         type: "heading",
