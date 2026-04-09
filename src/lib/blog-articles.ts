@@ -979,7 +979,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Data loggers become essential rather than optional when shipping agricultural products because their behavior changes unpredictably based on initial moisture content, ambient conditions, and load characteristics that aren't fully knowable at loading.",
+        content: "[Temperature and humidity data loggers](/datalogger) become essential rather than optional when shipping agricultural products because their behavior changes unpredictably based on initial moisture content, ambient conditions, and load characteristics that aren't fully knowable at loading.",
       },
       {
         type: "text",
