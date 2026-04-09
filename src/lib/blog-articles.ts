@@ -3871,7 +3871,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Container rain is a phenomenon where moisture inside a sea container condenses on the container walls and ceiling and drips down onto the goods. It typically occurs due to temperature variations during sea transport and is effectively prevented with calcium chloride desiccants.",
+        content: "Container rain is a phenomenon where moisture inside a sea container condenses on the container walls and ceiling and drips down onto the goods. It typically occurs due to temperature variations during sea transport and is effectively prevented with [calcium chloride desiccants](/drybag-iii).",
       },
       {
         type: "subheading",
