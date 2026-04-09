@@ -81,7 +81,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Den fugtgradient, der udvikler sig under tørring, skaber også en damptrykgradient. Det fugtige indre har højt damptryk, mens det tørrere ydre har lavere damptryk. Hastigheden af bevægelsen afhænger dog af, hvor let vanddamp kan diffundere gennem træstrukturen. Tætte hårdtræsorter modstår fugtbevægelse langt mere end porøse nåletræer, hvilket er grunden til, at egepaller tager væsentligt længere tid at tørre end fyrrpaller af identiske dimensioner.",
+        content: "Den fugtgradient, der udvikler sig under tørring, skaber også en damptrykgradient. Det fugtige indre har højt damptryk, mens det tørrere ydre har lavere damptryk. Hastigheden af bevægelsen afhænger dog af, hvor let vanddamp kan diffundere gennem træstrukturen. Tætte hårdtræsorter modstår fugtbevægelse langt mere end porøse nåletræer, hvilket er grunden til, at egepaller tager væsentligt længere tid at tørre end fyrrpaller af identiske dimensioner. Denne dynamik er afgørende for at forstå [kondens i containere](/blog/container-rain-dew-point-physics).",
       },
       {
         type: "heading",
