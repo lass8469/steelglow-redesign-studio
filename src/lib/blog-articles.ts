@@ -962,7 +962,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Standard container desiccants absorb moisture from the air but cannot stop agricultural cargo from generating moisture through respiration. A calcium chloride desiccant rated for 10 liters of moisture capacity sounds impressive until you calculate that a container of coffee beans respiring at typical rates releases 15-20 liters of moisture over a 30-day voyage.",
+        content: "Standard [container desiccants](/blog/container-desiccant-stuffing-guide) absorb moisture from the air but cannot stop agricultural cargo from generating moisture through respiration. A calcium chloride desiccant rated for 10 liters of moisture capacity sounds impressive until you calculate that a container of coffee beans respiring at typical rates releases 15-20 liters of moisture over a 30-day voyage.",
       },
       {
         type: "text",
