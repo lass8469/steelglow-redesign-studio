@@ -250,7 +250,7 @@ export const articlesDa: Record<string, Article> = {
         items: [
           "Ækvatorruter til tempererede zoner: En container, der forlader Singapore (gennemsnit 27°C) mod Hamborg (gennemsnit 9°C), vil opleve en 18°C temperaturforskel — nok til at halvere luftens fugtkapacitet.",
           "Daglige cyklusser: Selv på en enkelt rute oplever containere dag-nat temperaturudsving på 15-20°C. Stålcontainere opvarmes hurtigt under direkte sollys (overfladetemperaturer kan overstige 60°C) og afkøles hurtigt om natten, hvilket skaber flere kondensationscyklusser under en enkelt rejse.",
-          "Godset selv som fugtkilde: Mange produkter (tømmer, landbrugsvarer, tekstiler) indeholder hygroskopiske materialer, der afgiver fugt, når temperaturerne stiger, og tilføjer til containerens fugtbelastning.",
+          "Godset selv som fugtkilde: Mange produkter (tømmer, landbrugsvarer, tekstiler) indeholder hygroskopiske materialer, der afgiver fugt, når temperaturerne stiger, og tilføjer til containerens fugtbelastning. [Træpaller er en stor bidragyder](/blog/vapor-pressure-wooden-pallets).",
           "Skrogspositioneringseffekter: Containere på dækket oplever mere ekstreme temperaturvariationer fra solstråling og vindchill, mens containere i lastrummet påvirkes af skrogets temperatur.",
         ],
       },
