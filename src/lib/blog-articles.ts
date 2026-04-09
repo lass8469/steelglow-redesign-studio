@@ -1539,7 +1539,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Moisture is one of the most destructive and underestimated forces in global shipping. From corroded metal parts to mould-covered food products, from peeling labels to caked powder — container rain claims cost exporters billions each year. And yet the solution has existed since 1979, handcrafted in Denmark, and refined over four decades into what is now widely regarded as the most effective and sustainable container desiccant on the market: the original DRY BAG I.",
+        content: "Moisture is one of the most destructive and underestimated forces in global shipping. From corroded metal parts to mould-covered food products, from peeling labels to caked powder — [container rain](/blog/container-rain-dew-point-physics) claims cost exporters billions each year. And yet the solution has existed since 1979, handcrafted in Denmark, and refined over four decades into what is now widely regarded as the most effective and sustainable container desiccant on the market: the original DRY BAG I.",
       },
       {
         type: "text",
