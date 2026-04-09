@@ -2229,7 +2229,7 @@ export const articles: Record<string, Article> = {
       {
         type: "callout",
         title: "Combined Protection Strategy",
-        content: "For comprehensive cargo protection, logistics operators increasingly combine Anti-Slip Sheets, dunnage bags, and edge protectors sourced through a single supplier for simplicity and cost efficiency.",
+        content: "For comprehensive cargo protection, logistics operators increasingly combine Anti-Slip Sheets, [dunnage bags](/dunnage-bag), and [edge protectors](/edge-protectors) sourced through a single supplier for simplicity and cost efficiency.",
       },
       {
         type: "heading",
