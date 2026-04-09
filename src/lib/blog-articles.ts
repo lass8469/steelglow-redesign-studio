@@ -249,7 +249,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Understanding vapor pressure transforms moisture management from a vague concept of \"letting wood dry\" into a controllable process with measurable parameters and predictable outcomes. By recognizing that moisture movement follows vapor pressure gradients determined by temperature, humidity, and wood moisture content, operations can implement targeted interventions that actually remove moisture rather than simply hoping it disappears over time.",
+        content: "Understanding vapor pressure transforms moisture management from a vague concept of \"letting wood dry\" into a controllable process with measurable parameters and predictable outcomes. By recognizing that moisture movement follows vapor pressure gradients determined by temperature, humidity, and wood moisture content, operations can implement targeted interventions that actually remove moisture rather than simply hoping it disappears over time. For comprehensive protection during shipping, consider [container desiccant solutions](/blog/container-desiccant-stuffing-guide) tailored to your cargo.",
       },
     ],
 
