@@ -93,7 +93,7 @@ const renderSection = (section: ArticleSection, index: number) => {
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-1">{section.title}</h4>
-              <p className="text-muted-foreground">{section.content}</p>
+              <p className="text-muted-foreground">{parseInlineLinks(section.content)}</p>
             </div>
           </div>
         </div>
