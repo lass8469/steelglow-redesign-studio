@@ -128,7 +128,7 @@ export const articlesDa: Record<string, Article> = {
         type: "list",
         items: [
           "Ovntørring: Den mest kontrollerede metode — kombinerer forhøjede temperaturer med præcist styrede fugtighedsniveauer og luftcirkulation for at opretholde optimale damptrykgradienter gennem hele tørringscyklussen.",
-          "Affugtning: Bruger kølebaserede eller tørremiddelbaserede affugtere til løbende at fjerne fugt fra luften i et lukket rum og opretholde en konsistent drivkraft for fugt til at forlade træet.",
+          "Affugtning: Bruger kølebaserede eller tørremiddelbaserede affugtere til løbende at fjerne fugt fra luften i et lukket rum og opretholde en konsistent drivkraft for fugt til at forlade træet. Læs mere om [hvordan tørremidler virker](/blog/what-is-a-desiccant-complete-guide).",
           "Optimeret lufttørring: Stabling af paller med tilstrækkelig afstand, brug af ventilatorer til luftbevægelse og placering af stabler i områder med lavere omgivende fugtighed for at øge damptrykforskellen.",
         ],
       },
