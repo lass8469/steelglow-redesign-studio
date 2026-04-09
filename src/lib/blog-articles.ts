@@ -3664,7 +3664,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "A well-known phenomenon in international container shipping is what is called container rain. The air's ability to hold moisture drops significantly when temperature falls. In a container that heats up during the day and cools down at night, moisture from cargo, pallets, and air is forced out as water droplets – which collect on the ceiling and walls and drip down onto the cargo.",
+        content: "A well-known phenomenon in international container shipping is what is called [container rain](/blog/container-rain-dew-point-physics). The air's ability to hold moisture drops significantly when temperature falls. In a container that heats up during the day and cools down at night, moisture from cargo, pallets, and air is forced out as water droplets – which collect on the ceiling and walls and drip down onto the cargo.",
       },
       {
         type: "text",
