@@ -3513,7 +3513,7 @@ export const articles: Record<string, Article> = {
       { type: "heading", content: "Sustainability and circular economy" },
       {
         type: "text",
-        content: "Reusable desiccants (silica gel, molecular sieve, DRY-BAG I) can be regenerated and reused hundreds of times if handled correctly. This reduces material consumption and waste and supports companies' sustainability goals.",
+        content: "Reusable desiccants ([silica gel](/silica), [molecular sieve](/molecular-sieve), DRY-BAG I) can be regenerated and reused hundreds of times if handled correctly. This reduces material consumption and waste and supports companies' sustainability goals.",
       },
 
       { type: "heading", content: "Frequently asked questions about desiccants" },
