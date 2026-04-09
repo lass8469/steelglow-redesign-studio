@@ -3602,7 +3602,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Moisture in packaging is one of the most underestimated causes of product damage throughout the supply chain. Every year, companies suffer significant losses due to rust, mould, deformed packaging, and dissatisfied customers – damage that in many cases could have been avoided with the right moisture protection.",
+        content: "Moisture in packaging is one of the most underestimated causes of product damage throughout the supply chain. Every year, companies suffer significant losses due to rust, [mould](/blog/mold-growth-timelines-80-rh), deformed packaging, and dissatisfied customers – damage that in many cases could have been avoided with the right moisture protection.",
       },
       {
         type: "text",
