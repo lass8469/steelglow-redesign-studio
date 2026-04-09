@@ -314,7 +314,7 @@ export const articles: Record<string, Article> = {
         items: [
           "Equatorial to temperate routes: A container leaving Singapore (average 27°C) bound for Hamburg (average 9°C) will experience an 18°C temperature differential — enough to cut air's moisture capacity by more than half.",
           "Diurnal cycling: Even on a single route, containers experience day-night temperature swings of 15–20°C. Steel containers heat rapidly under direct sunlight (surface temperatures can exceed 60°C) and cool quickly at night, creating multiple condensation cycles during a single voyage.",
-          "Cargo itself as a moisture source: Many products (timber, agricultural goods, textiles) contain hygroscopic materials that release moisture as temperatures rise, adding to the container's humidity burden.",
+          "Cargo itself as a moisture source: Many products (timber, agricultural goods, textiles) contain hygroscopic materials that release moisture as temperatures rise, adding to the container's humidity burden. [Wooden pallets are a major contributor](/blog/vapor-pressure-wooden-pallets).",
           "Hull positioning effects: Containers on deck experience more extreme temperature variations from solar radiation and wind chill, while those in the hold face different thermal dynamics from the ship's hull temperature.",
         ],
       },
