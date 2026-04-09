@@ -2105,7 +2105,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The solution does not have to be complicated or expensive. Anti-Slip Sheets offer a proven, cost-effective way to increase friction between layers of goods and keep every pallet stack exactly where it should be.",
+        content: "The solution does not have to be complicated or expensive. [Anti-Slip Sheets](/anti-slip) offer a proven, cost-effective way to increase friction between layers of goods and keep every pallet stack exactly where it should be.",
       },
       {
         type: "quote",
@@ -2145,7 +2145,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Anti-Slip Sheets are a versatile solution that adds value across virtually every sector that moves palletised goods. Industries currently benefiting from this product include:",
+        content: "Anti-Slip Sheets are a versatile solution that adds value across virtually every sector that moves palletised goods. Combined with [dunnage bags for void-fill protection](/blog/dunnage-bags-container-loading-guide), they form a comprehensive approach. Industries currently benefiting include:",
       },
       {
         type: "list",
@@ -2273,7 +2273,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Yes. Anti-Slip Sheets are paper-based and can be recycled alongside cardboard in standard paper and cardboard recycling streams.",
+        content: "Yes. Anti-Slip Sheets are paper-based and can be recycled alongside cardboard in standard paper and cardboard recycling streams. For pallet bands that complement slip-sheets, see [Stabustrap reusable strapping](/blog/stabustrap-reusable-pallet-strapping).",
       },
       {
         type: "subheading",
@@ -2632,7 +2632,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Danish consumers and businesses rightly hold sustainability to a high standard. DRY BAG Retail addresses this on multiple levels. The Moclay formula is non-toxic and safe for standard household disposal at end of life. The bags are made from breathable non-woven material using locally sourced inputs and environmentally responsible production methods in Denmark.",
+        content: "Danish consumers and businesses rightly hold sustainability to a high standard. DRY BAG Retail addresses this on multiple levels. The Moclay formula is non-toxic and safe for standard household disposal at end of life. Learn more about [the science behind clay desiccants](/blog/chemistry-clay-mo-clay-vs-silica-gel). The bags are made from breathable non-woven material using locally sourced inputs and environmentally responsible production methods in Denmark.",
       },
       {
         type: "text",
@@ -2793,7 +2793,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Not all desiccants are created equal. The right product depends on the voyage duration, the nature of your cargo, the expected climate route, and the total air volume inside the loaded container.",
+        content: "Not all desiccants are created equal. Understanding [what a desiccant is](/blog/what-is-a-desiccant-complete-guide) helps you evaluate your options. The right product depends on the voyage duration, the nature of your cargo, the expected climate route, and the total air volume inside the loaded container.",
       },
       {
         type: "subheading",
@@ -3567,7 +3567,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "From a simple silica gel sachet in a box of electronics to industrial container desiccants protecting expensive machinery during sea freight, it always comes down to the same fundamental principle: keeping relative humidity below the critical level that can cause damage.",
+        content: "From a simple [silica gel sachet](/blog/silica-gel-desiccant-guide) in a box of electronics to industrial container desiccants protecting expensive machinery during sea freight, it always comes down to the same fundamental principle: keeping relative humidity below the critical level that can cause damage.",
       },
       {
         type: "text",
@@ -3738,7 +3738,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Unlike passive ventilation or packaging optimisation alone, desiccants work regardless of variations in the surrounding environment. They are an active barrier against moisture.",
+        content: "Unlike passive ventilation or packaging optimisation alone, desiccants work regardless of variations in the surrounding environment. For container-scale challenges, [clay-based DRY-BAG solutions](/drybag-i) provide sustained protection. They are an active barrier against moisture.",
       },
       {
         type: "subheading",
