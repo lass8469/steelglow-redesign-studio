@@ -136,7 +136,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The moisture gradient that develops during drying creates a vapor pressure gradient as well. The wet interior has high vapor pressure, while the drier exterior has lower vapor pressure. However, the rate of movement depends on how easily water vapor can diffuse through the wood structure. Dense hardwoods resist moisture movement far more than porous softwoods, which is why oak pallets take substantially longer to dry than pine pallets of identical dimensions.",
+        content: "The moisture gradient that develops during drying creates a vapor pressure gradient as well. The wet interior has high vapor pressure, while the drier exterior has lower vapor pressure. However, the rate of movement depends on how easily water vapor can diffuse through the wood structure. Dense hardwoods resist moisture movement far more than porous softwoods, which is why oak pallets take substantially longer to dry than pine pallets of identical dimensions. Understanding this dynamic is essential for [preventing condensation inside containers](/blog/container-rain-dew-point-physics).",
       },
 
       {
