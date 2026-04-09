@@ -670,7 +670,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Data loggers are documentation tools. They passively record temperature, humidity, shock, light exposure, or other environmental variables at preset intervals throughout a shipment's journey. A data logger doesn't prevent a single drop of condensation, but it tells you exactly when, where, and how badly conditions deteriorated.",
+        content: "[Data loggers](/datalogger) are documentation tools. They passively record temperature, humidity, shock, light exposure, or other environmental variables at preset intervals throughout a shipment's journey. A data logger doesn't prevent a single drop of condensation, but it tells you exactly when, where, and how badly conditions deteriorated.",
       },
       {
         type: "text",
