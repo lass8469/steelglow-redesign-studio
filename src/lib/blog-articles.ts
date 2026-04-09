@@ -1938,7 +1938,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Desiccants — whether silica gel, molecular sieve, calcium chloride, or a container desiccant like the DRY BAG range — are engineered to absorb moisture from the air. When correctly specified and deployed, they are highly effective at preventing the condensation, corrosion, mould, and humidity-related damage that plague international freight.",
+        content: "Desiccants — whether [silica gel](/silica), [molecular sieve](/molecular-sieve), calcium chloride, or a container desiccant like the [DRY BAG range](/drybag-i) — are engineered to absorb moisture from the air. When correctly specified and deployed, they are highly effective at preventing the condensation, corrosion, mould, and humidity-related damage that plague international freight.",
       },
       {
         type: "text",
