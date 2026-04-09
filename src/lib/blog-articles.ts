@@ -192,7 +192,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "For operations without specialized drying equipment, understanding vapor pressure still informs better practices. Storing pallets in climate-controlled spaces prevents moisture reabsorption. Using moisture meters to verify pallets have reached equilibrium with storage conditions before shipping prevents surprises.",
+        content: "For operations without specialized drying equipment, understanding vapor pressure still informs better practices. Storing pallets in climate-controlled spaces prevents moisture reabsorption. Using [moisture meters and data loggers](/datalogger) to verify pallets have reached equilibrium with storage conditions before shipping prevents surprises.",
       },
 
       {
