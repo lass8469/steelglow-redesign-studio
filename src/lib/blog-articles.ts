@@ -1346,7 +1346,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The transit journey from warehouse to doorstep can expose packages to significant humidity swings — heated trucks, cold loading docks, humid climates. A correctly sized desiccant pack inside the shipping box acts as an invisible moisture barrier, preventing condensation, corrosion, and mold from forming before the customer opens the package.",
+        content: "The transit journey from warehouse to doorstep can expose packages to significant humidity swings — heated trucks, cold loading docks, humid climates. A correctly sized desiccant pack inside the shipping box acts as an invisible moisture barrier, preventing condensation, corrosion, and [mold from forming](/blog/mold-growth-timelines-80-rh) before the customer opens the package.",
       },
       {
         type: "subheading",
