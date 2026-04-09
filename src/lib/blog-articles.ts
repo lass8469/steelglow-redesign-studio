@@ -2441,9 +2441,9 @@ export const articles: Record<string, Article> = {
       {
         type: "list",
         items: [
-          "Anti-slip sheets placed between pallet layers add friction that resists lateral shifting, working alongside Stabustrap's perimeter restraint to create a more stable stack overall.",
-          "Edge protectors at the corners of pallet loads shield packaging from the localised pressure of any strapping or banding system.",
-          "For outbound shipments, dunnage bags address the void-fill and load-shifting challenges of container transport, while desiccants such as DRY BAG I protect sensitive cargo from humidity damage during transit.",
+          "[Anti-slip sheets](/anti-slip) placed between pallet layers add friction that resists lateral shifting, working alongside Stabustrap's perimeter restraint to create a more stable stack overall.",
+          "[Edge protectors](/edge-protectors) at the corners of pallet loads shield packaging from the localised pressure of any strapping or banding system.",
+          "For outbound shipments, [dunnage bags](/dunnage-bag) address the void-fill and load-shifting challenges of container transport, while desiccants such as [DRY BAG I](/drybag-i) protect sensitive cargo from humidity damage during transit.",
         ],
       },
       {
