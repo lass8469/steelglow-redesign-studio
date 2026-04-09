@@ -1111,7 +1111,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The relationship between relative humidity and surface moisture is complex. A container at 80% RH doesn't mean every surface has liquid water. Temperature matters enormously. A surface at the same temperature as the surrounding air at 80% RH remains dry. But a surface just 2-3°C cooler than the air can reach its dew point, where water vapor condenses into liquid.",
+        content: "The relationship between relative humidity and surface moisture is complex. A container at 80% RH doesn't mean every surface has liquid water. Temperature matters enormously. A surface at the same temperature as the surrounding air at 80% RH remains dry. But a surface just 2-3°C cooler than the air can reach its dew point, where water vapor [condenses into liquid — the container rain effect](/blog/container-rain-dew-point-physics).",
       },
       {
         type: "text",
