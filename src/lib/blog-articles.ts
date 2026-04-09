@@ -2101,7 +2101,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Every year, businesses across Denmark and the wider Nordic region lose significant revenue to cargo damage caused by one preventable problem: load shifting during transport. Whether goods are travelling by truck along Danish motorways, being transferred between distribution hubs, or loaded into ocean containers, the forces acting on a pallet stack are relentless. Acceleration, braking, cornering, and vibration all conspire to move stacked layers out of alignment. When that happens, packaging is crushed, products are damaged, and returns pile up.",
+        content: "Every year, businesses across Denmark and the wider Nordic region lose significant revenue to cargo damage caused by one preventable problem: load shifting during transport. Whether goods are travelling by truck along Danish motorways, being transferred between distribution hubs, or loaded into ocean containers, the forces acting on a pallet stack are relentless. Acceleration, braking, cornering, and vibration all conspire to move stacked layers out of alignment. When that happens, packaging is crushed, products are damaged, and returns pile up. For container shipments, this risk compounds with [moisture damage from condensation](/blog/container-rain-dew-point-physics).",
       },
       {
         type: "text",
