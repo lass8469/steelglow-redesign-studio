@@ -2723,7 +2723,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Wooden pallet boards and container floors are particularly problematic, as they absorb and slowly release moisture throughout the voyage. A floor that looks perfectly dry to the eye can hold enough residual moisture to raise the relative humidity inside a sealed container to damaging levels within days.",
+        content: "[Wooden pallet boards](/blog/vapor-pressure-wooden-pallets) and container floors are particularly problematic, as they absorb and slowly release moisture throughout the voyage. A floor that looks perfectly dry to the eye can hold enough residual moisture to raise the relative humidity inside a sealed container to damaging levels within days.",
       },
       {
         type: "text",
