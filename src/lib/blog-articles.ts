@@ -1232,7 +1232,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Once mold begins, it cannot be fully reversed. Cleaning removes surface colonies but not internal penetration. Mycotoxins persist after mold is killed. Staining and odors become permanent. Adequate desiccant, proper container selection, cargo pre-conditioning, and real-time monitoring aren't optional risk mitigation measures — they're essential requirements for successfully shipping mold-sensitive products.",
+        content: "Once mold begins, it cannot be fully reversed. Cleaning removes surface colonies but not internal penetration. Mycotoxins persist after mold is killed. Staining and odors become permanent. Adequate [container desiccant](/blog/container-desiccant-stuffing-guide), proper container selection, cargo pre-conditioning, and [real-time monitoring](/datalogger) aren't optional risk mitigation measures — they're essential requirements for successfully shipping mold-sensitive products.",
       },
     ],
 
