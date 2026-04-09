@@ -572,7 +572,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Tørremidler er interventionsværktøjer. De fjerner aktivt fugt fra containeratmosfærer, reducerer relativ fugtighed og forhindrer kondensation på godsoverflader. En calciumchlorid-tørremiddelpose registrerer intet; den trækker simpelthen vanddamp fra luften, indtil den er mættet, eller ligevægt er nået.",
+        content: "Tørremidler er interventionsværktøjer. De fjerner aktivt fugt fra containeratmosfærer, reducerer relativ fugtighed og forhindrer kondensation på godsoverflader. En [calciumchlorid-tørremiddelpose](/calcium-chloride) registrerer intet; den trækker simpelthen vanddamp fra luften, indtil den er mættet, eller ligevægt er nået.",
       },
       {
         type: "text",
