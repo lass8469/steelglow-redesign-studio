@@ -3198,7 +3198,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air, maintaining a dry environment inside packaging or a sealed space. Desiccants are used in industry to protect products from moisture damage, corrosion, and mold during storage and transport.",
+        content: "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air, maintaining a dry environment inside packaging or a sealed space. Desiccants are used in industry to protect products from [moisture damage](/blog/moisture-in-packaging), corrosion, and mold during storage and transport.",
       },
 
       { type: "heading", content: "What is a desiccant?" },
