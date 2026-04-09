@@ -2983,7 +2983,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "En desiccant – også kaldet et tørremiddel – er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften for at reducere den relative luftfugtighed i et lukket rum. Desiccants bruges i emballage, lager og transport til at beskytte produkter mod [kondens, korrosion og skimmelsvamp](/blog/moisture-in-packaging).",
+        content: "En desiccant – også kaldet et tørremiddel – er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften for at reducere den relative luftfugtighed i et lukket rum. Desiccants bruges i [emballage](/blog/moisture-in-packaging), lager og transport til at beskytte produkter mod kondens, korrosion og skimmelsvamp.",
       },
 
       { type: "heading", content: "Hvad er en desiccant?" },
