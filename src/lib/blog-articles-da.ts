@@ -40,7 +40,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Træpaller forbliver arbejdshestene i den globale logistik, men under deres robuste ydre gemmer sig et vedvarende problem: fugt, der nægter at forlade dem. Selv paller, der føles tørre ved berøring, kan indeholde betydeligt vandindhold dybt inde i deres struktur, hvilket fører til skimmelvækst, produktskader og fejlslagne varmebehandlingscertificeringer.",
+        content: "Træpaller forbliver arbejdshestene i den globale logistik, men under deres robuste ydre gemmer sig et vedvarende problem: fugt, der nægter at forlade dem. Selv paller, der føles tørre ved berøring, kan indeholde betydeligt vandindhold dybt inde i deres struktur, hvilket fører til [skimmelvækst](/blog/mold-growth-timelines-80-rh), produktskader og fejlslagne varmebehandlingscertificeringer.",
       },
       {
         type: "text",
