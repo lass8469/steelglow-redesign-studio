@@ -214,7 +214,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Hver dag krydser cirka 250.000 skibscontainere verdens have. Inden i disse stålbokse udspiller sig en stille meteorologisk begivenhed, der koster den globale forsyningskæde anslået 6-8 milliarder dollars årligt: containerregn. Dette fænomen skyldes ikke utætheder eller dårlig emballering. Det er det uundgåelige resultat af fundamental fysik, der møder virkeligheden af transoceanske temperaturgradienter.",
+        content: "Hver dag krydser cirka 250.000 skibscontainere verdens have. Inden i disse stålbokse udspiller sig en stille meteorologisk begivenhed, der koster den globale forsyningskæde anslået 6-8 milliarder dollars årligt: containerregn. Dette fænomen skyldes ikke utætheder eller dårlig emballering. Det er det uundgåelige resultat af fundamental fysik, der møder virkeligheden af transoceanske temperaturgradienter. At forstå [fugt i emballage](/blog/moisture-in-packaging) er det første skridt mod forebyggelse.",
       },
       {
         type: "heading",
