@@ -600,7 +600,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "However, for the vast majority of packaging, shipping, and storage applications — where maintaining stable humidity rather than achieving absolute dryness matters most — clay desiccants offer superior technical performance with substantially lower environmental impact.",
+        content: "However, for the vast majority of packaging, shipping, and storage applications — where maintaining stable humidity rather than achieving absolute dryness matters most — clay desiccants offer superior technical performance with substantially lower environmental impact. For applications requiring extreme precision, consider [molecular sieve desiccants](/molecular-sieve) instead.",
       },
 
       {
