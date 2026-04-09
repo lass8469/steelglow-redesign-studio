@@ -304,7 +304,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Tørremidler til fugtabsorption arbejder med fysikken i stedet for imod den. Disse passive fugtkontrolsystemer — typisk calciumchlorid- eller lerbaserede formuleringer — absorberer vanddamp fra luften og forhindrer den i at nå dugpunktet og kondensere på overflader.",
+        content: "Tørremidler til fugtabsorption arbejder med fysikken i stedet for imod den. Disse passive fugtkontrolsystemer — typisk [calciumchlorid](/calcium-chloride) eller [lerbaserede formuleringer](/drybag-i) — absorberer vanddamp fra luften og forhindrer den i at nå dugpunktet og kondensere på overflader.",
       },
       {
         type: "callout",
