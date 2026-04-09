@@ -887,7 +887,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The moisture content of agricultural cargo isn't fixed. A coffee bean at 12% moisture content in a 60% relative humidity environment will gradually dry out, losing weight and potentially developing off-flavors. The same bean in 75% humidity will absorb moisture, swelling and becoming vulnerable to mold. Unlike manufactured goods with stable moisture profiles, agricultural products actively equilibrate with their environment throughout transit.",
+        content: "The moisture content of agricultural cargo isn't fixed. A coffee bean at 12% moisture content in a 60% relative humidity environment will gradually dry out, losing weight and potentially developing off-flavors. The same bean in 75% humidity will absorb moisture, swelling and becoming vulnerable to [mold within days](/blog/mold-growth-timelines-80-rh). Unlike manufactured goods with stable moisture profiles, agricultural products actively equilibrate with their environment throughout transit.",
       },
 
       {
