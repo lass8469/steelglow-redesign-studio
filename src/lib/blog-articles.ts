@@ -1862,7 +1862,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Edge protectors, anti-slip sheets, and strapping systems can also be used alongside dunnage bags where the cargo type or transit conditions call for additional protection. The goal is always the same: ensure that the goods arrive in exactly the condition they left.",
+        content: "[Edge protectors](/edge-protectors), [anti-slip sheets](/anti-slip), and [strapping systems](/stabustrap) can also be used alongside dunnage bags where the cargo type or transit conditions call for additional protection. The goal is always the same: ensure that the goods arrive in exactly the condition they left.",
       },
 
       {
