@@ -1991,7 +1991,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Conversely, if temperature was stable throughout a section of the journey and humidity still climbed steadily, that points to a desiccant capacity issue rather than a temperature-driven condensation event. The distinction is important: it tells you whether you need a more robust desiccant type (like calcium chloride for high moisture loads) or simply more of the same product.",
+        content: "Conversely, if temperature was stable throughout a section of the journey and humidity still climbed steadily, that points to a desiccant capacity issue rather than a temperature-driven condensation event. The distinction is important: it tells you whether you need a more robust desiccant type (like [calcium chloride for high moisture loads](/drybag-iii)) or simply more of the same product.",
       },
       {
         type: "heading",
