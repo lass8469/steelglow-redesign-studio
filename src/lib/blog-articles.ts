@@ -1680,9 +1680,9 @@ export const articles: Record<string, Article> = {
       {
         type: "list",
         items: [
-          "Silica gel is widely used for small-scale or enclosed packaging applications. It absorbs moisture effectively at low humidity levels but has a relatively limited total capacity and is less effective in the temperature-variable environment of a shipping container. Explore silica gel desiccant options for in-box applications.",
-          "Calcium chloride desiccants have an exceptionally high absorption capacity and are a strong choice for high-humidity environments and heavy-duty container applications. They excel where large volumes of moisture need to be captured quickly.",
-          "Generic clay desiccants are widely available at low cost but typically have lower absorption capacity, shorter effective duration, and less rigorous quality control than DRY BAG I.",
+          "[Silica gel](/blog/silica-gel-desiccant-guide) is widely used for small-scale or enclosed packaging applications. It absorbs moisture effectively at low humidity levels but has a relatively limited total capacity and is less effective in the temperature-variable environment of a shipping container.",
+          "[Calcium chloride desiccants](/drybag-iii) have an exceptionally high absorption capacity and are a strong choice for high-humidity environments and heavy-duty container applications. They excel where large volumes of moisture need to be captured quickly.",
+          "Generic clay desiccants are widely available at low cost but typically have lower absorption capacity, shorter effective duration, and less rigorous quality control than DRY BAG I. See our [complete desiccant comparison guide](/blog/what-is-a-desiccant-complete-guide).",
         ],
       },
       {
