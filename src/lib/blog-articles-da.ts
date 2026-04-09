@@ -529,7 +529,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Kemien bag fugtadsorption afslører en klar sandhed. Naturligt forekommende lerstrukturer, forfinet over geologisk tid, overgår ofte syntetiske materialer skabt gennem ressourcekrævende kemiske processer. Dansk mo-ler repræsenterer ikke et kompromis eller \"grønt alternativ\" til silikagel. Det er snarere en overlegen teknisk løsning, der tilfældigvis bærer enorme miljøfordele.",
+        content: "Kemien bag fugtadsorption afslører en klar sandhed. Naturligt forekommende lerstrukturer, forfinet over geologisk tid, overgår ofte syntetiske materialer skabt gennem ressourcekrævende kemiske processer. Dansk mo-ler repræsenterer ikke et kompromis eller \"grønt alternativ\" til silikagel. Det er snarere en overlegen teknisk løsning, der tilfældigvis bærer enorme miljøfordele. For et komplet overblik over alle tørremiddeltyper, se vores [komplette tørremiddelguide](/blog/what-is-a-desiccant-complete-guide).",
       },
       {
         type: "text",
