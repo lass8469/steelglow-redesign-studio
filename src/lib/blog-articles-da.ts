@@ -235,7 +235,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Forskellen — 14,6 gram per kubikmeter — skal et sted hen. I en 76-kubikmeter container er det over 1.100 gram (mere end en liter) vand, der vil kondensere som 'containerregn', dryppe ned på gods, samle sig i hjørner og skabe ideelle betingelser for skimmelvækst.",
+        content: "Forskellen — 14,6 gram per kubikmeter — skal et sted hen. I en 76-kubikmeter container er det over 1.100 gram (mere end en liter) vand, der vil kondensere som 'containerregn', dryppe ned på gods, samle sig i hjørner og skabe ideelle betingelser for [skimmelvækst inden for dage](/blog/mold-growth-timelines-80-rh).",
       },
       {
         type: "heading",
