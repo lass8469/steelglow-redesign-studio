@@ -2490,7 +2490,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Moisture is the silent destroyer of stored valuables. Left unchecked in a closed boat cabin, a camper van parked for winter, a basement storage room, or a garage, damp air causes mould, rust, wood rot, fabric odours, and electronic corrosion.",
+        content: "Moisture is the silent destroyer of stored valuables. Left unchecked in a closed boat cabin, a camper van parked for winter, a basement storage room, or a garage, damp air causes [mould](/blog/mold-growth-timelines-80-rh), rust, wood rot, fabric odours, and electronic corrosion.",
       },
       {
         type: "text",
