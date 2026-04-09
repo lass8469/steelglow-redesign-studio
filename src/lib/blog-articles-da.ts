@@ -687,7 +687,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "De mest sofistikerede afsendere bruger dataloggere til at validere og forfine omfattende fugtstyringsprogrammer, der inkluderer tørremidler, præ-konditionering, korrekte lasteprocedurer og passende emballering.",
+        content: "De mest sofistikerede afsendere bruger dataloggere til at validere og forfine omfattende fugtstyringsprogrammer, der inkluderer tørremidler, præ-konditionering, korrekte [lasteprocedurer for containere](/blog/container-desiccant-stuffing-guide) og passende emballering.",
       },
       {
         type: "numbered-list",
