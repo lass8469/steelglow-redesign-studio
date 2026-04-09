@@ -1170,7 +1170,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Eight consecutive days at 80% RH almost guarantees visible mold on vulnerable cargo. The same total time distributed as intermittent spikes over a 30-day voyage might produce only minor spotting. This is why data loggers are so valuable — they distinguish between sustained problematic conditions and intermittent spikes that carry different risk profiles.",
+        content: "Eight consecutive days at 80% RH almost guarantees visible mold on vulnerable cargo. The same total time distributed as intermittent spikes over a 30-day voyage might produce only minor spotting. This is why [data loggers are essential](/blog/data-loggers-vs-desiccants) — they distinguish between sustained problematic conditions and intermittent spikes that carry different risk profiles.",
       },
 
       {
