@@ -3378,7 +3378,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The solution is container desiccants – large bagged desiccants (typically calcium chloride or a clay mixture like DRY-BAG I) that are hung from the container ceiling and absorb humid air before it condenses.",
+        content: "The solution is container desiccants – large bagged desiccants (typically calcium chloride or a [clay mixture like DRY-BAG I](/drybag-i)) that are hung from the container ceiling and absorb humid air before it condenses.",
       },
 
       { type: "subheading", content: "Electronics and semiconductors" },
