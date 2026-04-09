@@ -1569,7 +1569,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Not all desiccants are equal. The most commonly used materials in the industry are silica gel, calcium chloride, and various clay compounds. Each has its role, but for container shipping — where temperature fluctuations cause humidity to condense on the inside walls in what is known as \"container sweat\" or \"container rain\" — clay desiccant bags hold a significant advantage.",
+        content: "Not all desiccants are equal. The most commonly used materials in the industry are [silica gel](/silica), [calcium chloride](/calcium-chloride), and various clay compounds. Each has its role, but for container shipping — where temperature fluctuations cause humidity to condense on the inside walls in what is known as \"container sweat\" or \"container rain\" — clay desiccant bags hold a significant advantage.",
       },
       {
         type: "subheading",
