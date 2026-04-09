@@ -2041,7 +2041,7 @@ export const articles: Record<string, Article> = {
         type: "list",
         items: [
           "Gradual humidity climb that approaches but doesn't breach 70% RH: Your current desiccant type is appropriate but you need greater capacity. Upgrade to the next size of DRY BAG container desiccant or increase the number of units deployed.",
-          "Sharp, recurring humidity spikes during temperature drops: Condensation is the primary threat. Calcium chloride desiccants — which perform particularly well in high-moisture-load, variable-temperature conditions — or the DRY BAG III, designed for container use in humid environments, are worth considering.",
+          "Sharp, recurring humidity spikes during temperature drops: [Condensation is the primary threat](/blog/container-rain-dew-point-physics). Calcium chloride desiccants — which perform particularly well in high-moisture-load, variable-temperature conditions — or the DRY BAG III, designed for container use in humid environments, are worth considering.",
           "Consistently flat, low humidity across all journeys: Your strategy is working and may even be over-specified for this route. You could trial a lighter or smaller desiccant product and use the logger to confirm the reduced specification still holds.",
           "High RH from the very start with no decline: Check desiccant placement and packaging integrity. The desiccant may not have been in contact with the air inside the container, or the product may have been compromised before loading. Silica gel and molecular sieve desiccants are sensitive to pre-exposure; damaged or incorrectly stored product should not be used.",
         ],
