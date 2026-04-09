@@ -2216,7 +2216,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Dunnage bags fill void space within containers and trailers to prevent whole-pallet movement. For layer-level stability within a single pallet stack, Anti-Slip Sheets are the more targeted and cost-efficient solution. Both product types are available through desiccant.com for complete cargo protection coverage.",
+        content: "[Dunnage bags](/dunnage-bag) fill void space within containers and trailers to prevent whole-pallet movement. For layer-level stability within a single pallet stack, Anti-Slip Sheets are the more targeted and cost-efficient solution. Both product types are available through desiccant.com for complete cargo protection coverage.",
       },
       {
         type: "subheading",
