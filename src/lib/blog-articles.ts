@@ -3162,7 +3162,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "In most moisture-control applications — packaging desiccants, solvent drying, gas dehydration — the choice will come down to 3A or 4A. For gas separation and purification, 5A and 13X become relevant. When in doubt, consult a desiccant specialist with the specifics of your process: feed composition, target outlet specification, temperature, pressure, and required cycle life.",
+        content: "In most moisture-control applications — packaging desiccants, solvent drying, gas dehydration — the choice will come down to 3A or 4A. For gas separation and purification, 5A and 13X become relevant. When in doubt, consult a desiccant specialist with the specifics of your process. For a broader comparison of all desiccant types, see our [complete desiccant guide](/blog/what-is-a-desiccant-complete-guide).",
       },
 
       {
