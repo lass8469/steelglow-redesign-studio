@@ -851,7 +851,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Standard containertørremidler absorberer fugt fra luften, men de kan ikke forhindre landbrugslast i at generere fugt gennem respiration. Et calciumchlorid-tørremiddel med en kapacitet på 10 liter lyder imponerende – indtil man regner på, at en container med kaffebønner, der respirerer normalt, frigiver 15–20 liter fugt over en 30 dages rejse.",
+        content: "Standard [containertørremidler](/blog/container-desiccant-stuffing-guide) absorberer fugt fra luften, men de kan ikke forhindre landbrugslast i at generere fugt gennem respiration. Et calciumchlorid-tørremiddel med en kapacitet på 10 liter lyder imponerende – indtil man regner på, at en container med kaffebønner, der respirerer normalt, frigiver 15–20 liter fugt over en 30 dages rejse.",
       },
       {
         type: "text",
