@@ -1741,7 +1741,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Cargo damage in transit is one of the most frustrating and avoidable costs in logistics. Products arrive broken, compressed, or contaminated — not because of anything that happened at origin or destination, but because of what happened in between. Movement inside a container during road, rail, or sea transport is a leading cause of freight claims worldwide.",
+        content: "Cargo damage in transit is one of the most frustrating and avoidable costs in logistics. Products arrive broken, compressed, or contaminated — not because of anything that happened at origin or destination, but because of what happened in between. Movement inside a container during road, rail, or sea transport is a leading cause of freight claims worldwide. Combined with [moisture damage from container rain](/blog/container-rain-dew-point-physics), these are the two biggest threats to cargo integrity.",
       },
       {
         type: "text",
