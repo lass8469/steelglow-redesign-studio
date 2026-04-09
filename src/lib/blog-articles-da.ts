@@ -134,7 +134,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "For operationer uden specialiseret tørringsudstyr informerer forståelsen af damptryk stadig bedre praksisser. Opbevaring af paller i klimakontrollerede rum forhindrer fugtgenabsorption. Brug af fugtmålere til at verificere, at paller har nået ligevægt med opbevaringsforholdene, før forsendelse forhindrer overraskelser.",
+        content: "For operationer uden specialiseret tørringsudstyr informerer forståelsen af damptryk stadig bedre praksisser. Opbevaring af paller i klimakontrollerede rum forhindrer fugtgenabsorption. Brug af [fugtmålere og dataloggere](/datalogger) til at verificere, at paller har nået ligevægt med opbevaringsforholdene, før forsendelse forhindrer overraskelser.",
       },
       {
         type: "heading",
