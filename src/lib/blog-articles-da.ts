@@ -765,7 +765,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Kaffebønner holder ikke op med at være levende organismer, blot fordi de lastes i en skibscontainer. Det samme gælder kakao, korn, dyrefoder og tørret frugt. Disse landbrugsprodukter fortsætter deres metaboliske processer undervejs – de forbruger ilt, afgiver varme og udveksler fugt med omgivelserne. Behandler man dem som almindeligt gods, er problemerne garanterede.",
+        content: "Kaffebønner holder ikke op med at være levende organismer, blot fordi de lastes i en skibscontainer. Det samme gælder kakao, korn, dyrefoder og tørret frugt. Disse landbrugsprodukter fortsætter deres metaboliske processer undervejs – de forbruger ilt, afgiver varme og udveksler fugt med omgivelserne. Behandler man dem som almindeligt gods, er problemerne garanterede. At forstå [fugt i emballage](/blog/moisture-in-packaging) er essentielt for landbrugseksportører.",
       },
       {
         type: "heading",
