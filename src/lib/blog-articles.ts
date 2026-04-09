@@ -2975,7 +2975,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Molecular sieves are among the most precisely engineered desiccant materials in existence. Unlike silica gel or calcium chloride, which absorb moisture indiscriminately from the surrounding atmosphere, molecular sieves work at the molecular level — physically selecting which molecules are allowed to enter their structure and which are turned away. That selectivity is determined almost entirely by one variable: pore size.",
+        content: "Molecular sieves are among the most precisely engineered desiccant materials in existence. Unlike [silica gel](/blog/silica-gel-desiccant-guide) or calcium chloride, which absorb moisture indiscriminately from the surrounding atmosphere, molecular sieves work at the molecular level — physically selecting which molecules are allowed to enter their structure and which are turned away. That selectivity is determined almost entirely by one variable: pore size.",
       },
       {
         type: "text",
