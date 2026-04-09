@@ -3171,7 +3171,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Molecular sieves are not a commodity product. The pore size — whether 3A, 4A, 5A, or 13X — defines what the material will capture and what it will ignore, and that selectivity is the entire basis of the technology's value. Choosing the right pore size requires understanding your target molecule, your process stream, and your regeneration constraints. Getting it right delivers precise, reliable performance. Getting it wrong means the sieve either does nothing useful or does too much — and in either case, the result is a process that fails to meet specification.",
+        content: "Molecular sieves are not a commodity product. The pore size — whether 3A, 4A, 5A, or 13X — defines what the material will capture and what it will ignore, and that selectivity is the entire basis of the technology's value. Choosing the right pore size requires understanding your target molecule, your process stream, and your regeneration constraints. For applications where [clay desiccants](/blog/chemistry-clay-mo-clay-vs-silica-gel) or silica gel may be more appropriate, understanding these alternatives helps ensure you select the optimal solution.",
       },
     ],
 
