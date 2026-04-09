@@ -576,7 +576,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Dataloggere er dokumentationsværktøjer. De registrerer passivt temperatur, fugtighed, stød, lyseksponering eller andre miljøvariabler med forudindstillede intervaller gennem hele forsendelsens rejse. En datalogger forhindrer ikke en eneste dråbe kondensation, men den fortæller dig præcis hvornår, hvor og hvor alvorligt forholdene forværredes.",
+        content: "[Dataloggere](/datalogger) er dokumentationsværktøjer. De registrerer passivt temperatur, fugtighed, stød, lyseksponering eller andre miljøvariabler med forudindstillede intervaller gennem hele forsendelsens rejse. En datalogger forhindrer ikke en eneste dråbe kondensation, men den fortæller dig præcis hvornår, hvor og hvor alvorligt forholdene forværredes.",
       },
       {
         type: "text",
