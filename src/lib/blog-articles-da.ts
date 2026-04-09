@@ -369,7 +369,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Når det handler om at beskytte produkter mod fugtskader, betyder valget af tørremiddel langt mere, end de fleste indkøbschefer er klar over. Silikagel har domineret markedet i årtier. Dog tyder en voksende mængde evidens på, at naturlige lertørremidler, især dansk mo-ler, tilbyder overlegen ydeevne med væsentligt lavere miljøpåvirkning. Forskellen ligger ikke i markedsføringspåstande, men i fundamental kemi og fremstillingsprocesser.",
+        content: "Når det handler om at beskytte produkter mod fugtskader, betyder valget af tørremiddel langt mere, end de fleste indkøbschefer er klar over. [Silikagel](/blog/silica-gel-desiccant-guide) har domineret markedet i årtier. Dog tyder en voksende mængde evidens på, at naturlige lertørremidler, især dansk mo-ler, tilbyder overlegen ydeevne med væsentligt lavere miljøpåvirkning. Forskellen ligger ikke i markedsføringspåstande, men i fundamental kemi og fremstillingsprocesser.",
       },
       {
         type: "heading",
