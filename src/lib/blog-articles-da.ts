@@ -40,7 +40,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Træpaller forbliver arbejdshestene i den globale logistik, men under deres robuste ydre gemmer sig et vedvarende problem: fugt, der nægter at forlade dem. Selv paller, der føles tørre ved berøring, kan indeholde betydeligt vandindhold dybt inde i deres struktur, hvilket fører til skimmelvækst, produktskader og fejlslagne varmebehandlingscertificeringer.",
+        content: "Træpaller forbliver arbejdshestene i den globale logistik, men under deres robuste ydre gemmer sig et vedvarende problem: fugt, der nægter at forlade dem. Selv paller, der føles tørre ved berøring, kan indeholde betydeligt vandindhold dybt inde i deres struktur, hvilket fører til [skimmelvækst](/blog/mold-growth-timelines-80-rh), produktskader og fejlslagne varmebehandlingscertificeringer.",
       },
       {
         type: "text",
@@ -81,7 +81,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Den fugtgradient, der udvikler sig under tørring, skaber også en damptrykgradient. Det fugtige indre har højt damptryk, mens det tørrere ydre har lavere damptryk. Hastigheden af bevægelsen afhænger dog af, hvor let vanddamp kan diffundere gennem træstrukturen. Tætte hårdtræsorter modstår fugtbevægelse langt mere end porøse nåletræer, hvilket er grunden til, at egepaller tager væsentligt længere tid at tørre end fyrrpaller af identiske dimensioner.",
+        content: "Den fugtgradient, der udvikler sig under tørring, skaber også en damptrykgradient. Det fugtige indre har højt damptryk, mens det tørrere ydre har lavere damptryk. Hastigheden af bevægelsen afhænger dog af, hvor let vanddamp kan diffundere gennem træstrukturen. Tætte hårdtræsorter modstår fugtbevægelse langt mere end porøse nåletræer, hvilket er grunden til, at egepaller tager væsentligt længere tid at tørre end fyrrpaller af identiske dimensioner. Denne dynamik er afgørende for at forstå [kondens i containere](/blog/container-rain-dew-point-physics).",
       },
       {
         type: "heading",
@@ -128,13 +128,13 @@ export const articlesDa: Record<string, Article> = {
         type: "list",
         items: [
           "Ovntørring: Den mest kontrollerede metode — kombinerer forhøjede temperaturer med præcist styrede fugtighedsniveauer og luftcirkulation for at opretholde optimale damptrykgradienter gennem hele tørringscyklussen.",
-          "Affugtning: Bruger kølebaserede eller tørremiddelbaserede affugtere til løbende at fjerne fugt fra luften i et lukket rum og opretholde en konsistent drivkraft for fugt til at forlade træet.",
+          "Affugtning: Bruger kølebaserede eller tørremiddelbaserede affugtere til løbende at fjerne fugt fra luften i et lukket rum og opretholde en konsistent drivkraft for fugt til at forlade træet. Læs mere om [hvordan tørremidler virker](/blog/what-is-a-desiccant-complete-guide).",
           "Optimeret lufttørring: Stabling af paller med tilstrækkelig afstand, brug af ventilatorer til luftbevægelse og placering af stabler i områder med lavere omgivende fugtighed for at øge damptrykforskellen.",
         ],
       },
       {
         type: "text",
-        content: "For operationer uden specialiseret tørringsudstyr informerer forståelsen af damptryk stadig bedre praksisser. Opbevaring af paller i klimakontrollerede rum forhindrer fugtgenabsorption. Brug af fugtmålere til at verificere, at paller har nået ligevægt med opbevaringsforholdene, før forsendelse forhindrer overraskelser.",
+        content: "For operationer uden specialiseret tørringsudstyr informerer forståelsen af damptryk stadig bedre praksisser. Opbevaring af paller i klimakontrollerede rum forhindrer fugtgenabsorption. Brug af [fugtmålere og dataloggere](/datalogger) til at verificere, at paller har nået ligevægt med opbevaringsforholdene, før forsendelse forhindrer overraskelser.",
       },
       {
         type: "heading",
@@ -187,7 +187,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Forståelse af damptryk omdanner fugtstyring fra et vagt koncept om at \"lade træ tørre\" til en kontrollerbar proces med målbare parametre og forudsigelige resultater. Ved at anerkende, at fugtbevægelse følger damptrykgradienter bestemt af temperatur, fugtighed og træets fugtindhold, kan operationer implementere målrettede indgreb, der rent faktisk fjerner fugt i stedet for blot at håbe, at den forsvinder over tid.",
+        content: "Forståelse af damptryk omdanner fugtstyring fra et vagt koncept om at \"lade træ tørre\" til en kontrollerbar proces med målbare parametre og forudsigelige resultater. Ved at anerkende, at fugtbevægelse følger damptrykgradienter bestemt af temperatur, fugtighed og træets fugtindhold, kan operationer implementere målrettede indgreb, der rent faktisk fjerner fugt i stedet for blot at håbe, at den forsvinder over tid. For optimal beskyttelse under transport, se vores guide til [containertørremidler](/blog/container-desiccant-stuffing-guide).",
       },
     ],
 
@@ -214,7 +214,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Hver dag krydser cirka 250.000 skibscontainere verdens have. Inden i disse stålbokse udspiller sig en stille meteorologisk begivenhed, der koster den globale forsyningskæde anslået 6-8 milliarder dollars årligt: containerregn. Dette fænomen skyldes ikke utætheder eller dårlig emballering. Det er det uundgåelige resultat af fundamental fysik, der møder virkeligheden af transoceanske temperaturgradienter.",
+        content: "Hver dag krydser cirka 250.000 skibscontainere verdens have. Inden i disse stålbokse udspiller sig en stille meteorologisk begivenhed, der koster den globale forsyningskæde anslået 6-8 milliarder dollars årligt: containerregn. Dette fænomen skyldes ikke utætheder eller dårlig emballering. Det er det uundgåelige resultat af fundamental fysik, der møder virkeligheden af transoceanske temperaturgradienter. At forstå [fugt i emballage](/blog/moisture-in-packaging) er det første skridt mod forebyggelse.",
       },
       {
         type: "heading",
@@ -235,7 +235,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Forskellen — 14,6 gram per kubikmeter — skal et sted hen. I en 76-kubikmeter container er det over 1.100 gram (mere end en liter) vand, der vil kondensere som 'containerregn', dryppe ned på gods, samle sig i hjørner og skabe ideelle betingelser for skimmelvækst.",
+        content: "Forskellen — 14,6 gram per kubikmeter — skal et sted hen. I en 76-kubikmeter container er det over 1.100 gram (mere end en liter) vand, der vil kondensere som 'containerregn', dryppe ned på gods, samle sig i hjørner og skabe ideelle betingelser for [skimmelvækst inden for dage](/blog/mold-growth-timelines-80-rh).",
       },
       {
         type: "heading",
@@ -250,7 +250,7 @@ export const articlesDa: Record<string, Article> = {
         items: [
           "Ækvatorruter til tempererede zoner: En container, der forlader Singapore (gennemsnit 27°C) mod Hamborg (gennemsnit 9°C), vil opleve en 18°C temperaturforskel — nok til at halvere luftens fugtkapacitet.",
           "Daglige cyklusser: Selv på en enkelt rute oplever containere dag-nat temperaturudsving på 15-20°C. Stålcontainere opvarmes hurtigt under direkte sollys (overfladetemperaturer kan overstige 60°C) og afkøles hurtigt om natten, hvilket skaber flere kondensationscyklusser under en enkelt rejse.",
-          "Godset selv som fugtkilde: Mange produkter (tømmer, landbrugsvarer, tekstiler) indeholder hygroskopiske materialer, der afgiver fugt, når temperaturerne stiger, og tilføjer til containerens fugtbelastning.",
+          "Godset selv som fugtkilde: Mange produkter (tømmer, landbrugsvarer, tekstiler) indeholder hygroskopiske materialer, der afgiver fugt, når temperaturerne stiger, og tilføjer til containerens fugtbelastning. [Træpaller er en stor bidragyder](/blog/vapor-pressure-wooden-pallets).",
           "Skrogspositioneringseffekter: Containere på dækket oplever mere ekstreme temperaturvariationer fra solstråling og vindchill, mens containere i lastrummet påvirkes af skrogets temperatur.",
         ],
       },
@@ -304,7 +304,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Tørremidler til fugtabsorption arbejder med fysikken i stedet for imod den. Disse passive fugtkontrolsystemer — typisk calciumchlorid- eller lerbaserede formuleringer — absorberer vanddamp fra luften og forhindrer den i at nå dugpunktet og kondensere på overflader.",
+        content: "Tørremidler til fugtabsorption arbejder med fysikken i stedet for imod den. Disse passive fugtkontrolsystemer — typisk [calciumchlorid](/calcium-chloride) eller [lerbaserede formuleringer](/drybag-i) — absorberer vanddamp fra luften og forhindrer den i at nå dugpunktet og kondensere på overflader.",
       },
       {
         type: "callout",
@@ -338,7 +338,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Fysikken er entydig: temperaturen vil variere, dugpunktskondensation vil forekomme, og fugtskader vil opstå — medmindre den fugt opfanges, før den kondenserer. Tørremidler repræsenterer den eneste passive, pålidelige, økonomisk skalerbare løsning på denne grundlæggende udfordring.",
+        content: "Fysikken er entydig: temperaturen vil variere, dugpunktskondensation vil forekomme, og fugtskader vil opstå — medmindre den fugt opfanges, før den kondenserer. Tørremidler repræsenterer den eneste passive, pålidelige, økonomisk skalerbare løsning på denne grundlæggende udfordring. Læs vores komplette guide til [containertørremidler og korrekt lastning](/blog/container-desiccant-stuffing-guide).",
       },
       {
         type: "text",
@@ -369,7 +369,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Når det handler om at beskytte produkter mod fugtskader, betyder valget af tørremiddel langt mere, end de fleste indkøbschefer er klar over. Silikagel har domineret markedet i årtier. Dog tyder en voksende mængde evidens på, at naturlige lertørremidler, især dansk mo-ler, tilbyder overlegen ydeevne med væsentligt lavere miljøpåvirkning. Forskellen ligger ikke i markedsføringspåstande, men i fundamental kemi og fremstillingsprocesser.",
+        content: "Når det handler om at beskytte produkter mod fugtskader, betyder valget af tørremiddel langt mere, end de fleste indkøbschefer er klar over. [Silikagel](/blog/silica-gel-desiccant-guide) har domineret markedet i årtier. Dog tyder en voksende mængde evidens på, at naturlige lertørremidler, især dansk mo-ler, tilbyder overlegen ydeevne med væsentligt lavere miljøpåvirkning. Forskellen ligger ikke i markedsføringspåstande, men i fundamental kemi og fremstillingsprocesser.",
       },
       {
         type: "heading",
@@ -414,7 +414,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Adsorptionsisotermen for mo-ler viser overlegen ydeevne i de mellemfugtighedsområder, der er mest relevante for produktopbevaring og -forsendelse, typisk mellem 40% og 70% relativ fugtighed. Mens silikagel kan vise højere kapacitet ved ekstreme fugtighedsniveauer, yder lertørremidler mere effektivt under virkelige forhold, hvor forebyggelse af fugtighedssvingninger betyder mere end opnåelse af absolut tørhed.",
+        content: "Adsorptionsisotermen for mo-ler viser overlegen ydeevne i de mellemfugtighedsområder, der er mest relevante for produktopbevaring og -forsendelse, typisk mellem 40% og 70% relativ fugtighed. Mens silikagel kan vise højere kapacitet ved ekstreme fugtighedsniveauer, yder [lertørremidler som DRY-BAG I](/drybag-i) mere effektivt under virkelige forhold, hvor forebyggelse af fugtighedssvingninger betyder mere end opnåelse af absolut tørhed.",
       },
       {
         type: "heading",
@@ -529,7 +529,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Kemien bag fugtadsorption afslører en klar sandhed. Naturligt forekommende lerstrukturer, forfinet over geologisk tid, overgår ofte syntetiske materialer skabt gennem ressourcekrævende kemiske processer. Dansk mo-ler repræsenterer ikke et kompromis eller \"grønt alternativ\" til silikagel. Det er snarere en overlegen teknisk løsning, der tilfældigvis bærer enorme miljøfordele.",
+        content: "Kemien bag fugtadsorption afslører en klar sandhed. Naturligt forekommende lerstrukturer, forfinet over geologisk tid, overgår ofte syntetiske materialer skabt gennem ressourcekrævende kemiske processer. Dansk mo-ler repræsenterer ikke et kompromis eller \"grønt alternativ\" til silikagel. Det er snarere en overlegen teknisk løsning, der tilfældigvis bærer enorme miljøfordele. For et komplet overblik over alle tørremiddeltyper, se vores [komplette tørremiddelguide](/blog/what-is-a-desiccant-complete-guide).",
       },
       {
         type: "text",
@@ -572,11 +572,11 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Tørremidler er interventionsværktøjer. De fjerner aktivt fugt fra containeratmosfærer, reducerer relativ fugtighed og forhindrer kondensation på godsoverflader. En calciumchlorid-tørremiddelpose registrerer intet; den trækker simpelthen vanddamp fra luften, indtil den er mættet, eller ligevægt er nået.",
+        content: "Tørremidler er interventionsværktøjer. De fjerner aktivt fugt fra containeratmosfærer, reducerer relativ fugtighed og forhindrer kondensation på godsoverflader. En [calciumchlorid-tørremiddelpose](/calcium-chloride) registrerer intet; den trækker simpelthen vanddamp fra luften, indtil den er mættet, eller ligevægt er nået.",
       },
       {
         type: "text",
-        content: "Dataloggere er dokumentationsværktøjer. De registrerer passivt temperatur, fugtighed, stød, lyseksponering eller andre miljøvariabler med forudindstillede intervaller gennem hele forsendelsens rejse. En datalogger forhindrer ikke en eneste dråbe kondensation, men den fortæller dig præcis hvornår, hvor og hvor alvorligt forholdene forværredes.",
+        content: "[Dataloggere](/datalogger) er dokumentationsværktøjer. De registrerer passivt temperatur, fugtighed, stød, lyseksponering eller andre miljøvariabler med forudindstillede intervaller gennem hele forsendelsens rejse. En datalogger forhindrer ikke en eneste dråbe kondensation, men den fortæller dig præcis hvornår, hvor og hvor alvorligt forholdene forværredes.",
       },
       {
         type: "text",
@@ -687,7 +687,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "De mest sofistikerede afsendere bruger dataloggere til at validere og forfine omfattende fugtstyringsprogrammer, der inkluderer tørremidler, præ-konditionering, korrekte lasteprocedurer og passende emballering.",
+        content: "De mest sofistikerede afsendere bruger dataloggere til at validere og forfine omfattende fugtstyringsprogrammer, der inkluderer tørremidler, præ-konditionering, korrekte [lasteprocedurer for containere](/blog/container-desiccant-stuffing-guide) og passende emballering.",
       },
       {
         type: "numbered-list",
@@ -729,7 +729,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Du vælger faktisk ikke mellem dataloggere og tørremidler; du har brug for begge. Tørremidler kontrollerer fugt; sensorer dokumenterer, om denne kontrol lykkedes. Sammen skaber de et forsvarligt, optimerbart fugtstyringssystem, som selvstående tørremidler ikke kan tilbyde.",
+        content: "Du vælger faktisk ikke mellem dataloggere og tørremidler; du har brug for begge. Tørremidler kontrollerer fugt; sensorer dokumenterer, om denne kontrol lykkedes. Sammen skaber de et forsvarligt, optimerbart fugtstyringssystem, som selvstående tørremidler ikke kan tilbyde. Læs hvordan du [verificerer din tørremiddelstrategi](/blog/data-logger-verification-guide) med logget data.",
       },
       {
         type: "text",
@@ -765,7 +765,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Kaffebønner holder ikke op med at være levende organismer, blot fordi de lastes i en skibscontainer. Det samme gælder kakao, korn, dyrefoder og tørret frugt. Disse landbrugsprodukter fortsætter deres metaboliske processer undervejs – de forbruger ilt, afgiver varme og udveksler fugt med omgivelserne. Behandler man dem som almindeligt gods, er problemerne garanterede.",
+        content: "Kaffebønner holder ikke op med at være levende organismer, blot fordi de lastes i en skibscontainer. Det samme gælder kakao, korn, dyrefoder og tørret frugt. Disse landbrugsprodukter fortsætter deres metaboliske processer undervejs – de forbruger ilt, afgiver varme og udveksler fugt med omgivelserne. Behandler man dem som almindeligt gods, er problemerne garanterede. At forstå [fugt i emballage](/blog/moisture-in-packaging) er essentielt for landbrugseksportører.",
       },
       {
         type: "heading",
@@ -781,7 +781,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Fugtindholdet i landbrugslast er desuden ikke en fast størrelse. En kaffebønne med 12 % fugtindhold i et miljø med 60 % relativ luftfugtighed vil gradvist afgive fugt, tabe vægt og potentielt udvikle bismage. Den samme bønne ved 75 % luftfugtighed vil derimod absorbere fugt, svulme op og blive sårbar over for skimmel. I modsætning til forarbejdede varer equilibrerer landbrugsprodukter aktivt med deres omgivelser hele vejen fra afsendelse til ankomst.",
+        content: "Fugtindholdet i landbrugslast er desuden ikke en fast størrelse. En kaffebønne med 12 % fugtindhold i et miljø med 60 % relativ luftfugtighed vil gradvist afgive fugt, tabe vægt og potentielt udvikle bismage. Den samme bønne ved 75 % luftfugtighed vil derimod absorbere fugt, svulme op og blive sårbar over for [skimmel inden for dage](/blog/mold-growth-timelines-80-rh). I modsætning til forarbejdede varer equilibrerer landbrugsprodukter aktivt med deres omgivelser hele vejen fra afsendelse til ankomst.",
       },
       {
         type: "heading",
@@ -851,7 +851,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Standard containertørremidler absorberer fugt fra luften, men de kan ikke forhindre landbrugslast i at generere fugt gennem respiration. Et calciumchlorid-tørremiddel med en kapacitet på 10 liter lyder imponerende – indtil man regner på, at en container med kaffebønner, der respirerer normalt, frigiver 15–20 liter fugt over en 30 dages rejse.",
+        content: "Standard [containertørremidler](/blog/container-desiccant-stuffing-guide) absorberer fugt fra luften, men de kan ikke forhindre landbrugslast i at generere fugt gennem respiration. Et calciumchlorid-tørremiddel med en kapacitet på 10 liter lyder imponerende – indtil man regner på, at en container med kaffebønner, der respirerer normalt, frigiver 15–20 liter fugt over en 30 dages rejse.",
       },
       {
         type: "text",

@@ -6,6 +6,7 @@ import { Calendar, Clock, ArrowLeft, Share2, User, Lightbulb } from "lucide-reac
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { articles, ArticleSection } from "@/lib/blog-articles";
+import { parseInlineLinks } from "@/lib/parse-inline-links";
 import { articlesDa } from "@/lib/blog-articles-da";
 import { useLanguage } from "@/contexts/LanguageContext";
 import RelatedArticles from "@/components/RelatedArticles";
@@ -32,7 +33,7 @@ const renderSection = (section: ArticleSection, index: number) => {
     case "text":
       return (
         <p key={index} className="text-muted-foreground leading-relaxed mb-4">
-          {section.content}
+          {parseInlineLinks(section.content)}
         </p>
       );
     
@@ -42,7 +43,7 @@ const renderSection = (section: ArticleSection, index: number) => {
           {section.items.map((item, i) => (
             <li key={i} className="text-muted-foreground flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
-              {item}
+              {parseInlineLinks(item)}
             </li>
           ))}
         </ul>
@@ -56,7 +57,7 @@ const renderSection = (section: ArticleSection, index: number) => {
               <span className="w-8 h-8 rounded-full bg-primary/10 text-primary font-semibold flex items-center justify-center shrink-0 text-sm">
                 {i + 1}
               </span>
-              <span className="pt-1">{item}</span>
+              <span className="pt-1">{parseInlineLinks(item)}</span>
             </li>
           ))}
         </ol>
@@ -92,7 +93,7 @@ const renderSection = (section: ArticleSection, index: number) => {
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-1">{section.title}</h4>
-              <p className="text-muted-foreground">{section.content}</p>
+              <p className="text-muted-foreground">{parseInlineLinks(section.content)}</p>
             </div>
           </div>
         </div>

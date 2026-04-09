@@ -93,7 +93,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Wooden pallets remain the workhorses of global logistics, yet beneath their rugged exterior lies a persistent problem: moisture that refuses to leave. Even pallets that feel dry to the touch can harbor significant water content deep within their structure, leading to mold growth, product damage, and failed heat treatment certifications.",
+        content: "Wooden pallets remain the workhorses of global logistics, yet beneath their rugged exterior lies a persistent problem: moisture that refuses to leave. Even pallets that feel dry to the touch can harbor significant water content deep within their structure, leading to [mold growth](/blog/mold-growth-timelines-80-rh), product damage, and failed heat treatment certifications.",
       },
       {
         type: "text",
@@ -136,7 +136,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The moisture gradient that develops during drying creates a vapor pressure gradient as well. The wet interior has high vapor pressure, while the drier exterior has lower vapor pressure. However, the rate of movement depends on how easily water vapor can diffuse through the wood structure. Dense hardwoods resist moisture movement far more than porous softwoods, which is why oak pallets take substantially longer to dry than pine pallets of identical dimensions.",
+        content: "The moisture gradient that develops during drying creates a vapor pressure gradient as well. The wet interior has high vapor pressure, while the drier exterior has lower vapor pressure. However, the rate of movement depends on how easily water vapor can diffuse through the wood structure. Dense hardwoods resist moisture movement far more than porous softwoods, which is why oak pallets take substantially longer to dry than pine pallets of identical dimensions. Understanding this dynamic is essential for [preventing condensation inside containers](/blog/container-rain-dew-point-physics).",
       },
 
       {
@@ -186,13 +186,13 @@ export const articles: Record<string, Article> = {
         type: "list",
         items: [
           "Kiln drying: The most controlled method — combining elevated temperatures with precisely managed humidity levels and air circulation to maintain optimal vapor pressure gradients throughout the drying cycle.",
-          "Dehumidification drying: Uses refrigeration-based or desiccant-based dehumidifiers to continuously remove moisture from air in an enclosed space, maintaining a consistent driving force for moisture to leave the wood.",
+          "Dehumidification drying: Uses refrigeration-based or desiccant-based dehumidifiers to continuously remove moisture from air in an enclosed space, maintaining a consistent driving force for moisture to leave the wood. Learn more about [how desiccants work](/blog/what-is-a-desiccant-complete-guide).",
           "Optimized air drying: Stacking pallets with adequate spacing, using fans for air movement, and positioning stacks in areas with lower ambient humidity to increase the vapor pressure differential.",
         ],
       },
       {
         type: "text",
-        content: "For operations without specialized drying equipment, understanding vapor pressure still informs better practices. Storing pallets in climate-controlled spaces prevents moisture reabsorption. Using moisture meters to verify pallets have reached equilibrium with storage conditions before shipping prevents surprises.",
+        content: "For operations without specialized drying equipment, understanding vapor pressure still informs better practices. Storing pallets in climate-controlled spaces prevents moisture reabsorption. Using [moisture meters and data loggers](/datalogger) to verify pallets have reached equilibrium with storage conditions before shipping prevents surprises.",
       },
 
       {
@@ -249,7 +249,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Understanding vapor pressure transforms moisture management from a vague concept of \"letting wood dry\" into a controllable process with measurable parameters and predictable outcomes. By recognizing that moisture movement follows vapor pressure gradients determined by temperature, humidity, and wood moisture content, operations can implement targeted interventions that actually remove moisture rather than simply hoping it disappears over time.",
+        content: "Understanding vapor pressure transforms moisture management from a vague concept of \"letting wood dry\" into a controllable process with measurable parameters and predictable outcomes. By recognizing that moisture movement follows vapor pressure gradients determined by temperature, humidity, and wood moisture content, operations can implement targeted interventions that actually remove moisture rather than simply hoping it disappears over time. For comprehensive protection during shipping, consider [container desiccant solutions](/blog/container-desiccant-stuffing-guide) tailored to your cargo.",
       },
     ],
 
@@ -276,7 +276,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Every day, approximately 250,000 shipping containers cross the world's oceans. Inside these steel boxes, a silent meteorological event unfolds that costs the global supply chain an estimated $6–8 billion annually: container rain. This phenomenon isn't caused by leaks or poor packaging. It's the inevitable result of fundamental physics meeting the reality of transoceanic temperature gradients.",
+        content: "Every day, approximately 250,000 shipping containers cross the world's oceans. Inside these steel boxes, a silent meteorological event unfolds that costs the global supply chain an estimated $6–8 billion annually: container rain. This phenomenon isn't caused by leaks or poor packaging. It's the inevitable result of fundamental physics meeting the reality of transoceanic temperature gradients. Understanding [moisture in packaging](/blog/moisture-in-packaging) is the first step toward prevention.",
       },
 
       {
@@ -298,7 +298,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The difference — 14.6 grams per cubic meter — must go somewhere. In a 76-cubic-meter container, that's over 1,100 grams (more than a liter) of water that will condense as 'container rain,' dripping onto cargo, pooling in corners, and creating ideal conditions for mold growth.",
+        content: "The difference — 14.6 grams per cubic meter — must go somewhere. In a 76-cubic-meter container, that's over 1,100 grams (more than a liter) of water that will condense as 'container rain,' dripping onto cargo, pooling in corners, and creating ideal conditions for [mold growth within days](/blog/mold-growth-timelines-80-rh).",
       },
 
       {
@@ -314,7 +314,7 @@ export const articles: Record<string, Article> = {
         items: [
           "Equatorial to temperate routes: A container leaving Singapore (average 27°C) bound for Hamburg (average 9°C) will experience an 18°C temperature differential — enough to cut air's moisture capacity by more than half.",
           "Diurnal cycling: Even on a single route, containers experience day-night temperature swings of 15–20°C. Steel containers heat rapidly under direct sunlight (surface temperatures can exceed 60°C) and cool quickly at night, creating multiple condensation cycles during a single voyage.",
-          "Cargo itself as a moisture source: Many products (timber, agricultural goods, textiles) contain hygroscopic materials that release moisture as temperatures rise, adding to the container's humidity burden.",
+          "Cargo itself as a moisture source: Many products (timber, agricultural goods, textiles) contain hygroscopic materials that release moisture as temperatures rise, adding to the container's humidity burden. [Wooden pallets are a major contributor](/blog/vapor-pressure-wooden-pallets).",
           "Hull positioning effects: Containers on deck experience more extreme temperature variations from solar radiation and wind chill, while those in the hold face different thermal dynamics from the ship's hull temperature.",
         ],
       },
@@ -370,7 +370,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Desiccant moisture absorbers work with physics rather than against it. These passive moisture control systems — typically calcium chloride or clay-based formulations — absorb water vapor from the air, preventing it from reaching dew point and condensing on surfaces.",
+        content: "Desiccant moisture absorbers work with physics rather than against it. These passive moisture control systems — typically [calcium chloride](/calcium-chloride) or [clay-based formulations](/drybag-i) — absorb water vapor from the air, preventing it from reaching dew point and condensing on surfaces.",
       },
       {
         type: "callout",
@@ -406,7 +406,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The physics is unambiguous: temperature will vary, dew point condensation will occur, and moisture damage will result — unless that moisture is captured before it condenses. Desiccants represent the only passive, reliable, economically scaled solution to this fundamental challenge.",
+        content: "The physics is unambiguous: temperature will vary, dew point condensation will occur, and moisture damage will result — unless that moisture is captured before it condenses. Desiccants represent the only passive, reliable, economically scaled solution to this fundamental challenge. Read our complete guide on [how to protect cargo with container desiccants](/blog/container-desiccant-stuffing-guide).",
       },
       {
         type: "text",
@@ -437,7 +437,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "When protecting products from moisture damage, the choice of desiccant matters far more than most procurement managers realize. Silica gel has dominated the market for decades. Yet a growing body of evidence suggests that natural clay desiccants, particularly Danish Mo-clay, offer superior performance with significantly lower environmental impact. The difference lies not in marketing claims, but in fundamental chemistry and manufacturing processes.",
+        content: "When protecting products from moisture damage, the choice of desiccant matters far more than most procurement managers realize. [Silica gel](/blog/silica-gel-desiccant-guide) has dominated the market for decades. Yet a growing body of evidence suggests that natural clay desiccants, particularly Danish Mo-clay, offer superior performance with significantly lower environmental impact. The difference lies not in marketing claims, but in fundamental chemistry and manufacturing processes.",
       },
 
       {
@@ -485,7 +485,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The adsorption isotherm of Mo-clay shows superior performance at the medium humidity ranges most relevant to product storage and shipping, typically between 40% and 70% relative humidity. While silica gel may show higher capacity at extreme humidity levels, clay desiccants perform more effectively in real-world conditions where preventing humidity fluctuations matters more than achieving absolute dryness.",
+        content: "The adsorption isotherm of Mo-clay shows superior performance at the medium humidity ranges most relevant to product storage and shipping, typically between 40% and 70% relative humidity. While silica gel may show higher capacity at extreme humidity levels, [clay desiccants like DRY-BAG I](/drybag-i) perform more effectively in real-world conditions where preventing humidity fluctuations matters more than achieving absolute dryness.",
       },
 
       {
@@ -600,7 +600,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "However, for the vast majority of packaging, shipping, and storage applications — where maintaining stable humidity rather than achieving absolute dryness matters most — clay desiccants offer superior technical performance with substantially lower environmental impact.",
+        content: "However, for the vast majority of packaging, shipping, and storage applications — where maintaining stable humidity rather than achieving absolute dryness matters most — clay desiccants offer superior technical performance with substantially lower environmental impact. For applications requiring extreme precision, consider [molecular sieve desiccants](/molecular-sieve) instead.",
       },
 
       {
@@ -622,11 +622,11 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The chemistry of moisture adsorption reveals a clear truth. Naturally occurring clay structures, refined over geological time, often outperform synthetic materials created through resource-intensive chemical processes. Danish Mo-clay represents not a compromise or \"green alternative\" to silica gel. Rather, it's a superior technical solution that happens to carry enormous environmental advantages.",
+        content: "The chemistry of moisture adsorption reveals a clear truth. Naturally occurring clay structures, refined over geological time, often outperform synthetic materials created through resource-intensive chemical processes. Danish Mo-clay represents not a compromise or \"green alternative\" to silica gel. Rather, it's a superior technical solution that happens to carry enormous environmental advantages. For a complete overview of all desiccant types, see our [complete desiccant guide](/blog/what-is-a-desiccant-complete-guide).",
       },
       {
         type: "text",
-        content: "The acid-washing and water consumption required for silica gel production represent hidden costs that forward-thinking procurement departments can no longer ignore. As water scarcity intensifies and regulatory pressure on chemical manufacturing increases, the economic case for clay desiccants will only strengthen.",
+        content: "The acid-washing and water consumption required for silica gel production represent hidden costs that forward-thinking procurement departments can no longer ignore. As water scarcity intensifies and regulatory pressure on chemical manufacturing increases, the economic case for clay desiccants will only strengthen. Understanding [how moisture damages cargo in shipping](/blog/container-rain-dew-point-physics) further reinforces why choosing the right desiccant matters.",
       },
       {
         type: "text",
@@ -666,11 +666,11 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Desiccants are intervention tools. They actively remove moisture from container atmospheres, reducing relative humidity and preventing condensation on cargo surfaces. A calcium chloride desiccant bag doesn't record anything; it simply pulls water vapor from the air until saturated or until equilibrium is reached.",
+        content: "Desiccants are intervention tools. They actively remove moisture from container atmospheres, reducing relative humidity and preventing condensation on cargo surfaces. A [calcium chloride desiccant](/calcium-chloride) bag doesn't record anything; it simply pulls water vapor from the air until saturated or until equilibrium is reached.",
       },
       {
         type: "text",
-        content: "Data loggers are documentation tools. They passively record temperature, humidity, shock, light exposure, or other environmental variables at preset intervals throughout a shipment's journey. A data logger doesn't prevent a single drop of condensation, but it tells you exactly when, where, and how badly conditions deteriorated.",
+        content: "[Data loggers](/datalogger) are documentation tools. They passively record temperature, humidity, shock, light exposure, or other environmental variables at preset intervals throughout a shipment's journey. A data logger doesn't prevent a single drop of condensation, but it tells you exactly when, where, and how badly conditions deteriorated.",
       },
       {
         type: "text",
@@ -701,7 +701,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "When a container arrives with mold-covered coffee beans or corroded machinery, the first question is always: what went wrong? With desiccants alone, you know only that moisture management was attempted. You don't know if humidity stayed within acceptable ranges, how many condensation cycles occurred, whether temperature swings exceeded specifications, or when problems began.",
+        content: "When a container arrives with mold-covered coffee beans or corroded machinery, the first question is always: what went wrong? With desiccants alone, you know only that moisture management was attempted. You don't know if humidity stayed within acceptable ranges, how many [condensation cycles occurred](/blog/container-rain-dew-point-physics), whether temperature swings exceeded specifications, or when problems began.",
       },
       {
         type: "text",
@@ -789,7 +789,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The most sophisticated shippers use data loggers to validate and refine comprehensive moisture management programs that include desiccants, pre-conditioning, proper loading procedures, and suitable packaging.",
+        content: "The most sophisticated shippers use data loggers to validate and refine comprehensive moisture management programs that include desiccants, pre-conditioning, proper [container stuffing procedures](/blog/container-desiccant-stuffing-guide), and suitable packaging.",
       },
       {
         type: "numbered-list",
@@ -834,7 +834,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "You don't actually choose between data loggers and desiccants; you need both. Desiccants control moisture; sensors document whether that control succeeded. Together they create a defendable, optimizable moisture management system that standalone desiccants cannot provide.",
+        content: "You don't actually choose between data loggers and desiccants; you need both. Desiccants control moisture; sensors document whether that control succeeded. Together they create a defendable, optimizable moisture management system that standalone desiccants cannot provide. Learn how to [verify your desiccant performance](/blog/data-logger-verification-guide) with recorded data.",
       },
       {
         type: "text",
@@ -870,7 +870,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Neither do cocoa, grains, animal feed, or dried fruits. These agricultural products continue metabolic processes during transit, consuming oxygen, generating heat, and exchanging moisture with their environment. Treating them like inert cargo guarantees problems.",
+        content: "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Neither do cocoa, grains, animal feed, or dried fruits. These agricultural products continue metabolic processes during transit, consuming oxygen, generating heat, and exchanging moisture with their environment. Treating them like inert cargo guarantees problems. Understanding [moisture in packaging](/blog/moisture-in-packaging) is essential background for agricultural shippers.",
       },
 
       {
@@ -887,7 +887,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The moisture content of agricultural cargo isn't fixed. A coffee bean at 12% moisture content in a 60% relative humidity environment will gradually dry out, losing weight and potentially developing off-flavors. The same bean in 75% humidity will absorb moisture, swelling and becoming vulnerable to mold. Unlike manufactured goods with stable moisture profiles, agricultural products actively equilibrate with their environment throughout transit.",
+        content: "The moisture content of agricultural cargo isn't fixed. A coffee bean at 12% moisture content in a 60% relative humidity environment will gradually dry out, losing weight and potentially developing off-flavors. The same bean in 75% humidity will absorb moisture, swelling and becoming vulnerable to [mold within days](/blog/mold-growth-timelines-80-rh). Unlike manufactured goods with stable moisture profiles, agricultural products actively equilibrate with their environment throughout transit.",
       },
 
       {
@@ -962,7 +962,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Standard container desiccants absorb moisture from the air but cannot stop agricultural cargo from generating moisture through respiration. A calcium chloride desiccant rated for 10 liters of moisture capacity sounds impressive until you calculate that a container of coffee beans respiring at typical rates releases 15-20 liters of moisture over a 30-day voyage.",
+        content: "Standard [container desiccants](/blog/container-desiccant-stuffing-guide) absorb moisture from the air but cannot stop agricultural cargo from generating moisture through respiration. A calcium chloride desiccant rated for 10 liters of moisture capacity sounds impressive until you calculate that a container of coffee beans respiring at typical rates releases 15-20 liters of moisture over a 30-day voyage.",
       },
       {
         type: "text",
@@ -979,7 +979,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Data loggers become essential rather than optional when shipping agricultural products because their behavior changes unpredictably based on initial moisture content, ambient conditions, and load characteristics that aren't fully knowable at loading.",
+        content: "[Temperature and humidity data loggers](/datalogger) become essential rather than optional when shipping agricultural products because their behavior changes unpredictably based on initial moisture content, ambient conditions, and load characteristics that aren't fully knowable at loading.",
       },
       {
         type: "text",
@@ -1044,7 +1044,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Successful agricultural shipping requires treating cargo as the living, respiring biological material it is rather than as inert freight. This means measuring actual moisture content at loading rather than assuming compliance, using temperature and humidity monitoring to track biological activity during transit, and selecting transport methods based on specific cargo characteristics and route conditions.",
+        content: "Successful agricultural shipping requires treating cargo as the living, respiring biological material it is rather than as inert freight. This means measuring actual moisture content at loading rather than assuming compliance, using [temperature and humidity monitoring](/blog/data-loggers-vs-desiccants) to track biological activity during transit, and selecting transport methods based on specific cargo characteristics and route conditions.",
       },
       {
         type: "quote",
@@ -1076,7 +1076,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule, and 80% relative humidity means very different things depending on temperature, cargo type, available nutrients, and whether you're measuring atmospheric humidity or surface conditions. Understanding these variables separates shippers who prevent mold damage from those who discover it at destination.",
+        content: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule, and 80% relative humidity means very different things depending on temperature, cargo type, available nutrients, and whether you're measuring atmospheric humidity or surface conditions. Understanding these variables separates shippers who [prevent moisture damage](/blog/moisture-in-packaging) from those who discover it at destination.",
       },
 
       {
@@ -1111,7 +1111,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The relationship between relative humidity and surface moisture is complex. A container at 80% RH doesn't mean every surface has liquid water. Temperature matters enormously. A surface at the same temperature as the surrounding air at 80% RH remains dry. But a surface just 2-3°C cooler than the air can reach its dew point, where water vapor condenses into liquid.",
+        content: "The relationship between relative humidity and surface moisture is complex. A container at 80% RH doesn't mean every surface has liquid water. Temperature matters enormously. A surface at the same temperature as the surrounding air at 80% RH remains dry. But a surface just 2-3°C cooler than the air can reach its dew point, where water vapor [condenses into liquid — the container rain effect](/blog/container-rain-dew-point-physics).",
       },
       {
         type: "text",
@@ -1170,7 +1170,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Eight consecutive days at 80% RH almost guarantees visible mold on vulnerable cargo. The same total time distributed as intermittent spikes over a 30-day voyage might produce only minor spotting. This is why data loggers are so valuable — they distinguish between sustained problematic conditions and intermittent spikes that carry different risk profiles.",
+        content: "Eight consecutive days at 80% RH almost guarantees visible mold on vulnerable cargo. The same total time distributed as intermittent spikes over a 30-day voyage might produce only minor spotting. This is why [data loggers are essential](/blog/data-loggers-vs-desiccants) — they distinguish between sustained problematic conditions and intermittent spikes that carry different risk profiles.",
       },
 
       {
@@ -1232,7 +1232,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Once mold begins, it cannot be fully reversed. Cleaning removes surface colonies but not internal penetration. Mycotoxins persist after mold is killed. Staining and odors become permanent. Adequate desiccant, proper container selection, cargo pre-conditioning, and real-time monitoring aren't optional risk mitigation measures — they're essential requirements for successfully shipping mold-sensitive products.",
+        content: "Once mold begins, it cannot be fully reversed. Cleaning removes surface colonies but not internal penetration. Mycotoxins persist after mold is killed. Staining and odors become permanent. Adequate [container desiccant](/blog/container-desiccant-stuffing-guide), proper container selection, cargo pre-conditioning, and [real-time monitoring](/datalogger) aren't optional risk mitigation measures — they're essential requirements for successfully shipping mold-sensitive products.",
       },
     ],
 
@@ -1260,7 +1260,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Silica gel desiccant is the world's most widely used moisture absorber — and for good reason. Whether you're shipping electronics, packaging pharmaceuticals, or storing sensitive goods, understanding how silica gel works helps you choose the right desiccant product and protect your inventory from humidity damage.",
+        content: "Silica gel desiccant is the world's most widely used moisture absorber — and for good reason. Whether you're shipping electronics, packaging pharmaceuticals, or storing sensitive goods, understanding how silica gel works helps you [choose the right desiccant](/blog/what-is-a-desiccant-complete-guide) product and protect your inventory from humidity damage.",
       },
 
       {
@@ -1327,8 +1327,8 @@ export const articles: Record<string, Article> = {
         type: "list",
         items: [
           "Silica gel: Up to ~40% weight absorption, best at 20–80% RH, reusable (regenerate at 120–150°C), FDA/EU food-safe — ideal for in-box e-commerce and general storage desiccant packs.",
-          "Molecular sieve: Up to ~25% weight absorption, excels at very low RH (<40%), reusable (250–300°C) — preferred for pharmaceuticals, gases, and ultra-dry industrial desiccant applications.",
-          "Calcium chloride: Over 100% weight absorption, best for high humidity and condensation prevention, not reusable (liquefies) — ideal for shipping containers and large cargo spaces.",
+          "[Molecular sieve](/molecular-sieve): Up to ~25% weight absorption, excels at very low RH (<40%), reusable (250–300°C) — preferred for pharmaceuticals, gases, and ultra-dry industrial desiccant applications.",
+          "[Calcium chloride](/calcium-chloride): Over 100% weight absorption, best for high humidity and condensation prevention, not reusable (liquefies) — ideal for shipping containers and large cargo spaces.",
         ],
       },
       {
@@ -1346,7 +1346,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The transit journey from warehouse to doorstep can expose packages to significant humidity swings — heated trucks, cold loading docks, humid climates. A correctly sized desiccant pack inside the shipping box acts as an invisible moisture barrier, preventing condensation, corrosion, and mold from forming before the customer opens the package.",
+        content: "The transit journey from warehouse to doorstep can expose packages to significant humidity swings — heated trucks, cold loading docks, humid climates. A correctly sized desiccant pack inside the shipping box acts as an invisible moisture barrier, preventing condensation, corrosion, and [mold from forming](/blog/mold-growth-timelines-80-rh) before the customer opens the package.",
       },
       {
         type: "subheading",
@@ -1487,7 +1487,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Silica gel significantly reduces the risk of mold by keeping relative humidity below the 60–70% threshold at which most molds begin to grow. It's highly effective but not a guarantee — if products enter packaging already with surface moisture or if packaging is very poorly sealed, mold spores may still have enough moisture to proliferate.",
+        content: "Silica gel significantly reduces the risk of mold by keeping relative humidity below the 60–70% threshold at which most molds begin to grow. It's highly effective but not a guarantee — if products enter packaging already with surface moisture or if packaging is very poorly sealed, mold spores may still have enough [moisture to proliferate](/blog/moisture-in-packaging).",
       },
       {
         type: "subheading",
@@ -1539,7 +1539,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Moisture is one of the most destructive and underestimated forces in global shipping. From corroded metal parts to mould-covered food products, from peeling labels to caked powder — container rain claims cost exporters billions each year. And yet the solution has existed since 1979, handcrafted in Denmark, and refined over four decades into what is now widely regarded as the most effective and sustainable container desiccant on the market: the original DRY BAG I.",
+        content: "Moisture is one of the most destructive and underestimated forces in global shipping. From corroded metal parts to mould-covered food products, from peeling labels to caked powder — [container rain](/blog/container-rain-dew-point-physics) claims cost exporters billions each year. And yet the solution has existed since 1979, handcrafted in Denmark, and refined over four decades into what is now widely regarded as the most effective and sustainable container desiccant on the market: the original DRY BAG I.",
       },
       {
         type: "text",
@@ -1569,7 +1569,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Not all desiccants are equal. The most commonly used materials in the industry are silica gel, calcium chloride, and various clay compounds. Each has its role, but for container shipping — where temperature fluctuations cause humidity to condense on the inside walls in what is known as \"container sweat\" or \"container rain\" — clay desiccant bags hold a significant advantage.",
+        content: "Not all desiccants are equal. The most commonly used materials in the industry are [silica gel](/silica), [calcium chloride](/calcium-chloride), and various clay compounds. Each has its role, but for container shipping — where temperature fluctuations cause humidity to condense on the inside walls in what is known as \"container sweat\" or \"container rain\" — clay desiccant bags hold a significant advantage.",
       },
       {
         type: "subheading",
@@ -1680,9 +1680,9 @@ export const articles: Record<string, Article> = {
       {
         type: "list",
         items: [
-          "Silica gel is widely used for small-scale or enclosed packaging applications. It absorbs moisture effectively at low humidity levels but has a relatively limited total capacity and is less effective in the temperature-variable environment of a shipping container. Explore silica gel desiccant options for in-box applications.",
-          "Calcium chloride desiccants have an exceptionally high absorption capacity and are a strong choice for high-humidity environments and heavy-duty container applications. They excel where large volumes of moisture need to be captured quickly.",
-          "Generic clay desiccants are widely available at low cost but typically have lower absorption capacity, shorter effective duration, and less rigorous quality control than DRY BAG I.",
+          "[Silica gel](/blog/silica-gel-desiccant-guide) is widely used for small-scale or enclosed packaging applications. It absorbs moisture effectively at low humidity levels but has a relatively limited total capacity and is less effective in the temperature-variable environment of a shipping container.",
+          "[Calcium chloride desiccants](/drybag-iii) have an exceptionally high absorption capacity and are a strong choice for high-humidity environments and heavy-duty container applications. They excel where large volumes of moisture need to be captured quickly.",
+          "Generic clay desiccants are widely available at low cost but typically have lower absorption capacity, shorter effective duration, and less rigorous quality control than DRY BAG I. See our [complete desiccant comparison guide](/blog/what-is-a-desiccant-complete-guide).",
         ],
       },
       {
@@ -1713,7 +1713,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Whether you are shipping dairy powder from Europe, coffee from Latin America, electronics from Asia, or animal feed across the globe, the challenge of container moisture is the same. The original DRY BAG I has been solving that challenge since 1979.",
+        content: "Whether you are shipping dairy powder from Europe, coffee from Latin America, electronics from Asia, or animal feed across the globe, the challenge of [container moisture](/blog/container-desiccant-stuffing-guide) is the same. The original DRY BAG I has been solving that challenge since 1979.",
       },
     ],
 
@@ -1741,7 +1741,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Cargo damage in transit is one of the most frustrating and avoidable costs in logistics. Products arrive broken, compressed, or contaminated — not because of anything that happened at origin or destination, but because of what happened in between. Movement inside a container during road, rail, or sea transport is a leading cause of freight claims worldwide.",
+        content: "Cargo damage in transit is one of the most frustrating and avoidable costs in logistics. Products arrive broken, compressed, or contaminated — not because of anything that happened at origin or destination, but because of what happened in between. Movement inside a container during road, rail, or sea transport is a leading cause of freight claims worldwide. Combined with [moisture damage from container rain](/blog/container-rain-dew-point-physics), these are the two biggest threats to cargo integrity.",
       },
       {
         type: "text",
@@ -1858,11 +1858,11 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Dunnage bags address one specific cause of cargo damage: movement due to void spaces. For container shipments where moisture is also a concern — covering a wide range of goods from food products to electronics to machinery — pairing dunnage bags with desiccants such as the DRY BAG I addresses both physical movement and humidity damage in a single loading workflow.",
+        content: "Dunnage bags address one specific cause of cargo damage: movement due to void spaces. For container shipments where moisture is also a concern — covering a wide range of goods from food products to electronics to machinery — pairing dunnage bags with desiccants such as the [DRY BAG I clay desiccant](/drybag-i) addresses both physical movement and humidity damage in a single loading workflow.",
       },
       {
         type: "text",
-        content: "Edge protectors, anti-slip sheets, and strapping systems can also be used alongside dunnage bags where the cargo type or transit conditions call for additional protection. The goal is always the same: ensure that the goods arrive in exactly the condition they left.",
+        content: "[Edge protectors](/edge-protectors), [anti-slip sheets](/anti-slip), and [strapping systems](/stabustrap) can also be used alongside dunnage bags where the cargo type or transit conditions call for additional protection. The goal is always the same: ensure that the goods arrive in exactly the condition they left.",
       },
 
       {
@@ -1894,7 +1894,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Cargo damage from load shifting is a predictable and preventable problem. Dunnage bags offer one of the most time-efficient, cost-effective, and versatile solutions available — quick to deploy, adaptable to any transport mode, and available in material options to suit both performance requirements and sustainability goals.",
+        content: "Cargo damage from load shifting is a predictable and preventable problem. Dunnage bags offer one of the most time-efficient, cost-effective, and versatile solutions available — quick to deploy, adaptable to any transport mode, and available in material options to suit both performance requirements and sustainability goals. For comprehensive protection, learn about [container stuffing best practices](/blog/container-desiccant-stuffing-guide).",
       },
       {
         type: "text",
@@ -1938,7 +1938,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Desiccants — whether silica gel, molecular sieve, calcium chloride, or a container desiccant like the DRY BAG range — are engineered to absorb moisture from the air. When correctly specified and deployed, they are highly effective at preventing the condensation, corrosion, mould, and humidity-related damage that plague international freight.",
+        content: "Desiccants — whether [silica gel](/silica), [molecular sieve](/molecular-sieve), calcium chloride, or a container desiccant like the [DRY BAG range](/drybag-i) — are engineered to absorb moisture from the air. When correctly specified and deployed, they are highly effective at preventing the condensation, corrosion, mould, and humidity-related damage that plague international freight.",
       },
       {
         type: "text",
@@ -1991,7 +1991,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Conversely, if temperature was stable throughout a section of the journey and humidity still climbed steadily, that points to a desiccant capacity issue rather than a temperature-driven condensation event. The distinction is important: it tells you whether you need a more robust desiccant type (like calcium chloride for high moisture loads) or simply more of the same product.",
+        content: "Conversely, if temperature was stable throughout a section of the journey and humidity still climbed steadily, that points to a desiccant capacity issue rather than a temperature-driven condensation event. The distinction is important: it tells you whether you need a more robust desiccant type (like [calcium chloride for high moisture loads](/drybag-iii)) or simply more of the same product.",
       },
       {
         type: "heading",
@@ -2041,9 +2041,9 @@ export const articles: Record<string, Article> = {
         type: "list",
         items: [
           "Gradual humidity climb that approaches but doesn't breach 70% RH: Your current desiccant type is appropriate but you need greater capacity. Upgrade to the next size of DRY BAG container desiccant or increase the number of units deployed.",
-          "Sharp, recurring humidity spikes during temperature drops: Condensation is the primary threat. Calcium chloride desiccants — which perform particularly well in high-moisture-load, variable-temperature conditions — or the DRY BAG III, designed for container use in humid environments, are worth considering.",
+          "Sharp, recurring humidity spikes during temperature drops: [Condensation is the primary threat](/blog/container-rain-dew-point-physics). Calcium chloride desiccants — which perform particularly well in high-moisture-load, variable-temperature conditions — or the DRY BAG III, designed for container use in humid environments, are worth considering.",
           "Consistently flat, low humidity across all journeys: Your strategy is working and may even be over-specified for this route. You could trial a lighter or smaller desiccant product and use the logger to confirm the reduced specification still holds.",
-          "High RH from the very start with no decline: Check desiccant placement and packaging integrity. The desiccant may not have been in contact with the air inside the container, or the product may have been compromised before loading. Silica gel and molecular sieve desiccants are sensitive to pre-exposure; damaged or incorrectly stored product should not be used.",
+          "High RH from the very start with no decline: Check desiccant placement and packaging integrity. The desiccant may not have been in contact with the air inside the container, or the product may have been compromised before loading. [Silica gel and molecular sieve](/blog/what-is-a-desiccant-complete-guide) desiccants are sensitive to pre-exposure; damaged or incorrectly stored product should not be used.",
         ],
       },
       {
@@ -2101,7 +2101,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Every year, businesses across Denmark and the wider Nordic region lose significant revenue to cargo damage caused by one preventable problem: load shifting during transport. Whether goods are travelling by truck along Danish motorways, being transferred between distribution hubs, or loaded into ocean containers, the forces acting on a pallet stack are relentless. Acceleration, braking, cornering, and vibration all conspire to move stacked layers out of alignment. When that happens, packaging is crushed, products are damaged, and returns pile up.",
+        content: "Every year, businesses across Denmark and the wider Nordic region lose significant revenue to cargo damage caused by one preventable problem: load shifting during transport. Whether goods are travelling by truck along Danish motorways, being transferred between distribution hubs, or loaded into ocean containers, the forces acting on a pallet stack are relentless. Acceleration, braking, cornering, and vibration all conspire to move stacked layers out of alignment. When that happens, packaging is crushed, products are damaged, and returns pile up. For container shipments, this risk compounds with [moisture damage from condensation](/blog/container-rain-dew-point-physics).",
       },
       {
         type: "text",
@@ -2216,7 +2216,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Dunnage bags fill void space within containers and trailers to prevent whole-pallet movement. For layer-level stability within a single pallet stack, Anti-Slip Sheets are the more targeted and cost-efficient solution. Both product types are available through desiccant.com for complete cargo protection coverage.",
+        content: "[Dunnage bags](/dunnage-bag) fill void space within containers and trailers to prevent whole-pallet movement. For layer-level stability within a single pallet stack, Anti-Slip Sheets are the more targeted and cost-efficient solution. Both product types are available through desiccant.com for complete cargo protection coverage.",
       },
       {
         type: "subheading",
@@ -2229,7 +2229,7 @@ export const articles: Record<string, Article> = {
       {
         type: "callout",
         title: "Combined Protection Strategy",
-        content: "For comprehensive cargo protection, logistics operators increasingly combine Anti-Slip Sheets, dunnage bags, and edge protectors sourced through a single supplier for simplicity and cost efficiency.",
+        content: "For comprehensive cargo protection, logistics operators increasingly combine Anti-Slip Sheets, [dunnage bags](/dunnage-bag), and [edge protectors](/edge-protectors) sourced through a single supplier for simplicity and cost efficiency.",
       },
       {
         type: "heading",
@@ -2441,9 +2441,9 @@ export const articles: Record<string, Article> = {
       {
         type: "list",
         items: [
-          "Anti-slip sheets placed between pallet layers add friction that resists lateral shifting, working alongside Stabustrap's perimeter restraint to create a more stable stack overall.",
-          "Edge protectors at the corners of pallet loads shield packaging from the localised pressure of any strapping or banding system.",
-          "For outbound shipments, dunnage bags address the void-fill and load-shifting challenges of container transport, while desiccants such as DRY BAG I protect sensitive cargo from humidity damage during transit.",
+          "[Anti-slip sheets](/anti-slip) placed between pallet layers add friction that resists lateral shifting, working alongside Stabustrap's perimeter restraint to create a more stable stack overall.",
+          "[Edge protectors](/edge-protectors) at the corners of pallet loads shield packaging from the localised pressure of any strapping or banding system.",
+          "For outbound shipments, [dunnage bags](/dunnage-bag) address the void-fill and load-shifting challenges of container transport, while desiccants such as [DRY BAG I](/drybag-i) protect sensitive cargo from humidity damage during transit.",
         ],
       },
       {
@@ -2490,7 +2490,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Moisture is the silent destroyer of stored valuables. Left unchecked in a closed boat cabin, a camper van parked for winter, a basement storage room, or a garage, damp air causes mould, rust, wood rot, fabric odours, and electronic corrosion.",
+        content: "Moisture is the silent destroyer of stored valuables. Left unchecked in a closed boat cabin, a camper van parked for winter, a basement storage room, or a garage, damp air causes [mould](/blog/mold-growth-timelines-80-rh), rust, wood rot, fabric odours, and electronic corrosion.",
       },
       {
         type: "text",
@@ -2672,7 +2672,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "DRY BAG Retail uses the same Moclay formula as the original DRY-BAG I, which is used to protect cargo in ocean shipping containers. The retail version is sized and packaged for private consumer applications — boats, campers, basements, garages — rather than industrial container volumes. The core absorption chemistry is identical.",
+        content: "DRY BAG Retail uses the same Moclay formula as the original [DRY-BAG I](/drybag-i), which is used to protect cargo in ocean shipping containers. The retail version is sized and packaged for private consumer applications — boats, campers, basements, garages — rather than industrial container volumes. The core absorption chemistry is identical. Learn more about [how desiccants work](/blog/what-is-a-desiccant-complete-guide).",
       },
       {
         type: "subheading",
@@ -2719,15 +2719,15 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "When a ship moves between climates — say, from cold Northern Europe into the humid tropics — the temperature inside a steel container fluctuates dramatically. Warm, moist air enters the container during loading, and as temperatures drop at sea, that moisture condenses on the coldest surfaces: the steel walls, the roof, and the cargo itself. This phenomenon is known as \"container rain\" or \"container sweat,\" and it can destroy an entire shipment.",
+        content: "When a ship moves between climates — say, from cold Northern Europe into the humid tropics — the temperature inside a steel container fluctuates dramatically. Warm, moist air enters the container during loading, and as temperatures drop at sea, that moisture condenses on the coldest surfaces: the steel walls, the roof, and the cargo itself. This phenomenon is known as \"[container rain](/blog/container-rain-dew-point-physics)\" or \"container sweat,\" and it can destroy an entire shipment.",
       },
       {
         type: "text",
-        content: "Wooden pallet boards and container floors are particularly problematic, as they absorb and slowly release moisture throughout the voyage. A floor that looks perfectly dry to the eye can hold enough residual moisture to raise the relative humidity inside a sealed container to damaging levels within days.",
+        content: "[Wooden pallet boards](/blog/vapor-pressure-wooden-pallets) and container floors are particularly problematic, as they absorb and slowly release moisture throughout the voyage. A floor that looks perfectly dry to the eye can hold enough residual moisture to raise the relative humidity inside a sealed container to damaging levels within days.",
       },
       {
         type: "text",
-        content: "Container desiccants work by absorbing that airborne moisture before it condenses, keeping the relative humidity inside the container below the critical threshold — typically below 60% RH — at which mould, corrosion, and cargo damage become serious risks.",
+        content: "Container desiccants work by absorbing that airborne moisture before it condenses, keeping the relative humidity inside the container below the critical threshold — typically below 60% RH — at which [mould, corrosion, and cargo damage](/blog/mold-growth-timelines-80-rh) become serious risks.",
       },
       {
         type: "heading",
@@ -2838,7 +2838,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Montmorillonite clay desiccants are a natural, cost-effective option that performs well at moderate temperatures. They are less effective in high-heat environments (above 50°C), where they can actually begin to release absorbed moisture — a critical limitation for containers passing through equatorial shipping lanes in peak summer.",
+        content: "Montmorillonite [clay desiccants like DRY-BAG I](/drybag-i) are a natural, cost-effective option that performs well at moderate temperatures. They are less effective in high-heat environments (above 50°C), where they can actually begin to release absorbed moisture — a critical limitation for containers passing through equatorial shipping lanes in peak summer.",
       },
       {
         type: "heading",
@@ -2975,7 +2975,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Molecular sieves are among the most precisely engineered desiccant materials in existence. Unlike silica gel or calcium chloride, which absorb moisture indiscriminately from the surrounding atmosphere, molecular sieves work at the molecular level — physically selecting which molecules are allowed to enter their structure and which are turned away. That selectivity is determined almost entirely by one variable: pore size.",
+        content: "Molecular sieves are among the most precisely engineered desiccant materials in existence. Unlike [silica gel](/blog/silica-gel-desiccant-guide) or calcium chloride, which absorb moisture indiscriminately from the surrounding atmosphere, molecular sieves work at the molecular level — physically selecting which molecules are allowed to enter their structure and which are turned away. That selectivity is determined almost entirely by one variable: pore size.",
       },
       {
         type: "text",
@@ -3162,7 +3162,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "In most moisture-control applications — packaging desiccants, solvent drying, gas dehydration — the choice will come down to 3A or 4A. For gas separation and purification, 5A and 13X become relevant. When in doubt, consult a desiccant specialist with the specifics of your process: feed composition, target outlet specification, temperature, pressure, and required cycle life.",
+        content: "In most moisture-control applications — packaging desiccants, solvent drying, gas dehydration — the choice will come down to 3A or 4A. For gas separation and purification, 5A and 13X become relevant. When in doubt, consult a desiccant specialist with the specifics of your process. For a broader comparison of all desiccant types, see our [complete desiccant guide](/blog/what-is-a-desiccant-complete-guide).",
       },
 
       {
@@ -3171,7 +3171,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Molecular sieves are not a commodity product. The pore size — whether 3A, 4A, 5A, or 13X — defines what the material will capture and what it will ignore, and that selectivity is the entire basis of the technology's value. Choosing the right pore size requires understanding your target molecule, your process stream, and your regeneration constraints. Getting it right delivers precise, reliable performance. Getting it wrong means the sieve either does nothing useful or does too much — and in either case, the result is a process that fails to meet specification.",
+        content: "Molecular sieves are not a commodity product. The pore size — whether 3A, 4A, 5A, or 13X — defines what the material will capture and what it will ignore, and that selectivity is the entire basis of the technology's value. Choosing the right pore size requires understanding your target molecule, your process stream, and your regeneration constraints. For applications where [clay desiccants](/blog/chemistry-clay-mo-clay-vs-silica-gel) or silica gel may be more appropriate, understanding these alternatives helps ensure you select the optimal solution.",
       },
     ],
 
@@ -3198,7 +3198,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air, maintaining a dry environment inside packaging or a sealed space. Desiccants are used in industry to protect products from moisture damage, corrosion, and mold during storage and transport.",
+        content: "A desiccant is a hygroscopic substance that absorbs or adsorbs moisture from the surrounding air, maintaining a dry environment inside packaging or a sealed space. Desiccants are used in industry to protect products from [moisture damage](/blog/moisture-in-packaging), corrosion, and mold during storage and transport.",
       },
 
       { type: "heading", content: "What is a desiccant?" },
@@ -3361,7 +3361,7 @@ export const articles: Record<string, Article> = {
       { type: "subheading", content: "Container transport and export" },
       {
         type: "text",
-        content: "One of the most critical applications for desiccants is container shipping. A standard 20-foot or 40-foot sea container can hold up to 400 liters of water in the air at full saturation in tropical temperatures. When the temperature drops at night or in colder climate zones, this water vapor condenses and can drip onto the cargo – a phenomenon known in the industry as 'container rain' or container condensation.",
+        content: "One of the most critical applications for desiccants is container shipping. A standard 20-foot or 40-foot sea container can hold up to 400 liters of water in the air at full saturation in tropical temperatures. When the temperature drops at night or in colder climate zones, this water vapor condenses and can drip onto the cargo – a phenomenon known in the industry as '[container rain](/blog/container-rain-dew-point-physics)' or container condensation.",
       },
       {
         type: "text",
@@ -3378,7 +3378,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The solution is container desiccants – large bagged desiccants (typically calcium chloride or a clay mixture like DRY-BAG I) that are hung from the container ceiling and absorb humid air before it condenses.",
+        content: "The solution is container desiccants – large bagged desiccants (typically calcium chloride or a [clay mixture like DRY-BAG I](/drybag-i)) that are hung from the container ceiling and absorb humid air before it condenses.",
       },
 
       { type: "subheading", content: "Electronics and semiconductors" },
@@ -3513,7 +3513,7 @@ export const articles: Record<string, Article> = {
       { type: "heading", content: "Sustainability and circular economy" },
       {
         type: "text",
-        content: "Reusable desiccants (silica gel, molecular sieve, DRY-BAG I) can be regenerated and reused hundreds of times if handled correctly. This reduces material consumption and waste and supports companies' sustainability goals.",
+        content: "Reusable desiccants ([silica gel](/silica), [molecular sieve](/molecular-sieve), DRY-BAG I) can be regenerated and reused hundreds of times if handled correctly. This reduces material consumption and waste and supports companies' sustainability goals.",
       },
 
       { type: "heading", content: "Frequently asked questions about desiccants" },
@@ -3602,7 +3602,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Moisture in packaging is one of the most underestimated causes of product damage throughout the supply chain. Every year, companies suffer significant losses due to rust, mould, deformed packaging, and dissatisfied customers – damage that in many cases could have been avoided with the right moisture protection.",
+        content: "Moisture in packaging is one of the most underestimated causes of product damage throughout the supply chain. Every year, companies suffer significant losses due to rust, [mould](/blog/mold-growth-timelines-80-rh), deformed packaging, and dissatisfied customers – damage that in many cases could have been avoided with the right moisture protection.",
       },
       {
         type: "text",
@@ -3664,7 +3664,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "A well-known phenomenon in international container shipping is what is called container rain. The air's ability to hold moisture drops significantly when temperature falls. In a container that heats up during the day and cools down at night, moisture from cargo, pallets, and air is forced out as water droplets – which collect on the ceiling and walls and drip down onto the cargo.",
+        content: "A well-known phenomenon in international container shipping is what is called [container rain](/blog/container-rain-dew-point-physics). The air's ability to hold moisture drops significantly when temperature falls. In a container that heats up during the day and cools down at night, moisture from cargo, pallets, and air is forced out as water droplets – which collect on the ceiling and walls and drip down onto the cargo.",
       },
       {
         type: "text",
@@ -3734,7 +3734,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The most direct and reliable method for combating moisture in packaging is the use of industrial desiccants. A desiccant is a hygroscopic material that actively absorbs water molecules from the air inside the packaging, thereby lowering the relative humidity to a safe level.",
+        content: "The most direct and reliable method for combating moisture in packaging is the use of industrial desiccants. A [desiccant](/blog/what-is-a-desiccant-complete-guide) is a hygroscopic material that actively absorbs water molecules from the air inside the packaging, thereby lowering the relative humidity to a safe level.",
       },
       {
         type: "text",
@@ -3871,7 +3871,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Container rain is a phenomenon where moisture inside a sea container condenses on the container walls and ceiling and drips down onto the goods. It typically occurs due to temperature variations during sea transport and is effectively prevented with calcium chloride desiccants.",
+        content: "Container rain is a phenomenon where moisture inside a sea container condenses on the container walls and ceiling and drips down onto the goods. It typically occurs due to temperature variations during sea transport and is effectively prevented with [calcium chloride desiccants](/drybag-iii).",
       },
       {
         type: "subheading",
