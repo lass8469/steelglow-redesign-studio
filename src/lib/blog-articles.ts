@@ -870,7 +870,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Neither do cocoa, grains, animal feed, or dried fruits. These agricultural products continue metabolic processes during transit, consuming oxygen, generating heat, and exchanging moisture with their environment. Treating them like inert cargo guarantees problems.",
+        content: "Coffee beans don't stop being biological organisms when they're loaded into shipping containers. Neither do cocoa, grains, animal feed, or dried fruits. These agricultural products continue metabolic processes during transit, consuming oxygen, generating heat, and exchanging moisture with their environment. Treating them like inert cargo guarantees problems. Understanding [moisture in packaging](/blog/moisture-in-packaging) is essential background for agricultural shippers.",
       },
 
       {
