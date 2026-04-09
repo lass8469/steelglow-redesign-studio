@@ -1713,7 +1713,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Whether you are shipping dairy powder from Europe, coffee from Latin America, electronics from Asia, or animal feed across the globe, the challenge of container moisture is the same. The original DRY BAG I has been solving that challenge since 1979.",
+        content: "Whether you are shipping dairy powder from Europe, coffee from Latin America, electronics from Asia, or animal feed across the globe, the challenge of [container moisture](/blog/container-desiccant-stuffing-guide) is the same. The original DRY BAG I has been solving that challenge since 1979.",
       },
     ],
 
