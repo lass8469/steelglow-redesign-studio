@@ -789,7 +789,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The most sophisticated shippers use data loggers to validate and refine comprehensive moisture management programs that include desiccants, pre-conditioning, proper loading procedures, and suitable packaging.",
+        content: "The most sophisticated shippers use data loggers to validate and refine comprehensive moisture management programs that include desiccants, pre-conditioning, proper [container stuffing procedures](/blog/container-desiccant-stuffing-guide), and suitable packaging.",
       },
       {
         type: "numbered-list",
