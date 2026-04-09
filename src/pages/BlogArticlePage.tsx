@@ -43,7 +43,7 @@ const renderSection = (section: ArticleSection, index: number) => {
           {section.items.map((item, i) => (
             <li key={i} className="text-muted-foreground flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0" />
-              {item}
+              {parseInlineLinks(item)}
             </li>
           ))}
         </ul>
