@@ -2672,7 +2672,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "DRY BAG Retail uses the same Moclay formula as the original DRY-BAG I, which is used to protect cargo in ocean shipping containers. The retail version is sized and packaged for private consumer applications — boats, campers, basements, garages — rather than industrial container volumes. The core absorption chemistry is identical.",
+        content: "DRY BAG Retail uses the same Moclay formula as the original [DRY-BAG I](/drybag-i), which is used to protect cargo in ocean shipping containers. The retail version is sized and packaged for private consumer applications — boats, campers, basements, garages — rather than industrial container volumes. The core absorption chemistry is identical. Learn more about [how desiccants work](/blog/what-is-a-desiccant-complete-guide).",
       },
       {
         type: "subheading",
