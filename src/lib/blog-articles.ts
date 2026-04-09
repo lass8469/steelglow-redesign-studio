@@ -1044,7 +1044,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Successful agricultural shipping requires treating cargo as the living, respiring biological material it is rather than as inert freight. This means measuring actual moisture content at loading rather than assuming compliance, using temperature and humidity monitoring to track biological activity during transit, and selecting transport methods based on specific cargo characteristics and route conditions.",
+        content: "Successful agricultural shipping requires treating cargo as the living, respiring biological material it is rather than as inert freight. This means measuring actual moisture content at loading rather than assuming compliance, using [temperature and humidity monitoring](/blog/data-loggers-vs-desiccants) to track biological activity during transit, and selecting transport methods based on specific cargo characteristics and route conditions.",
       },
       {
         type: "quote",
