@@ -276,7 +276,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Every day, approximately 250,000 shipping containers cross the world's oceans. Inside these steel boxes, a silent meteorological event unfolds that costs the global supply chain an estimated $6–8 billion annually: container rain. This phenomenon isn't caused by leaks or poor packaging. It's the inevitable result of fundamental physics meeting the reality of transoceanic temperature gradients.",
+        content: "Every day, approximately 250,000 shipping containers cross the world's oceans. Inside these steel boxes, a silent meteorological event unfolds that costs the global supply chain an estimated $6–8 billion annually: container rain. This phenomenon isn't caused by leaks or poor packaging. It's the inevitable result of fundamental physics meeting the reality of transoceanic temperature gradients. Understanding [moisture in packaging](/blog/moisture-in-packaging) is the first step toward prevention.",
       },
 
       {
