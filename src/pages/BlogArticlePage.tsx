@@ -33,7 +33,7 @@ const renderSection = (section: ArticleSection, index: number) => {
     case "text":
       return (
         <p key={index} className="text-muted-foreground leading-relaxed mb-4">
-          {section.content}
+          {parseInlineLinks(section.content)}
         </p>
       );
     
