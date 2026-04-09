@@ -626,7 +626,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The acid-washing and water consumption required for silica gel production represent hidden costs that forward-thinking procurement departments can no longer ignore. As water scarcity intensifies and regulatory pressure on chemical manufacturing increases, the economic case for clay desiccants will only strengthen.",
+        content: "The acid-washing and water consumption required for silica gel production represent hidden costs that forward-thinking procurement departments can no longer ignore. As water scarcity intensifies and regulatory pressure on chemical manufacturing increases, the economic case for clay desiccants will only strengthen. Understanding [how moisture damages cargo in shipping](/blog/container-rain-dew-point-physics) further reinforces why choosing the right desiccant matters.",
       },
       {
         type: "text",
