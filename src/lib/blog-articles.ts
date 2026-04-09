@@ -186,7 +186,7 @@ export const articles: Record<string, Article> = {
         type: "list",
         items: [
           "Kiln drying: The most controlled method — combining elevated temperatures with precisely managed humidity levels and air circulation to maintain optimal vapor pressure gradients throughout the drying cycle.",
-          "Dehumidification drying: Uses refrigeration-based or desiccant-based dehumidifiers to continuously remove moisture from air in an enclosed space, maintaining a consistent driving force for moisture to leave the wood.",
+          "Dehumidification drying: Uses refrigeration-based or desiccant-based dehumidifiers to continuously remove moisture from air in an enclosed space, maintaining a consistent driving force for moisture to leave the wood. Learn more about [how desiccants work](/blog/what-is-a-desiccant-complete-guide).",
           "Optimized air drying: Stacking pallets with adequate spacing, using fans for air movement, and positioning stacks in areas with lower ambient humidity to increase the vapor pressure differential.",
         ],
       },
