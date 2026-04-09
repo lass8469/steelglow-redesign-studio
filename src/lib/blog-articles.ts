@@ -406,7 +406,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The physics is unambiguous: temperature will vary, dew point condensation will occur, and moisture damage will result — unless that moisture is captured before it condenses. Desiccants represent the only passive, reliable, economically scaled solution to this fundamental challenge.",
+        content: "The physics is unambiguous: temperature will vary, dew point condensation will occur, and moisture damage will result — unless that moisture is captured before it condenses. Desiccants represent the only passive, reliable, economically scaled solution to this fundamental challenge. Read our complete guide on [how to protect cargo with container desiccants](/blog/container-desiccant-stuffing-guide).",
       },
       {
         type: "text",
