@@ -485,7 +485,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The adsorption isotherm of Mo-clay shows superior performance at the medium humidity ranges most relevant to product storage and shipping, typically between 40% and 70% relative humidity. While silica gel may show higher capacity at extreme humidity levels, clay desiccants perform more effectively in real-world conditions where preventing humidity fluctuations matters more than achieving absolute dryness.",
+        content: "The adsorption isotherm of Mo-clay shows superior performance at the medium humidity ranges most relevant to product storage and shipping, typically between 40% and 70% relative humidity. While silica gel may show higher capacity at extreme humidity levels, [clay desiccants like DRY-BAG I](/drybag-i) perform more effectively in real-world conditions where preventing humidity fluctuations matters more than achieving absolute dryness.",
       },
 
       {
