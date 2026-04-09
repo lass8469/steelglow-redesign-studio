@@ -298,7 +298,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The difference — 14.6 grams per cubic meter — must go somewhere. In a 76-cubic-meter container, that's over 1,100 grams (more than a liter) of water that will condense as 'container rain,' dripping onto cargo, pooling in corners, and creating ideal conditions for mold growth.",
+        content: "The difference — 14.6 grams per cubic meter — must go somewhere. In a 76-cubic-meter container, that's over 1,100 grams (more than a liter) of water that will condense as 'container rain,' dripping onto cargo, pooling in corners, and creating ideal conditions for [mold growth within days](/blog/mold-growth-timelines-80-rh).",
       },
 
       {
