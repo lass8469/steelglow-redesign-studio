@@ -622,7 +622,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "The chemistry of moisture adsorption reveals a clear truth. Naturally occurring clay structures, refined over geological time, often outperform synthetic materials created through resource-intensive chemical processes. Danish Mo-clay represents not a compromise or \"green alternative\" to silica gel. Rather, it's a superior technical solution that happens to carry enormous environmental advantages.",
+        content: "The chemistry of moisture adsorption reveals a clear truth. Naturally occurring clay structures, refined over geological time, often outperform synthetic materials created through resource-intensive chemical processes. Danish Mo-clay represents not a compromise or \"green alternative\" to silica gel. Rather, it's a superior technical solution that happens to carry enormous environmental advantages. For a complete overview of all desiccant types, see our [complete desiccant guide](/blog/what-is-a-desiccant-complete-guide).",
       },
       {
         type: "text",
