@@ -2719,7 +2719,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "When a ship moves between climates — say, from cold Northern Europe into the humid tropics — the temperature inside a steel container fluctuates dramatically. Warm, moist air enters the container during loading, and as temperatures drop at sea, that moisture condenses on the coldest surfaces: the steel walls, the roof, and the cargo itself. This phenomenon is known as \"container rain\" or \"container sweat,\" and it can destroy an entire shipment.",
+        content: "When a ship moves between climates — say, from cold Northern Europe into the humid tropics — the temperature inside a steel container fluctuates dramatically. Warm, moist air enters the container during loading, and as temperatures drop at sea, that moisture condenses on the coldest surfaces: the steel walls, the roof, and the cargo itself. This phenomenon is known as \"[container rain](/blog/container-rain-dew-point-physics)\" or \"container sweat,\" and it can destroy an entire shipment.",
       },
       {
         type: "text",
