@@ -187,7 +187,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Forståelse af damptryk omdanner fugtstyring fra et vagt koncept om at \"lade træ tørre\" til en kontrollerbar proces med målbare parametre og forudsigelige resultater. Ved at anerkende, at fugtbevægelse følger damptrykgradienter bestemt af temperatur, fugtighed og træets fugtindhold, kan operationer implementere målrettede indgreb, der rent faktisk fjerner fugt i stedet for blot at håbe, at den forsvinder over tid.",
+        content: "Forståelse af damptryk omdanner fugtstyring fra et vagt koncept om at \"lade træ tørre\" til en kontrollerbar proces med målbare parametre og forudsigelige resultater. Ved at anerkende, at fugtbevægelse følger damptrykgradienter bestemt af temperatur, fugtighed og træets fugtindhold, kan operationer implementere målrettede indgreb, der rent faktisk fjerner fugt i stedet for blot at håbe, at den forsvinder over tid. For optimal beskyttelse under transport, se vores guide til [containertørremidler](/blog/container-desiccant-stuffing-guide).",
       },
     ],
 
