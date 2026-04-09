@@ -1369,7 +1369,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Molecular sieve er mere effektivt ved meget lave fugtighedsniveauer og højere temperaturer, hvilket gør det til det foretrukne industri tørremiddel til farmaceutiske og kemiske applikationer. Silica gel er mere omkostningseffektivt til generel fugtkontrol og yder bedre i det mellemfugtige område, der er typisk for de fleste transport- og opbevaringsmiljøer.",
+        content: "Molecular sieve er mere effektivt ved meget lave fugtighedsniveauer og højere temperaturer, hvilket gør det til det foretrukne industri tørremiddel til farmaceutiske og kemiske applikationer. [Silica gel](/blog/silica-gel-desiccant-guide) er mere omkostningseffektivt til generel fugtkontrol og yder bedre i det mellemfugtige område, der er typisk for de fleste transport- og opbevaringsmiljøer.",
       },
       {
         type: "subheading",
@@ -1699,11 +1699,11 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Luftpuder adresserer én specifik årsag til fragtskade: bevægelse pga. tomrum. For containerforsendelser, hvor fugt også er et problem, kan kombination af luftpuder med tørremidler som DRY BAG I adressere både fysisk bevægelse og fugtskader i én arbejdsgang ved lastning.",
+        content: "Luftpuder adresserer én specifik årsag til fragtskade: bevægelse pga. tomrum. For containerforsendelser, hvor fugt også er et problem, kan kombination af luftpuder med tørremidler som [DRY BAG I](/drybag-i) adressere både fysisk bevægelse og fugtskader i én arbejdsgang ved lastning.",
       },
       {
         type: "text",
-        content: "Kantbeskyttere, antiskrid-ark og surringssystemer kan også bruges sammen med luftpuder, hvor godstype eller transitforhold kræver yderligere fugtbeskyttelse og lastsikring ved specifikke punkter.",
+        content: "[Kantbeskyttere](/edge-protectors), [antiskrid-ark](/anti-slip) og surringssystemer kan også bruges sammen med luftpuder, hvor godstype eller transitforhold kræver yderligere fugtbeskyttelse og lastsikring ved specifikke punkter.",
       },
 
       {
@@ -1739,7 +1739,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Uanset om du fylder tomrum i en 40-fods container på vej over Stillehavet, afstiver paller i en vejfragttrailer eller sikrer gods i en togvogn — den rigtige luftpude eliminerer risikoen, før den bliver et krav.",
+        content: "Uanset om du fylder tomrum i en 40-fods container på vej over Stillehavet, afstiver paller i en vejfragttrailer eller sikrer gods i en togvogn — den rigtige luftpude eliminerer risikoen. For fugtbeskyttelse i containere, se vores guide til [containertørremidler](/blog/container-desiccant-stuffing-guide), før den bliver et krav.",
       },
     ],
 
@@ -1771,7 +1771,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Et tørremiddel udfører sit arbejde lydløst og usynligt. Det absorberer fugt fra luften i containeren, men uden en måde at måle, hvad der skete, baserer du dig udelukkende på antagelser. En temperatur- og fugtighedsdatalogger lukker det hul. Det er instrumentet, der forvandler din fugtstrategi fra et kvalificeret gæt til et verificeret, dokumenteret resultat.",
+        content: "Et tørremiddel udfører sit arbejde lydløst og usynligt. Det absorberer fugt fra luften i containeren, men uden en måde at måle, hvad der skete, baserer du dig udelukkende på antagelser. En temperatur- og fugtighedsdatalogger lukker det hul. Det er instrumentet, der forvandler din [fugtstrategi](/blog/moisture-in-packaging) fra et kvalificeret gæt til et verificeret, dokumenteret resultat.",
       },
       {
         type: "heading",
@@ -1882,7 +1882,7 @@ export const articlesDa: Record<string, Article> = {
         type: "list",
         items: [
           "Gradvis fugtighedsstigning, der nærmer sig men ikke bryder 70 % RF: Din nuværende tørremiddeltype er passende, men du har brug for større kapacitet. Opgrader til næste størrelse DRY BAG containertørremiddel eller øg antallet af enheder.",
-          "Skarpe, tilbagevendende fugtighedsspidser under temperaturfald: Kondens er den primære trussel. Calciumchlorid-tørremidler — der klarer sig særligt godt under høj fugtbelastning og variable temperaturforhold — eller DRY BAG III, designet til containerbrug i fugtige miljøer, er værd at overveje.",
+          "Skarpe, tilbagevendende fugtighedsspidser under temperaturfald: [Kondens er den primære trussel](/blog/container-rain-dew-point-physics). Calciumchlorid-tørremidler — der klarer sig særligt godt under høj fugtbelastning og variable temperaturforhold — eller DRY BAG III, designet til containerbrug i fugtige miljøer, er værd at overveje.",
           "Konsekvent flad, lav fugtighed på tværs af alle rejser: Din strategi fungerer og er muligvis overspécificeret til denne rute. Du kan prøve et lettere eller mindre tørremiddelprodukt og bruge loggeren til at bekræfte, at den reducerede specifikation stadig holder.",
           "Høj RF fra starten uden fald: Kontrollér tørremidlets placering og emballageintegritet. Tørremidlet har muligvis ikke været i kontakt med luften inde i containeren, eller produktet kan være kompromitteret inden lastning. Silica gel og molekylær sigte-tørremidler er følsomme over for foreksponering; beskadiget eller forkert opbevaret produkt bør ikke anvendes.",
         ],
@@ -1914,7 +1914,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Desiccant.com's temperatur- og fugtighedsdataloggere tilbyder op til 120 dages kontinuerlig overvågning, automatisk USB-rapportgenerering og den holdbare bygningskvalitet, der kræves til internationale fragtforhold. Parret med vores tørremiddelsortiment — fra silica gel og molekylær sigte til DRY BAG containertørremiddelserien — giver de dig et komplet fugtstyringssystem med indbygget verifikation.",
+        content: "Desiccant.com's temperatur- og fugtighedsdataloggere tilbyder op til 120 dages kontinuerlig overvågning, automatisk USB-rapportgenerering og den holdbare bygningskvalitet, der kræves til internationale fragtforhold. Parret med vores tørremiddelsortiment — fra [silica gel](/silica) og [molekylær sigte](/molecular-sieve) til [DRY BAG containertørremiddelserien](/drybag-i) — giver de dig et komplet fugtstyringssystem med indbygget verifikation.",
       },
     ],
 
@@ -1942,7 +1942,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Hvert år mister virksomheder i Danmark og Norden betydelige beløb på godsskader forårsaget af ét forebyggeligt problem: godsskift under transport. Uanset om varer kører ad danske motorveje, overføres mellem distributionscentre eller lastes i containere, er kræfterne på et pallelæs ubarmhjertige. Acceleration, opbremsning, kurvekørsel og vibrationer forsøger alle at forskyde stablede lag. Når det sker, knuses emballage, produkter beskadiges og returvarer hober sig op.",
+        content: "Hvert år mister virksomheder i Danmark og Norden betydelige beløb på godsskader forårsaget af ét forebyggeligt problem: godsskift under transport. Uanset om varer kører ad danske motorveje, overføres mellem distributionscentre eller lastes i containere, er kræfterne på et pallelæs ubarmhjertige. For containerforsendelser forstærkes risikoen med [fugtskader fra kondens](/blog/container-rain-dew-point-physics). Acceleration, opbremsning, kurvekørsel og vibrationer forsøger alle at forskyde stablede lag. Når det sker, knuses emballage, produkter beskadiges og returvarer hober sig op.",
       },
       {
         type: "text",
@@ -2323,7 +2323,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Fugt er den stille ødelægger af opbevarede værdier. Lades den ukontrolleret i en lukket bådkahyt, en campingvogn parkeret til vinter, et kælderrum eller en garage, forårsager fugtig luft skimmel, rust, råd i træ, lugt i stoffer og korrosion af elektronik.",
+        content: "Fugt er den stille ødelægger af opbevarede værdier. At forstå [hvorfor kondens dannes](/blog/container-rain-dew-point-physics) hjælper med at forklare, hvorfor sæsonopbevaring er så sårbar. Lades den ukontrolleret i en lukket bådkahyt, en campingvogn parkeret til vinter, et kælderrum eller en garage, forårsager fugtig luft skimmel, rust, råd i træ, lugt i stoffer og korrosion af elektronik.",
       },
       {
         type: "text",
@@ -2501,7 +2501,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "DRY BAG Retail bruger den samme Moclay-formel som den originale [DRY-BAG I](/drybag-i), der bruges til at beskytte last i havcontainere. Retailversionen er dimensioneret og pakket til private forbrugerapplikationer — både, campingvogne, kældre, garager — snarere end industrielle containervolumener. Den kemiske absorptionskemi er identisk.",
+        content: "DRY BAG Retail bruger den samme [Moclay-formel](/blog/chemistry-clay-mo-clay-vs-silica-gel) som den originale [DRY-BAG I](/drybag-i), der bruges til at beskytte last i havcontainere. Retailversionen er dimensioneret og pakket til private forbrugerapplikationer — både, campingvogne, kældre, garager — snarere end industrielle containervolumener. Den kemiske absorptionskemi er identisk. Læs mere om [hvordan tørremidler virker](/blog/what-is-a-desiccant-complete-guide).",
       },
       {
         type: "subheading",
@@ -2552,11 +2552,11 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Træpaller og containergulve er særligt problematiske, da de absorberer og langsomt frigiver fugt gennem hele rejsen. Et gulv, der ser helt tørt ud, kan indeholde tilstrækkelig restfugt til at hæve den relative luftfugtighed inde i en forseglet container til skadelige niveauer inden for få dage.",
+        content: "[Træpaller](/blog/vapor-pressure-wooden-pallets) og containergulve er særligt problematiske, da de absorberer og langsomt frigiver fugt gennem hele rejsen. Et gulv, der ser helt tørt ud, kan indeholde tilstrækkelig restfugt til at hæve den relative luftfugtighed inde i en forseglet container til skadelige niveauer inden for få dage.",
       },
       {
         type: "text",
-        content: "Containertørremidler fungerer ved at absorbere den luftbårne fugt, inden den kondenserer, og holder den relative luftfugtighed inde i containeren under den kritiske tærskel — typisk under 60 % RH — ved hvilken skimmel, korrosion og godsskader bliver alvorlige risici.",
+        content: "Containertørremidler fungerer ved at absorbere den luftbårne fugt, inden den kondenserer, og holder den relative luftfugtighed inde i containeren under den kritiske tærskel — typisk under 60 % RH — ved hvilken [skimmel](/blog/mold-growth-timelines-80-rh), korrosion og godsskader bliver alvorlige risici.",
       },
       {
         type: "heading",
@@ -2983,7 +2983,7 @@ export const articlesDa: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "En desiccant – også kaldet et tørremiddel – er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften for at reducere den relative luftfugtighed i et lukket rum. Desiccants bruges i emballage, lager og transport til at beskytte produkter mod kondens, korrosion og skimmelsvamp.",
+        content: "En desiccant – også kaldet et tørremiddel – er et hygroskopisk materiale, der absorberer eller adsorberer fugt fra luften for at reducere den relative luftfugtighed i et lukket rum. Desiccants bruges i emballage, lager og transport til at beskytte produkter mod [kondens, korrosion og skimmelsvamp](/blog/moisture-in-packaging).",
       },
 
       { type: "heading", content: "Hvad er en desiccant?" },
@@ -3146,7 +3146,7 @@ export const articlesDa: Record<string, Article> = {
       { type: "subheading", content: "Containertransport og eksport" },
       {
         type: "text",
-        content: "En af de mest kritiske applikationer for tørremidler er containerforsendelse. En standard 20-fods eller 40-fods sø-container kan indeholde op til 400 liter vand i luften ved fuld mætning ved tropiske temperaturer. Når temperaturen falder om natten eller i koldere klimazoner, kondenserer denne vanddamp og kan dryppe ned på godset – det fænomen, der i industrien kaldes 'container rain' eller kondens i containere.",
+        content: "En af de mest kritiske applikationer for tørremidler er containerforsendelse. En standard 20-fods eller 40-fods sø-container kan indeholde op til 400 liter vand i luften ved fuld mætning ved tropiske temperaturer. Når temperaturen falder om natten eller i koldere klimazoner, kondenserer denne vanddamp og kan dryppe ned på godset – det fænomen, der i industrien kaldes '[container rain](/blog/container-rain-dew-point-physics)' eller kondens i containere.",
       },
       {
         type: "list",
@@ -3159,7 +3159,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Løsningen er container-desiccants – store poseformede tørremidler (typisk calciumchlorid eller ler), der ophænges i containerens loft og absorberer den fugtige luft, inden den kondenserer.",
+        content: "Løsningen er container-desiccants – store poseformede tørremidler (typisk calciumchlorid eller [lertørremidler som DRY-BAG I](/drybag-i)), der ophænges i containerens loft og absorberer den fugtige luft, inden den kondenserer.",
       },
 
       { type: "subheading", content: "Elektronik og halvledere" },
@@ -3511,7 +3511,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Den mest direkte og pålidelige metode til at bekæmpe fugt i emballage er brugen af industrielle tørremidler – også kaldet desiccants. Et desiccant er et hygroskopisk materiale, der aktivt absorberer vandmolekyler fra luften inde i emballagen og dermed sænker den relative luftfugtighed til et sikkert niveau.",
+        content: "Den mest direkte og pålidelige metode til at bekæmpe fugt i emballage er brugen af industrielle [tørremidler – også kaldet desiccants](/blog/what-is-a-desiccant-complete-guide). Et desiccant er et hygroskopisk materiale, der aktivt absorberer vandmolekyler fra luften inde i emballagen og dermed sænker den relative luftfugtighed til et sikkert niveau.",
       },
       {
         type: "text",
@@ -3544,7 +3544,7 @@ export const articlesDa: Record<string, Article> = {
       {
         type: "callout",
         title: "Silica gel",
-        content: "Silica gel er det mest udbredte desiccant til industriel brug. Det absorberer effektivt ved relative luftfugtighedsniveauer fra 20–90 % og er ikke-reaktivt, ikke-giftigt og godkendt til brug i emballage til bl.a. fødevarer og elektronik.",
+        content: "[Silica gel](/silica) er det mest udbredte desiccant til industriel brug. Det absorberer effektivt ved relative luftfugtighedsniveauer fra 20–90 % og er ikke-reaktivt, ikke-giftigt og godkendt til brug i emballage til bl.a. fødevarer og elektronik.",
       },
       {
         type: "callout",
@@ -3559,7 +3559,7 @@ export const articlesDa: Record<string, Article> = {
       {
         type: "callout",
         title: "Calciumklorid-baserede desiccants",
-        content: "Calciumklorid absorberer op til flere gange sin egen vægt i vand og er særligt velegnet til containerfragt og situationer med ekstrem fugt. Det er den foretrukne løsning mod container rain.",
+        content: "[Calciumklorid](/calcium-chloride) absorberer op til flere gange sin egen vægt i vand og er særligt velegnet til containerfragt og situationer med ekstrem fugt. Det er den foretrukne løsning mod container rain.",
       },
 
       {

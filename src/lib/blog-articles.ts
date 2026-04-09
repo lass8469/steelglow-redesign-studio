@@ -2338,7 +2338,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Stretch film became the default pallet-securing solution because it works — it is flexible, widely available, and effective for stabilising almost any type of load. But it was designed primarily for outbound shipping and external transport. For internal logistics, the case for stretch film is much weaker, and its drawbacks become more significant.",
+        content: "Stretch film became the default [pallet-securing solution](/blog/anti-slip-sheets-pallet-load-stability) because it works — it is flexible, widely available, and effective for stabilising almost any type of load. But it was designed primarily for outbound shipping and external transport. For internal logistics, the case for stretch film is much weaker, and its drawbacks become more significant.",
       },
       {
         type: "list",
@@ -2449,7 +2449,7 @@ export const articles: Record<string, Article> = {
       {
         type: "callout",
         title: "Complete Cargo Protection",
-        content: "The combination of internal handling solutions (Stabustrap, anti-slip sheets) and external shipping protection (dunnage bags, desiccants, edge protectors) represents a complete approach to cargo integrity from the warehouse floor to the destination.",
+        content: "The combination of internal handling solutions (Stabustrap, [anti-slip sheets](/anti-slip)) and external shipping protection ([dunnage bags](/dunnage-bag), [desiccants](/blog/container-desiccant-stuffing-guide), [edge protectors](/edge-protectors)) represents a complete approach to cargo integrity from the warehouse floor to the destination.",
       },
       {
         type: "heading",
@@ -2578,7 +2578,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Ocean containers experience dramatic temperature and humidity swings as they transit between climatic zones. The moisture loads involved can be enormous. The DRY-BAG I was engineered to absorb those loads reliably, without liquid formation, without spills, and without damaging the cargo it protects. That same engineering discipline is what makes DRY BAG Retail stand apart in the consumer market.",
+        content: "Ocean containers experience dramatic [temperature and humidity swings](/blog/container-rain-dew-point-physics) as they transit between climatic zones. The moisture loads involved can be enormous. The DRY-BAG I was engineered to absorb those loads reliably, without liquid formation, without spills, and without damaging the cargo it protects. That same engineering discipline is what makes DRY BAG Retail stand apart in the consumer market.",
       },
       {
         type: "quote",
@@ -2919,7 +2919,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "For high-value shipments, consider including a temperature and humidity data logger inside the container. These small, inexpensive devices record conditions throughout the voyage and provide an invaluable record if a cargo damage claim is ever disputed. They also help you refine your desiccant strategy over time based on actual voyage data rather than estimates.",
+        content: "For high-value shipments, consider including a [temperature and humidity data logger](/datalogger) inside the container. These small, inexpensive devices record conditions throughout the voyage and provide an invaluable record if a cargo damage claim is ever disputed. They also help you refine your desiccant strategy over time based on actual voyage data rather than estimates.",
       },
       {
         type: "text",
