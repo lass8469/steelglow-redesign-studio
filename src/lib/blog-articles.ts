@@ -666,7 +666,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Desiccants are intervention tools. They actively remove moisture from container atmospheres, reducing relative humidity and preventing condensation on cargo surfaces. A calcium chloride desiccant bag doesn't record anything; it simply pulls water vapor from the air until saturated or until equilibrium is reached.",
+        content: "Desiccants are intervention tools. They actively remove moisture from container atmospheres, reducing relative humidity and preventing condensation on cargo surfaces. A [calcium chloride desiccant](/calcium-chloride) bag doesn't record anything; it simply pulls water vapor from the air until saturated or until equilibrium is reached.",
       },
       {
         type: "text",
