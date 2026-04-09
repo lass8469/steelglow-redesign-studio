@@ -729,7 +729,7 @@ export const articlesDa: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Du vælger faktisk ikke mellem dataloggere og tørremidler; du har brug for begge. Tørremidler kontrollerer fugt; sensorer dokumenterer, om denne kontrol lykkedes. Sammen skaber de et forsvarligt, optimerbart fugtstyringssystem, som selvstående tørremidler ikke kan tilbyde.",
+        content: "Du vælger faktisk ikke mellem dataloggere og tørremidler; du har brug for begge. Tørremidler kontrollerer fugt; sensorer dokumenterer, om denne kontrol lykkedes. Sammen skaber de et forsvarligt, optimerbart fugtstyringssystem, som selvstående tørremidler ikke kan tilbyde. Læs hvordan du [verificerer din tørremiddelstrategi](/blog/data-logger-verification-guide) med logget data.",
       },
       {
         type: "text",
