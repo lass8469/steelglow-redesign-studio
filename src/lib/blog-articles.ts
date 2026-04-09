@@ -1327,8 +1327,8 @@ export const articles: Record<string, Article> = {
         type: "list",
         items: [
           "Silica gel: Up to ~40% weight absorption, best at 20–80% RH, reusable (regenerate at 120–150°C), FDA/EU food-safe — ideal for in-box e-commerce and general storage desiccant packs.",
-          "Molecular sieve: Up to ~25% weight absorption, excels at very low RH (<40%), reusable (250–300°C) — preferred for pharmaceuticals, gases, and ultra-dry industrial desiccant applications.",
-          "Calcium chloride: Over 100% weight absorption, best for high humidity and condensation prevention, not reusable (liquefies) — ideal for shipping containers and large cargo spaces.",
+          "[Molecular sieve](/molecular-sieve): Up to ~25% weight absorption, excels at very low RH (<40%), reusable (250–300°C) — preferred for pharmaceuticals, gases, and ultra-dry industrial desiccant applications.",
+          "[Calcium chloride](/calcium-chloride): Over 100% weight absorption, best for high humidity and condensation prevention, not reusable (liquefies) — ideal for shipping containers and large cargo spaces.",
         ],
       },
       {
