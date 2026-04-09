@@ -57,7 +57,7 @@ const renderSection = (section: ArticleSection, index: number) => {
               <span className="w-8 h-8 rounded-full bg-primary/10 text-primary font-semibold flex items-center justify-center shrink-0 text-sm">
                 {i + 1}
               </span>
-              <span className="pt-1">{item}</span>
+              <span className="pt-1">{parseInlineLinks(item)}</span>
             </li>
           ))}
         </ol>
