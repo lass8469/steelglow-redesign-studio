@@ -3361,7 +3361,7 @@ export const articles: Record<string, Article> = {
       { type: "subheading", content: "Container transport and export" },
       {
         type: "text",
-        content: "One of the most critical applications for desiccants is container shipping. A standard 20-foot or 40-foot sea container can hold up to 400 liters of water in the air at full saturation in tropical temperatures. When the temperature drops at night or in colder climate zones, this water vapor condenses and can drip onto the cargo – a phenomenon known in the industry as 'container rain' or container condensation.",
+        content: "One of the most critical applications for desiccants is container shipping. A standard 20-foot or 40-foot sea container can hold up to 400 liters of water in the air at full saturation in tropical temperatures. When the temperature drops at night or in colder climate zones, this water vapor condenses and can drip onto the cargo – a phenomenon known in the industry as '[container rain](/blog/container-rain-dew-point-physics)' or container condensation.",
       },
       {
         type: "text",
