@@ -93,7 +93,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "Wooden pallets remain the workhorses of global logistics, yet beneath their rugged exterior lies a persistent problem: moisture that refuses to leave. Even pallets that feel dry to the touch can harbor significant water content deep within their structure, leading to mold growth, product damage, and failed heat treatment certifications.",
+        content: "Wooden pallets remain the workhorses of global logistics, yet beneath their rugged exterior lies a persistent problem: moisture that refuses to leave. Even pallets that feel dry to the touch can harbor significant water content deep within their structure, leading to [mold growth](/blog/mold-growth-timelines-80-rh), product damage, and failed heat treatment certifications.",
       },
       {
         type: "text",
