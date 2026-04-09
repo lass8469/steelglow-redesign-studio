@@ -1076,7 +1076,7 @@ export const articles: Record<string, Article> = {
     sections: [
       {
         type: "text",
-        content: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule, and 80% relative humidity means very different things depending on temperature, cargo type, available nutrients, and whether you're measuring atmospheric humidity or surface conditions. Understanding these variables separates shippers who prevent mold damage from those who discover it at destination.",
+        content: "The answer isn't a simple number of days. Mold doesn't operate on a fixed schedule, and 80% relative humidity means very different things depending on temperature, cargo type, available nutrients, and whether you're measuring atmospheric humidity or surface conditions. Understanding these variables separates shippers who [prevent moisture damage](/blog/moisture-in-packaging) from those who discover it at destination.",
       },
 
       {
