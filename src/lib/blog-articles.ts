@@ -701,7 +701,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "When a container arrives with mold-covered coffee beans or corroded machinery, the first question is always: what went wrong? With desiccants alone, you know only that moisture management was attempted. You don't know if humidity stayed within acceptable ranges, how many condensation cycles occurred, whether temperature swings exceeded specifications, or when problems began.",
+        content: "When a container arrives with mold-covered coffee beans or corroded machinery, the first question is always: what went wrong? With desiccants alone, you know only that moisture management was attempted. You don't know if humidity stayed within acceptable ranges, how many [condensation cycles occurred](/blog/container-rain-dew-point-physics), whether temperature swings exceeded specifications, or when problems began.",
       },
       {
         type: "text",
