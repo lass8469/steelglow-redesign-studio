@@ -1858,7 +1858,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Dunnage bags address one specific cause of cargo damage: movement due to void spaces. For container shipments where moisture is also a concern — covering a wide range of goods from food products to electronics to machinery — pairing dunnage bags with desiccants such as the DRY BAG I addresses both physical movement and humidity damage in a single loading workflow.",
+        content: "Dunnage bags address one specific cause of cargo damage: movement due to void spaces. For container shipments where moisture is also a concern — covering a wide range of goods from food products to electronics to machinery — pairing dunnage bags with desiccants such as the [DRY BAG I clay desiccant](/drybag-i) addresses both physical movement and humidity damage in a single loading workflow.",
       },
       {
         type: "text",
