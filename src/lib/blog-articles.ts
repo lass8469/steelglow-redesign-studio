@@ -1487,7 +1487,7 @@ export const articles: Record<string, Article> = {
       },
       {
         type: "text",
-        content: "Silica gel significantly reduces the risk of mold by keeping relative humidity below the 60–70% threshold at which most molds begin to grow. It's highly effective but not a guarantee — if products enter packaging already with surface moisture or if packaging is very poorly sealed, mold spores may still have enough moisture to proliferate.",
+        content: "Silica gel significantly reduces the risk of mold by keeping relative humidity below the 60–70% threshold at which most molds begin to grow. It's highly effective but not a guarantee — if products enter packaging already with surface moisture or if packaging is very poorly sealed, mold spores may still have enough [moisture to proliferate](/blog/moisture-in-packaging).",
       },
       {
         type: "subheading",
