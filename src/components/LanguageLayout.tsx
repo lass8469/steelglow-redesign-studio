@@ -3,6 +3,7 @@ import { Outlet, useParams, useNavigate, useLocation } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import HrefLangTags from "./HrefLangTags";
 import { useGoogleAnalytics } from "@/hooks/useGoogleAnalytics";
+import { useLinkedInInsight } from "@/hooks/useLinkedInInsight";
 
 const VALID_LANGS = ["en", "da"] as const;
 
@@ -13,6 +14,7 @@ const LanguageLayout = () => {
   const location = useLocation();
 
   useGoogleAnalytics();
+  useLinkedInInsight();
 
   useEffect(() => {
     if (lang && VALID_LANGS.includes(lang as any)) {
