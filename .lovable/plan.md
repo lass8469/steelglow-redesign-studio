@@ -1,66 +1,50 @@
 
 
-## Add Meta Pixel (Facebook Pixel)
+## Fix LinkedIn Insight Tag — `window.lintrk` undefined
 
-Same proven pattern as Google Analytics and LinkedIn Insight Tag: base snippet in `index.html` for prerendered/initial loads, plus a SPA hook for client-side route changes.
+### Root Cause
 
-### What I need from you
-Your **Meta Pixel ID** (a 15–16 digit number from Meta Events Manager → Data Sources → your pixel). I'll bake it into both the script and `<noscript>` fallback.
-
-### Implementation
-
-**1. `index.html` — base snippet**
-
-Add Meta's official pixel snippet in `<head>` after the LinkedIn block, with `<noscript>` `<img>` fallback in `<body>` (HTML5 rule: no `<img>` in head `<noscript>`).
+In `index.html`, the second LinkedIn `<script>` tag has an `async` attribute:
 
 ```html
-<!-- Meta Pixel -->
-<script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', 'PIXEL_ID');
-  fbq('track', 'PageView');
+<script type="text/javascript" async>
+  (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    ...
+  })(window.lintrk);
 </script>
 ```
 
-`<noscript>` pixel goes in `<body>`:
-```html
-<noscript><img height="1" width="1" style="display:none" alt=""
-  src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1" /></noscript>
+While `async` on inline scripts is technically a no-op per HTML spec, our prerender pipeline (puppeteer + post-processing in `scripts/prerender.mjs`) and Vite's HTML transform can mishandle it — and more importantly it signals "non-blocking" which some toolchains use to defer the inline IIFE. The result: by the time React hydrates and `useLinkedInInsight` calls `typeof window.lintrk === "function"`, the stub hasn't been initialized → check fails → no track event → and from the console, `window.lintrk` is `undefined`.
+
+This matches LinkedIn's official snippet exactly EXCEPT for that stray `async` — which is not in their published version.
+
+### Fix
+
+**`index.html`** — remove the invalid `async` attribute from the inline LinkedIn IIFE script. Restores LinkedIn's canonical snippet verbatim. The stub `window.lintrk = function(a,b){...}` then runs synchronously in `<head>` before React mounts, guaranteeing the function exists by the time the hook fires.
+
+Single-character-class change:
+```diff
+- <script type="text/javascript" async>
++ <script type="text/javascript">
+    (function(l) { ... })(window.lintrk);
+  </script>
 ```
-
-**2. `src/hooks/useMetaPixel.ts` — new SPA route hook**
-
-Mirrors `useGoogleAnalytics` and `useLinkedInInsight`. On every React Router navigation, calls `window.fbq('track', 'PageView')`. Reuses the same bot-resolution filter for consistency.
-
-```ts
-useEffect(() => {
-  if (!isBotResolution() && typeof window.fbq === "function") {
-    window.fbq("track", "PageView");
-  }
-}, [location.pathname, location.search]);
-```
-
-**3. `src/components/LanguageLayout.tsx` — wire up the hook**
-
-Add `useMetaPixel()` next to the existing GA + LinkedIn hooks so it runs on every routed page (`/en/*` and `/da/*`).
 
 ### Files
 
 | File | Change |
 |---|---|
-| `index.html` | Pixel base snippet in `<head>`, `<noscript>` `<img>` in `<body>` |
-| `src/hooks/useMetaPixel.ts` | New — fires `fbq('track','PageView')` per route, with bot filter |
-| `src/components/LanguageLayout.tsx` | Call `useMetaPixel()` alongside GA + LinkedIn hooks |
+| `index.html` | Remove `async` attribute from inline LinkedIn IIFE `<script>` opening tag |
 
-### Why this approach
-- Initial pageviews captured by base script + `<noscript>` fallback (works without JS).
-- SPA route changes captured via the hook — same proven pattern already in use.
-- Bot filtering kept consistent across GA, LinkedIn, and Meta.
-- Survives prerender because tag lives in static `index.html`, so every prerendered HTML file ships with it.
+No changes to `useLinkedInInsight.ts` or `LanguageLayout.tsx` — they're correct; they just need the stub to actually exist on `window`.
 
-**Reply with your Meta Pixel ID and I'll implement.**
+### Verification
+
+After the fix:
+1. Reload preview → DevTools console → type `window.lintrk` → returns `function` (the stub or fully loaded script).
+2. `window.lintrk.q` → array (queued calls before `insight.min.js` loads).
+3. Network tab → navigate between routes → see requests to `px.ads.linkedin.com/collect` on each navigation.
+4. LinkedIn Insight Tag browser extension → shows partner ID `8674345` active.
 
