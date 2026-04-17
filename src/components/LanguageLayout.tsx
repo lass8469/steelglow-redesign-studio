@@ -4,6 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import HrefLangTags from "./HrefLangTags";
 import { useGoogleAnalytics } from "@/hooks/useGoogleAnalytics";
 import { useLinkedInInsight } from "@/hooks/useLinkedInInsight";
+import { useMetaPixel } from "@/hooks/useMetaPixel";
 
 const VALID_LANGS = ["en", "da"] as const;
 
@@ -15,6 +16,7 @@ const LanguageLayout = () => {
 
   useGoogleAnalytics();
   useLinkedInInsight();
+  useMetaPixel();
 
   useEffect(() => {
     if (lang && VALID_LANGS.includes(lang as any)) {
