@@ -15,9 +15,9 @@ const Logo = ({ className = "", size = "md" }: LogoProps) => {
   // Subline sizes tuned so the subline width matches the DESICCANT wordmark width.
   // DESICCANT (9 chars, font-black, tracking-tight) vs "PART OF DRY-BAG A/S" (19 chars incl. spaces, lighter weight, wider tracking).
   const sublineClasses = {
-    sm: "text-[7px] tracking-[0.18em]",
-    md: "text-[8px] lg:text-[9.5px] tracking-[0.18em] lg:tracking-[0.205em]",
-    lg: "text-[9.5px] tracking-[0.205em]",
+    sm: "text-[8.5px] tracking-[0.15em]",
+    md: "text-[9.5px] lg:text-[11px] tracking-[0.15em] lg:tracking-[0.175em]",
+    lg: "text-[11px] tracking-[0.175em]",
   };
 
   return (
@@ -29,7 +29,7 @@ const Logo = ({ className = "", size = "md" }: LogoProps) => {
         DESICCANT
       </span>
       <span
-        className={`mt-1 font-medium text-muted-foreground uppercase text-center ${sublineClasses[size]}`}
+        className={`mt-1 font-medium uppercase text-center text-white ${sublineClasses[size]}`}
         style={{ fontFamily: "'Space Grotesk', sans-serif" }}
       >
         Part of Dry-Bag A/S
