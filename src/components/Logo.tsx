@@ -29,7 +29,7 @@ const Logo = ({ className = "", size = "md" }: LogoProps) => {
         DESICCANT
       </span>
       <span
-        className={`mt-1 font-medium text-muted-foreground uppercase text-center ${sublineClasses[size]}`}
+        className={`mt-1 font-medium uppercase text-center text-white ${sublineClasses[size]}`}
         style={{ fontFamily: "'Space Grotesk', sans-serif" }}
       >
         Part of Dry-Bag A/S
