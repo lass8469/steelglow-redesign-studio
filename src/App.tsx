@@ -32,7 +32,6 @@ const FAQPage = lazy(() => import("./pages/FAQPage"));
 const PrivacyPage = lazy(() => import("./pages/PrivacyPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const ProductsPage = lazy(() => import("./pages/ProductsPage"));
-const DryBagIProductES = lazy(() => import("./pages/DryBagIProductES"));
 
 const queryClient = new QueryClient();
 
@@ -81,7 +80,6 @@ const App = () => (
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
               <Route path="/" element={<RootRedirect />} />
-              <Route path="/es/drybag-i" element={<DryBagIProductES />} />
               <Route path="/:lang" element={<LanguageLayout />}>
                 {appRoutes}
               </Route>

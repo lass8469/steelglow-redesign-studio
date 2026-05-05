@@ -54,11 +54,7 @@ const basePaths = [
 ];
 
 /** All routes with language prefixes — used by prerender & vite */
-export const routes: string[] = [
-  ...basePaths.flatMap((p) => [`/en${p}`, `/da${p}`]),
-  // Standalone Spanish pages (not part of full /es locale)
-  "/es/drybag-i",
-];
+export const routes: string[] = basePaths.flatMap((p) => [`/en${p}`, `/da${p}`]);
 
 /** Production domain */
 export const BASE_URL = "https://desiccant.com";
