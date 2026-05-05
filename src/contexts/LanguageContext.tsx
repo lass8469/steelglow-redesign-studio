@@ -1047,7 +1047,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Products Section (homepage)
     "products.badge": "Udvalgte produkter",
     "products.title1": "Industriel",
-    "products.title2": "beskyttelsesløsninger",
+    "products.title2": "beskyttelse",
     "products.description": "Udforsk vores udvalg af fugtposer, tørremidler og godsbeskyttelsesløsninger designet til effektiv fugtkontrol og optimering af dine logistikoperationer.",
     "products.viewAll": "Se alle produkter",
     "products.learnMore": "Læs mere",
