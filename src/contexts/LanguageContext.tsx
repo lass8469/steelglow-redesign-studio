@@ -1062,7 +1062,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Products Page
     "productsPage.badge": "Vores løsninger",
-    "productsPage.title1": "Industriel",
+    "productsPage.title1": "Industrielle",
     "productsPage.title2": "beskyttelsesprodukter",
     "productsPage.description": "Udforsk vores omfattende sortiment af tørremidler, godsbeskyttelsesløsninger og overvågningsenheder designet til at beskytte dine varer under opbevaring og transport.",
     "productsPage.breadcrumbHome": "Hjem",
