@@ -24,11 +24,11 @@ const content = {
     metaDesc:
       "MICRO-PAK® MPCD Eco — sustainable calcium chloride container desiccant for ocean freight with recycled packaging.",
     specs: [
-      { label: "Active material", value: "Calcium chloride + plant-based gel" },
+      { label: "Active material", value: "Calcium chloride" },
       { label: "Absorption capacity", value: "Up to 300% of weight" },
       { label: "Protection duration", value: "Up to 90 days" },
       { label: "Operating temperature", value: "5°C to 90°C" },
-      { label: "Packaging", value: "Recyclable outer film" },
+      { label: "Packaging", value: "Recycled outer film" },
       { label: "Format", value: "Hanging strip / pole" },
     ],
     sizes: [
@@ -45,9 +45,9 @@ const content = {
       "Sustainability-focused supply chains",
     ],
     features: [
-      { icon: Leaf, title: "Plant-based gel" },
+      { icon: BadgeCheck, title: "REACH-compliant" },
       { icon: Shield, title: "300% absorption" },
-      { icon: Package, title: "Recyclable packaging" },
+      { icon: Package, title: "Recycled packaging" },
     ],
     ctaTitle: "Sustainable protection for",
     ctaHighlight: " ocean containers",
