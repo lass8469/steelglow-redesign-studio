@@ -19,6 +19,8 @@ import productAntislip from "@/assets/product-antislip.webp";
 import productStabustrap from "@/assets/product-stabustrap.webp";
 import productRetail from "@/assets/product-retail.webp";
 import productDatalogger from "@/assets/product-datalogger.webp";
+import driClayImageAsset from "@/assets/dri-clay-kraft-all-sizes.webp.asset.json";
+import mpcdEcoImageAsset from "@/assets/mpcd-eco-1kg-folded.webp.asset.json";
 
 const ProductsPage = () => {
   const { t, language } = useLanguage();
@@ -140,7 +142,7 @@ const ProductsPage = () => {
 
   const microPakProducts = [
     {
-      image: productDrybagI,
+      image: driClayImageAsset.url,
       title: "Dri Clay Desiccant",
       subtitle: "MICRO-PAK®",
       description: language === "da"
@@ -149,7 +151,7 @@ const ProductsPage = () => {
       link: "/dri-clay",
     },
     {
-      image: productCalciumChloride,
+      image: mpcdEcoImageAsset.url,
       title: "MPCD Eco",
       subtitle: "MICRO-PAK®",
       description: language === "da"
