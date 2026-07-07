@@ -24,6 +24,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.viewAllProducts": "View all products",
     "nav.desiccants": "Desiccants",
     "nav.cargoProtection": "Cargo protection",
+    "nav.microPak": "MICRO-PAK®",
     "nav.otherProducts": "Other products",
     "navbar.marquee": "DESICCANTS \u00a0|\u00a0 DUNNAGE BAGS \u00a0|\u00a0 DATA-LOGGERS \u00a0|\u00a0 SINCE 1979 \u00a0|\u00a0 GLOBAL SHIPPING AVAILABLE",
     
@@ -39,6 +40,8 @@ const translations: Record<Language, Record<string, string>> = {
     "products.antiSlip": "Anti-slip sheets",
     "products.stabustrap": "Stabustrap",
     "products.datalogger": "Datalogger",
+    "products.driClay": "Dri Clay Desiccant",
+    "products.mpcdEco": "MPCD Eco",
     
     // Footer
     "footer.company": "Company",
@@ -984,6 +987,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.viewAllProducts": "Se alle produkter",
     "nav.desiccants": "Tørremidler",
     "nav.cargoProtection": "Godsbeskyttelse",
+    "nav.microPak": "MICRO-PAK®",
     "nav.otherProducts": "Andre produkter",
     "navbar.marquee": "TØRREMIDLER \u00a0|\u00a0 LUFTPUDER \u00a0|\u00a0 DATALOGGERE \u00a0|\u00a0 SIDEN 1979 \u00a0|\u00a0 GLOBAL FORSENDELSE",
     
@@ -999,6 +1003,8 @@ const translations: Record<Language, Record<string, string>> = {
     "products.antiSlip": "Skridsikre ark",
     "products.stabustrap": "Stabustrap",
     "products.datalogger": "Datalogger",
+    "products.driClay": "Dri Clay Desiccant",
+    "products.mpcdEco": "MPCD Eco",
     
     // Footer
     "footer.company": "Virksomhed",

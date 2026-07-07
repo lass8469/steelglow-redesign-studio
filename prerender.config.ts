@@ -34,6 +34,8 @@ const basePaths = [
   "/anti-slip",
   "/stabustrap",
   "/datalogger",
+  "/dri-clay",
+  "/mpcd-eco",
   "/dunnage-bags",
   // Blog articles
   "/blog/vapor-pressure-wooden-pallets",

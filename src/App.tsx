@@ -21,6 +21,8 @@ const EdgeProtectorsProduct = lazy(() => import("./pages/EdgeProtectorsProduct")
 const AntiSlipProduct = lazy(() => import("./pages/AntiSlipProduct"));
 const StabustrapProduct = lazy(() => import("./pages/StabustrapProduct"));
 const DataloggerProduct = lazy(() => import("./pages/DataloggerProduct"));
+const DriClayProduct = lazy(() => import("./pages/DriClayProduct"));
+const MpcdEcoProduct = lazy(() => import("./pages/MpcdEcoProduct"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ApplicationsPage = lazy(() => import("./pages/ApplicationsPage"));
 const BlogPage = lazy(() => import("./pages/BlogPage"));
@@ -50,6 +52,8 @@ const appRoutes = (
     <Route path="anti-slip" element={<AntiSlipProduct />} />
     <Route path="stabustrap" element={<StabustrapProduct />} />
     <Route path="datalogger" element={<DataloggerProduct />} />
+    <Route path="dri-clay" element={<DriClayProduct />} />
+    <Route path="mpcd-eco" element={<MpcdEcoProduct />} />
     <Route path="about" element={<AboutPage />} />
     <Route path="applications" element={<ApplicationsPage />} />
     <Route path="blog" element={<BlogPage />} />
