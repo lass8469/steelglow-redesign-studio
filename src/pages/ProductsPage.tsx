@@ -138,6 +138,27 @@ const ProductsPage = () => {
     },
   ];
 
+  const microPakProducts = [
+    {
+      image: productDrybagI,
+      title: "Dri Clay Desiccant",
+      subtitle: "MICRO-PAK®",
+      description: language === "da"
+        ? "Naturligt montmorillonit-ler tørremiddel til detail, elektronik og emballerede varer."
+        : "Natural montmorillonite clay desiccant for retail, electronics and packaged goods.",
+      link: "/dri-clay",
+    },
+    {
+      image: productCalciumChloride,
+      title: "MPCD Eco",
+      subtitle: "MICRO-PAK®",
+      description: language === "da"
+        ? "Bæredygtigt calciumchlorid container-tørremiddel med genanvendelig emballage."
+        : "Sustainable calcium chloride container desiccant with recyclable packaging.",
+      link: "/mpcd-eco",
+    },
+  ];
+
   const ProductCard = ({ product }: { product: typeof desiccantProducts[0] }) => (
     <LocalizedLink
       to={product.link}
