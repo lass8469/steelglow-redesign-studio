@@ -125,9 +125,9 @@ const Navbar = () => {
                 ))}
                 <DropdownMenuSeparator />
                 <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
-                  {t("nav.cargoProtection")}
+                  {t("nav.microPak")}
                 </DropdownMenuLabel>
-                {cargoProducts.map((item) => (
+                {microPakProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
                     <LocalizedLink to={item.href} className="cursor-pointer">
                       {t(item.label)}
@@ -136,9 +136,9 @@ const Navbar = () => {
                 ))}
                 <DropdownMenuSeparator />
                 <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
-                  {t("nav.microPak")}
+                  {t("nav.cargoProtection")}
                 </DropdownMenuLabel>
-                {microPakProducts.map((item) => (
+                {cargoProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
                     <LocalizedLink to={item.href} className="cursor-pointer">
                       {t(item.label)}
