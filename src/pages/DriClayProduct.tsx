@@ -1,4 +1,4 @@
-import { ArrowLeft, Package, Shield, Leaf, Check, ChevronRight } from "lucide-react";
+import { ArrowLeft, Package, Apple, Leaf, Check, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
