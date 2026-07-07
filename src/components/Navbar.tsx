@@ -26,12 +26,12 @@ const productItems = [
   { label: "products.silica", href: "/silica", category: "desiccants" },
   { label: "products.molecular", href: "/molecular-sieve", category: "desiccants" },
   { label: "products.calcium", href: "/calcium-chloride", category: "desiccants" },
+  { label: "products.driClay", href: "/dri-clay", category: "micropak" },
+  { label: "products.mpcdEco", href: "/mpcd-eco", category: "micropak" },
   { label: "products.dunnage", href: "/dunnage-bag", category: "cargo" },
   { label: "products.edge", href: "/edge-protectors", category: "cargo" },
   { label: "products.antiSlip", href: "/anti-slip", category: "cargo" },
   { label: "products.stabustrap", href: "/stabustrap", category: "cargo" },
-  { label: "products.driClay", href: "/dri-clay", category: "micropak" },
-  { label: "products.mpcdEco", href: "/mpcd-eco", category: "micropak" },
   { label: "products.retail", href: "/retail", category: "other" },
   { label: "products.datalogger", href: "/datalogger", category: "other" },
 ];
@@ -125,9 +125,9 @@ const Navbar = () => {
                 ))}
                 <DropdownMenuSeparator />
                 <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
-                  {t("nav.cargoProtection")}
+                  {t("nav.microPak")}
                 </DropdownMenuLabel>
-                {cargoProducts.map((item) => (
+                {microPakProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
                     <LocalizedLink to={item.href} className="cursor-pointer">
                       {t(item.label)}
@@ -136,9 +136,9 @@ const Navbar = () => {
                 ))}
                 <DropdownMenuSeparator />
                 <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
-                  {t("nav.microPak")}
+                  {t("nav.cargoProtection")}
                 </DropdownMenuLabel>
-                {microPakProducts.map((item) => (
+                {cargoProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
                     <LocalizedLink to={item.href} className="cursor-pointer">
                       {t(item.label)}
