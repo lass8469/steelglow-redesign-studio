@@ -29,12 +29,10 @@ const content = {
       { label: "Protection duration", value: "Up to 90 days" },
       { label: "Operating temperature", value: "-5°C to +50°C" },
       { label: "Packaging", value: "Recycled outer film" },
-      { label: "Format", value: "Hanging strip / pole" },
+      { label: "Format", value: "Hanging strip" },
     ],
     sizes: [
-      { weight: "500g", desc: "20ft container support units" },
-      { weight: "1kg", desc: "Standard 20ft / 40ft loads", popular: true },
-      { weight: "2kg", desc: "High-humidity long-haul routes" },
+      { weight: "10x100g", desc: "Standard 20ft / 40ft loads" },
     ],
     apps: [
       "Ocean freight containers",
@@ -69,12 +67,10 @@ const content = {
       { label: "Beskyttelsesvarighed", value: "Op til 90 dage" },
       { label: "Driftstemperatur", value: "-5°C til +50°C" },
       { label: "Emballage", value: "Genanvendt yderfilm" },
-      { label: "Format", value: "Hængestrip / stang" },
+      { label: "Format", value: "Hængestrip" },
     ],
     sizes: [
-      { weight: "500g", desc: "20ft container støtte-enheder" },
-      { weight: "1kg", desc: "Standard 20ft / 40ft laster", popular: true },
-      { weight: "2kg", desc: "Højfugts langdistanceruter" },
+      { weight: "10x100g", desc: "Standard 20ft / 40ft laster" },
     ],
     apps: [
       "Søfragt-containere",
