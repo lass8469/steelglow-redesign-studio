@@ -18,7 +18,7 @@ const content = {
     tagline: "MICRO-PAK® · Natural clay desiccant",
     badge: "Natural clay",
     description:
-      "Dri Clay Desiccant is a natural, mineral-based moisture absorber from the MICRO-PAK® range. Made from purified montmorillonite clay, it protects consumer goods, electronics, textiles and packaged products from humidity damage during storage and shipping.",
+      "Dri Clay Desiccant is a natural, mineral-based moisture absorber from the MICRO-PAK® range. Made from purified montmorillonite clay, it protects consumer goods, electronics, textiles and packaged products from humidity damage during storage and shipping. All Dri Clay Kraft variants are food-safe approved.",
     metaTitle: "Dri Clay Desiccant | MICRO-PAK® | Desiccant.com",
     metaDesc:
       "MICRO-PAK® Dri Clay Desiccant — natural montmorillonite clay moisture absorber for retail, electronics and packaged goods.",
