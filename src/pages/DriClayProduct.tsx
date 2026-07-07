@@ -32,9 +32,11 @@ const content = {
     ],
     sizes: [
       { weight: "1g", desc: "Small pharma & electronics packs" },
-      { weight: "5g", desc: "Consumer goods & apparel" },
-      { weight: "10g", desc: "Boxed retail products" },
-      { weight: "50g", desc: "Cartons & shipping cases" },
+      { weight: "2g", desc: "Compact retail packaging" },
+      { weight: "6g", desc: "Consumer goods & apparel" },
+      { weight: "17g", desc: "Boxed retail products" },
+      { weight: "33g", desc: "Medium cartons & cases" },
+      { weight: "66g", desc: "Large shipping containers" },
     ],
     apps: [
       "Retail packaging",
@@ -73,9 +75,11 @@ const content = {
     ],
     sizes: [
       { weight: "1g", desc: "Små pharma- & elektronikpakker" },
-      { weight: "5g", desc: "Forbrugsvarer & beklædning" },
-      { weight: "10g", desc: "Detailprodukter i æsker" },
-      { weight: "50g", desc: "Kartoner & forsendelseskasser" },
+      { weight: "2g", desc: "Kompakt detailemballage" },
+      { weight: "6g", desc: "Forbrugsvarer & beklædning" },
+      { weight: "17g", desc: "Detailprodukter i æsker" },
+      { weight: "33g", desc: "Medium kartoner & kasser" },
+      { weight: "66g", desc: "Store forsendelsescontainere" },
     ],
     apps: [
       "Detailemballage",
@@ -177,7 +181,7 @@ const DriClayProduct = () => {
               </CardContent></Card>
             </TabsContent>
             <TabsContent value="sizes" className="mt-8">
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {c.sizes.map((s) => (
                   <Card key={s.weight} className="bg-card/50 border-border">
                     <CardContent className="p-6 text-center">
