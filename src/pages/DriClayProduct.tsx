@@ -48,7 +48,7 @@ const content = {
     ],
     features: [
       { icon: Leaf, title: "Natural mineral" },
-      { icon: Shield, title: "Non-toxic & safe" },
+      { icon: Apple, title: "Food-safe approved" },
       { icon: Package, title: "Retail-ready sachets" },
     ],
     ctaTitle: "Protect your",
