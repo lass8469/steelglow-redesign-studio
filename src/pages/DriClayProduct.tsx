@@ -103,7 +103,7 @@ const content = {
 const DriClayProduct = () => {
   const { language, t } = useLanguage();
   const c = content[language === "da" ? "da" : "en"];
-  usePageMeta(c.metaTitle, c.metaDesc, { ogImage: productImage.url });
+  usePageMeta(c.metaTitle, c.metaDesc, { ogImage: productImage });
   useBreadcrumbJsonLd([
     { name: t("productPage.home"), path: `/${language}` },
     { name: t("productPage.products"), path: `/${language}/products` },
@@ -129,7 +129,7 @@ const DriClayProduct = () => {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="relative group">
                 <div className="relative aspect-square rounded-xl overflow-hidden border border-border bg-gradient-to-br from-muted/80 via-muted/40 to-accent/30">
-                  <img src={productImage.url} alt="MICRO-PAK Dri Clay Desiccant" loading="lazy" width={600} height={600} className="w-full h-full object-contain p-8" />
+                  <img src={productImage} alt="MICRO-PAK Dri Clay Desiccant" loading="lazy" width={600} height={600} className="w-full h-full object-contain p-8" />
                   <div className="absolute bottom-6 left-6 z-30">
                     <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-primary/90 text-primary-foreground rounded-full">{c.badge}</span>
                   </div>
