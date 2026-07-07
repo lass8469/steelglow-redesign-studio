@@ -25,7 +25,7 @@ const content = {
     specs: [
       { label: "Active material", value: "Montmorillonite clay" },
       { label: "Absorption capacity", value: "Up to 30% of weight" },
-      { label: "Operating temperature", value: "-20°C to 70°C" },
+      { label: "Operating temperature", value: "-10°C to +55°C" },
       { label: "Shelf life", value: "24 months (sealed)" },
       { label: "Compliance", value: "DMF, FDA, REACH" },
       { label: "Packaging", value: "100% FSC-certified Kraft paper, plastic-free" },
@@ -66,7 +66,7 @@ const content = {
     specs: [
       { label: "Aktivt materiale", value: "Montmorillonit-ler" },
       { label: "Absorptionskapacitet", value: "Op til 30% af vægten" },
-      { label: "Driftstemperatur", value: "-20°C til 70°C" },
+      { label: "Driftstemperatur", value: "-10°C til +55°C" },
       { label: "Holdbarhed", value: "24 måneder (forseglet)" },
       { label: "Overholdelse", value: "DMF, FDA, REACH" },
       { label: "Emballage", value: "100% FSC-certificeret Kraft paper, plastik-frit" },
