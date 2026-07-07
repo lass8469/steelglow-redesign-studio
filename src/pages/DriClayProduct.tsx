@@ -28,7 +28,7 @@ const content = {
       { label: "Operating temperature", value: "-20°C to 70°C" },
       { label: "Shelf life", value: "24 months (sealed)" },
       { label: "Compliance", value: "DMF, FDA, REACH" },
-      { label: "Packaging", value: "Tyvek® / non-woven sachets" },
+      { label: "Packaging", value: "100% FSC-certified Kraft paper, plastic-free" },
     ],
     sizes: [
       { weight: "1g", desc: "Small pharma & electronics packs" },
@@ -69,7 +69,7 @@ const content = {
       { label: "Driftstemperatur", value: "-20°C til 70°C" },
       { label: "Holdbarhed", value: "24 måneder (forseglet)" },
       { label: "Overholdelse", value: "DMF, FDA, REACH" },
-      { label: "Emballage", value: "Tyvek® / non-woven poser" },
+      { label: "Emballage", value: "100% FSC-certificeret Kraft paper, plastik-frit" },
     ],
     sizes: [
       { weight: "1g", desc: "Små pharma- & elektronikpakker" },
