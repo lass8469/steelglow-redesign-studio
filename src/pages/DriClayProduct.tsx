@@ -99,7 +99,7 @@ const content = {
 const DriClayProduct = () => {
   const { language, t } = useLanguage();
   const c = content[language === "da" ? "da" : "en"];
-  usePageMeta(c.metaTitle, c.metaDesc, { ogImage: productImage });
+  usePageMeta(c.metaTitle, c.metaDesc, { ogImage: productImage.url });
   useBreadcrumbJsonLd([
     { name: t("productPage.home"), path: `/${language}` },
     { name: t("productPage.products"), path: `/${language}/products` },
