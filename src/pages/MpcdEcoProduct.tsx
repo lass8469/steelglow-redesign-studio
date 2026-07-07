@@ -1,4 +1,4 @@
-import { ArrowLeft, Package, Shield, Leaf, Check, ChevronRight } from "lucide-react";
+import { ArrowLeft, Package, Shield, BadgeCheck, Check, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -19,16 +19,16 @@ const content = {
     tagline: "MICRO-PAK® · Sustainable container desiccant",
     badge: "Sustainable",
     description:
-      "MPCD Eco is the sustainable container desiccant from MICRO-PAK®. Formulated with calcium chloride and a plant-based gel, it delivers high-capacity moisture control for ocean containers with recyclable packaging and reduced environmental footprint.",
+      "MPCD Eco is the sustainable container desiccant from MICRO-PAK®. Formulated with calcium chloride, it delivers high-capacity moisture control for ocean containers with recycled packaging and reduced environmental footprint.",
     metaTitle: "MPCD Eco Container Desiccant | MICRO-PAK® | Desiccant.com",
     metaDesc:
-      "MICRO-PAK® MPCD Eco — sustainable calcium chloride container desiccant for ocean freight with recyclable packaging.",
+      "MICRO-PAK® MPCD Eco — sustainable calcium chloride container desiccant for ocean freight with recycled packaging.",
     specs: [
-      { label: "Active material", value: "Calcium chloride + plant-based gel" },
+      { label: "Active material", value: "Calcium chloride" },
       { label: "Absorption capacity", value: "Up to 300% of weight" },
       { label: "Protection duration", value: "Up to 90 days" },
       { label: "Operating temperature", value: "5°C to 90°C" },
-      { label: "Packaging", value: "Recyclable outer film" },
+      { label: "Packaging", value: "Recycled outer film" },
       { label: "Format", value: "Hanging strip / pole" },
     ],
     sizes: [
@@ -45,9 +45,9 @@ const content = {
       "Sustainability-focused supply chains",
     ],
     features: [
-      { icon: Leaf, title: "Plant-based gel" },
+      { icon: BadgeCheck, title: "REACH-compliant" },
       { icon: Shield, title: "300% absorption" },
-      { icon: Package, title: "Recyclable packaging" },
+      { icon: Package, title: "Recycled packaging" },
     ],
     ctaTitle: "Sustainable protection for",
     ctaHighlight: " ocean containers",
@@ -59,16 +59,16 @@ const content = {
     tagline: "MICRO-PAK® · Bæredygtigt container-tørremiddel",
     badge: "Bæredygtig",
     description:
-      "MPCD Eco er det bæredygtige container-tørremiddel fra MICRO-PAK®. Formuleret med calciumchlorid og en plantebaseret gel, leverer det højkapacitets fugtkontrol til søcontainere med genanvendelig emballage og reduceret miljøaftryk.",
+      "MPCD Eco er det bæredygtige container-tørremiddel fra MICRO-PAK®. Formuleret med calciumchlorid, leverer det højkapacitets fugtkontrol til søcontainere med genanvendt emballage og reduceret miljøaftryk.",
     metaTitle: "MPCD Eco Container-tørremiddel | MICRO-PAK® | Desiccant.com",
     metaDesc:
-      "MICRO-PAK® MPCD Eco — bæredygtigt calciumchlorid-tørremiddel til søfragt med genanvendelig emballage.",
+      "MICRO-PAK® MPCD Eco — bæredygtigt calciumchlorid-tørremiddel til søfragt med genanvendt emballage.",
     specs: [
-      { label: "Aktivt materiale", value: "Calciumchlorid + plantebaseret gel" },
+      { label: "Aktivt materiale", value: "Calciumchlorid" },
       { label: "Absorptionskapacitet", value: "Op til 300% af vægten" },
       { label: "Beskyttelsesvarighed", value: "Op til 90 dage" },
       { label: "Driftstemperatur", value: "5°C til 90°C" },
-      { label: "Emballage", value: "Genanvendelig yderfilm" },
+      { label: "Emballage", value: "Genanvendt yderfilm" },
       { label: "Format", value: "Hængestrip / stang" },
     ],
     sizes: [
@@ -85,9 +85,9 @@ const content = {
       "Bæredygtige forsyningskæder",
     ],
     features: [
-      { icon: Leaf, title: "Plantebaseret gel" },
+      { icon: BadgeCheck, title: "REACH-compliant" },
       { icon: Shield, title: "300% absorption" },
-      { icon: Package, title: "Genanvendelig emballage" },
+      { icon: Package, title: "Genanvendt emballage" },
     ],
     ctaTitle: "Bæredygtig beskyttelse til",
     ctaHighlight: " søcontainere",
