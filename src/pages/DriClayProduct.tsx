@@ -9,7 +9,7 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
-import productImage from "@/assets/dri-clay-kraft.webp.asset.json";
+import productImage from "@/assets/dri-clay-kraft-all-sizes.webp.asset.json";
 
 const content = {
   en: {
