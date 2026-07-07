@@ -19,6 +19,8 @@ import productAntislip from "@/assets/product-antislip.webp";
 import productStabustrap from "@/assets/product-stabustrap.webp";
 import productRetail from "@/assets/product-retail.webp";
 import productDatalogger from "@/assets/product-datalogger.webp";
+import driClayImageAsset from "@/assets/dri-clay-kraft-all-sizes.webp.asset.json";
+import mpcdEcoImageAsset from "@/assets/mpcd-eco-1kg-folded.webp.asset.json";
 
 const ProductsPage = () => {
   const { t, language } = useLanguage();
