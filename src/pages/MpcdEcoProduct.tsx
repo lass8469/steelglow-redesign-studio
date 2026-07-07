@@ -59,16 +59,16 @@ const content = {
     tagline: "MICRO-PAK® · Bæredygtigt container-tørremiddel",
     badge: "Bæredygtig",
     description:
-      "MPCD Eco er det bæredygtige container-tørremiddel fra MICRO-PAK®. Formuleret med calciumchlorid og en plantebaseret gel, leverer det højkapacitets fugtkontrol til søcontainere med genanvendelig emballage og reduceret miljøaftryk.",
+      "MPCD Eco er det bæredygtige container-tørremiddel fra MICRO-PAK®. Formuleret med calciumchlorid, leverer det højkapacitets fugtkontrol til søcontainere med genanvendt emballage og reduceret miljøaftryk.",
     metaTitle: "MPCD Eco Container-tørremiddel | MICRO-PAK® | Desiccant.com",
     metaDesc:
-      "MICRO-PAK® MPCD Eco — bæredygtigt calciumchlorid-tørremiddel til søfragt med genanvendelig emballage.",
+      "MICRO-PAK® MPCD Eco — bæredygtigt calciumchlorid-tørremiddel til søfragt med genanvendt emballage.",
     specs: [
-      { label: "Aktivt materiale", value: "Calciumchlorid + plantebaseret gel" },
+      { label: "Aktivt materiale", value: "Calciumchlorid" },
       { label: "Absorptionskapacitet", value: "Op til 300% af vægten" },
       { label: "Beskyttelsesvarighed", value: "Op til 90 dage" },
       { label: "Driftstemperatur", value: "5°C til 90°C" },
-      { label: "Emballage", value: "Genanvendelig yderfilm" },
+      { label: "Emballage", value: "Genanvendt yderfilm" },
       { label: "Format", value: "Hængestrip / stang" },
     ],
     sizes: [
@@ -85,9 +85,9 @@ const content = {
       "Bæredygtige forsyningskæder",
     ],
     features: [
-      { icon: Leaf, title: "Plantebaseret gel" },
+      { icon: BadgeCheck, title: "REACH-compliant" },
       { icon: Shield, title: "300% absorption" },
-      { icon: Package, title: "Genanvendelig emballage" },
+      { icon: Package, title: "Genanvendt emballage" },
     ],
     ctaTitle: "Bæredygtig beskyttelse til",
     ctaHighlight: " søcontainere",
