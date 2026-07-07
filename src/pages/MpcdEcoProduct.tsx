@@ -19,10 +19,10 @@ const content = {
     tagline: "MICRO-PAK® · Sustainable container desiccant",
     badge: "Sustainable",
     description:
-      "MPCD Eco is the sustainable container desiccant from MICRO-PAK®. Formulated with calcium chloride and a plant-based gel, it delivers high-capacity moisture control for ocean containers with recyclable packaging and reduced environmental footprint.",
+      "MPCD Eco is the sustainable container desiccant from MICRO-PAK®. Formulated with calcium chloride, it delivers high-capacity moisture control for ocean containers with recycled packaging and reduced environmental footprint.",
     metaTitle: "MPCD Eco Container Desiccant | MICRO-PAK® | Desiccant.com",
     metaDesc:
-      "MICRO-PAK® MPCD Eco — sustainable calcium chloride container desiccant for ocean freight with recyclable packaging.",
+      "MICRO-PAK® MPCD Eco — sustainable calcium chloride container desiccant for ocean freight with recycled packaging.",
     specs: [
       { label: "Active material", value: "Calcium chloride + plant-based gel" },
       { label: "Absorption capacity", value: "Up to 300% of weight" },
