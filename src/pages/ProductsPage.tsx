@@ -142,7 +142,7 @@ const ProductsPage = () => {
 
   const microPakProducts = [
     {
-      image: productDrybagI,
+      image: driClayImageAsset.url,
       title: "Dri Clay Desiccant",
       subtitle: "MICRO-PAK®",
       description: language === "da"
@@ -151,7 +151,7 @@ const ProductsPage = () => {
       link: "/dri-clay",
     },
     {
-      image: productCalciumChloride,
+      image: mpcdEcoImageAsset.url,
       title: "MPCD Eco",
       subtitle: "MICRO-PAK®",
       description: language === "da"
