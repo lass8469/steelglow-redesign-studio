@@ -18,12 +18,12 @@ const content = {
     tagline: "MICRO-PAK® · Natural clay desiccant",
     badge: "Natural clay",
     description:
-      "Dri Clay Desiccant is a natural, mineral-based moisture absorber from the MICRO-PAK® range. Made from purified montmorillonite clay, it protects consumer goods, electronics, textiles and packaged products from humidity damage during storage and shipping. All Dri Clay Kraft variants are food-safe approved.",
+      "Dri Clay Desiccant is a natural, mineral-based moisture absorber from the MICRO-PAK® range. Made from purified bentonite clay, it protects consumer goods, electronics, textiles and packaged products from humidity damage during storage and shipping. All Dri Clay Kraft variants are food-safe approved.",
     metaTitle: "Dri Clay Desiccant | MICRO-PAK® | Desiccant.com",
     metaDesc:
-      "MICRO-PAK® Dri Clay Desiccant — natural montmorillonite clay moisture absorber for retail, electronics and packaged goods.",
+      "MICRO-PAK® Dri Clay Desiccant — natural bentonite clay moisture absorber for retail, electronics and packaged goods.",
     specs: [
-      { label: "Active material", value: "Montmorillonite clay" },
+      { label: "Active material", value: "Bentonite clay" },
       { label: "Absorption capacity", value: "Up to 30% of weight" },
       { label: "Operating temperature", value: "-10°C to +55°C" },
       { label: "Shelf life", value: "24 months (sealed)" },
@@ -61,12 +61,12 @@ const content = {
     tagline: "MICRO-PAK® · Naturligt ler-tørremiddel",
     badge: "Naturligt ler",
     description:
-      "Dri Clay Desiccant er et naturligt, mineralbaseret fugtabsorberende middel fra MICRO-PAK®-serien. Fremstillet af renset montmorillonit-ler, beskytter det forbrugsvarer, elektronik, tekstiler og emballerede produkter mod fugtskader under opbevaring og forsendelse. Alle Dri Clay Kraft-udgaver er fødevare-godkendte.",
+      "Dri Clay Desiccant er et naturligt, mineralbaseret fugtabsorberende middel fra MICRO-PAK®-serien. Fremstillet af renset bentonit-ler, beskytter det forbrugsvarer, elektronik, tekstiler og emballerede produkter mod fugtskader under opbevaring og forsendelse. Alle Dri Clay Kraft-udgaver er fødevare-godkendte.",
     metaTitle: "Dri Clay Desiccant | MICRO-PAK® | Desiccant.com",
     metaDesc:
-      "MICRO-PAK® Dri Clay Desiccant — naturligt montmorillonit-ler fugtabsorbering til detail, elektronik og emballerede varer.",
+      "MICRO-PAK® Dri Clay Desiccant — naturligt bentonit-ler fugtabsorbering til detail, elektronik og emballerede varer.",
     specs: [
-      { label: "Aktivt materiale", value: "Montmorillonit-ler" },
+      { label: "Aktivt materiale", value: "Bentonit-ler" },
       { label: "Absorptionskapacitet", value: "Op til 30% af vægten" },
       { label: "Driftstemperatur", value: "-10°C til +55°C" },
       { label: "Holdbarhed", value: "24 måneder (forseglet)" },

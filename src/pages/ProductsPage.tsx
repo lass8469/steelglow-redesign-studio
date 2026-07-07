@@ -144,8 +144,8 @@ const ProductsPage = () => {
       title: "Dri Clay Desiccant",
       subtitle: "MICRO-PAK®",
       description: language === "da"
-        ? "Naturligt montmorillonit-ler tørremiddel til detail, elektronik og emballerede varer."
-        : "Natural montmorillonite clay desiccant for retail, electronics and packaged goods.",
+        ? "Naturligt bentonit-ler tørremiddel til detail, elektronik og emballerede varer."
+        : "Natural bentonite clay desiccant for retail, electronics and packaged goods.",
       link: "/dri-clay",
     },
     {
