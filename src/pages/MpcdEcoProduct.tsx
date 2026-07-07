@@ -46,7 +46,7 @@ const content = {
     ],
     features: [
       { icon: BadgeCheck, title: "REACH-compliant" },
-      { icon: Shield, title: "300% absorption" },
+      { icon: Shield, title: ">300% absorption" },
       { icon: Package, title: "Recycled packaging" },
     ],
     ctaTitle: "Sustainable protection for",
@@ -86,7 +86,7 @@ const content = {
     ],
     features: [
       { icon: BadgeCheck, title: "REACH-compliant" },
-      { icon: Shield, title: "300% absorption" },
+      { icon: Shield, title: ">300% absorption" },
       { icon: Package, title: "Genanvendt emballage" },
     ],
     ctaTitle: "Bæredygtig beskyttelse til",
