@@ -30,6 +30,8 @@ const productItems = [
   { label: "products.edge", href: "/edge-protectors", category: "cargo" },
   { label: "products.antiSlip", href: "/anti-slip", category: "cargo" },
   { label: "products.stabustrap", href: "/stabustrap", category: "cargo" },
+  { label: "products.driClay", href: "/dri-clay", category: "micropak" },
+  { label: "products.mpcdEco", href: "/mpcd-eco", category: "micropak" },
   { label: "products.retail", href: "/retail", category: "other" },
   { label: "products.datalogger", href: "/datalogger", category: "other" },
 ];
@@ -61,6 +63,7 @@ const Navbar = () => {
 
   const desiccantProducts = productItems.filter(p => p.category === "desiccants");
   const cargoProducts = productItems.filter(p => p.category === "cargo");
+  const microPakProducts = productItems.filter(p => p.category === "micropak");
   const otherProducts = productItems.filter(p => p.category === "other");
 
   return (
@@ -125,6 +128,17 @@ const Navbar = () => {
                   {t("nav.cargoProtection")}
                 </DropdownMenuLabel>
                 {cargoProducts.map((item) => (
+                  <DropdownMenuItem key={item.href} asChild>
+                    <LocalizedLink to={item.href} className="cursor-pointer">
+                      {t(item.label)}
+                    </LocalizedLink>
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuSeparator />
+                <DropdownMenuLabel className="text-muted-foreground text-xs uppercase tracking-wider">
+                  {t("nav.microPak")}
+                </DropdownMenuLabel>
+                {microPakProducts.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
                     <LocalizedLink to={item.href} className="cursor-pointer">
                       {t(item.label)}

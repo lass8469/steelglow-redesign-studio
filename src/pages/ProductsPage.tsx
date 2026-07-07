@@ -138,6 +138,27 @@ const ProductsPage = () => {
     },
   ];
 
+  const microPakProducts = [
+    {
+      image: productDrybagI,
+      title: "Dri Clay Desiccant",
+      subtitle: "MICRO-PAK®",
+      description: language === "da"
+        ? "Naturligt montmorillonit-ler tørremiddel til detail, elektronik og emballerede varer."
+        : "Natural montmorillonite clay desiccant for retail, electronics and packaged goods.",
+      link: "/dri-clay",
+    },
+    {
+      image: productCalciumChloride,
+      title: "MPCD Eco",
+      subtitle: "MICRO-PAK®",
+      description: language === "da"
+        ? "Bæredygtigt calciumchlorid container-tørremiddel med genanvendelig emballage."
+        : "Sustainable calcium chloride container desiccant with recyclable packaging.",
+      link: "/mpcd-eco",
+    },
+  ];
+
   const ProductCard = ({ product }: { product: typeof desiccantProducts[0] }) => (
     <LocalizedLink
       to={product.link}
@@ -251,6 +272,31 @@ const ProductsPage = () => {
           </div>
         </section>
       </MoistureBackground>
+
+      {/* MICRO-PAK® Section */}
+      <section className="py-16 lg:py-24 bg-card/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mb-12">
+            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-widest uppercase bg-primary/10 text-primary border border-primary/20 rounded-full">
+              MICRO-PAK®
+            </span>
+            <h2 className="text-3xl lg:text-4xl font-black tracking-tight">
+              MICRO-PAK®
+            </h2>
+            <p className="text-muted-foreground mt-2 max-w-2xl">
+              {language === "da"
+                ? "Bæredygtige og naturlige tørremidler til detail, elektronik og container-forsendelse."
+                : "Sustainable and natural desiccants for retail, electronics and container shipping."}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
+            {microPakProducts.map((product) => (
+              <ProductCard key={product.title} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Other Products Section */}
       <section className="py-16 lg:py-24 bg-card/30">
