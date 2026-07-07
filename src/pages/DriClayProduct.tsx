@@ -91,7 +91,7 @@ const content = {
     ],
     features: [
       { icon: Leaf, title: "Naturligt mineral" },
-      { icon: Shield, title: "Ikke-toksisk & sikker" },
+      { icon: Apple, title: "Fødevare-godkendt" },
       { icon: Package, title: "Detail-klare poser" },
     ],
     ctaTitle: "Beskyt dine",
