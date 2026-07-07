@@ -155,8 +155,8 @@ const ProductsPage = () => {
       title: "MPCD Eco",
       subtitle: "MICRO-PAK®",
       description: language === "da"
-        ? "Bæredygtigt calciumchlorid container-tørremiddel med genanvendelig emballage."
-        : "Sustainable calcium chloride container desiccant with recyclable packaging.",
+        ? "Bæredygtigt calciumchlorid container-tørremiddel med genanvendt emballage."
+        : "Sustainable calcium chloride container desiccant with recycled packaging.",
       link: "/mpcd-eco",
     },
   ];
