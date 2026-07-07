@@ -9,7 +9,8 @@ import LocalizedLink from "@/components/LocalizedLink";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useBreadcrumbJsonLd } from "@/hooks/useBreadcrumbJsonLd";
-import productImage from "@/assets/mpcd-eco-1kg-folded.webp.asset.json";
+import productImageAsset from "@/assets/mpcd-eco-1kg-folded.webp.asset.json";
+const productImage = productImageAsset.url;
 
 const content = {
   en: {
