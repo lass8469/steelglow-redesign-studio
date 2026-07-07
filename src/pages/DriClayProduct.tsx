@@ -61,7 +61,7 @@ const content = {
     tagline: "MICRO-PAK® · Naturligt ler-tørremiddel",
     badge: "Naturligt ler",
     description:
-      "Dri Clay Desiccant er et naturligt, mineralbaseret fugtabsorberende middel fra MICRO-PAK®-serien. Fremstillet af renset montmorillonit-ler, beskytter det forbrugsvarer, elektronik, tekstiler og emballerede produkter mod fugtskader under opbevaring og forsendelse.",
+      "Dri Clay Desiccant er et naturligt, mineralbaseret fugtabsorberende middel fra MICRO-PAK®-serien. Fremstillet af renset montmorillonit-ler, beskytter det forbrugsvarer, elektronik, tekstiler og emballerede produkter mod fugtskader under opbevaring og forsendelse. Alle Dri Clay Kraft-udgaver er fødevare-godkendte.",
     metaTitle: "Dri Clay Desiccant | MICRO-PAK® | Desiccant.com",
     metaDesc:
       "MICRO-PAK® Dri Clay Desiccant — naturligt montmorillonit-ler fugtabsorbering til detail, elektronik og emballerede varer.",
