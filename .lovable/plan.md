@@ -1,50 +1,52 @@
+# TanStack SSR vs. your current cPanel setup — trade-offs
 
+You asked two things: can the project move to TanStack SSR, and would cPanel still work afterwards.
 
-## Fix LinkedIn Insight Tag — `window.lintrk` undefined
+Short answers: **yes it can be moved**, and **no, cPanel would no longer be a good home for it**.
 
-### Root Cause
+## Why cPanel and SSR don't mix
 
-In `index.html`, the second LinkedIn `<script>` tag has an `async` attribute:
+Your site today is a pile of finished HTML files. The build runs, a script visits every page and saves the fully written-out HTML, and you upload that folder. Your web host just hands files to visitors — it never runs your app.
 
-```html
-<script type="text/javascript" async>
-  (function(l) {
-    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
-    window.lintrk.q=[]}
-    ...
-  })(window.lintrk);
-</script>
-```
+Server rendering works the other way: your app has to be *running* on the server, awake, for every single visit, building each page on demand. Standard cPanel shared hosting doesn't offer that. Some cPanel plans have a "Node.js app" panel, but it's fragile for this, and everything in your `.htaccess` — the ~80 redirects from your old site, the trailing-slash rules, the caching headers — would have to be rebuilt inside the app instead.
 
-While `async` on inline scripts is technically a no-op per HTML spec, our prerender pipeline (puppeteer + post-processing in `scripts/prerender.mjs`) and Vite's HTML transform can mishandle it — and more importantly it signals "non-blocking" which some toolchains use to defer the inline IIFE. The result: by the time React hydrates and `useLinkedInInsight` calls `typeof window.lintrk === "function"`, the stub hasn't been initialized → check fails → no track event → and from the console, `window.lintrk` is `undefined`.
+## Option A — Stay as you are (recommended)
 
-This matches LinkedIn's official snippet exactly EXCEPT for that stray `async` — which is not in their published version.
+Keep the current setup, keep cPanel, keep your `.htaccess` exactly as it is.
 
-### Fix
+- Crawlers already receive complete HTML with all text, links, meta tags and structured data.
+- Google cannot tell the difference between your pre-written HTML and server-rendered HTML. There is no SEO gain waiting for you here.
+- Cost: nothing. Risk: nothing.
 
-**`index.html`** — remove the invalid `async` attribute from the inline LinkedIn IIFE script. Restores LinkedIn's canonical snippet verbatim. The stub `window.lintrk = function(a,b){...}` then runs synchronously in `<head>` before React mounts, guaranteeing the function exists by the time the hook fires.
+What could actually be improved without changing frameworks:
+- Verify every page in the build genuinely came out full (a page that silently rendered empty is the real risk with this approach).
+- Fix the duplicate slash/no-slash indexing you flagged earlier — that one is worth real ranking points, far more than SSR would be.
 
-Single-character-class change:
-```diff
-- <script type="text/javascript" async>
-+ <script type="text/javascript">
-    (function(l) { ... })(window.lintrk);
-  </script>
-```
+## Option B — Move to TanStack, move hosting
 
-### Files
+Genuine server rendering, publishing through Lovable (or another host that runs apps) instead of cPanel.
 
-| File | Change |
-|---|---|
-| `index.html` | Remove `async` attribute from inline LinkedIn IIFE `<script>` opening tag |
+Gains:
+- Pages render on request, so content is always current without a rebuild.
+- Faster first paint on slow connections.
+- Cleaner setup long-term: redirects, page titles and language routing all live in one place instead of split between the app and `.htaccess`.
 
-No changes to `useLinkedInInsight.ts` or `LanguageLayout.tsx` — they're correct; they just need the stub to actually exist on `window`.
+Costs:
+- Your domain has to point at the new host. cPanel stops serving the site.
+- All ~80 old-URL redirects get rebuilt as app rules. Any mistake there loses link value from your old site — this is the single biggest risk.
+- The upgrade also modernises the styling engine underneath, so every page needs a visual once-over afterwards.
+- Uses credits, and takes a working session to complete plus follow-up fixes.
 
-### Verification
+## Option C — TanStack but still static on cPanel
 
-After the fix:
-1. Reload preview → DevTools console → type `window.lintrk` → returns `function` (the stub or fully loaded script).
-2. `window.lintrk.q` → array (queued calls before `insight.min.js` loads).
-3. Network tab → navigate between routes → see requests to `px.ads.linkedin.com/collect` on each navigation.
-4. LinkedIn Insight Tag browser extension → shows partner ID `8674345` active.
+Technically possible, but you'd end up where you already are: finished files on cPanel, no real server rendering. You'd pay the full migration cost for no benefit. Not recommended.
 
+## My recommendation
+
+Stay on Option A. Your SEO problem isn't rendering — the pages already deliver full HTML. It's the duplicate slash/no-slash URLs Google is indexing twice. Fixing that is a small, safe change with a real payoff.
+
+Consider Option B only if you're separately unhappy with the upload-to-cPanel workflow and want the site managed in one place.
+
+## If you want to proceed
+
+Tell me which option, and I'll write a build plan for it. For Option B specifically, the migration is reversible from chat history, and the redirect rebuild would be verified route-by-route against your current `.htaccess` before publishing.
