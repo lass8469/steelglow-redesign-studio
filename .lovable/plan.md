@@ -50,3 +50,7 @@ Consider Option B only if you're separately unhappy with the upload-to-cPanel wo
 ## If you want to proceed
 
 Tell me which option, and I'll write a build plan for it. For Option B specifically, the migration is reversible from chat history, and the redirect rebuild would be verified route-by-route against your current `.htaccess` before publishing.
+
+## Also requested: logo SVG export
+
+You asked for the DESICCANT logo as an SVG. It already exists in the project as `public/logo-desiccant.svg` — in build mode I'll copy it to your Files so you can download it directly. Approve this plan (or skip it) and I'll do the export immediately.
